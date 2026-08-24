@@ -1,0 +1,200 @@
+[
+  {
+    "meeting": "M5",
+    "element": "The team chose the single-curved casing design.",
+    "manual_gap": true,
+    "model_label": "NEUTRAL",
+    "model_score": 0.992,
+    "model_gap": true,
+    "match": true
+  },
+  {
+    "meeting": "M5",
+    "element": "Uncurved design was rejected because it was too dull.",
+    "manual_gap": true,
+    "model_label": "CONTRADICTION",
+    "model_score": 0.778,
+    "model_gap": true,
+    "match": true
+  },
+  {
+    "meeting": "M5",
+    "element": "Double-curved design was rejected because it would make scroll-wheels impossible to use.",
+    "manual_gap": true,
+    "model_label": "CONTRADICTION",
+    "model_score": 0.869,
+    "model_gap": true,
+    "match": true
+  },
+  {
+    "meeting": "M5",
+    "element": "The team decided not to use an LCD display.",
+    "manual_gap": true,
+    "model_label": "NEUTRAL",
+    "model_score": 0.826,
+    "model_gap": true,
+    "match": true
+  },
+  {
+    "meeting": "M5",
+    "element": "Industrial Designer introduced three casing possibilities.",
+    "manual_gap": false,
+    "model_label": "ENTAILMENT",
+    "model_score": 0.992,
+    "model_gap": false,
+    "match": true
+  },
+  {
+    "meeting": "M7",
+    "element": "Kryptonite was chosen as the preferred energy source.",
+    "manual_gap": false,
+    "model_label": "ENTAILMENT",
+    "model_score": 0.99,
+    "model_gap": false,
+    "match": true
+  },
+  {
+    "meeting": "M7",
+    "element": "Battery, solar power, and dynamo were also considered as energy options.",
+    "manual_gap": true,
+    "model_label": "NEUTRAL",
+    "model_score": 0.976,
+    "model_gap": true,
+    "match": true
+  },
+  {
+    "meeting": "M7",
+    "element": "The exact price of Kryptonite was unknown.",
+    "manual_gap": true,
+    "model_label": "NEUTRAL",
+    "model_score": 0.897,
+    "model_gap": true,
+    "match": true
+  },
+  {
+    "meeting": "M7",
+    "element": "The team agreed the screen was not necessary because TV could be used instead.",
+    "manual_gap": false,
+    "model_label": "ENTAILMENT",
+    "model_score": 0.988,
+    "model_gap": false,
+    "match": true
+  },
+  {
+    "meeting": "M7",
+    "element": "Industrial Designer preferred battery over the other options.",
+    "manual_gap": true,
+    "model_label": "NEUTRAL",
+    "model_score": 0.892,
+    "model_gap": true,
+    "match": true
+  },
+  {
+    "meeting": "M9",
+    "element": "The team agreed on a menu display with basic buttons.",
+    "manual_gap": false,
+    "model_label": "ENTAILMENT",
+    "model_score": 0.98,
+    "model_gap": false,
+    "match": true
+  },
+  {
+    "meeting": "M9",
+    "element": "The material choice was described as temporary.",
+    "manual_gap": false,
+    "model_label": "ENTAILMENT",
+    "model_score": 0.932,
+    "model_gap": false,
+    "match": true
+  },
+  {
+    "meeting": "M9",
+    "element": "A flip-top design was considered and rejected due to cost.",
+    "manual_gap": true,
+    "model_label": "NEUTRAL",
+    "model_score": 0.87,
+    "model_gap": true,
+    "match": true
+  },
+  {
+    "meeting": "M9",
+    "element": "Silver lightweight plastic was chosen because it is easily moulded and cost-saving.",
+    "manual_gap": false,
+    "model_label": "ENTAILMENT",
+    "model_score": 0.989,
+    "model_gap": false,
+    "match": true
+  },
+  {
+    "meeting": "M10",
+    "element": "Three controller concepts were considered: Google controller, fancy controller, and intelligent controller.",
+    "manual_gap": false,
+    "model_label": "ENTAILMENT",
+    "model_score": 0.987,
+    "model_gap": false,
+    "match": true
+  },
+  {
+    "meeting": "M10",
+    "element": "The intelligent controller concept was rejected partly due to concerns about simultaneous multi-user interference.",
+    "manual_gap": true,
+    "model_label": "NEUTRAL",
+    "model_score": 0.98,
+    "model_gap": true,
+    "match": true
+  },
+  {
+    "meeting": "M10",
+    "element": "Wood was chosen as material instead of plastic.",
+    "manual_gap": false,
+    "model_label": "NEUTRAL",
+    "model_score": 0.984,
+    "model_gap": true,
+    "match": false
+  },
+  {
+    "meeting": "M10",
+    "element": "The battery and solar alimentation choice would increase production cost but was considered worth it.",
+    "manual_gap": true,
+    "model_label": "NEUTRAL",
+    "model_score": 0.997,
+    "model_gap": true,
+    "match": true
+  },
+  {
+    "meeting": "M12",
+    "element": "Speech recognition was included as a feature.",
+    "manual_gap": false,
+    "model_label": "ENTAILMENT",
+    "model_score": 0.984,
+    "model_gap": false,
+    "match": true
+  },
+  {
+    "meeting": "M12",
+    "element": "An advanced chip was required to support speech recognition.",
+    "manual_gap": true,
+    "model_label": "NEUTRAL",
+    "model_score": 0.973,
+    "model_gap": true,
+    "match": true
+  },
+  {
+    "meeting": "M12",
+    "element": "LCD was ruled out because it would require the most expensive chip.",
+    "manual_gap": true,
+    "model_label": "CONTRADICTION",
+    "model_score": 0.543,
+    "model_gap": true,
+    "match": true
+  },
+  {
+    "meeting": "M12",
+    "element": "A newly available low-cost sensor component made the advanced chip affordable.",
+    "manual_gap": true,
+    "model_label": "NEUTRAL",
+    "model_score": 0.961,
+    "model_gap": true,
+    "match": true
+  }
+]
