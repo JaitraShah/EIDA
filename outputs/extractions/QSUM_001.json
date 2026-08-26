@@ -1,0 +1,1123 @@
+{
+  "source_id": "QSUM_001",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QSUM_001_c000_d1",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c000",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt",
+      "topic": "agenda",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The third meeting.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I have some points I would like to point out.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "we will have your individual presentations",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "the decision on the remote control concept",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Ease of use is important, but innovation is more important, and a fancy look and feel is even more important.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QSUM_001_c001_d1",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a colourful and soft material, and potentially offer exchangeable covers.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The younger group prefers colourful and soft materials.",
+        "The older group prefers familiar materials."
+      ],
+      "conditions": [
+        "The design should cater to both the young and the old."
+      ],
+      "dissent": [
+        "The Industrial Designer suggested using a sponge as a remote control, which was rejected."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we could provide both for the young and the old what they like.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It might not be too hard. It it shouldn't be too hard. It it shouldn't be too hard.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "But can you can you go back to that slide ? The uh",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But personally I wouldn't like a sponge as a remote control.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c002_d1",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a shape that is easy to hold, with a good grip.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It shouldn't be too slippery.",
+        "The remote control should have a shape underneath where you can put your fingers in for a good grip."
+      ],
+      "conditions": [
+        "The Industrial Designer will go into this in more detail in their presentation."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And what I'm thinking about , maybe um we should make very light but um uh a grip um {disfmarker} I mean this is how you hold a remote control .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "But it's it's kind of uh it's kind of o organic , so that's very good .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But I'll I'll go into that deeper in my presentation .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c002_d2",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control could have a round or oval shape.",
+      "topic": "remote control shape",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Industrial Designer suggested a round or oval shape."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I suggest {disfmarker} I couldn't uh {disfmarker} I had a small uh mock-up uh {vocalsound} sign on the {vocalsound} on {gap} paper .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c002_d3",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control could be yellow.",
+      "topic": "remote control color",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The User Interface suggested the remote control could be yellow."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But we could make uh a round uh an oval uh um remote control . Uh yellow .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c002_d4",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control could have a rubber grip.",
+      "topic": "remote control grip",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The User Interface mentioned the Siemens phone having a rubber grip."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But if you have something like uh the Siemens phone , it's rubber .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c002_d5",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control could have a shape underneath where you can put your fingers in for a good grip.",
+      "topic": "remote control grip design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Industrial Designer mentioned remote controls with a shape underneath where you can put your fingers in for a good grip."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Indeed .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c002_d6",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control could have a little shape underneath where you can put your fingers in.",
+      "topic": "remote control grip design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Industrial Designer mentioned remote controls who have a little shape underneath where you can put your fingers in."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so you can get a really good grip on it . So you don't have to um attain much pressure to it . It's it's a lot easier .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c003_d1",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c003",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about the remote control's casing or energy source.",
+      "topic": "remote control casing and energy source",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "uncurved or flat case",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "curved case (2D)",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "curved case (3D)",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "wood case",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "titanium case",
+          "rejected": true,
+          "reason": "cannot be used on double curve cases"
+        },
+        {
+          "option": "latex case",
+          "rejected": true,
+          "reason": "won't allow the use of solar cells"
+        },
+        {
+          "option": "plastic case",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "rubber case",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "kinetic energy supply",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "solar power",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "hand dynamo",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about different possibilities and impossibilities, but no decision was reached."
+      ],
+      "conditions": [
+        "No actual decision was made."
+      ],
+      "dissent": [
+        "No actual dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay , but I'll I'll go into that ,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "because there are are some possibilities and some impossibilities . Um I had a talk with uh our manufacturing uh division , and uh we had a talk about all the different components um who are in this design .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "We have uh a curved one . It's uh curved in two dimensions . You have to imagine it's a bit like a wave form . So it's uh a little more advanced in its in its shape .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh and we have an even more advanced uh shape , which is curved in three dimension . I c I think you can compare it a little bit with the uh big grey image uh you had in your presentation . The the big remote control , something like that .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But it's quite uh advanced and it's it's quite daring to to use I think .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh for these casings we have uh different types of finishing . We can use plastic , which is uh very slippery and maybe not so nice , but you can give it any colour , uh which is the same for rubber , but it's not slippery . We can use wood and titanium . Well , um we cannot use the titanium on the double curve cases . And these latex cases , there's there's just the plastic ones uh won't allow the use of solar cells as an energy source",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um well , we even seem to have uh hand dyn dynamos for uh powering our uh {vocalsound} remote controls .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "You really have to imagine like {vocalsound} winding up your {disfmarker} uh uh",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "It have {disfmarker} it it has to move , that's the the sense of it . And you can store the energy in the in the thing .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think um , if if I can hook on to that , um the kinetic thing is very funny .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , maybe m",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , I know .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "You you walk",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "and uh {disfmarker} but uh you {disfmarker} you're sitting on a couch .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "But if you're watching a movie , how many times uh you take the the remote control and and {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "if uh if you have a watch , you have the kinetic uh idea in a watch also .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "You you walk",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "and uh {disfmarker} but uh you {disfmarker} you're sitting on a couch .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c004_d1",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c004",
+      "schema_version": "1.0.0",
+      "decision": "A scroll-bar on the side of the remote control was proposed for a channel selector.",
+      "topic": "remote control design",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "This is how you keep it",
+        "It's done before",
+        "It's quite good"
+      ],
+      "conditions": [
+        "No explicit caveats or conditions stated"
+      ],
+      "dissent": [
+        "Discussion about the feasibility of using scroll-wheels with buttons",
+        "Concerns about using the button in the scroll-wheel"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "This will be the remote , right ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "with uh maybe a channel selector",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because this is how you keep it",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's done before",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's quite quite good",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But Flores , think about a scenario where y where you would use the scroll-button for",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "A volume , okay",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well , what about mute ?",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c005_d1",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the placement of the volume button on the remote control.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team is looking for a way to make the remote control different from traditional ones.",
+        "The team wants to place all buttons within reach of the thumb."
+      ],
+      "conditions": [
+        "The use of a rubber double-curved case limits the integration of LCD displays and scroll-wheels."
+      ],
+      "dissent": [
+        "The Industrial Designer mentions that scroll-wheels have been done before and are not new.",
+        "The Industrial Designer points out that Nokia has a volume button on the side of the remote control but uses two separate buttons."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "this is my volume button . And I can either on this side or this side um",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay . Yes . Well , that that that's one possibility , okay .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "And it makes it different from the traditional uh devices on this market . So I'm looking for a way to uh make it a little different than the traditional ones .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Hmm . Yes , but it uses two separate buttons .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "So maybe it's not no {gap} .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "For you too , yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , I believe uh if you have uh what we've earlier said , um the grip uh places in in the remote control . You have your hand on one place on the remote control , so you have to place all the buttons in a range of your thumb .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So in that case uh the volume button on the side uh of the remote control would be perfect .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c005_d2",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of using voice recognition in the remote control.",
+      "topic": "remote control features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team is discussing components and hardware."
+      ],
+      "conditions": [
+        "The team needs more information about the voice recognition feature."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and uh when you speak in the the remote control , it repeats uh your saying . that's the sample sensor . So So if you say mute , it says mute again ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I have some information about it . Uh in the voice recognition you say a word {disfmarker} you can programme words like uh v uh volume up . Of mute , let's say mute .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c006_d1",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "The market prefers natural materials over titanium casing.",
+      "topic": "material for casing",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "titanium",
+          "rejected": true,
+          "reason": "market prefers natural materials"
+        }
+      ],
+      "rationale": [
+        "Industrial Designer: 'my conclusion, unfortunately the market has decided the a little uh other than I thought.'"
+      ],
+      "conditions": [
+        "No explicit conditions stated"
+      ],
+      "dissent": [
+        "Project Manager: 'But yet, I understood that the market is different.'"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "my conclusion, unfortunately the market has decided the a little uh other than I thought.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But yet, I understood that the market is different.",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QSUM_001_c006_d2",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "The chosen energy solution is a battery with solar cell.",
+      "topic": "energy source",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "dynamo",
+          "rejected": true,
+          "reason": "Industrial Designer: 'I don't think we should use the dynamo thing.'"
+        },
+        {
+          "option": "kinetic",
+          "rejected": true,
+          "reason": "Industrial Designer: 'The kinetic thing it's it's a possibility. It's it's more advanced, but I'm not sure you should combine it with batteries.'"
+        },
+        {
+          "option": "solar cell only",
+          "rejected": true,
+          "reason": "Implicitly rejected as the chosen solution includes both battery and solar cell."
+        }
+      ],
+      "rationale": [
+        "Industrial Designer: 'So I don't think we should use the dynamo thing.'",
+        "Project Manager: 'Okay.'",
+        "Industrial Designer: 'The kinetic thing it's it's a possibility. It's it's more advanced, but I'm not sure you should combine it with batteries.'",
+        "Project Manager: 'Okay.'",
+        "Industrial Designer: 'It's more uh Uh it's more functional.'",
+        "Project Manager: 'Yeah.'",
+        "Industrial Designer: 'It's more robust.'"
+      ],
+      "conditions": [
+        "Project Manager: 'But that's the same with the solar cell. That's no different.'"
+      ],
+      "dissent": [
+        "Project Manager: 'Kineti okay.'",
+        "Project Manager: 'Yeah, but that's the same with the solar cell.'",
+        "Project Manager: 'Yeah.'",
+        "Project Manager: 'Okay.'",
+        "Project Manager: 'Colourful and.'"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I don't think we should use the dynamo thing.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "The kinetic thing it's it's a possibility. It's it's more advanced, but I'm not sure you should combine it with batteries.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's more uh Uh it's more functional.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's more robust.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But that's the same with the solar cell. That's no different.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c006_d3",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "The display should not have an L_C_D display.",
+      "topic": "display type",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "L_C_D display",
+          "rejected": true,
+          "reason": "Implicitly decided against as the team discusses the need for the advanced version which is more costly."
+        }
+      ],
+      "rationale": [
+        "Industrial Designer: 'If we want to use the L_C_D display , we really need the advanced version , which is a bit l little bit more costly.'"
+      ],
+      "conditions": [
+        "User Interface: 'I don't think you need it on a display.'",
+        "Project Manager: 'No.'",
+        "Industrial Designer: 'I don't think either.'",
+        "User Interface: 'cause uh {gap} uh all {disfmarker} any T_V_ can uh can uh view a digit on uh on screen,'"
+      ],
+      "dissent": [
+        "User Interface: 'But what about um the markets {vocalsound} uh wants colourfuls uh designs ? So if you use titanium {disfmarker} {vocalsound}'"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "If we want to use the L_C_D display , we really need the advanced version , which is a bit l little bit more costly.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't think you need it on a display.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "cause uh {gap} uh all {disfmarker} any T_V_ can uh can uh view a digit on uh on screen",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c006_d4",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "The casing material should be rubber with colours.",
+      "topic": "material for casing",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Project Manager: 'Colourful and.'",
+        "Marketing: 'the {disfmarker} yeah , the older people liked wood.'",
+        "Industrial Designer: 'Oh okay , sorry . So it it needs to be rubber.'",
+        "Marketing: 'No the {disfmarker}'"
+      ],
+      "conditions": [
+        "No explicit conditions stated"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Colourful and.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "the {disfmarker} yeah , the older people liked wood.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Oh okay , sorry . So it it needs to be rubber.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "No the {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c007_d1",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c007",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use a sensor sample and sample speaker with a regular chip, and to implement scroll-wheels.",
+      "topic": "remote design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "LCD part",
+          "rejected": true,
+          "reason": "no value added"
+        }
+      ],
+      "rationale": [
+        "The market likes new flashy technology, and LCD is not very flashy and new.",
+        "The scroll-wheels can be handy."
+      ],
+      "conditions": [
+        "The financial part is unclear."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I suggest we use the the sensor sample . Uh the sample sensor and sample speaker . Um with a with a regular chip .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "And skip the L_C_D_ part .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I like the scroll wheels uh idea .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , we are not very w we do not know uh much about the the f the financial part . That's the problem .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c007_d2",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c007",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use infrared instead of voice function with the remote.",
+      "topic": "remote function",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It's very unlogical to talk to a device if you have to point to another device."
+      ],
+      "conditions": [
+        "The issue of pointing at the device depends on the walls."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It's it's {disfmarker} uh I uh I can imagine it's very dull to talk to a device w if you have to point to another device .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But most infrared uh remote controls don't have to be pointed at all .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c008_d1",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c008",
+      "schema_version": "1.0.0",
+      "decision": "The casing will be single-curved.",
+      "topic": "casing",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The casing is curved, single-curved.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QSUM_001_c008_d2",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c008",
+      "schema_version": "1.0.0",
+      "decision": "Traditional batteries and solar can be complementary as energy sources.",
+      "topic": "energy source",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "They can be complementary."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Traditional batteries and solar can be complementary.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QSUM_001_c009_d1",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c009",
+      "schema_version": "1.0.0",
+      "decision": "The energy source will be batteries and solar.",
+      "topic": "energy source",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "other energy sources",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Every device has batteries and solar as energy sources."
+      ],
+      "conditions": [
+        "The manufacturing department's techniques may limit design options."
+      ],
+      "dissent": [
+        "There was no clear dissent stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The energy source is the batteries and the solar.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Battery and solar, yeah.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c009_d2",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c009",
+      "schema_version": "1.0.0",
+      "decision": "The case will have a grey and yellow finish.",
+      "topic": "case finish",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "other colour combinations",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The group agreed on grey and yellow as the case finish."
+      ],
+      "conditions": [
+        "The manufacturing department's techniques may limit design options."
+      ],
+      "dissent": [
+        "There was some discussion about other colour combinations but no clear dissent stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah, with colourful rubber.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Grey and yellow.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Grey yellow, okay.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c009_d3",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c009",
+      "schema_version": "1.0.0",
+      "decision": "The device will have a scroll-wheel.",
+      "topic": "scroll-wheel",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "no scroll-wheel",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The scroll-wheel was already decided."
+      ],
+      "conditions": [
+        "No caveats or conditions stated."
+      ],
+      "dissent": [
+        "No dissent stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The scroll-heel. Yes, the voice recognition we already decided.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c010_d1",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c010",
+      "schema_version": "1.0.0",
+      "decision": "The decision on the material for the remote control buttons was deferred",
+      "topic": "material for remote control buttons",
+      "status": "deferred",
+      "alternatives": [
+        {
+          "option": "plastic buttons",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "rubber buttons",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The team needs more time to figure out the material for the remote control buttons."
+      ],
+      "conditions": [
+        "The team will discuss the material for the remote control buttons further."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well , we do not have very much time uh left . Um I guess you two have to figure that out . I'm going to leave the decision to you ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm I'm not so sure , I have to ask with manufacturing , but I'm I'm not sure that's what you want , because our customers specifically ask for the spongy feel , and that's what you get with rubber . So if you want the spongy feel , you need uh to make these buttons all all of rubber .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_001_c011_d1",
+      "source_id": "QSUM_001",
+      "chunk_id": "QSUM_001_c011",
+      "schema_version": "1.0.0",
+      "decision": "The team decided not to use L_C_D_.",
+      "topic": "use of L_C_D_",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The only difference between the advanced and the regular version of the chip is that the advanced version of the chip supports L_C_D_. That's all."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And we've decided not to use L_C_D_.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 12,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

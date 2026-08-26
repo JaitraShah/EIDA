@@ -242,6 +242,19 @@ def find_leaks(document: str, omitted: list[ElementLabel]) -> list[dict]:
     return leaks
 
 
+MIN_TURNS = 12
+MIN_SPEAKERS = 3
+
+
+def _looks_like_discussion(text: str) -> bool:
+    """A generated transcript must actually be a multi-speaker exchange."""
+    from ..extraction.chunker import parse_turns
+
+    turns = [t for t in parse_turns(text) if t.speaker]
+    speakers = {t.speaker for t in turns}
+    return len(turns) >= MIN_TURNS and len(speakers) >= MIN_SPEAKERS
+
+
 # --------------------------------------------------------------------------- #
 # generation
 # --------------------------------------------------------------------------- #
@@ -329,10 +342,7 @@ class PairGenerator:
         ]
 
         # 3. transcript containing everything
-        transcript = self._plain_call(
-            client,
-            TRANSCRIPT_SYSTEM,
-            TRANSCRIPT_USER.format(
+        transcript_prompt = TRANSCRIPT_USER.format(
                 setting=topic.setting,
                 decision=record.decision,
                 status=record.status.value,
@@ -345,8 +355,24 @@ class PairGenerator:
                 dissent=_bullets(record.dissent),
                 owner=record.owner or "not assigned",
                 approver=record.approver or "nobody explicitly",
-            ),
         )
+        transcript = self._plain_call(client, TRANSCRIPT_SYSTEM, transcript_prompt)
+
+        # 3b. reject a transcript that is not actually a multi-speaker discussion.
+        # A 7B model asked for 25-40 turns sometimes returns a summary paragraph or a
+        # two-person exchange; those pairs are worthless and cheaper to catch here
+        # than to hand to an annotator.
+        if not _looks_like_discussion(transcript):
+            transcript = self._plain_call(
+                client,
+                TRANSCRIPT_SYSTEM,
+                transcript_prompt
+                + "\n\nYour previous attempt was not a transcript. Output ONLY lines of "
+                  "the form `Role: what they said`, at least 25 of them, with at least "
+                  "three different roles speaking. No prose, no headings, no summary.",
+            )
+            if not _looks_like_discussion(transcript):
+                raise ValueError("model would not produce a multi-speaker transcript")
 
         # 4. document containing only the survivors
         include = [e.text for e in element_labels if e.in_document is InDocument.VERBATIM]

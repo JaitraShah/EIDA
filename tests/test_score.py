@@ -177,3 +177,39 @@ def test_markdown_renders_totals():
     report = score_extraction(result_with(rec()), truth, chunk_texts={"c0": CHUNK_TEXT})
     md = render_markdown([report])
     assert "TOTAL" in md and "QSUM_002" in md
+
+
+# --- filler-tolerant grounding (QMSum transcription artifacts) ---------------
+
+QMSUM_CHUNK = (
+    "Marketing: I have some points I would like to {disfmarker} uh\n"
+    "Marketing: Ease of use is important, but uh innovation is more important.\n"
+)
+
+
+def test_disfluency_cleanup_is_not_counted_as_fabrication():
+    """Models drop {disfmarker}/uh when quoting QMSum. That invents nothing."""
+    r = rec(evidence=[{"quote": "Ease of use is important, but innovation is more important.",
+                       "supports": "rationale"}])
+    check = check_evidence_grounding([r], {"c0": QMSUM_CHUNK})[0]
+    assert check.grounded, "filler-only difference must not count as a hallucination"
+    assert not check.strict_grounded, "but it is not strictly verbatim either"
+
+
+def test_invented_words_still_ungrounded_under_lenient_check():
+    r = rec(evidence=[{"quote": "I have some points I would like to point out.",
+                       "supports": "decision"}])
+    check = check_evidence_grounding([r], {"c0": QMSUM_CHUNK})[0]
+    assert not check.grounded, "'point out' is not in the source -- still a fabrication"
+
+
+def test_strict_and_lenient_rates_both_reported():
+    truth = BY_ID["QSUM_002"]
+    r = rec(evidence=[
+        {"quote": "Ease of use is important, but innovation is more important.", "supports": "rationale"},
+        {"quote": "I have some points I would like to {disfmarker} uh", "supports": "decision"},
+    ])
+    report = score_extraction(result_with(r), truth, chunk_texts={"c0": QMSUM_CHUNK})
+    assert report.evidence_grounding == 1.0
+    assert report.unsupported_evidence_rate == 0.0
+    assert report.strict_verbatim_rate == pytest.approx(0.5)

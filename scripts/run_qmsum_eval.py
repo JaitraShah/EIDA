@@ -129,7 +129,10 @@ def main(argv=None) -> int:
     pairs = [BY_ID[args.only]] if args.only else GROUND_TRUTH
 
     try:
-        client = OllamaClient(model=args.model)
+        # 7-minute per-request ceiling rather than the 10-minute default: if the
+        # machine sleeps mid-run the socket to Ollama hangs indefinitely, and a run
+        # that blocks forever is worse than a chunk recorded as failed and retried.
+        client = OllamaClient(model=args.model, timeout=420)
         client.ensure_available()
     except OllamaUnavailable as e:
         # Cached extractions can still be re-scored without a live model.

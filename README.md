@@ -78,11 +78,17 @@ meaningful.
 ## Two measurement decisions worth knowing before reading any number
 
 **"Unmatched" is not "hallucinated."** Two separate rates are reported. *Unsupported
-evidence* — model quotes that do not occur in the source chunk — is objective and needs
-no ground truth; that is the hallucination rate. *Unmatched extracted* — elements with no
-counterpart in Task 1's tables — is not, because those tables were built to answer "did
-the document drop this?", not to enumerate everything the discussion contained. Unmatched
-items are listed individually for adjudication rather than counted as errors.
+evidence* — model quotes whose words do not occur in the source chunk — is objective and
+needs no ground truth; that is the hallucination rate. *Unmatched extracted* — elements
+with no counterpart in Task 1's tables — is not, because those tables were built to answer
+"did the document drop this?", not to enumerate everything the discussion contained.
+Unmatched items are listed individually for adjudication rather than counted as errors.
+
+**Disfluency cleanup is not fabrication.** mistral drops QMSum's `{disfmarker}` and "uh"
+when quoting. Grounding is therefore checked twice: leniently (ignoring transcription
+markers and filler — this is the hallucination rate) and strictly (exact reproduction —
+reported as `strict_verbatim_rate`). A quote with invented words fails both. The gap
+between the two numbers is a fact about quoting fidelity, not about hallucination.
 
 **Owner/approver is a dataset limitation, not an extractor miss.** AMI-style meetings
 record no formal sign-off (Task 1 caveat 1), so those elements are scored separately and
