@@ -1,0 +1,796 @@
+{
+  "source_id": "QSUM_004",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QSUM_004_c000_d1",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c000",
+      "schema_version": "1.0.0",
+      "decision": "The three concepts for the user interface of the remote control were presented: Google controller, fancy controller, and intelligent controller.",
+      "topic": "user interface concepts",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "Discussion about the concepts is scheduled for later."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I will present the concept of user interface . Um there's three concepts in the user interface . So first one it's a Google controller . The second is a fancy controller . The last one is uh intelligent controller .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So the last uh concept is intelligent . We want uh we want our controller to be smart ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c001_d1",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c001",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the potential advantages and disadvantages of a voice and gesture interface for the remote control.",
+      "topic": "remote control interface",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about convenience, reliability, and potential issues."
+      ],
+      "conditions": [
+        "Potential costs and research requirements mentioned."
+      ],
+      "dissent": [
+        "Marketing expressed concerns about the reliability of speech and gesture recognition."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "or if you say channel three channel three two three four six five , I think they will be bored after a while . You don't think so ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh I think some time it's very uh convenient to use voice interface and gesture interface than use button .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "For example , if you cannot find your uh {vocalsound} controller , you can just uh {vocalsound} just just uh speak something such as , yeah , one two .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But this this {disfmarker} but this would never happen anyway .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "If you have one brother and one sister",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "so they say oh channel four channel three channel four channel three all the time ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't think it {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "but you have the remote control , so maybe you can keep it f with you .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's very interesting . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And mayb maybe we can have the switching mode to pass from you know voice controller to manual controllers , eh .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "How much ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "No no we just um have some cooperation with some research institute , we don't have to do some basic research on this field .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QSUM_004_c002_d1",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c002",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about the language adaptation for the remote control",
+      "topic": "language adaptation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the complexity of language adaptation and potential costs, but no decision was reached."
+      ],
+      "conditions": [
+        "The technology for the adaptation mechanism has already been developed."
+      ],
+      "dissent": [
+        "Industrial Designer expressed concerns about the complexity of language adaptation and the need for adaptation for each country."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "No no we just um have some cooperation with some research institute , we don't have to do some basic research on this field .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So you think it won't cost an {disfmarker} Not a lot for us ? Or ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "it's uh {disfmarker} yeah . It's {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The vocabulary is very small , so that's not a problem .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "If you have the language , you have to develop for each country .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "No , it's not so complex .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c003_d1",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to explore the possibility of a controller with voice and gesture recognition, while still maintaining the option of using buttons.",
+      "topic": "controller design",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "controller with only voice and gesture recognition",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "controller with only buttons",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The team wants to give flexibility to the user."
+      ],
+      "conditions": [
+        "The team is confident in technology, but acknowledges potential issues with language adaptation and reliability."
+      ],
+      "dissent": [
+        "Marketing is concerned about the potential risks."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You can see they can switch form one modality to another.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "We should have confidence in technology.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "No ,",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "If if if it like doubles uh",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QSUM_004_c004_d1",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to create a remote controller that is easy to use, sophisticated, and fancy, but without any breakthrough features.",
+      "topic": "remote controller design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The feature of voice recognition in a mobile is not used often, but it distinguishes the product from others.",
+        "The team wants a controller that works all the time, every day, for everyone.",
+        "A simple, basic, and reliable remote control is already a lot."
+      ],
+      "conditions": [
+        "The controller should be easy to use, sophisticated, and fancy.",
+        "The controller should not have any breakthrough features."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I think it would be better not to do any intelligent controller and to stay with the Google controller or a fancy controller . Maybe try to mix the Google controller and the fancy controller ? Hmm ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "But it's not the feature of the controller , that's a function of T_V_ . You can replace your T_V_ with a new T_V_ with internet browsing function ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , but we want something th that works all the time , every day , every hour , for everyone .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't see how adding speech or gesture recognition would make the remote control look more like Google . Google is simple , works fine ,",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c006_d1",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to use a combination of battery and solar energy for the remote control's power source.",
+      "topic": "energy source",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "battery",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "solar energy",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "It could be an added value to the remote control.",
+        "It could attract ecological consumers."
+      ],
+      "conditions": [
+        "Adding both battery and solar energy battery might slightly increase the price.",
+        "Using wooden material could be more expensive but might give a high-class feel."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It can be interesting for people to have this kind of remote control with both battery and solar energy.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah, I think it's an added value to the remote control",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and maybe it can attract all the ecological consumers",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "no ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "having them both will add a little bit of the price, but it will be an added value also that will be compensated,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Impersonal, mm-hmm.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c006_d2",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to use wooden material for the remote control.",
+      "topic": "material",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "wooden material",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "plastic material",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Wooden material could give a high-class feel.",
+        "Using wooden material in electronics might be a fashion trend."
+      ],
+      "conditions": [
+        "Wooden material might be more expensive.",
+        "Only part of the remote control could be wooden."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "it's very resistant but, you know, something wooden will be like, I don't know high class,",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and if you want to put fashion in electronics maybe we can try to do something with wood.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and it can be interesting.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah, even if it is not completely wood, but just a part of the, you know, will be wooden, in wood",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Impersonal, mm-hmm.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "or you know, you can have some,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c007_d1",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a fancy look and feel.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "User research shows that users prioritize a fancy look and feel."
+      ],
+      "conditions": [
+        "Fashion trends this year are inspired by fruits and vegetables."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , second point is they still want it it to be technologically innovative , so maybe it's sort of related to what you've said with the speech recognition and so on .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Wha what we really see this year is that uh everything from clothes to shoes and furniture is is inspired by fruits and vegetables ,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c007_d2",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be easy to use.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Ease of use is important for the remote control."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So that were the three first points from the remote control uh analysis .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c007_d3",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be technologically innovative.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Users still want the remote control to be technologically innovative."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , second point is they still want it it to be technologically innovative , so maybe it's sort of related to what you've said with the speech recognition and so on .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c008_d1",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c008",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed using wood for the remote's design.",
+      "topic": "remote design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The feeling is natural.",
+        "It can be correlated to energy."
+      ],
+      "conditions": [
+        "Depends on the design they want."
+      ],
+      "dissent": [
+        "Marketing suggested a combination of wood and rubber for the buttons."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It depends on the design we want",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So maybe we can stay with wood",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It can be correlated to energy",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But we could maybe have both like part of wood and some rubber for the buttons",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c008_d2",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c008",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed using solar energy for the remote.",
+      "topic": "energy source",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It might attract pro-ecology consumers."
+      ],
+      "conditions": [
+        "Cheap imprint so you can have something working well."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "maybe will attract pro-ecology consumers",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Cheap imprint so you s you propose low level chips would be uh enough to have something working well",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c008_d3",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c008",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of using voice and gesture recognition for the user interface.",
+      "topic": "user interface concept",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Because with the voice and gesture recognition there are still some disadvantages with this."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Because I think that with the voice and gesture recognition there are still some disadvantages with this",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c008_d4",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c008",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed conducting marketing studies to gauge interest in voice control.",
+      "topic": "marketing studies",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To see if it's an interesting concept to have voice control."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh maybe we can do some marketing studies asking people if they're interested",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c009_d1",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to work on the look and feel design, to have an easy to use, powerful and fancy remote control with some added value such as simple vocal commands recognition.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team believes adding vocal commands will make the remote control easier to use."
+      ],
+      "conditions": [
+        "The team will have to work on the look and feel design, evaluate the product, create a prototype, and follow specific instructions from their personal coach."
+      ],
+      "dissent": [],
+      "owner": "['Baba', 'David Jordan']",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So you will have to work on the look and feel design, to have the easy to use, powerful and fancy remote control with some added value such as the uh simple vocal commands recognition.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "You will have to work more, Baba, on the um spongy way to to add spongy um touch to the buttons.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And I think we'll have to evaluate the product too.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And remember as as I said last meeting, we really have to build a fashion remote control and uh the colour of the um the society will be really seen in the remote control.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c009_d2",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to model something for the prototype.",
+      "topic": "prototype modeling",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team needs to create a prototype for the remote control."
+      ],
+      "conditions": [
+        "The team will have to model something and show it in the next meeting."
+      ],
+      "dissent": [],
+      "owner": "['Baba', 'David Jordan']",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so you will have to model model something.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And I think that some specific instructions will be sent to you by your personal coach.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_004_c009_d3",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to consider the fruits and vegetables trends.",
+      "topic": "trends",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Marketing mentioned the importance of considering the fruits and vegetables trends."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "If possible.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QSUM_004_c010_d1",
+      "source_id": "QSUM_004",
+      "chunk_id": "QSUM_004_c010",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made in this excerpt",
+      "topic": "unspecified",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And I think that some specific instructions will be sent to you by your personal coach .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "no more questions , we can close the session .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Sounds good , mm-hmm .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Hmm .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    }
+  ],
+  "chunks_processed": 10,
+  "chunks_failed": [
+    "QSUM_004_c005"
+  ],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

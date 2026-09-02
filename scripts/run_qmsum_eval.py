@@ -32,7 +32,7 @@ from edia.benchmark.score import (
     score_extraction,
 )
 from edia.extraction.chunker import chunk_text
-from edia.extraction.extractor import DecisionExtractor
+from edia.extraction.extractor import DecisionExtractor, is_empty_non_decision
 from edia.extraction.llm_client import DEFAULT_MODEL, OllamaClient, OllamaUnavailable
 from edia.extraction.schema import DecisionRecord, ExtractionResult
 from edia.ingestion.ingest import ingest_file
@@ -41,6 +41,16 @@ DATA = Path("data/qmsum")
 EXTRACT_DIR = Path("outputs/extractions")
 REPORT_MD = Path("outputs/task4_extraction_results.md")
 REPORT_JSON = Path("outputs/task4_extraction_scores.json")
+
+
+def _drop_non_decisions(records: list[DecisionRecord], label: str) -> list[DecisionRecord]:
+    """Apply the extractor's non-decision filter to records that were cached before
+    that filter existed, so a cached run and a fresh run report the same numbers."""
+    kept = [r for r in records if not is_empty_non_decision(r)]
+    dropped = len(records) - len(kept)
+    if dropped:
+        print(f"  {label}: dropped {dropped} 'no decision was made' record(s) from cache")
+    return kept
 
 
 def load_or_extract(
@@ -63,7 +73,9 @@ def load_or_extract(
     if cache.exists() and not args.force:
         payload = json.loads(cache.read_text(encoding="utf-8"))
         print(f"{pair_id}: reusing cached extraction ({cache})")
-        return ExtractionResult.model_validate(payload), chunk_texts, 0.0
+        cached_result = ExtractionResult.model_validate(payload)
+        cached_result.records = _drop_non_decisions(cached_result.records, pair_id)
+        return cached_result, chunk_texts, 0.0
 
     print(f"{pair_id}: {len(chunks)} chunks, {doc.metadata.get('word_count')} words -> {args.model}")
     start = time.time()
@@ -80,7 +92,10 @@ def load_or_extract(
         if cpath.exists() and not args.force:
             cached = json.loads(cpath.read_text(encoding="utf-8"))
             result.records.extend(
-                DecisionRecord.model_validate(r) for r in cached["records"]
+                _drop_non_decisions(
+                    [DecisionRecord.model_validate(r) for r in cached["records"]],
+                    chunk.chunk_id,
+                )
             )
             result.chunks_processed += 1
             print(f"  {chunk.chunk_id}: cached ({len(cached['records'])} record(s))")
@@ -129,10 +144,14 @@ def main(argv=None) -> int:
     pairs = [BY_ID[args.only]] if args.only else GROUND_TRUTH
 
     try:
-        # 7-minute per-request ceiling rather than the 10-minute default: if the
-        # machine sleeps mid-run the socket to Ollama hangs indefinitely, and a run
-        # that blocks forever is worse than a chunk recorded as failed and retried.
-        client = OllamaClient(model=args.model, timeout=420)
+        # The timeout has to clear the worst legitimate generation, or it starves
+        # chunks rather than protecting them. num_predict caps output at 2048
+        # tokens; measured throughput on this box is ~2.6 tok/s with 60% of the
+        # model on CPU, so a full-length answer needs ~790s. A 420s ceiling killed
+        # QSUM_005_c009 six times before that arithmetic got done. 1200s leaves
+        # headroom while still bounding a socket that hangs when the machine sleeps
+        # -- generation itself cannot run away, because num_predict bounds it.
+        client = OllamaClient(model=args.model, timeout=1200)
         client.ensure_available()
     except OllamaUnavailable as e:
         # Cached extractions can still be re-scored without a live model.
@@ -174,9 +193,15 @@ def main(argv=None) -> int:
         f"contained, so an unmatched element may be a correct extraction Task 1 never "
         f"tabulated. Those items are listed in the JSON for human adjudication.\n\n"
     )
-    REPORT_MD.parent.mkdir(parents=True, exist_ok=True)
-    REPORT_MD.write_text(header + md + "\n", encoding="utf-8")
-    REPORT_JSON.write_text(
+    # The two matchers answer different questions and both get reported, so the
+    # semantic pass must not overwrite the lexical one.
+    suffix = "_semantic" if args.semantic else ""
+    report_md = REPORT_MD.with_name(REPORT_MD.stem + suffix + REPORT_MD.suffix)
+    report_json = REPORT_JSON.with_name(REPORT_JSON.stem + suffix + REPORT_JSON.suffix)
+
+    report_md.parent.mkdir(parents=True, exist_ok=True)
+    report_md.write_text(header + md + "\n", encoding="utf-8")
+    report_json.write_text(
         json.dumps([r.to_dict() for r in reports], indent=2, ensure_ascii=False),
         encoding="utf-8",
     )

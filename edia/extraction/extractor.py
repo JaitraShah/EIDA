@@ -39,6 +39,54 @@ from .schema import (
 _JSON_OBJ_RE = re.compile(r"\{.*\}", re.DOTALL)
 _VALID_STATUSES = {s.value for s in DecisionStatus}
 
+# The prompt asks for an empty list when a chunk settles nothing. Small models
+# answer the question instead: they emit a record whose decision text *is* the
+# statement that no decision was made ("No clear decision was made about the design
+# aesthetic"). Observed on QSUM_003 c003/c004 -- and those were the two chunks that
+# actually contained the meeting's real decisions, so this is not a harmless quirk:
+# it inflates record counts, pollutes the unmatched-element rate, and disguises a
+# miss as an extraction.
+#
+# The filter is narrow on purpose. These records frequently carry *genuine*
+# reasoning alongside the useless decision line -- one QSUM_001 record pairs
+# "No decision was made about the casing" with 14 real alternatives, rationale
+# and conditions. Dropping the whole record to remove one bad line destroys
+# correct extractions and measurably lowers completeness, so a record is only
+# discarded when the non-decision line is *all* it contains. Otherwise it is
+# kept: the bogus line then costs one unmatched element, which is reported
+# separately and never counted as hallucination.
+#
+# Deliberately anchored at the start of the sentence so genuine decisions that
+# happen to contain a negation survive -- "The team decided not to integrate an
+# LCD display" is a real decision and must be kept.
+_NON_DECISION_RE = re.compile(
+    r"^\s*(?:no|none|nothing|neither|"
+    r"there\s+(?:was|were|is|are)\s+no|"
+    r"the\s+(?:team|group)\s+did\s+not\s+(?:make|reach|come))\b"
+    r"[^.]{0,80}?\b(?:decision|decided|agree\w*|consensus|conclusion|resolution)\b",
+    re.IGNORECASE,
+)
+
+
+def is_non_decision(text: str) -> bool:
+    """True when the 'decision' is really a statement that nothing was decided."""
+    return bool(_NON_DECISION_RE.match(text or ""))
+
+
+_REASONING_FIELDS = ("alternatives", "rationale", "conditions", "dissent")
+
+
+def is_empty_non_decision(record) -> bool:
+    """True when a record says nothing was decided AND carries no other reasoning.
+
+    Accepts either a raw dict from the model or a DecisionRecord, so the extractor
+    and the cache-replay path in scripts/run_qmsum_eval.py apply one rule.
+    """
+    get = record.get if isinstance(record, dict) else lambda k, d=None: getattr(record, k, d)
+    if not is_non_decision(get("decision") or ""):
+        return False
+    return not any(get(f) or [] for f in _REASONING_FIELDS)
+
 
 # --------------------------------------------------------------------------- #
 # parsing / coercion
@@ -199,8 +247,12 @@ class DecisionExtractor:
         for n, raw in enumerate(raw_decisions, start=1):
             if not isinstance(raw, dict):
                 continue
-            if not _clean_str(raw.get("decision")):
+            decision_text = _clean_str(raw.get("decision"))
+            if not decision_text:
                 continue  # no decision text -> nothing to record
+            if is_empty_non_decision({**raw, "decision": decision_text}):
+                self._log(f"  {chunk.chunk_id}: dropped an empty 'no decision' record")
+                continue
             decision_id = f"{chunk.chunk_id}_d{n}"
             try:
                 records.append(

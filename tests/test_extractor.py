@@ -228,3 +228,71 @@ def test_result_serialises_to_json():
     result = ex.extract_chunks([make_chunk()], "M7")
     blob = json.dumps(result.model_dump(mode="json"))
     assert "kryptonite" in blob.lower()
+
+
+# --- non-decision filtering -------------------------------------------------
+
+@pytest.mark.parametrize("text", [
+    "No decision was made about the design of the remote control",
+    "No clear decision was made about the design aesthetic of the remote control.",
+    "There was no agreement on the material.",
+    "The team did not reach a decision on pricing.",
+    "no consensus was reached regarding the chip tier",
+])
+def test_non_decision_statements_detected(text):
+    from edia.extraction.extractor import is_non_decision
+    assert is_non_decision(text)
+
+
+@pytest.mark.parametrize("text", [
+    "The team decided not to integrate an LCD display.",
+    "No LCD display will be included in the final design.",
+    "Kryptonite was chosen as the energy source.",
+    "None of the casing shapes were rejected outright; all three remain.",
+])
+def test_real_decisions_survive_the_filter(text):
+    """A negation inside a genuine decision must not trip the filter."""
+    from edia.extraction.extractor import is_non_decision
+    assert not is_non_decision(text)
+
+
+def test_empty_no_decision_record_is_dropped():
+    """Observed on QSUM_003: the model answers 'no decision was made' instead of
+    returning an empty list. With nothing else attached, that record is noise."""
+    payload = json.dumps({"decisions": [
+        {"decision": "No decision was made about the design of the remote control"},
+        {"decision": "Lightweight plastic was temporarily chosen."},
+    ]})
+    ex = DecisionExtractor(client=FakeClient([payload]), verbose=False)
+    recs = ex.extract_from_chunk(make_chunk())
+    assert len(recs) == 1
+    assert recs[0].decision.startswith("Lightweight plastic")
+
+
+def test_no_decision_record_with_real_reasoning_is_kept():
+    """The filter must stay narrow. These records often carry genuine reasoning --
+    one QSUM_001 record pairs a useless decision line with 14 real elements -- and
+    dropping the whole record throws away correct extractions."""
+    payload = json.dumps({"decisions": [{
+        "decision": "No clear decision was made about the design aesthetic.",
+        "alternatives": ["fashionable and stylish", "plastic", "metal"],
+        "rationale": ["The team debated look and feel at length."],
+    }]})
+    ex = DecisionExtractor(client=FakeClient([payload]), verbose=False)
+    recs = ex.extract_from_chunk(make_chunk())
+    assert len(recs) == 1, "a record carrying real reasoning must survive"
+    assert [a.option for a in recs[0].alternatives] == [
+        "fashionable and stylish", "plastic", "metal"
+    ]
+
+
+def test_is_empty_non_decision_accepts_dicts_and_records():
+    """The extractor filters dicts; the cache-replay path filters DecisionRecords.
+    One rule has to cover both or a cached run and a fresh run disagree."""
+    from edia.extraction.extractor import is_empty_non_decision
+    bare = {"decision": "No decision was made."}
+    assert is_empty_non_decision(bare)
+    assert is_empty_non_decision(coerce_record(bare, **BASE))
+    rich = {"decision": "No decision was made.", "rationale": ["a real reason"]}
+    assert not is_empty_non_decision(rich)
+    assert not is_empty_non_decision(coerce_record(rich, **BASE))

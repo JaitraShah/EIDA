@@ -1,0 +1,1760 @@
+[
+  {
+    "pair_id": "QSUM_001",
+    "model_name": "mistral",
+    "matcher": "semantic:all-MiniLM-L6-v2",
+    "threshold": 0.55,
+    "completeness": 0.636,
+    "gt_matched": 7,
+    "gt_total": 11,
+    "soft_owner_approver_matched": "0/0",
+    "evidence_grounding": 0.905,
+    "unsupported_evidence_rate": 0.095,
+    "quotes_grounded": "76/84",
+    "strict_verbatim_rate": 0.833,
+    "quotes_strict_verbatim": "70/84",
+    "unmatched_element_rate": 0.95,
+    "unmatched_extracted_count": 115,
+    "records": 25,
+    "chunks_processed": 12,
+    "chunks_failed": [],
+    "missed_elements": [
+      {
+        "type": "rationale",
+        "text": "The uncurved option was considered too dull.",
+        "best_score": 0.4,
+        "closest_extracted": "uncurved or flat case"
+      },
+      {
+        "type": "decision",
+        "text": "An LCD display was rejected for the remote control.",
+        "best_score": 0.54,
+        "closest_extracted": "The Industrial Designer suggested using a sponge as a remote control, which was rejected."
+      },
+      {
+        "type": "rationale",
+        "text": "The team already had a scroll wheel, speech recognition, rubber and fancy colours, so an LCD was not needed.",
+        "best_score": 0.5,
+        "closest_extracted": "LCD part -- no value added"
+      },
+      {
+        "type": "dissent",
+        "text": "The Project Manager leaned towards including the LCD for budget and high-tech-feel reasons and was talked out of it.",
+        "best_score": 0.49,
+        "closest_extracted": "The market likes new flashy technology, and LCD is not very flashy and new."
+      }
+    ],
+    "unmatched_extracted": [
+      {
+        "type": "decision",
+        "text": "No decisions were made in this excerpt"
+      },
+      {
+        "type": "decision",
+        "text": "The remote control should have a colourful and soft material, and potentially offer exchangeable covers."
+      },
+      {
+        "type": "rationale",
+        "text": "The younger group prefers colourful and soft materials."
+      },
+      {
+        "type": "rationale",
+        "text": "The older group prefers familiar materials."
+      },
+      {
+        "type": "condition",
+        "text": "The design should cater to both the young and the old."
+      },
+      {
+        "type": "dissent",
+        "text": "The Industrial Designer suggested using a sponge as a remote control, which was rejected."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control should have a shape that is easy to hold, with a good grip."
+      },
+      {
+        "type": "rationale",
+        "text": "It shouldn't be too slippery."
+      },
+      {
+        "type": "rationale",
+        "text": "The remote control should have a shape underneath where you can put your fingers in for a good grip."
+      },
+      {
+        "type": "condition",
+        "text": "The Industrial Designer will go into this in more detail in their presentation."
+      },
+      {
+        "type": "rationale",
+        "text": "The Industrial Designer suggested a round or oval shape."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control could be yellow."
+      },
+      {
+        "type": "rationale",
+        "text": "The User Interface suggested the remote control could be yellow."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control could have a rubber grip."
+      },
+      {
+        "type": "rationale",
+        "text": "The User Interface mentioned the Siemens phone having a rubber grip."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control could have a shape underneath where you can put your fingers in for a good grip."
+      },
+      {
+        "type": "rationale",
+        "text": "The Industrial Designer mentioned remote controls with a shape underneath where you can put your fingers in for a good grip."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control could have a little shape underneath where you can put your fingers in."
+      },
+      {
+        "type": "rationale",
+        "text": "The Industrial Designer mentioned remote controls who have a little shape underneath where you can put your fingers in."
+      },
+      {
+        "type": "decision",
+        "text": "No decision was made about the remote control's casing or energy source."
+      },
+      {
+        "type": "alternative",
+        "text": "uncurved or flat case"
+      },
+      {
+        "type": "alternative",
+        "text": "curved case (2D)"
+      },
+      {
+        "type": "alternative",
+        "text": "curved case (3D)"
+      },
+      {
+        "type": "alternative",
+        "text": "wood case"
+      },
+      {
+        "type": "alternative",
+        "text": "titanium case -- cannot be used on double curve cases"
+      },
+      {
+        "type": "alternative",
+        "text": "latex case -- won't allow the use of solar cells"
+      },
+      {
+        "type": "alternative",
+        "text": "plastic case"
+      },
+      {
+        "type": "alternative",
+        "text": "rubber case"
+      },
+      {
+        "type": "alternative",
+        "text": "kinetic energy supply"
+      },
+      {
+        "type": "alternative",
+        "text": "solar power"
+      },
+      {
+        "type": "alternative",
+        "text": "hand dynamo"
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about different possibilities and impossibilities, but no decision was reached."
+      },
+      {
+        "type": "condition",
+        "text": "No actual decision was made."
+      },
+      {
+        "type": "dissent",
+        "text": "No actual dissent was voiced."
+      },
+      {
+        "type": "decision",
+        "text": "A scroll-bar on the side of the remote control was proposed for a channel selector."
+      },
+      {
+        "type": "rationale",
+        "text": "This is how you keep it"
+      },
+      {
+        "type": "rationale",
+        "text": "It's done before"
+      },
+      {
+        "type": "rationale",
+        "text": "It's quite good"
+      },
+      {
+        "type": "condition",
+        "text": "No explicit caveats or conditions stated"
+      },
+      {
+        "type": "dissent",
+        "text": "Concerns about using the button in the scroll-wheel"
+      },
+      {
+        "type": "decision",
+        "text": "The team discussed the placement of the volume button on the remote control."
+      },
+      {
+        "type": "rationale",
+        "text": "The team is looking for a way to make the remote control different from traditional ones."
+      },
+      {
+        "type": "rationale",
+        "text": "The team wants to place all buttons within reach of the thumb."
+      },
+      {
+        "type": "dissent",
+        "text": "The Industrial Designer mentions that scroll-wheels have been done before and are not new."
+      },
+      {
+        "type": "dissent",
+        "text": "The Industrial Designer points out that Nokia has a volume button on the side of the remote control but uses two separate buttons."
+      },
+      {
+        "type": "decision",
+        "text": "The team discussed the possibility of using voice recognition in the remote control."
+      },
+      {
+        "type": "rationale",
+        "text": "The team is discussing components and hardware."
+      },
+      {
+        "type": "condition",
+        "text": "The team needs more information about the voice recognition feature."
+      },
+      {
+        "type": "decision",
+        "text": "The market prefers natural materials over titanium casing."
+      },
+      {
+        "type": "alternative",
+        "text": "titanium -- market prefers natural materials"
+      },
+      {
+        "type": "rationale",
+        "text": "Industrial Designer: 'my conclusion, unfortunately the market has decided the a little uh other than I thought.'"
+      },
+      {
+        "type": "condition",
+        "text": "No explicit conditions stated"
+      },
+      {
+        "type": "dissent",
+        "text": "Project Manager: 'But yet, I understood that the market is different.'"
+      },
+      {
+        "type": "decision",
+        "text": "The chosen energy solution is a battery with solar cell."
+      },
+      {
+        "type": "alternative",
+        "text": "dynamo -- Industrial Designer: 'I don't think we should use the dynamo thing.'"
+      },
+      {
+        "type": "alternative",
+        "text": "kinetic -- Industrial Designer: 'The kinetic thing it's it's a possibility. It's it's more advanced, but I'm not sure you should combine it with batteries.'"
+      },
+      {
+        "type": "alternative",
+        "text": "solar cell only -- Implicitly rejected as the chosen solution includes both battery and solar cell."
+      },
+      {
+        "type": "rationale",
+        "text": "Industrial Designer: 'So I don't think we should use the dynamo thing.'"
+      },
+      {
+        "type": "rationale",
+        "text": "Project Manager: 'Okay.'"
+      },
+      {
+        "type": "rationale",
+        "text": "Industrial Designer: 'The kinetic thing it's it's a possibility. It's it's more advanced, but I'm not sure you should combine it with batteries.'"
+      },
+      {
+        "type": "rationale",
+        "text": "Project Manager: 'Okay.'"
+      },
+      {
+        "type": "rationale",
+        "text": "Industrial Designer: 'It's more uh Uh it's more functional.'"
+      },
+      {
+        "type": "rationale",
+        "text": "Project Manager: 'Yeah.'"
+      },
+      {
+        "type": "rationale",
+        "text": "Industrial Designer: 'It's more robust.'"
+      },
+      {
+        "type": "condition",
+        "text": "Project Manager: 'But that's the same with the solar cell. That's no different.'"
+      },
+      {
+        "type": "dissent",
+        "text": "Project Manager: 'Kineti okay.'"
+      },
+      {
+        "type": "dissent",
+        "text": "Project Manager: 'Yeah, but that's the same with the solar cell.'"
+      },
+      {
+        "type": "dissent",
+        "text": "Project Manager: 'Yeah.'"
+      },
+      {
+        "type": "dissent",
+        "text": "Project Manager: 'Okay.'"
+      },
+      {
+        "type": "dissent",
+        "text": "Project Manager: 'Colourful and.'"
+      },
+      {
+        "type": "decision",
+        "text": "The display should not have an L_C_D display."
+      },
+      {
+        "type": "alternative",
+        "text": "L_C_D display -- Implicitly decided against as the team discusses the need for the advanced version which is more costly."
+      },
+      {
+        "type": "rationale",
+        "text": "Industrial Designer: 'If we want to use the L_C_D display , we really need the advanced version , which is a bit l little bit more costly.'"
+      },
+      {
+        "type": "condition",
+        "text": "User Interface: 'I don't think you need it on a display.'"
+      },
+      {
+        "type": "condition",
+        "text": "Project Manager: 'No.'"
+      },
+      {
+        "type": "condition",
+        "text": "Industrial Designer: 'I don't think either.'"
+      },
+      {
+        "type": "condition",
+        "text": "User Interface: 'cause uh {gap} uh all {disfmarker} any T_V_ can uh can uh view a digit on uh on screen,'"
+      },
+      {
+        "type": "dissent",
+        "text": "User Interface: 'But what about um the markets {vocalsound} uh wants colourfuls uh designs ? So if you use titanium {disfmarker} {vocalsound}'"
+      },
+      {
+        "type": "decision",
+        "text": "The casing material should be rubber with colours."
+      },
+      {
+        "type": "rationale",
+        "text": "Project Manager: 'Colourful and.'"
+      },
+      {
+        "type": "rationale",
+        "text": "Marketing: 'the {disfmarker} yeah , the older people liked wood.'"
+      },
+      {
+        "type": "rationale",
+        "text": "Industrial Designer: 'Oh okay , sorry . So it it needs to be rubber.'"
+      },
+      {
+        "type": "rationale",
+        "text": "Marketing: 'No the {disfmarker}'"
+      },
+      {
+        "type": "condition",
+        "text": "No explicit conditions stated"
+      },
+      {
+        "type": "decision",
+        "text": "The team decided to use a sensor sample and sample speaker with a regular chip, and to implement scroll-wheels."
+      },
+      {
+        "type": "alternative",
+        "text": "LCD part -- no value added"
+      },
+      {
+        "type": "rationale",
+        "text": "The scroll-wheels can be handy."
+      },
+      {
+        "type": "condition",
+        "text": "The financial part is unclear."
+      },
+      {
+        "type": "decision",
+        "text": "The team decided to use infrared instead of voice function with the remote."
+      },
+      {
+        "type": "rationale",
+        "text": "It's very unlogical to talk to a device if you have to point to another device."
+      },
+      {
+        "type": "condition",
+        "text": "The issue of pointing at the device depends on the walls."
+      },
+      {
+        "type": "rationale",
+        "text": "Not specified in the excerpt."
+      },
+      {
+        "type": "decision",
+        "text": "Traditional batteries and solar can be complementary as energy sources."
+      },
+      {
+        "type": "rationale",
+        "text": "They can be complementary."
+      },
+      {
+        "type": "decision",
+        "text": "The energy source will be batteries and solar."
+      },
+      {
+        "type": "alternative",
+        "text": "other energy sources"
+      },
+      {
+        "type": "rationale",
+        "text": "Every device has batteries and solar as energy sources."
+      },
+      {
+        "type": "condition",
+        "text": "The manufacturing department's techniques may limit design options."
+      },
+      {
+        "type": "dissent",
+        "text": "There was no clear dissent stated."
+      },
+      {
+        "type": "decision",
+        "text": "The case will have a grey and yellow finish."
+      },
+      {
+        "type": "alternative",
+        "text": "other colour combinations"
+      },
+      {
+        "type": "rationale",
+        "text": "The group agreed on grey and yellow as the case finish."
+      },
+      {
+        "type": "condition",
+        "text": "The manufacturing department's techniques may limit design options."
+      },
+      {
+        "type": "dissent",
+        "text": "There was some discussion about other colour combinations but no clear dissent stated."
+      },
+      {
+        "type": "alternative",
+        "text": "no scroll-wheel"
+      },
+      {
+        "type": "rationale",
+        "text": "The scroll-wheel was already decided."
+      },
+      {
+        "type": "condition",
+        "text": "No caveats or conditions stated."
+      },
+      {
+        "type": "dissent",
+        "text": "No dissent stated."
+      },
+      {
+        "type": "decision",
+        "text": "The decision on the material for the remote control buttons was deferred"
+      },
+      {
+        "type": "alternative",
+        "text": "plastic buttons"
+      },
+      {
+        "type": "alternative",
+        "text": "rubber buttons"
+      },
+      {
+        "type": "rationale",
+        "text": "The team needs more time to figure out the material for the remote control buttons."
+      },
+      {
+        "type": "condition",
+        "text": "The team will discuss the material for the remote control buttons further."
+      },
+      {
+        "type": "decision",
+        "text": "The team decided not to use L_C_D_."
+      },
+      {
+        "type": "rationale",
+        "text": "The only difference between the advanced and the regular version of the chip is that the advanced version of the chip supports L_C_D_. That's all."
+      }
+    ]
+  },
+  {
+    "pair_id": "QSUM_002",
+    "model_name": "mistral",
+    "matcher": "semantic:all-MiniLM-L6-v2",
+    "threshold": 0.55,
+    "completeness": 0.875,
+    "gt_matched": 7,
+    "gt_total": 8,
+    "soft_owner_approver_matched": "0/0",
+    "evidence_grounding": 0.802,
+    "unsupported_evidence_rate": 0.198,
+    "quotes_grounded": "65/81",
+    "strict_verbatim_rate": 0.778,
+    "quotes_strict_verbatim": "63/81",
+    "unmatched_element_rate": 0.887,
+    "unmatched_extracted_count": 55,
+    "records": 15,
+    "chunks_processed": 10,
+    "chunks_failed": [],
+    "missed_elements": [
+      {
+        "type": "rationale",
+        "text": "The chip is the most expensive part regardless, so the energy source's own cost is a secondary concern.",
+        "best_score": 0.51,
+        "closest_extracted": "The cost of the remote with a screen is more expensive than the regular chip and the minimal."
+      }
+    ],
+    "unmatched_extracted": [
+      {
+        "type": "decision",
+        "text": "No decision was made in this excerpt."
+      },
+      {
+        "type": "condition",
+        "text": "The discussion about design options is ongoing."
+      },
+      {
+        "type": "decision",
+        "text": "The team discussed the concept of a touch-based graphical interface system for the remote control based on a fruit and vegetable design."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about the trend in fashion, in clothing and fabrics."
+      },
+      {
+        "type": "condition",
+        "text": "Need to discuss the need for a screen for the remote control."
+      },
+      {
+        "type": "decision",
+        "text": "The team discussed the possibility of having a screen for the remote control."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about the need for a screen for the remote control."
+      },
+      {
+        "type": "decision",
+        "text": "The team discussed the possibility of having D_V_D_ for the remote control."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about the need for D_V_D_ for the remote control."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control will have a wheel for channel navigation, but no screen."
+      },
+      {
+        "type": "alternative",
+        "text": "graphical interface -- decided against"
+      },
+      {
+        "type": "rationale",
+        "text": "The wheel goes through at least a hundred channels on some models."
+      },
+      {
+        "type": "rationale",
+        "text": "The wheel is faster for channel navigation."
+      },
+      {
+        "type": "rationale",
+        "text": "The concern about menu navigation was raised but not resolved."
+      },
+      {
+        "type": "condition",
+        "text": "The range on the wheel needs to be figured out."
+      },
+      {
+        "type": "condition",
+        "text": "The wheel motion can control channels or tap for different functions."
+      },
+      {
+        "type": "decision",
+        "text": "No decision about the remote design was made"
+      },
+      {
+        "type": "condition",
+        "text": "The cost of the remote with a screen is more expensive than the regular chip and the minimal."
+      },
+      {
+        "type": "dissent",
+        "text": "The User Interface expressed concerns about the cost and the need for the screen."
+      },
+      {
+        "type": "decision",
+        "text": "No clear decision was made about the design of the remote control."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about various design options, but no decision was reached."
+      },
+      {
+        "type": "condition",
+        "text": "Need to investigate programming of remotes and how menus are displayed on TV screens."
+      },
+      {
+        "type": "dissent",
+        "text": "No clear dissent voiced, but some uncertainty expressed."
+      },
+      {
+        "type": "decision",
+        "text": "A spongy material option was suggested for the remote control"
+      },
+      {
+        "type": "alternative",
+        "text": "hard plastic"
+      },
+      {
+        "type": "rationale",
+        "text": "It would provide a nice feel"
+      },
+      {
+        "type": "rationale",
+        "text": "It could work"
+      },
+      {
+        "type": "rationale",
+        "text": "It fits with the trendy iPods"
+      },
+      {
+        "type": "condition",
+        "text": "The whole thing about the fruit and vegetables was integrated into the discussion"
+      },
+      {
+        "type": "dissent",
+        "text": "Marketing hates spongy"
+      },
+      {
+        "type": "decision",
+        "text": "No clear decision was made about the design of the device"
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about various design ideas, but no clear decision was reached."
+      },
+      {
+        "type": "condition",
+        "text": "No clear cost or feasibility considerations discussed."
+      },
+      {
+        "type": "dissent",
+        "text": "Different team members had different ideas about the design."
+      },
+      {
+        "type": "decision",
+        "text": "The team decided to explore two prototypes and gather user feedback to determine the best design."
+      },
+      {
+        "type": "rationale",
+        "text": "To determine the best design based on user feedback."
+      },
+      {
+        "type": "condition",
+        "text": "Cost for covering the prototypes will be determined later."
+      },
+      {
+        "type": "condition",
+        "text": "User feedback will be gathered."
+      },
+      {
+        "type": "decision",
+        "text": "The team decided to use batteries as the energy source."
+      },
+      {
+        "type": "alternative",
+        "text": "Kryptonite -- no actual cost found"
+      },
+      {
+        "type": "rationale",
+        "text": "batteries sound good"
+      },
+      {
+        "type": "rationale",
+        "text": "most of the stuff is pretty cheap though bought in bulk"
+      },
+      {
+        "type": "dissent",
+        "text": "The Industrial Designer suggested Kryptonite but no cost was found"
+      },
+      {
+        "type": "decision",
+        "text": "The team discussed the possibility of using a dynamo."
+      },
+      {
+        "type": "alternative",
+        "text": "solar power"
+      },
+      {
+        "type": "condition",
+        "text": "The team did not discuss the cost or feasibility of a dynamo"
+      },
+      {
+        "type": "dissent",
+        "text": "The Project Manager did not express support for a dynamo"
+      },
+      {
+        "type": "alternative",
+        "text": "batteries"
+      },
+      {
+        "type": "alternative",
+        "text": "solar power"
+      },
+      {
+        "type": "alternative",
+        "text": "dynamo"
+      },
+      {
+        "type": "rationale",
+        "text": "Marketing found Kryptonite to be cool"
+      },
+      {
+        "type": "condition",
+        "text": "The team did not discuss the cost or feasibility of Kryptonite"
+      },
+      {
+        "type": "dissent",
+        "text": "The Industrial Designer did not express support for Kryptonite"
+      },
+      {
+        "type": "decision",
+        "text": "The team discussed the case and the user interface design, and will work on them using play-dough."
+      },
+      {
+        "type": "decision",
+        "text": "The team will receive more instructions from their personal coach for product evaluation."
+      }
+    ]
+  },
+  {
+    "pair_id": "QSUM_003",
+    "model_name": "mistral",
+    "matcher": "semantic:all-MiniLM-L6-v2",
+    "threshold": 0.55,
+    "completeness": 0.222,
+    "gt_matched": 2,
+    "gt_total": 9,
+    "soft_owner_approver_matched": "0/0",
+    "evidence_grounding": 0.882,
+    "unsupported_evidence_rate": 0.118,
+    "quotes_grounded": "30/34",
+    "strict_verbatim_rate": 0.882,
+    "quotes_strict_verbatim": "30/34",
+    "unmatched_element_rate": 0.939,
+    "unmatched_extracted_count": 31,
+    "records": 8,
+    "chunks_processed": 6,
+    "chunks_failed": [],
+    "missed_elements": [
+      {
+        "type": "decision",
+        "text": "A screen menu display was adopted and only basic buttons were kept.",
+        "best_score": 0.53,
+        "closest_extracted": "Discussion about simplification of symbols, LCD display, menus, and ease of use for various users, but no decision was reached."
+      },
+      {
+        "type": "alternative",
+        "text": "more physical buttons -- users would tamper with them; the market wants convenient browsing",
+        "best_score": 0.42,
+        "closest_extracted": "Discussion about simplification of symbols, LCD display, menus, and ease of use for various users, but no decision was reached."
+      },
+      {
+        "type": "alternative",
+        "text": "flip-top design -- cost",
+        "best_score": 0.39,
+        "closest_extracted": "The Industrial Designer mentions that similar products on the market are about twenty pounds."
+      },
+      {
+        "type": "alternative",
+        "text": "screen menu with basic buttons",
+        "best_score": 0.44,
+        "closest_extracted": "Discussion about simplification of symbols, LCD display, menus, and ease of use for various users, but no decision was reached."
+      },
+      {
+        "type": "rationale",
+        "text": "The market wants convenient browsing rather than many buttons to tamper with.",
+        "best_score": 0.34,
+        "closest_extracted": "The design was not what Marketing wanted it to be"
+      },
+      {
+        "type": "decision",
+        "text": "Lightweight plastic was temporarily set as the case material.",
+        "best_score": 0.52,
+        "closest_extracted": "plastic"
+      },
+      {
+        "type": "condition",
+        "text": "The material choice was explicitly temporary and open to revision.",
+        "best_score": 0.44,
+        "closest_extracted": "Cost implications of different materials were mentioned."
+      }
+    ],
+    "unmatched_extracted": [
+      {
+        "type": "decision",
+        "text": "The team decided to draw their favorite animals on the whiteboard and summarize their characteristics."
+      },
+      {
+        "type": "rationale",
+        "text": "To get to know each other better, feel more comfortable, and start the meeting."
+      },
+      {
+        "type": "decision",
+        "text": "The design will be changed from a T_ Rex or pelican to an eagle"
+      },
+      {
+        "type": "alternative",
+        "text": "T_ Rex -- changed into a pelican and then into an eagle"
+      },
+      {
+        "type": "alternative",
+        "text": "pelican -- changed into an eagle"
+      },
+      {
+        "type": "alternative",
+        "text": "crocodile"
+      },
+      {
+        "type": "rationale",
+        "text": "The design was not what Marketing wanted it to be"
+      },
+      {
+        "type": "rationale",
+        "text": "The design was not a seagull"
+      },
+      {
+        "type": "condition",
+        "text": "The quality of the work was discussed but no specific caveats were stated"
+      },
+      {
+        "type": "decision",
+        "text": "The selling price of the product will be seventeen Pounds."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about the price and comparison with existing products."
+      },
+      {
+        "type": "condition",
+        "text": "No mention of conditions."
+      },
+      {
+        "type": "dissent",
+        "text": "The Industrial Designer mentions that similar products on the market are about twenty pounds."
+      },
+      {
+        "type": "decision",
+        "text": "The product will be user-friendly to everyone."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about the target group and user-friendliness."
+      },
+      {
+        "type": "condition",
+        "text": "No mention of conditions."
+      },
+      {
+        "type": "decision",
+        "text": "The product will be in the international market like Australia, America, things like that."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about the market and international presence."
+      },
+      {
+        "type": "condition",
+        "text": "No mention of conditions."
+      },
+      {
+        "type": "decision",
+        "text": "The product will integrate everything into one."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about integrating all functionalities into one device."
+      },
+      {
+        "type": "condition",
+        "text": "No mention of conditions."
+      },
+      {
+        "type": "decision",
+        "text": "No decision was made about the design of the remote control"
+      },
+      {
+        "type": "condition",
+        "text": "Discussion about the older generation and their potential difficulties with more complex designs."
+      },
+      {
+        "type": "dissent",
+        "text": "No clear dissent was voiced."
+      },
+      {
+        "type": "decision",
+        "text": "No clear decision was made about the design aesthetic of the remote control."
+      },
+      {
+        "type": "alternative",
+        "text": "fashionable and stylish"
+      },
+      {
+        "type": "alternative",
+        "text": "metal"
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about design aesthetic, but no clear decision was reached."
+      },
+      {
+        "type": "condition",
+        "text": "Cost implications of different materials were mentioned."
+      },
+      {
+        "type": "dissent",
+        "text": "No clear dissent was voiced."
+      }
+    ]
+  },
+  {
+    "pair_id": "QSUM_004",
+    "model_name": "mistral",
+    "matcher": "semantic:all-MiniLM-L6-v2",
+    "threshold": 0.55,
+    "completeness": 0.643,
+    "gt_matched": 9,
+    "gt_total": 14,
+    "soft_owner_approver_matched": "0/1",
+    "evidence_grounding": 0.787,
+    "unsupported_evidence_rate": 0.213,
+    "quotes_grounded": "48/61",
+    "strict_verbatim_rate": 0.77,
+    "quotes_strict_verbatim": "47/61",
+    "unmatched_element_rate": 0.877,
+    "unmatched_extracted_count": 57,
+    "records": 17,
+    "chunks_processed": 10,
+    "chunks_failed": [
+      "QSUM_004_c005"
+    ],
+    "missed_elements": [
+      {
+        "type": "rationale",
+        "text": "Simultaneous use by several people would cause interference.",
+        "best_score": 0.34,
+        "closest_extracted": "The remote control should be technologically innovative."
+      },
+      {
+        "type": "rationale",
+        "text": "It would increase the cost.",
+        "best_score": 0.52,
+        "closest_extracted": "Adding both battery and solar energy battery might slightly increase the price."
+      },
+      {
+        "type": "rationale",
+        "text": "It would add a language and localisation burden.",
+        "best_score": 0.46,
+        "closest_extracted": "Industrial Designer expressed concerns about the complexity of language adaptation and the need for adaptation for each country."
+      },
+      {
+        "type": "rationale",
+        "text": "The microphone and camera hardware questions were unresolved.",
+        "best_score": 0.41,
+        "closest_extracted": "The team decided to explore the possibility of a controller with voice and gesture recognition, while still maintaining the option of using buttons."
+      },
+      {
+        "type": "approver",
+        "text": "Project Manager",
+        "best_score": 0.31,
+        "closest_extracted": "The team will have to model something and show it in the next meeting."
+      },
+      {
+        "type": "condition",
+        "text": "The design would increase the production cost, but this was treated as added value that can be compensated.",
+        "best_score": 0.44,
+        "closest_extracted": "Potential costs and research requirements mentioned."
+      }
+    ],
+    "unmatched_extracted": [
+      {
+        "type": "condition",
+        "text": "Discussion about the concepts is scheduled for later."
+      },
+      {
+        "type": "decision",
+        "text": "The group discussed the potential advantages and disadvantages of a voice and gesture interface for the remote control."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about convenience, reliability, and potential issues."
+      },
+      {
+        "type": "condition",
+        "text": "Potential costs and research requirements mentioned."
+      },
+      {
+        "type": "dissent",
+        "text": "Marketing expressed concerns about the reliability of speech and gesture recognition."
+      },
+      {
+        "type": "decision",
+        "text": "No decision was made about the language adaptation for the remote control"
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about the complexity of language adaptation and potential costs, but no decision was reached."
+      },
+      {
+        "type": "condition",
+        "text": "The technology for the adaptation mechanism has already been developed."
+      },
+      {
+        "type": "dissent",
+        "text": "Industrial Designer expressed concerns about the complexity of language adaptation and the need for adaptation for each country."
+      },
+      {
+        "type": "alternative",
+        "text": "controller with only buttons"
+      },
+      {
+        "type": "rationale",
+        "text": "The team wants to give flexibility to the user."
+      },
+      {
+        "type": "condition",
+        "text": "The team is confident in technology, but acknowledges potential issues with language adaptation and reliability."
+      },
+      {
+        "type": "dissent",
+        "text": "Marketing is concerned about the potential risks."
+      },
+      {
+        "type": "decision",
+        "text": "The team decided to create a remote controller that is easy to use, sophisticated, and fancy, but without any breakthrough features."
+      },
+      {
+        "type": "rationale",
+        "text": "The feature of voice recognition in a mobile is not used often, but it distinguishes the product from others."
+      },
+      {
+        "type": "rationale",
+        "text": "The team wants a controller that works all the time, every day, for everyone."
+      },
+      {
+        "type": "rationale",
+        "text": "A simple, basic, and reliable remote control is already a lot."
+      },
+      {
+        "type": "condition",
+        "text": "The controller should not have any breakthrough features."
+      },
+      {
+        "type": "decision",
+        "text": "It was discussed to use a combination of battery and solar energy for the remote control's power source."
+      },
+      {
+        "type": "alternative",
+        "text": "battery"
+      },
+      {
+        "type": "rationale",
+        "text": "It could be an added value to the remote control."
+      },
+      {
+        "type": "rationale",
+        "text": "It could attract ecological consumers."
+      },
+      {
+        "type": "condition",
+        "text": "Using wooden material could be more expensive but might give a high-class feel."
+      },
+      {
+        "type": "decision",
+        "text": "It was discussed to use wooden material for the remote control."
+      },
+      {
+        "type": "rationale",
+        "text": "Wooden material could give a high-class feel."
+      },
+      {
+        "type": "rationale",
+        "text": "Using wooden material in electronics might be a fashion trend."
+      },
+      {
+        "type": "condition",
+        "text": "Wooden material might be more expensive."
+      },
+      {
+        "type": "condition",
+        "text": "Only part of the remote control could be wooden."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control should have a fancy look and feel."
+      },
+      {
+        "type": "rationale",
+        "text": "User research shows that users prioritize a fancy look and feel."
+      },
+      {
+        "type": "condition",
+        "text": "Fashion trends this year are inspired by fruits and vegetables."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control should be easy to use."
+      },
+      {
+        "type": "rationale",
+        "text": "Ease of use is important for the remote control."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control should be technologically innovative."
+      },
+      {
+        "type": "rationale",
+        "text": "Users still want the remote control to be technologically innovative."
+      },
+      {
+        "type": "decision",
+        "text": "The team discussed using wood for the remote's design."
+      },
+      {
+        "type": "rationale",
+        "text": "The feeling is natural."
+      },
+      {
+        "type": "rationale",
+        "text": "It can be correlated to energy."
+      },
+      {
+        "type": "condition",
+        "text": "Depends on the design they want."
+      },
+      {
+        "type": "dissent",
+        "text": "Marketing suggested a combination of wood and rubber for the buttons."
+      },
+      {
+        "type": "decision",
+        "text": "The team discussed using solar energy for the remote."
+      },
+      {
+        "type": "rationale",
+        "text": "It might attract pro-ecology consumers."
+      },
+      {
+        "type": "condition",
+        "text": "Cheap imprint so you can have something working well."
+      },
+      {
+        "type": "decision",
+        "text": "The team discussed the possibility of using voice and gesture recognition for the user interface."
+      },
+      {
+        "type": "rationale",
+        "text": "Because with the voice and gesture recognition there are still some disadvantages with this."
+      },
+      {
+        "type": "decision",
+        "text": "The team discussed conducting marketing studies to gauge interest in voice control."
+      },
+      {
+        "type": "rationale",
+        "text": "To see if it's an interesting concept to have voice control."
+      },
+      {
+        "type": "decision",
+        "text": "The team decided to work on the look and feel design, to have an easy to use, powerful and fancy remote control with some added value such as simple vocal commands recognition."
+      },
+      {
+        "type": "rationale",
+        "text": "The team believes adding vocal commands will make the remote control easier to use."
+      },
+      {
+        "type": "condition",
+        "text": "The team will have to work on the look and feel design, evaluate the product, create a prototype, and follow specific instructions from their personal coach."
+      },
+      {
+        "type": "owner",
+        "text": "['Baba', 'David Jordan']"
+      },
+      {
+        "type": "decision",
+        "text": "The team decided to model something for the prototype."
+      },
+      {
+        "type": "rationale",
+        "text": "The team needs to create a prototype for the remote control."
+      },
+      {
+        "type": "condition",
+        "text": "The team will have to model something and show it in the next meeting."
+      },
+      {
+        "type": "owner",
+        "text": "['Baba', 'David Jordan']"
+      },
+      {
+        "type": "decision",
+        "text": "The team decided to consider the fruits and vegetables trends."
+      },
+      {
+        "type": "rationale",
+        "text": "Marketing mentioned the importance of considering the fruits and vegetables trends."
+      }
+    ]
+  },
+  {
+    "pair_id": "QSUM_005",
+    "model_name": "mistral",
+    "matcher": "semantic:all-MiniLM-L6-v2",
+    "threshold": 0.55,
+    "completeness": 0.5,
+    "gt_matched": 3,
+    "gt_total": 6,
+    "soft_owner_approver_matched": "0/1",
+    "evidence_grounding": 0.821,
+    "unsupported_evidence_rate": 0.179,
+    "quotes_grounded": "101/123",
+    "strict_verbatim_rate": 0.797,
+    "quotes_strict_verbatim": "98/123",
+    "unmatched_element_rate": 0.992,
+    "unmatched_extracted_count": 118,
+    "records": 26,
+    "chunks_processed": 14,
+    "chunks_failed": [],
+    "missed_elements": [
+      {
+        "type": "alternative",
+        "text": "regular chip -- would not support speech recognition",
+        "best_score": 0.5,
+        "closest_extracted": "advanced chip -- not chosen"
+      },
+      {
+        "type": "alternative",
+        "text": "LCD display -- would have forced the most expensive chip",
+        "best_score": 0.45,
+        "closest_extracted": "Industrial Designer questioned if it was a separate chip."
+      },
+      {
+        "type": "rationale",
+        "text": "Marketing pushed for positioning the product on technological innovation.",
+        "best_score": 0.53,
+        "closest_extracted": "To be original and technologically innovative."
+      },
+      {
+        "type": "approver",
+        "text": "Project Manager",
+        "best_score": 0.33,
+        "closest_extracted": "The Project Manager and Marketing did not like the color buttons idea."
+      }
+    ],
+    "unmatched_extracted": [
+      {
+        "type": "decision",
+        "text": "The team decided not to use LCD or speech recognition in the remote control."
+      },
+      {
+        "type": "rationale",
+        "text": "The most important aspect for remote controls is a fancy look-and-feel, instead of the current functional look and feel."
+      },
+      {
+        "type": "condition",
+        "text": "This is a point of discussion."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control should have a spongy feel."
+      },
+      {
+        "type": "rationale",
+        "text": "It has to be flexible because you drop your remote control very often on the ground."
+      },
+      {
+        "type": "condition",
+        "text": "The cost of implementing the spongy feel is unknown."
+      },
+      {
+        "type": "dissent",
+        "text": "There was no clear dissent stated."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control should have changeable fronts."
+      },
+      {
+        "type": "rationale",
+        "text": "A fancy look is the most important thing for a remote control."
+      },
+      {
+        "type": "condition",
+        "text": "The cost of implementing changeable fronts is unknown."
+      },
+      {
+        "type": "dissent",
+        "text": "There was no clear dissent stated."
+      },
+      {
+        "type": "decision",
+        "text": "The technology department recommended using speech in the remote control."
+      },
+      {
+        "type": "rationale",
+        "text": "The technology department has done research about it and even more possibilities with speech."
+      },
+      {
+        "type": "condition",
+        "text": "The cost and specifics of implementing speech in the remote control are unknown."
+      },
+      {
+        "type": "dissent",
+        "text": "There was no clear dissent stated."
+      },
+      {
+        "type": "decision",
+        "text": "The design for the remote control will be modern and basic, with a focus on a few large buttons and a focus on the two most important parts."
+      },
+      {
+        "type": "rationale",
+        "text": "The design should be modern and basic."
+      },
+      {
+        "type": "rationale",
+        "text": "The focus should be on a few large buttons and the two most important parts."
+      },
+      {
+        "type": "condition",
+        "text": "The design should be more modern but still basic."
+      },
+      {
+        "type": "condition",
+        "text": "The remote control should be a bit bigger and a bit smaller."
+      },
+      {
+        "type": "dissent",
+        "text": "The Project Manager and Marketing did not like the color buttons idea."
+      },
+      {
+        "type": "decision",
+        "text": "The design of the remote control should have the volume and channel buttons on the top, and the other buttons like text T_V_ on the bottom."
+      },
+      {
+        "type": "rationale",
+        "text": "It's easier to control."
+      },
+      {
+        "type": "rationale",
+        "text": "It's more modern."
+      },
+      {
+        "type": "rationale",
+        "text": "It's easier to see the buttons."
+      },
+      {
+        "type": "condition",
+        "text": "The focus should be on the easy-to-use parts."
+      },
+      {
+        "type": "condition",
+        "text": "The position can be different."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control should have a transparent case."
+      },
+      {
+        "type": "alternative",
+        "text": "opaque case"
+      },
+      {
+        "type": "rationale",
+        "text": "The idea was to make it similar to a mobile phone with interchangeable fronts."
+      },
+      {
+        "type": "condition",
+        "text": "The case should be made from a soft material, but this is not yet decided."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control should have a case made from a soft material."
+      },
+      {
+        "type": "alternative",
+        "text": "hard case"
+      },
+      {
+        "type": "rationale",
+        "text": "It was suggested that the case should be made from a soft material, but no decision was made."
+      },
+      {
+        "type": "condition",
+        "text": "The case should be transparent, but this is not yet decided."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control should have a case with flashy colors."
+      },
+      {
+        "type": "alternative",
+        "text": "subdued colors"
+      },
+      {
+        "type": "rationale",
+        "text": "The Industrial Designer suggested using flashy colors to attract a young public."
+      },
+      {
+        "type": "condition",
+        "text": "The colors should be black, yellow, and possibly red and blue for different fronts."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control should have a hard plastic case with soft buttons."
+      },
+      {
+        "type": "alternative",
+        "text": "soft plastic case"
+      },
+      {
+        "type": "alternative",
+        "text": "transparent case"
+      },
+      {
+        "type": "alternative",
+        "text": "round fluff or soft material"
+      },
+      {
+        "type": "alternative",
+        "text": "back light LEDs"
+      },
+      {
+        "type": "alternative",
+        "text": "green back lights"
+      },
+      {
+        "type": "alternative",
+        "text": "blue or red back lights"
+      },
+      {
+        "type": "rationale",
+        "text": "The team agreed on a design that resembles modern remote controls, with buttons integrated into the one level design."
+      },
+      {
+        "type": "condition",
+        "text": "The team agreed to keep the case on one level and make it transparent to ensure the back light works."
+      },
+      {
+        "type": "dissent",
+        "text": "The Industrial Designer suggested making the case transparent, but the Project Manager and User Interface disagreed."
+      },
+      {
+        "type": "decision",
+        "text": "The energy source for the remote control will be rechargeable batteries."
+      },
+      {
+        "type": "alternative",
+        "text": "kinetic energy source -- not suitable for use on a table or couch"
+      },
+      {
+        "type": "alternative",
+        "text": "solar cells -- mostly used indoors, not suitable for dark rooms"
+      },
+      {
+        "type": "rationale",
+        "text": "Using rechargeable batteries is cheaper."
+      },
+      {
+        "type": "condition",
+        "text": "The remote control will be used on a table or couch."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control will have a hard plastic case."
+      },
+      {
+        "type": "alternative",
+        "text": "rubber case -- not decided yet"
+      },
+      {
+        "type": "rationale",
+        "text": "The trend is spongy and fresh. A soft remote control is not preferred."
+      },
+      {
+        "type": "condition",
+        "text": "No specific condition stated."
+      },
+      {
+        "type": "dissent",
+        "text": "Marketing and User Interface do not like the idea of a soft remote control."
+      },
+      {
+        "type": "decision",
+        "text": "The remote control will have a plastic case."
+      },
+      {
+        "type": "alternative",
+        "text": "rubber case -- not decided yet"
+      },
+      {
+        "type": "rationale",
+        "text": "The case is just a plastic one."
+      },
+      {
+        "type": "rationale",
+        "text": "The chip is the regular one."
+      },
+      {
+        "type": "condition",
+        "text": "No specific condition stated."
+      },
+      {
+        "type": "dissent",
+        "text": "No dissent stated."
+      },
+      {
+        "type": "decision",
+        "text": "The chip used in the remote control will be the regular one."
+      },
+      {
+        "type": "rationale",
+        "text": "The chip used in the remote control will be the regular one."
+      },
+      {
+        "type": "rationale",
+        "text": "The chip-on-print is a normal one."
+      },
+      {
+        "type": "condition",
+        "text": "No specific condition stated."
+      },
+      {
+        "type": "dissent",
+        "text": "No dissent stated."
+      },
+      {
+        "type": "decision",
+        "text": "The energy source for the remote control will be a normal battery."
+      },
+      {
+        "type": "rationale",
+        "text": "We already know that."
+      },
+      {
+        "type": "rationale",
+        "text": "We have batteries."
+      },
+      {
+        "type": "condition",
+        "text": "No specific condition stated."
+      },
+      {
+        "type": "dissent",
+        "text": "No dissent stated."
+      },
+      {
+        "type": "decision",
+        "text": "The design for the remote control includes a plastic case, a scroll wheel, and a flashy light."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussed design elements but no explicit reasoning given."
+      },
+      {
+        "type": "condition",
+        "text": "No caveats, unresolved costs, risks, or dependencies stated."
+      },
+      {
+        "type": "dissent",
+        "text": "No disagreements or objections voiced."
+      },
+      {
+        "type": "decision",
+        "text": "The volume control wheel will be on the side of the remote, not on the top."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussed placement of the volume control wheel but no explicit reasoning given."
+      },
+      {
+        "type": "condition",
+        "text": "No caveats, unresolved costs, risks, or dependencies stated."
+      },
+      {
+        "type": "dissent",
+        "text": "No disagreements or objections voiced."
+      },
+      {
+        "type": "decision",
+        "text": "The channel switch will be in the middle of the remote."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussed placement of the channel switch but no explicit reasoning given."
+      },
+      {
+        "type": "condition",
+        "text": "No caveats, unresolved costs, risks, or dependencies stated."
+      },
+      {
+        "type": "dissent",
+        "text": "No disagreements or objections voiced."
+      },
+      {
+        "type": "decision",
+        "text": "The numbers will be at the bottom of the remote, and the switch channel in the middle."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussed layout of the remote but no explicit reasoning given."
+      },
+      {
+        "type": "condition",
+        "text": "No caveats, unresolved costs, risks, or dependencies stated."
+      },
+      {
+        "type": "dissent",
+        "text": "No disagreements or objections voiced."
+      },
+      {
+        "type": "decision",
+        "text": "The design for the remote control's layout is still under discussion."
+      },
+      {
+        "type": "rationale",
+        "text": "Debate about ease of use, learning curve, and association with volume and channel controls."
+      },
+      {
+        "type": "condition",
+        "text": "No clear decision reached."
+      },
+      {
+        "type": "dissent",
+        "text": "Differing opinions about the placement of the up and down channel buttons."
+      },
+      {
+        "type": "decision",
+        "text": "The shape of the remote control and the docking station is still undecided."
+      },
+      {
+        "type": "rationale",
+        "text": "Discussion about different shapes, but no decision was made."
+      },
+      {
+        "type": "condition",
+        "text": "Need to consider simplicity, handling, and differentiating from old remote controls."
+      },
+      {
+        "type": "dissent",
+        "text": "Industrial Designer expressed some reservations about certain shapes."
+      },
+      {
+        "type": "decision",
+        "text": "The design of the remote control will have a similar look to the iPod, with light or light colors, a scroll button inside, and a scroll wheel that may be yellow."
+      },
+      {
+        "type": "rationale",
+        "text": "The design must be fancy and original, and not look like the iPod itself."
+      },
+      {
+        "type": "condition",
+        "text": "The scroll wheel may not be very big to prevent it from sticking out too much."
+      },
+      {
+        "type": "decision",
+        "text": "The team decided to include a speech recognition feature in the remote."
+      },
+      {
+        "type": "rationale",
+        "text": "To be original and technologically innovative."
+      },
+      {
+        "type": "condition",
+        "text": "No information about the cost of the speech recognition feature."
+      },
+      {
+        "type": "dissent",
+        "text": "Marketing expressed doubts about the speech recognition feature."
+      },
+      {
+        "type": "decision",
+        "text": "The team decided to use an advanced chip."
+      },
+      {
+        "type": "rationale",
+        "text": "To include a speech recognition feature."
+      },
+      {
+        "type": "condition",
+        "text": "No information about the cost of the advanced chip."
+      },
+      {
+        "type": "dissent",
+        "text": "Industrial Designer questioned if it was a separate chip."
+      },
+      {
+        "type": "decision",
+        "text": "The team decided to include the advanced feature in the product."
+      },
+      {
+        "type": "rationale",
+        "text": "It was considered a good feature."
+      },
+      {
+        "type": "condition",
+        "text": "No specific conditions or caveats were mentioned."
+      },
+      {
+        "type": "dissent",
+        "text": "The Industrial Designer expressed uncertainty about the feature."
+      },
+      {
+        "type": "decision",
+        "text": "The team decided not to put the difficult feature in the product."
+      },
+      {
+        "type": "rationale",
+        "text": "It was considered too difficult."
+      },
+      {
+        "type": "condition",
+        "text": "No specific conditions or caveats were mentioned."
+      },
+      {
+        "type": "dissent",
+        "text": "The Industrial Designer expressed disagreement with the decision."
+      }
+    ]
+  }
+]
