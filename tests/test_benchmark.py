@@ -260,3 +260,27 @@ def test_report_warns_when_high_jaccard_is_base_rate_inflation():
 
 def test_report_handles_no_double_annotation():
     assert report([make_pair()])["double_annotated_pairs"] == 0
+
+
+# --- generation supervisor ----------------------------------------------------
+
+def test_supervisor_defaults_to_the_whole_plan(tmp_path, monkeypatch):
+    """The supervisor's job is 'until the plan is on disk' -- its default target
+    must track pair_plan(), not a hardcoded number."""
+    import importlib.util
+    from pathlib import Path as _P
+
+    spec = importlib.util.spec_from_file_location(
+        "gensup", _P(__file__).resolve().parents[1] / "scripts" / "generation_supervisor.py"
+    )
+    sup = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(sup)
+
+    monkeypatch.setattr(sup, "PAIRS_DIR", tmp_path)
+    assert sup.generated_count() == 0
+    (tmp_path / "SYN_0001_001.json").write_text("{}", encoding="utf-8")
+    (tmp_path / "QMS_PRD_TR_000.json").write_text("{}", encoding="utf-8")
+    assert sup.generated_count() == 1, "counts SYN_* only, not the QMSum pairs"
+
+    from edia.benchmark.topics import pair_plan
+    assert len(pair_plan()) == 2040

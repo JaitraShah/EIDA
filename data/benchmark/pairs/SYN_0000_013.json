@@ -1,0 +1,158 @@
+{
+  "pair_id": "SYN_0000_013",
+  "source": "synthetic",
+  "topic": "cloud_platform__vendor_selection",
+  "title": "Cloud platform selection",
+  "transcript": "Platform Engineering Lead: Alright everyone, let's dive into the cloud provider decision. I've gathered some options based on our requirements.\n\nSRE: Before we start, I'd like to mention that Azure's integration with Microsoft Office Suite could streamline collaboration.\n\nPlatform Engineering Lead: Noted, but let's focus on the cloud providers for now. We have Google Cloud Platform, Microsoft Azure, and Alibaba Cloud.\n\nFinance Partner: I've run the numbers, and AWS offers the best price-to-feature fit for our workload.\n\nCTO: That's a good start, but I'm concerned about potential vendor lock-in with AWS.\n\nPlatform Engineering Lead: I understand your concerns, but AWS Migration Hub simplifies the transition, and there's minimal switching cost.\n\nSRE: What about long-term costs if we exceed data egress limits?\n\nFinance Partner: We've factored in a 50% increase in costs over 3 years if data egress exceeds the free tier limits.\n\nCTO: That's a risk we'll have to manage. I'd also like to review ongoing compliance requirements with AWS professional services team.\n\nSRE: Understood. What about HIPAA compliance? Azure offers better support.\n\nFinance Partner: While Azure does offer more HIPAA compliance features, the cost difference is significant and we decided to prioritize cost-effectiveness.\n\nPlatform Engineering Lead: And Alibaba Cloud? They're not even in the picture because of their regional focus and limited support in the US.\n\nCTO: Agreed. Let's move forward with AWS.\n\nSRE: Alright, I'll start setting up the transition process with AWS Migration Hub.\n\nPlatform Engineering Lead: Great. I'll coordinate with the hospital group to ensure a smooth transition.\n\nFinance Partner: I'll update the financial projections and present them to the CEO for approval.\n\nCTO: Once the CEO signs off, I'll oversee the project and ensure all compliance requirements are met.\n\n*Aside*\n\nCTO: Speaking of which, have you heard about the new coffee place down the street?\n\nFinance Partner: Oh, really? I've been meaning to try it. Let's grab a cup there next time we meet.\n\nCTO: Sounds like a plan. Back to business.\n\nPlatform Engineering Lead: Let's get started then. AWS it is.",
+  "document": "Title: Cloud Provider Decision - AWS Selection\n\nThe hospital group has chosen Amazon Web Services (AWS) as the new cloud provider, acknowledging its price-to-feature fit as the most suitable for our workload. This decision was reached after careful consideration, taking into account the higher long-term costs associated with Google Cloud Platform. Alibaba Cloud was not considered due to its regional focus and limited support in the US.\n\nThe CTO will now review ongoing compliance requirements with AWS professional services team and ensure compliance with HIPAA regulations. The transition to AWS will be facilitated through AWS Migration Hub, minimizing switching costs. The financial analysis assumes potential increases in costs over 3 years if data egress exceeds the free tier limits.\n\nThe record does not reflect any discussions regarding other service providers, their support quality, integration capabilities, or concerns about vendor lock-in.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0000_013_d1",
+      "source_id": "SYN_0000_013",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Hospital group selects AWS as new cloud provider",
+      "topic": "Cloud platform selection",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Google Cloud Platform",
+          "rejected": true,
+          "reason": "Higher long-term costs compared to AWS"
+        },
+        {
+          "option": "Microsoft Azure",
+          "rejected": true,
+          "reason": "Inadequate support for HIPAA compliance"
+        },
+        {
+          "option": "Alibaba Cloud",
+          "rejected": false,
+          "reason": "Not considered due to regional focus and limited support in the US"
+        }
+      ],
+      "rationale": [
+        "AWS offers the best price-to-feature fit for our workload",
+        "Strong history of reliability and support quality with AWS",
+        "Minimal switching cost as AWS Migration Hub simplifies the transition"
+      ],
+      "conditions": [
+        "Financial analysis assumes a 50% increase in costs over 3 years if data egress exceeds the free tier limits",
+        "CTO to review ongoing compliance requirements with AWS professional services team"
+      ],
+      "dissent": [
+        "SRE argues that Azure's integration with Microsoft Office Suite could streamline collaboration",
+        "Platform engineering lead expresses concerns about potential vendor lock-in with AWS"
+      ],
+      "owner": "CTO",
+      "approver": "CEO",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0000_013_e01",
+      "element_type": "decision",
+      "text": "Hospital group selects AWS as new cloud provider",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0000_013_d1"
+    },
+    {
+      "element_id": "SYN_0000_013_e02",
+      "element_type": "alternative",
+      "text": "Google Cloud Platform -- Higher long-term costs compared to AWS",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0000_013_d1"
+    },
+    {
+      "element_id": "SYN_0000_013_e03",
+      "element_type": "alternative",
+      "text": "Microsoft Azure -- Inadequate support for HIPAA compliance",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_013_d1"
+    },
+    {
+      "element_id": "SYN_0000_013_e04",
+      "element_type": "alternative",
+      "text": "Alibaba Cloud -- Not considered due to regional focus and limited support in the US",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0000_013_d1"
+    },
+    {
+      "element_id": "SYN_0000_013_e05",
+      "element_type": "rationale",
+      "text": "AWS offers the best price-to-feature fit for our workload",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0000_013_d1"
+    },
+    {
+      "element_id": "SYN_0000_013_e06",
+      "element_type": "rationale",
+      "text": "Strong history of reliability and support quality with AWS",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_013_d1"
+    },
+    {
+      "element_id": "SYN_0000_013_e07",
+      "element_type": "rationale",
+      "text": "Minimal switching cost as AWS Migration Hub simplifies the transition",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_013_d1"
+    },
+    {
+      "element_id": "SYN_0000_013_e08",
+      "element_type": "condition",
+      "text": "Financial analysis assumes a 50% increase in costs over 3 years if data egress exceeds the free tier limits",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0000_013_d1"
+    },
+    {
+      "element_id": "SYN_0000_013_e09",
+      "element_type": "condition",
+      "text": "CTO to review ongoing compliance requirements with AWS professional services team",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0000_013_d1"
+    },
+    {
+      "element_id": "SYN_0000_013_e10",
+      "element_type": "dissent",
+      "text": "SRE argues that Azure's integration with Microsoft Office Suite could streamline collaboration",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_013_d1"
+    },
+    {
+      "element_id": "SYN_0000_013_e11",
+      "element_type": "dissent",
+      "text": "Platform engineering lead expresses concerns about potential vendor lock-in with AWS",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_013_d1"
+    },
+    {
+      "element_id": "SYN_0000_013_e12",
+      "element_type": "owner",
+      "text": "CTO",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_013_d1"
+    },
+    {
+      "element_id": "SYN_0000_013_e13",
+      "element_type": "approver",
+      "text": "CEO",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0000_013_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.73,
+    "seed": 1013,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 1 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0000_013_e08\",\n    \"text\": \"Financial analysis assumes a 50% increase in costs over 3 years if data egress exceeds the free tier limits\",\n    \"score\": 0.88,\n    \"document_sentence\": \"The financial analysis assumes potential increases in costs over 3 years if data egress exceeds the free tier limits.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}

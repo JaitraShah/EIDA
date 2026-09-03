@@ -1,0 +1,158 @@
+{
+  "pair_id": "SYN_0000_014",
+  "source": "synthetic",
+  "topic": "cloud_platform__vendor_selection",
+  "title": "Cloud platform selection",
+  "transcript": "Platform Engineering Lead: Alright, let's dive into our cloud platform provider discussion. We've been reviewing Azure, Google Cloud Platform, and IBM Cloud, but today, I'd like to focus on AWS.\n\nSRE: Hold on a sec, I've run some numbers and it seems that AWS offers a 20% cost reduction compared to our current setup. But I've got concerns about long-term costs if AWS support quality proves insufficient.\n\nCTO: That's a valid concern, SRE. Let's address that as we go along. Now, AWS also offers better compatibility with our existing systems, correct?\n\nPlatform Engineering Lead: Yes, that's correct. And AWS has a wider range of features for our public transport application, which is a significant advantage.\n\nFinance Partner: I've been looking at the numbers too, and while AWS seems cost-effective, I can't help but wonder about the long-term cost-effectiveness compared to Azure.\n\nPlatform Engineering Lead: I understand your concern, Finance Partner. However, let's not forget that we're looking at a 20% cost reduction with AWS, which could translate to substantial savings over time.\n\nFinance Partner: Agreed, but we should also consider the potential for additional costs due to unexpected issues or support needs.\n\nSRE: I'd like to propose a pilot project to test AWS support quality before we make a final decision.\n\nCTO: That sounds reasonable, SRE. I'd like to add that we should also conduct reference checks to verify AWS support quality.\n\nPlatform Engineering Lead: I second that. Let's remember that our decision is provisional at this point. The final decision will be subject to the outcome of the AWS support review.\n\nFinance Partner: Alright, I'm on board with that. I just want to make sure we're making the most cost-effective choice in the long run.\n\nSRE: I understand your concern, Finance Partner. But with AWS's features and cost-efficiency, I believe we're on the right track.\n\n(Off-topic exchange)\n\nAssistant: CTO, I just received a call about the company picnic next month. Do we have a theme yet?\n\nCTO: Not yet, Assistant. Let's focus on this meeting first.\n\nAssistant: Understood, CTO. I'll follow up with HR about it later.\n\n(Back to the meeting)\n\nCTO: Alright, SRE, you'll own this one. Once we've completed the pilot project and reference checks, we'll revisit this decision. If all goes well, I'll sign off on it.\n\nSRE: Understood, CTO. I'll get started right away.\n\nCTO: Great, let's get moving then. Meeting adjourned.",
+  "document": "Title: AWS Adoption Proposal Decision\n\nDecision: A provisional selection of Amazon Web Services (AWS) as our new cloud platform provider, driven by cost-effectiveness and feature alignment. The choice is contingent on a comprehensive evaluation of AWS support quality. AWS is anticipated to offer a 20% cost reduction compared to our current setup. The final decision will be contingent upon the outcome of the AWS support review.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0000_014_d1",
+      "source_id": "SYN_0000_014",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Provisional decision to adopt AWS as our cloud platform provider due to cost-efficiency and feature fit, with a caveat for thorough review of support quality.",
+      "topic": "Cloud platform selection",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "Azure",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "Google Cloud Platform",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "IBM Cloud",
+          "rejected": true,
+          "reason": "High switching cost and less competitive pricing for our specific needs"
+        }
+      ],
+      "rationale": [
+        "AWS provides a 20% cost reduction compared to our current setup.",
+        "AWS offers better compatibility with our existing systems.",
+        "AWS has a wider range of features for our public transport application."
+      ],
+      "conditions": [
+        "We need to verify AWS support quality through reference checks and a pilot project.",
+        "The final decision will be subject to the outcome of the AWS support review."
+      ],
+      "dissent": [
+        "The SRE expressed concerns about potential long-term costs if AWS support quality proves insufficient.",
+        "The finance partner raised questions about the long-term cost-effectiveness of AWS compared to Azure."
+      ],
+      "owner": "SRE",
+      "approver": "CTO",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0000_014_e01",
+      "element_type": "decision",
+      "text": "Provisional decision to adopt AWS as our cloud platform provider due to cost-efficiency and feature fit, with a caveat for thorough review of support quality.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0000_014_d1"
+    },
+    {
+      "element_id": "SYN_0000_014_e02",
+      "element_type": "alternative",
+      "text": "Azure",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_014_d1"
+    },
+    {
+      "element_id": "SYN_0000_014_e03",
+      "element_type": "alternative",
+      "text": "Google Cloud Platform",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_014_d1"
+    },
+    {
+      "element_id": "SYN_0000_014_e04",
+      "element_type": "alternative",
+      "text": "IBM Cloud -- High switching cost and less competitive pricing for our specific needs",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_014_d1"
+    },
+    {
+      "element_id": "SYN_0000_014_e05",
+      "element_type": "rationale",
+      "text": "AWS provides a 20% cost reduction compared to our current setup.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0000_014_d1"
+    },
+    {
+      "element_id": "SYN_0000_014_e06",
+      "element_type": "rationale",
+      "text": "AWS offers better compatibility with our existing systems.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_014_d1"
+    },
+    {
+      "element_id": "SYN_0000_014_e07",
+      "element_type": "rationale",
+      "text": "AWS has a wider range of features for our public transport application.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_014_d1"
+    },
+    {
+      "element_id": "SYN_0000_014_e08",
+      "element_type": "condition",
+      "text": "We need to verify AWS support quality through reference checks and a pilot project.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_014_d1"
+    },
+    {
+      "element_id": "SYN_0000_014_e09",
+      "element_type": "condition",
+      "text": "The final decision will be subject to the outcome of the AWS support review.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0000_014_d1"
+    },
+    {
+      "element_id": "SYN_0000_014_e10",
+      "element_type": "dissent",
+      "text": "The SRE expressed concerns about potential long-term costs if AWS support quality proves insufficient.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_014_d1"
+    },
+    {
+      "element_id": "SYN_0000_014_e11",
+      "element_type": "dissent",
+      "text": "The finance partner raised questions about the long-term cost-effectiveness of AWS compared to Azure.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_014_d1"
+    },
+    {
+      "element_id": "SYN_0000_014_e12",
+      "element_type": "owner",
+      "text": "SRE",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_014_d1"
+    },
+    {
+      "element_id": "SYN_0000_014_e13",
+      "element_type": "approver",
+      "text": "CTO",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0000_014_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.76,
+    "seed": 1014,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 1 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0000_014_e09\",\n    \"text\": \"The final decision will be subject to the outcome of the AWS support review.\",\n    \"score\": 0.8,\n    \"document_sentence\": \"The final decision will be contingent upon the outcome of the AWS support review.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}
