@@ -1,0 +1,150 @@
+{
+  "pair_id": "SYN_0066_001",
+  "source": "synthetic",
+  "topic": "data_governance__tech_choice",
+  "title": "Data retention & governance framework choice",
+  "transcript": "Data Protection Officer: Good morning, everyone. Let's dive into our discussion on data governance and retention solutions.\n\nData Engineer: Alright, before we start, I wanted to mention that I've been noticing performance issues during heavy data ingestion periods, especially with Atlas.\n\nAnalytics Lead: That's an important concern, but let's not forget why we're here. We need a solution that addresses our data retention needs and offers a unified view of data lineage and access control.\n\nLegal Counsel: Exactly, and it needs to be compliant as well. We can't afford potential security risks.\n\nData Protection Officer: Right, so let's revisit the options we had on the table. We looked at Apache Dubbo for service governance, but it lacks data retention capabilities and long-term maintenance support.\n\nData Engineer: And it's not the best choice when it comes to managing large volumes of real-time data.\n\nAnalytics Lead: Correct, and we also considered Splunk Enterprise for logs and data governance, but it has a high performance overhead and cost for our data volume and retention needs.\n\nLegal Counsel: Agreed. We also rejected Hive for data warehousing and governance due to its outdated nature and lack of efficiency in managing large volumes of real-time data.\n\nData Protection Officer: So, after careful consideration, it seems we're left with one option: Apache Atlas.\n\nData Engineer: If we're going to move forward with Atlas, I want to ensure we address my concerns about its impact on overall system performance.\n\nAnalytics Lead: I agree, but I think we can mitigate that by optimizing our system and working closely with Atlas during the integration phase.\n\nLegal Counsel: And remember, our legal team will work alongside IT to ensure compliance throughout the implementation process.\n\nData Protection Officer: I propose we adopt Apache Atlas for data governance and retention. Who has any objections?\n\n(Off-topic exchange, short and light-hearted)\n\nAnalytics Lead: Speaking of adoption, have any of you tried that new vegan sushi place?\n\nData Engineer: Oh, I love their Avocado Rolls! But their tempura is not the same as traditional tempura.\n\nLegal Counsel: (Laughs) Yes, I've heard it's an acquired taste. But back to the matter at hand, I don't see any objections to adopting Apache Atlas.\n\nData Protection Officer: Alright then. I'll sign off on the decision. The data engineer will own the implementation of Apache Atlas. Let's get started.",
+  "document": "Title: Data Governance and Protection Decision\n\nThe team has decided to adopt Apache Atlas for data governance and retention, leveraging its unified view of data lineage and access control. This choice is predicated on the team's existing knowledge of the platform, reducing onboarding costs and time. Although Splunk Enterprise was considered for logs and data governance, its high performance overhead and cost for our data volume and retention needs made Apache Atlas a more attractive option.\n\nIt was acknowledged that during the initial setup phase, there might be performance degradation due to system optimization requirements. Additionally, the Data Protection Officer was identified as a key stakeholder in this initiative. The implementation will necessitate significant effort to integrate Atlas with existing data sources and APIs.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0066_001_d1",
+      "source_id": "SYN_0066_001",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Adopt Apache Atlas for data governance and retention",
+      "topic": "Data retention & governance framework choice",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Apache Dubbo for service governance",
+          "rejected": true,
+          "reason": "lacks data retention capabilities and long-term maintenance support"
+        },
+        {
+          "option": "Splunk Enterprise for logs and data governance",
+          "rejected": true,
+          "reason": "high performance overhead and cost for our data volume and retention needs"
+        },
+        {
+          "option": "Hive for data warehousing and governance",
+          "rejected": false,
+          "reason": "outdated and not as efficient in managing large volumes of real-time data as Apache Atlas"
+        }
+      ],
+      "rationale": [
+        "Apache Atlas offers a unified view of data lineage and access control, improving compliance and reducing potential security risks",
+        "The team already has experience with Apache Atlas, reducing onboarding costs and time",
+        "Apache Atlas is more scalable than Hive, making it a better choice for handling the company's growing data needs"
+      ],
+      "conditions": [
+        "The implementation will require significant effort to integrate Atlas with existing data sources and APIs",
+        "There might be performance degradation during the initial setup phase due to system optimization requirements"
+      ],
+      "dissent": [
+        "The data engineer voiced concerns about Atlas's impact on the system's overall performance during heavy data ingestion periods."
+      ],
+      "owner": "Data Engineer",
+      "approver": "Data Protection Officer",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0066_001_e01",
+      "element_type": "decision",
+      "text": "Adopt Apache Atlas for data governance and retention",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0066_001_d1"
+    },
+    {
+      "element_id": "SYN_0066_001_e02",
+      "element_type": "alternative",
+      "text": "Apache Dubbo for service governance -- lacks data retention capabilities and long-term maintenance support",
+      "in_document": "omitted",
+      "decision_id": "SYN_0066_001_d1"
+    },
+    {
+      "element_id": "SYN_0066_001_e03",
+      "element_type": "alternative",
+      "text": "Splunk Enterprise for logs and data governance -- high performance overhead and cost for our data volume and retention needs",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0066_001_d1"
+    },
+    {
+      "element_id": "SYN_0066_001_e04",
+      "element_type": "alternative",
+      "text": "Hive for data warehousing and governance -- outdated and not as efficient in managing large volumes of real-time data as Apache Atlas",
+      "in_document": "omitted",
+      "decision_id": "SYN_0066_001_d1"
+    },
+    {
+      "element_id": "SYN_0066_001_e05",
+      "element_type": "rationale",
+      "text": "Apache Atlas offers a unified view of data lineage and access control, improving compliance and reducing potential security risks",
+      "in_document": "omitted",
+      "decision_id": "SYN_0066_001_d1"
+    },
+    {
+      "element_id": "SYN_0066_001_e06",
+      "element_type": "rationale",
+      "text": "The team already has experience with Apache Atlas, reducing onboarding costs and time",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0066_001_d1"
+    },
+    {
+      "element_id": "SYN_0066_001_e07",
+      "element_type": "rationale",
+      "text": "Apache Atlas is more scalable than Hive, making it a better choice for handling the company's growing data needs",
+      "in_document": "omitted",
+      "decision_id": "SYN_0066_001_d1"
+    },
+    {
+      "element_id": "SYN_0066_001_e08",
+      "element_type": "condition",
+      "text": "The implementation will require significant effort to integrate Atlas with existing data sources and APIs",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0066_001_d1"
+    },
+    {
+      "element_id": "SYN_0066_001_e09",
+      "element_type": "condition",
+      "text": "There might be performance degradation during the initial setup phase due to system optimization requirements",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0066_001_d1"
+    },
+    {
+      "element_id": "SYN_0066_001_e10",
+      "element_type": "dissent",
+      "text": "The data engineer voiced concerns about Atlas's impact on the system's overall performance during heavy data ingestion periods.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0066_001_d1"
+    },
+    {
+      "element_id": "SYN_0066_001_e11",
+      "element_type": "owner",
+      "text": "Data Engineer",
+      "in_document": "omitted",
+      "decision_id": "SYN_0066_001_d1"
+    },
+    {
+      "element_id": "SYN_0066_001_e12",
+      "element_type": "approver",
+      "text": "Data Protection Officer",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0066_001_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.92,
+    "seed": 2123,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 1 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0066_001_e08\",\n    \"text\": \"The implementation will require significant effort to integrate Atlas with existing data sources and APIs\",\n    \"score\": 0.9,\n    \"document_sentence\": \"The implementation will necessitate significant effort to integrate Atlas with existing data sources and APIs.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}

@@ -1,0 +1,162 @@
+{
+  "pair_id": "SYN_0049_001",
+  "source": "synthetic",
+  "topic": "security_incident__deprecation",
+  "title": "Data system deprecation",
+  "transcript": "Security Lead: There's a concern about the potential risk of data loss during the immediate deprecation of the outdated patient data system.\n\nOn-Call Engineer: I understand the worry, but we need to consider the impact on our patients. A sudden shutdown could cause chaos in the system.\n\nComms Lead: Perhaps we should explore a hybrid approach? We could migrate some data initially and phase out the rest over time.\n\nLegal Counsel: (nods) That sounds like a viable option. It would mitigate the immediate risk of data loss while allowing for a more manageable transition.\n\nOn-Call Engineer: But we'd still be dealing with an outdated system for a while. That could create security vulnerabilities.\n\nSecurity Lead: Exactly. I'd prefer a full migration to the new system as soon as possible.\n\nComms Lead: (interrupting) But a full migration could cause prolonged disruption of patient care services. We don't want to put patients at risk like that.\n\nLegal Counsel: (pauses, then) Alright, then we'll go with the hybrid approach. It's not perfect, but it seems to be the least disruptive option available.\n\nOn-Call Engineer: I'll take ownership of the hybrid approach, ensuring the migration runs as smoothly as possible.\n\nSecurity Lead: (sighs) Fine, but I'll need to monitor the patient data closely during the migration. I can't have potential security risks lingering for an extended period.\n\nLegal Counsel: Understood. And we'll maintain backups of the deprecated data for a year, as a precaution.\n\nOn a lighter note:\n\nComms Lead: Hey, have you heard the new coffee in the break room?\n\nOn-Call Engineer: Really? I was wondering where that aroma was coming from!\n\nComms Lead: Yeah, it's amazing! I think it's a new blend. You should try it out!\n\nOn-Call Engineer: (smiling) I'll have to remember to grab a cup on my way out. Thanks for the tip!",
+  "document": "Title: Decision on Hybrid Approach for Patient Data System Deprecation\n\nRecord: The team has decided to implement a hybrid approach for deprecating the outdated patient data system. This strategy aims to mitigate immediate risks of data loss by continuously monitoring patient data during migration. Backups of deprecated data will be maintained for a period of one year. This approach allows for a phased migration, reducing user burden and providing a more manageable transition process. The decision was reached following discussions and does not involve immediate deprecation, full migration to the new system, partial migration with delay, or prolonged exposure to potential security risks.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0049_001_d1",
+      "source_id": "SYN_0049_001",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Hybrid approach for deprecating outdated patient data system",
+      "topic": "Data system deprecation",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Immediate deprecation",
+          "rejected": true,
+          "reason": "Risk of data loss and potential patient harm"
+        },
+        {
+          "option": "Full migration to new system",
+          "rejected": true,
+          "reason": "Prolonged disruption of patient care services"
+        },
+        {
+          "option": "Partial migration with immediate deprecation",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "Partial migration with delay of up to 6 months",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Mitigates immediate risk of data loss",
+        "Allows for a phased migration, reducing burden on users",
+        "Provides a timeline for complete migration to the new system"
+      ],
+      "conditions": [
+        "Continuous monitoring of patient data during migration",
+        "Maintaining backups of deprecated data for a period of 1 year"
+      ],
+      "dissent": [
+        "Security lead's concern about prolonged exposure to potential security risks during the hybrid approach"
+      ],
+      "owner": "On-call engineer",
+      "approver": "Legal counsel",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0049_001_e01",
+      "element_type": "decision",
+      "text": "Hybrid approach for deprecating outdated patient data system",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0049_001_d1"
+    },
+    {
+      "element_id": "SYN_0049_001_e02",
+      "element_type": "alternative",
+      "text": "Immediate deprecation -- Risk of data loss and potential patient harm",
+      "in_document": "omitted",
+      "decision_id": "SYN_0049_001_d1"
+    },
+    {
+      "element_id": "SYN_0049_001_e03",
+      "element_type": "alternative",
+      "text": "Full migration to new system -- Prolonged disruption of patient care services",
+      "in_document": "omitted",
+      "decision_id": "SYN_0049_001_d1"
+    },
+    {
+      "element_id": "SYN_0049_001_e04",
+      "element_type": "alternative",
+      "text": "Partial migration with immediate deprecation",
+      "in_document": "omitted",
+      "decision_id": "SYN_0049_001_d1"
+    },
+    {
+      "element_id": "SYN_0049_001_e05",
+      "element_type": "alternative",
+      "text": "Partial migration with delay of up to 6 months",
+      "in_document": "omitted",
+      "decision_id": "SYN_0049_001_d1"
+    },
+    {
+      "element_id": "SYN_0049_001_e06",
+      "element_type": "rationale",
+      "text": "Mitigates immediate risk of data loss",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0049_001_d1"
+    },
+    {
+      "element_id": "SYN_0049_001_e07",
+      "element_type": "rationale",
+      "text": "Allows for a phased migration, reducing burden on users",
+      "in_document": "omitted",
+      "decision_id": "SYN_0049_001_d1"
+    },
+    {
+      "element_id": "SYN_0049_001_e08",
+      "element_type": "rationale",
+      "text": "Provides a timeline for complete migration to the new system",
+      "in_document": "omitted",
+      "decision_id": "SYN_0049_001_d1"
+    },
+    {
+      "element_id": "SYN_0049_001_e09",
+      "element_type": "condition",
+      "text": "Continuous monitoring of patient data during migration",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0049_001_d1"
+    },
+    {
+      "element_id": "SYN_0049_001_e10",
+      "element_type": "condition",
+      "text": "Maintaining backups of deprecated data for a period of 1 year",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0049_001_d1"
+    },
+    {
+      "element_id": "SYN_0049_001_e11",
+      "element_type": "dissent",
+      "text": "Security lead's concern about prolonged exposure to potential security risks during the hybrid approach",
+      "in_document": "omitted",
+      "decision_id": "SYN_0049_001_d1"
+    },
+    {
+      "element_id": "SYN_0049_001_e12",
+      "element_type": "owner",
+      "text": "On-call engineer",
+      "in_document": "omitted",
+      "decision_id": "SYN_0049_001_d1"
+    },
+    {
+      "element_id": "SYN_0049_001_e13",
+      "element_type": "approver",
+      "text": "Legal counsel",
+      "in_document": "omitted",
+      "decision_id": "SYN_0049_001_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.85,
+    "seed": 1834,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}

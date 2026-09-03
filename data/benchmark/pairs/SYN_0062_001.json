@@ -1,0 +1,142 @@
+{
+  "pair_id": "SYN_0062_001",
+  "source": "synthetic",
+  "topic": "data_governance__scope_cut",
+  "title": "Data Retention & Governance",
+  "transcript": "Data Protection Officer: To begin, I'd like to discuss our proposed data retention policy. It's crucial that we find a balance between regulatory compliance, data security, and cost-effectiveness.\n\nData Engineer: I've been working on a few options. One is a 36-month retention period, but it might lead to increased storage costs and potential for unmanageable data growth.\n\nAnalytics Lead: Another option is a 12-month retention, but that might be inadequate for our long-term analytics.\n\nLegal Counsel: And of course, there's the question of manual data deletion. That's risky, with a high chance of human error and increased workload.\n\nData Engineer: I agree. Given our current storage capacity, a cost-effective solution that meets regulatory compliance requirements and reduces technical debt seems most suitable. I propose a 24-month data retention policy with automated deletion.\n\nData Protection Officer: While I understand the cost benefits, I have concerns about 24-months being too short for some use cases.\n\nAnalytics Lead: That's a valid concern, but we can always revisit and adjust the retention policy if necessary. For now, I think the proposed policy is a good starting point.\n\nData Engineer: I'd also like to clarify that the IT infrastructure team will need to sign off on the automated deletion system.\n\nData Protection Officer: Alright, let's proceed with this proposal. But please keep in mind that we should continually monitor and evaluate the effectiveness of this policy as we move forward.\n\n*Off-topic exchange*\n\nData Engineer: By the way, how's that new data visualization tool you've been working on coming along, Analytics Lead?\n\nAnalytics Lead: It's coming along nicely! I'll show you a demo soon.\n\n*Back to the discussion*\n\nLegal Counsel: With everyone's agreement, I'll draft a memo outlining the decision and the reasons behind it. We can present it to the IT infrastructure team for approval.\n\nData Engineer: Sounds good. I'll handle the implementation of the automated deletion system once we have their sign-off.\n\n*The decision is reached*\n\nData Engineer: So, to summarize, we've decided to implement a data retention policy with a 24-month retention period and automated deletion.\n\nData Protection Officer: Agreed, but I'll continue to advocate for longer retention periods in specific cases.\n\nLegal Counsel: Understood. Once we have the IT infrastructure team's approval, I'll distribute the memo detailing our decision.\n\nData Engineer: Excellent. Let's move forward with this decision, and I'll take ownership of the automated deletion system implementation.",
+  "document": "Title: Data Retention Policy Decision\n\nDecision: Implement an automated 24-month data retention policy to minimize human error and reduce workload, despite potential increased storage costs and data growth concerns. The policy is subject to final approval from the IT infrastructure team regarding the automated deletion system.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0062_001_d1",
+      "source_id": "SYN_0062_001",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Implement data retention policy with 24-month data retention and automated deletion",
+      "topic": "Data Retention & Governance",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "36-month data retention",
+          "rejected": true,
+          "reason": "Increased storage costs and potential for unmanageable data growth"
+        },
+        {
+          "option": "12-month data retention",
+          "rejected": false,
+          "reason": "Inadequate for regulatory compliance and long-term analytics"
+        },
+        {
+          "option": "Manual data deletion",
+          "rejected": true,
+          "reason": "High risk of human error and increased workload"
+        }
+      ],
+      "rationale": [
+        "Meets regulatory compliance requirements",
+        "Reduces accrued technical debt",
+        "Cost-effective solution that aligns with the current storage capacity"
+      ],
+      "conditions": [
+        "Pending final approval from IT infrastructure team on automated deletion system"
+      ],
+      "dissent": [
+        "Data Protection Officer objects to 24-month data retention as too short for some use cases"
+      ],
+      "owner": "Data Engineer",
+      "approver": "IT Infrastructure Team",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0062_001_e01",
+      "element_type": "decision",
+      "text": "Implement data retention policy with 24-month data retention and automated deletion",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0062_001_d1"
+    },
+    {
+      "element_id": "SYN_0062_001_e02",
+      "element_type": "alternative",
+      "text": "36-month data retention -- Increased storage costs and potential for unmanageable data growth",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0062_001_d1"
+    },
+    {
+      "element_id": "SYN_0062_001_e03",
+      "element_type": "alternative",
+      "text": "12-month data retention -- Inadequate for regulatory compliance and long-term analytics",
+      "in_document": "omitted",
+      "decision_id": "SYN_0062_001_d1"
+    },
+    {
+      "element_id": "SYN_0062_001_e04",
+      "element_type": "alternative",
+      "text": "Manual data deletion -- High risk of human error and increased workload",
+      "in_document": "omitted",
+      "decision_id": "SYN_0062_001_d1"
+    },
+    {
+      "element_id": "SYN_0062_001_e05",
+      "element_type": "rationale",
+      "text": "Meets regulatory compliance requirements",
+      "in_document": "omitted",
+      "decision_id": "SYN_0062_001_d1"
+    },
+    {
+      "element_id": "SYN_0062_001_e06",
+      "element_type": "rationale",
+      "text": "Reduces accrued technical debt",
+      "in_document": "omitted",
+      "decision_id": "SYN_0062_001_d1"
+    },
+    {
+      "element_id": "SYN_0062_001_e07",
+      "element_type": "rationale",
+      "text": "Cost-effective solution that aligns with the current storage capacity",
+      "in_document": "omitted",
+      "decision_id": "SYN_0062_001_d1"
+    },
+    {
+      "element_id": "SYN_0062_001_e08",
+      "element_type": "condition",
+      "text": "Pending final approval from IT infrastructure team on automated deletion system",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0062_001_d1"
+    },
+    {
+      "element_id": "SYN_0062_001_e09",
+      "element_type": "dissent",
+      "text": "Data Protection Officer objects to 24-month data retention as too short for some use cases",
+      "in_document": "omitted",
+      "decision_id": "SYN_0062_001_d1"
+    },
+    {
+      "element_id": "SYN_0062_001_e10",
+      "element_type": "owner",
+      "text": "Data Engineer",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0062_001_d1"
+    },
+    {
+      "element_id": "SYN_0062_001_e11",
+      "element_type": "approver",
+      "text": "IT Infrastructure Team",
+      "in_document": "omitted",
+      "decision_id": "SYN_0062_001_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.88,
+    "seed": 2055,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 1 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0062_001_e08\",\n    \"text\": \"Pending final approval from IT infrastructure team on automated deletion system\",\n    \"score\": 0.78,\n    \"document_sentence\": \"The policy is subject to final approval from the IT infrastructure team regarding the automated deletion system.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}

@@ -1,0 +1,142 @@
+{
+  "pair_id": "SYN_0056_001",
+  "source": "synthetic",
+  "topic": "release_scope__tech_choice",
+  "title": "Framework selection for mobile app development",
+  "transcript": "Product Manager: Alright, let's dive into our options for the new mobile app. We've got Angular 12, React 17, and Ionic on the table.\n\nTech Lead: I'd like to start with Angular 12. I've been thinking about our team's expertise, and while we're comfortable with the basics, advanced Angular features might be a bit much right now.\n\nDesigner: I agree. We've been using Angular for a while, but I'm not sure we're ready for the complexity of Angular 12 just yet.\n\nQA Lead: Well, what about React 17 then? It's gaining popularity, and it could help with performance issues.\n\nProduct Manager: That's true, but we'd need to invest in additional training and onboarding for the team.\n\nTech Lead: Plus, we're currently evaluating Ionic for future projects. I don't think we should spread ourselves too thin.\n\nDesigner: Ionic might be interesting to consider, but I think for now, let's focus on what we know best.\n\nTech Lead: Agreed. Let's look into a hybrid solution that combines Angular 12 and React 17. That way, we can leverage our familiarity with Angular while addressing the performance concerns with React.\n\nProduct Manager: That sounds like a solid plan. We'll need to plan for ongoing training to ensure our proficiency in React 17 components.\n\nTech Lead: And regular code reviews and documentation updates to maintain the long-term maintainability of the hybrid solution.\n\nQA Lead: What about compatibility issues between Angular and React within the same application?\n\nTech Lead: It's a valid concern, but I believe with proper planning and careful implementation, we can minimize those risks.\n\n*Off-topic exchange*\n\nDesigner: Hey Tech Lead, have you seen the new design trends for next year? They're really interesting.\n\nTech Lead: I have, actually. Some of them could be great for our app. Let's discuss more during our next design meeting.\n\n*Back to the topic*\n\nProduct Manager: Alright, I'm in favor of the hybrid solution. I'll sign off on it. Tech Lead, you'll own it. Let's get started.",
+  "document": "Title: Mobile App Development Strategy Decision\n\nA hybrid approach has been selected for the new mobile app, integrating Angular 12 and React 17. The team's existing familiarity with Angular will streamline development, while leveraging React 17's strengths will address performance requirements. The Product Manager will oversee this implementation.\n\nA plan for ongoing training will be established to ensure the team's proficiency in React 17 components. While the compatibility between Angular and React within the same application was discussed, no specific issues were identified at this stage. Regular code reviews and documentation updates will be implemented to maintain the long-term maintainability of the hybrid solution.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0056_001_d1",
+      "source_id": "SYN_0056_001",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Adopt a hybrid solution combining Angular 12 and React 17 for the new mobile app",
+      "topic": "Framework selection for mobile app development",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Full adoption of Angular 12",
+          "rejected": true,
+          "reason": "Lack of team expertise in advanced Angular features"
+        },
+        {
+          "option": "Full adoption of React 17",
+          "rejected": true,
+          "reason": "Additional training and onboarding required for the team"
+        },
+        {
+          "option": "Full adoption of Ionic Framework",
+          "rejected": null,
+          "reason": "Currently under evaluation for future consideration"
+        }
+      ],
+      "rationale": [
+        "Team's existing familiarity with Angular facilitates a smoother development process",
+        "React 17's superior performance addresses performance concerns raised by the product manager"
+      ],
+      "conditions": [
+        "A plan for ongoing training to ensure the team's proficiency in React 17 components",
+        "Regular code reviews and documentation updates to maintain the hybrid solution's long-term maintainability"
+      ],
+      "dissent": [
+        "Concerns were raised about the compatibility between Angular and React within the same application"
+      ],
+      "owner": "Tech Lead",
+      "approver": "Product Manager",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0056_001_e01",
+      "element_type": "decision",
+      "text": "Adopt a hybrid solution combining Angular 12 and React 17 for the new mobile app",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0056_001_d1"
+    },
+    {
+      "element_id": "SYN_0056_001_e02",
+      "element_type": "alternative",
+      "text": "Full adoption of Angular 12 -- Lack of team expertise in advanced Angular features",
+      "in_document": "omitted",
+      "decision_id": "SYN_0056_001_d1"
+    },
+    {
+      "element_id": "SYN_0056_001_e03",
+      "element_type": "alternative",
+      "text": "Full adoption of React 17 -- Additional training and onboarding required for the team",
+      "in_document": "omitted",
+      "decision_id": "SYN_0056_001_d1"
+    },
+    {
+      "element_id": "SYN_0056_001_e04",
+      "element_type": "alternative",
+      "text": "Full adoption of Ionic Framework -- Currently under evaluation for future consideration",
+      "in_document": "omitted",
+      "decision_id": "SYN_0056_001_d1"
+    },
+    {
+      "element_id": "SYN_0056_001_e05",
+      "element_type": "rationale",
+      "text": "Team's existing familiarity with Angular facilitates a smoother development process",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0056_001_d1"
+    },
+    {
+      "element_id": "SYN_0056_001_e06",
+      "element_type": "rationale",
+      "text": "React 17's superior performance addresses performance concerns raised by the product manager",
+      "in_document": "omitted",
+      "decision_id": "SYN_0056_001_d1"
+    },
+    {
+      "element_id": "SYN_0056_001_e07",
+      "element_type": "condition",
+      "text": "A plan for ongoing training to ensure the team's proficiency in React 17 components",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0056_001_d1"
+    },
+    {
+      "element_id": "SYN_0056_001_e08",
+      "element_type": "condition",
+      "text": "Regular code reviews and documentation updates to maintain the hybrid solution's long-term maintainability",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0056_001_d1"
+    },
+    {
+      "element_id": "SYN_0056_001_e09",
+      "element_type": "dissent",
+      "text": "Concerns were raised about the compatibility between Angular and React within the same application",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0056_001_d1"
+    },
+    {
+      "element_id": "SYN_0056_001_e10",
+      "element_type": "owner",
+      "text": "Tech Lead",
+      "in_document": "omitted",
+      "decision_id": "SYN_0056_001_d1"
+    },
+    {
+      "element_id": "SYN_0056_001_e11",
+      "element_type": "approver",
+      "text": "Product Manager",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0056_001_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.77,
+    "seed": 1953,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 3 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0056_001_e07\",\n    \"text\": \"A plan for ongoing training to ensure the team's proficiency in React 17 components\",\n    \"score\": 0.95,\n    \"document_sentence\": \"A plan for ongoing training will be established to ensure the team's proficiency in React 17 components.\"\n  },\n  {\n    \"element_id\": \"SYN_0056_001_e08\",\n    \"text\": \"Regular code reviews and documentation updates to maintain the hybrid solution's long-term maintainability\",\n    \"score\": 0.92,\n    \"document_sentence\": \"Regular code reviews and documentation updates will be implemented to maintain the long-term maintainability of the hybrid solution.\"\n  },\n  {\n    \"element_id\": \"SYN_0056_001_e09\",\n    \"text\": \"Concerns were raised about the compatibility between Angular and React within the same application\",\n    \"score\": 0.61,\n    \"document_sentence\": \"While the compatibility between Angular and React within the same application was discussed, no specific issues were identified at this stage.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}

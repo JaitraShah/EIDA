@@ -1,0 +1,150 @@
+{
+  "pair_id": "SYN_0047_001",
+  "source": "synthetic",
+  "topic": "security_incident__risk_response",
+  "title": "Security incident & disclosure",
+  "transcript": "Security Lead: I've gathered everyone here today to discuss the urgent matter regarding the recent audit finding and the proposed response.\n\nOn-Call Engineer: Sure, what's the latest? I've been working on patches for other issues.\n\nLegal Counsel: We've reviewed the options, and I must say, the potential consequences of inaction are significant.\n\nComms Lead: I agree, but we need to consider the auditors' expectations. A partial response might not satisfy their requirements for a comprehensive solution.\n\nSecurity Lead: I appreciate your concerns, Comms Lead. However, given the critical nature of the systems going offline, a comprehensive investigation and remediation would simply not be possible within the given timeframe.\n\nOn-Call Engineer: Agreed. If we try to do a full system-wide scan and remediation without downtime, we'd be pushing the limits of our current tools for a hospital-wide operation within the deadline.\n\nComms Lead: Then what's the plan, Security Lead?\n\nSecurity Lead: Given the immediate need for action to minimize potential damage, we'll initiate a partial response with immediate patching. This will provide a swift countermeasure to mitigate immediate risks.\n\nLegal Counsel: I understand the need for swift action, but delaying the full system-wide scan could lead to potential exposure and legal complications.\n\nSecurity Lead: I hear your concerns, Legal Counsel. We'll make sure to prioritize the full system-wide remediation once we have obtained and analyzed the missing log files from the MRI system.\n\nOn-Call Engineer: Regarding the log files, I've put in a request with the IT team to retrieve them as soon as possible.\n\nComms Lead: (off-topic) By the way, On-Call, have you seen the new patient feedback system we're implementing? It's going to revolutionize our communication with patients.\n\nOn-Call Engineer: Oh, really? That sounds interesting. I'll have to take a look.\n\nSecurity Lead: Back to the matter at hand, once the log files are retrieved, we can resume the full system-wide remediation. In the meantime, it's important to remember that the partial response is a necessary step to protect our patients and staff.\n\nLegal Counsel: Alright, I'll need to draft a statement for the board outlining the situation and the steps we're taking.\n\nComms Lead: I'll work on a communique for the public, ensuring we're transparent about the situation and the actions we're taking.\n\nSecurity Lead: Excellent. In that case, I'll sign off on the decision to initiate a partial response with immediate patching. On-Call Engineer, you'll own the implementation. Let's get to work.",
+  "document": "Title: Action Plan for System Vulnerability\n\nIn light of the ongoing system failure identified in the recent audit, immediate action is critical to minimize potential damage. A partial response to the issue will be initiated immediately, with an on-call engineer managing the situation.\n\nPending the completion of the partial response, the missing log files from the MRI system will be retrieved for further investigation. Once analyzed, full system-wide remediation will resume. Legal counsel has advised against delaying this process due to potential exposure-related legal complications.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0047_001_d1",
+      "source_id": "SYN_0047_001",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Full system-wide scan and remediation delayed, partial response initiated immediately",
+      "topic": "Security incident & disclosure",
+      "status": "deferred",
+      "alternatives": [
+        {
+          "option": "Comprehensive investigation & remediation",
+          "rejected": true,
+          "reason": "Insufficient time to complete fully before critical systems go offline"
+        },
+        {
+          "option": "Partial response with immediate patching",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "Full system-wide scan & remediation without downtime",
+          "rejected": true,
+          "reason": "Technical limitations of current tools for a hospital-wide operation within the deadline"
+        }
+      ],
+      "rationale": [
+        "Immediate action to minimize potential damage is critical given the ongoing failure in the recent audit finding.",
+        "While a full investigation is ideal, the partial response provides a swift countermeasure to mitigate immediate risks."
+      ],
+      "conditions": [
+        "Pending the completion of the partial response, the missing log files from the MRI system will be retrieved for further investigation.",
+        "Full system-wide remediation will resume once the log files are obtained and analyzed."
+      ],
+      "dissent": [
+        "Comms lead objects to the partial response, arguing it may not satisfy the auditors' requirements for a comprehensive solution.",
+        "Legal counsel cautions against delaying the full system-wide scan, stating the potential exposure could lead to legal complications."
+      ],
+      "owner": "On-call engineer",
+      "approver": "Security lead",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0047_001_e01",
+      "element_type": "decision",
+      "text": "Full system-wide scan and remediation delayed, partial response initiated immediately",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0047_001_d1"
+    },
+    {
+      "element_id": "SYN_0047_001_e02",
+      "element_type": "alternative",
+      "text": "Comprehensive investigation & remediation -- Insufficient time to complete fully before critical systems go offline",
+      "in_document": "omitted",
+      "decision_id": "SYN_0047_001_d1"
+    },
+    {
+      "element_id": "SYN_0047_001_e03",
+      "element_type": "alternative",
+      "text": "Partial response with immediate patching",
+      "in_document": "omitted",
+      "decision_id": "SYN_0047_001_d1"
+    },
+    {
+      "element_id": "SYN_0047_001_e04",
+      "element_type": "alternative",
+      "text": "Full system-wide scan & remediation without downtime -- Technical limitations of current tools for a hospital-wide operation within the deadline",
+      "in_document": "omitted",
+      "decision_id": "SYN_0047_001_d1"
+    },
+    {
+      "element_id": "SYN_0047_001_e05",
+      "element_type": "rationale",
+      "text": "Immediate action to minimize potential damage is critical given the ongoing failure in the recent audit finding.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0047_001_d1"
+    },
+    {
+      "element_id": "SYN_0047_001_e06",
+      "element_type": "rationale",
+      "text": "While a full investigation is ideal, the partial response provides a swift countermeasure to mitigate immediate risks.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0047_001_d1"
+    },
+    {
+      "element_id": "SYN_0047_001_e07",
+      "element_type": "condition",
+      "text": "Pending the completion of the partial response, the missing log files from the MRI system will be retrieved for further investigation.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0047_001_d1"
+    },
+    {
+      "element_id": "SYN_0047_001_e08",
+      "element_type": "condition",
+      "text": "Full system-wide remediation will resume once the log files are obtained and analyzed.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0047_001_d1"
+    },
+    {
+      "element_id": "SYN_0047_001_e09",
+      "element_type": "dissent",
+      "text": "Comms lead objects to the partial response, arguing it may not satisfy the auditors' requirements for a comprehensive solution.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0047_001_d1"
+    },
+    {
+      "element_id": "SYN_0047_001_e10",
+      "element_type": "dissent",
+      "text": "Legal counsel cautions against delaying the full system-wide scan, stating the potential exposure could lead to legal complications.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0047_001_d1"
+    },
+    {
+      "element_id": "SYN_0047_001_e11",
+      "element_type": "owner",
+      "text": "On-call engineer",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0047_001_d1"
+    },
+    {
+      "element_id": "SYN_0047_001_e12",
+      "element_type": "approver",
+      "text": "Security lead",
+      "in_document": "omitted",
+      "decision_id": "SYN_0047_001_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.75,
+    "seed": 1800,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 2 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0047_001_e07\",\n    \"text\": \"Pending the completion of the partial response, the missing log files from the MRI system will be retrieved for further investigation.\",\n    \"score\": 1.0,\n    \"document_sentence\": \"Pending the completion of the partial response, the missing log files from the MRI system will be retrieved for further investigation.\"\n  },\n  {\n    \"element_id\": \"SYN_0047_001_e08\",\n    \"text\": \"Full system-wide remediation will resume once the log files are obtained and analyzed.\",\n    \"score\": 0.82,\n    \"document_sentence\": \"Once analyzed, full system-wide remediation will resume.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}
