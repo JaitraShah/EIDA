@@ -1,0 +1,150 @@
+{
+  "pair_id": "SYN_0019_001",
+  "source": "synthetic",
+  "topic": "vendor_tooling__deprecation",
+  "title": "Deprecation of Symantec Endpoint Protection",
+  "transcript": "Procurement: Alright, let's dive into the antivirus vendor discussion. We've been looking at a few options.\n\nEngineering Manager: I've been considering CrowdStrike Falcon, but I'm worried about the migration burden on our users. It could impact productivity significantly.\n\nSecurity Reviewer: Speaking of new solutions, have we looked at open-source antivirus options? I'm not sure about their security and compatibility with our existing systems.\n\nBudget Owner: I've been in touch with Symantec about negotiating a lower maintenance fee. Unfortunately, they've refused to budge.\n\nProcurement: Well, considering the costs and potential challenges, I think it's worth sticking with our current vendor.\n\nSecurity Reviewer: But aren't there potential security vulnerabilities with our current solution?\n\nProcurement: Yes, I've heard concerns, but let's remember the benefits. Our current tooling has proven to be reliable and efficient.\n\nEngineering Manager: Plus, maintaining the status quo would save us approximately $45,000 annually in maintenance fees.\n\nSecurity Reviewer: I see your point. However, I propose we conduct an updated security review of open-source antivirus solutions within the next quarter.\n\nBudget Owner: I agree with the current plan, and I'm comfortable with Procurement owning this decision. I'll sign off once everything is finalized.\n\n(off-topic exchange)\n\nEngineering Manager: By the way, I heard there's a company picnic next month. Should we organize something fun for the team?\n\nBudget Owner: Absolutely! Let's make it a memorable one.\n\n(back to topic)\n\nSecurity Reviewer: Alright, let's keep an eye on those open-source solutions. If significant fee reductions are offered by Symantec, we can revisit negotiations.\n\nBudget Owner: Agreed. Let's move forward with maintaining our current vendor and tooling. We'll reevaluate the situation in six months.",
+  "document": "Title: Security Vendor and Tooling Review Meeting Summary\n\nIn the recent security vendor and tooling review meeting, it was decided to maintain the current vendor and associated tooling due to their proven reliability and efficiency. Negotiations with Symantec regarding a potential reduction in maintenance fees have concluded unsuccessfully. An updated security review of open-source antivirus solutions will be conducted within the next quarter for future consideration. No further decisions were made regarding migration to alternative solutions such as CrowdStrike Falcon or adopting new, open-source antivirus software.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0019_001_d1",
+      "source_id": "SYN_0019_001",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Maintaining the current vendor and tooling is the preferred option at this time.",
+      "topic": "Deprecation of Symantec Endpoint Protection",
+      "status": "deferred",
+      "alternatives": [
+        {
+          "option": "Migrating to CrowdStrike Falcon",
+          "rejected": true,
+          "reason": "The migration burden on users would be too high, impacting productivity."
+        },
+        {
+          "option": "Negotiating a lower maintenance fee with Symantec",
+          "rejected": false,
+          "reason": "Symantec refused to reduce fees."
+        },
+        {
+          "option": "Adopting a new, open-source antivirus solution",
+          "rejected": false,
+          "reason": "Insufficient security review and potential compatibility issues with existing systems."
+        }
+      ],
+      "rationale": [
+        "Maintenance savings would amount to approximately $45,000 annually.",
+        "The current tooling has proven to be reliable and efficient.",
+        "Migration costs and time would exceed the potential savings in the short term."
+      ],
+      "conditions": [
+        "Continued negotiations with Symantec may resume if significant fee reductions are offered.",
+        "An updated security review of open-source antivirus solutions will be conducted within the next quarter."
+      ],
+      "dissent": [
+        "Security reviewer raised concerns about potential security vulnerabilities in the current solution."
+      ],
+      "owner": "Procurement department",
+      "approver": "Budget owner",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0019_001_e01",
+      "element_type": "decision",
+      "text": "Maintaining the current vendor and tooling is the preferred option at this time.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0019_001_d1"
+    },
+    {
+      "element_id": "SYN_0019_001_e02",
+      "element_type": "alternative",
+      "text": "Migrating to CrowdStrike Falcon -- The migration burden on users would be too high, impacting productivity.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0019_001_d1"
+    },
+    {
+      "element_id": "SYN_0019_001_e03",
+      "element_type": "alternative",
+      "text": "Negotiating a lower maintenance fee with Symantec -- Symantec refused to reduce fees.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0019_001_d1"
+    },
+    {
+      "element_id": "SYN_0019_001_e04",
+      "element_type": "alternative",
+      "text": "Adopting a new, open-source antivirus solution -- Insufficient security review and potential compatibility issues with existing systems.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0019_001_d1"
+    },
+    {
+      "element_id": "SYN_0019_001_e05",
+      "element_type": "rationale",
+      "text": "Maintenance savings would amount to approximately $45,000 annually.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0019_001_d1"
+    },
+    {
+      "element_id": "SYN_0019_001_e06",
+      "element_type": "rationale",
+      "text": "The current tooling has proven to be reliable and efficient.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0019_001_d1"
+    },
+    {
+      "element_id": "SYN_0019_001_e07",
+      "element_type": "rationale",
+      "text": "Migration costs and time would exceed the potential savings in the short term.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0019_001_d1"
+    },
+    {
+      "element_id": "SYN_0019_001_e08",
+      "element_type": "condition",
+      "text": "Continued negotiations with Symantec may resume if significant fee reductions are offered.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0019_001_d1"
+    },
+    {
+      "element_id": "SYN_0019_001_e09",
+      "element_type": "condition",
+      "text": "An updated security review of open-source antivirus solutions will be conducted within the next quarter.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0019_001_d1"
+    },
+    {
+      "element_id": "SYN_0019_001_e10",
+      "element_type": "dissent",
+      "text": "Security reviewer raised concerns about potential security vulnerabilities in the current solution.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0019_001_d1"
+    },
+    {
+      "element_id": "SYN_0019_001_e11",
+      "element_type": "owner",
+      "text": "Procurement department",
+      "in_document": "omitted",
+      "decision_id": "SYN_0019_001_d1"
+    },
+    {
+      "element_id": "SYN_0019_001_e12",
+      "element_type": "approver",
+      "text": "Budget owner",
+      "in_document": "omitted",
+      "decision_id": "SYN_0019_001_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.87,
+    "seed": 1324,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}

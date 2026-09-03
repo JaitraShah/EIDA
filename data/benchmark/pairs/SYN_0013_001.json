@@ -1,0 +1,146 @@
+{
+  "pair_id": "SYN_0013_001",
+  "source": "synthetic",
+  "topic": "vendor_tooling__budget_allocation",
+  "title": "Cloud Vendor & Tooling",
+  "transcript": "Procurement: Alright, let's dive into our proposal for a data analytics solution. We've narrowed it down to two options: AWS Redshift and Tableau, and Microsoft Azure and Power BI.\n\nEngineering Manager: I'd like to start with AWS and Tableau. While it's a robust system, the costs and implementation timeline are higher compared to our other option.\n\nSecurity Reviewer: Plus, there are potential compliance issues we'd need to address with AWS.\n\nProcurement: Moving on to Microsoft Azure and Power BI. While it integrates well with our Google Suite, the lack of seamless integration might impact our productivity in the long run.\n\nEngineering Manager: That's a valid point. So, we're left with Google Cloud's BigQuery and Looker.\n\nSecurity Reviewer: I have some concerns about data privacy and potential compliance issues with Google Cloud.\n\nBudget Owner: I understand those concerns, but we also need to consider the additional costs associated with the pilot.\n\nSecurity Reviewer: I understand the budget constraints, but we can't overlook the potential risks.\n\nEngineering Manager: I agree that we need to be cautious, but I believe we can mitigate these risks. Google Cloud's BigQuery provides scalable and fast data processing, which is crucial for our needs.\n\nProcurement: And Looker offers flexible and intuitive reporting tools, which would greatly improve our data analysis capabilities.\n\nBudget Owner: Given the benefits, I propose we agree to a one-year pilot for Google Cloud's BigQuery and Looker. This will allow us to evaluate their effectiveness and cost-benefit before making a long-term commitment.\n\nSecurity Reviewer: I'm still not entirely comfortable, but I understand the rationale. I'll work with the engineering team to prepare a security review and data extraction plan within two weeks.\n\nProcurement: Sounds good. I'll negotiate a pilot contract with Google Cloud by the end of next month.\n\nEngineering Manager: I'll oversee the project and ensure a smooth transition.\n\nBudget Owner: Alright, I'm signing off on this. Let's get started!\n\n(Off-topic exchange)\n\nProcurement: Speaking of starts, have you seen the new coffee machine in the break room?\n\nEngineering Manager: Really? No, I haven't. I'll have to check it out!\n\n(Back to topic)\n\nBudget Owner: Alright, let's get back to the matter at hand. Let's make this one-year pilot a success!",
+  "document": "Title: Approval for Google Cloud's BigQuery and Looker Pilot\n\nDecision: Approval has been granted for a one-year pilot of Google Cloud's BigQuery and Looker for streamlined data analytics. The Engineering Manager will be responsible for preparing a security review and data extraction plan within two weeks. The procurement team is tasked with negotiating a pilot contract with Google Cloud by the end of next month.\n\nNotes: The Budget Owner expressed reservations about the additional costs associated with the pilot. The flexible and intuitive reporting tools offered by Looker were highlighted. No further details regarding alternative solutions or concerns were included in the record.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0013_001_d1",
+      "source_id": "SYN_0013_001",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Approval for a one-year pilot of Google Cloud's BigQuery and Looker for streamlined data analytics",
+      "topic": "Cloud Vendor & Tooling",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "AWS Redshift and Tableau",
+          "rejected": true,
+          "reason": "Higher costs and longer implementation timeline"
+        },
+        {
+          "option": "Microsoft Azure and Power BI",
+          "rejected": true,
+          "reason": "Lack of seamless integration with our existing Google Suite ecosystem"
+        }
+      ],
+      "rationale": [
+        "Google Cloud's BigQuery provides scalable and fast data processing",
+        "Looker offers flexible and intuitive reporting tools",
+        "One-year pilot will allow us to evaluate effectiveness and cost-benefit before long-term commitment"
+      ],
+      "conditions": [
+        "A security review and data extraction plan must be prepared by the engineering manager within two weeks",
+        "The procurement team will negotiate a pilot contract with Google Cloud by the end of next month"
+      ],
+      "dissent": [
+        "Security reviewer raised concerns about data privacy and potential compliance issues with Google Cloud",
+        "Budget owner expressed reservations about the additional costs associated with the pilot"
+      ],
+      "owner": "Engineering Manager",
+      "approver": "Budget Owner",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0013_001_e01",
+      "element_type": "decision",
+      "text": "Approval for a one-year pilot of Google Cloud's BigQuery and Looker for streamlined data analytics",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0013_001_d1"
+    },
+    {
+      "element_id": "SYN_0013_001_e02",
+      "element_type": "alternative",
+      "text": "AWS Redshift and Tableau -- Higher costs and longer implementation timeline",
+      "in_document": "omitted",
+      "decision_id": "SYN_0013_001_d1"
+    },
+    {
+      "element_id": "SYN_0013_001_e03",
+      "element_type": "alternative",
+      "text": "Microsoft Azure and Power BI -- Lack of seamless integration with our existing Google Suite ecosystem",
+      "in_document": "omitted",
+      "decision_id": "SYN_0013_001_d1"
+    },
+    {
+      "element_id": "SYN_0013_001_e04",
+      "element_type": "rationale",
+      "text": "Google Cloud's BigQuery provides scalable and fast data processing",
+      "in_document": "omitted",
+      "decision_id": "SYN_0013_001_d1"
+    },
+    {
+      "element_id": "SYN_0013_001_e05",
+      "element_type": "rationale",
+      "text": "Looker offers flexible and intuitive reporting tools",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0013_001_d1"
+    },
+    {
+      "element_id": "SYN_0013_001_e06",
+      "element_type": "rationale",
+      "text": "One-year pilot will allow us to evaluate effectiveness and cost-benefit before long-term commitment",
+      "in_document": "omitted",
+      "decision_id": "SYN_0013_001_d1"
+    },
+    {
+      "element_id": "SYN_0013_001_e07",
+      "element_type": "condition",
+      "text": "A security review and data extraction plan must be prepared by the engineering manager within two weeks",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0013_001_d1"
+    },
+    {
+      "element_id": "SYN_0013_001_e08",
+      "element_type": "condition",
+      "text": "The procurement team will negotiate a pilot contract with Google Cloud by the end of next month",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0013_001_d1"
+    },
+    {
+      "element_id": "SYN_0013_001_e09",
+      "element_type": "dissent",
+      "text": "Security reviewer raised concerns about data privacy and potential compliance issues with Google Cloud",
+      "in_document": "omitted",
+      "decision_id": "SYN_0013_001_d1"
+    },
+    {
+      "element_id": "SYN_0013_001_e10",
+      "element_type": "dissent",
+      "text": "Budget owner expressed reservations about the additional costs associated with the pilot",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0013_001_d1"
+    },
+    {
+      "element_id": "SYN_0013_001_e11",
+      "element_type": "owner",
+      "text": "Engineering Manager",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0013_001_d1"
+    },
+    {
+      "element_id": "SYN_0013_001_e12",
+      "element_type": "approver",
+      "text": "Budget Owner",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0013_001_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.79,
+    "seed": 1222,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 2 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0013_001_e07\",\n    \"text\": \"A security review and data extraction plan must be prepared by the engineering manager within two weeks\",\n    \"score\": 0.83,\n    \"document_sentence\": \"The Engineering Manager will be responsible for preparing a security review and data extraction plan within two weeks.\"\n  },\n  {\n    \"element_id\": \"SYN_0013_001_e08\",\n    \"text\": \"The procurement team will negotiate a pilot contract with Google Cloud by the end of next month\",\n    \"score\": 0.86,\n    \"document_sentence\": \"The procurement team is tasked with negotiating a pilot contract with Google Cloud by the end of next month.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}

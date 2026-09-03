@@ -1,0 +1,150 @@
+{
+  "pair_id": "SYN_0030_001",
+  "source": "synthetic",
+  "topic": "pricing_packaging__vendor_selection",
+  "title": "Vendor / tool selection",
+  "transcript": "Head of Product: Alright, everyone, let's dive into the data research tool discussion. We've been evaluating several options, and I'd like to hear everyone's thoughts.\n\nSales Lead: I've been looking at the costs, and I have concerns about Solution C. It's $75,000 a year, which is way over our budget by 20%.\n\nFinance Analyst: I concur, it's a significant expense. Solution A and B, on the other hand, are more affordable.\n\nCustomer Success: Solution A gives us the essential analytics for customer segmentation, and Solution B offers superior support. That's crucial for smooth onboarding.\n\nHead of Product: Exactly. Combining A and B will give us comprehensive research capabilities with minimal additional cost.\n\nSales Lead: (sighs) I still have reservations about the integration complexity of a hybrid solution.\n\nHead of Product: That's a valid concern, Sales Lead. But I believe our tech team can handle it. We've tackled complex integrations before.\n\nCustomer Success: Plus, we can't ignore the long-term benefits of a hybrid approach. It seems like the best choice.\n\nFinance Analyst: Agreed. Let's not forget, there will be ongoing monitoring to ensure compatibility between A and B. And there may be additional costs if we need more advanced analytics in the future.\n\nSales Lead: (nods) I suppose I can't argue with that.\n\nHead of Product: So, in summary, we're looking at a hybrid option with Solution A and B for our data research tool. Does everyone agree?\n\nCustomer Success: Yes, I'm on board.\n\nFinance Analyst: I concur as well.\n\nSales Lead: (sighs) Fine, I'll go along with it. But I'll need frequent updates on the integration.\n\nHead of Product: Understood. I'll make sure to keep everyone informed.\n\n(A brief off-topic exchange, unrelated to the decision)\n\nCustomer Success: Say, Head of Product, have you seen the new coffee machine in the break room?\n\nHead of Product: No, I haven't. What's so special about it?\n\nCustomer Success: You've got to try the cappuccino. It's amazing!\n\nHead of Product: I'll definitely check it out then. (laughs)\n\n(back to the discussion)\n\nHead of Product: Alright, let's get back to our main topic. I'll own the data research tool project, and I'll get the CFO to sign off on it. Is there anything else we need to discuss before we wrap up?\n\nSales Lead, Customer Success, Finance Analyst: No, that covers it.\n\nHead of Product: Excellent. Let's move forward with the hybrid option for our data research tool.",
+  "document": "Title: Decision on Hybrid Data Research Tool\n\nIn the meeting, it was decided to adopt a hybrid solution, integrating Solution A and B for our data research tool. This approach offers comprehensive research capabilities with minimal additional cost, providing essential analytics for customer segmentation from Solution A and superior support for smooth onboarding from Solution B. Ongoing monitoring will be necessary to ensure compatibility between the two solutions. The Product Head will lead this initiative.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0030_001_d1",
+      "source_id": "SYN_0030_001",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Hybrid option with Solution A and B for data research tool",
+      "topic": "Vendor / tool selection",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Solution A",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "Solution B",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "Solution C",
+          "rejected": true,
+          "reason": "Prohibitive cost at $75,000 per year, exceeding budget by 20%"
+        }
+      ],
+      "rationale": [
+        "Solution A provides essential analytics for customer segmentation at a reasonable price",
+        "Solution B offers superior support, critical for smooth onboarding",
+        "Combining A and B will yield comprehensive research capabilities with minimal additional cost"
+      ],
+      "conditions": [
+        "Ongoing monitoring will be necessary to ensure compatibility between A and B",
+        "Additional costs may arise if more advanced analytics become necessary"
+      ],
+      "dissent": [
+        "Sales lead expressed concern about the integration complexity of a hybrid solution"
+      ],
+      "owner": "Product Head",
+      "approver": "CFO",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0030_001_e01",
+      "element_type": "decision",
+      "text": "Hybrid option with Solution A and B for data research tool",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0030_001_d1"
+    },
+    {
+      "element_id": "SYN_0030_001_e02",
+      "element_type": "alternative",
+      "text": "Solution A",
+      "in_document": "omitted",
+      "decision_id": "SYN_0030_001_d1"
+    },
+    {
+      "element_id": "SYN_0030_001_e03",
+      "element_type": "alternative",
+      "text": "Solution B",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0030_001_d1"
+    },
+    {
+      "element_id": "SYN_0030_001_e04",
+      "element_type": "alternative",
+      "text": "Solution C -- Prohibitive cost at $75,000 per year, exceeding budget by 20%",
+      "in_document": "omitted",
+      "decision_id": "SYN_0030_001_d1"
+    },
+    {
+      "element_id": "SYN_0030_001_e05",
+      "element_type": "rationale",
+      "text": "Solution A provides essential analytics for customer segmentation at a reasonable price",
+      "in_document": "omitted",
+      "decision_id": "SYN_0030_001_d1"
+    },
+    {
+      "element_id": "SYN_0030_001_e06",
+      "element_type": "rationale",
+      "text": "Solution B offers superior support, critical for smooth onboarding",
+      "in_document": "omitted",
+      "decision_id": "SYN_0030_001_d1"
+    },
+    {
+      "element_id": "SYN_0030_001_e07",
+      "element_type": "rationale",
+      "text": "Combining A and B will yield comprehensive research capabilities with minimal additional cost",
+      "in_document": "omitted",
+      "decision_id": "SYN_0030_001_d1"
+    },
+    {
+      "element_id": "SYN_0030_001_e08",
+      "element_type": "condition",
+      "text": "Ongoing monitoring will be necessary to ensure compatibility between A and B",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0030_001_d1"
+    },
+    {
+      "element_id": "SYN_0030_001_e09",
+      "element_type": "condition",
+      "text": "Additional costs may arise if more advanced analytics become necessary",
+      "in_document": "omitted",
+      "decision_id": "SYN_0030_001_d1"
+    },
+    {
+      "element_id": "SYN_0030_001_e10",
+      "element_type": "dissent",
+      "text": "Sales lead expressed concern about the integration complexity of a hybrid solution",
+      "in_document": "omitted",
+      "decision_id": "SYN_0030_001_d1"
+    },
+    {
+      "element_id": "SYN_0030_001_e11",
+      "element_type": "owner",
+      "text": "Product Head",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0030_001_d1"
+    },
+    {
+      "element_id": "SYN_0030_001_e12",
+      "element_type": "approver",
+      "text": "CFO",
+      "in_document": "omitted",
+      "decision_id": "SYN_0030_001_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.89,
+    "seed": 1511,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 1 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0030_001_e08\",\n    \"text\": \"Ongoing monitoring will be necessary to ensure compatibility between A and B\",\n    \"score\": 0.8,\n    \"document_sentence\": \"Ongoing monitoring will be necessary to ensure compatibility between the two solutions.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}

@@ -1,0 +1,150 @@
+{
+  "pair_id": "SYN_0046_001",
+  "source": "synthetic",
+  "topic": "security_incident__tech_choice",
+  "title": "Choosing a security framework for incident & disclosure",
+  "transcript": "Security Lead: Alright team, let's discuss the data access control solution. We've been exploring options, and it seems Apache Ranger has gathered some traction.\n\nOn-Call Engineer: That's a bit concerning, I've heard it's got a steep learning curve.\n\nComms Lead: true, but remember, we've considered several options. Apache Sentry was rejected due to lack of support for cloud data stores, and Apache Knox due to reported performance issues with high concurrent requests.\n\nLegal Counsel: Correct, and we also looked at an open-source RBAC system. However, it's not widely used in logistics operators, and long-term maintainability concerns were raised.\n\nOn-Call Engineer: Right, but Ranger is popular within our industry, and it has an extensive feature set addressing both team familiarity and long-term maintainability.\n\nSecurity Lead: Exactly, and we have performance data from similar-sized companies running Ranger that we can look at.\n\nComms Lead: That being said, we do have a couple of caveats. We need to confirm its compatibility with our current data lake's Apache Hadoop version, and we'll need to ongoing evaluate its impact on system performance during peak hours.\n\nLegal Counsel: Agreed. But I've also signed off on the provisional adoption of Apache Ranger for data access control.\n\nOn-Call Engineer: (sighs) Alright, I'll add it to my learning list.\n\nComms Lead: (off-topic) Hey, did anyone catch the game last night?\n\nSecurity Lead: (off-topic) I did, it was a nail-biter! But let's get back to our topic, shall we?\n\nComms Lead: Definitely, back to work!\n\n(end transcript)",
+  "document": "Meeting Summary: Adoption of Apache Ranger for data access control was discussed. The on-call engineer voiced concerns regarding the learning curve for Ranger in the context of the logistics industry. The security lead and legal counsel were present. It was noted that Apache Sentry, an alternative, lacks support for cloud data stores. The popularity of Apache Ranger within the logistics industry was also mentioned. Further evaluation of Ranger's compatibility with our current data lake's Apache Hadoop version and its impact on system performance during peak hours is ongoing.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0046_001_d1",
+      "source_id": "SYN_0046_001",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Adoption of Apache Ranger for data access control",
+      "topic": "Choosing a security framework for incident & disclosure",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "Apache Sentry",
+          "rejected": true,
+          "reason": "Lack of support for cloud data stores"
+        },
+        {
+          "option": "Apache Knox",
+          "rejected": true,
+          "reason": "Performance issues reported with high concurrent requests"
+        },
+        {
+          "option": "Open-source RBAC system",
+          "rejected": false,
+          "reason": "Not widely used in logistics operators and potential long-term maintainability concerns"
+        }
+      ],
+      "rationale": [
+        "Apache Ranger's popularity within the logistics industry",
+        "Ranger's extensive feature set addressing both team familiarity and long-term maintainability",
+        "Performance data from similar-sized companies running Ranger"
+      ],
+      "conditions": [
+        "Pending confirmation on compatibility with our current data lake's Apache Hadoop version",
+        "Ongoing evaluation of Ranger's impact on system performance during peak hours"
+      ],
+      "dissent": [
+        "On-call engineer expressed concerns about learning curve for Ranger"
+      ],
+      "owner": "Security lead",
+      "approver": "Legal counsel",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0046_001_e01",
+      "element_type": "decision",
+      "text": "Adoption of Apache Ranger for data access control",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0046_001_d1"
+    },
+    {
+      "element_id": "SYN_0046_001_e02",
+      "element_type": "alternative",
+      "text": "Apache Sentry -- Lack of support for cloud data stores",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0046_001_d1"
+    },
+    {
+      "element_id": "SYN_0046_001_e03",
+      "element_type": "alternative",
+      "text": "Apache Knox -- Performance issues reported with high concurrent requests",
+      "in_document": "omitted",
+      "decision_id": "SYN_0046_001_d1"
+    },
+    {
+      "element_id": "SYN_0046_001_e04",
+      "element_type": "alternative",
+      "text": "Open-source RBAC system -- Not widely used in logistics operators and potential long-term maintainability concerns",
+      "in_document": "omitted",
+      "decision_id": "SYN_0046_001_d1"
+    },
+    {
+      "element_id": "SYN_0046_001_e05",
+      "element_type": "rationale",
+      "text": "Apache Ranger's popularity within the logistics industry",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0046_001_d1"
+    },
+    {
+      "element_id": "SYN_0046_001_e06",
+      "element_type": "rationale",
+      "text": "Ranger's extensive feature set addressing both team familiarity and long-term maintainability",
+      "in_document": "omitted",
+      "decision_id": "SYN_0046_001_d1"
+    },
+    {
+      "element_id": "SYN_0046_001_e07",
+      "element_type": "rationale",
+      "text": "Performance data from similar-sized companies running Ranger",
+      "in_document": "omitted",
+      "decision_id": "SYN_0046_001_d1"
+    },
+    {
+      "element_id": "SYN_0046_001_e08",
+      "element_type": "condition",
+      "text": "Pending confirmation on compatibility with our current data lake's Apache Hadoop version",
+      "in_document": "omitted",
+      "decision_id": "SYN_0046_001_d1"
+    },
+    {
+      "element_id": "SYN_0046_001_e09",
+      "element_type": "condition",
+      "text": "Ongoing evaluation of Ranger's impact on system performance during peak hours",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0046_001_d1"
+    },
+    {
+      "element_id": "SYN_0046_001_e10",
+      "element_type": "dissent",
+      "text": "On-call engineer expressed concerns about learning curve for Ranger",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0046_001_d1"
+    },
+    {
+      "element_id": "SYN_0046_001_e11",
+      "element_type": "owner",
+      "text": "Security lead",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0046_001_d1"
+    },
+    {
+      "element_id": "SYN_0046_001_e12",
+      "element_type": "approver",
+      "text": "Legal counsel",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0046_001_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.84,
+    "seed": 1783,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 1 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0046_001_e09\",\n    \"text\": \"Ongoing evaluation of Ranger's impact on system performance during peak hours\",\n    \"score\": 0.71,\n    \"document_sentence\": \"Further evaluation of Ranger's compatibility with our current data lake's Apache Hadoop version and its impact on system performance during peak hours is ongoing.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}

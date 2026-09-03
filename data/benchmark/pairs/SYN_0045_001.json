@@ -1,0 +1,150 @@
+{
+  "pair_id": "SYN_0045_001",
+  "source": "synthetic",
+  "topic": "security_incident__headcount_plan",
+  "title": "Headcount plan — Security incident & disclosure",
+  "transcript": "Security Lead: Alright, let's get started. The recent cyberattack has left us short-staffed, and we need to address that quickly.\n\nOn-Call Engineer: Agreed. I've been running myself thin, and the junior analysts just aren't cutting it.\n\nLegal Counsel: But we need to be mindful of our budget. What are our options?\n\nCommunications Lead: I've been looking into outsourcing our needs to a third-party vendor, but the costs are astronomical, and we could potentially lose control over our security.\n\nSecurity Lead: I propose we hire 4 senior cybersecurity experts and 6 junior analysts over the next 3 months. This would provide a mix of experience and speed of onboarding.\n\nOn-Call Engineer: (pauses) I understand your reasoning, but aren't we running the risk of inefficiencies with too many senior hires?\n\nSecurity Lead: A valid concern, but with the right management and training, we can mitigate those issues. Our budget envelope allows for this hiring plan while still accommodating other security initiatives.\n\nCommunications Lead: And this timeline ensures that staffing levels will be restored by the time the hospital group resumes normal operations.\n\nLegal Counsel: Alright, but remember, we still need approval from the hospital board of directors. Also, the recruitment process might be slowed by the current cybersecurity talent shortage.\n\nSecurity Lead: Understood. Let's move forward with this plan. Human resources will own it, and I'll ensure that all necessary paperwork is in order for the board's approval.\n\nOn-Call Engineer: Sounds good. I just hope we can find the right people quickly.\n\nCommunications Lead: (off-topic) Did anyone see the new meme going around? It's about our recent security issues. (laughter)\n\nSecurity Lead: (smiling) I'll have to check it out. But let's get back to work and make sure we don't have to deal with another cyberattack anytime soon.",
+  "document": "Meeting Summary: Cybersecurity Hiring Plan\n\nDecision:\n- Hire 4 senior cybersecurity experts and 6 junior analysts over the next 3 months\n- Outsource cybersecurity needs to a third-party vendor for a year, acknowledging potential high costs and loss of control\n- The hiring plan falls within the budget envelope, allowing for other security initiatives\n\nDiscussion points not included in the record:\n- Possible hiring of additional senior and junior talent on a different timeline\n- The need for a balance between experience and speed of onboarding\n- Anticipated staffing level restoration by the time normal hospital operations resume\n- Pending approval from the hospital board of directors\n- Potential slowdown in the recruitment process due to the current cybersecurity talent shortage\n- Concerns about potential inefficiencies with a higher number of senior hires, as suggested by the on-call engineer\n- Involvement of the human resources department.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0045_001_d1",
+      "source_id": "SYN_0045_001",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Hire 4 senior cybersecurity experts and 6 junior analysts over the next 3 months",
+      "topic": "Headcount plan — Security incident & disclosure",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Hire 6 senior cybersecurity experts over the next 2 months",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "Hire 8 junior analysts over the next month",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "Outsource cybersecurity needs to a third-party vendor for the next year",
+          "rejected": true,
+          "reason": "High costs and potential loss of control"
+        }
+      ],
+      "rationale": [
+        "Requires a mix of senior and junior talent to balance experience and speed of onboarding",
+        "Budget envelope allows for this hiring plan while still accommodating other security initiatives",
+        "The timeline ensures that staffing levels will be restored by the time the hospital group resumes normal operations"
+      ],
+      "conditions": [
+        "Approval from hospital board of directors is pending",
+        "Recruitment process might be slowed by current cybersecurity talent shortage"
+      ],
+      "dissent": [
+        "On-call engineer suggests that more senior hires could lead to inefficiencies"
+      ],
+      "owner": "Human resources department",
+      "approver": "Board of directors",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0045_001_e01",
+      "element_type": "decision",
+      "text": "Hire 4 senior cybersecurity experts and 6 junior analysts over the next 3 months",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0045_001_d1"
+    },
+    {
+      "element_id": "SYN_0045_001_e02",
+      "element_type": "alternative",
+      "text": "Hire 6 senior cybersecurity experts over the next 2 months",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0045_001_d1"
+    },
+    {
+      "element_id": "SYN_0045_001_e03",
+      "element_type": "alternative",
+      "text": "Hire 8 junior analysts over the next month",
+      "in_document": "omitted",
+      "decision_id": "SYN_0045_001_d1"
+    },
+    {
+      "element_id": "SYN_0045_001_e04",
+      "element_type": "alternative",
+      "text": "Outsource cybersecurity needs to a third-party vendor for the next year -- High costs and potential loss of control",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0045_001_d1"
+    },
+    {
+      "element_id": "SYN_0045_001_e05",
+      "element_type": "rationale",
+      "text": "Requires a mix of senior and junior talent to balance experience and speed of onboarding",
+      "in_document": "omitted",
+      "decision_id": "SYN_0045_001_d1"
+    },
+    {
+      "element_id": "SYN_0045_001_e06",
+      "element_type": "rationale",
+      "text": "Budget envelope allows for this hiring plan while still accommodating other security initiatives",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0045_001_d1"
+    },
+    {
+      "element_id": "SYN_0045_001_e07",
+      "element_type": "rationale",
+      "text": "The timeline ensures that staffing levels will be restored by the time the hospital group resumes normal operations",
+      "in_document": "omitted",
+      "decision_id": "SYN_0045_001_d1"
+    },
+    {
+      "element_id": "SYN_0045_001_e08",
+      "element_type": "condition",
+      "text": "Approval from hospital board of directors is pending",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0045_001_d1"
+    },
+    {
+      "element_id": "SYN_0045_001_e09",
+      "element_type": "condition",
+      "text": "Recruitment process might be slowed by current cybersecurity talent shortage",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0045_001_d1"
+    },
+    {
+      "element_id": "SYN_0045_001_e10",
+      "element_type": "dissent",
+      "text": "On-call engineer suggests that more senior hires could lead to inefficiencies",
+      "in_document": "omitted",
+      "decision_id": "SYN_0045_001_d1"
+    },
+    {
+      "element_id": "SYN_0045_001_e11",
+      "element_type": "owner",
+      "text": "Human resources department",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0045_001_d1"
+    },
+    {
+      "element_id": "SYN_0045_001_e12",
+      "element_type": "approver",
+      "text": "Board of directors",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0045_001_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.91,
+    "seed": 1766,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 4 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0045_001_e02\",\n    \"text\": \"Hire 6 senior cybersecurity experts over the next 2 months\",\n    \"score\": 0.76,\n    \"document_sentence\": \"- Hire 4 senior cybersecurity experts and 6 junior analysts over the next 3 months\"\n  },\n  {\n    \"element_id\": \"SYN_0045_001_e08\",\n    \"text\": \"Approval from hospital board of directors is pending\",\n    \"score\": 1.0,\n    \"document_sentence\": \"- Pending approval from the hospital board of directors\"\n  },\n  {\n    \"element_id\": \"SYN_0045_001_e09\",\n    \"text\": \"Recruitment process might be slowed by current cybersecurity talent shortage\",\n    \"score\": 0.71,\n    \"document_sentence\": \"- Potential slowdown in the recruitment process due to the current cybersecurity talent shortage\"\n  },\n  {\n    \"element_id\": \"SYN_0045_001_e11\",\n    \"text\": \"Human resources department\",\n    \"score\": 0.86,\n    \"document_sentence\": \"- Involvement of the human resources department.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}
