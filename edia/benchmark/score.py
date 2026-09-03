@@ -272,17 +272,27 @@ class ScoreReport:
 
 def score_extraction(
     result: ExtractionResult,
-    truth: GroundTruthPair,
+    truth: GroundTruthPair | None = None,
     chunk_texts: dict[str, str] | None = None,
     threshold: float = DEFAULT_MATCH_THRESHOLD,
     semantic: SemanticMatcher | None = None,
+    pair_id: str | None = None,
 ) -> ScoreReport:
-    """Score one extraction run against one Task 1 ground-truth pair."""
+    """Score one extraction run.
+
+    With `truth` (a Task 1 GroundTruthPair) this scores completeness/recall against
+    the hand-built reasoning elements. With `truth=None` the completeness half is
+    skipped -- only the objective hallucination measures
+    (`unsupported_evidence_rate`, `strict_verbatim_rate`) and the unmatched-element
+    listing are produced. That is the mode used for corpus-wide extraction over
+    QMSum meetings that have no hand-built ground truth. Pass `pair_id` to name the
+    report in that case.
+    """
     sim = semantic.similarity if semantic else token_f1
     matcher_name = f"semantic:{semantic.model_name}" if semantic else "lexical:token_f1"
 
     report = ScoreReport(
-        pair_id=truth.pair_id,
+        pair_id=truth.pair_id if truth is not None else (pair_id or result.source_id),
         model_name=result.model_name,
         matcher=matcher_name,
         threshold=threshold,
@@ -298,7 +308,8 @@ def score_extraction(
 
     matched_extracted_idx: set[int] = set()
 
-    for gt_type, gt_text in truth.all_elements():
+    gt_elements = truth.all_elements() if truth is not None else []
+    for gt_type, gt_text in gt_elements:
         best_score, best_idx = 0.0, -1
         for i, (ex_type, ex_text) in enumerate(extracted):
             s = sim(ex_text, gt_text)
@@ -345,8 +356,11 @@ def render_markdown(reports: list[ScoreReport]) -> str:
     lines.append("| Pair | Completeness | Evidence grounded | Unsupported (hallucination) | Strict verbatim | Unmatched extracted | Records |")
     lines.append("|---|---|---|---|---|---|---|")
     for r in reports:
+        completeness_cell = (
+            f"{r.gt_matched}/{r.gt_total} ({r.completeness:.0%})" if r.gt_total else "n/a"
+        )
         lines.append(
-            f"| {r.pair_id} | {r.gt_matched}/{r.gt_total} ({r.completeness:.0%}) "
+            f"| {r.pair_id} | {completeness_cell} "
             f"| {r.quotes_grounded}/{r.quotes_total} ({r.evidence_grounding:.0%}) "
             f"| {r.unsupported_evidence_rate:.0%} "
             f"| {r.strict_verbatim_rate:.0%} "

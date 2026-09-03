@@ -34,7 +34,6 @@ from __future__ import annotations
 
 import json
 import random
-import re
 import time
 from pathlib import Path
 
@@ -49,6 +48,7 @@ from .dataset import (
     PairSource,
 )
 from .score import content_tokens, token_f1
+from .textutil import split_sentences
 from .topics import Topic, pair_plan
 
 PROMPT_VERSION = "synth-v1"
@@ -214,9 +214,6 @@ def assign_labels(
 # leak checking
 # --------------------------------------------------------------------------- #
 
-_SENT_SPLIT = re.compile(r"(?<=[.!?])\s+|\n+")
-
-
 def find_leaks(document: str, omitted: list[ElementLabel]) -> list[dict]:
     """Report omitted elements whose content nonetheless shows up in the document.
 
@@ -224,7 +221,7 @@ def find_leaks(document: str, omitted: list[ElementLabel]) -> list[dict]:
     across a 150-word document is coincidence, the same words concentrated in one
     sentence is a leak.
     """
-    sentences = [s for s in _SENT_SPLIT.split(document) if s.strip()]
+    sentences = split_sentences(document)
     leaks: list[dict] = []
     for el in omitted:
         if len(content_tokens(el.text)) < 3:
@@ -413,6 +410,7 @@ class PairGenerator:
                 model=self.model, temperature=self.temperature, seed=seed,
                 prompt_version=PROMPT_VERSION, sampled=True,
             ),
+            label_provenance="constructed",
             notes=notes,
         )
 

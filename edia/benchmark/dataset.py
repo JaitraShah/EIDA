@@ -26,7 +26,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from ..extraction.schema import SCHEMA_VERSION, DecisionRecord, ElementType
 
-DATASET_VERSION = "1.0.0"
+DATASET_VERSION = "1.1.0"
 
 
 class InDocument(str, Enum):
@@ -37,8 +37,11 @@ class InDocument(str, Enum):
 
 
 class PairSource(str, Enum):
-    SYNTHETIC = "synthetic"
-    QMSUM = "qmsum"
+    SYNTHETIC = "synthetic"          # generated pair, ground truth constructed before the text
+    QMSUM = "qmsum"                  # one of the 5 hand-validated Task 1 pairs (QSUM_001..005)
+    QMSUM_AUTO = "qmsum_auto"        # a QMSum meeting whose in_document labels were derived
+                                    # automatically (NLI over specific-vs-general queries) --
+                                    # SILVER, not gold: see edia.benchmark.qmsum_corpus
 
 
 class ElementLabel(BaseModel):
@@ -93,6 +96,15 @@ class BenchmarkPair(BaseModel):
     generation: Optional[GenerationMeta] = None
     annotations: list[AnnotationMeta] = Field(default_factory=list)
     notes: str = ""
+    label_provenance: Optional[str] = Field(
+        default=None,
+        description=(
+            "How the in_document labels on `elements` were produced: 'constructed' "
+            "(synthetic, decided before the text), 'hand' (Task 1 human validation), "
+            "or 'nli:<model>' / 'llm:<model>' for the auto-labelled QMSum corpus. "
+            "None on pre-1.1.0 pairs."
+        ),
+    )
     schema_version: str = SCHEMA_VERSION
     dataset_version: str = DATASET_VERSION
 
@@ -103,6 +115,13 @@ class BenchmarkPair(BaseModel):
     @property
     def present_count(self) -> int:
         return len(self.elements) - self.gap_count
+
+    @property
+    def has_reasoning_ground_truth(self) -> bool:
+        """True when `decisions` carries structured reasoning elements, i.e. the
+        pair can feed extraction-completeness scoring (`score.score_extraction`).
+        QMSUM_AUTO pairs have `decisions == []` and are gap-detection only."""
+        return bool(self.decisions)
 
     def save(self, directory: str | Path) -> Path:
         directory = Path(directory)
@@ -130,8 +149,11 @@ def dataset_stats(pairs: list[BenchmarkPair]) -> dict:
     by_source: dict[str, int] = {}
     by_label: dict[str, int] = {}
     by_type: dict[str, int] = {}
+    by_provenance: dict[str, int] = {}
     for p in pairs:
         by_source[p.source.value] = by_source.get(p.source.value, 0) + 1
+        prov = p.label_provenance or "unspecified"
+        by_provenance[prov] = by_provenance.get(prov, 0) + 1
         for e in p.elements:
             by_label[e.in_document.value] = by_label.get(e.in_document.value, 0) + 1
             by_type[e.element_type.value] = by_type.get(e.element_type.value, 0) + 1
@@ -140,6 +162,8 @@ def dataset_stats(pairs: list[BenchmarkPair]) -> dict:
     return {
         "pairs": len(pairs),
         "by_source": by_source,
+        "by_label_provenance": by_provenance,
+        "pairs_with_reasoning_gt": sum(p.has_reasoning_ground_truth for p in pairs),
         "elements": total_elements,
         "gaps": gaps,
         "gap_rate": round(gaps / total_elements, 3) if total_elements else 0.0,

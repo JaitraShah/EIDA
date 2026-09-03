@@ -20,7 +20,12 @@ Writes, per meeting:
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from edia.benchmark.qmsum_corpus import general_summary
 
 SRC = Path("data/qmsum/product_test.jsonl")
 OUT = Path("data/qmsum")
@@ -55,7 +60,7 @@ def main() -> int:
             json.dumps({"meeting_transcripts": turns}, indent=1, ensure_ascii=False),
             encoding="utf-8",
         )
-        summary = "\n\n".join(q["answer"] for q in row["general_query_list"])
+        summary = general_summary(row)
         (OUT / f"{pair_id}_document.txt").write_text(summary, encoding="utf-8")
 
         words = len(full.split())

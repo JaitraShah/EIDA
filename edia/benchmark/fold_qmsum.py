@@ -109,6 +109,7 @@ def build_pair(truth: GroundTruthPair) -> BenchmarkPair:
         decisions=list(truth.decisions),
         elements=elements,
         generation=None,
+        label_provenance="hand",
         notes=(
             truth.notes
             + "\n\nLabels come from Task 1 (outputs/gap_validation_results.md), not from a "
