@@ -55,6 +55,12 @@ def _make_detector(name: str, model: str | None, threshold: float):
 
         d = LlmEntailmentGapDetector(model=model)
         return d, f"llm:{d.model}"
+    if name == "ensemble":
+        from edia.gapdetect.ensemble import EnsembleGapDetector
+
+        d = EnsembleGapDetector(nli_model=model or "roberta-large-mnli",
+                                nli_threshold=threshold, llm_model=model)
+        return d, f"ensemble[{'+'.join(d.member_names)}]"
     raise ValueError(f"unknown detector {name!r}")
 
 
@@ -75,7 +81,8 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--root", default=str(RAW_ROOT))
-    ap.add_argument("--detector", default="nli", choices=["nli", "llm", "lexical"])
+    ap.add_argument("--detector", default="nli",
+                    choices=["nli", "llm", "lexical", "ensemble"])
     ap.add_argument("--decomposer", default="sentence", choices=["sentence", "llm"])
     ap.add_argument("--model", default=None, help="override detector model name")
     ap.add_argument("--threshold", type=float, default=0.5,

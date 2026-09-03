@@ -14,15 +14,19 @@ detector is scored on.
 
 ## Composition
 
-| tier | source | pairs | label provenance | feeds |
-|---|---|--:|---|---|
-| gold | `qmsum` | 5 | `hand` (Task 1 human validation) | gap detection **and** extraction completeness |
-| corpus | `qmsum_auto` | ⟨~227⟩ | `nli:roberta-large-mnli` @ 0.55 | gap detection only (`decisions=[]`) |
-| synthetic | `synthetic` | ⟨~2040⟩ | `constructed` (labels fixed before the text is written) | gap detection **and** extraction completeness |
+| tier | source | pairs | elements | gap rate | label provenance | feeds |
+|---|---|--:|--:|--:|---|---|
+| gold | `qmsum` | 5 | 50 | 0.76 | `hand` (Task 1 human validation) | gap detection **and** extraction completeness |
+| corpus | `qmsum_auto` | 227 | 4 930 | 0.93 | `nli:roberta-large-mnli` @ 0.55 | gap detection only (`decisions=[]`) |
+| synthetic | `synthetic` | in progress (target ~2040) | ~12/pair | ~0.45 | `constructed` (labels fixed before the text is written) | gap detection **and** extraction completeness |
 
 - **QMSum corpus scope:** all 232 QMSum meetings, 3 domains (Academic 59,
   Committee 36, Product 137), all train/val/test splits, minus the 5 gold held out
-  → 227 auto pairs. 1 543 `specific_query_list` answers decomposed to sentences.
+  → 227 auto pairs. 1 543 `specific_query_list` answers → 4 930 sentence elements.
+- **Spot-check** (17 pairs / 382 elements, `outputs/qmsum_spotcheck_report.md`):
+  auto-vs-review gap-class **F1 0.964, recall 1.00, precision 0.931** — the silver
+  labels never under-call a gap; ~7% of predicted gaps are paraphrase-present
+  false positives.
 - **Synthetic scope:** 12 organisational domains × 10 decision archetypes = 120
   topics × 17 variants. Per-pair scenario colour + temperature jitter (0.7–0.95)
   to resist mode collapse; near-duplicates flagged post-hoc
@@ -42,11 +46,12 @@ Three different label sources, three different trust levels:
    agreement on it is meaningful.
 3. **`nli:...` (qmsum_auto) — SILVER.** Produced by the NLI detector. **Scoring
    that same detector against these labels measures self-consistency, not
-   accuracy.** Real accuracy for this tier comes only from (a) calibration on the
-   5 gold pairs (`outputs/qmsum_label_calibration.md`: F1 ≈ 0.85–0.86 on terse
-   gold fragments, expected higher on the sentence-level corpus) and (b) the human
-   spot-check ⟨`outputs/qmsum_spotcheck_report.json`: auto-vs-human F1 = fill,
-   human-vs-human κ = fill⟩.
+   accuracy.** Real accuracy for this tier: (a) calibration on the 5 gold pairs
+   (`outputs/qmsum_label_calibration.md`: gold F1 ≈ 0.86 on terse fragments;
+   threshold 0.55 chosen against both gold F1 and the corpus gap-rate sweep), and
+   (b) the spot-check (`outputs/qmsum_spotcheck_report.md`: auto-vs-review gap-class
+   **F1 0.964, fn 0, fp ~7%**, all paraphrase-direction). A human blind pass
+   (RUNBOOK Step B2) is still pending and will refine this.
 
 ## Known limitations (carried forward + new)
 

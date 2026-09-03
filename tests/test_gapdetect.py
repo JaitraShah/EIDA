@@ -54,6 +54,32 @@ def test_lexical_cannot_see_paraphrase():
     assert lab is InDocument.OMITTED
 
 
+# --- ensemble vote maths (no models) --------------------------------------
+
+def test_ensemble_present_if_any_member_says_present():
+    from edia.gapdetect.ensemble import EnsembleGapDetector
+
+    class Member:
+        def __init__(self, name, score):
+            self.name = name
+            self._s = score
+
+        def present_score(self, d, e):
+            return self._s
+
+    ens = EnsembleGapDetector.__new__(EnsembleGapDetector)
+    ens.threshold = 0.5
+    ens.with_llm = False
+    # nli well-below its threshold (gap), lexical well-above its threshold (present)
+    ens._members = [(Member("nli", 0.02), 0.55), (Member("lexical", 0.9), 0.45)]
+    assert ens.present_score("d", "e") >= 0.5          # lexical rescues
+    assert ens.is_gap("d", "e") is False
+
+    # both members below their thresholds -> gap
+    ens._members = [(Member("nli", 0.02), 0.55), (Member("lexical", 0.1), 0.45)]
+    assert ens.is_gap("d", "e") is True
+
+
 # --- metrics --------------------------------------------------------------
 
 def test_gap_metrics_basic():

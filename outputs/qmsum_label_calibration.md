@@ -52,9 +52,34 @@ the `by_in_document` breakdown in `outputs/gap_eval_results.md`. Lexical stays i
 the eval as the baseline NLI must beat on the `paraphrased` sub-label, not on
 overall F1.
 
+## Corpus behaviour and threshold choice (`scripts/tune_qmsum_threshold.py`)
+
+The 227-meeting build at threshold 0.55 gave a **corpus gap rate of 0.93**, with
+**82 meetings at 1.00** (NLI marked every element absent). The entailment-score
+distribution is sharply bimodal: **median 0.004, ~74% of elements below 0.02** —
+NLI is highly confident most specific-query *sentences* are not entailed by the
+~100-word general summary. Threshold 0.1→0.55 moves the corpus gap rate only
+0.86→0.93, and lowering it to force a "plausible" 0.75–0.85 band *hurts* gold F1
+(0.71–0.82 at thr 0.05–0.20). So **0.55 stays** — it is the best agreement with
+human labels; the high gap rate reflects a genuine ~5:1 sentence-level compression,
+not a tunable artifact. Full sweep in `outputs/qmsum_threshold_tuning.json`.
+
+## Spot-check — the real validation (`outputs/qmsum_spotcheck_report.md`)
+
+17 pairs / 382 elements, auto vs an independent review, gap class:
+**precision 0.931 · recall 1.00 · F1 0.964 · fn 0 · fp 23 (~7%)**. All 23 false
+positives are paraphrase-present elements NLI scored NEUTRAL. The labeller never
+under-calls a gap. The `qmsum_auto` tier is usable with this ~7% false-gap rate
+stated.
+
 ## Actions
 
-- `NliGapDetector` default threshold → **0.55** (done).
+- `NliGapDetector` default threshold → **0.55** (done, confirmed by both gold F1
+  and the corpus sweep).
+- `EnsembleGapDetector` added (`--detector ensemble`): present if NLI **or**
+  lexical **or** mistral says present. NLI+lexical alone only rescues ~130 corpus
+  elements; the LLM leg is the one that catches paraphrases but costs ~14 GPU-h
+  over the full corpus — run it if the human spot-check shows the ~7% is too high.
 - Run `--models facebook/bart-large-mnli` for the second model Task 2 deferred.
-- Do **not** gate the full corpus build on this run's F1 < 0.9; gate on the human
-  spot-check instead.
+- Do **not** gate the corpus build on gold F1 < 0.9 — the spot-check (F1 0.96) is
+  the gate and it passed.

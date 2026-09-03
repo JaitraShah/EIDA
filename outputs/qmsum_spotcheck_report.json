@@ -1,0 +1,204 @@
+{
+  "pairs": 17,
+  "double_annotated_pairs": 0,
+  "auto_vs_human_gap_class": {
+    "n": 382,
+    "gap_base_rate": 0.817,
+    "precision": 0.931,
+    "recall": 1.0,
+    "f1": 0.964,
+    "accuracy": 0.94,
+    "confusion": {
+      "tp": 312,
+      "fp": 23,
+      "fn": 0,
+      "tn": 47
+    }
+  },
+  "disagreements": [
+    {
+      "pair_id": "QMS_ACA_TR_004",
+      "element_id": "QMS_ACA_TR_004_e06",
+      "type": "decision",
+      "text": "Transcribers occasionally misidentified speakers and omitted backchannels that were more hidden in the mixed signal.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_ACA_TR_007",
+      "element_id": "QMS_ACA_TR_007_e05",
+      "type": "decision",
+      "text": "As the data collection is going into its second phase, more complex scenarios will be used to generate more intricate dialogues.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_ACA_TR_009",
+      "element_id": "QMS_ACA_TR_009_e02",
+      "type": "rationale",
+      "text": "Similarly, differences in the type of recording equipment used and the manner in which microphones are worn by speakers causes problems for the transcription effort.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_ACA_TR_009",
+      "element_id": "QMS_ACA_TR_009_e06",
+      "type": "decision",
+      "text": "The group discussed the potential for assigning additional tasks to ICSI's transcriber pool, including tagging more fine-grained acoustic information, and discourse and disfluency tagging.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_ACA_TR_024",
+      "element_id": "QMS_ACA_TR_024_e08",
+      "type": "rationale",
+      "text": "In order to complete a functioning prototype of the belief-net, it was decided to start expanding the Ontology and Discourse nodes by working with a simple construction, like \"where is X?\".",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_ACA_TR_039",
+      "element_id": "QMS_ACA_TR_039_e01",
+      "type": "decision",
+      "text": "The new system for collecting subject intention focused on allowing subjects to come up with the intent themselves.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_ACA_TR_039",
+      "element_id": "QMS_ACA_TR_039_e02",
+      "type": "alternative",
+      "text": "Instead of giving them a list of goals, the subjects would, with the help of an instructor, figure out what they want to do in the environment.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_ACA_TR_039",
+      "element_id": "QMS_ACA_TR_039_e05",
+      "type": "decision",
+      "text": "Grad C introduced the topic and explained that the new idea was to allow subjects to generate high level tasks, like going shopping, by themselves.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e22",
+      "type": "rationale",
+      "text": "The use of legislation was affirmed by Dr Frank Atherton but it was just one of the tools they have got, they need to employ them all.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e23",
+      "type": "rationale",
+      "text": "Then as to sports infrastructure, Dr Frank Atherton, though not an expert in that field, also supported it as a good one to pursue not only in schools but also in a broadening area.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_017",
+      "element_id": "QMS_CMT_TR_017_e01",
+      "type": "condition",
+      "text": "The petitioners had asked the government to implement a wage supplement as a temporary measure to bring the wages for those who were in contact with the general public and working in what had been deemed an essential service to no less than $20 an hour, in light of their service and the risks they were taking for all Canadians.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_PRD_TR_008",
+      "element_id": "QMS_PRD_TR_008_e02",
+      "type": "rationale",
+      "text": "Marketing believed that it is worth taking a risk because speech recognition is new to the market and customers would be willing to pay extra for this trendy function.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_PRD_TR_050",
+      "element_id": "QMS_PRD_TR_050_e11",
+      "type": "decision",
+      "text": "Marketing noticed that gaming on TV was getting popular and hoped that the new remote control could become a specialized keypad for game players.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_PRD_TR_050",
+      "element_id": "QMS_PRD_TR_050_e13",
+      "type": "rationale",
+      "text": "A bar-code design was desirable as well.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_PRD_TR_050",
+      "element_id": "QMS_PRD_TR_050_e17",
+      "type": "rationale",
+      "text": "An ergonomic curve design was recommended by User Interface and appreciated by Project Manager, for it would make the remote control look more stylish.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_PRD_TR_089",
+      "element_id": "QMS_PRD_TR_089_e15",
+      "type": "decision",
+      "text": "Marketing made a presentation on  important aspects the team need to pay attention to concerning the remote control market.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_PRD_TR_089",
+      "element_id": "QMS_PRD_TR_089_e16",
+      "type": "rationale",
+      "text": "A most important aspect is its look and feel, so that the remote control has to look and feel fancier to meet customer's demands.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_PRD_TR_089",
+      "element_id": "QMS_PRD_TR_089_e17",
+      "type": "rationale",
+      "text": "The second point is that it should be technologically innovative.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_PRD_TR_089",
+      "element_id": "QMS_PRD_TR_089_e21",
+      "type": "rationale",
+      "text": "The third point that Marketing raised was easy to use.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_PRD_TR_091",
+      "element_id": "QMS_PRD_TR_091_e06",
+      "type": "rationale",
+      "text": "This prototype cost fifteen dollars and it was high above the budget.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_PRD_TR_091",
+      "element_id": "QMS_PRD_TR_091_e09",
+      "type": "rationale",
+      "text": "This one cost four dollars.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_PRD_TR_091",
+      "element_id": "QMS_PRD_TR_091_e20",
+      "type": "rationale",
+      "text": "The first thing was fancy look and feel, the second was innovativeness, the third was easy to use.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    },
+    {
+      "pair_id": "QMS_PRD_TR_091",
+      "element_id": "QMS_PRD_TR_091_e22",
+      "type": "rationale",
+      "text": "Both Industrial Designer and User Interface gave three or four points to look and feel, six points to innovativeness and also six points to easy to use.",
+      "auto": "omitted",
+      "human": "present_unspecified"
+    }
+  ]
+}

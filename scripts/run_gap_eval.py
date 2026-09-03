@@ -86,6 +86,9 @@ def _make_detector(kind: str, nli_model: str, threshold: float):
     if kind == "llm":
         from edia.gapdetect.entailment_llm import LlmEntailmentGapDetector
         return LlmEntailmentGapDetector(threshold=threshold)
+    if kind == "ensemble":
+        from edia.gapdetect.ensemble import EnsembleGapDetector
+        return EnsembleGapDetector(nli_model=nli_model, nli_threshold=threshold)
     raise ValueError(kind)
 
 
@@ -130,7 +133,7 @@ def main(argv=None) -> int:
     ap.add_argument("--threshold", type=float, default=0.5)
     ap.add_argument("--nli-model", default="roberta-large-mnli")
     ap.add_argument("--detectors", nargs="+", default=["nli", "lexical"],
-                    choices=["nli", "lexical", "llm"])
+                    choices=["nli", "lexical", "llm", "ensemble"])
     ap.add_argument("--with-llm", action="store_true", help="shorthand: add 'llm'")
     ap.add_argument("--llm-sample", type=int, default=0,
                     help="run the llm detector on a stratified sample of N elements only")

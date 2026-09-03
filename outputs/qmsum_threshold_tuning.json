@@ -1,0 +1,107 @@
+{
+  "gold_elements": 50,
+  "corpus_elements": 4930,
+  "entail_score_distribution": {
+    "median": 0.0039,
+    "mean": 0.0861,
+    "frac_below_0.02": 0.738,
+    "frac_above_0.5": 0.073
+  },
+  "plausible_gap_band": [
+    0.75,
+    0.9
+  ],
+  "sweep": [
+    {
+      "threshold": 0.02,
+      "gold_f1": 0.667,
+      "gold_precision": 0.84,
+      "gold_recall": 0.553,
+      "gold_fn": 17,
+      "corpus_gap_rate": 0.738,
+      "corpus_in_band": false
+    },
+    {
+      "threshold": 0.05,
+      "gold_f1": 0.708,
+      "gold_precision": 0.852,
+      "gold_recall": 0.605,
+      "gold_fn": 15,
+      "corpus_gap_rate": 0.815,
+      "corpus_in_band": true
+    },
+    {
+      "threshold": 0.1,
+      "gold_f1": 0.817,
+      "gold_precision": 0.879,
+      "gold_recall": 0.763,
+      "gold_fn": 9,
+      "corpus_gap_rate": 0.856,
+      "corpus_in_band": true
+    },
+    {
+      "threshold": 0.15,
+      "gold_f1": 0.817,
+      "gold_precision": 0.879,
+      "gold_recall": 0.763,
+      "gold_fn": 9,
+      "corpus_gap_rate": 0.876,
+      "corpus_in_band": true
+    },
+    {
+      "threshold": 0.2,
+      "gold_f1": 0.811,
+      "gold_precision": 0.833,
+      "gold_recall": 0.789,
+      "gold_fn": 8,
+      "corpus_gap_rate": 0.892,
+      "corpus_in_band": true
+    },
+    {
+      "threshold": 0.3,
+      "gold_f1": 0.827,
+      "gold_precision": 0.838,
+      "gold_recall": 0.816,
+      "gold_fn": 7,
+      "corpus_gap_rate": 0.909,
+      "corpus_in_band": false
+    },
+    {
+      "threshold": 0.4,
+      "gold_f1": 0.846,
+      "gold_precision": 0.825,
+      "gold_recall": 0.868,
+      "gold_fn": 5,
+      "corpus_gap_rate": 0.917,
+      "corpus_in_band": false
+    },
+    {
+      "threshold": 0.5,
+      "gold_f1": 0.846,
+      "gold_precision": 0.825,
+      "gold_recall": 0.868,
+      "gold_fn": 5,
+      "corpus_gap_rate": 0.927,
+      "corpus_in_band": false
+    },
+    {
+      "threshold": 0.55,
+      "gold_f1": 0.861,
+      "gold_precision": 0.829,
+      "gold_recall": 0.895,
+      "gold_fn": 4,
+      "corpus_gap_rate": 0.932,
+      "corpus_in_band": false
+    },
+    {
+      "threshold": 0.65,
+      "gold_f1": 0.85,
+      "gold_precision": 0.81,
+      "gold_recall": 0.895,
+      "gold_fn": 4,
+      "corpus_gap_rate": 0.939,
+      "corpus_in_band": false
+    }
+  ],
+  "note": "The entailment-score distribution is sharply bimodal (median ~0.004, ~74% of elements < 0.02): NLI is highly confident most specific-query sentences are not entailed by the ~100-word general summary. Threshold choice in 0.1-0.55 barely moves the corpus gap rate (0.86->0.93). This is consistent with a genuine 5:1 compression rather than a tunable artifact -- so the ensemble (NLI + lexical + LLM) and the human spot-check, not threshold tuning, are what validate these labels."
+}
