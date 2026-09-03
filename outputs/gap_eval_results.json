@@ -1,0 +1,914 @@
+{
+  "threshold": 0.55,
+  "nli_model": "roberta-large-mnli",
+  "pairs": 5,
+  "elements": 50,
+  "detectors": {
+    "nli:roberta-large-mnli": {
+      "n_elements_scored": 50,
+      "overall": {
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.829,
+        "recall": 0.895,
+        "f1": 0.861,
+        "accuracy": 0.78,
+        "confusion": {
+          "tp": 34,
+          "fp": 7,
+          "fn": 4,
+          "tn": 5
+        }
+      },
+      "threshold_sweep": [
+        {
+          "threshold": 0.2,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.833,
+          "recall": 0.789,
+          "f1": 0.811,
+          "accuracy": 0.72,
+          "confusion": {
+            "tp": 30,
+            "fp": 6,
+            "fn": 8,
+            "tn": 6
+          }
+        },
+        {
+          "threshold": 0.25,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.838,
+          "recall": 0.816,
+          "f1": 0.827,
+          "accuracy": 0.74,
+          "confusion": {
+            "tp": 31,
+            "fp": 6,
+            "fn": 7,
+            "tn": 6
+          }
+        },
+        {
+          "threshold": 0.3,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.838,
+          "recall": 0.816,
+          "f1": 0.827,
+          "accuracy": 0.74,
+          "confusion": {
+            "tp": 31,
+            "fp": 6,
+            "fn": 7,
+            "tn": 6
+          }
+        },
+        {
+          "threshold": 0.35,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.825,
+          "recall": 0.868,
+          "f1": 0.846,
+          "accuracy": 0.76,
+          "confusion": {
+            "tp": 33,
+            "fp": 7,
+            "fn": 5,
+            "tn": 5
+          }
+        },
+        {
+          "threshold": 0.4,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.825,
+          "recall": 0.868,
+          "f1": 0.846,
+          "accuracy": 0.76,
+          "confusion": {
+            "tp": 33,
+            "fp": 7,
+            "fn": 5,
+            "tn": 5
+          }
+        },
+        {
+          "threshold": 0.45,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.825,
+          "recall": 0.868,
+          "f1": 0.846,
+          "accuracy": 0.76,
+          "confusion": {
+            "tp": 33,
+            "fp": 7,
+            "fn": 5,
+            "tn": 5
+          }
+        },
+        {
+          "threshold": 0.5,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.825,
+          "recall": 0.868,
+          "f1": 0.846,
+          "accuracy": 0.76,
+          "confusion": {
+            "tp": 33,
+            "fp": 7,
+            "fn": 5,
+            "tn": 5
+          }
+        },
+        {
+          "threshold": 0.55,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.829,
+          "recall": 0.895,
+          "f1": 0.861,
+          "accuracy": 0.78,
+          "confusion": {
+            "tp": 34,
+            "fp": 7,
+            "fn": 4,
+            "tn": 5
+          }
+        },
+        {
+          "threshold": 0.6,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.829,
+          "recall": 0.895,
+          "f1": 0.861,
+          "accuracy": 0.78,
+          "confusion": {
+            "tp": 34,
+            "fp": 7,
+            "fn": 4,
+            "tn": 5
+          }
+        },
+        {
+          "threshold": 0.65,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.81,
+          "recall": 0.895,
+          "f1": 0.85,
+          "accuracy": 0.76,
+          "confusion": {
+            "tp": 34,
+            "fp": 8,
+            "fn": 4,
+            "tn": 4
+          }
+        },
+        {
+          "threshold": 0.7,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.814,
+          "recall": 0.921,
+          "f1": 0.864,
+          "accuracy": 0.78,
+          "confusion": {
+            "tp": 35,
+            "fp": 8,
+            "fn": 3,
+            "tn": 4
+          }
+        },
+        {
+          "threshold": 0.75,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.814,
+          "recall": 0.921,
+          "f1": 0.864,
+          "accuracy": 0.78,
+          "confusion": {
+            "tp": 35,
+            "fp": 8,
+            "fn": 3,
+            "tn": 4
+          }
+        },
+        {
+          "threshold": 0.8,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.814,
+          "recall": 0.921,
+          "f1": 0.864,
+          "accuracy": 0.78,
+          "confusion": {
+            "tp": 35,
+            "fp": 8,
+            "fn": 3,
+            "tn": 4
+          }
+        }
+      ],
+      "breakdowns": {
+        "by_source": {
+          "qmsum": {
+            "n": 50,
+            "gap_base_rate": 0.76,
+            "precision": 0.829,
+            "recall": 0.895,
+            "f1": 0.861,
+            "accuracy": 0.78,
+            "confusion": {
+              "tp": 34,
+              "fp": 7,
+              "fn": 4,
+              "tn": 5
+            }
+          }
+        },
+        "by_domain": {
+          "product": {
+            "n": 50,
+            "gap_base_rate": 0.76,
+            "precision": 0.829,
+            "recall": 0.895,
+            "f1": 0.861,
+            "accuracy": 0.78,
+            "confusion": {
+              "tp": 34,
+              "fp": 7,
+              "fn": 4,
+              "tn": 5
+            }
+          }
+        },
+        "by_element_type": {
+          "alternative": {
+            "n": 21,
+            "gap_base_rate": 0.714,
+            "precision": 0.765,
+            "recall": 0.867,
+            "f1": 0.812,
+            "accuracy": 0.714,
+            "confusion": {
+              "tp": 13,
+              "fp": 4,
+              "fn": 2,
+              "tn": 2
+            }
+          },
+          "approver": {
+            "n": 2,
+            "gap_base_rate": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "accuracy": 1.0,
+            "confusion": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "tn": 0
+            }
+          },
+          "condition": {
+            "n": 4,
+            "gap_base_rate": 0.75,
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.857,
+            "accuracy": 0.75,
+            "confusion": {
+              "tp": 3,
+              "fp": 1,
+              "fn": 0,
+              "tn": 0
+            }
+          },
+          "decision": {
+            "n": 9,
+            "gap_base_rate": 0.444,
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1": 0.667,
+            "accuracy": 0.667,
+            "confusion": {
+              "tp": 3,
+              "fp": 2,
+              "fn": 1,
+              "tn": 3
+            }
+          },
+          "dissent": {
+            "n": 3,
+            "gap_base_rate": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "accuracy": 1.0,
+            "confusion": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 0,
+              "tn": 0
+            }
+          },
+          "rationale": {
+            "n": 11,
+            "gap_base_rate": 1.0,
+            "precision": 1.0,
+            "recall": 0.909,
+            "f1": 0.952,
+            "accuracy": 0.909,
+            "confusion": {
+              "tp": 10,
+              "fp": 0,
+              "fn": 1,
+              "tn": 0
+            }
+          }
+        },
+        "by_in_document": {
+          "omitted": {
+            "n": 38,
+            "gap_base_rate": 1.0,
+            "precision": 1.0,
+            "recall": 0.895,
+            "f1": 0.944,
+            "accuracy": 0.895,
+            "confusion": {
+              "tp": 34,
+              "fp": 0,
+              "fn": 4,
+              "tn": 0
+            }
+          },
+          "paraphrased": {
+            "n": 1,
+            "gap_base_rate": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.0,
+            "confusion": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "tn": 0
+            }
+          },
+          "present_unspecified": {
+            "n": 11,
+            "gap_base_rate": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.455,
+            "confusion": {
+              "tp": 0,
+              "fp": 6,
+              "fn": 0,
+              "tn": 5
+            }
+          }
+        }
+      },
+      "false_positives": [
+        {
+          "pair_id": "QSUM_001",
+          "type": "alternative",
+          "in_document": "present_unspecified",
+          "text": "uncurved (flat) casing -- too dull",
+          "present_score": 0.004
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "alternative",
+          "in_document": "present_unspecified",
+          "text": "single-curved casing",
+          "present_score": 0.182
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "alternative",
+          "in_document": "present_unspecified",
+          "text": "double-curved casing -- would block use of the scroll wheel",
+          "present_score": 0.006
+        },
+        {
+          "pair_id": "QSUM_003",
+          "type": "condition",
+          "in_document": "present_unspecified",
+          "text": "The material choice was explicitly temporary and open to revision.",
+          "present_score": 0.175
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "alternative",
+          "in_document": "present_unspecified",
+          "text": "fancy controller",
+          "present_score": 0.345
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "decision",
+          "in_document": "paraphrased",
+          "text": "Wood was chosen over plastic as the casing material.",
+          "present_score": 0.001
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Both battery and solar alimentation were adopted.",
+          "present_score": 0.01
+        }
+      ],
+      "false_negatives": [
+        {
+          "pair_id": "QSUM_001",
+          "type": "decision",
+          "text": "A single-curved casing was chosen for the remote control.",
+          "present_score": 0.966
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "alternative",
+          "text": "kryptonite",
+          "present_score": 0.659
+        },
+        {
+          "pair_id": "QSUM_003",
+          "type": "alternative",
+          "text": "lightweight plastic",
+          "present_score": 0.929
+        },
+        {
+          "pair_id": "QSUM_005",
+          "type": "rationale",
+          "text": "Marketing pushed for positioning the product on technological innovation.",
+          "present_score": 0.897
+        }
+      ]
+    },
+    "lexical": {
+      "n_elements_scored": 50,
+      "overall": {
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.792,
+        "recall": 1.0,
+        "f1": 0.884,
+        "accuracy": 0.8,
+        "confusion": {
+          "tp": 38,
+          "fp": 10,
+          "fn": 0,
+          "tn": 2
+        }
+      },
+      "threshold_sweep": [
+        {
+          "threshold": 0.2,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.933,
+          "recall": 0.737,
+          "f1": 0.824,
+          "accuracy": 0.76,
+          "confusion": {
+            "tp": 28,
+            "fp": 2,
+            "fn": 10,
+            "tn": 10
+          }
+        },
+        {
+          "threshold": 0.25,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.938,
+          "recall": 0.789,
+          "f1": 0.857,
+          "accuracy": 0.8,
+          "confusion": {
+            "tp": 30,
+            "fp": 2,
+            "fn": 8,
+            "tn": 10
+          }
+        },
+        {
+          "threshold": 0.3,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.865,
+          "recall": 0.842,
+          "f1": 0.853,
+          "accuracy": 0.78,
+          "confusion": {
+            "tp": 32,
+            "fp": 5,
+            "fn": 6,
+            "tn": 7
+          }
+        },
+        {
+          "threshold": 0.35,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.854,
+          "recall": 0.921,
+          "f1": 0.886,
+          "accuracy": 0.82,
+          "confusion": {
+            "tp": 35,
+            "fp": 6,
+            "fn": 3,
+            "tn": 6
+          }
+        },
+        {
+          "threshold": 0.4,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.837,
+          "recall": 0.947,
+          "f1": 0.889,
+          "accuracy": 0.82,
+          "confusion": {
+            "tp": 36,
+            "fp": 7,
+            "fn": 2,
+            "tn": 5
+          }
+        },
+        {
+          "threshold": 0.45,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.822,
+          "recall": 0.974,
+          "f1": 0.892,
+          "accuracy": 0.82,
+          "confusion": {
+            "tp": 37,
+            "fp": 8,
+            "fn": 1,
+            "tn": 4
+          }
+        },
+        {
+          "threshold": 0.5,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.804,
+          "recall": 0.974,
+          "f1": 0.881,
+          "accuracy": 0.8,
+          "confusion": {
+            "tp": 37,
+            "fp": 9,
+            "fn": 1,
+            "tn": 3
+          }
+        },
+        {
+          "threshold": 0.55,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.792,
+          "recall": 1.0,
+          "f1": 0.884,
+          "accuracy": 0.8,
+          "confusion": {
+            "tp": 38,
+            "fp": 10,
+            "fn": 0,
+            "tn": 2
+          }
+        },
+        {
+          "threshold": 0.6,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.776,
+          "recall": 1.0,
+          "f1": 0.874,
+          "accuracy": 0.78,
+          "confusion": {
+            "tp": 38,
+            "fp": 11,
+            "fn": 0,
+            "tn": 1
+          }
+        },
+        {
+          "threshold": 0.65,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.76,
+          "recall": 1.0,
+          "f1": 0.864,
+          "accuracy": 0.76,
+          "confusion": {
+            "tp": 38,
+            "fp": 12,
+            "fn": 0,
+            "tn": 0
+          }
+        },
+        {
+          "threshold": 0.7,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.76,
+          "recall": 1.0,
+          "f1": 0.864,
+          "accuracy": 0.76,
+          "confusion": {
+            "tp": 38,
+            "fp": 12,
+            "fn": 0,
+            "tn": 0
+          }
+        },
+        {
+          "threshold": 0.75,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.76,
+          "recall": 1.0,
+          "f1": 0.864,
+          "accuracy": 0.76,
+          "confusion": {
+            "tp": 38,
+            "fp": 12,
+            "fn": 0,
+            "tn": 0
+          }
+        },
+        {
+          "threshold": 0.8,
+          "n": 50,
+          "gap_base_rate": 0.76,
+          "precision": 0.76,
+          "recall": 1.0,
+          "f1": 0.864,
+          "accuracy": 0.76,
+          "confusion": {
+            "tp": 38,
+            "fp": 12,
+            "fn": 0,
+            "tn": 0
+          }
+        }
+      ],
+      "breakdowns": {
+        "by_source": {
+          "qmsum": {
+            "n": 50,
+            "gap_base_rate": 0.76,
+            "precision": 0.792,
+            "recall": 1.0,
+            "f1": 0.884,
+            "accuracy": 0.8,
+            "confusion": {
+              "tp": 38,
+              "fp": 10,
+              "fn": 0,
+              "tn": 2
+            }
+          }
+        },
+        "by_domain": {
+          "product": {
+            "n": 50,
+            "gap_base_rate": 0.76,
+            "precision": 0.792,
+            "recall": 1.0,
+            "f1": 0.884,
+            "accuracy": 0.8,
+            "confusion": {
+              "tp": 38,
+              "fp": 10,
+              "fn": 0,
+              "tn": 2
+            }
+          }
+        },
+        "by_element_type": {
+          "alternative": {
+            "n": 21,
+            "gap_base_rate": 0.714,
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.857,
+            "accuracy": 0.762,
+            "confusion": {
+              "tp": 15,
+              "fp": 5,
+              "fn": 0,
+              "tn": 1
+            }
+          },
+          "approver": {
+            "n": 2,
+            "gap_base_rate": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "accuracy": 1.0,
+            "confusion": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "tn": 0
+            }
+          },
+          "condition": {
+            "n": 4,
+            "gap_base_rate": 0.75,
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.857,
+            "accuracy": 0.75,
+            "confusion": {
+              "tp": 3,
+              "fp": 1,
+              "fn": 0,
+              "tn": 0
+            }
+          },
+          "decision": {
+            "n": 9,
+            "gap_base_rate": 0.444,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.667,
+            "accuracy": 0.556,
+            "confusion": {
+              "tp": 4,
+              "fp": 4,
+              "fn": 0,
+              "tn": 1
+            }
+          },
+          "dissent": {
+            "n": 3,
+            "gap_base_rate": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "accuracy": 1.0,
+            "confusion": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 0,
+              "tn": 0
+            }
+          },
+          "rationale": {
+            "n": 11,
+            "gap_base_rate": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "accuracy": 1.0,
+            "confusion": {
+              "tp": 11,
+              "fp": 0,
+              "fn": 0,
+              "tn": 0
+            }
+          }
+        },
+        "by_in_document": {
+          "omitted": {
+            "n": 38,
+            "gap_base_rate": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "accuracy": 1.0,
+            "confusion": {
+              "tp": 38,
+              "fp": 0,
+              "fn": 0,
+              "tn": 0
+            }
+          },
+          "paraphrased": {
+            "n": 1,
+            "gap_base_rate": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.0,
+            "confusion": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "tn": 0
+            }
+          },
+          "present_unspecified": {
+            "n": 11,
+            "gap_base_rate": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.182,
+            "confusion": {
+              "tp": 0,
+              "fp": 9,
+              "fn": 0,
+              "tn": 2
+            }
+          }
+        }
+      },
+      "false_positives": [
+        {
+          "pair_id": "QSUM_001",
+          "type": "alternative",
+          "in_document": "present_unspecified",
+          "text": "uncurved (flat) casing -- too dull",
+          "present_score": 0.267
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "alternative",
+          "in_document": "present_unspecified",
+          "text": "single-curved casing",
+          "present_score": 0.462
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "alternative",
+          "in_document": "present_unspecified",
+          "text": "double-curved casing -- would block use of the scroll wheel",
+          "present_score": 0.353
+        },
+        {
+          "pair_id": "QSUM_003",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "A screen menu display was adopted and only basic buttons were kept.",
+          "present_score": 0.444
+        },
+        {
+          "pair_id": "QSUM_003",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Lightweight plastic was temporarily set as the case material.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QSUM_003",
+          "type": "condition",
+          "in_document": "present_unspecified",
+          "text": "The material choice was explicitly temporary and open to revision.",
+          "present_score": 0.125
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "alternative",
+          "in_document": "present_unspecified",
+          "text": "Google-style controller",
+          "present_score": 0.286
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "alternative",
+          "in_document": "present_unspecified",
+          "text": "fancy controller",
+          "present_score": 0.308
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "decision",
+          "in_document": "paraphrased",
+          "text": "Wood was chosen over plastic as the casing material.",
+          "present_score": 0.08
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Both battery and solar alimentation were adopted.",
+          "present_score": 0.25
+        }
+      ],
+      "false_negatives": []
+    }
+  }
+}

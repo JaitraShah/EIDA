@@ -1,48 +1,64 @@
-# EDIA — extraction pipeline (Task 4) and benchmark dataset (Task 5)
+# EDIA — extraction pipeline (Task 4), gap detection (Task 2) and benchmark (Task 5)
 
 Builds on Tasks 1–3, whose outputs are in `outputs/`:
 `gap_validation_results.md` (5 hand-validated QMSum pairs), `nli_transfer_test_results.md`
 (roberta-large-mnli at 95.5% on 22 elements), `task3_ingestion_output_summary.md`.
 
+The benchmark now spans the **whole QMSum corpus** (all 232 meetings, 3 domains,
+auto-labelled) plus **~2000 synthetic pairs**, not the original 5 + 50. See
+`RUNBOOK.md` for the build steps and `outputs/dataset_card.md` for composition and
+label provenance.
+
 ```
 edia/
-  ingestion/          # Task 3, moved in unchanged
+  ingestion/          # Task 3, moved in unchanged (turns_to_text factored out for reuse)
   extraction/
     schema.py         # FROZEN DecisionRecord -- v1.0.0, fingerprint-pinned
     chunker.py        # turn-aware overlapping chunks
     llm_client.py     # Ollama, temperature=0 enforced structurally
     prompts.py        # extraction prompt + the negative few-shot example
     extractor.py      # chunk -> DecisionRecord, no cross-chunk merging
+  gapdetect/          # Task 2, in code: is a reasoning element in the document?
+    nli.py            # NliGapDetector -- premise=doc, hypothesis=element, P(entail)
+    lexical.py        # token-F1 baseline
+    entailment_llm.py # Ollama yes/no ablation
+    metrics.py        # gap-class P/R/F1, threshold sweep
   benchmark/
-    qmsum_ground_truth.py  # Task 1's five tables as DecisionRecords
-    score.py               # completeness + hallucination scoring
-    dataset.py             # BenchmarkPair: one format for synthetic + QMSum pairs
-    topics.py              # the 10 topics x 5 = 50 plan
-    generate.py            # synthetic pair generation, checkpointed
+    qmsum_ground_truth.py  # Task 1's five tables as DecisionRecords (the 5 gold)
+    qmsum_corpus.py        # iterate ALL of QMSum -> QMSUM_AUTO BenchmarkPairs
+    decompose.py           # specific-query answer -> atomic elements (sentence / LLM)
+    score.py               # completeness + hallucination scoring (truth=None -> hall. only)
+    dataset.py             # BenchmarkPair; DATASET_VERSION 1.1.0; PairSource.QMSUM_AUTO
+    topics.py              # 12 domains x 10 archetypes = 120 topics x 17 = 2040 plan
+    generate.py            # synthetic pair generation, checkpointed, sharded
     fold_qmsum.py          # QSUM_001-005 fold-in
-    annotate.py            # human annotation CLI
-    agreement.py           # Jaccard + Cohen's kappa
-scripts/                   # runnable entry points
-tests/                     # 96 tests, all offline
+    annotate.py / agreement.py   # human annotation CLI + Jaccard/kappa
+scripts/                   # runnable entry points (see RUNBOOK.md)
+tests/                     # 148 offline; +2 NLI tests behind `pytest --run-nli`
 ```
 
 ## Setup
 
 ```bash
-pip install -r requirements.txt
-ollama pull mistral
+pip install -r requirements.txt          # ~2 GB: adds transformers + torch for gapdetect
+ollama pull mistral                       # for extraction + synthetic generation
 ```
+
+The NLI model (`roberta-large-mnli`, ~1.4 GB) downloads on first use.
 
 ## Task 4 — run the extraction pipeline
 
 ```bash
 python scripts/prepare_qmsum.py       # cut the 5 Task 1 meetings out of QMSum
 python scripts/run_qmsum_eval.py      # extract + score -> outputs/task4_extraction_results.md
+python scripts/run_corpus_extraction.py   # same extractor over ALL of QMSum; hallucination-only
 ```
 
 Both are checkpointed per chunk (`outputs/extractions/chunks/`), so an interrupted run
 resumes rather than restarting. `--semantic` swaps the lexical element matcher for
-sentence-transformer similarity; `--force` ignores the cache.
+sentence-transformer similarity; `--force` ignores the cache. `run_corpus_extraction.py`
+scores only the objective half (evidence grounding) because completeness needs the
+hand-built ground truth that exists for the 5 gold pairs only.
 
 Extract from any file:
 
@@ -55,18 +71,28 @@ python -m edia.extraction.extractor path/to/transcript.json --out records.json
 | Constraint | How it is enforced |
 |---|---|
 | `temperature=0` | `OllamaClient.__init__` raises unless `allow_sampling=True`; only the synthetic generator passes it, and it records temperature and seed per pair |
-| schema frozen | `tests/test_schema_frozen.py` pins a SHA-256 of the JSON schema; any field change fails CI until `SCHEMA_VERSION` is bumped deliberately |
+| schema frozen | `tests/test_schema_frozen.py` pins a SHA-256 of the JSON schema; any field change fails CI until `SCHEMA_VERSION` is bumped deliberately. The benchmark-side `DATASET_VERSION` (1.1.0) is separate and not in that hash. |
 | no cross-chunk merging | every `DecisionRecord` keeps its `chunk_id`; `ExtractionResult.merged_across_chunks` stays `False`; a test asserts the same decision seen twice stays two records |
 
 ## Task 5 — build the benchmark
 
 ```bash
-python -m edia.benchmark.fold_qmsum              # QSUM_001-005 (done)
-python scripts/generate_synthetic.py             # 50 synthetic pairs, resumable
-python scripts/generate_synthetic.py --status    # progress + dataset stats
-python -m edia.benchmark.annotate --annotator <name>            # first pass
-python -m edia.benchmark.annotate --annotator <name2> --double  # blind second pass
-python -m edia.benchmark.agreement               # Jaccard + kappa
+python -m edia.benchmark.fold_qmsum                       # the 5 gold pairs
+python scripts/build_qmsum_corpus.py --detector nli       # ~227 QMSUM_AUTO pairs (all of QMSum)
+python scripts/calibrate_qmsum_labels.py                  # NLI vs the 5 gold -> threshold
+python scripts/generate_synthetic.py --shard 0/4          # ~2040 synthetic pairs (shard across GPUs)
+python scripts/dedupe_synthetic.py                        # flag near-duplicates
+python scripts/generate_synthetic.py --status             # progress + dataset stats
+python scripts/run_gap_eval.py                            # NLI vs lexical vs LLM -> outputs/gap_eval_results.md
+```
+
+Spot-check the auto labels (see `RUNBOOK.md` for the full sequence):
+
+```bash
+python scripts/sample_for_spotcheck.py
+python -m edia.benchmark.annotate --dir data/benchmark/spotcheck --annotator <name> --blind
+python -m edia.benchmark.annotate --dir data/benchmark/spotcheck --annotator <name2> --double
+python scripts/spotcheck_report.py
 ```
 
 Ground truth for the synthetic pairs is **constructed, not annotated after the fact**:
@@ -96,11 +122,19 @@ kept out of headline completeness.
 
 ## Known limitations
 
-- The 10 synthetic topics in `topics.py` are a stand-in: the "existing topic list" the
-  brief refers to was not in the Task 1–3 handover. Replacing `TOPICS` is a one-file
-  change, and pair ids derive from list position, so swap it before generating.
+Full list in `outputs/dataset_card.md`. The load-bearing ones:
+
+- **`qmsum_auto` labels are silver** — produced by the NLI detector. Scoring NLI
+  against them is a self-consistency check, not accuracy; every report separates
+  those rows. Accuracy for that tier = the 5 gold pairs + the human spot-check.
+- The 120-topic domain×archetype matrix in `topics.py` is a principled stand-in:
+  the "existing topic list" the brief refers to was not in the Task 1–3 handover.
+  Replacing `DOMAINS` / `ARCHETYPES` is a one-file change.
 - QMSum "documents" are annotator-written general summaries standing in for filed
   decision records — Task 1's substitution, carried forward unchanged.
-- Synthetic transcripts are mistral-written and are cleaner than real meetings:
-  fewer disfluencies, tighter turns. The five QMSum pairs are in the same format
-  specifically so a method that only works on the tidy ones is visible.
+- Synthetic transcripts are mistral-written and cleaner than real meetings. The
+  QMSum tiers are in the same schema so a method that only works on the tidy half
+  is visible.
+- `qmsum_auto` element types come from a cue-word heuristic; that breakdown is
+  indicative. Those pairs carry no `DecisionRecord`s, so they do not feed
+  extraction-completeness scoring.

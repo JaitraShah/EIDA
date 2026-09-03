@@ -27,7 +27,10 @@ from ..benchmark.textutil import split_sentences
 from .base import BaseGapDetector
 
 DEFAULT_MODEL = "roberta-large-mnli"
-DEFAULT_THRESHOLD = 0.5
+# Operating point from scripts/calibrate_qmsum_labels.py on the 5 gold pairs:
+# F1 is flat (~0.85-0.86) across 0.35-0.70, so the exact value barely matters;
+# 0.55 sits at the top of that plateau with the fewest false negatives.
+DEFAULT_THRESHOLD = 0.55
 # Leave headroom under the 512-token limit for the hypothesis + specials.
 PREMISE_WINDOW_TOKENS = 380
 WINDOW_STRIDE_SENTENCES = 3
