@@ -133,10 +133,21 @@ def pair_plan() -> list[tuple[str, Topic, int, int]]:
     pair_id encodes topic + variant position so a partial run resumes trivially
     and a regenerated pair keeps its identity. seed is unique per pair and is NOT
     recoverable from the id -- callers take it from here.
+
+    **Ordering is variant-major on purpose**: variant 1 of every topic, then
+    variant 2 of every topic, and so on. Generation is a multi-day CPU job that
+    will be stopped somewhere, so the plan is ordered to make *any* prefix a
+    usable dataset -- the first 120 pairs already cover all 12 domains x 10
+    archetypes, and 400 pairs give ~3 variants of every topic. Topic-major
+    ordering would spend the first 400 pairs on 24 of 120 topics (17 near-
+    identical meetings each), which is a much worse dataset for the same compute.
+
+    Neither `pair_id` nor `seed` depends on position in this list, so changing the
+    order does not invalidate or renumber anything already generated.
     """
     plan: list[tuple[str, Topic, int, int]] = []
-    for ti, topic in enumerate(TOPICS):
-        for vi in range(1, PAIRS_PER_TOPIC + 1):
+    for vi in range(1, PAIRS_PER_TOPIC + 1):
+        for ti, topic in enumerate(TOPICS):
             pair_id = f"SYN_{ti:04d}_{vi:03d}"
             seed = BASE_SEED + ti * PAIRS_PER_TOPIC + vi
             plan.append((pair_id, topic, vi, seed))

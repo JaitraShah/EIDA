@@ -20,6 +20,7 @@ import re
 
 from edia.benchmark.topics import (
     ARCHETYPES,
+    BASE_SEED,
     DOMAINS,
     PAIRS_PER_TOPIC,
     TOPICS,
@@ -57,6 +58,37 @@ def test_plan_shape():
     assert len(set(ids)) == len(plan), "unique pair ids"
     assert len(set(seeds)) == len(plan), "unique seeds -- the old int(id.split) scheme collided"
     assert all(re.fullmatch(r"SYN_\d{4}_\d{3}", pid) for pid in ids)
+
+
+def test_plan_is_variant_major_so_any_prefix_is_usable():
+    """Generation is a multi-day job that gets stopped somewhere, so every prefix
+    of the plan must be a usable dataset. Topic-major ordering would spend the
+    first 400 pairs on 24 of 120 topics; variant-major covers all of them."""
+    plan = pair_plan()
+    n_topics = len(TOPICS)
+
+    first_sweep = plan[:n_topics]
+    assert len({t.key for _, t, _, _ in first_sweep}) == n_topics, \
+        "the first pass must touch every topic once"
+    assert all(v == 1 for _, _, v, _ in first_sweep), "…at variant 1"
+
+    for prefix in (n_topics, 300, 400, 500):
+        sub = plan[:prefix]
+        domains = {t.key.split("__")[0] for _, t, _, _ in sub}
+        archetypes = {t.key.split("__")[1] for _, t, _, _ in sub}
+        assert len({t.key for _, t, _, _ in sub}) == n_topics, prefix
+        assert len(domains) == len(DOMAINS), prefix
+        assert len(archetypes) == len(ARCHETYPES), prefix
+
+
+def test_reordering_did_not_renumber_anything():
+    """pair_id and seed derive from (topic index, variant), not list position, so
+    changing the plan order must not invalidate already-generated pairs."""
+    plan = pair_plan()
+    by_id = {pid: seed for pid, _, _, seed in plan}
+    assert by_id["SYN_0000_001"] == BASE_SEED + 1
+    assert by_id["SYN_0001_001"] == BASE_SEED + PAIRS_PER_TOPIC + 1
+    assert by_id["SYN_0000_017"] == BASE_SEED + PAIRS_PER_TOPIC
 
 
 def test_topics_are_not_ami_product_design():

@@ -1,0 +1,134 @@
+{
+  "pair_id": "SYN_0001_014",
+  "source": "synthetic",
+  "topic": "cloud_platform__build_vs_buy",
+  "title": "Cloud platform / infrastructure",
+  "transcript": "Platform Engineering Lead: Alright everyone, let's discuss the cloud infrastructure options for the upcoming audit remediation.\n\nSRE: I've been thinking about building an in-house platform. With our team's expertise, we could have greater control and potential cost savings over the long run.\n\nCTO: While I appreciate the vision, SRE, the estimated development time of 18 months exceeds the audit remediation deadline. We need something that's ready to go now.\n\nFinance Partner: I've looked into the options as well. Google Cloud Platform seems slightly more expensive and less integrated with our current systems compared to AWS and Azure.\n\nPlatform Engineering Lead: That's correct. AWS offers better compatibility, minimizing integration costs. And when it comes to large-scale data processing for our retail banking operations, AWS is more efficient.\n\nSRE: I see your point, but what about the long-term costs and the potential for customization that an in-house solution could provide?\n\nCTO: SRE, I understand your concern, but we're up against a tight deadline here. AWS offers the best balance of efficiency, compatibility, and readiness.\n\nFinance Partner: Assuming we go with AWS, I've run the numbers. The initial setup costs are substantial, but we can present them for approval from the audit committee.\n\nPlatform Engineering Lead: Once we've got the go-ahead, SRE, you'll be responsible for managing the AWS infrastructure, right?\n\nSRE: Agreed, but I'd like to revisit the in-house option once the audit is complete and we have more breathing room.\n\nCTO: Let's focus on getting through the audit first, SRE. Once that's done, we can reassess our options. Now, let's make sure everyone is clear on the current decision: provisional purchase of AWS cloud infrastructure.\n\n(Off-topic exchange)\n\nFinance Partner: Speaking of numbers, did you hear about the new coffee shop that just opened downtown? Supposed to be amazing.\n\nPlatform Engineering Lead: Really? I've been meaning to check it out. Maybe we can all go sometime.\n\nSRE: Sounds like a good idea. A well-deserved break after this audit.",
+  "document": "Title: Cloud Infrastructure Proposal Decision\n\nProposal: SRE will pursue the purchase of AWS cloud infrastructure for our retail banking operations, due to its efficiency in handling large-scale data processing and better compatibility with our existing systems. The initial setup costs require approval from the audit committee.\n\nAdditional context: Google Cloud Platform presents a slightly more expensive and less integrated option, while Azure Cloud Platform demonstrates less efficiency in handling large-scale data processing compared to AWS. Discussions regarding an in-house cloud platform have been set aside due to estimated development time exceeding the audit remediation deadline.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0001_014_d1",
+      "source_id": "SYN_0001_014",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Purchase AWS cloud infrastructure",
+      "topic": "Cloud platform / infrastructure",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "Build an in-house cloud platform",
+          "rejected": true,
+          "reason": "Estimated development time of 18 months exceeds the audit remediation deadline."
+        },
+        {
+          "option": "Google Cloud Platform",
+          "rejected": false,
+          "reason": "Slightly more expensive and less integrated with current systems."
+        },
+        {
+          "option": "Azure Cloud Platform",
+          "rejected": false,
+          "reason": "Less efficient in handling large-scale data processing compared to AWS."
+        }
+      ],
+      "rationale": [
+        "AWS is more efficient in handling large-scale data processing for our retail banking operations.",
+        "AWS offers better compatibility with our existing systems, minimizing integration costs."
+      ],
+      "conditions": [
+        "Pending approval from the audit committee to cover the initial setup costs."
+      ],
+      "dissent": [
+        "SRE argued that building an in-house platform would offer greater control and potential cost savings over the long run."
+      ],
+      "owner": "SRE",
+      "approver": "Audit Committee",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0001_014_e01",
+      "element_type": "decision",
+      "text": "Purchase AWS cloud infrastructure",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0001_014_d1"
+    },
+    {
+      "element_id": "SYN_0001_014_e02",
+      "element_type": "alternative",
+      "text": "Build an in-house cloud platform -- Estimated development time of 18 months exceeds the audit remediation deadline.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0001_014_d1"
+    },
+    {
+      "element_id": "SYN_0001_014_e03",
+      "element_type": "alternative",
+      "text": "Google Cloud Platform -- Slightly more expensive and less integrated with current systems.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0001_014_d1"
+    },
+    {
+      "element_id": "SYN_0001_014_e04",
+      "element_type": "alternative",
+      "text": "Azure Cloud Platform -- Less efficient in handling large-scale data processing compared to AWS.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0001_014_d1"
+    },
+    {
+      "element_id": "SYN_0001_014_e05",
+      "element_type": "rationale",
+      "text": "AWS is more efficient in handling large-scale data processing for our retail banking operations.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0001_014_d1"
+    },
+    {
+      "element_id": "SYN_0001_014_e06",
+      "element_type": "rationale",
+      "text": "AWS offers better compatibility with our existing systems, minimizing integration costs.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0001_014_d1"
+    },
+    {
+      "element_id": "SYN_0001_014_e07",
+      "element_type": "condition",
+      "text": "Pending approval from the audit committee to cover the initial setup costs.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0001_014_d1"
+    },
+    {
+      "element_id": "SYN_0001_014_e08",
+      "element_type": "dissent",
+      "text": "SRE argued that building an in-house platform would offer greater control and potential cost savings over the long run.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0001_014_d1"
+    },
+    {
+      "element_id": "SYN_0001_014_e09",
+      "element_type": "owner",
+      "text": "SRE",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0001_014_d1"
+    },
+    {
+      "element_id": "SYN_0001_014_e10",
+      "element_type": "approver",
+      "text": "Audit Committee",
+      "in_document": "omitted",
+      "decision_id": "SYN_0001_014_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.77,
+    "seed": 1031,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 1 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0001_014_e02\",\n    \"text\": \"Build an in-house cloud platform -- Estimated development time of 18 months exceeds the audit remediation deadline.\",\n    \"score\": 0.62,\n    \"document_sentence\": \"Discussions regarding an in-house cloud platform have been set aside due to estimated development time exceeding the audit remediation deadline.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}

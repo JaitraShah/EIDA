@@ -1,0 +1,150 @@
+{
+  "pair_id": "SYN_0002_010",
+  "source": "synthetic",
+  "topic": "cloud_platform__scope_cut",
+  "title": "Cloud platform selection",
+  "transcript": "Platform Engineering Lead: Alright everyone, let's dive into our cloud migration options. Google Cloud Platform, Azure, our in-house custom analytics solution, and AWS are on the table.\n\nSRE: I've been looking at the costs for Google Cloud Platform, and the data egress charges are quite high.\n\nFinance Partner: Agreed, the estimated migration costs for GCP are a concern.\n\nCTO: And what about Azure?\n\nSRE: The projected onboarding timeline for Azure is around 3 months due to additional training requirements.\n\nFinance Partner: That's a long time, especially with our acquisition deadline looming.\n\nCTO: So, let's consider our in-house custom analytics solution then.\n\nPlatform Engineering Lead: I'd rather not delay the migration, but if we're prioritizing the acquisition, I understand.\n\nSRE: In that case, I'd suggest AWS. They offer the shortest onboarding timeline of 2 months, aligning with our acquisition deadline.\n\nCTO: Plus, AWS has demonstrated scalability with similar media publishing clients like CNN and BBC.\n\nSRE: And it supports our existing CI/CD pipelines, reducing integration efforts.\n\nPlatform Engineering Lead: (sighs) I have concerns about relinquishing control over analytics by opting for AWS.\n\nCTO: I understand your concerns, but we can mitigate some of the risks. SRE, would you be comfortable owning this migration?\n\nSRE: Yes, I can manage it.\n\nCTO: Alright then. (pauses) I'd like to take a minute to discuss an off-topic matter. Finances, right? Finance Partner, how's the budget looking for next quarter?\n\nFinance Partner: We're in a decent place, but we'll need to account for potential overspending due to the accelerated migration timeline.\n\nCTO: Understood. Now, back to our main topic. AWS offers a shorter onboarding timeline, demonstrated scalability, and supports our existing pipelines. That being said, the pending audit report on AWS data security compliance must be reviewed and approved by you, Finance Partner.\n\nFinance Partner: Agreed, I'll review it as soon as it's available.\n\nCTO: And accrued technical debt from the rushed migration is expected to be addressed in the first quarter of 2023.\n\nPlatform Engineering Lead: I'll work closely with SRE to ensure we minimize this as much as possible.\n\nCTO: Excellent. It seems we've reached a decision. Adopt AWS for our cloud migration by October 1st, postponing the development of our custom analytics solution.\n\nFinance Partner: I concur with the decision.\n\nSRE: I'm ready to take ownership of the migration.\n\nCTO: (signs off) Alright, let's make it happen.",
+  "document": "Title: Cloud Migration Decision - AWS Adoption\n\nDecision: Adopting AWS for cloud migration by October 1st, prioritizing the meeting of the acquisition deadline. AWS demonstrates scalability with similar media publishing clients like CNN and BBC. The onboarding timeline is slightly longer at 3 months due to additional training requirements.\n\nBenefits: AWS supports existing CI/CD pipelines, reducing integration efforts. The accrued technical debt from the migration is expected to be addressed in Q1 2023.\n\nNote: The pending audit report on AWS data security compliance must be reviewed and approved by the finance partner. The potential risks associated with relinquishing control over analytics by opting for AWS were discussed, but not detailed in this record. No mention of Google Cloud Platform, custom analytics solution, or the CTO.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0002_010_d1",
+      "source_id": "SYN_0002_010",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Adopt AWS for cloud migration by October 1st, postponing development of custom analytics solution",
+      "topic": "Cloud platform selection",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Google Cloud Platform",
+          "rejected": true,
+          "reason": "Higher estimated migration costs due to data egress charges"
+        },
+        {
+          "option": "Azure",
+          "rejected": true,
+          "reason": "Longer projected onboarding timeline of 3 months due to additional training requirements"
+        },
+        {
+          "option": "Custom analytics solution (in-house)",
+          "rejected": false,
+          "reason": "Prioritization of meeting the acquisition deadline"
+        }
+      ],
+      "rationale": [
+        "AWS offers the shortest onboarding timeline of 2 months, aligning with the acquisition deadline",
+        "AWS has demonstrated scalability with similar media publishing clients like CNN and BBC",
+        "AWS supports existing CI/CD pipelines, reducing integration efforts"
+      ],
+      "conditions": [
+        "The pending audit report on AWS data security compliance must be reviewed and approved by the finance partner",
+        "Accrued technical debt from rushed migration is expected to be addressed in the first quarter of 2023"
+      ],
+      "dissent": [
+        "The platform engineering lead expressed concerns about the potential risks associated with relinquishing control over analytics by opting for AWS"
+      ],
+      "owner": "SRE",
+      "approver": "CTO",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0002_010_e01",
+      "element_type": "decision",
+      "text": "Adopt AWS for cloud migration by October 1st, postponing development of custom analytics solution",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0002_010_d1"
+    },
+    {
+      "element_id": "SYN_0002_010_e02",
+      "element_type": "alternative",
+      "text": "Google Cloud Platform -- Higher estimated migration costs due to data egress charges",
+      "in_document": "omitted",
+      "decision_id": "SYN_0002_010_d1"
+    },
+    {
+      "element_id": "SYN_0002_010_e03",
+      "element_type": "alternative",
+      "text": "Azure -- Longer projected onboarding timeline of 3 months due to additional training requirements",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0002_010_d1"
+    },
+    {
+      "element_id": "SYN_0002_010_e04",
+      "element_type": "alternative",
+      "text": "Custom analytics solution (in-house) -- Prioritization of meeting the acquisition deadline",
+      "in_document": "omitted",
+      "decision_id": "SYN_0002_010_d1"
+    },
+    {
+      "element_id": "SYN_0002_010_e05",
+      "element_type": "rationale",
+      "text": "AWS offers the shortest onboarding timeline of 2 months, aligning with the acquisition deadline",
+      "in_document": "omitted",
+      "decision_id": "SYN_0002_010_d1"
+    },
+    {
+      "element_id": "SYN_0002_010_e06",
+      "element_type": "rationale",
+      "text": "AWS has demonstrated scalability with similar media publishing clients like CNN and BBC",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0002_010_d1"
+    },
+    {
+      "element_id": "SYN_0002_010_e07",
+      "element_type": "rationale",
+      "text": "AWS supports existing CI/CD pipelines, reducing integration efforts",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0002_010_d1"
+    },
+    {
+      "element_id": "SYN_0002_010_e08",
+      "element_type": "condition",
+      "text": "The pending audit report on AWS data security compliance must be reviewed and approved by the finance partner",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0002_010_d1"
+    },
+    {
+      "element_id": "SYN_0002_010_e09",
+      "element_type": "condition",
+      "text": "Accrued technical debt from rushed migration is expected to be addressed in the first quarter of 2023",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0002_010_d1"
+    },
+    {
+      "element_id": "SYN_0002_010_e10",
+      "element_type": "dissent",
+      "text": "The platform engineering lead expressed concerns about the potential risks associated with relinquishing control over analytics by opting for AWS",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0002_010_d1"
+    },
+    {
+      "element_id": "SYN_0002_010_e11",
+      "element_type": "owner",
+      "text": "SRE",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0002_010_d1"
+    },
+    {
+      "element_id": "SYN_0002_010_e12",
+      "element_type": "approver",
+      "text": "CTO",
+      "in_document": "omitted",
+      "decision_id": "SYN_0002_010_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.92,
+    "seed": 1044,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 2 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0002_010_e08\",\n    \"text\": \"The pending audit report on AWS data security compliance must be reviewed and approved by the finance partner\",\n    \"score\": 0.96,\n    \"document_sentence\": \"Note: The pending audit report on AWS data security compliance must be reviewed and approved by the finance partner.\"\n  },\n  {\n    \"element_id\": \"SYN_0002_010_e10\",\n    \"text\": \"The platform engineering lead expressed concerns about the potential risks associated with relinquishing control over analytics by opting for AWS\",\n    \"score\": 0.67,\n    \"document_sentence\": \"The potential risks associated with relinquishing control over analytics by opting for AWS were discussed, but not detailed in this record.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}
