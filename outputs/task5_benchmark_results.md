@@ -48,6 +48,54 @@ advantage is on paraphrased-present elements, which this 50-element gold set has
 only one of. That comparison needs the synthetic tier (hundreds of `paraphrased`
 labels) to be meaningful — see `by_in_document` in the full report once it exists.
 
+## The base-rate problem — read this before quoting any headline F1
+
+Corpus-wide run (`outputs/gap_eval_results.md`, lexical detector, 236 pairs /
+5 027 elements, threshold 0.45):
+
+| | value |
+|---|--:|
+| overall gap-class F1 | **0.964** |
+| gap base rate | **0.927** |
+| F1 an *all-gap* detector would score | **0.962** |
+
+**The headline is worth almost nothing.** A detector that blindly answered "gap"
+to every element scores 0.962; lexical token-overlap scores 0.964. This is the
+same trap `agreement.py` already guards for on the annotation side, and the gap
+report now prints an explicit base-rate warning whenever a bucket exceeds 0.85.
+
+What the breakdowns actually show:
+
+| `by_in_document` | n | accuracy |
+|---|--:|--:|
+| omitted | 4 661 | 0.970 |
+| present_unspecified | 348 | **0.448** |
+| verbatim | 8 | 0.500 |
+| paraphrased | 10 | 0.800 |
+
+Lexical is good at gaps and **worse than a coin flip at recognising present
+elements**. The overall number hides that completely because 93% of elements are
+gaps.
+
+| `by_source` | n | base rate | F1 |
+|---|--:|--:|--:|
+| qmsum_auto | 4 930 | 0.932 | 0.966 |
+| qmsum (gold) | 50 | 0.760 | 0.892 |
+| synthetic | 47 | **0.638** | **0.793** |
+
+F1 falls monotonically as the base rate falls. **The synthetic tier is the only
+part of the benchmark balanced enough to separate detectors** — which is the
+argument for finishing the ~2040-pair generation, and the reason the QMSum tiers
+alone would have produced a flattering, meaningless result.
+
+Three consequences for how this benchmark gets reported:
+
+1. Never quote a QMSum-tier F1 without the base rate beside it.
+2. Score on the **present** class as well as the gap class, or report balanced
+   accuracy — the gap class alone is nearly free.
+3. Detector comparison (NLI vs lexical vs LLM) is only meaningful on the
+   synthetic tier and the `by_in_document` present rows.
+
 ## Pending (GPU box — `RUNBOOK.md`)
 
 - **Full-corpus gap eval** (`run_gap_eval.py` over all 232 + synthetic): ~5 000

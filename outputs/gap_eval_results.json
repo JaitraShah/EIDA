@@ -1,219 +1,219 @@
 {
-  "threshold": 0.55,
+  "threshold": 0.45,
   "nli_model": "roberta-large-mnli",
-  "pairs": 5,
-  "elements": 50,
+  "pairs": 236,
+  "elements": 5027,
   "detectors": {
-    "nli:roberta-large-mnli": {
-      "n_elements_scored": 50,
+    "lexical": {
+      "n_elements_scored": 5027,
       "overall": {
-        "n": 50,
-        "gap_base_rate": 0.76,
-        "precision": 0.829,
-        "recall": 0.895,
-        "f1": 0.861,
-        "accuracy": 0.78,
+        "n": 5027,
+        "gap_base_rate": 0.927,
+        "precision": 0.958,
+        "recall": 0.97,
+        "f1": 0.964,
+        "accuracy": 0.933,
         "confusion": {
-          "tp": 34,
-          "fp": 7,
-          "fn": 4,
-          "tn": 5
+          "tp": 4522,
+          "fp": 198,
+          "fn": 139,
+          "tn": 168
         }
       },
       "threshold_sweep": [
         {
           "threshold": 0.2,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.833,
-          "recall": 0.789,
-          "f1": 0.811,
-          "accuracy": 0.72,
+          "n": 5027,
+          "gap_base_rate": 0.927,
+          "precision": 0.988,
+          "recall": 0.681,
+          "f1": 0.806,
+          "accuracy": 0.696,
           "confusion": {
-            "tp": 30,
-            "fp": 6,
-            "fn": 8,
-            "tn": 6
+            "tp": 3173,
+            "fp": 39,
+            "fn": 1488,
+            "tn": 327
           }
         },
         {
           "threshold": 0.25,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.838,
-          "recall": 0.816,
-          "f1": 0.827,
-          "accuracy": 0.74,
+          "n": 5027,
+          "gap_base_rate": 0.927,
+          "precision": 0.98,
+          "recall": 0.806,
+          "f1": 0.885,
+          "accuracy": 0.805,
           "confusion": {
-            "tp": 31,
-            "fp": 6,
-            "fn": 7,
-            "tn": 6
+            "tp": 3758,
+            "fp": 75,
+            "fn": 903,
+            "tn": 291
           }
         },
         {
           "threshold": 0.3,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.838,
-          "recall": 0.816,
-          "f1": 0.827,
-          "accuracy": 0.74,
+          "n": 5027,
+          "gap_base_rate": 0.927,
+          "precision": 0.973,
+          "recall": 0.891,
+          "f1": 0.93,
+          "accuracy": 0.876,
           "confusion": {
-            "tp": 31,
-            "fp": 6,
-            "fn": 7,
-            "tn": 6
+            "tp": 4154,
+            "fp": 115,
+            "fn": 507,
+            "tn": 251
           }
         },
         {
           "threshold": 0.35,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.825,
-          "recall": 0.868,
-          "f1": 0.846,
-          "accuracy": 0.76,
+          "n": 5027,
+          "gap_base_rate": 0.927,
+          "precision": 0.968,
+          "recall": 0.936,
+          "f1": 0.952,
+          "accuracy": 0.912,
           "confusion": {
-            "tp": 33,
-            "fp": 7,
-            "fn": 5,
-            "tn": 5
+            "tp": 4363,
+            "fp": 146,
+            "fn": 298,
+            "tn": 220
           }
         },
         {
           "threshold": 0.4,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.825,
-          "recall": 0.868,
-          "f1": 0.846,
-          "accuracy": 0.76,
+          "n": 5027,
+          "gap_base_rate": 0.927,
+          "precision": 0.963,
+          "recall": 0.958,
+          "f1": 0.961,
+          "accuracy": 0.927,
           "confusion": {
-            "tp": 33,
-            "fp": 7,
-            "fn": 5,
-            "tn": 5
+            "tp": 4466,
+            "fp": 171,
+            "fn": 195,
+            "tn": 195
           }
         },
         {
           "threshold": 0.45,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.825,
-          "recall": 0.868,
-          "f1": 0.846,
-          "accuracy": 0.76,
+          "n": 5027,
+          "gap_base_rate": 0.927,
+          "precision": 0.958,
+          "recall": 0.97,
+          "f1": 0.964,
+          "accuracy": 0.933,
           "confusion": {
-            "tp": 33,
-            "fp": 7,
-            "fn": 5,
-            "tn": 5
+            "tp": 4522,
+            "fp": 198,
+            "fn": 139,
+            "tn": 168
           }
         },
         {
           "threshold": 0.5,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.825,
-          "recall": 0.868,
-          "f1": 0.846,
-          "accuracy": 0.76,
+          "n": 5027,
+          "gap_base_rate": 0.927,
+          "precision": 0.955,
+          "recall": 0.977,
+          "f1": 0.966,
+          "accuracy": 0.936,
           "confusion": {
-            "tp": 33,
-            "fp": 7,
-            "fn": 5,
-            "tn": 5
+            "tp": 4555,
+            "fp": 214,
+            "fn": 106,
+            "tn": 152
           }
         },
         {
           "threshold": 0.55,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.829,
-          "recall": 0.895,
-          "f1": 0.861,
-          "accuracy": 0.78,
+          "n": 5027,
+          "gap_base_rate": 0.927,
+          "precision": 0.951,
+          "recall": 0.986,
+          "f1": 0.968,
+          "accuracy": 0.94,
           "confusion": {
-            "tp": 34,
-            "fp": 7,
-            "fn": 4,
-            "tn": 5
+            "tp": 4594,
+            "fp": 236,
+            "fn": 67,
+            "tn": 130
           }
         },
         {
           "threshold": 0.6,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.829,
-          "recall": 0.895,
-          "f1": 0.861,
-          "accuracy": 0.78,
+          "n": 5027,
+          "gap_base_rate": 0.927,
+          "precision": 0.949,
+          "recall": 0.991,
+          "f1": 0.97,
+          "accuracy": 0.943,
           "confusion": {
-            "tp": 34,
-            "fp": 7,
-            "fn": 4,
-            "tn": 5
+            "tp": 4618,
+            "fp": 246,
+            "fn": 43,
+            "tn": 120
           }
         },
         {
           "threshold": 0.65,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.81,
-          "recall": 0.895,
-          "f1": 0.85,
-          "accuracy": 0.76,
+          "n": 5027,
+          "gap_base_rate": 0.927,
+          "precision": 0.946,
+          "recall": 0.992,
+          "f1": 0.968,
+          "accuracy": 0.94,
           "confusion": {
-            "tp": 34,
-            "fp": 8,
-            "fn": 4,
-            "tn": 4
+            "tp": 4625,
+            "fp": 266,
+            "fn": 36,
+            "tn": 100
           }
         },
         {
           "threshold": 0.7,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.814,
-          "recall": 0.921,
-          "f1": 0.864,
-          "accuracy": 0.78,
+          "n": 5027,
+          "gap_base_rate": 0.927,
+          "precision": 0.944,
+          "recall": 0.994,
+          "f1": 0.968,
+          "accuracy": 0.94,
           "confusion": {
-            "tp": 35,
-            "fp": 8,
-            "fn": 3,
-            "tn": 4
+            "tp": 4632,
+            "fp": 274,
+            "fn": 29,
+            "tn": 92
           }
         },
         {
           "threshold": 0.75,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.814,
-          "recall": 0.921,
-          "f1": 0.864,
-          "accuracy": 0.78,
+          "n": 5027,
+          "gap_base_rate": 0.927,
+          "precision": 0.942,
+          "recall": 0.995,
+          "f1": 0.968,
+          "accuracy": 0.939,
           "confusion": {
-            "tp": 35,
-            "fp": 8,
-            "fn": 3,
-            "tn": 4
+            "tp": 4638,
+            "fp": 286,
+            "fn": 23,
+            "tn": 80
           }
         },
         {
           "threshold": 0.8,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.814,
-          "recall": 0.921,
-          "f1": 0.864,
-          "accuracy": 0.78,
+          "n": 5027,
+          "gap_base_rate": 0.927,
+          "precision": 0.941,
+          "recall": 0.995,
+          "f1": 0.968,
+          "accuracy": 0.938,
           "confusion": {
-            "tp": 35,
-            "fp": 8,
-            "fn": 3,
-            "tn": 4
+            "tp": 4640,
+            "fp": 289,
+            "fn": 21,
+            "tn": 77
           }
         }
       ],
@@ -222,634 +222,1565 @@
           "qmsum": {
             "n": 50,
             "gap_base_rate": 0.76,
-            "precision": 0.829,
-            "recall": 0.895,
-            "f1": 0.861,
-            "accuracy": 0.78,
+            "precision": 0.822,
+            "recall": 0.974,
+            "f1": 0.892,
+            "accuracy": 0.82,
             "confusion": {
-              "tp": 34,
-              "fp": 7,
-              "fn": 4,
-              "tn": 5
+              "tp": 37,
+              "fp": 8,
+              "fn": 1,
+              "tn": 4
+            }
+          },
+          "qmsum_auto": {
+            "n": 4930,
+            "gap_base_rate": 0.932,
+            "precision": 0.96,
+            "recall": 0.971,
+            "f1": 0.966,
+            "accuracy": 0.936,
+            "confusion": {
+              "tp": 4462,
+              "fp": 185,
+              "fn": 131,
+              "tn": 152
+            }
+          },
+          "synthetic": {
+            "n": 47,
+            "gap_base_rate": 0.638,
+            "precision": 0.821,
+            "recall": 0.767,
+            "f1": 0.793,
+            "accuracy": 0.745,
+            "confusion": {
+              "tp": 23,
+              "fp": 5,
+              "fn": 7,
+              "tn": 12
             }
           }
         },
         "by_domain": {
-          "product": {
-            "n": 50,
-            "gap_base_rate": 0.76,
-            "precision": 0.829,
-            "recall": 0.895,
-            "f1": 0.861,
-            "accuracy": 0.78,
+          "academic": {
+            "n": 854,
+            "gap_base_rate": 0.946,
+            "precision": 0.973,
+            "recall": 0.98,
+            "f1": 0.977,
+            "accuracy": 0.956,
             "confusion": {
-              "tp": 34,
-              "fp": 7,
-              "fn": 4,
-              "tn": 5
+              "tp": 792,
+              "fp": 22,
+              "fn": 16,
+              "tn": 24
+            }
+          },
+          "cloud_platform": {
+            "n": 47,
+            "gap_base_rate": 0.638,
+            "precision": 0.821,
+            "recall": 0.767,
+            "f1": 0.793,
+            "accuracy": 0.745,
+            "confusion": {
+              "tp": 23,
+              "fp": 5,
+              "fn": 7,
+              "tn": 12
+            }
+          },
+          "committee": {
+            "n": 1383,
+            "gap_base_rate": 0.978,
+            "precision": 0.98,
+            "recall": 0.992,
+            "f1": 0.986,
+            "accuracy": 0.973,
+            "confusion": {
+              "tp": 1342,
+              "fp": 27,
+              "fn": 11,
+              "tn": 3
+            }
+          },
+          "product": {
+            "n": 2743,
+            "gap_base_rate": 0.9,
+            "precision": 0.943,
+            "recall": 0.957,
+            "f1": 0.95,
+            "accuracy": 0.909,
+            "confusion": {
+              "tp": 2365,
+              "fp": 144,
+              "fn": 105,
+              "tn": 129
             }
           }
         },
         "by_element_type": {
           "alternative": {
-            "n": 21,
-            "gap_base_rate": 0.714,
-            "precision": 0.765,
-            "recall": 0.867,
-            "f1": 0.812,
-            "accuracy": 0.714,
+            "n": 184,
+            "gap_base_rate": 0.902,
+            "precision": 0.947,
+            "recall": 0.97,
+            "f1": 0.958,
+            "accuracy": 0.924,
             "confusion": {
-              "tp": 13,
-              "fp": 4,
-              "fn": 2,
-              "tn": 2
+              "tp": 161,
+              "fp": 9,
+              "fn": 5,
+              "tn": 9
             }
           },
           "approver": {
-            "n": 2,
-            "gap_base_rate": 1.0,
-            "precision": 1.0,
+            "n": 8,
+            "gap_base_rate": 0.875,
+            "precision": 0.875,
             "recall": 1.0,
-            "f1": 1.0,
-            "accuracy": 1.0,
+            "f1": 0.933,
+            "accuracy": 0.875,
             "confusion": {
-              "tp": 2,
-              "fp": 0,
-              "fn": 0,
-              "tn": 0
-            }
-          },
-          "condition": {
-            "n": 4,
-            "gap_base_rate": 0.75,
-            "precision": 0.75,
-            "recall": 1.0,
-            "f1": 0.857,
-            "accuracy": 0.75,
-            "confusion": {
-              "tp": 3,
+              "tp": 7,
               "fp": 1,
               "fn": 0,
               "tn": 0
             }
           },
-          "decision": {
-            "n": 9,
-            "gap_base_rate": 0.444,
-            "precision": 0.6,
-            "recall": 0.75,
-            "f1": 0.667,
-            "accuracy": 0.667,
+          "condition": {
+            "n": 87,
+            "gap_base_rate": 0.931,
+            "precision": 0.963,
+            "recall": 0.951,
+            "f1": 0.957,
+            "accuracy": 0.92,
             "confusion": {
-              "tp": 3,
-              "fp": 2,
+              "tp": 77,
+              "fp": 3,
+              "fn": 4,
+              "tn": 3
+            }
+          },
+          "decision": {
+            "n": 1459,
+            "gap_base_rate": 0.898,
+            "precision": 0.944,
+            "recall": 0.956,
+            "f1": 0.95,
+            "accuracy": 0.91,
+            "confusion": {
+              "tp": 1253,
+              "fp": 75,
+              "fn": 57,
+              "tn": 74
+            }
+          },
+          "dissent": {
+            "n": 87,
+            "gap_base_rate": 0.966,
+            "precision": 1.0,
+            "recall": 0.988,
+            "f1": 0.994,
+            "accuracy": 0.989,
+            "confusion": {
+              "tp": 83,
+              "fp": 0,
               "fn": 1,
               "tn": 3
             }
           },
-          "dissent": {
-            "n": 3,
-            "gap_base_rate": 1.0,
-            "precision": 1.0,
+          "owner": {
+            "n": 8,
+            "gap_base_rate": 0.625,
+            "precision": 0.625,
             "recall": 1.0,
-            "f1": 1.0,
-            "accuracy": 1.0,
+            "f1": 0.769,
+            "accuracy": 0.625,
             "confusion": {
-              "tp": 3,
-              "fp": 0,
+              "tp": 5,
+              "fp": 3,
               "fn": 0,
               "tn": 0
             }
           },
           "rationale": {
-            "n": 11,
-            "gap_base_rate": 1.0,
-            "precision": 1.0,
-            "recall": 0.909,
-            "f1": 0.952,
-            "accuracy": 0.909,
+            "n": 3194,
+            "gap_base_rate": 0.942,
+            "precision": 0.965,
+            "recall": 0.976,
+            "f1": 0.97,
+            "accuracy": 0.944,
             "confusion": {
-              "tp": 10,
-              "fp": 0,
-              "fn": 1,
-              "tn": 0
+              "tp": 2936,
+              "fp": 107,
+              "fn": 72,
+              "tn": 79
             }
           }
         },
         "by_in_document": {
           "omitted": {
-            "n": 38,
+            "n": 4661,
             "gap_base_rate": 1.0,
             "precision": 1.0,
-            "recall": 0.895,
-            "f1": 0.944,
-            "accuracy": 0.895,
+            "recall": 0.97,
+            "f1": 0.985,
+            "accuracy": 0.97,
             "confusion": {
-              "tp": 34,
+              "tp": 4522,
               "fp": 0,
-              "fn": 4,
+              "fn": 139,
               "tn": 0
             }
           },
           "paraphrased": {
-            "n": 1,
+            "n": 10,
             "gap_base_rate": 0.0,
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
-            "accuracy": 0.0,
+            "accuracy": 0.8,
             "confusion": {
               "tp": 0,
-              "fp": 1,
+              "fp": 2,
               "fn": 0,
-              "tn": 0
+              "tn": 8
             }
           },
           "present_unspecified": {
-            "n": 11,
+            "n": 348,
             "gap_base_rate": 0.0,
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
-            "accuracy": 0.455,
+            "accuracy": 0.448,
             "confusion": {
               "tp": 0,
-              "fp": 6,
+              "fp": 192,
               "fn": 0,
-              "tn": 5
+              "tn": 156
+            }
+          },
+          "verbatim": {
+            "n": 8,
+            "gap_base_rate": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 4,
+              "fn": 0,
+              "tn": 4
             }
           }
         }
       },
       "false_positives": [
         {
-          "pair_id": "QSUM_001",
-          "type": "alternative",
+          "pair_id": "QMS_ACA_TE_001",
+          "type": "condition",
           "in_document": "present_unspecified",
-          "text": "uncurved (flat) casing -- too dull",
-          "present_score": 0.004
+          "text": "Efforts by speaker fe008 are in progress to ensure that transcripts are clean (i.e.",
+          "present_score": 0.25
         },
         {
-          "pair_id": "QSUM_001",
+          "pair_id": "QMS_ACA_TE_002",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Then the group members discussed the layout of belief-nets, for example, the connection between Go-there nodes and other ones such as endpoints.",
+          "present_score": 0.25
+        },
+        {
+          "pair_id": "QMS_ACA_TE_003",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "There was a demonstration of the structure and the function of a toy version of the belief-net for the intentionality task.",
+          "present_score": 0.24
+        },
+        {
+          "pair_id": "QMS_ACA_TR_005",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The data collection that will provide relevant dialogues is moving along, with thirty subjects already lined up.",
+          "present_score": 0.348
+        },
+        {
+          "pair_id": "QMS_ACA_TR_013",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "It seemed that longer times had diminishing returns after a certain point.",
+          "present_score": 0.125
+        },
+        {
+          "pair_id": "QMS_ACA_TR_015",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "A test set of digits data totalling two hours is nearly complete.",
+          "present_score": 0.353
+        },
+        {
+          "pair_id": "QMS_ACA_TR_015",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Digit extraction has been performed on roughly half of this data",
+          "present_score": 0.133
+        },
+        {
+          "pair_id": "QMS_ACA_TR_018",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The team was making progress on on-line normalization, taking two approaches.",
+          "present_score": 0.3
+        },
+        {
+          "pair_id": "QMS_ACA_TR_020",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The professor made his suggestions through stories.",
+          "present_score": 0.2
+        },
+        {
+          "pair_id": "QMS_ACA_TR_026",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The team was concerned that there was something wrong with the back-end of the model.",
+          "present_score": 0.211
+        },
+        {
+          "pair_id": "QMS_ACA_TR_026",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The discussion ended with different pronunciation, \"O\" and \"zero\" for the digit zero.",
+          "present_score": 0.4
+        },
+        {
+          "pair_id": "QMS_ACA_TR_028",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "He was going to work on histogram equalization.",
+          "present_score": 0.235
+        },
+        {
+          "pair_id": "QMS_ACA_TR_031",
           "type": "alternative",
           "in_document": "present_unspecified",
-          "text": "single-curved casing",
+          "text": "The model performed better on six seconds of training data rather than twelve seconds, but the improvement was only point three percent.",
+          "present_score": 0.424
+        },
+        {
+          "pair_id": "QMS_ACA_TR_035",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The team wanted to think about how they would generate queries.",
+          "present_score": 0.333
+        },
+        {
+          "pair_id": "QMS_ACA_TR_036",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "pre-segmented and manually adjusted) for delivery to IBM.",
+          "present_score": 0.083
+        },
+        {
+          "pair_id": "QMS_ACA_TR_037",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The goal was to come up with a mapping from a feature set to the existence of a particular phonological feature.",
+          "present_score": 0.267
+        },
+        {
+          "pair_id": "QMS_ACA_VA_000",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Efforts by speaker mn005 are in progress to detect overlapping speech.",
+          "present_score": 0.242
+        },
+        {
+          "pair_id": "QMS_ACA_VA_000",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Additional meetings by other ICSI research groups will be recorded.",
+          "present_score": 0.417
+        },
+        {
+          "pair_id": "QMS_ACA_VA_002",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "This meeting will be one of the recorded meetings.",
           "present_score": 0.182
         },
         {
-          "pair_id": "QSUM_001",
-          "type": "alternative",
+          "pair_id": "QMS_ACA_VA_003",
+          "type": "decision",
           "in_document": "present_unspecified",
-          "text": "double-curved casing -- would block use of the scroll wheel",
-          "present_score": 0.006
+          "text": "The participants learned that the storage disks had eventually arrived.",
+          "present_score": 0.444
         },
         {
-          "pair_id": "QSUM_003",
-          "type": "condition",
+          "pair_id": "QMS_ACA_VA_003",
+          "type": "rationale",
           "in_document": "present_unspecified",
-          "text": "The material choice was explicitly temporary and open to revision.",
-          "present_score": 0.175
+          "text": "They were waiting on the disks to be installed.",
+          "present_score": 0.286
         },
         {
-          "pair_id": "QSUM_004",
-          "type": "alternative",
+          "pair_id": "QMS_ACA_VA_004",
+          "type": "rationale",
           "in_document": "present_unspecified",
-          "text": "fancy controller",
+          "text": "The team explored the reasons for this difference.",
+          "present_score": 0.222
+        },
+        {
+          "pair_id": "QMS_CMT_TE_000",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "PRU was supposed to collaborate with schools to arrange special curriculums to meet the students' special needs.",
+          "present_score": 0.273
+        },
+        {
+          "pair_id": "QMS_CMT_TE_000",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "This not only had something to do with finance but was also related to the recruitment of professional staff.",
+          "present_score": 0.348
+        },
+        {
+          "pair_id": "QMS_CMT_TE_004",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The discussion then turned to talk about the legal framework and its prosecution.",
+          "present_score": 0.118
+        },
+        {
+          "pair_id": "QMS_CMT_TE_004",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Barry Hughes explained a number of unintended consequences questioned.",
+          "present_score": 0.353
+        },
+        {
+          "pair_id": "QMS_CMT_TR_000",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Carol Shillabeer answered Lynne Neagle's question by introducing the progress of the in-patient care programme and the challenge of the workforce.",
+          "present_score": 0.333
+        },
+        {
+          "pair_id": "QMS_CMT_TR_001",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Basically, they relied on the school categorization system.",
+          "present_score": 0.3
+        },
+        {
+          "pair_id": "QMS_CMT_TR_001",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "According to Kirsty, it was the current model.",
+          "present_score": 0.211
+        },
+        {
+          "pair_id": "QMS_CMT_TR_002",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Then they would like to see facilities developed in each local authority throughout Wales that would answer the needs of the families and the children in those areas.",
+          "present_score": 0.312
+        },
+        {
+          "pair_id": "QMS_CMT_TR_002",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Then they were certainly planning to expand the programme, which is believed to be a demand-led approach.",
+          "present_score": 0.211
+        },
+        {
+          "pair_id": "QMS_CMT_TR_002",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Then they were certainly planning to expand the programme, which is believed to be a demand-led approach.",
+          "present_score": 0.211
+        },
+        {
+          "pair_id": "QMS_CMT_TR_002",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "At the moment, the extra cost would be about £2.5 million, which according to their initial estimate suggested that it would be less than the cost proposed by HMRC.",
+          "present_score": 0.25
+        },
+        {
+          "pair_id": "QMS_CMT_TR_007",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Dr Frank Atherton was first asked about legislations in the draft plan and their ideas on those things.",
+          "present_score": 0.286
+        },
+        {
+          "pair_id": "QMS_CMT_TR_011",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Firstly, any decision to have more children returning to school made should align with the safety and the physical and the emotional well-being of students and the staff.",
+          "present_score": 0.176
+        },
+        {
+          "pair_id": "QMS_CMT_TR_011",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Secondly, new decisions made from the education ministry should be taken in the context of the wider Welsh Government response to dealing with this pandemic.",
+          "present_score": 0.24
+        },
+        {
+          "pair_id": "QMS_CMT_TR_011",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Moreover, certain groups of children accessing more education within a school setting should also be considered.",
+          "present_score": 0.207
+        },
+        {
+          "pair_id": "QMS_CMT_TR_011",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Moreover, how to adapt patterns to deliver these services to the pandemic situation would be discussed.",
+          "present_score": 0.077
+        },
+        {
+          "pair_id": "QMS_CMT_TR_011",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Meanwhile, local authorities were encouraged to keep in contact with families to recognize their special needs for student education at home.",
+          "present_score": 0.125
+        },
+        {
+          "pair_id": "QMS_CMT_TR_011",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Kirsty Williams AM first introduced the difficult situation as being face by these group of children, whose educational journey would be slightly different with others.",
+          "present_score": 0.207
+        },
+        {
+          "pair_id": "QMS_CMT_TR_012",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The following topics were systemic racism.",
+          "present_score": 0.182
+        },
+        {
+          "pair_id": "QMS_CMT_TR_012",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "This part mainly discussed a number of financial questions happening during the pandemic.",
+          "present_score": 0.316
+        },
+        {
+          "pair_id": "QMS_CMT_TR_016",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Financial support would be provided as well.",
+          "present_score": 0.0
+        },
+        {
+          "pair_id": "QMS_CMT_TR_018",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "What they were trying to work to was that they would have ongoing provision.",
+          "present_score": 0.222
+        },
+        {
+          "pair_id": "QMS_CMT_TR_019",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "In this case, to continue fulfilling its national outcomes, the Act should evolve by implementing new student support measures.",
+          "present_score": 0.229
+        },
+        {
+          "pair_id": "QMS_CMT_TR_019",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Meanwhile, Kirsty Williams AM suggested a balance to be achieved by each part of the participants.",
+          "present_score": 0.296
+        },
+        {
+          "pair_id": "QMS_CMT_TR_023",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Similarly, a more robust immigration policy might make it more appealing for those who would like to set down in Wales.",
+          "present_score": 0.16
+        },
+        {
+          "pair_id": "QMS_CMT_VA_002",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "They were not sitting back and just waiting.",
+          "present_score": 0.0
+        },
+        {
+          "pair_id": "QMS_CMT_VA_004",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The group mentioned that the vulnerable children and adequate social support should be carried out through the outbreak of the pandemic to protect them from infection or other mental and physical problems.",
+          "present_score": 0.222
+        },
+        {
+          "pair_id": "QMS_PRD_TE_000",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Also he mentioned that remote control will be priced at 25 Euros and aimed to earn a revenue of fifty million Euros.",
+          "present_score": 0.273
+        },
+        {
+          "pair_id": "QMS_PRD_TE_000",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Therefore, Project Manager encouraged teammates to reflect on experience when designing its function and format.",
+          "present_score": 0.357
+        },
+        {
+          "pair_id": "QMS_PRD_TE_001",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Project Manager revealed that it would be over budget so they had to make some changes.",
+          "present_score": 0.258
+        },
+        {
+          "pair_id": "QMS_PRD_TE_002",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The case of the device would be in plastic and would have a changeable rubber cover.",
+          "present_score": 0.421
+        },
+        {
+          "pair_id": "QMS_PRD_TE_002",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "LCD screens will be adopted.",
+          "present_score": 0.222
+        },
+        {
+          "pair_id": "QMS_PRD_TE_004",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "So finally, the group mates suggested the usability and the color of the remote control based on Marketing's presentation.",
+          "present_score": 0.222
+        },
+        {
+          "pair_id": "QMS_PRD_TE_006",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The remote control design would be simplified and user-friendly.",
+          "present_score": 0.353
+        },
+        {
+          "pair_id": "QMS_PRD_TE_006",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "To make the style more trendy, User Interface decided on a flip-top model.",
+          "present_score": 0.348
+        },
+        {
+          "pair_id": "QMS_PRD_TE_006",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Industrial Designer expressed a desire to find a smaller alternative for triple A batteries.",
+          "present_score": 0.267
+        },
+        {
+          "pair_id": "QMS_PRD_TE_006",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The market research presented by Marketing implicated that the remote control design was expected to be more stylish and less complicated.",
+          "present_score": 0.385
+        },
+        {
+          "pair_id": "QMS_PRD_TE_006",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Overall, the model style was expected to be trendy and appealing.",
+          "present_score": 0.118
+        },
+        {
+          "pair_id": "QMS_PRD_TE_006",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Marketing and Project Manager agreed on User Interface's design of a flip-screen.",
+          "present_score": 0.435
+        },
+        {
+          "pair_id": "QMS_PRD_TE_008",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The remote price would be at twenty Euros.",
+          "present_score": 0.286
+        },
+        {
+          "pair_id": "QMS_PRD_TE_008",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "And the production cost would be twelve point three Euros.",
+          "present_score": 0.25
+        },
+        {
+          "pair_id": "QMS_PRD_TE_011",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Project Manager stated the meeting topic on function design.",
+          "present_score": 0.308
+        },
+        {
+          "pair_id": "QMS_PRD_TE_014",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "He emphasized on user-friendliness, but considering that the target people were less than forty years old, multi-function should also be taken into account.",
           "present_score": 0.345
         },
         {
-          "pair_id": "QSUM_004",
-          "type": "decision",
-          "in_document": "paraphrased",
-          "text": "Wood was chosen over plastic as the casing material.",
-          "present_score": 0.001
+          "pair_id": "QMS_PRD_TE_017",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "What's more, the project manager thought the product should be recognizable and attractive.",
+          "present_score": 0.235
         },
         {
-          "pair_id": "QSUM_004",
+          "pair_id": "QMS_PRD_TE_018",
           "type": "decision",
           "in_document": "present_unspecified",
-          "text": "Both battery and solar alimentation were adopted.",
-          "present_score": 0.01
-        }
-      ],
-      "false_negatives": [
+          "text": "There were two main parts in the detailed design.",
+          "present_score": 0.333
+        },
         {
-          "pair_id": "QSUM_001",
+          "pair_id": "QMS_PRD_TE_018",
           "type": "decision",
-          "text": "A single-curved casing was chosen for the remote control.",
-          "present_score": 0.966
+          "in_document": "present_unspecified",
+          "text": "Project Manager suggested that the group might need to discuss changing an aspect of the remote.",
+          "present_score": 0.353
         },
         {
-          "pair_id": "QSUM_002",
-          "type": "alternative",
-          "text": "kryptonite",
-          "present_score": 0.659
-        },
-        {
-          "pair_id": "QSUM_003",
-          "type": "alternative",
-          "text": "lightweight plastic",
-          "present_score": 0.929
-        },
-        {
-          "pair_id": "QSUM_005",
+          "pair_id": "QMS_PRD_TE_018",
           "type": "rationale",
-          "text": "Marketing pushed for positioning the product on technological innovation.",
-          "present_score": 0.897
-        }
-      ]
-    },
-    "lexical": {
-      "n_elements_scored": 50,
-      "overall": {
-        "n": 50,
-        "gap_base_rate": 0.76,
-        "precision": 0.792,
-        "recall": 1.0,
-        "f1": 0.884,
-        "accuracy": 0.8,
-        "confusion": {
-          "tp": 38,
-          "fp": 10,
-          "fn": 0,
-          "tn": 2
-        }
-      },
-      "threshold_sweep": [
-        {
-          "threshold": 0.2,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.933,
-          "recall": 0.737,
-          "f1": 0.824,
-          "accuracy": 0.76,
-          "confusion": {
-            "tp": 28,
-            "fp": 2,
-            "fn": 10,
-            "tn": 10
-          }
+          "in_document": "present_unspecified",
+          "text": "Therefore, they all agreed to change the shape.",
+          "present_score": 0.182
         },
         {
-          "threshold": 0.25,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.938,
-          "recall": 0.789,
-          "f1": 0.857,
-          "accuracy": 0.8,
-          "confusion": {
-            "tp": 30,
-            "fp": 2,
-            "fn": 8,
-            "tn": 10
-          }
+          "pair_id": "QMS_PRD_TR_001",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The group discussed the final remote concepts after three presentations.",
+          "present_score": 0.348
         },
         {
-          "threshold": 0.3,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.865,
-          "recall": 0.842,
-          "f1": 0.853,
-          "accuracy": 0.78,
-          "confusion": {
-            "tp": 32,
-            "fp": 5,
-            "fn": 6,
-            "tn": 7
-          }
+          "pair_id": "QMS_PRD_TR_003",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "For instance, look and feel, innovation and ease of use, were the three important components that Marketing wanted the team to discuss about.",
+          "present_score": 0.378
         },
         {
-          "threshold": 0.35,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.854,
-          "recall": 0.921,
-          "f1": 0.886,
-          "accuracy": 0.82,
-          "confusion": {
-            "tp": 35,
-            "fp": 6,
-            "fn": 3,
-            "tn": 6
-          }
+          "pair_id": "QMS_PRD_TR_003",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Later, the team had argued a lot whether to eliminate the number of buttons or to discard LCD displays.",
+          "present_score": 0.37
         },
         {
-          "threshold": 0.4,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.837,
-          "recall": 0.947,
-          "f1": 0.889,
-          "accuracy": 0.82,
-          "confusion": {
-            "tp": 36,
-            "fp": 7,
-            "fn": 2,
-            "tn": 5
-          }
+          "pair_id": "QMS_PRD_TR_005",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Second, they wanted to integrate the corporate colour and slogan in the new design.",
+          "present_score": 0.207
         },
         {
-          "threshold": 0.45,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.822,
-          "recall": 0.974,
-          "f1": 0.892,
-          "accuracy": 0.82,
-          "confusion": {
-            "tp": 37,
-            "fp": 8,
-            "fn": 1,
-            "tn": 4
-          }
+          "pair_id": "QMS_PRD_TR_005",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Third, speech recognition would be included.",
+          "present_score": 0.286
         },
         {
-          "threshold": 0.5,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.804,
-          "recall": 0.974,
-          "f1": 0.881,
-          "accuracy": 0.8,
-          "confusion": {
-            "tp": 37,
-            "fp": 9,
-            "fn": 1,
-            "tn": 3
-          }
+          "pair_id": "QMS_PRD_TR_005",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Fourth, the new remotes could glow in the dark.",
+          "present_score": 0.222
         },
         {
-          "threshold": 0.55,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.792,
-          "recall": 1.0,
-          "f1": 0.884,
-          "accuracy": 0.8,
-          "confusion": {
-            "tp": 38,
-            "fp": 10,
-            "fn": 0,
-            "tn": 2
-          }
+          "pair_id": "QMS_PRD_TR_006",
+          "type": "alternative",
+          "in_document": "present_unspecified",
+          "text": "Following the proposal of Project Manager, each of the four team members drew their favourite animals.",
+          "present_score": 0.348
         },
         {
-          "threshold": 0.6,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.776,
-          "recall": 1.0,
-          "f1": 0.874,
-          "accuracy": 0.78,
-          "confusion": {
-            "tp": 38,
-            "fp": 11,
-            "fn": 0,
-            "tn": 1
-          }
+          "pair_id": "QMS_PRD_TR_006",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The aspects they mentioned were its compatibility, ergonomics, and the battery type it would use.",
+          "present_score": 0.211
         },
         {
-          "threshold": 0.65,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.76,
-          "recall": 1.0,
-          "f1": 0.864,
-          "accuracy": 0.76,
-          "confusion": {
-            "tp": 38,
-            "fp": 12,
-            "fn": 0,
-            "tn": 0
-          }
+          "pair_id": "QMS_PRD_TR_007",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "In the discussion, the team agreed that the good look and size were two vital features of the new TV remote controls.",
+          "present_score": 0.37
         },
         {
-          "threshold": 0.7,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.76,
-          "recall": 1.0,
-          "f1": 0.864,
-          "accuracy": 0.76,
-          "confusion": {
-            "tp": 38,
-            "fp": 12,
-            "fn": 0,
-            "tn": 0
-          }
+          "pair_id": "QMS_PRD_TR_009",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Then, the team discussed the budget of the product.",
+          "present_score": 0.429
         },
         {
-          "threshold": 0.75,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.76,
-          "recall": 1.0,
-          "f1": 0.864,
-          "accuracy": 0.76,
-          "confusion": {
-            "tp": 38,
-            "fp": 12,
-            "fn": 0,
-            "tn": 0
-          }
+          "pair_id": "QMS_PRD_TR_010",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Group had to change the design and lose functions so that the budget could fill the company's standard.",
+          "present_score": 0.286
         },
         {
-          "threshold": 0.8,
-          "n": 50,
-          "gap_base_rate": 0.76,
-          "precision": 0.76,
-          "recall": 1.0,
-          "f1": 0.864,
-          "accuracy": 0.76,
-          "confusion": {
-            "tp": 38,
-            "fp": 12,
-            "fn": 0,
-            "tn": 0
-          }
-        }
-      ],
-      "breakdowns": {
-        "by_source": {
-          "qmsum": {
-            "n": 50,
-            "gap_base_rate": 0.76,
-            "precision": 0.792,
-            "recall": 1.0,
-            "f1": 0.884,
-            "accuracy": 0.8,
-            "confusion": {
-              "tp": 38,
-              "fp": 10,
-              "fn": 0,
-              "tn": 2
-            }
-          }
+          "pair_id": "QMS_PRD_TR_011",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "It should be special in some way so that it could sell on its own.",
+          "present_score": 0.133
         },
-        "by_domain": {
-          "product": {
-            "n": 50,
-            "gap_base_rate": 0.76,
-            "precision": 0.792,
-            "recall": 1.0,
-            "f1": 0.884,
-            "accuracy": 0.8,
-            "confusion": {
-              "tp": 38,
-              "fp": 10,
-              "fn": 0,
-              "tn": 2
-            }
-          }
+        {
+          "pair_id": "QMS_PRD_TR_017",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Then, under the guidance of Project Manager, the group evaluated the project process.",
+          "present_score": 0.375
         },
-        "by_element_type": {
-          "alternative": {
-            "n": 21,
-            "gap_base_rate": 0.714,
-            "precision": 0.75,
-            "recall": 1.0,
-            "f1": 0.857,
-            "accuracy": 0.762,
-            "confusion": {
-              "tp": 15,
-              "fp": 5,
-              "fn": 0,
-              "tn": 1
-            }
-          },
-          "approver": {
-            "n": 2,
-            "gap_base_rate": 1.0,
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1": 1.0,
-            "accuracy": 1.0,
-            "confusion": {
-              "tp": 2,
-              "fp": 0,
-              "fn": 0,
-              "tn": 0
-            }
-          },
-          "condition": {
-            "n": 4,
-            "gap_base_rate": 0.75,
-            "precision": 0.75,
-            "recall": 1.0,
-            "f1": 0.857,
-            "accuracy": 0.75,
-            "confusion": {
-              "tp": 3,
-              "fp": 1,
-              "fn": 0,
-              "tn": 0
-            }
-          },
-          "decision": {
-            "n": 9,
-            "gap_base_rate": 0.444,
-            "precision": 0.5,
-            "recall": 1.0,
-            "f1": 0.667,
-            "accuracy": 0.556,
-            "confusion": {
-              "tp": 4,
-              "fp": 4,
-              "fn": 0,
-              "tn": 1
-            }
-          },
-          "dissent": {
-            "n": 3,
-            "gap_base_rate": 1.0,
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1": 1.0,
-            "accuracy": 1.0,
-            "confusion": {
-              "tp": 3,
-              "fp": 0,
-              "fn": 0,
-              "tn": 0
-            }
-          },
-          "rationale": {
-            "n": 11,
-            "gap_base_rate": 1.0,
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1": 1.0,
-            "accuracy": 1.0,
-            "confusion": {
-              "tp": 11,
-              "fp": 0,
-              "fn": 0,
-              "tn": 0
-            }
-          }
+        {
+          "pair_id": "QMS_PRD_TR_017",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Eventually, the meeting stepped into the closing phase.",
+          "present_score": 0.267
         },
-        "by_in_document": {
-          "omitted": {
-            "n": 38,
-            "gap_base_rate": 1.0,
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1": 1.0,
-            "accuracy": 1.0,
-            "confusion": {
-              "tp": 38,
-              "fp": 0,
-              "fn": 0,
-              "tn": 0
-            }
-          },
-          "paraphrased": {
-            "n": 1,
-            "gap_base_rate": 0.0,
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "accuracy": 0.0,
-            "confusion": {
-              "tp": 0,
-              "fp": 1,
-              "fn": 0,
-              "tn": 0
-            }
-          },
-          "present_unspecified": {
-            "n": 11,
-            "gap_base_rate": 0.0,
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "accuracy": 0.182,
-            "confusion": {
-              "tp": 0,
-              "fp": 9,
-              "fn": 0,
-              "tn": 2
-            }
-          }
-        }
-      },
-      "false_positives": [
+        {
+          "pair_id": "QMS_PRD_TR_018",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "These clarified the directions of design and then the team agreed to include simple functions, certain large buttons, etc.",
+          "present_score": 0.286
+        },
+        {
+          "pair_id": "QMS_PRD_TR_019",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "User Interface regarded the command interface as useful for remote control.",
+          "present_score": 0.261
+        },
+        {
+          "pair_id": "QMS_PRD_TR_023",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "First, Project Manager announced that her favourite animal at the time was an elk.",
+          "present_score": 0.286
+        },
+        {
+          "pair_id": "QMS_PRD_TR_026",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Project Manager proposed that apart from ordinary remote controls, innovative use cases could be explored.",
+          "present_score": 0.211
+        },
+        {
+          "pair_id": "QMS_PRD_TR_027",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Marketing presented the user requirements.",
+          "present_score": 0.353
+        },
+        {
+          "pair_id": "QMS_PRD_TR_027",
+          "type": "alternative",
+          "in_document": "present_unspecified",
+          "text": "In conclusion, Marketing considered the incorporation of voice recognition to be unfeasible.",
+          "present_score": 0.308
+        },
+        {
+          "pair_id": "QMS_PRD_TR_028",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Then he started to talk about target customers in the first place and laid teletext issues on the table.",
+          "present_score": 0.231
+        },
+        {
+          "pair_id": "QMS_PRD_TR_029",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Then, they discussed the number of buttons on the remote.",
+          "present_score": 0.308
+        },
+        {
+          "pair_id": "QMS_PRD_TR_033",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Marketing suggested that the group should focus on young people because they are more open to new devices.",
+          "present_score": 0.438
+        },
+        {
+          "pair_id": "QMS_PRD_TR_033",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Marketing suggested they should think about the product in a cool shape.",
+          "present_score": 0.357
+        },
+        {
+          "pair_id": "QMS_PRD_TR_033",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "So the group recommended some fruit.",
+          "present_score": 0.133
+        },
+        {
+          "pair_id": "QMS_PRD_TR_038",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The second presentation was about technical functions.",
+          "present_score": 0.235
+        },
+        {
+          "pair_id": "QMS_PRD_TR_039",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Everyone had put efforts into the process and gave opinions to design a good remote control.",
+          "present_score": 0.276
+        },
+        {
+          "pair_id": "QMS_PRD_TR_040",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "They concentrated on adjusting the \"triple RC\", and eventually decided on \"triple R\".",
+          "present_score": 0.267
+        },
+        {
+          "pair_id": "QMS_PRD_TR_041",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "User Interface and Industrial Designer firstly presented on the prototype features which agreed to have a banana shape with a size that fitted to the hand.",
+          "present_score": 0.326
+        },
+        {
+          "pair_id": "QMS_PRD_TR_041",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "As agreed by the group, the prototype would have two scroll wheels to control the volume and the channel, the turbo button that also could be used to turn on the TV, the teletext button to faster switch the channel.",
+          "present_score": 0.292
+        },
+        {
+          "pair_id": "QMS_PRD_TR_041",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Concerning the product cost, the group decided to use a regular chip for the speaker.",
+          "present_score": 0.162
+        },
+        {
+          "pair_id": "QMS_PRD_TR_041",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The group would not use LCD and they would have a base station that was made out of units of plastic to balance the cost.",
+          "present_score": 0.2
+        },
+        {
+          "pair_id": "QMS_PRD_TR_041",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "User Interface suggested two new ideas.",
+          "present_score": 0.429
+        },
+        {
+          "pair_id": "QMS_PRD_TR_042",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The team discussed a marketing survey about remote controls.",
+          "present_score": 0.4
+        },
+        {
+          "pair_id": "QMS_PRD_TR_042",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "They agreed to design remote controls with more fancy outlook and less buttons.",
+          "present_score": 0.421
+        },
+        {
+          "pair_id": "QMS_PRD_TR_044",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Marketing mentioned three main inspirations.",
+          "present_score": 0.286
+        },
+        {
+          "pair_id": "QMS_PRD_TR_044",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "So the group considered whether there was a need to add further advanced incorporation.",
+          "present_score": 0.154
+        },
+        {
+          "pair_id": "QMS_PRD_TR_047",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "So the team proposed to reduce buttons to a minimum.",
+          "present_score": 0.429
+        },
+        {
+          "pair_id": "QMS_PRD_TR_048",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Meanwhile, target customers are specified as 40 plus.",
+          "present_score": 0.222
+        },
+        {
+          "pair_id": "QMS_PRD_TR_049",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "He proposed that TV itself could have a remote control system which could be user friendly.",
+          "present_score": 0.235
+        },
+        {
+          "pair_id": "QMS_PRD_TR_049",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "These buttons could be navigation buttons.",
+          "present_score": 0.286
+        },
+        {
+          "pair_id": "QMS_PRD_TR_050",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Users could redesign their remote controls to their own needs.",
+          "present_score": 0.133
+        },
+        {
+          "pair_id": "QMS_PRD_TR_050",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Remote controls originally designed for different devices could now be integrated.",
+          "present_score": 0.273
+        },
+        {
+          "pair_id": "QMS_PRD_TR_051",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The reasons were explained when user requirements of the new remote control were presented.",
+          "present_score": 0.357
+        },
+        {
+          "pair_id": "QMS_PRD_TR_051",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The team made some decisions on the remote control design for the present stage.",
+          "present_score": 0.353
+        },
+        {
+          "pair_id": "QMS_PRD_TR_052",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The kinetic was both useful and convenient.",
+          "present_score": 0.083
+        },
+        {
+          "pair_id": "QMS_PRD_TR_052",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Therefore, the kinetic energy source would be a better choice.",
+          "present_score": 0.231
+        },
+        {
+          "pair_id": "QMS_PRD_TR_054",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "There should be a compromise between the sense of design and stability.",
+          "present_score": 0.381
+        },
+        {
+          "pair_id": "QMS_PRD_TR_055",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Marketing introduced watch trends about colours, shapes and material of remote control from the past years.",
+          "present_score": 0.3
+        },
+        {
+          "pair_id": "QMS_PRD_TR_055",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Based on the analysis of marketing, the group did a discussion about target people and made initial design decisions.",
+          "present_score": 0.381
+        },
+        {
+          "pair_id": "QMS_PRD_TR_055",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Marketing introduced watch trends in shapes, colours, material and functions from the past years.",
+          "present_score": 0.2
+        },
+        {
+          "pair_id": "QMS_PRD_TR_056",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Marketing held the opinion that they had to make some change on the button.",
+          "present_score": 0.08
+        },
+        {
+          "pair_id": "QMS_PRD_TR_056",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Then they talked about the conflicts between technology and price.",
+          "present_score": 0.108
+        },
+        {
+          "pair_id": "QMS_PRD_TR_056",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The application of some high technology such as speech recognition and solar energy would add to the cost.",
+          "present_score": 0.273
+        },
+        {
+          "pair_id": "QMS_PRD_TR_058",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "At last, the user interface and industrial manager added usability and lightness as two other essential features of the product.",
+          "present_score": 0.25
+        },
+        {
+          "pair_id": "QMS_PRD_TR_058",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The manager introduced a new technical device, the SMARTboards, to all the team members in order to facilitate their presentation and information sharing work.",
+          "present_score": 0.424
+        },
+        {
+          "pair_id": "QMS_PRD_TR_061",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Marketing pointed out that the remote control for television should be user-friendly, with a visual feature to draw the attention of customers and that new ideas should be put into thought on facilitating its usage, so that users could avoid spending too much time on the instruction menu.",
+          "present_score": 0.244
+        },
+        {
+          "pair_id": "QMS_PRD_TR_062",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "A child lock system should be added.",
+          "present_score": 0.211
+        },
+        {
+          "pair_id": "QMS_PRD_TR_063",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The first presentation mainly covered component design.",
+          "present_score": 0.167
+        },
+        {
+          "pair_id": "QMS_PRD_TR_063",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "User Interface advocated an LCD with backlighting in a small device.",
+          "present_score": 0.273
+        },
+        {
+          "pair_id": "QMS_PRD_TR_063",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Secondly, they had a discussion on the energy, the case and the chip.",
+          "present_score": 0.308
+        },
+        {
+          "pair_id": "QMS_PRD_TR_064",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Marketing mainly focused on users' frustrations and expectations for remote controls.",
+          "present_score": 0.303
+        },
+        {
+          "pair_id": "QMS_PRD_TR_065",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Industrial Designer gave a presentation about his findings on each of the components of the remote control.",
+          "present_score": 0.353
+        },
+        {
+          "pair_id": "QMS_PRD_TR_066",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Therefore, maybe they should make some compromise.",
+          "present_score": 0.222
+        },
+        {
+          "pair_id": "QMS_PRD_TR_070",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Next, the group turned to discuss some details, like the total size for the button, and the various functions of the button as well as a jog-dial.",
+          "present_score": 0.25
+        },
+        {
+          "pair_id": "QMS_PRD_TR_074",
+          "type": "alternative",
+          "in_document": "present_unspecified",
+          "text": "Those should remain the main focus instead of more novel features.",
+          "present_score": 0.286
+        },
+        {
+          "pair_id": "QMS_PRD_TR_075",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Those buttons were a scroll and some push buttons.",
+          "present_score": 0.353
+        },
+        {
+          "pair_id": "QMS_PRD_TR_079",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "He made an introduction of two types of remotes: engineering centred ones which provide a lot of functionality and user centred which focus on the easiness of use.",
+          "present_score": 0.121
+        },
+        {
+          "pair_id": "QMS_PRD_TR_080",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "For the case, it would be double curved and made of rubber.",
+          "present_score": 0.3
+        },
+        {
+          "pair_id": "QMS_PRD_TR_080",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Next, the cost was given as it was under budget.",
+          "present_score": 0.421
+        },
+        {
+          "pair_id": "QMS_PRD_TR_080",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The remote fits all criteria and it was something novel.",
+          "present_score": 0.333
+        },
+        {
+          "pair_id": "QMS_PRD_TR_080",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Project Manager concluded that everyone had done a great job, both individually and as a team.",
+          "present_score": 0.345
+        },
+        {
+          "pair_id": "QMS_PRD_TR_081",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Marketing gave a presentation in the first place based on research and came up with ideas like what their remote control should look like, buttons design, whether the new product should have LCD screens.",
+          "present_score": 0.372
+        },
+        {
+          "pair_id": "QMS_PRD_TR_082",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Industrial Designer had started making an overview of the project's three phases respectively.",
+          "present_score": 0.273
+        },
+        {
+          "pair_id": "QMS_PRD_TR_082",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "In the present phase, Industrial Designer focused on the basic function of the remote control.",
+          "present_score": 0.286
+        },
+        {
+          "pair_id": "QMS_PRD_TR_082",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "From a marketing perspective, the present function design phase consisted of user requirements.",
+          "present_score": 0.19
+        },
+        {
+          "pair_id": "QMS_PRD_TR_082",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Project Manager suggested that the team should first have a basic starting point and extend to other functions in the following meetings.",
+          "present_score": 0.308
+        },
+        {
+          "pair_id": "QMS_PRD_TR_083",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Project Manager mentioned four points.",
+          "present_score": 0.4
+        },
+        {
+          "pair_id": "QMS_PRD_TR_083",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "What's more, the project should target a new customer group, which was younger than 40.",
+          "present_score": 0.444
+        },
+        {
+          "pair_id": "QMS_PRD_TR_083",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Besides, User Interface mentioned the importance of being user friendly.",
+          "present_score": 0.381
+        },
+        {
+          "pair_id": "QMS_PRD_TR_083",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Project Manager emphasized that the main point in this meeting was to keep the remote control as simple as possible, but more options and functions, like the menu and the parental control could be added.",
+          "present_score": 0.345
+        },
+        {
+          "pair_id": "QMS_PRD_TR_084",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Through market research, Marketing believed that the modern appearance of the remote control is important.",
+          "present_score": 0.4
+        },
+        {
+          "pair_id": "QMS_PRD_TR_084",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Useless buttons can be combined or multi-functional remote control can be designed.",
+          "present_score": 0.2
+        },
+        {
+          "pair_id": "QMS_PRD_TR_084",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "User Interface advocated to adjust to meet the needs of users from the perspective of technical function design.",
+          "present_score": 0.375
+        },
+        {
+          "pair_id": "QMS_PRD_TR_084",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "It is mainly user-centred, reducing buttons and making it easier to use.",
+          "present_score": 0.174
+        },
+        {
+          "pair_id": "QMS_PRD_TR_084",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "In the design, it can make the battery and infrared lamp cheaper and more sustainable.",
+          "present_score": 0.174
+        },
+        {
+          "pair_id": "QMS_PRD_TR_084",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "From the last meeting, Project Manager concluded that the team needed to design a modern, interesting, distinctive, sturdy, positioning remote control.",
+          "present_score": 0.364
+        },
+        {
+          "pair_id": "QMS_PRD_TR_084",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Marketing believed that anti lost equipment can be designed.",
+          "present_score": 0.091
+        },
+        {
+          "pair_id": "QMS_PRD_TR_087",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "In the end, the team reached a consensus that their new remotes would have batteries that could be recharged, pale yellow slogans, fruits-based shapes and sponge rubber material.",
+          "present_score": 0.333
+        },
+        {
+          "pair_id": "QMS_PRD_TR_088",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Marketing proposed to make a stylish remote control.",
+          "present_score": 0.4
+        },
+        {
+          "pair_id": "QMS_PRD_TR_089",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "User Interface made a presentation on buttons the control should include and on the layout of the buttons.",
+          "present_score": 0.372
+        },
+        {
+          "pair_id": "QMS_PRD_TR_091",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The team would look into the material.",
+          "present_score": 0.167
+        },
+        {
+          "pair_id": "QMS_PRD_TR_092",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Speech recognition was a feature that Interface Designer wanted to include.",
+          "present_score": 0.3
+        },
+        {
+          "pair_id": "QMS_PRD_TR_092",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "All in all, the team was satisfied with the product.",
+          "present_score": 0.4
+        },
+        {
+          "pair_id": "QMS_PRD_TR_093",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Marketing put forward innovative ideas including using radio waves and bluetooth.",
+          "present_score": 0.296
+        },
+        {
+          "pair_id": "QMS_PRD_TR_093",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Project Manager gave each team member different tasks.",
+          "present_score": 0.333
+        },
+        {
+          "pair_id": "QMS_PRD_TR_095",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Industrial Designer expressed a desire to make the remote friendly to users.",
+          "present_score": 0.381
+        },
+        {
+          "pair_id": "QMS_PRD_TR_095",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "He hoped that new remote control should work on different devices.",
+          "present_score": 0.429
+        },
+        {
+          "pair_id": "QMS_PRD_TR_096",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Therefore, originality and competitiveness might be gained over competitive products.",
+          "present_score": 0.24
+        },
+        {
+          "pair_id": "QMS_PRD_VA_000",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Lastly, the group agreed to include one sort of menu button and voice recognition as an option.",
+          "present_score": 0.333
+        },
+        {
+          "pair_id": "QMS_PRD_VA_000",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Therefore, the group decided to include both 15 to 25 and 25 to 35 years old age group into consideration.",
+          "present_score": 0.417
+        },
+        {
+          "pair_id": "QMS_PRD_VA_001",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "In terms of putting fashion into the electronics, this is both their slogan and their design target.",
+          "present_score": 0.333
+        },
+        {
+          "pair_id": "QMS_PRD_VA_002",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The group briefly talked about their agreements of the past meetings.",
+          "present_score": 0.235
+        },
+        {
+          "pair_id": "QMS_PRD_VA_009",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The group agreed that the assessment was very good.",
+          "present_score": 0.182
+        },
+        {
+          "pair_id": "QMS_PRD_VA_009",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "And they decided to give up the sample sensor as well as the locator.",
+          "present_score": 0.4
+        },
+        {
+          "pair_id": "QMS_PRD_VA_009",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The scroll wheel was on the remote side.",
+          "present_score": 0.25
+        },
+        {
+          "pair_id": "QMS_PRD_VA_011",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "Moreover, User Interface suggested a set of buttons with its own color to make it recognizable.",
+          "present_score": 0.444
+        },
+        {
+          "pair_id": "QMS_PRD_VA_011",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Industrial Designer said that the younger people fancied soft materials and primary colors.",
+          "present_score": 0.4
+        },
+        {
+          "pair_id": "QMS_PRD_VA_012",
+          "type": "condition",
+          "in_document": "present_unspecified",
+          "text": "The group hoped that it can be applied to children, in particular to ensure their safety during use.",
+          "present_score": 0.182
+        },
+        {
+          "pair_id": "QMS_PRD_VA_012",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The group thought remote controls should keep children safe while using them.",
+          "present_score": 0.421
+        },
+        {
+          "pair_id": "QMS_PRD_VA_013",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "The team came up with some general desired features about their new TV remote controls,including compatibility, appearance and functions .First, they thought compatibility is of importance.Second ,they thought good looks and sizes of remote controls were two vital features .Third, buttons should be designed properly.",
+          "present_score": 0.273
+        },
+        {
+          "pair_id": "QMS_PRD_VA_014",
+          "type": "decision",
+          "in_document": "present_unspecified",
+          "text": "Marketing wrote down a few evaluation criteria, based on previous marketing strategy, on the latest trends, and on user preferences.",
+          "present_score": 0.25
+        },
+        {
+          "pair_id": "QMS_PRD_VA_014",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "There was a seven-point scale rating for each criterion.",
+          "present_score": 0.091
+        },
+        {
+          "pair_id": "QMS_PRD_VA_014",
+          "type": "alternative",
+          "in_document": "present_unspecified",
+          "text": "In terms of the material used on the device, the team decided to use only one material, either rubber or plastic instead of both or titanium.",
+          "present_score": 0.226
+        },
+        {
+          "pair_id": "QMS_PRD_VA_016",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "The group didn't make a final decision.",
+          "present_score": 0.154
+        },
+        {
+          "pair_id": "QMS_PRD_VA_019",
+          "type": "rationale",
+          "in_document": "present_unspecified",
+          "text": "These would cost seventeen dot eight dollars in total, which was apparently too expensive.",
+          "present_score": 0.417
+        },
         {
           "pair_id": "QSUM_001",
           "type": "alternative",
           "in_document": "present_unspecified",
           "text": "uncurved (flat) casing -- too dull",
           "present_score": 0.267
-        },
-        {
-          "pair_id": "QSUM_001",
-          "type": "alternative",
-          "in_document": "present_unspecified",
-          "text": "single-curved casing",
-          "present_score": 0.462
         },
         {
           "pair_id": "QSUM_001",
@@ -864,13 +1795,6 @@
           "in_document": "present_unspecified",
           "text": "A screen menu display was adopted and only basic buttons were kept.",
           "present_score": 0.444
-        },
-        {
-          "pair_id": "QSUM_003",
-          "type": "decision",
-          "in_document": "present_unspecified",
-          "text": "Lightweight plastic was temporarily set as the case material.",
-          "present_score": 0.5
         },
         {
           "pair_id": "QSUM_003",
@@ -906,9 +1830,879 @@
           "in_document": "present_unspecified",
           "text": "Both battery and solar alimentation were adopted.",
           "present_score": 0.25
+        },
+        {
+          "pair_id": "SYN_0000_001",
+          "type": "decision",
+          "in_document": "paraphrased",
+          "text": "Status quo with AWS continues, for now",
+          "present_score": 0.133
+        },
+        {
+          "pair_id": "SYN_0000_001",
+          "type": "owner",
+          "in_document": "verbatim",
+          "text": "Platform engineering lead",
+          "present_score": 0.286
+        },
+        {
+          "pair_id": "SYN_0000_001",
+          "type": "approver",
+          "in_document": "verbatim",
+          "text": "CTO",
+          "present_score": 0.105
+        },
+        {
+          "pair_id": "SYN_0000_002",
+          "type": "owner",
+          "in_document": "verbatim",
+          "text": "Platform Engineering Lead",
+          "present_score": 0.105
+        },
+        {
+          "pair_id": "SYN_0000_004",
+          "type": "owner",
+          "in_document": "verbatim",
+          "text": "SRE",
+          "present_score": 0.182
         }
       ],
-      "false_negatives": []
+      "false_negatives": [
+        {
+          "pair_id": "QMS_ACA_TE_001",
+          "type": "alternative",
+          "text": "The group discussed recording equipment issues, including the purchase of two additional headsets and the prospect of getting a new base station and a set of wireless microphones to replace those wired microphones currently in use.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_ACA_TR_002",
+          "type": "decision",
+          "text": "decision was also made to delegate transcribers with the task of labelling a subset of digits or Switchboard data for fine-grained acoustic-phonetic features.",
+          "present_score": 0.562
+        },
+        {
+          "pair_id": "QMS_ACA_TR_002",
+          "type": "rationale",
+          "text": "A new version of the pre-segmentation tool that segments channel-specific speech/non-speech portions of the signal has been developed and tested.",
+          "present_score": 0.533
+        },
+        {
+          "pair_id": "QMS_ACA_TR_006",
+          "type": "decision",
+          "text": "The team had started putting together the various techniques they had developed into a single software.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_ACA_TR_008",
+          "type": "rationale",
+          "text": "PhD C explained that there was no room left for silence detection because of the server side delay.",
+          "present_score": 0.526
+        },
+        {
+          "pair_id": "QMS_ACA_TR_013",
+          "type": "decision",
+          "text": "The log magnitude spectral subtraction used twelve seconds from the past and future to calculate the mean.",
+          "present_score": 0.455
+        },
+        {
+          "pair_id": "QMS_ACA_TR_016",
+          "type": "decision",
+          "text": "The actual number of the inputs in the Bayes-net can create a combinatorial explosion when setting the probabilities.",
+          "present_score": 0.909
+        },
+        {
+          "pair_id": "QMS_ACA_TR_018",
+          "type": "rationale",
+          "text": "Grad G fixed a bug in his Matlab code for phase normalization and started receiving better results.",
+          "present_score": 0.519
+        },
+        {
+          "pair_id": "QMS_ACA_TR_028",
+          "type": "decision",
+          "text": "The professor thought the LPC had two problems.",
+          "present_score": 0.462
+        },
+        {
+          "pair_id": "QMS_ACA_VA_004",
+          "type": "decision",
+          "text": "Grad F explained that he was focusing on writing his proposal for his qualification exams, which was on the 25th of July.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_ACA_VA_005",
+          "type": "decision",
+          "text": "The group discussed recognition results generated for 20 minutes of close-talking microphone data.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_ACA_VA_005",
+          "type": "rationale",
+          "text": "Recognition performance was very good, indicating promising results for forced alignment procedures and the ability to analyze other important signal information, e.g.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_ACA_VA_005",
+          "type": "rationale",
+          "text": "prosody and overlapping speech.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_ACA_VA_005",
+          "type": "decision",
+          "text": "It was decided that close-talking data should be downsampled and fed to the SRI recognizer to compare recognition performance, and that data from the far-field microphones should be tested on the recognizer as soon as possible.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_ACA_VA_005",
+          "type": "decision",
+          "text": "Following close-talking microphone recognition procedures, it was decided that data from the far-field microphones (or PZMs) should be tested on the recognizer as soon as possible.",
+          "present_score": 0.743
+        },
+        {
+          "pair_id": "QMS_ACA_VA_005",
+          "type": "rationale",
+          "text": "Speaker mn017 will compare close-talking microphone recognition results with those obtained for downsampled data.",
+          "present_score": 0.522
+        },
+        {
+          "pair_id": "QMS_CMT_TE_002",
+          "type": "rationale",
+          "text": "Welsh bac worked well for preparing employment for some people, but not for everybody.",
+          "present_score": 0.476
+        },
+        {
+          "pair_id": "QMS_CMT_TE_004",
+          "type": "decision",
+          "text": "Barry Hughes thought that the infrastructure can be built for a range of out-of-court disposals.",
+          "present_score": 0.476
+        },
+        {
+          "pair_id": "QMS_CMT_TR_001",
+          "type": "rationale",
+          "text": "Although they failed to persuade the local government to adopt a new national model, the local authorities had already seen the value in it.",
+          "present_score": 0.538
+        },
+        {
+          "pair_id": "QMS_CMT_TR_006",
+          "type": "decision",
+          "text": "There were totally two questions proposed on impact on education.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_CMT_TR_006",
+          "type": "rationale",
+          "text": "Then they had some discussions on whether the awareness raising should be on the face of the Bill and who should pay for this.",
+          "present_score": 0.588
+        },
+        {
+          "pair_id": "QMS_CMT_TR_011",
+          "type": "rationale",
+          "text": "Moreover, Dawn Bowden AM assumed that appropriate referral mechanisms should still be in place, which was agreed by Kirsty Williams AM who added that schools should remain in contact with children and continue to identify vulnerable children.",
+          "present_score": 0.526
+        },
+        {
+          "pair_id": "QMS_CMT_TR_013",
+          "type": "decision",
+          "text": "Qualification Wales was the regulator of the awarding bodies, mainly focusing on the design of the qualifications and the delivery of the assessment.",
+          "present_score": 0.538
+        },
+        {
+          "pair_id": "QMS_CMT_TR_016",
+          "type": "decision",
+          "text": "Kirsty Williams admitted that the grading system was rigorous and equivalent to A-Level.",
+          "present_score": 0.615
+        },
+        {
+          "pair_id": "QMS_CMT_TR_016",
+          "type": "rationale",
+          "text": "A UCAS tariff associated with it, and it was the individual ability that was evaluated by the system.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_CMT_TR_019",
+          "type": "decision",
+          "text": "Although highly challenged by the participants, Kirsty Williams AM argued that the Act had fulfilled the Government's objectives in regulating institutions, safeguarding contribution, managing fair access and protecting the principle of institutional autonomy.",
+          "present_score": 0.791
+        },
+        {
+          "pair_id": "QMS_CMT_VA_005",
+          "type": "rationale",
+          "text": "The opposition party was not very satisfied because he thought that the government did not reach out to as many businesses as possible.",
+          "present_score": 0.615
+        },
+        {
+          "pair_id": "QMS_PRD_TE_000",
+          "type": "rationale",
+          "text": "Selling target is four million and the profit goal is fifty percent.",
+          "present_score": 0.556
+        },
+        {
+          "pair_id": "QMS_PRD_TE_013",
+          "type": "decision",
+          "text": "Industrial Designer proposed to change the way how the remote control and the TV communicate with each other as the infrared connection was not hot technical and suggested using Bluetooth.",
+          "present_score": 0.562
+        },
+        {
+          "pair_id": "QMS_PRD_TE_014",
+          "type": "rationale",
+          "text": "Industrial Designer agreed and proposed that a stick or round button for volume control and channel selection could be used and also suggested that the ten digits could be substituted by voice recognition.",
+          "present_score": 0.552
+        },
+        {
+          "pair_id": "QMS_PRD_TE_015",
+          "type": "rationale",
+          "text": "Once the budget increased, voice recognition would be incorporated.",
+          "present_score": 0.923
+        },
+        {
+          "pair_id": "QMS_PRD_TE_015",
+          "type": "rationale",
+          "text": "Overall, the present cost was 12.5 Euros and was under the budget.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_PRD_TE_017",
+          "type": "rationale",
+          "text": "The group reached the agreement to design an infrared-based controller because it was cheaper than a laser.",
+          "present_score": 0.519
+        },
+        {
+          "pair_id": "QMS_PRD_TE_017",
+          "type": "rationale",
+          "text": "Thus, the group decided to make the product look fancy so that people would pay more.",
+          "present_score": 0.522
+        },
+        {
+          "pair_id": "QMS_PRD_TE_019",
+          "type": "alternative",
+          "text": "The marketing suggested measuring how good the design was instead of just talking about it so the group started to judge the design in three aspects on a scale of one to seven, one being true and seven being false.",
+          "present_score": 0.565
+        },
+        {
+          "pair_id": "QMS_PRD_TR_000",
+          "type": "rationale",
+          "text": "What's more, Industrial Designer came up with a strategy to do additional user research by choosing the sports season and working with motion pictures.",
+          "present_score": 0.6
+        },
+        {
+          "pair_id": "QMS_PRD_TR_002",
+          "type": "rationale",
+          "text": "But at the end of the meeting, they made the decision that the new remote control would not be a multi-functional one, and it would only be designed for television.",
+          "present_score": 0.583
+        },
+        {
+          "pair_id": "QMS_PRD_TR_002",
+          "type": "alternative",
+          "text": "Industrial Designer thought that they should stick to the idea of traditional television remote control, instead of a multi-functional one.",
+          "present_score": 0.56
+        },
+        {
+          "pair_id": "QMS_PRD_TR_003",
+          "type": "rationale",
+          "text": "The first prototype was a pretty simple design with LCD display and an on-off button in red.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_003",
+          "type": "rationale",
+          "text": "For both of the prototypes, Marketing asked the team to give one to seven points to each feature of the product and the lower the points the better the feature.",
+          "present_score": 0.595
+        },
+        {
+          "pair_id": "QMS_PRD_TR_004",
+          "type": "rationale",
+          "text": "In terms of the choice of chips, Industrial Designer pointed out that custom-designed ones were more flexible but would cost more and take a long time, so Project Manager favoured chips off the shelf.",
+          "present_score": 0.452
+        },
+        {
+          "pair_id": "QMS_PRD_TR_007",
+          "type": "decision",
+          "text": "The team came up with three general desired features about their new TV remote controls.",
+          "present_score": 0.462
+        },
+        {
+          "pair_id": "QMS_PRD_TR_007",
+          "type": "decision",
+          "text": "The first was that the unit price of each remote control was relatively high (twenty-five Euros).",
+          "present_score": 0.48
+        },
+        {
+          "pair_id": "QMS_PRD_TR_009",
+          "type": "decision",
+          "text": "The evaluated the prototype against some criteria formulated in response to the market research and financial consideration.",
+          "present_score": 0.556
+        },
+        {
+          "pair_id": "QMS_PRD_TR_010",
+          "type": "rationale",
+          "text": "Under this circumstance, the new design changed shape and lost functions such as scroll and microphone until the cost was twelve fifty.",
+          "present_score": 0.583
+        },
+        {
+          "pair_id": "QMS_PRD_TR_011",
+          "type": "decision",
+          "text": "The group decided to make the new product good-looking, durable and environmentally sensitive, but the opinion of User Interface had a little difference with Marketing's - the former thought the product should only have some basic functions but the latter thought there should be something special about the product to make it exclusive.",
+          "present_score": 0.556
+        },
+        {
+          "pair_id": "QMS_PRD_TR_012",
+          "type": "decision",
+          "text": "The prototype was a pretty simple design in a mango shape with the company logo on it and an on-off button.",
+          "present_score": 0.783
+        },
+        {
+          "pair_id": "QMS_PRD_TR_013",
+          "type": "decision",
+          "text": "The marketing expert thought there were three things making the product marketable - the features, the characteristics, and the corporation behind the product.",
+          "present_score": 0.583
+        },
+        {
+          "pair_id": "QMS_PRD_TR_013",
+          "type": "decision",
+          "text": "The marketing expert thought there were three things making the product marketable - the features, the characteristics, and the corporation behind the product.",
+          "present_score": 0.583
+        },
+        {
+          "pair_id": "QMS_PRD_TR_013",
+          "type": "decision",
+          "text": "When evaluating the cost of the product, the group discussed some details of the components and made some adjustments on the chip, curve, button and scroll wheel.",
+          "present_score": 0.815
+        },
+        {
+          "pair_id": "QMS_PRD_TR_013",
+          "type": "rationale",
+          "text": "They finally got an accurate estimate of fifteen point eight Euros, which was thought to be within the budget of twelve-five Euros.",
+          "present_score": 0.818
+        },
+        {
+          "pair_id": "QMS_PRD_TR_018",
+          "type": "rationale",
+          "text": "Later on, Project Manager suggested going through market research results delivered by Marketing and the new requirements shown by themself.",
+          "present_score": 0.562
+        },
+        {
+          "pair_id": "QMS_PRD_TR_021",
+          "type": "decision",
+          "text": "User Interface presumed that the remote control was only for the television, and suggested that the technical functions should be simple and removed the superfluous functions.",
+          "present_score": 0.571
+        },
+        {
+          "pair_id": "QMS_PRD_TR_021",
+          "type": "rationale",
+          "text": "User Interface still presumed that this remote control was only for television.",
+          "present_score": 0.455
+        },
+        {
+          "pair_id": "QMS_PRD_TR_023",
+          "type": "rationale",
+          "text": "The team then complimented Project Manager's drawing for the elk.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_PRD_TR_025",
+          "type": "decision",
+          "text": "Considering that the colour of their company was yellow, they decided to make the shape of the remote control like a banana.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_026",
+          "type": "rationale",
+          "text": "Then Marketing suggested that a multipurpose remote control should be made to operate different devices including TV, video recorder, DVD player, etc.",
+          "present_score": 0.483
+        },
+        {
+          "pair_id": "QMS_PRD_TR_027",
+          "type": "rationale",
+          "text": "The market research also revealed a necessity to simplify the remote control interface, for users would not take time mastering the remote control.",
+          "present_score": 0.72
+        },
+        {
+          "pair_id": "QMS_PRD_TR_027",
+          "type": "rationale",
+          "text": "The new remote control would only be for basic functions such as volume adjusting and channel flipping.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_PRD_TR_027",
+          "type": "rationale",
+          "text": "The new remote control would be the integration of original remote controls for different devices.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_PRD_TR_027",
+          "type": "rationale",
+          "text": "A speaker and a transmitter were desirable, however, for the location function.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_PRD_TR_029",
+          "type": "decision",
+          "text": "User Interface suggested that they could design the symbols and colours for the remote.",
+          "present_score": 0.533
+        },
+        {
+          "pair_id": "QMS_PRD_TR_029",
+          "type": "decision",
+          "text": "The team agreed that there should be 17 buttons on the remote, including number 0 to 9, volume up and down, mute, channel up and down, stand-by and power buttons.",
+          "present_score": 0.462
+        },
+        {
+          "pair_id": "QMS_PRD_TR_029",
+          "type": "rationale",
+          "text": "Besides the buttons of brightness and contrast should be put on the back of the remote.",
+          "present_score": 0.471
+        },
+        {
+          "pair_id": "QMS_PRD_TR_030",
+          "type": "rationale",
+          "text": "They gave high scores in turns of product creativity, easy to use, integration of fruits, appropriate behaviour, simplicity and fashion.",
+          "present_score": 0.56
+        },
+        {
+          "pair_id": "QMS_PRD_TR_030",
+          "type": "rationale",
+          "text": "They gave a medium score in turns or technological innovation, ease of learning and not easy to lose.",
+          "present_score": 0.556
+        },
+        {
+          "pair_id": "QMS_PRD_TR_031",
+          "type": "decision",
+          "text": "According to the Project Manager, the group had gone far beyond the budget, so they had to cut down something on the current conceptual remote design.",
+          "present_score": 0.529
+        },
+        {
+          "pair_id": "QMS_PRD_TR_031",
+          "type": "rationale",
+          "text": "After all the discussions, the Marketing offered a questionnaire for them to check whether they made the right decisions.",
+          "present_score": 0.571
+        },
+        {
+          "pair_id": "QMS_PRD_TR_031",
+          "type": "decision",
+          "text": "When discussing whether they were on the right track after so many changes in their design, the Marketing offered a questionnaire for the group to check if they did the right thing.",
+          "present_score": 0.667
+        },
+        {
+          "pair_id": "QMS_PRD_TR_033",
+          "type": "decision",
+          "text": "The group also agreed to need an RF to beep, wheels to control the volumes and channels, turbo button, and switch-on button.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_PRD_TR_041",
+          "type": "decision",
+          "text": "Marketing constructed a list of evaluation criteria based on the general user requirement.",
+          "present_score": 0.632
+        },
+        {
+          "pair_id": "QMS_PRD_TR_041",
+          "type": "rationale",
+          "text": "Also, Project Manager suggested that they should use the same evaluation criteria to do a street survey with young people.",
+          "present_score": 0.476
+        },
+        {
+          "pair_id": "QMS_PRD_TR_042",
+          "type": "rationale",
+          "text": "Also, the remote control would be put on the fixed charger if users did not use it, so it would be hard to get lost.",
+          "present_score": 0.462
+        },
+        {
+          "pair_id": "QMS_PRD_TR_044",
+          "type": "decision",
+          "text": "Industrial Designer introduced the basic working design logic of the remote, including the working process, the batteries, the power source to transmit the signal, the voice recognition as well as the interface for users to tab the button on the device.",
+          "present_score": 0.485
+        },
+        {
+          "pair_id": "QMS_PRD_TR_045",
+          "type": "decision",
+          "text": "People liked something that fit their hand and fewer buttons which the functions were obvious.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_PRD_TR_050",
+          "type": "rationale",
+          "text": "An ergonomic curve design was recommended by User Interface and appreciated by Project Manager, for it would make the remote control look more stylish.",
+          "present_score": 0.571
+        },
+        {
+          "pair_id": "QMS_PRD_TR_051",
+          "type": "rationale",
+          "text": "Project Manager mentioned the target market group because the team would make a product evaluation on the next meeting.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_PRD_TR_054",
+          "type": "decision",
+          "text": "Project Manager proposed to price each remote control at 25 Euros.",
+          "present_score": 0.533
+        },
+        {
+          "pair_id": "QMS_PRD_TR_056",
+          "type": "decision",
+          "text": "User Interface argued that they should discard the existing standard, and only keep the basic and user-friendly functions like channel selection, volume and enter key.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_PRD_TR_056",
+          "type": "rationale",
+          "text": "Although solar energy was fancy and environmentally friendly, the cost was much higher than using a charger.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_PRD_TR_059",
+          "type": "dissent",
+          "text": "Secondly, the industrial designer preferred a potential-meter for volume control instead of two buttons.",
+          "present_score": 0.471
+        },
+        {
+          "pair_id": "QMS_PRD_TR_059",
+          "type": "rationale",
+          "text": "When using remote control working with infra-red rays, users should keep it in a specific direction and it's hard to tune.",
+          "present_score": 0.48
+        },
+        {
+          "pair_id": "QMS_PRD_TR_060",
+          "type": "decision",
+          "text": "User Interface suggested that the scroll wheel could be used without an LCD screen for changing channel numbers easily.",
+          "present_score": 0.571
+        },
+        {
+          "pair_id": "QMS_PRD_TR_060",
+          "type": "rationale",
+          "text": "And it would be fairly cheap to implement compared to an LCD screen.",
+          "present_score": 0.462
+        },
+        {
+          "pair_id": "QMS_PRD_TR_061",
+          "type": "decision",
+          "text": "Project manager needed the following subjects to be presented in writing form, including functional and technical design, team scale, timeline, initial budget, cost limit, marketing strategic plan, product introduction, benefits for the company and for each individual.",
+          "present_score": 0.483
+        },
+        {
+          "pair_id": "QMS_PRD_TR_068",
+          "type": "decision",
+          "text": "Have one remote that has the main functions such as turning on, turning off, channel changing, volume; and another remote with all the special things.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_PRD_TR_069",
+          "type": "rationale",
+          "text": "The user interface was considered to be user-friendly enough.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_PRD_TR_069",
+          "type": "rationale",
+          "text": "However, the team also admitted that there was still room for improvement on the location function, technological innovation, the material, as well as the fashion style of the remote control.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_PRD_TR_069",
+          "type": "decision",
+          "text": "The team had decided to replace the rubber with plastic due to the budget limit.",
+          "present_score": 0.522
+        },
+        {
+          "pair_id": "QMS_PRD_TR_071",
+          "type": "rationale",
+          "text": "Finally, they drew out a specific case design and roughly determined the position of each button while taking the convenience of left-handed users into account.",
+          "present_score": 0.519
+        },
+        {
+          "pair_id": "QMS_PRD_TR_074",
+          "type": "decision",
+          "text": "The remote control would be priced at 25 Euros, produced at a maximum cost of 12.5 Euros, and primarily marketed in Europe and North America.",
+          "present_score": 0.667
+        },
+        {
+          "pair_id": "QMS_PRD_TR_075",
+          "type": "rationale",
+          "text": "The remote control should be curved, easy to hold, nice and small with big buttons.",
+          "present_score": 0.455
+        },
+        {
+          "pair_id": "QMS_PRD_TR_075",
+          "type": "rationale",
+          "text": "The body of the remote control shall be smooth plastic or spongy rubber with yellow and black buttons.",
+          "present_score": 0.609
+        },
+        {
+          "pair_id": "QMS_PRD_TR_075",
+          "type": "decision",
+          "text": "The group made an interactive evaluation of the remote control in terms of the user requirements and the trends.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_076",
+          "type": "rationale",
+          "text": "It included buttons for channel change, power, menu and also had a slider for the volume, an infra-red section and a microphone.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_PRD_TR_076",
+          "type": "decision",
+          "text": "User Interface proposed that the cover should be made of rubber and could stretch over.",
+          "present_score": 0.471
+        },
+        {
+          "pair_id": "QMS_PRD_TR_077",
+          "type": "decision",
+          "text": "Marketing had concluded that younger users might be more expected to use high technology features such as LCD display and speech recognition.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_PRD_TR_077",
+          "type": "rationale",
+          "text": "Industrial designer also mentioned that they should care about battery life if speech recognition was used.",
+          "present_score": 0.522
+        },
+        {
+          "pair_id": "QMS_PRD_TR_077",
+          "type": "rationale",
+          "text": "And most users only used ten percent of buttons on the remote control.",
+          "present_score": 0.556
+        },
+        {
+          "pair_id": "QMS_PRD_TR_080",
+          "type": "decision",
+          "text": "The double curved prototype with anti-RSI buttons was ergonomic and comfortable to the size of the hand and to touch as it was made of rubber.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_PRD_TR_087",
+          "type": "decision",
+          "text": "In the second half of the meeting, the team discussed the details of the features and appearances of the new remotes.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_PRD_TR_090",
+          "type": "decision",
+          "text": "The team would add some software functionalities on programmable chips browsing by the content or things like that.",
+          "present_score": 0.455
+        },
+        {
+          "pair_id": "QMS_PRD_TR_091",
+          "type": "rationale",
+          "text": "This prototype had microphone arrays for the speech recognition system and switch for controlling.",
+          "present_score": 0.455
+        },
+        {
+          "pair_id": "QMS_PRD_TR_091",
+          "type": "rationale",
+          "text": "The first thing was fancy look and feel, the second was innovativeness, the third was easy to use.",
+          "present_score": 0.667
+        },
+        {
+          "pair_id": "QMS_PRD_TR_091",
+          "type": "rationale",
+          "text": "Both Industrial Designer and User Interface gave three or four points to look and feel, six points to innovativeness and also six points to easy to use.",
+          "present_score": 0.8
+        },
+        {
+          "pair_id": "QMS_PRD_TR_094",
+          "type": "alternative",
+          "text": "The former was abandoned because it would be disturbed by other sounds, while the latter was adopted by the group for its novelty and feasibility.",
+          "present_score": 0.8
+        },
+        {
+          "pair_id": "QMS_PRD_TR_095",
+          "type": "rationale",
+          "text": "Project Manager thought remote control was all black and boring, then he suggested making remote control fun.",
+          "present_score": 0.471
+        },
+        {
+          "pair_id": "QMS_PRD_TR_096",
+          "type": "decision",
+          "text": "Mutual greeting heralded the beginning of the meeting and the goal of the new remote control project was introduced by Project Manager to the conferees as to win over competitive products by being original, trendy and user-friendly.",
+          "present_score": 0.718
+        },
+        {
+          "pair_id": "QMS_PRD_VA_000",
+          "type": "decision",
+          "text": "Also, they decided to make it look simple, but still have those key buttons so it would be easy to use.",
+          "present_score": 0.522
+        },
+        {
+          "pair_id": "QMS_PRD_VA_000",
+          "type": "rationale",
+          "text": "Project Manager thought since they not only targeted 15 to 35 years old age groups, they should have an implementation for voice recognition technology.",
+          "present_score": 0.486
+        },
+        {
+          "pair_id": "QMS_PRD_VA_004",
+          "type": "decision",
+          "text": "Firstly, Industrial Designer presented on the remote components including the circuit board, the chip, the kinetic energy, the solar cell, the case shape and the interface.",
+          "present_score": 0.486
+        },
+        {
+          "pair_id": "QMS_PRD_VA_004",
+          "type": "alternative",
+          "text": "Instead of using hand dynamos, the group decided to use a wind dynamo which was more environmentally friendly.",
+          "present_score": 0.556
+        },
+        {
+          "pair_id": "QMS_PRD_VA_004",
+          "type": "rationale",
+          "text": "And they would keep the kinetic energy as an option and keep the spongy material preferences as well as voice recognition.",
+          "present_score": 0.667
+        },
+        {
+          "pair_id": "QMS_PRD_VA_004",
+          "type": "rationale",
+          "text": "Project Manager thought given that they were looking at more spongy material preferences, rubber or plastic would be more practical.",
+          "present_score": 0.522
+        },
+        {
+          "pair_id": "QMS_PRD_VA_005",
+          "type": "decision",
+          "text": "Project Manager wanted to make a profit of 50 million euros for a cost of 12.50 euros for 25 euros worldwide.",
+          "present_score": 0.48
+        },
+        {
+          "pair_id": "QMS_PRD_VA_006",
+          "type": "rationale",
+          "text": "Then the buttons like \"okay\", \"volumn\" and \"channel\", was with kind of arrow shapes, which made it more exciting than basic round or square buttons.",
+          "present_score": 0.452
+        },
+        {
+          "pair_id": "QMS_PRD_VA_006",
+          "type": "decision",
+          "text": "When evaluating the cost of the product, the group discussed some details of the components and made some adjustment on the chip, exterior cover material, curve, button and LCD screen.",
+          "present_score": 0.457
+        },
+        {
+          "pair_id": "QMS_PRD_VA_007",
+          "type": "rationale",
+          "text": "Industrial Designer suggested that the remote control should be small and contain only one long-lasting battery to cut cost.",
+          "present_score": 0.462
+        },
+        {
+          "pair_id": "QMS_PRD_VA_008",
+          "type": "decision",
+          "text": "Industrial designer introduced the working design including the energy, LED sender, different user interface, and the chipboard with buttons on it.",
+          "present_score": 0.455
+        },
+        {
+          "pair_id": "QMS_PRD_VA_009",
+          "type": "rationale",
+          "text": "They also calculated the average overall score was six point five.",
+          "present_score": 0.526
+        },
+        {
+          "pair_id": "QMS_PRD_VA_011",
+          "type": "decision",
+          "text": "Project Manager decided to use normal battery and no kinetic.The team would try to incorporate the joystick to solve the scroll chip problem.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "QMS_PRD_VA_012",
+          "type": "rationale",
+          "text": "In addition, its function should also allow children to use their own voice control, in case the child is not tall enough to use.",
+          "present_score": 0.538
+        },
+        {
+          "pair_id": "QMS_PRD_VA_014",
+          "type": "decision",
+          "text": "The color of the prototype was yellow and the material was half rubber and half plastic with a company logo.",
+          "present_score": 0.667
+        },
+        {
+          "pair_id": "QMS_PRD_VA_016",
+          "type": "rationale",
+          "text": "Then the industrial designer recommended changing the colour of the assembly at an extra charge to meet special needs.",
+          "present_score": 0.667
+        },
+        {
+          "pair_id": "QMS_PRD_VA_016",
+          "type": "condition",
+          "text": "The group agreed that the product should resemble fruit and vegetable in shape and colour but the specific design was not decided.",
+          "present_score": 0.526
+        },
+        {
+          "pair_id": "QMS_PRD_VA_018",
+          "type": "rationale",
+          "text": "Therefore, the proposed concept for the design included just a few buttons, a screen with a back light which can change colours and titanium, which was accepted by the group.",
+          "present_score": 0.903
+        },
+        {
+          "pair_id": "QMS_PRD_VA_018",
+          "type": "decision",
+          "text": "The industrial designer described the product as a portable device with some energy source, an interface which included some pressing buttons and keys, a processor, some infrared source which could send the information to the main device, and different encryption codes for different TVs.",
+          "present_score": 0.653
+        },
+        {
+          "pair_id": "QMS_PRD_VA_018",
+          "type": "rationale",
+          "text": "All these components would cost 5 Euros or even less than that.",
+          "present_score": 0.462
+        },
+        {
+          "pair_id": "QMS_PRD_VA_019",
+          "type": "decision",
+          "text": "With a working prototype, the user interface designer displayed the appearance and the texture of the product, which was fruit-like and spongy.",
+          "present_score": 0.818
+        },
+        {
+          "pair_id": "QMS_PRD_VA_019",
+          "type": "rationale",
+          "text": "Then the industrial designer gave some technical specifications on the product, including instructions on buttons, LCD display, speech recognition and location finder.",
+          "present_score": 0.583
+        },
+        {
+          "pair_id": "QMS_PRD_VA_019",
+          "type": "rationale",
+          "text": "According to the technical specifications given by the industrial designer, the product was very flexible because users could add buttons.",
+          "present_score": 0.455
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "decision",
+          "text": "A single-curved casing was chosen for the remote control.",
+          "present_score": 0.533
+        },
+        {
+          "pair_id": "SYN_0000_001",
+          "type": "condition",
+          "text": "The CTO will explore potential cost-saving measures within AWS",
+          "present_score": 0.615
+        },
+        {
+          "pair_id": "SYN_0000_001",
+          "type": "condition",
+          "text": "The platform engineering lead will evaluate new AWS services that may improve efficiency",
+          "present_score": 0.643
+        },
+        {
+          "pair_id": "SYN_0000_002",
+          "type": "rationale",
+          "text": "AWS offers the best feature fit and support quality",
+          "present_score": 0.522
+        },
+        {
+          "pair_id": "SYN_0000_002",
+          "type": "rationale",
+          "text": "Switching to AWS would reduce our infrastructure costs in the long run",
+          "present_score": 0.522
+        },
+        {
+          "pair_id": "SYN_0000_002",
+          "type": "condition",
+          "text": "Migrating to AWS will take 3 months due to the volume of data",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "SYN_0000_003",
+          "type": "rationale",
+          "text": "AWS offers the most suitable feature fit for our current use cases",
+          "present_score": 0.462
+        },
+        {
+          "pair_id": "SYN_0000_004",
+          "type": "rationale",
+          "text": "AWS offers the best feature fit for our needs, including the required data lake solution and robust support",
+          "present_score": 0.529
+        }
+      ]
     }
   }
 }

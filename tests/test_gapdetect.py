@@ -148,3 +148,56 @@ def test_nli_entailment_direction():
         pytest.skip(f"NLI model unavailable: {e}")
     assert s_present > 0.5
     assert s_gap < s_present
+
+
+# --- base-rate warning in the report ----------------------------------------
+
+def test_report_warns_when_gap_base_rate_inflates_f1():
+    """Same trap agreement.py guards for: at a 93% gap base rate a headline F1 of
+    ~0.96 is what an all-gap detector already scores."""
+    import importlib.util
+    from pathlib import Path
+
+    spec = importlib.util.spec_from_file_location(
+        "rge", Path(__file__).resolve().parents[1] / "scripts" / "run_gap_eval.py"
+    )
+    rge = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(rge)
+
+    m = GapMetrics()
+    for _ in range(93):
+        m.add(True, True)
+    for _ in range(7):
+        m.add(False, False)
+    report = {
+        "threshold": 0.45, "nli_model": "x", "pairs": 1, "elements": 100,
+        "detectors": {"lexical": {"overall": m.to_dict(), "breakdowns": {}}},
+    }
+    md = rge._render_md(report)
+    assert "Base-rate warning" in md
+    assert "called *everything* a gap" in md
+    assert "NLI model" not in md, "no NLI detector ran -> no model line"
+
+
+def test_report_has_no_base_rate_warning_when_balanced():
+    import importlib.util
+    from pathlib import Path
+
+    spec = importlib.util.spec_from_file_location(
+        "rge2", Path(__file__).resolve().parents[1] / "scripts" / "run_gap_eval.py"
+    )
+    rge = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(rge)
+
+    m = GapMetrics()
+    for _ in range(50):
+        m.add(True, True)
+    for _ in range(50):
+        m.add(False, False)
+    report = {
+        "threshold": 0.5, "nli_model": "x", "pairs": 1, "elements": 100,
+        "detectors": {"nli:x": {"overall": m.to_dict(), "breakdowns": {}}},
+    }
+    md = rge._render_md(report)
+    assert "Base-rate warning" not in md
+    assert "NLI model" in md

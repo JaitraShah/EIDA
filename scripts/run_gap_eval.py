@@ -212,12 +212,13 @@ def main(argv=None) -> int:
 def _render_md(report: dict) -> str:
     L = [f"# Gap detection — benchmark results\n",
          f"- threshold (present if entail/score ≥): **{report['threshold']}**",
-         f"- NLI model: `{report['nli_model']}`",
          f"- {report['pairs']} pairs, {report['elements']} elements\n",
          "> **QMSUM_AUTO is silver.** Its labels are NLI-produced, so the "
          "`source=qmsum_auto` rows for the NLI detector measure self-consistency, "
          "not accuracy. Read `source=qmsum` (5 hand-gold) and `source=synthetic` "
          "(constructed labels) for real accuracy, plus the human spot-check.\n"]
+    if any(k.startswith("nli:") for k in report["detectors"]):
+        L.insert(2, f"- NLI model: `{report['nli_model']}`")
     for dkey, d in report["detectors"].items():
         o = d["overall"]
         L.append(f"## {dkey}\n")
@@ -226,6 +227,17 @@ def _render_md(report: dict) -> str:
                  f"n={o['n']} · base rate={o['gap_base_rate']}")
         L.append(f"Confusion: tp={o['confusion']['tp']} fp={o['confusion']['fp']} "
                  f"fn={o['confusion']['fn']} tn={o['confusion']['tn']}\n")
+        # Same trap agreement.py guards for: with a ~93% gap base rate a high F1 is
+        # mostly chance. Say so in the report rather than letting the headline stand.
+        if o["gap_base_rate"] >= 0.85:
+            allgap_f1 = 2 * o["gap_base_rate"] / (1 + o["gap_base_rate"])
+            L.append(
+                f"> **Base-rate warning.** {o['gap_base_rate']:.0%} of these elements "
+                "are gaps, so a detector that called *everything* a gap would already "
+                f"score F1 {allgap_f1:.3f}. Read the `by_in_document` table below "
+                "(accuracy on the *present* rows) and the balanced "
+                "`source=synthetic` rows, not this headline.\n"
+            )
         for bname, buckets in d["breakdowns"].items():
             L.append(f"### {dkey} — {bname}\n")
             L.append("| bucket | n | base rate | P | R | F1 | acc |")

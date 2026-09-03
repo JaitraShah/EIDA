@@ -1,79 +1,51 @@
 # Gap detection — benchmark results
 
-- threshold (present if entail/score ≥): **0.55**
-- NLI model: `roberta-large-mnli`
-- 5 pairs, 50 elements
+- threshold (present if entail/score ≥): **0.45**
+- 236 pairs, 5027 elements
 
 > **QMSUM_AUTO is silver.** Its labels are NLI-produced, so the `source=qmsum_auto` rows for the NLI detector measure self-consistency, not accuracy. Read `source=qmsum` (5 hand-gold) and `source=synthetic` (constructed labels) for real accuracy, plus the human spot-check.
 
-## nli:roberta-large-mnli
-
-**Overall (gap class):** P=0.829 · R=0.895 · F1=0.861 · acc=0.78 · n=50 · base rate=0.76
-Confusion: tp=34 fp=7 fn=4 tn=5
-
-### nli:roberta-large-mnli — by_source
-
-| bucket | n | base rate | P | R | F1 | acc |
-|---|--:|--:|--:|--:|--:|--:|
-| qmsum | 50 | 0.76 | 0.829 | 0.895 | 0.861 | 0.78 |
-
-### nli:roberta-large-mnli — by_domain
-
-| bucket | n | base rate | P | R | F1 | acc |
-|---|--:|--:|--:|--:|--:|--:|
-| product | 50 | 0.76 | 0.829 | 0.895 | 0.861 | 0.78 |
-
-### nli:roberta-large-mnli — by_element_type
-
-| bucket | n | base rate | P | R | F1 | acc |
-|---|--:|--:|--:|--:|--:|--:|
-| alternative | 21 | 0.714 | 0.765 | 0.867 | 0.812 | 0.714 |
-| approver | 2 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
-| condition | 4 | 0.75 | 0.75 | 1.0 | 0.857 | 0.75 |
-| decision | 9 | 0.444 | 0.6 | 0.75 | 0.667 | 0.667 |
-| dissent | 3 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
-| rationale | 11 | 1.0 | 1.0 | 0.909 | 0.952 | 0.909 |
-
-### nli:roberta-large-mnli — by_in_document
-
-| bucket | n | base rate | P | R | F1 | acc |
-|---|--:|--:|--:|--:|--:|--:|
-| omitted | 38 | 1.0 | 1.0 | 0.895 | 0.944 | 0.895 |
-| paraphrased | 1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| present_unspecified | 11 | 0.0 | 0.0 | 0.0 | 0.0 | 0.455 |
-
 ## lexical
 
-**Overall (gap class):** P=0.792 · R=1.0 · F1=0.884 · acc=0.8 · n=50 · base rate=0.76
-Confusion: tp=38 fp=10 fn=0 tn=2
+**Overall (gap class):** P=0.958 · R=0.97 · F1=0.964 · acc=0.933 · n=5027 · base rate=0.927
+Confusion: tp=4522 fp=198 fn=139 tn=168
+
+> **Base-rate warning.** 93% of these elements are gaps, so a detector that called *everything* a gap would already score F1 0.962. Read the `by_in_document` table below (accuracy on the *present* rows) and the balanced `source=synthetic` rows, not this headline.
 
 ### lexical — by_source
 
 | bucket | n | base rate | P | R | F1 | acc |
 |---|--:|--:|--:|--:|--:|--:|
-| qmsum | 50 | 0.76 | 0.792 | 1.0 | 0.884 | 0.8 |
+| qmsum | 50 | 0.76 | 0.822 | 0.974 | 0.892 | 0.82 |
+| qmsum_auto | 4930 | 0.932 | 0.96 | 0.971 | 0.966 | 0.936 |
+| synthetic | 47 | 0.638 | 0.821 | 0.767 | 0.793 | 0.745 |
 
 ### lexical — by_domain
 
 | bucket | n | base rate | P | R | F1 | acc |
 |---|--:|--:|--:|--:|--:|--:|
-| product | 50 | 0.76 | 0.792 | 1.0 | 0.884 | 0.8 |
+| academic | 854 | 0.946 | 0.973 | 0.98 | 0.977 | 0.956 |
+| cloud_platform | 47 | 0.638 | 0.821 | 0.767 | 0.793 | 0.745 |
+| committee | 1383 | 0.978 | 0.98 | 0.992 | 0.986 | 0.973 |
+| product | 2743 | 0.9 | 0.943 | 0.957 | 0.95 | 0.909 |
 
 ### lexical — by_element_type
 
 | bucket | n | base rate | P | R | F1 | acc |
 |---|--:|--:|--:|--:|--:|--:|
-| alternative | 21 | 0.714 | 0.75 | 1.0 | 0.857 | 0.762 |
-| approver | 2 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
-| condition | 4 | 0.75 | 0.75 | 1.0 | 0.857 | 0.75 |
-| decision | 9 | 0.444 | 0.5 | 1.0 | 0.667 | 0.556 |
-| dissent | 3 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
-| rationale | 11 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| alternative | 184 | 0.902 | 0.947 | 0.97 | 0.958 | 0.924 |
+| approver | 8 | 0.875 | 0.875 | 1.0 | 0.933 | 0.875 |
+| condition | 87 | 0.931 | 0.963 | 0.951 | 0.957 | 0.92 |
+| decision | 1459 | 0.898 | 0.944 | 0.956 | 0.95 | 0.91 |
+| dissent | 87 | 0.966 | 1.0 | 0.988 | 0.994 | 0.989 |
+| owner | 8 | 0.625 | 0.625 | 1.0 | 0.769 | 0.625 |
+| rationale | 3194 | 0.942 | 0.965 | 0.976 | 0.97 | 0.944 |
 
 ### lexical — by_in_document
 
 | bucket | n | base rate | P | R | F1 | acc |
 |---|--:|--:|--:|--:|--:|--:|
-| omitted | 38 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
-| paraphrased | 1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| present_unspecified | 11 | 0.0 | 0.0 | 0.0 | 0.0 | 0.182 |
+| omitted | 4661 | 1.0 | 1.0 | 0.97 | 0.985 | 0.97 |
+| paraphrased | 10 | 0.0 | 0.0 | 0.0 | 0.0 | 0.8 |
+| present_unspecified | 348 | 0.0 | 0.0 | 0.0 | 0.0 | 0.448 |
+| verbatim | 8 | 0.0 | 0.0 | 0.0 | 0.0 | 0.5 |
