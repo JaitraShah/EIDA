@@ -62,8 +62,30 @@ labels) to be meaningful — see `by_in_document` in the full report once it exi
 
 ## Known caveat carried into every number
 
-`qmsum_auto` element types are a cue-word heuristic and came out badly skewed
-(rationale 3 334, decision 1 454, alternative 108, dissent 52, condition 24) — QMSum
-summary prose lacks the cue phrases. The per-element-type breakdown for that tier
-is indicative only; `decompose.LlmDecomposer` (a mistral pass) is the fix if the
-breakdown needs to be load-bearing.
+`qmsum_auto` element types are a cue-word heuristic, and the heuristic's coverage
+was measured rather than assumed (`scripts/retype_qmsum_elements.py` →
+`outputs/qmsum_element_type_coverage.json`):
+
+| | |
+|---|--:|
+| elements | 4 930 |
+| matched an actual cue | 1 030 (**20.9%**) |
+
+Distribution after a cue-rule pass (old → new): rationale 3 323→3 174,
+decision 1 445→1 446, alternative 87→149, condition 20→76, dissent 49→79,
+owner 4, approver 2.
+
+The improvement is real but small, and that is the finding, not a bug: **QMSum
+specific-query answers are narrative meeting summaries** — findings, descriptions,
+procedural notes — not structured decision reasoning, so most sentences genuinely
+are not an alternative, a dissent or a condition. Two consequences to carry:
+
+- `rationale` on this tier means *"reasoning-ish narrative, unclassified"*, not
+  *"a stated reason"*.
+- most of the `decision` count comes from the positional first-sentence-of-answer
+  rule, not from a cue.
+
+So read the by-element-type breakdown for `qmsum_auto` as **indicative only**. The
+synthetic tier is where element types are trustworthy — there they come from a
+typed spec, not a guess. `decompose.LlmDecomposer` (a mistral pass) is the fix if
+the breakdown ever needs to be load-bearing on the QMSum side.

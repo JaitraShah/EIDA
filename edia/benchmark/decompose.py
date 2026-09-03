@@ -40,37 +40,74 @@ from .textutil import split_sentences
 # Order matters: the first bucket whose pattern hits wins. DISSENT and ALTERNATIVE
 # are checked before RATIONALE/CONDITION because "rejected because X" is more
 # usefully an ALTERNATIVE than a RATIONALE.
+#
+# Coverage reality check (measured on the 227-meeting corpus,
+# outputs/qmsum_element_type_coverage.json): only **20.9%** of QMSum
+# specific-query sentences carry any of these cues, and most of the DECISION
+# count comes from the positional first-sentence rule rather than a cue. QMSum answers are *narrative
+# meeting summaries* -- findings, descriptions, procedural notes -- not structured
+# decision reasoning, so most sentences genuinely are not an alternative, a dissent
+# or a condition. The rest fall to RATIONALE, which on the qmsum_auto tier therefore
+# means "reasoning-ish narrative, unclassified", NOT "a stated reason". Use
+# `classify_with_cue` when you need to know which it was, and read the
+# by-element-type breakdown for that tier as indicative only. The synthetic tier is
+# where element types are trustworthy -- there they come from a typed spec.
 _TYPE_CUES: list[tuple[ElementType, re.Pattern]] = [
     (ElementType.APPROVER, re.compile(
         r"\b(signed off|sign-off|approved by|gave (?:the |their )?approval|"
-        r"authorised by|authorized by)\b", re.I)),
+        r"authorised by|authorized by|ratified)\b", re.I)),
     (ElementType.OWNER, re.compile(
         r"\b(will own|takes ownership|responsible for (?:delivering|carrying)|"
-        r"assigned to|will lead|action(?:ed)? (?:on|to)|owner is)\b", re.I)),
+        r"assigned to|will lead|action(?:ed)? (?:on|to)|owner is|"
+        r"was tasked with|would take (?:this |it )?forward)\b", re.I)),
     (ElementType.DISSENT, re.compile(
-        r"\b(disagreed|objected|pushed back|was against|opposed|"
-        r"raised concerns?|was sceptical|was skeptical|was not convinced|"
-        r"argued against|preferred (?:a|an|the|to)\b|would rather)\b", re.I)),
+        r"\b(disagreed|objected|objection|pushed back|was against|opposed|"
+        r"raised concerns?|the concern was|was sceptical|was skeptical|"
+        r"was not convinced|argued against|challenged and rebutted|"
+        r"(?:was|were) (?:effectively )?(?:challenged|rebutted|contested)|"
+        r"took issue with|did not (?:agree|think|like|support)|"
+        r"preferred (?:a|an|the|to)\b|would rather|not sure whether)\b", re.I)),
     (ElementType.ALTERNATIVE, re.compile(
         r"\b(instead of|rather than|as an alternative|other option|another option|"
         r"was rejected|were rejected|was turned down|was ruled out|were ruled out|"
-        r"was considered and|was dismissed|option[s]? (?:on the table|considered)|"
-        r"considered (?:using|adopting|a|an|the)\b)\b", re.I)),
+        r"was considered and|was dismissed|was abandoned|was vetoed|was suspended|"
+        r"option[s]? (?:on the table|considered)|considered (?:using|adopting|a|an|the)\b|"
+        r"the (?:idea|possibility|proposal|prospect|option) of|"
+        r"it was suggested that|(?:one|another) (?:idea|possibility|suggestion) (?:was|is)|"
+        r"(?:was|were) (?:also )?(?:proposed|suggested|mooted)|"
+        r"could (?:instead|alternatively)|didn't get along well with)\b", re.I)),
     (ElementType.CONDITION, re.compile(
         r"\b(provided that|as long as|on condition|depends on|dependent on|"
         r"unresolved|open (?:risk|question|issue)|still to be|remains? to be|"
         r"caveat|subject to|temporar(?:y|ily)|for now|pending|"
-        r"was not (?:established|known|decided)|would increase the cost|"
-        r"cost (?:was|is) (?:unknown|unclear))\b", re.I)),
+        r"was not (?:established|known|decided|clear)|would increase the cost|"
+        r"cost (?:was|is) (?:unknown|unclear)|would (?:have|require) .{0,25}implications|"
+        r"had to (?:be |think|consider)|need(?:ed)? to be (?:resolved|decided|considered)|"
+        r"to ensure|at the expense of|the (?:risk|problem|difficulty) (?:was|is))\b", re.I)),
     (ElementType.RATIONALE, re.compile(
         r"\b(because|since|so that|in order to|the reason|this (?:is|was) why|"
         r"on the grounds that|justified by|driven by|motivated by|"
-        r"the rationale|which is why)\b", re.I)),
+        r"the rationale|which is why|therefore|thus|hence|as a result|"
+        r"the advantage|the benefit|would help|would allow)\b", re.I)),
     (ElementType.DECISION, re.compile(
-        r"\b(decided|agreed to|chose to|chose (?:a|an|the)\b|was chosen|were chosen|"
-        r"was adopted|were adopted|settled on|will (?:go|proceed) with|"
-        r"resolved to|concluded that|the decision (?:was|is)|opted (?:for|to))\b", re.I)),
+        r"\b(decided|agreed to|agreed that|chose to|chose (?:a|an|the)\b|"
+        r"was chosen|were chosen|was adopted|were adopted|settled on|"
+        r"will (?:go|proceed) with|resolved to|concluded that|"
+        r"the decision (?:was|is)|opted (?:for|to)|it was agreed)\b", re.I)),
 ]
+
+
+def classify_with_cue(
+    text: str, *, is_first_in_answer: bool = False
+) -> tuple[ElementType, bool]:
+    """(type, matched_a_cue). `matched_a_cue=False` means the type is a fallback
+    guess, not evidence -- see the coverage note above."""
+    for etype, rx in _TYPE_CUES:
+        if rx.search(text):
+            return etype, True
+    if is_first_in_answer:
+        return ElementType.DECISION, False
+    return ElementType.RATIONALE, False
 
 
 def classify_element_type(text: str, *, is_first_in_answer: bool = False) -> ElementType:
@@ -79,12 +116,7 @@ def classify_element_type(text: str, *, is_first_in_answer: bool = False) -> Ele
     `is_first_in_answer` biases toward DECISION: the opening sentence of a QMSum
     specific-query answer is almost always the outcome statement.
     """
-    for etype, rx in _TYPE_CUES:
-        if rx.search(text):
-            return etype
-    if is_first_in_answer:
-        return ElementType.DECISION
-    return ElementType.RATIONALE  # the schema's own fallback (see generate.assign_labels)
+    return classify_with_cue(text, is_first_in_answer=is_first_in_answer)[0]
 
 
 # --------------------------------------------------------------------------- #

@@ -1,0 +1,27 @@
+{
+  "pairs": 227,
+  "skipped_pairs": 0,
+  "elements": 4930,
+  "cue_matched": 1030,
+  "cue_coverage": 0.209,
+  "types_changed": 241,
+  "old_distribution": {
+    "rationale": 3323,
+    "decision": 1445,
+    "alternative": 87,
+    "dissent": 49,
+    "condition": 20,
+    "owner": 4,
+    "approver": 2
+  },
+  "new_distribution": {
+    "rationale": 3174,
+    "decision": 1446,
+    "alternative": 149,
+    "dissent": 79,
+    "condition": 76,
+    "owner": 4,
+    "approver": 2
+  },
+  "note": "Only 21% of QMSum specific-query sentences carry a reasoning cue. QMSum answers are narrative meeting summaries, so most sentences genuinely are not an alternative/dissent/condition; they fall to RATIONALE, which on this tier means 'unclassified narrative', not 'a stated reason'. Read the by-element-type breakdown for qmsum_auto as indicative only -- the synthetic tier is where types are trustworthy."
+}

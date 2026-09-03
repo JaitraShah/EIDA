@@ -1,0 +1,150 @@
+{
+  "pair_id": "SYN_0000_003",
+  "source": "synthetic",
+  "topic": "cloud_platform__vendor_selection",
+  "title": "Cloud platform vendor selection",
+  "transcript": "Platform Engineering Lead: Alright everyone, let's dive into the cloud platform selection discussion today. We've been looking at options from AWS, Microsoft Azure, Google Cloud Platform, and IBM Cloud.\n\nSRE: I've got to say, I'm worried about managing multiple cloud platforms given our limited resources.\n\nFinance Partner: I understand your concerns, but we should consider the long-term cost benefits. Let's start by looking at Azure. It's a robust platform, but it's quite expensive compared to AWS for similar features.\n\nCTO: That's correct. The cost difference between AWS and Azure is only around 10% over a 3-year contract, which is manageable.\n\nPlatform Engineering Lead: And AWS offers the most suitable feature fit for our current use cases.\n\nFinance Partner: Moreover, the University has existing relationships with AWS that we can leverage for support and cost optimization.\n\nSRE: I see, but what about Google Cloud Platform? It integrates well with our existing single-sign-on system.\n\nPlatform Engineering Lead: While that's true, IBM Cloud offers lower feature fit compared to AWS and Azure. So, it doesn't seem like the best choice in this case.\n\nCTO: I agree. We should focus on AWS for now, but we need to conduct a detailed analysis of the migration cost and timeline from our current infrastructure.\n\nFinance Partner: Also, it's important to note that approval from the board-level cost review committee is required.\n\nPlatform Engineering Lead: Understood. Once we've addressed these points, we can move forward with AWS as our provisional primary cloud platform.\n\nSRE: I have my reservations, but I'll work with the team to manage the potential complexity.\n\nCTO: Well said, [SRE's Name]. I'll sign off on this decision. Let's reconvene after we've gathered more information on the migration cost and timeline.\n\n(Off-topic exchange)\n\nSRE: By the way, have you heard about the new coffee shop downtown? I heard their lattes are to die for.\n\nPlatform Engineering Lead: Really? I'll have to check it out sometime.\n\n(Return to topic)\n\nCTO: Alright, back to the topic at hand. Let's make sure we address all concerns and caveats before we present this to the board.",
+  "document": "Title: Cloud Platform Decision Log\n\nDecision: Tentative adoption of Amazon Web Services (AWS) as the primary cloud platform due to its aligned feature fit with our current use cases. Further analysis of migration cost and timeline from our existing infrastructure is required. Approval from the cost review committee is sought, recognizing the potential need for resource optimization when managing multiple platforms. The migration will address the current lack of integration with our single-sign-on system on Google Cloud Platform.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0000_003_d1",
+      "source_id": "SYN_0000_003",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Provisional selection of Amazon Web Services (AWS) as the primary cloud platform",
+      "topic": "Cloud platform vendor selection",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "Microsoft Azure",
+          "rejected": true,
+          "reason": "Higher costs for comparable features"
+        },
+        {
+          "option": "Google Cloud Platform",
+          "rejected": false,
+          "reason": "Lacks integration with our existing single-sign-on system"
+        },
+        {
+          "option": "IBM Cloud",
+          "rejected": true,
+          "reason": "Lower feature fit compared to AWS and Azure"
+        }
+      ],
+      "rationale": [
+        "AWS offers the most suitable feature fit for our current use cases",
+        "The cost difference between AWS and Microsoft Azure is only 10% over a 3-year contract",
+        "The University can leverage existing relationships with AWS for support and cost optimization"
+      ],
+      "conditions": [
+        "Pending a detailed analysis of the migration cost and timeline from our current infrastructure",
+        "Approval from the board-level cost review committee is required"
+      ],
+      "dissent": [
+        "The SRE voiced concerns about the potential complexity of managing multiple cloud platforms, given our limited resources"
+      ],
+      "owner": "Platform Engineering Lead",
+      "approver": "CTO",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0000_003_e01",
+      "element_type": "decision",
+      "text": "Provisional selection of Amazon Web Services (AWS) as the primary cloud platform",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0000_003_d1"
+    },
+    {
+      "element_id": "SYN_0000_003_e02",
+      "element_type": "alternative",
+      "text": "Microsoft Azure -- Higher costs for comparable features",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_003_d1"
+    },
+    {
+      "element_id": "SYN_0000_003_e03",
+      "element_type": "alternative",
+      "text": "Google Cloud Platform -- Lacks integration with our existing single-sign-on system",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0000_003_d1"
+    },
+    {
+      "element_id": "SYN_0000_003_e04",
+      "element_type": "alternative",
+      "text": "IBM Cloud -- Lower feature fit compared to AWS and Azure",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_003_d1"
+    },
+    {
+      "element_id": "SYN_0000_003_e05",
+      "element_type": "rationale",
+      "text": "AWS offers the most suitable feature fit for our current use cases",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_003_d1"
+    },
+    {
+      "element_id": "SYN_0000_003_e06",
+      "element_type": "rationale",
+      "text": "The cost difference between AWS and Microsoft Azure is only 10% over a 3-year contract",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_003_d1"
+    },
+    {
+      "element_id": "SYN_0000_003_e07",
+      "element_type": "rationale",
+      "text": "The University can leverage existing relationships with AWS for support and cost optimization",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_003_d1"
+    },
+    {
+      "element_id": "SYN_0000_003_e08",
+      "element_type": "condition",
+      "text": "Pending a detailed analysis of the migration cost and timeline from our current infrastructure",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0000_003_d1"
+    },
+    {
+      "element_id": "SYN_0000_003_e09",
+      "element_type": "condition",
+      "text": "Approval from the board-level cost review committee is required",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_003_d1"
+    },
+    {
+      "element_id": "SYN_0000_003_e10",
+      "element_type": "dissent",
+      "text": "The SRE voiced concerns about the potential complexity of managing multiple cloud platforms, given our limited resources",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_003_d1"
+    },
+    {
+      "element_id": "SYN_0000_003_e11",
+      "element_type": "owner",
+      "text": "Platform Engineering Lead",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_003_d1"
+    },
+    {
+      "element_id": "SYN_0000_003_e12",
+      "element_type": "approver",
+      "text": "CTO",
+      "in_document": "omitted",
+      "decision_id": "SYN_0000_003_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.93,
+    "seed": 1003,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 1 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0000_003_e08\",\n    \"text\": \"Pending a detailed analysis of the migration cost and timeline from our current infrastructure\",\n    \"score\": 0.62,\n    \"document_sentence\": \"Further analysis of migration cost and timeline from our existing infrastructure is required.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}

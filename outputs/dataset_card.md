@@ -23,6 +23,12 @@ detector is scored on.
 - **QMSum corpus scope:** all 232 QMSum meetings, 3 domains (Academic 59,
   Committee 36, Product 137), all train/val/test splits, minus the 5 gold held out
   → 227 auto pairs. 1 543 `specific_query_list` answers → 4 930 sentence elements.
+- **Element types on `qmsum_auto` are weak by measurement, not assumption**: only
+  **20.9%** of sentences match a reasoning cue
+  (`outputs/qmsum_element_type_coverage.json`). QMSum answers are narrative
+  summaries, so `rationale` here means "unclassified narrative" and most
+  `decision` labels come from a positional first-sentence rule. Read the
+  by-element-type breakdown for this tier as indicative only.
 - **Spot-check** (17 pairs / 382 elements, `outputs/qmsum_spotcheck_report.md`):
   auto-vs-review gap-class **F1 0.964, recall 1.00, precision 0.931** — the silver
   labels never under-call a gap; ~7% of predicted gaps are paraphrase-present
