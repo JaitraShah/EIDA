@@ -30,9 +30,9 @@ detector is scored on.
   `decision` labels come from a positional first-sentence rule. Read the
   by-element-type breakdown for this tier as indicative only.
 - **Spot-check** (17 pairs / 382 elements, `outputs/qmsum_spotcheck_report.md`):
-  auto-vs-review gap-class **F1 0.964, recall 1.00, precision 0.931** — the silver
-  labels never under-call a gap; ~7% of predicted gaps are paraphrase-present
-  false positives.
+  auto-vs-review **balanced accuracy 0.836** (gap-class F1 0.964 at an 82% gap
+  base rate, so read the balanced number). The silver labels never under-call a
+  gap (recall 1.00); ~7% of predicted gaps are paraphrase-present false positives.
 - **Synthetic scope:** 12 organisational domains × 10 decision archetypes = 120
   topics × 17 variants. Per-pair scenario colour + temperature jitter (0.7–0.95)
   to resist mode collapse; near-duplicates flagged post-hoc

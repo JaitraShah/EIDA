@@ -92,7 +92,10 @@ def main(argv=None) -> int:
 
     o = result["auto_vs_human_gap_class"]
     print(f"auto vs human (gap class), n={o['n']}:")
-    print(f"  precision {o['precision']}  recall {o['recall']}  F1 {o['f1']}  acc {o['accuracy']}")
+    print(f"  gap class     : P {o['precision']}  R {o['recall']}  F1 {o['f1']}")
+    print(f"  present class : P {o['present_precision']}  R {o['present_recall']}  "
+          f"F1 {o['present_f1']}")
+    print(f"  balanced accuracy {o['balanced_accuracy']}  (all-gap detector = 0.5)")
     print(f"  confusion {o['confusion']}")
     if "human_vs_human" in result:
         h = result["human_vs_human"]

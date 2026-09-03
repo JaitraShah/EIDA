@@ -9,11 +9,18 @@ Auto (NLI @ 0.55) vs an independent element-by-element review, on the **gap clas
 
 | | value |
 |---|---|
-| precision | **0.931** |
-| recall | **1.00** |
-| F1 | **0.964** |
-| accuracy | 0.94 |
+| gap-class precision | **0.931** |
+| gap-class recall | **1.00** |
+| gap-class F1 | **0.964** |
+| present-class recall | 0.671 |
+| **balanced accuracy** | **0.836** |
 | confusion | tp 312 · fp 23 · **fn 0** · tn 47 |
+
+Read the balanced accuracy, not the gap F1: this sample is 82% gaps, so gap-class
+F1 alone would flatter any labeller (see the base-rate section of
+`outputs/task5_benchmark_results.md`). 0.836 against a 0.5 floor is a real result;
+the gap between it and 1.0 is the ~33% of genuinely-present elements the labeller
+called gaps.
 
 - **Zero false negatives**: the auto labeller never marked a real gap as present.
   The labels are conservative in the safe direction.

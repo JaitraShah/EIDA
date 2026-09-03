@@ -26,9 +26,9 @@ genuine ~5:1 sentence-level compression, not a tunable artifact.
 **Spot-check** (`outputs/qmsum_spotcheck_report.md`) — 17 pairs / 382 elements,
 auto vs an independent review, gap class:
 
-| precision | recall | F1 | fn | fp |
-|--:|--:|--:|--:|--:|
-| 0.931 | 1.00 | 0.964 | 0 | 23 (~7%) |
+| gap P | gap R | gap F1 | present R | **bal acc** | fn | fp |
+|--:|--:|--:|--:|--:|--:|--:|
+| 0.931 | 1.00 | 0.964 | 0.671 | **0.836** | 0 | 23 (~7%) |
 
 The silver labels never under-call a gap; ~7% of predicted gaps are
 paraphrase-present false positives (Task 2's known failure, quantified). A human
