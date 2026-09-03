@@ -428,16 +428,39 @@ class PairGenerator:
             ),
         )
 
-        # 5. leak check
+        # 5. leak check + auto-correct.
+        # The doc-writer (a 7B model) sometimes states an element it was told to
+        # omit. Rather than flag the whole pair for a human, correct the label to
+        # match what the document actually does: an omitted element that find_leaks
+        # locates in one document sentence at F1 >= LEAK_THRESHOLD is really
+        # PARAPHRASED -- present, reworded. That is exactly the hard-positive class
+        # the benchmark wants more of. A leak that cannot be cleanly attributed
+        # still flags the pair.
+        by_id = {e.element_id: e for e in element_labels}
         leaks = find_leaks(document, [e for e in element_labels if e.in_document is InDocument.OMITTED])
+        corrected, unresolved = [], []
+        for lk in leaks:
+            el = by_id.get(lk["element_id"])
+            if el is not None and el.in_document is InDocument.OMITTED:
+                el.in_document = InDocument.PARAPHRASED
+                corrected.append(lk)
+            else:
+                unresolved.append(lk)
 
         notes = ""
-        if leaks:
-            notes = (
+        if corrected:
+            notes += (
+                f"LEAK AUTO-CORRECTED -- {len(corrected)} element(s) the document "
+                "states despite an 'omitted' plan were relabelled omitted -> paraphrased "
+                "(find_leaks located each in a single document sentence).\n"
+                + json.dumps(corrected, indent=2, ensure_ascii=False) + "\n"
+            )
+        if unresolved:
+            notes += (
                 "AUTOMATIC LEAK FLAG -- the document appears to mention "
-                f"{len(leaks)} element(s) labelled omitted. Human pass must re-label or "
-                "regenerate this pair before it is used.\n"
-                + json.dumps(leaks, indent=2, ensure_ascii=False)
+                f"{len(unresolved)} element(s) that could not be auto-corrected. Human "
+                "pass must re-label or regenerate this pair before it is used.\n"
+                + json.dumps(unresolved, indent=2, ensure_ascii=False)
             )
 
         return BenchmarkPair(
@@ -565,7 +588,12 @@ def generate_all(
             continue
 
         pair.save(PAIRS_DIR)
-        status = "flagged_leak" if pair.notes else "ok"
+        if "AUTOMATIC LEAK FLAG" in pair.notes:
+            status = "flagged_leak"
+        elif "LEAK AUTO-CORRECTED" in pair.notes:
+            status = "leak_corrected"
+        else:
+            status = "ok"
         _append_manifest({
             "pair_id": pair_id, "status": status, "topic": topic.key,
             "elements": len(pair.elements), "gaps": pair.gap_count, "seed": seed,

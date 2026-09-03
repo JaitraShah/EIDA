@@ -87,9 +87,10 @@ def test_document_prompt_lists_omitted_elements_as_forbidden(fake_model):
     assert "must NOT appear" in doc_prompt
 
 
-def test_leak_flag_is_raised_when_document_keeps_an_omitted_element(monkeypatch):
-    """The document here repeats the condition verbatim; if that element drew an
-    'omitted' label the pair must come back flagged, not silently wrong."""
+def test_leak_in_document_auto_corrects_omitted_to_paraphrased(monkeypatch):
+    """The document here repeats the condition verbatim while it was planned as
+    'omitted'. find_leaks locates it in one sentence, so the label is corrected to
+    'paraphrased' (present, reworded) rather than the pair being flagged."""
     condition = SPEC["conditions"][0]
 
     class FakeClient:
@@ -116,8 +117,10 @@ def test_leak_flag_is_raised_when_document_keeps_an_omitted_element(monkeypatch)
     )
 
     pair = gen.PairGenerator(model="fake").generate("SYN_011", TOPICS[0], 1, seed=1001)
-    assert pair.notes.startswith("AUTOMATIC LEAK FLAG")
-    assert condition[:30] in pair.notes
+    assert pair.notes.startswith("LEAK AUTO-CORRECTED")
+    assert "AUTOMATIC LEAK FLAG" not in pair.notes
+    cond_el = next(e for e in pair.elements if e.text == condition)
+    assert cond_el.in_document is InDocument.PARAPHRASED, "leaked omitted -> paraphrased"
 
 
 def test_thin_spec_is_rejected(monkeypatch):
