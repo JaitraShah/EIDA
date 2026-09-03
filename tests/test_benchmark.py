@@ -16,7 +16,15 @@ from edia.benchmark.dataset import (
 from edia.benchmark.fold_qmsum import build_pair, label_for
 from edia.benchmark.generate import assign_labels, find_leaks, spec_to_record
 from edia.benchmark.qmsum_ground_truth import BY_ID
-from edia.benchmark.topics import PAIRS_PER_TOPIC, TOPICS, pair_plan
+import re
+
+from edia.benchmark.topics import (
+    ARCHETYPES,
+    DOMAINS,
+    PAIRS_PER_TOPIC,
+    TOPICS,
+    pair_plan,
+)
 from edia.extraction.schema import ElementType
 
 
@@ -38,18 +46,24 @@ def make_pair(pair_id="SYN_011", labels=None, annotations=None) -> BenchmarkPair
 
 # --- plan --------------------------------------------------------------------
 
-def test_plan_is_fifty_pairs():
+def test_plan_shape():
     plan = pair_plan()
-    assert len(TOPICS) == 10
-    assert PAIRS_PER_TOPIC == 5
-    assert len(plan) == 50
-    assert len({pid for pid, _, _ in plan}) == 50
+    assert len(TOPICS) == len(DOMAINS) * len(ARCHETYPES)
+    assert len(plan) == len(TOPICS) * PAIRS_PER_TOPIC
+    assert 1500 <= len(plan) <= 2500, "target ~2000 synthetic pairs"
+
+    ids = [p[0] for p in plan]
+    seeds = [p[3] for p in plan]
+    assert len(set(ids)) == len(plan), "unique pair ids"
+    assert len(set(seeds)) == len(plan), "unique seeds -- the old int(id.split) scheme collided"
+    assert all(re.fullmatch(r"SYN_\d{4}_\d{3}", pid) for pid in ids)
 
 
 def test_topics_are_not_ami_product_design():
     """QMSum already covers that domain; duplicating it would break the comparison."""
     keys = {t.key for t in TOPICS}
     assert "ami_product_design" not in keys
+    assert all("__" in k for k in keys), "keys are <domain>__<archetype>"
 
 
 # --- dataset schema ----------------------------------------------------------

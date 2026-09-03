@@ -46,7 +46,7 @@ def fake_model(monkeypatch):
             calls["json"] += 1
             return LLMResponse(text=json.dumps(SPEC), model="fake", latency_s=0.0)
 
-    monkeypatch.setattr(gen.PairGenerator, "_client", lambda self, seed: FakeClient())
+    monkeypatch.setattr(gen.PairGenerator, "_client", lambda self, seed, temperature=None: FakeClient())
 
     def fake_plain(client, system, user):
         calls["plain"].append(user)
@@ -101,7 +101,7 @@ def test_leak_flag_is_raised_when_document_keeps_an_omitted_element(monkeypatch)
         def chat_json(self, system, user):
             return LLMResponse(text=json.dumps(SPEC), model="fake", latency_s=0.0)
 
-    monkeypatch.setattr(gen.PairGenerator, "_client", lambda self, seed: FakeClient())
+    monkeypatch.setattr(gen.PairGenerator, "_client", lambda self, seed, temperature=None: FakeClient())
     monkeypatch.setattr(
         gen.PairGenerator, "_plain_call",
         staticmethod(lambda c, s, u: TRANSCRIPT if "transcript" in u.lower() else condition),
@@ -130,9 +130,29 @@ def test_thin_spec_is_rejected(monkeypatch):
         def chat_json(self, system, user):
             return LLMResponse(text=json.dumps({"decision": "We decided."}), model="fake", latency_s=0.0)
 
-    monkeypatch.setattr(gen.PairGenerator, "_client", lambda self, seed: FakeClient())
+    monkeypatch.setattr(gen.PairGenerator, "_client", lambda self, seed, temperature=None: FakeClient())
     with pytest.raises(ValueError, match="too thin"):
         gen.PairGenerator(model="fake").generate("SYN_011", TOPICS[0], 1, seed=1001)
+
+
+def test_generate_all_hands_out_unique_seeds(monkeypatch):
+    """The old `int(pair_id.split('_')[1])` seed derivation collided past 9 variants.
+    Every planned pair must now get its own seed from pair_plan()."""
+    from edia.benchmark.topics import pair_plan
+
+    plan = pair_plan()
+    assert len({p[3] for p in plan}) == len(plan)
+    # generate() must accept the new id shape
+    assert plan[0][0].startswith("SYN_0000_0")
+    assert plan[-1][3] != plan[0][3]
+
+
+def test_temperature_jitter_is_per_pair_and_recorded(fake_model):
+    g = gen.PairGenerator(model="fake", temp_jitter=(0.7, 0.95))
+    p1 = g.generate("SYN_0000_001", TOPICS[0], 1, seed=1001)
+    p2 = g.generate("SYN_0000_002", TOPICS[0], 2, seed=1002)
+    assert 0.7 <= p1.generation.temperature <= 0.95
+    assert p1.generation.temperature != p2.generation.temperature  # different seeds
 
 
 def test_non_transcript_output_is_retried_then_rejected(monkeypatch):
@@ -148,7 +168,7 @@ def test_non_transcript_output_is_retried_then_rejected(monkeypatch):
             return LLMResponse(text=json.dumps(SPEC), model="fake", latency_s=0.0)
 
     attempts = []
-    monkeypatch.setattr(gen.PairGenerator, "_client", lambda self, seed: FakeClient())
+    monkeypatch.setattr(gen.PairGenerator, "_client", lambda self, seed, temperature=None: FakeClient())
     monkeypatch.setattr(
         gen.PairGenerator, "_plain_call",
         staticmethod(lambda c, s, u: (attempts.append(u), "The team agreed to migrate.")[1]),

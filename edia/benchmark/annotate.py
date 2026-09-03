@@ -140,13 +140,21 @@ def main(argv=None) -> int:
                     help="also print the discussion (slower, but needed for disputed elements)")
     ap.add_argument("--no-blind", action="store_true",
                     help="show existing labels on a second pass (inflates agreement -- avoid)")
+    ap.add_argument("--blind", action="store_true",
+                    help="force blind even on the first pass -- required for spot-checking "
+                         "auto-labelled pairs, where seeing the silver label would bias the human")
     ap.add_argument("--status", action="store_true", help="print progress and exit")
     ap.add_argument("--dir", default=str(PAIRS_DIR))
+    ap.add_argument("--source", help="only pairs of this source "
+                    "(synthetic | qmsum | qmsum_auto)")
     args = ap.parse_args(argv)
 
     pairs = load_all(args.dir)
+    if args.source:
+        pairs = [p for p in pairs if p.source.value == args.source]
     if not pairs:
-        print(f"no pairs in {args.dir} -- generate or fold some first")
+        where = f"{args.dir}" + (f" (source={args.source})" if args.source else "")
+        print(f"no pairs in {where} -- generate or fold some first")
         return 1
 
     if args.status:
@@ -169,9 +177,9 @@ def main(argv=None) -> int:
         print("nothing to annotate for you in that selection.")
         return 0
 
-    blind = args.double and not args.no_blind
+    blind = args.blind or (args.double and not args.no_blind)
     print(f"{len(queue)} pair(s) queued for {args.annotator}"
-          f"{' (BLIND second pass)' if blind else ''}")
+          f"{' (BLIND)' if blind else ''}")
 
     for pair in queue:
         annotation, action = annotate_pair(pair, args.annotator, blind, args.show_transcript)

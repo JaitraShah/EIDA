@@ -51,11 +51,38 @@ from .score import content_tokens, token_f1
 from .textutil import split_sentences
 from .topics import Topic, pair_plan
 
-PROMPT_VERSION = "synth-v1"
+PROMPT_VERSION = "synth-v2"   # v2: scenario-colour + per-pair temperature jitter
 PAIRS_DIR = Path("data/benchmark/pairs")
-MANIFEST = Path("data/benchmark/manifest.json")
+MANIFEST = Path("data/benchmark/manifest.jsonl")   # append-only, one row per pair
 
 GENERATION_TEMPERATURE = 0.8
+TEMP_JITTER = (0.7, 0.95)     # per-pair temperature range for batch runs
+
+# Scenario colour injected into the spec prompt so 2000 pairs on ~120 topics don't
+# collapse into the same meeting. Drawn per pair from the pair's seeded RNG, so a
+# regenerated pair is still identical.
+_INDUSTRIES = [
+    "a mid-size B2B SaaS company", "a hospital group", "a retail bank",
+    "a logistics operator", "a games studio", "a university IT department",
+    "a public transport authority", "an insurance firm", "a media publisher",
+    "a manufacturing company", "a fintech scale-up", "a national charity",
+]
+_PRESSURES = [
+    "a hard regulatory deadline", "a flat or shrinking budget", "a recent outage",
+    "an acquisition in progress", "a board-level cost review", "rapid headcount growth",
+    "a key vendor raising prices", "a competitor's launch", "an expiring contract",
+    "a failed audit finding", "attrition on the team", "a data-privacy complaint",
+]
+_OUTCOMES = [
+    "the group commits to one option", "the group picks a hedged / hybrid option",
+    "the group defers pending one piece of missing information",
+    "the group rejects the proposal on the table and keeps the status quo",
+]
+
+
+def _scenario(rng: random.Random) -> str:
+    return (f"{rng.choice(_INDUSTRIES)}; under {rng.choice(_PRESSURES)}; "
+            f"by the end, {rng.choice(_OUTCOMES)}")
 
 # How often each element type survives into the document. Shaped to match what Task 1
 # actually observed: the outcome is almost always kept, the reasoning around it is
@@ -92,6 +119,7 @@ Invent ONE decision for this meeting.
 Topic: {label}
 People in the room: {setting}
 The decision turns on: {axis}
+Scenario colour (use it, don't quote it): {scenario}
 Variation seed: {variant} -- make this materially different from other decisions on \
 the same topic (different specific options, different sticking point, different outcome).
 
@@ -293,20 +321,34 @@ def spec_to_record(spec: dict, pair_id: str) -> DecisionRecord:
 
 
 class PairGenerator:
-    def __init__(self, model: str = DEFAULT_MODEL, temperature: float = GENERATION_TEMPERATURE):
+    def __init__(
+        self,
+        model: str = DEFAULT_MODEL,
+        temperature: float = GENERATION_TEMPERATURE,
+        temp_jitter: tuple[float, float] | None = None,
+    ):
         self.model = model
         self.temperature = temperature
+        # None -> every pair uses `temperature` (deterministic wiring tests rely on this).
+        # A (lo, hi) range -> each pair draws its own temperature, for batch diversity.
+        self.temp_jitter = temp_jitter
 
-    def _client(self, seed: int) -> OllamaClient:
+    def _client(self, seed: int, temperature: float | None = None) -> OllamaClient:
         return OllamaClient(
             model=self.model,
             allow_sampling=True,
-            options={"temperature": self.temperature, "top_p": 0.95, "top_k": 40, "seed": seed},
+            options={"temperature": temperature or self.temperature,
+                     "top_p": 0.95, "top_k": 40, "seed": seed},
         )
 
     def generate(self, pair_id: str, topic: Topic, variant: int, seed: int) -> BenchmarkPair:
-        client = self._client(seed)
-        rng = random.Random(seed)
+        rng = random.Random(seed)                         # label assignment (unchanged draws)
+        div_rng = random.Random(seed ^ 0x5F3759DF)        # diversity knobs, independent stream
+        temperature = (
+            round(div_rng.uniform(*self.temp_jitter), 2) if self.temp_jitter
+            else self.temperature
+        )
+        client = self._client(seed, temperature)
 
         # 1. decision spec
         spec_raw = client.chat_json(
@@ -314,6 +356,7 @@ class PairGenerator:
             SPEC_USER.format(
                 label=topic.label, setting=topic.setting,
                 axis=topic.example_axis, variant=variant,
+                scenario=_scenario(div_rng),
             ),
         )
         spec = extract_json_object(spec_raw.text)
@@ -407,7 +450,7 @@ class PairGenerator:
             decisions=[record],
             elements=element_labels,
             generation=GenerationMeta(
-                model=self.model, temperature=self.temperature, seed=seed,
+                model=self.model, temperature=temperature, seed=seed,
                 prompt_version=PROMPT_VERSION, sampled=True,
             ),
             label_provenance="constructed",
@@ -450,15 +493,36 @@ class PairGenerator:
 # checkpointed batch run
 # --------------------------------------------------------------------------- #
 
-def load_manifest() -> dict:
-    if MANIFEST.exists():
-        return json.loads(MANIFEST.read_text(encoding="utf-8"))
-    return {"prompt_version": PROMPT_VERSION, "pairs": {}}
-
-
-def save_manifest(manifest: dict) -> None:
+def _append_manifest(row: dict) -> None:
+    """One JSON line per pair. Append-only so multiple --shard workers can write
+    the same file without clobbering each other (the single-JSON rewrite could not)."""
     MANIFEST.parent.mkdir(parents=True, exist_ok=True)
-    MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
+    with MANIFEST.open("a", encoding="utf-8") as fh:
+        fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+
+def load_manifest() -> dict:
+    """Fold the append-only log into {"pairs": {pair_id: latest_row}} (last write
+    wins). Still reads a legacy single-JSON manifest.json if that is what is there."""
+    pairs: dict[str, dict] = {}
+    if MANIFEST.exists():
+        for line in MANIFEST.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            row = json.loads(line)
+            pairs[row["pair_id"]] = row
+    legacy = MANIFEST.with_name("manifest.json")
+    if not pairs and legacy.exists():
+        return json.loads(legacy.read_text(encoding="utf-8"))
+    return {"prompt_version": PROMPT_VERSION, "pairs": pairs}
+
+
+def _shard_ok(shard: str | None, i: int) -> bool:
+    if not shard:
+        return True
+    k, n = (int(x) for x in shard.split("/"))
+    return i % n == k
 
 
 def generate_all(
@@ -466,18 +530,23 @@ def generate_all(
     limit: int | None = None,
     only: str | None = None,
     force: bool = False,
-    base_seed: int = 1000,
+    shard: str | None = None,
+    jitter: bool = True,
     verbose: bool = True,
 ) -> dict:
-    """Generate the plan, skipping pairs already on disk. Safe to stop and resume."""
-    generator = PairGenerator(model=model)
-    manifest = load_manifest()
+    """Generate the plan, skipping pairs already on disk. Safe to stop, resume,
+    and shard (`shard='k/N'` -> only plan positions where i %% N == k)."""
+    generator = PairGenerator(
+        model=model, temp_jitter=TEMP_JITTER if jitter else None
+    )
     plan = pair_plan()
     if only:
         plan = [p for p in plan if p[0] == only]
 
     done = 0
-    for pair_id, topic, variant in plan:
+    for i, (pair_id, topic, variant, seed) in enumerate(plan):
+        if not only and not _shard_ok(shard, i):
+            continue
         if limit is not None and done >= limit:
             break
         path = PAIRS_DIR / f"{pair_id}.json"
@@ -486,27 +555,24 @@ def generate_all(
                 print(f"{pair_id}: exists, skipping")
             continue
 
-        seed = base_seed + int(pair_id.split("_")[1])
         start = time.time()
         try:
             pair = generator.generate(pair_id, topic, variant, seed)
         except Exception as e:  # generation is best-effort; record and move on
             print(f"{pair_id}: FAILED -- {type(e).__name__}: {e}")
-            manifest["pairs"][pair_id] = {"status": "failed", "error": f"{type(e).__name__}: {e}"}
-            save_manifest(manifest)
+            _append_manifest({"pair_id": pair_id, "status": "failed", "seed": seed,
+                              "error": f"{type(e).__name__}: {e}"})
             continue
 
         pair.save(PAIRS_DIR)
         status = "flagged_leak" if pair.notes else "ok"
-        manifest["pairs"][pair_id] = {
-            "status": status,
-            "topic": topic.key,
-            "elements": len(pair.elements),
-            "gaps": pair.gap_count,
-            "seed": seed,
+        _append_manifest({
+            "pair_id": pair_id, "status": status, "topic": topic.key,
+            "elements": len(pair.elements), "gaps": pair.gap_count, "seed": seed,
+            "temperature": pair.generation.temperature if pair.generation else None,
+            "prompt_version": PROMPT_VERSION,
             "seconds": round(time.time() - start, 1),
-        }
-        save_manifest(manifest)
+        })
         done += 1
         if verbose:
             print(
@@ -514,4 +580,4 @@ def generate_all(
                 f"({pair.gap_count} gaps)  {time.time() - start:.0f}s"
             )
 
-    return manifest
+    return load_manifest()

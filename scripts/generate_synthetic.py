@@ -55,7 +55,11 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default=DEFAULT_MODEL)
     ap.add_argument("--limit", type=int, help="generate at most N pairs this run")
-    ap.add_argument("--only", help="one pair id, e.g. SYN_034")
+    ap.add_argument("--only", help="one pair id, e.g. SYN_0007_012")
+    ap.add_argument("--shard", help="k/N -- generate only plan positions where i %% N == k "
+                                    "(run N of these in parallel across GPUs)")
+    ap.add_argument("--no-jitter", action="store_true",
+                    help="fix temperature at 0.8 instead of per-pair jitter")
     ap.add_argument("--force", action="store_true", help="regenerate even if it exists")
     ap.add_argument("--status", action="store_true")
     args = ap.parse_args(argv)
@@ -71,7 +75,8 @@ def main(argv=None) -> int:
         return 2
 
     generate_all(
-        model=args.model, limit=args.limit, only=args.only, force=args.force
+        model=args.model, limit=args.limit, only=args.only, force=args.force,
+        shard=args.shard, jitter=not args.no_jitter,
     )
     print(f"\nmanifest: {MANIFEST}")
     print_status()

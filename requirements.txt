@@ -8,8 +8,14 @@ pandas>=2.0
 requests>=2.31
 pydantic>=2.6
 
-# optional: paraphrase-tolerant matching for scoring (--semantic)
+# optional: paraphrase-tolerant matching for scoring (--semantic) and the
+# synthetic near-duplicate filter (scripts/dedupe_synthetic.py)
 sentence-transformers>=2.6
+
+# gap detection (Task 2 / Task 5) -- NLI detector in edia/gapdetect.
+# ~2 GB install; the core test suite stays offline (NLI tests need --run-nli).
+transformers>=4.40
+torch>=2.2
 
 # tests
 pytest>=8.0

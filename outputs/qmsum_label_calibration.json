@@ -1,0 +1,624 @@
+{
+  "lexical": {
+    "threshold": 0.5,
+    "overall": {
+      "n": 50,
+      "gap_base_rate": 0.76,
+      "precision": 0.804,
+      "recall": 0.974,
+      "f1": 0.881,
+      "accuracy": 0.8,
+      "confusion": {
+        "tp": 37,
+        "fp": 9,
+        "fn": 1,
+        "tn": 3
+      }
+    },
+    "per_pair": [
+      {
+        "pair_id": "QSUM_001",
+        "n": 11,
+        "gap_base_rate": 0.727,
+        "precision": 0.7,
+        "recall": 0.875,
+        "f1": 0.778,
+        "accuracy": 0.636,
+        "confusion": {
+          "tp": 7,
+          "fp": 3,
+          "fn": 1,
+          "tn": 0
+        }
+      },
+      {
+        "pair_id": "QSUM_002",
+        "n": 8,
+        "gap_base_rate": 0.875,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "confusion": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1
+        }
+      },
+      {
+        "pair_id": "QSUM_003",
+        "n": 9,
+        "gap_base_rate": 0.556,
+        "precision": 0.714,
+        "recall": 1.0,
+        "f1": 0.833,
+        "accuracy": 0.778,
+        "confusion": {
+          "tp": 5,
+          "fp": 2,
+          "fn": 0,
+          "tn": 2
+        }
+      },
+      {
+        "pair_id": "QSUM_004",
+        "n": 15,
+        "gap_base_rate": 0.733,
+        "precision": 0.733,
+        "recall": 1.0,
+        "f1": 0.846,
+        "accuracy": 0.733,
+        "confusion": {
+          "tp": 11,
+          "fp": 4,
+          "fn": 0,
+          "tn": 0
+        }
+      },
+      {
+        "pair_id": "QSUM_005",
+        "n": 7,
+        "gap_base_rate": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "confusion": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "tn": 0
+        }
+      }
+    ],
+    "threshold_sweep": [
+      {
+        "threshold": 0.2,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.933,
+        "recall": 0.737,
+        "f1": 0.824,
+        "accuracy": 0.76,
+        "confusion": {
+          "tp": 28,
+          "fp": 2,
+          "fn": 10,
+          "tn": 10
+        }
+      },
+      {
+        "threshold": 0.25,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.938,
+        "recall": 0.789,
+        "f1": 0.857,
+        "accuracy": 0.8,
+        "confusion": {
+          "tp": 30,
+          "fp": 2,
+          "fn": 8,
+          "tn": 10
+        }
+      },
+      {
+        "threshold": 0.3,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.865,
+        "recall": 0.842,
+        "f1": 0.853,
+        "accuracy": 0.78,
+        "confusion": {
+          "tp": 32,
+          "fp": 5,
+          "fn": 6,
+          "tn": 7
+        }
+      },
+      {
+        "threshold": 0.35,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.854,
+        "recall": 0.921,
+        "f1": 0.886,
+        "accuracy": 0.82,
+        "confusion": {
+          "tp": 35,
+          "fp": 6,
+          "fn": 3,
+          "tn": 6
+        }
+      },
+      {
+        "threshold": 0.4,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.837,
+        "recall": 0.947,
+        "f1": 0.889,
+        "accuracy": 0.82,
+        "confusion": {
+          "tp": 36,
+          "fp": 7,
+          "fn": 2,
+          "tn": 5
+        }
+      },
+      {
+        "threshold": 0.45,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.822,
+        "recall": 0.974,
+        "f1": 0.892,
+        "accuracy": 0.82,
+        "confusion": {
+          "tp": 37,
+          "fp": 8,
+          "fn": 1,
+          "tn": 4
+        }
+      },
+      {
+        "threshold": 0.5,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.804,
+        "recall": 0.974,
+        "f1": 0.881,
+        "accuracy": 0.8,
+        "confusion": {
+          "tp": 37,
+          "fp": 9,
+          "fn": 1,
+          "tn": 3
+        }
+      },
+      {
+        "threshold": 0.55,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.792,
+        "recall": 1.0,
+        "f1": 0.884,
+        "accuracy": 0.8,
+        "confusion": {
+          "tp": 38,
+          "fp": 10,
+          "fn": 0,
+          "tn": 2
+        }
+      },
+      {
+        "threshold": 0.6,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.776,
+        "recall": 1.0,
+        "f1": 0.874,
+        "accuracy": 0.78,
+        "confusion": {
+          "tp": 38,
+          "fp": 11,
+          "fn": 0,
+          "tn": 1
+        }
+      },
+      {
+        "threshold": 0.65,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.76,
+        "recall": 1.0,
+        "f1": 0.864,
+        "accuracy": 0.76,
+        "confusion": {
+          "tp": 38,
+          "fp": 12,
+          "fn": 0,
+          "tn": 0
+        }
+      },
+      {
+        "threshold": 0.7,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.76,
+        "recall": 1.0,
+        "f1": 0.864,
+        "accuracy": 0.76,
+        "confusion": {
+          "tp": 38,
+          "fp": 12,
+          "fn": 0,
+          "tn": 0
+        }
+      },
+      {
+        "threshold": 0.75,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.76,
+        "recall": 1.0,
+        "f1": 0.864,
+        "accuracy": 0.76,
+        "confusion": {
+          "tp": 38,
+          "fp": 12,
+          "fn": 0,
+          "tn": 0
+        }
+      },
+      {
+        "threshold": 0.8,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.76,
+        "recall": 1.0,
+        "f1": 0.864,
+        "accuracy": 0.76,
+        "confusion": {
+          "tp": 38,
+          "fp": 12,
+          "fn": 0,
+          "tn": 0
+        }
+      }
+    ],
+    "false_negatives": [
+      {
+        "pair_id": "QSUM_001",
+        "type": "decision",
+        "text": "A single-curved casing was chosen for the remote control.",
+        "present_score": 0.533
+      }
+    ]
+  },
+  "nli:roberta-large-mnli": {
+    "threshold": 0.5,
+    "overall": {
+      "n": 50,
+      "gap_base_rate": 0.76,
+      "precision": 0.825,
+      "recall": 0.868,
+      "f1": 0.846,
+      "accuracy": 0.76,
+      "confusion": {
+        "tp": 33,
+        "fp": 7,
+        "fn": 5,
+        "tn": 5
+      }
+    },
+    "per_pair": [
+      {
+        "pair_id": "QSUM_001",
+        "n": 11,
+        "gap_base_rate": 0.727,
+        "precision": 0.667,
+        "recall": 0.75,
+        "f1": 0.706,
+        "accuracy": 0.545,
+        "confusion": {
+          "tp": 6,
+          "fp": 3,
+          "fn": 2,
+          "tn": 0
+        }
+      },
+      {
+        "pair_id": "QSUM_002",
+        "n": 8,
+        "gap_base_rate": 0.875,
+        "precision": 1.0,
+        "recall": 0.857,
+        "f1": 0.923,
+        "accuracy": 0.875,
+        "confusion": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 1,
+          "tn": 1
+        }
+      },
+      {
+        "pair_id": "QSUM_003",
+        "n": 9,
+        "gap_base_rate": 0.556,
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1": 0.8,
+        "accuracy": 0.778,
+        "confusion": {
+          "tp": 4,
+          "fp": 1,
+          "fn": 1,
+          "tn": 3
+        }
+      },
+      {
+        "pair_id": "QSUM_004",
+        "n": 15,
+        "gap_base_rate": 0.733,
+        "precision": 0.786,
+        "recall": 1.0,
+        "f1": 0.88,
+        "accuracy": 0.8,
+        "confusion": {
+          "tp": 11,
+          "fp": 3,
+          "fn": 0,
+          "tn": 1
+        }
+      },
+      {
+        "pair_id": "QSUM_005",
+        "n": 7,
+        "gap_base_rate": 1.0,
+        "precision": 1.0,
+        "recall": 0.857,
+        "f1": 0.923,
+        "accuracy": 0.857,
+        "confusion": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 1,
+          "tn": 0
+        }
+      }
+    ],
+    "threshold_sweep": [
+      {
+        "threshold": 0.2,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.833,
+        "recall": 0.789,
+        "f1": 0.811,
+        "accuracy": 0.72,
+        "confusion": {
+          "tp": 30,
+          "fp": 6,
+          "fn": 8,
+          "tn": 6
+        }
+      },
+      {
+        "threshold": 0.25,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.838,
+        "recall": 0.816,
+        "f1": 0.827,
+        "accuracy": 0.74,
+        "confusion": {
+          "tp": 31,
+          "fp": 6,
+          "fn": 7,
+          "tn": 6
+        }
+      },
+      {
+        "threshold": 0.3,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.838,
+        "recall": 0.816,
+        "f1": 0.827,
+        "accuracy": 0.74,
+        "confusion": {
+          "tp": 31,
+          "fp": 6,
+          "fn": 7,
+          "tn": 6
+        }
+      },
+      {
+        "threshold": 0.35,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.825,
+        "recall": 0.868,
+        "f1": 0.846,
+        "accuracy": 0.76,
+        "confusion": {
+          "tp": 33,
+          "fp": 7,
+          "fn": 5,
+          "tn": 5
+        }
+      },
+      {
+        "threshold": 0.4,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.825,
+        "recall": 0.868,
+        "f1": 0.846,
+        "accuracy": 0.76,
+        "confusion": {
+          "tp": 33,
+          "fp": 7,
+          "fn": 5,
+          "tn": 5
+        }
+      },
+      {
+        "threshold": 0.45,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.825,
+        "recall": 0.868,
+        "f1": 0.846,
+        "accuracy": 0.76,
+        "confusion": {
+          "tp": 33,
+          "fp": 7,
+          "fn": 5,
+          "tn": 5
+        }
+      },
+      {
+        "threshold": 0.5,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.825,
+        "recall": 0.868,
+        "f1": 0.846,
+        "accuracy": 0.76,
+        "confusion": {
+          "tp": 33,
+          "fp": 7,
+          "fn": 5,
+          "tn": 5
+        }
+      },
+      {
+        "threshold": 0.55,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.829,
+        "recall": 0.895,
+        "f1": 0.861,
+        "accuracy": 0.78,
+        "confusion": {
+          "tp": 34,
+          "fp": 7,
+          "fn": 4,
+          "tn": 5
+        }
+      },
+      {
+        "threshold": 0.6,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.829,
+        "recall": 0.895,
+        "f1": 0.861,
+        "accuracy": 0.78,
+        "confusion": {
+          "tp": 34,
+          "fp": 7,
+          "fn": 4,
+          "tn": 5
+        }
+      },
+      {
+        "threshold": 0.65,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.81,
+        "recall": 0.895,
+        "f1": 0.85,
+        "accuracy": 0.76,
+        "confusion": {
+          "tp": 34,
+          "fp": 8,
+          "fn": 4,
+          "tn": 4
+        }
+      },
+      {
+        "threshold": 0.7,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.814,
+        "recall": 0.921,
+        "f1": 0.864,
+        "accuracy": 0.78,
+        "confusion": {
+          "tp": 35,
+          "fp": 8,
+          "fn": 3,
+          "tn": 4
+        }
+      },
+      {
+        "threshold": 0.75,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.814,
+        "recall": 0.921,
+        "f1": 0.864,
+        "accuracy": 0.78,
+        "confusion": {
+          "tp": 35,
+          "fp": 8,
+          "fn": 3,
+          "tn": 4
+        }
+      },
+      {
+        "threshold": 0.8,
+        "n": 50,
+        "gap_base_rate": 0.76,
+        "precision": 0.814,
+        "recall": 0.921,
+        "f1": 0.864,
+        "accuracy": 0.78,
+        "confusion": {
+          "tp": 35,
+          "fp": 8,
+          "fn": 3,
+          "tn": 4
+        }
+      }
+    ],
+    "false_negatives": [
+      {
+        "pair_id": "QSUM_001",
+        "type": "decision",
+        "text": "A single-curved casing was chosen for the remote control.",
+        "present_score": 0.966
+      },
+      {
+        "pair_id": "QSUM_001",
+        "type": "decision",
+        "text": "An LCD display was rejected for the remote control.",
+        "present_score": 0.524
+      },
+      {
+        "pair_id": "QSUM_002",
+        "type": "alternative",
+        "text": "kryptonite",
+        "present_score": 0.659
+      },
+      {
+        "pair_id": "QSUM_003",
+        "type": "alternative",
+        "text": "lightweight plastic",
+        "present_score": 0.929
+      },
+      {
+        "pair_id": "QSUM_005",
+        "type": "rationale",
+        "text": "Marketing pushed for positioning the product on technological innovation.",
+        "present_score": 0.897
+      }
+    ]
+  }
+}
