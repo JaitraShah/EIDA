@@ -88,11 +88,37 @@ part of the benchmark balanced enough to separate detectors** — which is the
 argument for finishing the ~2040-pair generation, and the reason the QMSum tiers
 alone would have produced a flattering, meaningless result.
 
+### The fix, applied
+
+`GapMetrics` now reports the **present class** and **balanced accuracy** (mean of
+gap recall and present recall — an all-gap detector scores 0.5 however skewed the
+data is), and `run_gap_eval.py` puts them in every table. Same run, honest framing:
+
+| lexical, whole benchmark | value |
+|---|--:|
+| gap-class F1 | 0.963 |
+| **present-class F1** | **0.501** |
+| **balanced accuracy** | **0.714** |
+
+Per domain the difference is stark — high gap F1 can hide near-chance behaviour:
+
+| domain | base rate | gap F1 | present R | **bal acc** |
+|---|--:|--:|--:|--:|
+| committee | 0.978 | 0.986 | 0.100 | **0.546** |
+| academic | 0.946 | 0.977 | 0.522 | **0.751** |
+| product | 0.900 | 0.950 | 0.473 | **0.715** |
+| cloud_platform (synthetic) | 0.600 | 0.782 | 0.607 | **0.708** |
+
+Committee meetings look like the detector's best domain by F1 (0.986) and are
+actually its worst by balanced accuracy (0.546, barely above chance) — their
+summaries are pure meta-prose, so nearly everything is a gap and guessing "gap"
+wins.
+
 Three consequences for how this benchmark gets reported:
 
 1. Never quote a QMSum-tier F1 without the base rate beside it.
-2. Score on the **present** class as well as the gap class, or report balanced
-   accuracy — the gap class alone is nearly free.
+2. Lead with **balanced accuracy** and the present-class numbers; the gap class
+   alone is nearly free. (Now enforced by the report renderer.)
 3. Detector comparison (NLI vs lexical vs LLM) is only meaningful on the
    synthetic tier and the `by_in_document` present rows.
 

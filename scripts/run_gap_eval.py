@@ -222,9 +222,12 @@ def _render_md(report: dict) -> str:
     for dkey, d in report["detectors"].items():
         o = d["overall"]
         L.append(f"## {dkey}\n")
-        L.append(f"**Overall (gap class):** P={o['precision']} · R={o['recall']} · "
-                 f"F1={o['f1']} · acc={o['accuracy']} · "
-                 f"n={o['n']} · base rate={o['gap_base_rate']}")
+        L.append(f"**Gap class:** P={o['precision']} · R={o['recall']} · "
+                 f"F1={o['f1']} · n={o['n']} · base rate={o['gap_base_rate']}")
+        L.append(f"**Present class (the hard half):** P={o['present_precision']} · "
+                 f"R={o['present_recall']} · F1={o['present_f1']}")
+        L.append(f"**Balanced accuracy: {o['balanced_accuracy']}** "
+                 f"(all-gap detector scores 0.5) · raw acc={o['accuracy']}")
         L.append(f"Confusion: tp={o['confusion']['tp']} fp={o['confusion']['fp']} "
                  f"fn={o['confusion']['fn']} tn={o['confusion']['tn']}\n")
         # Same trap agreement.py guards for: with a ~93% gap base rate a high F1 is
@@ -240,11 +243,13 @@ def _render_md(report: dict) -> str:
             )
         for bname, buckets in d["breakdowns"].items():
             L.append(f"### {dkey} — {bname}\n")
-            L.append("| bucket | n | base rate | P | R | F1 | acc |")
-            L.append("|---|--:|--:|--:|--:|--:|--:|")
+            L.append("| bucket | n | base rate | gap P | gap R | gap F1 "
+                     "| present R | **bal acc** |")
+            L.append("|---|--:|--:|--:|--:|--:|--:|--:|")
             for k, m in buckets.items():
                 L.append(f"| {k} | {m['n']} | {m['gap_base_rate']} | {m['precision']} "
-                         f"| {m['recall']} | {m['f1']} | {m['accuracy']} |")
+                         f"| {m['recall']} | {m['f1']} | {m['present_recall']} "
+                         f"| **{m['balanced_accuracy']}** |")
             L.append("")
     return "\n".join(L)
 

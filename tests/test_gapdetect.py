@@ -93,6 +93,41 @@ def test_gap_metrics_basic():
     assert m.gap_base_rate == pytest.approx(3 / 5)
 
 
+def test_present_class_and_balanced_accuracy():
+    """The gap class is nearly free on skewed data; the present class is the hard
+    half, and balanced accuracy is immune to the base rate."""
+    m = GapMetrics()
+    for _ in range(90):      # all-gap detector on 90% gap data
+        m.add(True, True)
+    for _ in range(10):
+        m.add(True, False)
+
+    assert m.gap_base_rate == pytest.approx(0.9)
+    assert m.f1 > 0.94, "gap F1 looks great..."
+    assert m.present_recall == 0.0, "...but it never once identified a present element"
+    assert m.balanced_accuracy == pytest.approx(0.5), "which balanced accuracy exposes"
+
+    perfect = GapMetrics()
+    for _ in range(90):
+        perfect.add(True, True)
+    for _ in range(10):
+        perfect.add(False, False)
+    assert perfect.balanced_accuracy == pytest.approx(1.0)
+    assert perfect.present_f1 == pytest.approx(1.0)
+
+
+def test_present_metrics_are_the_mirror_of_gap_metrics():
+    m = GapMetrics()
+    m.tp, m.fp, m.fn, m.tn = 6, 2, 3, 9
+    # present class: tn are true positives, fn are its false positives,
+    # fp are its false negatives
+    assert m.present_precision == pytest.approx(9 / 12)
+    assert m.present_recall == pytest.approx(9 / 11)
+    assert m.balanced_accuracy == pytest.approx((6 / 9 + 9 / 11) / 2)
+    assert set(m.to_dict()) >= {"present_precision", "present_recall",
+                                "present_f1", "balanced_accuracy"}
+
+
 def test_sweep_threshold_monotone_recall():
     # low present-score => predicted gap. Lower threshold => fewer predicted gaps.
     scores = [0.1, 0.3, 0.6, 0.9]

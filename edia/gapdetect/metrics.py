@@ -44,6 +44,36 @@ class GapMetrics:
     def gap_base_rate(self) -> float:
         return (self.tp + self.fn) / self.n if self.n else 0.0
 
+    # -- the present class ---------------------------------------------------
+    # Gap-class metrics alone are nearly free on this data: with a ~93% gap base
+    # rate an all-gap detector scores F1 0.962. The present class is the hard half
+    # -- "did the detector notice the document DID keep this?" -- and it is where
+    # lexical falls apart (accuracy 0.448 on present_unspecified). Always report
+    # both, or `balanced_accuracy`.
+
+    @property
+    def present_precision(self) -> float:
+        d = self.tn + self.fn
+        return self.tn / d if d else 0.0
+
+    @property
+    def present_recall(self) -> float:
+        """Specificity: of the elements the document really kept, how many were
+        correctly called present."""
+        d = self.tn + self.fp
+        return self.tn / d if d else 0.0
+
+    @property
+    def present_f1(self) -> float:
+        p, r = self.present_precision, self.present_recall
+        return 2 * p * r / (p + r) if (p + r) else 0.0
+
+    @property
+    def balanced_accuracy(self) -> float:
+        """Mean of gap recall and present recall -- immune to the base rate. An
+        all-gap detector scores 0.5 here however skewed the data is."""
+        return (self.recall + self.present_recall) / 2
+
     def add(self, predicted_gap: bool, actual_gap: bool) -> None:
         if predicted_gap and actual_gap:
             self.tp += 1
@@ -62,6 +92,10 @@ class GapMetrics:
             "recall": round(self.recall, 3),
             "f1": round(self.f1, 3),
             "accuracy": round(self.accuracy, 3),
+            "present_precision": round(self.present_precision, 3),
+            "present_recall": round(self.present_recall, 3),
+            "present_f1": round(self.present_f1, 3),
+            "balanced_accuracy": round(self.balanced_accuracy, 3),
             "confusion": {"tp": self.tp, "fp": self.fp, "fn": self.fn, "tn": self.tn},
         }
 
