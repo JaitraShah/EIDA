@@ -1,165 +1,228 @@
-# Task 5 — benchmark results
+# Benchmark results — adhd_v1
 
-*Status: QMSum tier built and validated. Synthetic tier generating (~5 min/pair on
-the current box → runs beyond one session). Full-corpus gap eval and corpus
-extraction pending the GPU box. ⟨pending⟩ marks numbers that need those runs.*
+*Dataset locked at `adhd_v1`. Gap detection (Phase 1) complete for NLI + lexical;
+LLM/ensemble ablation running. Extraction (Phase 2) complete on the 5 gold
+meetings; corpus-wide objective run pending.*
 
-## Dataset (current)
+## Dataset
 
 | tier | source | pairs | elements | gap rate | label provenance |
 |---|---|--:|--:|--:|---|
 | gold | `qmsum` | 5 | 50 | 0.76 | hand (Task 1) |
 | corpus | `qmsum_auto` | 227 | 4 930 | 0.93 | nli:roberta-large-mnli @ 0.55 |
-| synthetic | `synthetic` | in progress (target ~2040) | — | — | constructed |
+| synthetic | `synthetic` | 139 | 1 667 | 0.59 | constructed |
+| **total** | | **371** | **6 647** | 0.844 | |
 
-QMSum corpus: all 232 meetings, 3 domains (Academic 59 / Committee 36 / Product 137),
-all splits, 5 gold held out. 1 543 specific-query answers → 4 930 sentence elements.
+QMSum corpus: all 232 meetings, 3 domains (Academic 59 / Committee 36 /
+Product 137), all splits, 5 gold held out.
 
-## Auto-label validation
+---
 
-**Threshold** (`outputs/qmsum_threshold_tuning.json`): entail-score distribution is
-sharply bimodal (median 0.004, 74% below 0.02). Corpus gap rate moves only
-0.86→0.93 across thresholds 0.1–0.55; lowering it to hit a "plausible" band costs
-gold F1. **0.55 kept** — best agreement with human labels; the 0.93 rate reflects a
-genuine ~5:1 sentence-level compression, not a tunable artifact.
+## Table 1 — gap detection, by tier
 
-**Spot-check** (`outputs/qmsum_spotcheck_report.md`) — 17 pairs / 382 elements,
-auto vs an independent review, gap class:
+Threshold 0.55. `bal acc` is the mean of gap-recall and present-recall: an
+all-gap detector scores 0.5 no matter how skewed the data is.
 
-| gap P | gap R | gap F1 | present R | **bal acc** | fn | fp |
-|--:|--:|--:|--:|--:|--:|--:|
-| 0.931 | 1.00 | 0.964 | 0.671 | **0.836** | 0 | 23 (~7%) |
+| detector | tier | n | base rate | gap F1 | **bal acc** | present F1 |
+|---|---|--:|--:|--:|--:|--:|
+| NLI | gold | 50 | 0.760 | 0.861 | **0.656** | 0.476 |
+| NLI | corpus | 4 930 | 0.932 | ~~1.000~~ | ~~1.000~~ | ~~1.000~~ |
+| NLI | **synthetic** | 1 667 | 0.587 | 0.771 | **0.629** | 0.468 |
+| lexical | gold | 50 | 0.760 | 0.884 | **0.583** | 0.286 |
+| lexical | corpus | 4 930 | 0.932 | 0.970 | **0.669** | 0.457 |
+| lexical | **synthetic** | 1 667 | 0.587 | 0.857 | **0.775** | 0.715 |
 
-The silver labels never under-call a gap; ~7% of predicted gaps are
-paraphrase-present false positives (Task 2's known failure, quantified). A human
-blind pass (RUNBOOK B2) is still needed to finalise this.
+**The struck-through row is not a result.** The corpus labels *were produced by*
+`nli @ 0.55`, so scoring NLI against them at the same threshold is a tautology and
+returns 1.000 by construction. It is shown only to make the circularity explicit.
+It also means NLI's pooled "all tiers" figures (gap F1 0.953, bal acc 0.771) are
+**74% self-scored and must not be quoted** — the honest NLI numbers are the gold
+and synthetic rows.
 
-## Gap detection — 5 gold pairs (the non-circular numbers)
+### Reading Table 1
 
-`outputs/gap_eval_results_gold.md`, threshold 0.55:
+**On the only balanced tier, lexical beats NLI.** Synthetic is the sole tier with a
+gap rate near parity (0.587), and there lexical wins on every honest metric —
+bal acc 0.775 vs 0.629, present F1 0.715 vs 0.468. On gold (n=50) the two are
+close and both weak on the present class.
 
-| detector | P | R | F1 | acc | FN |
-|---|--:|--:|--:|--:|--:|
-| `nli:roberta-large-mnli` | 0.83 | 0.90 | 0.86 | 0.78 | 4 |
-| `lexical:token_f1` | 0.79 | 1.00 | 0.88 | 0.80 | 0 |
+This **reverses the expectation the project carried into Phase 1**, which was that
+NLI's advantage would show up on paraphrased-present elements once a tier had
+enough of them. It has 453 of them, and NLI loses.
 
-On the terse gold-fragment hypotheses lexical edges NLI on overall F1; NLI's
-advantage is on paraphrased-present elements, which this 50-element gold set has
-only one of. That comparison needs the synthetic tier (hundreds of `paraphrased`
-labels) to be meaningful — see `by_in_document` in the full report once it exists.
+---
 
-## The base-rate problem — read this before quoting any headline F1
+## Why NLI loses: it cannot see content that survived
 
-Corpus-wide run (`outputs/gap_eval_results.md`, lexical detector, 236 pairs /
-5 027 elements, threshold 0.45):
+Accuracy within each `in_document` bucket. (Balanced accuracy is degenerate here —
+every element in a bucket shares one gold label — so only accuracy is meaningful.)
 
-| | value |
-|---|--:|
-| overall gap-class F1 | **0.964** |
-| gap base rate | **0.927** |
-| F1 an *all-gap* detector would score | **0.962** |
-
-**The headline is worth almost nothing.** A detector that blindly answered "gap"
-to every element scores 0.962; lexical token-overlap scores 0.964. This is the
-same trap `agreement.py` already guards for on the annotation side, and the gap
-report now prints an explicit base-rate warning whenever a bucket exceeds 0.85.
-
-What the breakdowns actually show:
-
-| `by_in_document` | n | accuracy |
-|---|--:|--:|
-| omitted | 4 661 | 0.970 |
-| present_unspecified | 348 | **0.448** |
-| verbatim | 8 | 0.500 |
-| paraphrased | 10 | 0.800 |
-
-Lexical is good at gaps and **worse than a coin flip at recognising present
-elements**. The overall number hides that completely because 93% of elements are
-gaps.
-
-| `by_source` | n | base rate | F1 |
+| `in_document` | n | NLI acc | lexical acc |
 |---|--:|--:|--:|
-| qmsum_auto | 4 930 | 0.932 | 0.966 |
-| qmsum (gold) | 50 | 0.760 | 0.892 |
-| synthetic | 47 | **0.638** | **0.793** |
+| omitted (gold label = gap) | 5 610 | 0.985 | 0.984 |
+| **paraphrased** (present) | 453 | **0.366** | **0.640** |
+| **verbatim** (present) | 236 | **0.292** | **0.453** |
+| present_unspecified | 348 | 0.983 | 0.348 |
 
-F1 falls monotonically as the base rate falls. **The synthetic tier is the only
-part of the benchmark balanced enough to separate detectors** — which is the
-argument for finishing the ~2040-pair generation, and the reason the QMSum tiers
-alone would have produced a flattering, meaningless result.
+Two things to take from this:
 
-### The fix, applied
+1. **NLI is near-perfect on gaps and near-useless on present content.** It calls
+   present elements "gap" roughly two times in three.
+2. **It fails hardest on `verbatim` (0.292)** — elements copied word-for-word into
+   the document. A detector that cannot recognise a literal copy is not doing
+   entailment in any useful sense here; it is reacting to the length and
+   abstractiveness of the premise. Entailment against a ~100-word compressed
+   summary reads *almost everything* as not-entailed.
 
-`GapMetrics` now reports the **present class** and **balanced accuracy** (mean of
-gap recall and present recall — an all-gap detector scores 0.5 however skewed the
-data is), and `run_gap_eval.py` puts them in every table. Same run, honest framing:
+This is the same failure `ensemble.py` was written for, now quantified on a tier
+with constructed ground truth rather than inferred from corpus behaviour.
 
-| lexical, whole benchmark | value |
-|---|--:|
-| gap-class F1 | 0.963 |
-| **present-class F1** | **0.501** |
-| **balanced accuracy** | **0.714** |
+### Consequence for the corpus labels
 
-Per domain the difference is stark — high gap F1 can hide near-chance behaviour:
+The 227-meeting corpus is labelled by exactly this detector. If NLI recognises
+present content at 0.29–0.37, the corpus's **0.93 gap rate is inflated** and its
+silver labels carry a systematic present-class bias. The Task-1 spot-check already
+saw the direction of this (23 false-positive gaps, ~7%, all paraphrase-present);
+Table 1 gives it a magnitude. Corpus-tier numbers should be read as an upper bound
+on the gap rate, not an estimate of it.
 
-| domain | base rate | gap F1 | present R | **bal acc** |
+---
+
+## Table 2 — extraction completeness (5 gold Product meetings)
+
+Completeness requires hand-built reasoning ground truth, which exists only for
+QSUM_001–005, all Product/test. **This is a stated limitation, not an oversight:**
+Academic and Committee meetings are not labelled for completeness and deliberately
+were not labelled for it. The corpus-wide run reports the objective half only
+(hallucination + verbatim rate) across all domains.
+
+| pair | lexical | semantic |
+|---|--:|--:|
+| QSUM_001 | 0.455 | 0.636 |
+| QSUM_002 | 0.500 | 0.875 |
+| QSUM_003 | 0.111 | 0.222 |
+| QSUM_004 | 0.286 | 0.643 |
+| QSUM_005 | 0.333 | 0.500 |
+| **total** | **0.333** (16/48) | **0.583** (28/48) |
+
+Both scorers are reported because neither is trustworthy alone, and the gap
+between them is large enough to change the headline claim.
+
+**The completeness figure is a range: 33–58%.** An earlier draft quoted "~47%",
+which was the average of QSUM_001 and QSUM_002 under lexical scoring at a point
+when only those two had been scored. With all five scored it does not reproduce
+under either scorer and should not be used.
+
+**14 of the 32 lexical misses are correct extractions the token-F1 matcher
+under-credited**, including `"battery"` at 0.00 and `"Kryptonite was chosen as the
+preferred energy source"` — the headline decision, correctly extracted — at 0.36.
+Lexical completeness is therefore a floor, not an estimate, and the true value sits
+near the semantic figure.
+
+Owner/approver elements are excluded from completeness (N/A in AMI-style data,
+Task 1 caveat 1) and scored separately.
+
+---
+
+## Table 3 — failure taxonomy (Phase 2.4)
+
+All 20 residual misses on the 5 gold meetings, categorised by reading the
+transcript evidence for each: where the supporting content actually sits, how far
+apart those turns are, which chunk they fall in, and what the extractor said that
+was closest (`outputs/failure_analysis_evidence.json`).
+
+Misses are the **semantic** residual. Using the lexical misses would have added 14
+scorer artifacts and manufactured a "paraphrase" category that is not an
+extraction failure at all.
+
+| failure category | n | share |
+|---|--:|--:|
+| Multi-hop: implicit — connection never stated, must be inferred | 6 | 30% |
+| Multi-hop: scattered — reasoning spread across turns far apart | 5 | 25% |
+| Paraphrase miss — found, worded differently, scorer missed it | 5 | 25% |
+| Out of scope — present and local, model did not extract it | 4 | 20% |
+| **Chunking boundary** | **0** | **0%** |
+| **Model hallucination** | **0** | **0%** |
+
+**Multi-hop accounts for 11/20 (55%)** of what the extractor fails to recover.
+
+The two zeros carry as much weight as the leading category:
+
+- **No miss was caused by a chunk cut.** At 1 200 tokens with 2 turns of overlap,
+  chunking is not the bottleneck — so "use a longer context window" does not
+  address these failures. The distances involved are ~670 turns (QSUM_005: chip
+  tiers at t130–138, speech-recognition-in-chip at t805–818), far beyond a
+  window-size fix.
+- **The extractor invented nothing.** Zero hallucinated quotes across all five
+  meetings. The failure mode is omission, not fabrication — which matters for the
+  claim that the ceiling is a retrieval/reasoning limit rather than a fluency one.
+
+The 4 `out_of_scope` cases are the interesting residual: content that is explicit,
+local, and in a single chunk, that the model simply did not emit as a structured
+element (e.g. QSUM_005 t132/t138 state "a display requires an advanced chip / the
+most expensive" adjacently; QSUM_003's menu-vs-buttons exchange at t223–t246 was
+summarised as "no decision was reached").
+
+---
+
+## The base-rate problem — read before quoting any headline F1
+
+At the corpus gap rate of 0.93, a detector that answers "gap" to everything scores
+F1 ≈ 0.962. Lexical scores 0.970. **The headline is nearly free.**
+
+This is why every table above leads with balanced accuracy and the present class,
+and why `run_gap_eval.py` prints a base-rate warning on any bucket above 0.85.
+Per-domain the distortion is stark — a high gap F1 can hide near-chance behaviour:
+
+Lexical @ 0.55, corpus domains:
+
+| domain | n | base rate | gap F1 | **bal acc** |
 |---|--:|--:|--:|--:|
-| committee | 0.978 | 0.986 | 0.100 | **0.546** |
-| academic | 0.946 | 0.977 | 0.522 | **0.751** |
-| product | 0.900 | 0.950 | 0.473 | **0.715** |
-| cloud_platform (synthetic) | 0.600 | 0.782 | 0.607 | **0.708** |
+| committee | 1 383 | 0.978 | 0.988 | **0.532** |
+| academic | 854 | 0.946 | 0.981 | **0.745** |
+| product | 2 743 | 0.900 | 0.955 | **0.665** |
+| cloud_platform (synthetic) | 819 | 0.571 | 0.842 | **0.764** |
 
-Committee meetings look like the detector's best domain by F1 (0.986) and are
-actually its worst by balanced accuracy (0.546, barely above chance) — their
-summaries are pure meta-prose, so nearly everything is a gap and guessing "gap"
-wins.
+Committee looks like the detector's best domain by F1 (0.988, the highest of any
+bucket) and is its worst by balanced accuracy (0.532, barely above the 0.5 an
+all-gap detector scores) — those summaries are pure meta-prose, so nearly
+everything is a gap and guessing "gap" wins. Balanced accuracy rises as the base
+rate falls, which is the signature of a metric measuring skew rather than skill.
 
-Three consequences for how this benchmark gets reported:
+Three rules for reporting:
 
-1. Never quote a QMSum-tier F1 without the base rate beside it.
-2. Lead with **balanced accuracy** and the present-class numbers; the gap class
-   alone is nearly free. (Now enforced by the report renderer.)
-3. Detector comparison (NLI vs lexical vs LLM) is only meaningful on the
-   synthetic tier and the `by_in_document` present rows.
+1. Never quote a corpus-tier F1 without the base rate beside it.
+2. Lead with balanced accuracy and present-class numbers.
+3. Detector comparison is only meaningful on the synthetic tier and the
+   `by_in_document` present rows.
 
-## Pending (GPU box — `RUNBOOK.md`)
+---
 
-- **Full-corpus gap eval** (`run_gap_eval.py` over all 232 + synthetic): ~5 000
-  elements × NLI; on this box it contends with generation. Run solo or on the GPU
-  box. Report will carry the `by_source` / `by_domain` / `by_element_type` /
-  `by_in_document` breakdowns; the `qmsum_auto` NLI row is self-consistency, not
-  accuracy (the renderer says so).
-- **LLM-entailment ablation** (`--detectors llm --llm-sample 400`).
-- **Corpus extraction** (`run_corpus_extraction.py`) → `corpus_extraction_results.md`.
-- **Synthetic**: finish the ~2040-pair run, then `dedupe_synthetic.py`.
-- **Human blind spot-check pass** → refined auto-label F1 + κ.
+## Element-type caveat on the corpus tier
 
-## Known caveat carried into every number
+`qmsum_auto` element types come from a cue-word heuristic whose coverage was
+measured, not assumed: **1 030 of 4 930 elements (20.9%)** matched an actual cue.
+QMSum specific-query answers are narrative meeting summaries, so most sentences
+genuinely are not an alternative, a dissent or a condition. Read the
+by-element-type breakdown for `qmsum_auto` as indicative only; `rationale` there
+means "reasoning-ish narrative, unclassified". Element types are trustworthy on the
+synthetic tier, where they come from a typed spec.
 
-`qmsum_auto` element types are a cue-word heuristic, and the heuristic's coverage
-was measured rather than assumed (`scripts/retype_qmsum_elements.py` →
-`outputs/qmsum_element_type_coverage.json`):
+---
 
-| | |
-|---|--:|
-| elements | 4 930 |
-| matched an actual cue | 1 030 (**20.9%**) |
+## Still to run
 
-Distribution after a cue-rule pass (old → new): rationale 3 323→3 174,
-decision 1 445→1 446, alternative 87→149, condition 20→76, dissent 49→79,
-owner 4, approver 2.
+- LLM-entailment + ensemble ablation on a 400-element stratified sample (Phase 1.2/1.3).
+- Corpus-wide extraction, objective half only, by domain (Phase 2.1–2.3).
+- Human blind spot-check pass to finalise auto-label F1 and κ (Phase 1.5).
+- Comparative analysis: CoT, GraphRAG, multi-hop retrieval (Phase 3).
 
-The improvement is real but small, and that is the finding, not a bug: **QMSum
-specific-query answers are narrative meeting summaries** — findings, descriptions,
-procedural notes — not structured decision reasoning, so most sentences genuinely
-are not an alternative, a dissent or a condition. Two consequences to carry:
+## Reproduce
 
-- `rationale` on this tier means *"reasoning-ish narrative, unclassified"*, not
-  *"a stated reason"*.
-- most of the `decision` count comes from the positional first-sentence-of-answer
-  rule, not from a cue.
-
-So read the by-element-type breakdown for `qmsum_auto` as **indicative only**. The
-synthetic tier is where element types are trustworthy — there they come from a
-typed spec, not a guess. `decompose.LlmDecomposer` (a mistral pass) is the fix if
-the breakdown ever needs to be load-bearing on the QMSum side.
+```bash
+python -m pytest -q
+python scripts/run_gap_eval.py --detectors nli lexical --threshold 0.55
+python scripts/run_gap_eval.py --detectors llm ensemble --llm-sample 400 --threshold 0.55
+python scripts/failure_analysis.py --build
+python scripts/failure_analysis.py --report
+```
