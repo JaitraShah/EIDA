@@ -1,0 +1,158 @@
+{
+  "pair_id": "SYN_0076_001",
+  "source": "synthetic",
+  "topic": "architecture__tech_choice",
+  "title": "Mobile framework choice",
+  "transcript": "Principal Engineer: Alright, let's dive into the cross-platform mobile development options we've been considering.\n\nBackend Lead: I've got Flutter on my list, but I'm worried about the team's familiarity with Dart.\n\nMobile Lead: I agree. Plus, Xamarin's licensing fees wouldn't fit within our current budget.\n\nStaff Engineer: Native iOS and Android might be too much for our team size right now.\n\nPrincipal Engineer: Correct, which brings us to the last option: React Native. Its JavaScript backing makes it easier to integrate with our Node.js server.\n\nBackend Lead: But what about performance issues?\n\nPrincipal Engineer: We've been testing React Native for our 2D games, and the performance issues are manageable given our focus.\n\nMobile Lead: Still, I can't help but worry about the performance compared to native development.\n\nPrincipal Engineer: I understand your concerns, but with our in-house expertise in JavaScript, onboarding costs will be minimized.\n\nStaff Engineer: True, but we should be mindful of potential scalability concerns if our user base grows significantly.\n\nPrincipal Engineer: Absolutely, which is why we'll need to closely monitor performance data as we continue to profile React Native in our specific use case.\n\n(Off-topic exchange)\n\nMobile Lead: Hey, have you seen that new Star Trek series on Paramount+?\n\nStaff Engineer: I have! The Vulcan language reminds me a bit of Dart, actually.\n\nPrincipal Engineer: (laughs) Not the same thing, but I see your point. Back to the topic, any other objections?\n\nBacked Lead: No, I'll need to consider the long-term maintainability due to the increasing complexity in the React Native layer, but I'm willing to work through it.\n\nPrincipal Engineer: Alright. With that, I'm signing off on adopting React Native for cross-platform mobile development, Mobile Lead will own it.\n\nMobile Lead: Understood, I'll make sure to keep a close eye on performance and maintainability. Let's get started!",
+  "document": "Title: Decision on Cross-Platform Mobile Development Framework\n\nIn the recent meeting, the team agreed to adopt React Native for cross-platform mobile development due to its compatibility with our existing Node.js server and the in-house expertise in JavaScript. The potential performance issues in our specific use case are being investigated with pending profiling data.\n\nConsideration was given to native iOS and Android development, but it was deemed too resource-intensive for our current team size. Other discussion points, such as Flutter's Dart language familiarity, Xamarin licensing fees, React Native's potential scalability concerns, and long-term maintainability questions, were not recorded in the meeting summary.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0076_001_d1",
+      "source_id": "SYN_0076_001",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Adopt React Native for cross-platform mobile development",
+      "topic": "Mobile framework choice",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "Flutter",
+          "rejected": true,
+          "reason": "Lower team familiarity with Flutter's Dart language"
+        },
+        {
+          "option": "Xamarin",
+          "rejected": true,
+          "reason": "Costly licensing fees under our shrinking budget"
+        },
+        {
+          "option": "Native iOS & Android",
+          "rejected": false,
+          "reason": "Considered too resource-intensive for our current team size"
+        }
+      ],
+      "rationale": [
+        "React Native's JavaScript backing allows for easier integration with our existing Node.js server",
+        "In-house expertise in JavaScript minimizes onboarding costs",
+        "Performance issues with React Native are manageable, given our focus on 2D games"
+      ],
+      "conditions": [
+        "Pending profiling data on React Native's performance in our specific use case",
+        "Potential scalability concerns if the user base grows significantly"
+      ],
+      "dissent": [
+        "Mobile lead voices concerns about React Native's performance compared to Native development",
+        "Backend lead questions long-term maintainability due to increasing complexity in the React Native layer"
+      ],
+      "owner": "Mobile lead",
+      "approver": "Principal engineer",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0076_001_e01",
+      "element_type": "decision",
+      "text": "Adopt React Native for cross-platform mobile development",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0076_001_d1"
+    },
+    {
+      "element_id": "SYN_0076_001_e02",
+      "element_type": "alternative",
+      "text": "Flutter -- Lower team familiarity with Flutter's Dart language",
+      "in_document": "omitted",
+      "decision_id": "SYN_0076_001_d1"
+    },
+    {
+      "element_id": "SYN_0076_001_e03",
+      "element_type": "alternative",
+      "text": "Xamarin -- Costly licensing fees under our shrinking budget",
+      "in_document": "omitted",
+      "decision_id": "SYN_0076_001_d1"
+    },
+    {
+      "element_id": "SYN_0076_001_e04",
+      "element_type": "alternative",
+      "text": "Native iOS & Android -- Considered too resource-intensive for our current team size",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0076_001_d1"
+    },
+    {
+      "element_id": "SYN_0076_001_e05",
+      "element_type": "rationale",
+      "text": "React Native's JavaScript backing allows for easier integration with our existing Node.js server",
+      "in_document": "omitted",
+      "decision_id": "SYN_0076_001_d1"
+    },
+    {
+      "element_id": "SYN_0076_001_e06",
+      "element_type": "rationale",
+      "text": "In-house expertise in JavaScript minimizes onboarding costs",
+      "in_document": "omitted",
+      "decision_id": "SYN_0076_001_d1"
+    },
+    {
+      "element_id": "SYN_0076_001_e07",
+      "element_type": "rationale",
+      "text": "Performance issues with React Native are manageable, given our focus on 2D games",
+      "in_document": "omitted",
+      "decision_id": "SYN_0076_001_d1"
+    },
+    {
+      "element_id": "SYN_0076_001_e08",
+      "element_type": "condition",
+      "text": "Pending profiling data on React Native's performance in our specific use case",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0076_001_d1"
+    },
+    {
+      "element_id": "SYN_0076_001_e09",
+      "element_type": "condition",
+      "text": "Potential scalability concerns if the user base grows significantly",
+      "in_document": "omitted",
+      "decision_id": "SYN_0076_001_d1"
+    },
+    {
+      "element_id": "SYN_0076_001_e10",
+      "element_type": "dissent",
+      "text": "Mobile lead voices concerns about React Native's performance compared to Native development",
+      "in_document": "omitted",
+      "decision_id": "SYN_0076_001_d1"
+    },
+    {
+      "element_id": "SYN_0076_001_e11",
+      "element_type": "dissent",
+      "text": "Backend lead questions long-term maintainability due to increasing complexity in the React Native layer",
+      "in_document": "omitted",
+      "decision_id": "SYN_0076_001_d1"
+    },
+    {
+      "element_id": "SYN_0076_001_e12",
+      "element_type": "owner",
+      "text": "Mobile lead",
+      "in_document": "omitted",
+      "decision_id": "SYN_0076_001_d1"
+    },
+    {
+      "element_id": "SYN_0076_001_e13",
+      "element_type": "approver",
+      "text": "Principal engineer",
+      "in_document": "omitted",
+      "decision_id": "SYN_0076_001_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.76,
+    "seed": 2293,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}

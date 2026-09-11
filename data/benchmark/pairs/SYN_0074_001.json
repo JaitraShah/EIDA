@@ -1,0 +1,170 @@
+{
+  "pair_id": "SYN_0074_001",
+  "source": "synthetic",
+  "topic": "architecture__policy_change",
+  "title": "Policy change on core architecture",
+  "transcript": "Principal Engineer: Alright, let's dive into the architecture discussion. I've been looking at some new technologies that could potentially streamline our work.\n\nBackend Lead: I've been thinking about a custom, in-house architecture. It could give us more control and flexibility.\n\nMobile Lead: But that would require a lot of resources and a long timeline. We're already under the microscope during this board-level cost review.\n\nStaff Engineer: I agree, we might want to reconsider adopting Google's Flutter for mobile and React for web. The estimated annual development and maintenance costs are quite high, around $250k.\n\nPrincipal Engineer: And let's not forget about the potential compatibility issues that come with a modular monorepo structure. We'd need extensive refactoring across multiple projects.\n\nMobile Lead: True, and we're not all that familiar with Angular, so a transition to it could lead to delays and increased learning curve.\n\nBackend Lead: I still think a custom architecture could be worth exploring.\n\nPrincipal Engineer: I'm not opposed to exploring new technologies, just advocating for a cautious approach. Let's not forget that our existing setup is already efficient and well-maintained.\n\nStaff Engineer: Agreed, maintaining the status quo minimizes risk and allows us to focus on product development rather than architectural changes.\n\nMobile Lead: Alright, it seems like we're agreeing to stick with the current setup for now.\n\nBackend Lead: But what about continued monitoring of the cost structure and potential improvements?\n\nStaff Engineer: And we should definitely evaluate new technologies and their impact on our long-term strategy.\n\nPrincipal Engineer: Agreed on both points. Let's move forward with the status quo, but keep an open mind for potential improvements.\n\n(Off-topic exchange)\n\nStaff Engineer: Hey, have you tried that new coffee place downtown? I heard their lattes are fantastic.\n\nMobile Lead: Oh, I have! They're quite good. But their prices can be a bit steep.\n\nPrincipal Engineer: True, but sometimes you've got to treat yourself, right? (Laughter)\n\n(Back to the discussion)\n\nStaff Engineer: Alright, I'll take ownership of this decision. And I'll present it to the Board of Directors for their sign-off.",
+  "document": "Title: Meeting Summary - Technology Strategy\n\nMaintaining the status quo on core architecture and frameworks was agreed upon, with no immediate changes. Continued monitoring of cost structure and potential improvements was emphasized. The designated Staff Engineer will lead these efforts. The team will focus on product development, with a cautious approach to exploring new technologies and frameworks in the future. The board was informed of these decisions.",
+  "decisions": [
+    {
+      "decision_id": "SYN_0074_001_d1",
+      "source_id": "SYN_0074_001",
+      "chunk_id": "SYNTHETIC_SPEC",
+      "schema_version": "1.0.0",
+      "decision": "Status quo on core architecture and frameworks maintained, with no immediate changes.",
+      "topic": "Policy change on core architecture",
+      "status": "deferred",
+      "alternatives": [
+        {
+          "option": "Adopt Google's Flutter for mobile and React for web",
+          "rejected": true,
+          "reason": "High development and maintenance costs estimated at $250k annually."
+        },
+        {
+          "option": "Migrate to a custom, in-house architecture",
+          "rejected": false,
+          "reason": "Requires significant resources and timeline of 18 months, which was deemed unfeasible given the current board-level cost review."
+        },
+        {
+          "option": "Transition to a modular monorepo structure",
+          "rejected": false,
+          "reason": "Concerns over potential compatibility issues and the need for extensive refactoring across multiple projects."
+        },
+        {
+          "option": "Migrate to a popular open-source framework, e.g. Angular",
+          "rejected": false,
+          "reason": "Lack of familiarity among the team with Angular, leading to potential delays and increased learning curve."
+        }
+      ],
+      "rationale": [
+        "Maintaining the existing setup minimizes risk and allows for greater control.",
+        "The current infrastructure is already efficient and well-maintained.",
+        "The team can focus on product development instead of architectural changes."
+      ],
+      "conditions": [
+        "Continued monitoring of the cost structure and potential improvements.",
+        "Evaluation of new technologies and their impact on the long-term strategy."
+      ],
+      "dissent": [
+        "Principal Engineer suggested a cautious approach to exploring new technologies and frameworks.",
+        "Backend Lead argued for the potential benefits of a custom, in-house architecture."
+      ],
+      "owner": "Staff Engineer",
+      "approver": "Board of Directors",
+      "evidence": [],
+      "extraction_confidence": null
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "SYN_0074_001_e01",
+      "element_type": "decision",
+      "text": "Status quo on core architecture and frameworks maintained, with no immediate changes.",
+      "in_document": "verbatim",
+      "decision_id": "SYN_0074_001_d1"
+    },
+    {
+      "element_id": "SYN_0074_001_e02",
+      "element_type": "alternative",
+      "text": "Adopt Google's Flutter for mobile and React for web -- High development and maintenance costs estimated at $250k annually.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0074_001_d1"
+    },
+    {
+      "element_id": "SYN_0074_001_e03",
+      "element_type": "alternative",
+      "text": "Migrate to a custom, in-house architecture -- Requires significant resources and timeline of 18 months, which was deemed unfeasible given the current board-level cost review.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0074_001_d1"
+    },
+    {
+      "element_id": "SYN_0074_001_e04",
+      "element_type": "alternative",
+      "text": "Transition to a modular monorepo structure -- Concerns over potential compatibility issues and the need for extensive refactoring across multiple projects.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0074_001_d1"
+    },
+    {
+      "element_id": "SYN_0074_001_e05",
+      "element_type": "alternative",
+      "text": "Migrate to a popular open-source framework, e.g. Angular -- Lack of familiarity among the team with Angular, leading to potential delays and increased learning curve.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0074_001_d1"
+    },
+    {
+      "element_id": "SYN_0074_001_e06",
+      "element_type": "rationale",
+      "text": "Maintaining the existing setup minimizes risk and allows for greater control.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0074_001_d1"
+    },
+    {
+      "element_id": "SYN_0074_001_e07",
+      "element_type": "rationale",
+      "text": "The current infrastructure is already efficient and well-maintained.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0074_001_d1"
+    },
+    {
+      "element_id": "SYN_0074_001_e08",
+      "element_type": "rationale",
+      "text": "The team can focus on product development instead of architectural changes.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0074_001_d1"
+    },
+    {
+      "element_id": "SYN_0074_001_e09",
+      "element_type": "condition",
+      "text": "Continued monitoring of the cost structure and potential improvements.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0074_001_d1"
+    },
+    {
+      "element_id": "SYN_0074_001_e10",
+      "element_type": "condition",
+      "text": "Evaluation of new technologies and their impact on the long-term strategy.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0074_001_d1"
+    },
+    {
+      "element_id": "SYN_0074_001_e11",
+      "element_type": "dissent",
+      "text": "Principal Engineer suggested a cautious approach to exploring new technologies and frameworks.",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0074_001_d1"
+    },
+    {
+      "element_id": "SYN_0074_001_e12",
+      "element_type": "dissent",
+      "text": "Backend Lead argued for the potential benefits of a custom, in-house architecture.",
+      "in_document": "omitted",
+      "decision_id": "SYN_0074_001_d1"
+    },
+    {
+      "element_id": "SYN_0074_001_e13",
+      "element_type": "owner",
+      "text": "Staff Engineer",
+      "in_document": "paraphrased",
+      "decision_id": "SYN_0074_001_d1"
+    },
+    {
+      "element_id": "SYN_0074_001_e14",
+      "element_type": "approver",
+      "text": "Board of Directors",
+      "in_document": "omitted",
+      "decision_id": "SYN_0074_001_d1"
+    }
+  ],
+  "generation": {
+    "model": "mistral",
+    "temperature": 0.81,
+    "seed": 2259,
+    "prompt_version": "synth-v2",
+    "sampled": true
+  },
+  "annotations": [],
+  "notes": "LEAK AUTO-CORRECTED -- 1 element(s) the document states despite an 'omitted' plan were relabelled omitted -> paraphrased (find_leaks located each in a single document sentence).\n[\n  {\n    \"element_id\": \"SYN_0074_001_e11\",\n    \"text\": \"Principal Engineer suggested a cautious approach to exploring new technologies and frameworks.\",\n    \"score\": 0.6,\n    \"document_sentence\": \"The team will focus on product development, with a cautious approach to exploring new technologies and frameworks in the future.\"\n  }\n]\n",
+  "label_provenance": "constructed",
+  "schema_version": "1.0.0",
+  "dataset_version": "1.1.0"
+}
