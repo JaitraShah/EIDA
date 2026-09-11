@@ -157,7 +157,7 @@ def main(argv=None) -> int:
         det = _make_detector(kind, args.nli_model, args.threshold)
 
         elements = all_elements
-        if kind == "llm" and args.llm_sample:
+        if kind in ("llm", "ensemble") and args.llm_sample:
             rng = random.Random(args.seed)
             by_cell: dict = defaultdict(list)
             for p, el in all_elements:
@@ -168,7 +168,7 @@ def main(argv=None) -> int:
                 rng.shuffle(cell)
                 picked.extend(cell[:per])
             elements = picked[:args.llm_sample]
-            print(f"  llm: stratified sample of {len(elements)} elements")
+            print(f"  {kind}: stratified sample of {len(elements)} elements")
 
         rows = []
         overall = GapMetrics()
