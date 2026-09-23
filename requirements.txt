@@ -12,6 +12,12 @@ pydantic>=2.6
 # synthetic near-duplicate filter (scripts/dedupe_synthetic.py)
 sentence-transformers>=2.6
 
+# TF-IDF retriever for the Phase 3.3 multi-hop baseline
+# (scripts/multihop_retrieval.py). Usually arrives with sentence-transformers,
+# but that is a transitive dependency, not a promise -- pinned here because we
+# import it directly.
+scikit-learn>=1.3
+
 # gap detection (Task 2 / Task 5) -- NLI detector in edia/gapdetect.
 # ~2 GB install; the core test suite stays offline (NLI tests need --run-nli).
 transformers>=4.40

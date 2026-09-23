@@ -81,9 +81,12 @@ with constructed ground truth rather than inferred from corpus behaviour.
 
 The 227-meeting corpus is labelled by exactly this detector. If NLI recognises
 present content at 0.29–0.37, the corpus's **0.93 gap rate is inflated** and its
-silver labels carry a systematic present-class bias. The Task-1 spot-check already
-saw the direction of this (23 false-positive gaps, ~7%, all paraphrase-present);
-Table 1 gives it a magnitude. Corpus-tier numbers should be read as an upper bound
+silver labels carry a systematic present-class bias. A model-assisted review pass
+over 17 corpus pairs (382 elements) already saw the direction of this — 23
+false-positive gaps, ~7%, all paraphrase-present — and Table 1 gives it a
+magnitude. **That review is not a human pass** (annotator `llm-review`, whose
+own note says it is not a substitute for one), so it cannot be cited as validation;
+Phase 1.5 is the human check, and it is still outstanding. Corpus-tier numbers should be read as an upper bound
 on the gap rate, not an estimate of it.
 
 ---

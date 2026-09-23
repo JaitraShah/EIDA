@@ -31,16 +31,47 @@ from edia.gapdetect.metrics import GapMetrics
 
 OUT = Path("outputs/qmsum_spotcheck_report.json")
 
+# Annotator names that are NOT human. The spotcheck pairs carry a `llm-review`
+# pass whose own note says "Not a substitute for a human pass" -- if it is allowed
+# to occupy the first slot, "auto vs human" silently becomes auto-vs-model and the
+# whole point of Phase 1.5 (a non-circular check on the silver labels) is lost.
+MACHINE_ANNOTATORS = {"llm-review", "auto", "model"}
+
+
+def _human_passes(pair, machine: set[str]) -> list:
+    return [a for a in pair.annotations if a.annotator.lower() not in machine]
+
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--dir", default="data/benchmark/spotcheck")
+    ap.add_argument("--machine-annotator", action="append", default=[],
+                    help="extra annotator name to treat as non-human (repeatable)")
+    ap.add_argument("--allow-machine", action="store_true",
+                    help="score machine annotations as if human -- for inspecting the "
+                         "llm-review pass only; NEVER for a reported number")
     args = ap.parse_args(argv)
 
-    pairs = [p for p in load_all(args.dir) if p.annotations]
+    machine = set() if args.allow_machine else (
+        MACHINE_ANNOTATORS | {m.lower() for m in args.machine_annotator}
+    )
+
+    all_pairs = [p for p in load_all(args.dir) if p.annotations]
+    pairs = [p for p in all_pairs if _human_passes(p, machine)]
     if not pairs:
-        raise SystemExit(f"no annotated pairs in {args.dir} -- run edia.benchmark.annotate first")
+        skipped = sorted({a.annotator for p in all_pairs for a in p.annotations})
+        raise SystemExit(
+            f"no HUMAN-annotated pairs in {args.dir}.\n"
+            f"Found only machine annotations from: {', '.join(skipped) or '(none)'}.\n\n"
+            f"The spotcheck pairs already carry a llm-review pass, so a human is the\n"
+            f"SECOND annotator on each pair. Run:\n"
+            f"  python -m edia.benchmark.annotate --dir {args.dir} "
+            f"--annotator <you> --double\n"
+        )
+    if len(pairs) < len(all_pairs):
+        print(f"note: {len(all_pairs) - len(pairs)} pair(s) have no human pass yet; "
+              f"scoring the {len(pairs)} that do.")
 
     auto_vs_human = GapMetrics()
     disagreements = []
@@ -49,8 +80,11 @@ def main(argv=None) -> int:
     hh_b: list[bool] = []
     n_double = 0
 
+    human_names: set[str] = set()
     for p in pairs:
-        human = p.annotations[0].labels
+        humans = _human_passes(p, machine)
+        human = humans[0].labels
+        human_names.add(humans[0].annotator)
         for el in p.elements:
             if el.element_id not in human:
                 continue
@@ -64,9 +98,9 @@ def main(argv=None) -> int:
                     "auto": el.in_document.value,
                     "human": human[el.element_id].value,
                 })
-        if len(p.annotations) >= 2:
+        if len(humans) >= 2:
             n_double += 1
-            a, b = p.annotations[0].labels, p.annotations[1].labels
+            a, b = humans[0].labels, humans[1].labels
             for el in p.elements:
                 if el.element_id in a and el.element_id in b:
                     hh_a.append(a[el.element_id] is InDocument.OMITTED)
@@ -74,6 +108,8 @@ def main(argv=None) -> int:
 
     result = {
         "pairs": len(pairs),
+        "human_annotators": sorted(human_names),
+        "machine_annotators_excluded": sorted(machine),
         "double_annotated_pairs": n_double,
         "auto_vs_human_gap_class": auto_vs_human.to_dict(),
         "disagreements": disagreements,
@@ -91,6 +127,9 @@ def main(argv=None) -> int:
     OUT.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
 
     o = result["auto_vs_human_gap_class"]
+    print(f"human annotator(s): {', '.join(result['human_annotators'])}"
+          f"   |  excluded as machine: {', '.join(result['machine_annotators_excluded']) or 'none'}")
+    print(f"pairs scored: {len(pairs)}  |  double-annotated: {n_double}\n")
     print(f"auto vs human (gap class), n={o['n']}:")
     print(f"  gap class     : P {o['precision']}  R {o['recall']}  F1 {o['f1']}")
     print(f"  present class : P {o['present_precision']}  R {o['present_recall']}  "
