@@ -5,19 +5,19 @@
 
 ---
 
-## FIRST: Connect to GitHub fork (do this before anything else)
+## FIRST: Connect to the GitHub repo (do this before anything else)
 
-The repo needs to be connected to the fork at `https://github.com/JaitraShah/capstone.git`.
+The repo lives at `https://github.com/JaitraShah/EIDA.git` (private).
 
 Run these three commands from the `D:\EDIA` directory:
 
 ```bash
 cd D:/EDIA
-git remote set-url origin https://github.com/JaitraShah/capstone.git
+git remote set-url origin https://github.com/JaitraShah/EIDA.git
 git push origin Jaitra
 ```
 
-If it asks for credentials, use the GitHub account `JaitraShah`. Once the push succeeds, all future commits will go to the fork automatically.
+If it asks for credentials, use the GitHub account `JaitraShah`. Once the push succeeds, all future commits will go to this repo automatically.
 
 ---
 
