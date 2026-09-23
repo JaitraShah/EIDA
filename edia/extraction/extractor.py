@@ -28,7 +28,13 @@ from pydantic import ValidationError
 
 from .chunker import Chunk, chunk_text
 from .llm_client import DEFAULT_MODEL, OllamaClient, OllamaCallFailed, OllamaUnavailable
-from .prompts import REPAIR_PROMPT, SYSTEM_PROMPT, build_user_prompt
+from .prompts import (
+    COT_SYSTEM_PROMPT,
+    REPAIR_PROMPT,
+    SYSTEM_PROMPT,
+    build_cot_prompt,
+    build_user_prompt,
+)
 from .schema import (
     DecisionRecord,
     DecisionStatus,
@@ -217,17 +223,25 @@ class DecisionExtractor:
         client: OllamaClient | None = None,
         model: str = DEFAULT_MODEL,
         verbose: bool = True,
+        cot: bool = False,
     ):
         self.client = client or OllamaClient(model=model)
         self.verbose = verbose
+        self.cot = cot  # Phase 3.1 ablation -- see prompts.COT_INSTRUCTION
 
     def _log(self, msg: str) -> None:
         if self.verbose:
             print(msg, file=sys.stderr, flush=True)
 
     def extract_from_chunk(self, chunk: Chunk) -> list[DecisionRecord]:
-        """One model call for one chunk. Raises on unrecoverable failure."""
-        user = build_user_prompt(chunk.text, chunk.speakers)
+        """One model call for one chunk (two in CoT mode). Raises on unrecoverable failure."""
+        notes = None
+        if self.cot:
+            notes = self.client.chat_text(
+                COT_SYSTEM_PROMPT, build_cot_prompt(chunk.text, chunk.speakers)
+            ).text
+            self._log(f"  {chunk.chunk_id}: cot notes {len(notes)} chars")
+        user = build_user_prompt(chunk.text, chunk.speakers, cot_notes=notes)
         resp = self.client.chat_json(SYSTEM_PROMPT, user)
 
         try:

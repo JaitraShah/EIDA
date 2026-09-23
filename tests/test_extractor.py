@@ -26,6 +26,7 @@ class FakeClient:
         self.responses = list(responses)
         self.model = model
         self.calls = []
+        self.text_calls = []
 
     def chat_json(self, system, user):
         self.calls.append((system, user))
@@ -33,6 +34,11 @@ class FakeClient:
         if isinstance(payload, Exception):
             raise payload
         return LLMResponse(text=payload, model=self.model, latency_s=0.0)
+
+    def chat_text(self, system, user):
+        self.text_calls.append((system, user))
+        return LLMResponse(text="- Decision: kryptonite was chosen.",
+                           model=self.model, latency_s=0.0)
 
 
 def make_chunk(text="PM: We will use kryptonite.", cid="M7_c000"):
@@ -296,3 +302,44 @@ def test_is_empty_non_decision_accepts_dicts_and_records():
     rich = {"decision": "No decision was made.", "rationale": ["a real reason"]}
     assert not is_empty_non_decision(rich)
     assert not is_empty_non_decision(coerce_record(rich, **BASE))
+
+
+# --- Phase 3.1 CoT ablation ------------------------------------------------
+
+def test_cot_off_by_default_makes_one_call():
+    fake = FakeClient([GOOD])
+    ex = DecisionExtractor(client=fake, verbose=False)
+    ex.extract_from_chunk(make_chunk())
+    assert fake.text_calls == [], "baseline must not make a reasoning call"
+
+
+def test_cot_makes_a_separate_unconstrained_reasoning_call():
+    """The reasoning pass MUST go through chat_text, not chat_json.
+
+    chat_json sends Ollama format="json", which grammar-constrains decoding to a
+    JSON object -- under it the model cannot emit reasoning tokens at all, so a
+    'think step by step' instruction on the extraction prompt is a silent no-op and
+    the whole ablation would measure prompt wording rather than chain-of-thought.
+    """
+    fake = FakeClient([GOOD])
+    ex = DecisionExtractor(client=fake, verbose=False, cot=True)
+    ex.extract_from_chunk(make_chunk())
+
+    assert len(fake.text_calls) == 1, "CoT must make exactly one reasoning call"
+    assert len(fake.calls) == 1, "…and still exactly one extraction call"
+
+    # the notes must actually reach the extraction prompt, or the pass is wasted
+    _, extraction_user = fake.calls[0]
+    assert "kryptonite was chosen" in extraction_user
+
+
+def test_json_mode_is_off_for_text_calls_and_on_for_json_calls():
+    """Guards the payload flag itself, so re-adding format='json' to the text path
+    fails here rather than silently voiding the ablation."""
+    import inspect
+
+    from edia.extraction.llm_client import OllamaClient
+
+    src = inspect.getsource(OllamaClient._chat)
+    assert 'payload["format"] = "json"' in src
+    assert "if json_mode:" in src

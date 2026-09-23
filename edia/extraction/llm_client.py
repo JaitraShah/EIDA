@@ -110,6 +110,20 @@ class OllamaClient:
         failure (prose wrapped around the object) but not schema errors -- the
         caller still validates.
         """
+        return self._chat(system, user, json_mode=True)
+
+    def chat_text(self, system: str, user: str) -> LLMResponse:
+        """Single-turn call with JSON mode OFF, for free-text output.
+
+        Needed by the Phase 3.1 CoT ablation: under `format="json"` the decoder is
+        grammar-constrained to emit a JSON object, so a "think step by step before
+        answering" instruction is physically unsatisfiable -- the reasoning tokens
+        can never be produced. Genuine chain-of-thought therefore needs a separate
+        unconstrained pass whose output is fed into the constrained extraction call.
+        """
+        return self._chat(system, user, json_mode=False)
+
+    def _chat(self, system: str, user: str, json_mode: bool) -> LLMResponse:
         payload = {
             "model": self.model,
             "messages": [
@@ -117,9 +131,10 @@ class OllamaClient:
                 {"role": "user", "content": user},
             ],
             "stream": False,
-            "format": "json",
             "options": self.options,
         }
+        if json_mode:
+            payload["format"] = "json"
 
         last_err: Exception | None = None
         for attempt in range(self.max_retries + 1):

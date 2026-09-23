@@ -1,0 +1,30 @@
+{
+  "model": "mistral",
+  "meetings_scored": 1,
+  "wall_seconds": 1370.4,
+  "by_domain_split": {
+    "Academic/train": {
+      "meetings": 1,
+      "records": 26,
+      "q_total": 91,
+      "q_grounded": 74,
+      "q_strict": 69,
+      "chunks_failed": 1,
+      "evidence_grounding": 0.813,
+      "unsupported_evidence_rate": 0.187,
+      "strict_verbatim_rate": 0.758
+    }
+  },
+  "per_meeting": [
+    {
+      "meeting_id": "QMS_ACA_TR_000",
+      "domain": "Academic",
+      "split": "train",
+      "records": 26,
+      "quotes": "74/91",
+      "unsupported_evidence_rate": 0.187,
+      "strict_verbatim_rate": 0.758,
+      "chunks_failed": 1
+    }
+  ]
+}

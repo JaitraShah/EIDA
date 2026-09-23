@@ -147,17 +147,75 @@ the interface concept" as a decision. An agenda is not a decision.\
 """
 
 
-def build_user_prompt(chunk_text: str, speakers: list[str] | None = None) -> str:
+# Phase 3.1 ablation (EDIA_Project_Plan_v2.md): does asking the model to reason
+# before extracting help? The plan's hypothesis is that CoT improves reasoning at
+# answer time but does not help find facts scattered across a chunk, so any gain
+# should be small.
+#
+# This has to be a SEPARATE unconstrained call, not an instruction bolted onto the
+# extraction prompt. OllamaClient.chat_json sends format="json", which
+# grammar-constrains decoding to a JSON object -- under that constraint the model
+# physically cannot emit reasoning tokens first, so a "think step by step" line in
+# the extraction prompt is a silent no-op and the ablation would measure prompt
+# wording noise rather than chain-of-thought. Pass 1 (chat_text) reasons; pass 2
+# (chat_json) extracts with that reasoning in context.
+COT_SYSTEM_PROMPT = """\
+You are analysing an excerpt from a meeting transcript. Think step by step about \
+what was decided and what reasoning was given. Do not produce JSON. Write short \
+plain-text notes only.\
+"""
+
+
+def build_cot_prompt(chunk_text: str, speakers: list[str] | None = None) -> str:
     speaker_line = (
         f"Speakers present in this excerpt: {', '.join(speakers)}\n" if speakers else ""
     )
+    return f"""Let's think step by step about what decisions and reasoning appear in \
+this excerpt.
+
+Work through it and note, in a few short lines each:
+- any decision that was settled, proposed, rejected, or deferred
+- any alternative option that was named
+- any stated reason why an option was chosen or rejected
+- any condition, caveat, unresolved cost, or dependency
+- any objection or disagreement someone voiced
+
+Only note things actually stated in the excerpt. If there is no decision at all, \
+say so in one line.
+
+{speaker_line}Excerpt:
+---
+{chunk_text}
+---
+
+Your notes:"""
+
+
+COT_PREFIX = """\
+You previously analysed this excerpt and made these notes:
+
+{notes}
+
+Use those notes to help you, but extract ONLY what the excerpt itself states. If a \
+note is not supported by the excerpt, ignore it.
+
+"""
+
+
+def build_user_prompt(
+    chunk_text: str, speakers: list[str] | None = None, cot_notes: str | None = None
+) -> str:
+    speaker_line = (
+        f"Speakers present in this excerpt: {', '.join(speakers)}\n" if speakers else ""
+    )
+    cot_block = COT_PREFIX.format(notes=cot_notes.strip()) if cot_notes else ""
     return f"""{OUTPUT_CONTRACT}
 
 {FEW_SHOT}
 
 Now do the same for this excerpt.
 
-{speaker_line}Excerpt:
+{cot_block}{speaker_line}Excerpt:
 ---
 {chunk_text}
 ---
