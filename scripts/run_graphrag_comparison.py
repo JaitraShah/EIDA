@@ -54,7 +54,9 @@ from edia.extraction.schema import ExtractionResult
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "qmsum"
-GR_EXE = ROOT / ".venv-graphrag" / "Scripts" / "graphrag.exe"
+# `python -m graphrag`, not graphrag.exe: console-script launchers hard-code the
+# venv path and break if the repo folder is moved; the interpreter does not.
+GR = [str(ROOT / ".venv-graphrag" / "Scripts" / "python.exe"), "-m", "graphrag"]
 WS_DIR = ROOT / "outputs" / "graphrag_ws"
 ANSWER_DIR = ROOT / "outputs" / "graphrag_answers"
 REPORT_MD = ROOT / "outputs" / "graphrag_results.md"
@@ -112,7 +114,7 @@ def _run(cmd: list[str], log: Path) -> str:
         fh.write(proc.stdout)
         fh.write(proc.stderr)
     if proc.returncode != 0:
-        raise RuntimeError(f"{cmd[1]} failed (exit {proc.returncode}); see {log}")
+        raise RuntimeError(f"{cmd[3]} failed (exit {proc.returncode}); see {log}")
     return proc.stdout
 
 
@@ -120,7 +122,7 @@ def setup_workspace(pair_id: str) -> Path:
     ws = WS_DIR / pair_id
     if not (ws / "settings.yaml").exists():
         ws.mkdir(parents=True, exist_ok=True)
-        subprocess.run([str(GR_EXE), "init", "--root", str(ws), "--model", CHAT_MODEL,
+        subprocess.run([*GR, "init", "--root", str(ws), "--model", CHAT_MODEL,
                         "--embedding", EMBED_MODEL, "--force"],
                        check=True, capture_output=True, cwd=ROOT)
         cfg = yaml.safe_load((ws / "settings.yaml").read_text(encoding="utf-8"))
@@ -144,9 +146,9 @@ def graphrag_answer(pair_id: str) -> dict:
     log = ws / "run.log"
     t0 = time.time()
     if not (ws / "output" / "entities.parquet").exists():
-        _run([str(GR_EXE), "index", "--root", str(ws)], log)
+        _run([*GR, "index", "--root", str(ws)], log)
     t_index = time.time() - t0
-    answer = _run([str(GR_EXE), "query", "--root", str(ws), "--method", "local", QUERY], log)
+    answer = _run([*GR, "query", "--root", str(ws), "--method", "local", QUERY], log)
     payload = {"pair_id": pair_id, "query": QUERY, "method": "local",
                "answer": answer.strip(), "index_seconds": round(t_index, 1),
                "total_seconds": round(time.time() - t0, 1)}
