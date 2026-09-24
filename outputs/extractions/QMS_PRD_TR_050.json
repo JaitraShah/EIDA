@@ -1,0 +1,182 @@
+{
+  "source_id": "QMS_PRD_TR_050",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_050_c000_d1",
+      "source_id": "QMS_PRD_TR_050",
+      "chunk_id": "QMS_PRD_TR_050_c000",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt",
+      "topic": "agenda",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay , well I think we're ready to begin . Right , my name's Adam Duguid , we're here because of real reaction , um , we have in the group",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "As you can see , w opening , acquaintance , tool training , project plan discussion , and closing . Um , we already got n through opening , and partially through acquaintance . So , the reason we're here , we're gonna design a new remote control , as you probably all know .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "What can I say ? Ebenezer , you wanna have a you wanna draw your favourite animal ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Tarik , would you like to have a shot at a bit of artistry ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_PRD_TR_050_c001_d1",
+      "source_id": "QMS_PRD_TR_050",
+      "chunk_id": "QMS_PRD_TR_050_c001",
+      "schema_version": "1.0.0",
+      "decision": "A remote control with conventional push buttons and the ability to control multiple units in a simple fashion was proposed for a lower price bracket.",
+      "topic": "remote control design",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "touch screen LCD remote",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Aiming for a lower price bracket, going for a touch screen might be prohibitive."
+      ],
+      "conditions": [
+        "Not decided if this is the final design."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But you think uh again something to control multiple units in uh a simple fashion.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And therefore putting it into a um well much lower price bracket.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Absolutely prohibitive",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_050_c002_d1",
+      "source_id": "QMS_PRD_TR_050",
+      "chunk_id": "QMS_PRD_TR_050_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the idea of a remote control that can operate multiple units in a more integrated fashion, with limited facility for running macros.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The remote control for gaming and interactive television should have big buttons for easy navigation, change angles, and be user-friendly."
+      ],
+      "conditions": [
+        "The team needs to work fast to decide on the basic functionality and user interface."
+      ],
+      "dissent": [
+        "The Industrial Designer suggested the idea of a stick or control pads instead of buttons, but it was not dismissed as ridiculous."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Would the the idea something along the lines of , one on button would turn on say the video recorder , the T_V_ , maybe the sound system as well , all in one go , is that kind of {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "For instance , um let's say oh oh um , or um you know you pr uh you press uh say the play button for the D_V_D_ player and it turns the T_V_ on and onto the right channel as well , um",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay , that sounds like a a good strong idea . Um {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well when you're talking about gaming and stuff , do you think they should have some sort of stick on it , rather than buttons ?",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I I don't see why not , almost everybody is probably used to a console by now , and all of them incorporate small keypads on them , in fact even the mobile phones these days are beginning to use them as well , so it's probably an interface that most people are used to . Um",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_050_c003_d1",
+      "source_id": "QMS_PRD_TR_050",
+      "chunk_id": "QMS_PRD_TR_050_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote's design should be small, stylish, and slightly different, with an ergonomic shape that fits comfortably into the hand and a biomorphic form to conform to the hand's shape more efficiently.",
+      "topic": "remote design",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "The design should allow for easy navigation and be used as a joystick, and should be ergonomic and comfortable to hold."
+      ],
+      "conditions": [
+        "The design should also allow for a more unconventional or attractive shape."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and that could allow n easy navigation , used as a joystick as well .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The other key feature that uh that would be a good idea built into it is t is is to make something you know fairly sort of ergonomic , something that just fits fits as comfortably as possible into the hand .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Something sort of sort of sl slightly sort of biomorphic in form , uh which it would need to be to sort of conform to the shape of the hand more efficiently anyway .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Okay . That's definitely something that we should be able to do quite easily . I would I would have hoped so anyway .",
+          "speaker": "Project Manager",
+          "supports": "status"
+        }
+      ],
+      "extraction_confidence": 0.8
+    }
+  ],
+  "chunks_processed": 4,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

@@ -1,0 +1,34 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c018_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c018",
+      "schema_version": "1.0.0",
+      "decision": "Grad F will pick up Professor B's dry-cleaning",
+      "topic": "dry-cleaning",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad F offered to pick up Professor B's dry-cleaning"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Grad F",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'll pick up your dry - cleaning, too.",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Thanks . Thank you.",
+          "speaker": "Grad F",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

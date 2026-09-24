@@ -1,0 +1,100 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c017_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c017",
+      "schema_version": "1.0.0",
+      "decision": "The schedule for the next meeting was set",
+      "topic": "meeting schedule",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To discuss automatic transcription status and any real timely topics"
+      ],
+      "conditions": [
+        "The team has not done anything since last week"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So now we have the schedule. So next week we'll do automatic transcription status, plus anything that's real timely.",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "But we sort of failed.",
+          "speaker": "Grad F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_000_c017_d2",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c017",
+      "schema_version": "1.0.0",
+      "decision": "The team will work on automatic alignments of the background speech",
+      "topic": "automatic alignments",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To improve the accuracy of automatic alignments"
+      ],
+      "conditions": [
+        "The team has been experiencing problems with timed speech segments"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And then, um, the new data that Don will start to process",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "But, we haven't actually",
+          "speaker": "PhD H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_000_c017_d3",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c017",
+      "schema_version": "1.0.0",
+      "decision": "The team's abstract was accepted for an ISCA workshop in New Jersey",
+      "topic": "abstract acceptance",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The abstract was of poor quality but accepted quickly"
+      ],
+      "conditions": [
+        "The paper isn't due until August"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But, I mean, the good news is that that will have sort of the European experts in prosody",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "The abstracts were already due.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

@@ -1,0 +1,1201 @@
+{
+  "source_id": "QMS_ACA_TE_003",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TE_003_c000_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c000",
+      "schema_version": "1.0.0",
+      "decision": "The features to focus on were discussed, including prosody, discourse, verb choice, landmark-iness of buildings, context, and time of day.",
+      "topic": "features to focus on",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The discussion was about the features to focus on in the project."
+      ],
+      "conditions": [
+        "The context feature is not actually a separate feature but was put on the same line for space."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "the search for the middle layer",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "the prosody",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "the discourse",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "verb choice",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "the landmark-iness of uh buildings",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "the context",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "the time of day",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "We are open to suggestions.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c001_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c001",
+      "schema_version": "1.0.0",
+      "decision": "The definition of 'nice walls' was discussed and clarified as architecturally significant landmarks that are interesting to inspect at close range.",
+      "topic": "definition of 'nice walls'",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the meaning of 'nice walls' in the context of the domain."
+      ],
+      "conditions": [
+        "No decision was made about the final definition."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Nice walls which we can look up because I mean if you 're gonna get real close to a building in the Tango mode , right , there 's gotta be a reason for it . And it 's either because you're in route to something else or you wanna look at the walls .",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So 'nice' is a stand in for like architecturally it , uh significant",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But if it 's architecturally significant you might be able to see it from ... Like you might be able to 'Vista' it, right ? And be able to appreciate it.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But if it 's architecturally significant you might be able to see it from ... Like you might be able to 'Vista' it, right ? And be able to appreciate it.",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "OK . So 'nice walls' is a stand in for like architecturally it , uh significant",
+          "speaker": "Grad D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c002_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to simplify the belief net by using three verbs instead of more complex combinations.",
+      "topic": "simplification of belief net",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "more complex combinations",
+          "rejected": true,
+          "reason": "would make the probability significantly more complicated to enter"
+        }
+      ],
+      "rationale": [
+        "It would be simpler for the purposes of this."
+      ],
+      "conditions": [
+        "The team will need to work on the simplified belief net."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so we decided that for the purposes of this it 'd be simpler to just have three verbs.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But uh {vocalsound} {pause} that would 've made the probably significantly be more complicated to enter",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c003_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to keep all the extracted features pointing at the middle and then down instead of directly affecting the mode beyond the concept.",
+      "topic": "data analysis approach",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "By doing the layers like this, we kept things from directly affecting the mode beyond the concept, but you could see perhaps discussing the 'admission fee' going directly to the mode pointing at 'Enter' instead of just at 'tourist'."
+      ],
+      "conditions": [
+        "The team agreed to revisit the discussion to ensure they all understand the meaning of the extracted concepts."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But we just decided to keep all the things we extracted point at the middle and then down.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But we just decided to keep all the things we extracted to point at the middle and then down.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c003_d2",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team decided that the landmark is facing to the tourists because they're talking about landmarks as touristic landmarks, not as possible navigational landmarks.",
+      "topic": "landmark interpretation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The landmark is facing to the tourists because we're talking about landmarks as touristic landmarks, not as possible navigational landmarks."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The landmark is facing to the tourists.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "The landmark is facing to the tourists because we're talking about landmarks as touristic landmarks, not as possible navigational landmarks.",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c004_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c004",
+      "schema_version": "1.0.0",
+      "decision": "The context will include a switch between tourist or non-tourist.",
+      "topic": "context",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It seems like that would really help you for doing business versus tourist."
+      ],
+      "conditions": [
+        "The context being um, extracted from their world knowledge."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it seems like that would really help you for doing business versus tourist",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "but OK . so the the context being um , e I don't know if that question 's sort of in general , \" are you {disfmarker} \" I mean the {disfmarker} ar ar are do they allow business people to be doing non - business things at the moment ?",
+          "speaker": "Grad D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c004_d2",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c004",
+      "schema_version": "1.0.0",
+      "decision": "The middle layer is binary.",
+      "topic": "middle layer",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Anything with a question mark after it in that picture is a binary node."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Which things ?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . But all those things without question marks are also binary.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Which things ?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Nice walls ?",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . But all those things without question marks are also binary.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c004_d3",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c004",
+      "schema_version": "1.0.0",
+      "decision": "Nice walls is binary.",
+      "topic": "nice walls",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It is binary."
+      ],
+      "conditions": [
+        "It is binary but it doesn't have question mark because it's extracted."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It is binary.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "That 's true . Yeah . OK , I see your point.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c004_d4",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c004",
+      "schema_version": "1.0.0",
+      "decision": "Closed is binary.",
+      "topic": "closed",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Similarly, \" closed \" , I guess."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Similarly, \" closed \" , I guess.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c004_d5",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c004",
+      "schema_version": "1.0.0",
+      "decision": "Mode is one of three things.",
+      "topic": "mode",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "And \" mode \" is one of three things."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And \" mode \" is one of three things.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c005_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c005",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to observe nodes and set some of them to find the probability of other nodes in a demo.",
+      "topic": "demo",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To see if the system can do inference."
+      ],
+      "conditions": [
+        "The demo doesn't work very well."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We can do a little demo.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just set a few of them.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just say they discussed the admission fee",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I love nice walls, OK ? I'm a big fan.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "And it's night.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So let's see.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So that is the probability that they're Entering, Vista-ing or Tango-ing.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c005_d2",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c005",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to query the mode.",
+      "topic": "query",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To find the probability that they're Entering, Vista-ing or Tango-ing."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So let's see.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Go and right, query.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c006_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c006",
+      "schema_version": "1.0.0",
+      "decision": "The group decided to continue averaging over all three context possibilities.",
+      "topic": "context setting",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "They haven't observed the context yet."
+      ],
+      "conditions": [
+        "If the context were to be set to 'unknown', it would affect the results."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But yes , you can set it to un 'unknown' .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "And if we now do leave everything else as is the results should be the same ,",
+          "speaker": "Grad A",
+          "supports": "condition"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c007_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c007",
+      "schema_version": "1.0.0",
+      "decision": "A decision was made to add a node to the observatory to represent whether a landmark is enterable or not.",
+      "topic": "additional node for landmark enterability",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To distinguish between landmarks that are practically enterable and those that are not."
+      ],
+      "conditions": [
+        "The addition of this node will create a binary variable."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So basically it's addressing a variable that's \" enterable or not \". So like an \" enterable, question mark \".",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well, for example, if we include that, yeah?",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And then um, there's also the question whether it may be entered.",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "If you're running an errand you maybe more likely to be able to enter places that are usually not allowed to enter.",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It seems like it would for determining whether they wanna go into it or not.",
+          "speaker": "Grad D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c009_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c009",
+      "schema_version": "1.0.0",
+      "decision": "A decision was not made in this excerpt",
+      "topic": "software choice",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "Java",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "C",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "XML",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "LISP",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "Notepad",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "WordPad",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about features, cost, and interface of various software options, but no decision was reached."
+      ],
+      "conditions": [
+        "No clear consensus or decision was made."
+      ],
+      "dissent": [
+        "No clear dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Srini 's the one to ask I would say.",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "I didn't think it did learning .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "it 's free .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "it 's interface is not the greatest . So .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But uh , yeah . Maybe another thing that uh {disfmarker}",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But actually it had an interface .",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "There 's like an XML format for {pause} Bayes - nets .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It just basically looks like it just specifies a bunch of",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c010_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c010",
+      "schema_version": "1.0.0",
+      "decision": "They discussed the possibility of writing a script for entering probability distributions in Java.",
+      "topic": "script for entering probability distributions",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It might be worth it.",
+        "It allows you to enter things well."
+      ],
+      "conditions": [
+        "They discussed the possibility of manipulating the source files.",
+        "They discussed the possibility of using an XML file."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah we can maybe write an interface th for uh entering probability distributions easily , something like {disfmarker} like a little script . That might {vocalsound} be worth it .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't know if he actually {disfmarker}",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I saw directory called \" source \",",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But if th if there is an XML {pause} file that {disfmarker} or format that it can also read {disfmarker} I mean it just reads this , right ? When it starts .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well th you can either {disfmarker} you ca or you can read both .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c010_d2",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c010",
+      "schema_version": "1.0.0",
+      "decision": "They discussed the possibility of having a 'Future Work' slide in their presentation.",
+      "topic": "Future Work slide",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Every presentation should have a 'Future Work' slide.",
+        "They already talked about all this stuff."
+      ],
+      "conditions": [
+        "They discussed the possibility of learning probabilities.",
+        "They discussed the possibility of having a 'What I learned' slide."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But uh it 's basically {disfmarker} we already talked about all this stuff , so .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh that 's future future work .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "And of course if you have a presentation that doesn't {disfmarker} have something that doesn't work at all , then you have \" What I learned \", as a slide .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c011_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c011",
+      "schema_version": "1.0.0",
+      "decision": "A strategy for observing discourse phenomena was discussed",
+      "topic": "discourse strategy",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "A general strategy for observing discourse phenomena was proposed."
+      ],
+      "conditions": [
+        "The exact strategy is not fully defined."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think a sort of general strategy here",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And um let's make those four",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So maybe this could be sort of a separate region of the net",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And maybe there are two um So maybe this could be sort of a separate region of the net",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So things that point towards",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And so then we can say",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And this is just then just one",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So essentially a lot of those nodes can be expanded into little Bayes - nets of their own",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c012_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c012",
+      "schema_version": "1.0.0",
+      "decision": "A potential change in the discourse model was discussed, specifically the connection between the 'admission fee' node and the 'enter' node.",
+      "topic": "discourse model change",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "make an arrow directly",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "add a new node",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "connect it too hard",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The current separation between observed features and output is bugging Grad B."
+      ],
+      "conditions": [
+        "The cost of entering certain places in Germany was discussed as an example."
+      ],
+      "dissent": [
+        "No clear dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "One thing that's kind of been bugging me when I more I look at this is that the I guess , the fact that the there's a complete separation between the observed features and in the output.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Or we could like add more , uh , sort of middle nodes.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So it's like There are Those are the two options . Either like make an arrow directly or put a new node.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "The Spagos of Heidelberg.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c013_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c013",
+      "schema_version": "1.0.0",
+      "decision": "The discourse model was discussed as a component of SmartKom.",
+      "topic": "discourse model",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It was mentioned as a part of the system for parsing and remembering discourse."
+      ],
+      "conditions": [
+        "The discussion did not result in a decision to implement or modify the discourse model."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It works like this . The uh , um {disfmarker} I mean . The first thing we get is that {pause} already the intention is sort of tried to figure out the intention , right ? simply by parsing it .",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "so {vocalsound} whenever the uh , um person is not actually rejecting what happened before , so as in \" No I really don't want to see that movie . I 'd rather stay home and watch TV \" um {disfmarker} What movie was selected in what cinema in what town is {disfmarker} is going to be sort of added into the disc into the representations every di at each dialogue step , by the discourse model {disfmarker} discourse {pause} model ,",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "so it 's a {disfmarker} it 's a rather huge {vocalsound} {disfmarker} huge thing but um {disfmarker} {vocalsound} {comment} um {disfmarker} {pause} {vocalsound} we can {pause} sort of {disfmarker} It has a very clear interface . We can query it whether admission fees were discussed in the last turn and {disfmarker} and the turn before that or you know how {pause} deep we want to search",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c014_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c014",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "research methodology for plan recognition",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the depth of search, plan schemas, and knowledge representation, but no decision was made."
+      ],
+      "conditions": [
+        "Discussion about the need to figure out what knowledge representation would work for the plan recognition."
+      ],
+      "dissent": [
+        "No dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "How deep do we want to search, you know ?",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "we should find a limit that's reasonable and not go, you know, all the way back to Adam and Eve.",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't know how you know you'd have to figure out what knowledge representation would work for that.",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's in these plan schemas.",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It might be useful here too.",
+          "speaker": "Grad D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c015_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c015",
+      "schema_version": "1.0.0",
+      "decision": "Grad A suggests to proceed with segmenting off different regions and making up observable nodes for each region and middle layer.",
+      "topic": "research methodology",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad A thinks that the approach sketched out by the group nicely outlines different tasks and their conditions."
+      ],
+      "conditions": [
+        "Grad A suggests that they will talk more about segmenting off different regions throughout the week."
+      ],
+      "dissent": [],
+      "owner": "Grad A",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I suggest w to proceed with this in the sense that maybe throughout this week the three of us will talk some more about maybe segmenting off different regions, and we make up some toy a observable \" nodes \" is that what the technical term is?",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "What's the technical term?",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "For which?",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "What's the technical term?",
+          "speaker": "Grad A",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c016_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c016",
+      "schema_version": "1.0.0",
+      "decision": "Grad A will show SmartKom tables to the group at a later time",
+      "topic": "presentation of SmartKom tables",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad A wanted to show the SmartKom tables to the group but had technical issues"
+      ],
+      "conditions": [
+        "Grad A's computer had technical issues and needed to be rebooted without a network"
+      ],
+      "dissent": [],
+      "owner": "Grad A",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So the uh {disfmarker} That will be one {disfmarker} one thing we could do.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I actually uh , have {disfmarker} Um , also we can uh , start looking at the SmartKom tables and I will {disfmarker}",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um , no I {disfmarker} I actually made a mistake because it {disfmarker} it fell asleep and when Linux falls asleep on my machine it 's {disfmarker} it doesn't wake up ever , so I had to reboot",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c016_d2",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c016",
+      "schema_version": "1.0.0",
+      "decision": "Grad C will ask Srini about other Bayes-net packages at the meeting tomorrow",
+      "topic": "discussion of other Bayes-net packages",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad C wants to explore other Bayes-net packages"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Grad C",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Oh .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Maybe we can ask him about it.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c016_d3",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c016",
+      "schema_version": "1.0.0",
+      "decision": "It was mentioned that someone was going to give a job talk, but no specific name was given",
+      "topic": "job talk",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad C mentioned that someone was going to give a job talk, but no specific name was given"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe we can ask him about it.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c017_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c017",
+      "schema_version": "1.0.0",
+      "decision": "Liz volunteered to be the first subject for the data collection trial run.",
+      "topic": "data collection trial subject",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Liz volunteered to be the wizard for data collection and might be better than the team members."
+      ],
+      "conditions": [
+        "Liz also volunteered to transcribe a little bit and organize subjects if needed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "She's willing to do it, meaning be the wizard for the data collection, also maybe transcribe a little bit, if she has to, but also recruiting subjects, organizing them, and so forth. So that looks good.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Pardon me ?",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "If we do need her for the technical stuff, then of course one of you has to sort of uh jump in.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c017_d2",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c017",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to test the wizard rather than the subject.",
+      "topic": "testing focus",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Testing the wizard would give a more realistic setup."
+      ],
+      "conditions": [
+        "If needed, other people unfamiliar with the task can be used as subjects."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah . It's a sort of testing of the wizard rather than of the subject.",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm sure if we uh , need Liz for, whatever, the technical side of things ? I'm sure we can get other people around who don't know anything um , if we want another subject.",
+          "speaker": "Grad D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c017_d3",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c017",
+      "schema_version": "1.0.0",
+      "decision": "A recording device for the wizard was discussed.",
+      "topic": "recording device for wizard",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "A recording device is needed for the wizard."
+      ],
+      "conditions": [
+        "The team still needs a recording device for the wizard."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But um in terms of specifying the scenario, um uh uh uh we've gotten a little further",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_003_c018_d1",
+      "source_id": "QMS_ACA_TE_003",
+      "chunk_id": "QMS_ACA_TE_003_c018",
+      "schema_version": "1.0.0",
+      "decision": "A decision was made to collect data for a more general purpose, including navigational tasks and tasks where the intention to enter, take a picture, or see something is more or less explicit.",
+      "topic": "data collection",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To get a corpus that can be labeled.",
+        "To discover phenomena and differences between people who think they speak to a computer versus people who think they speak to a human being."
+      ],
+      "conditions": [
+        "Nothing has changed since starting to collect data.",
+        "Johno can't stop Tango-ing."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And secondly, now that of course we have sort of started to lick blood with this, and especially since um {disfmarker} {vocalsound} Johno can't stop Tango-ing, {vocalsound} we may actually include, you know, those {disfmarker} those intentions.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Whereas, you know, if we 'd just get data we 'd never know what they actually wanted, we 'd get no cues.",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 18,
+  "chunks_failed": [
+    "QMS_ACA_TE_003_c008"
+  ],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

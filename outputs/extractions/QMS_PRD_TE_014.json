@@ -1,0 +1,650 @@
+{
+  "source_id": "QMS_PRD_TE_014",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TE_014_c000_d1",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team decided not to support teletext in the remote control.",
+      "topic": "remote control features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The board feels that teletext is outdated and internet is replacing it."
+      ],
+      "conditions": [
+        "It's a board decision."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "we didn't speak about it, but we should not um support teletext in the remote, um because our board uh feels that uh teletext is out of date and internet is replacing teletext.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's a board decision.",
+          "speaker": "Project Manager",
+          "supports": "condition"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c001_d1",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c001",
+      "schema_version": "1.0.0",
+      "decision": "The easy-to-use remote control was chosen for user-friendliness.",
+      "topic": "remote control type",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "multi-function remote control",
+          "rejected": false,
+          "reason": "discussed but not chosen"
+        }
+      ],
+      "rationale": [
+        "For user-friendliness and trendiness in user design."
+      ],
+      "conditions": [
+        "The remote control should be able to send messages to a TV set."
+      ],
+      "dissent": [
+        "The Industrial Designer mentioned some changes in the design requirements."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Just for user design, I should choose for the easy to use remote control.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "The important thing here is...",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "There are some changes in the design requirements, so there are some changes in the method also.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c002_d1",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use infrared for communication between the remote and the TV set.",
+      "topic": "communication method",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Infrared allows the remote to communicate with almost every TV set."
+      ],
+      "conditions": [
+        "The use of energy-friendly components and a low-cost circuit board was discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think we should infra use infrared, because otherwise our device cannot uh communicate with uh almost every T_V_ set.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c002_d2",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed using energy-friendly components and a low-cost circuit board.",
+      "topic": "components and circuit board",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "For cost-effectiveness and energy efficiency."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Um for cost-effectiveness, we should really use a very low-cost uh circuit board, um because most of the production cost are in this uh part of the equipment.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c002_d3",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed using power-friendly LEDs.",
+      "topic": "LEDs",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "For elaborate fancy lighting techniques."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we can use them. So that's no problem.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c002_d4",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed limiting the use of lights to only the buttons that are used most.",
+      "topic": "lighting",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To save costs."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But I think it's the same as in the cell phone, just light in the device that shines on all the buttons,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c003_d1",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed adding a sound signal or a finding function to help users locate the most frequently used buttons on the remote.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The market indicated that the volume and zap buttons are the most frequently used.",
+        "The team wants to separate the product from others."
+      ],
+      "conditions": [
+        "The source of the sound signal is not yet determined."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we might want to build in a feature to uh support them. Some uh audio signal. Like uh home phones.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It uh it separates our product from others uh as well.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The perfect design for those only those buttons.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Usually {disfmarker} there {disfmarker} I think there are no technical difficulties.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "It should be uh uh {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "maybe maybe like clapping in your hands",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c004_d1",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c004",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the idea of using a central base station next to the TV as a solution for finding a lost remote control, but they were concerned about the cost.",
+      "topic": "solution for finding lost remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The remote should have a function to report itself, and a central point is important for users."
+      ],
+      "conditions": [
+        "The cost of the solution is a concern."
+      ],
+      "dissent": [
+        "The group was not convinced that a central base station would be the best solution."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so we should use something like that . You do not want another device , which can be uh everywhere in the house , which you have to find first before you can find your remote control .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But that will be very costly , I think .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Maybe Sebastian should have uh a detailed look later on and um come up with a solution ,",
+          "speaker": "Project Manager",
+          "supports": "status"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c005_d1",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to implement a simple remote control design with fewer functions to save costs, which can be used for a trendy design, nice lighting effects, and sound.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "complex remote control design with more functions",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "People do not use all the extra features very often.",
+        "Saving costs.",
+        "Nice design and user interface."
+      ],
+      "conditions": [
+        "Market response to a simple remote control is not explicitly discussed."
+      ],
+      "dissent": [
+        "Marketing suggests including other innovative functions might appeal to young people."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well , we we do have a wise board , so I'm not questioning that .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think we should go for the easier one .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "No .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "we should save costs uh by not implementing a lot of functions and uh the money that we can save from that we should use for uh having a nice design and uh thinking about the user interface",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Uh well if we um include other uh innovative functions {disfmarker} {vocalsound} uh then they uh might ,",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c006_d1",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c006",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a round button for easy use and a more attractive design.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "sticks for control",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "a blank",
+          "rejected": true,
+          "reason": "not user-friendly or attractive"
+        }
+      ],
+      "rationale": [
+        "It looks more fancy.",
+        "It will attract more public.",
+        "It's easy to use."
+      ],
+      "conditions": [
+        "The remote should also have other buttons for advanced functions.",
+        "A balance between advanced techniques and user-friendliness is needed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It's just an easy way of a round button what which can be pushed in four directions. Instead of a stick.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "A stick is vulnerable when it's falling down",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "A stick is not really a stick, but",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "However, keeping it simple is important for the costs and all all those kind of things. We need to find a balance between the advanced techniques and and the user-friendliness.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c007_d1",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c007",
+      "schema_version": "1.0.0",
+      "decision": "The functions for the remote control need to be decided.",
+      "topic": "remote control functions",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team needs to find a balance between advanced techniques and user-friendliness."
+      ],
+      "conditions": [
+        "The team does not have all the necessary information to discuss the advanced techniques."
+      ],
+      "dissent": [
+        "The Industrial Designer is not sure about the necessity of the ten digits."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We need to find a balance between the advanced techniques and and the user-friendliness.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't think we have something to do.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "We do have to decide this this meeting.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I do not want a full list, but I want the kind of functions, for example the most important are volume and programme selecting.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "The ten digits ? Yeah, I believe so.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm not so sure.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I wouldn't buy it personally. A remote control without the ten digits.",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c008_d1",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c008",
+      "schema_version": "1.0.0",
+      "decision": "A decision between ten digits or voice recognition needs to be made for the remote control",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "ten digits",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "voice recognition",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussed advantages and disadvantages of both options",
+        "Concerns about cost and usability for different age groups"
+      ],
+      "conditions": [
+        "Implementation challenges for speech recognition mentioned"
+      ],
+      "dissent": [
+        "No dissent stated"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So um when you add uh speech recognition to your remote control , uh it's very easy to change uh the channel . That's one thing .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But we do focus on younger people . We d it it's a board uh decision .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So we have to i to make um a decision between the ten digits or the voice recognition .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c009_d1",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to implement a seemingly easy design with the potential for more elaborate features.",
+      "topic": "design approach",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team believes that making the design more elaborate with speech techniques and voice recognition will make it more attractive to customers."
+      ],
+      "conditions": [
+        "There are concerns about costs and battery lifetime."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so uh basically we've decided to implement a seemingly uh easy design . So on the outside it looks easy , but uh we can make it easy on the inside or elaborate on the inside . So that's one {disfmarker} the {disfmarker} those are the choices we have to make . But I think there's a big advantage in making it more elaborate by uh implementing uh speech techniques , uh voice recognition , that {disfmarker} these kinds of things .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "The team believes that making the design more elaborate with speech techniques and voice recognition will make it more attractive to customers.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c010_d1",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c010",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to incorporate an integrated circuit (chip) for voice recognition.",
+      "topic": "voice recognition implementation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The circuit board will become cheaper.",
+        "It makes the interface more attractive.",
+        "It's very cheap to incorporate an integrated circuit."
+      ],
+      "conditions": [
+        "The costs need to be determined.",
+        "Sebastian's decisions about the voice recognition are a factor."
+      ],
+      "dissent": [
+        "There are concerns about costs and battery lifetime."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It can be costly. Maybe not.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "The fewer buttons you have, the cheaper the circuit board.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It shouldn't be a big issue.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I'm not sure how we'll f determine the costs.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I would like to see the user interface concept.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.7
+    },
+    {
+      "decision_id": "QMS_PRD_TE_014_c011_d1",
+      "source_id": "QMS_PRD_TE_014",
+      "chunk_id": "QMS_PRD_TE_014_c011",
+      "schema_version": "1.0.0",
+      "decision": "The decision about integrating voice recognition was deferred.",
+      "topic": "integration of voice recognition",
+      "status": "deferred",
+      "alternatives": [],
+      "rationale": [
+        "More updated information is needed."
+      ],
+      "conditions": [
+        "The Industrial Designer will have updated info."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think that's what we decided.",
+          "speaker": "Project Manager",
+          "supports": "status"
+        },
+        {
+          "quote": "No no no , we didn't",
+          "speaker": "Project Manager",
+          "supports": "status"
+        },
+        {
+          "quote": "Or",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "but it shouldn't be integrated",
+          "speaker": "Project Manager",
+          "supports": "status"
+        },
+        {
+          "quote": "Okay . Well um do we really have to decide now",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "We can decide the next meeting . Yep .",
+          "speaker": "Project Manager",
+          "supports": "status"
+        },
+        {
+          "quote": "Because I'll have some updated info on that uh {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 12,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

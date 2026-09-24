@@ -1,0 +1,605 @@
+{
+  "source_id": "QMS_PRD_TR_072",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_072_c000_d1",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to have a simple interface, a wheel to change channels, channel digit buttons protected by plastic cover, a button for volume, a button to switch on/off the TV, and a lightening feature for the remote control.",
+      "topic": "interface design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The user interface is usually done by push buttons and in this case, they are using a wheel control."
+      ],
+      "conditions": [
+        "The wheel sensor seems to be quite expensive."
+      ],
+      "dissent": [
+        "The Industrial Designer suggested combining something with the push button instead of using a wheel sensor."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , last time we decided to have a simple interface . We also decided to have a wheel to change channel . Channel digit uh buttons should be uh protected by plastic cover or something for the remote control to look very simple . We have also button for volume , and to switch on off the T_V_ . We have also the lightening feature for the remote control to be easy to find , and for fast development and low cost we have decided to have no L_C_D_ no voice features .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I_D_ you want ?",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And I think we if we could just talk about that if we really need a wheel sensor or if we can not {disfmarker} if if we could combine something with the push button .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Uh a wheel sensor is fifty time the price of a a a push button .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c000_d2",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of using a voice recognition chip.",
+      "topic": "voice recognition",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The manufacturing division has a voice recognition chip already developed."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Did you receive the email about the voice recognition ?",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "You received something {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Says {disfmarker} Yeah . It says that ri right now they just use it to uh to record uh answers to particular questions . But I guess it could be {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c001_d1",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c001",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about the remote control's light functionality",
+      "topic": "remote control light functionality",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the light's purpose, battery consumption, and simplicity, but no decision was made."
+      ],
+      "conditions": [
+        "Discussion about battery consumption and potential additional sensor needed"
+      ],
+      "dissent": [
+        "Industrial Designer suggests a continuous light and a different approach to turning the light on and off"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Says {disfmarker} Yeah . It says that ri right now they just use it to uh to record uh answers to particular questions . But I guess it could be {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't think that this is really expensive , but at the end this is plenty of unexpen eh very cheap devices but uh the bill starts to be {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But if you move it then you have to have some sensor to {disfmarker} when you move it to detect your movement .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But it can be uh battery consuming , no ? To have the light always on ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c002_d1",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control design will have a central part with a big volume control, big channel control, mute, and power buttons, and a wheel for navigation.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The design will be simpler by rejecting buttons not needed.",
+        "The wheel could be a good advantage over competitors."
+      ],
+      "conditions": [
+        "Market research will provide more information about the market."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it's only the central part.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "We could use the push down of the wheel for the record if we want.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Maybe the wheel will be a good advantage over our competitors.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So we could just basically use one just wheel and user could use just the wheel to do everything with the channels in that case.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "To have more expense on that's that aspect.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c003_d1",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a fruit or vegetable form.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The most important aspect for remote controls is to be fancy look and feel.",
+        "The second aspect is that the remote control should be technological innovative.",
+        "The third most important aspect is that the remote control should be easy to use."
+      ],
+      "conditions": [
+        "No specific conditions stated."
+      ],
+      "dissent": [
+        "No dissent stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , the most important aspect for remote controls is to be fancy look and feel and not current functional look and feel.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So , maybe if our remote control have to be a fruit form or vegetable form",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I support an apple.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "You can throw it to the television.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Maybe uh um a colour that remember some fruit uh , things like that.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c003_d2",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a wheel.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "I think it's innovative to use the wheel because I think no one else has."
+      ],
+      "conditions": [
+        "No specific conditions stated."
+      ],
+      "dissent": [
+        "No dissent stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think it's innovative to use the mm the wheel because I think no one else has.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c003_d3",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be ergonomic.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The third most important aspect is to to be easy to use."
+      ],
+      "conditions": [
+        "No specific conditions stated."
+      ],
+      "dissent": [
+        "No dissent stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , are things we are we have uh speak about before .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c004_d1",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use a banana-shaped case for the remote control.",
+      "topic": "remote control case shape",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "standard battery",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "a standard battery for the case",
+          "rejected": true,
+          "reason": "decided to use a banana-shaped case instead"
+        }
+      ],
+      "rationale": [
+        "The banana fits with the colour scheme of our company.",
+        "It's innovative.",
+        "Everyone knows what is a banana."
+      ],
+      "conditions": [
+        "The team has to find a battery for the remote control.",
+        "The team has to decide on the chip to use."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we will just use a a standard battery ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it's a good point .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think it's really uh really a good point .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Oh , yeah {vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Ah-ha . You can also take into account the fact that the banana fits with the colour scheme of our company .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But anyway . {vocalsound} I hope the students of management die ,",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "One second . So we have to take some decision on this aspect . So , uh so for {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c005_d1",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c005",
+      "schema_version": "1.0.0",
+      "decision": "The interface will have a banana shape with a button on the side and a wheel on the top.",
+      "topic": "interface design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed design options and agreed on banana shape, button on the side, and wheel on the top."
+      ],
+      "conditions": [
+        "No specific conditions mentioned."
+      ],
+      "dissent": [
+        "No dissent mentioned."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , for interface we said also that we have uh this banana shape with button on the s on the side . And a wheel on the top .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-hmm .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c005_d2",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c005",
+      "schema_version": "1.0.0",
+      "decision": "The interface will have a standard battery and a chip imprint.",
+      "topic": "power source and chip",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed power source and chip options and agreed on standard battery and chip imprint."
+      ],
+      "conditions": [
+        "No specific conditions mentioned."
+      ],
+      "dissent": [
+        "No dissent mentioned."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And uh the chip we chip imprint we know exactly which one we are going to use . So we agree to put the wheel",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay odd shape with spongy cover . And standard battery okay , a chip imprint , there's no specific problem . So we agree to put the wheel",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c005_d3",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c005",
+      "schema_version": "1.0.0",
+      "decision": "The interface will have a spongy case.",
+      "topic": "case material",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed case material options and agreed on a spongy case."
+      ],
+      "conditions": [
+        "No specific conditions mentioned."
+      ],
+      "dissent": [
+        "No dissent mentioned."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think it's the box that should be spongy , banana's shape .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . Uh I mean for me if we use a a spongy banana case , doesn't matter .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c005_d4",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c005",
+      "schema_version": "1.0.0",
+      "decision": "The buttons and wheel on the interface will be spongy.",
+      "topic": "button and wheel material",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed button and wheel material options and agreed on spongy."
+      ],
+      "conditions": [
+        "No specific conditions mentioned."
+      ],
+      "dissent": [
+        "No dissent mentioned."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The buttons and the wheel have to be",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Spongy also .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c005_d5",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c005",
+      "schema_version": "1.0.0",
+      "decision": "The interface will be symmetrical for both right and left-handed users.",
+      "topic": "interface symmetry",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed symmetry options and agreed on a symmetrical design for both right and left-handed users."
+      ],
+      "conditions": [
+        "No specific conditions mentioned."
+      ],
+      "dissent": [
+        "No dissent mentioned."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it have to it has to be symmetrical .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh {disfmarker} {vocalsound} Yeah but okay . Sa let's say that th o {vocalsound} It has to be {disfmarker} basically you can only take two sides , one on ths this side where is the thumb and the other side where there is uh yeah also the thumb .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c005_d6",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c005",
+      "schema_version": "1.0.0",
+      "decision": "The wheel will be on the top and buttons will be on the side of the interface.",
+      "topic": "interface layout",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed layout options and agreed on the wheel being on the top and buttons on the side."
+      ],
+      "conditions": [
+        "No specific conditions mentioned."
+      ],
+      "dissent": [
+        "No dissent mentioned."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Wheel on the top . Button , where do we want some buttons ?",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah I think it's okay for both right and left . Mm .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_072_c006_d1",
+      "source_id": "QMS_PRD_TR_072",
+      "chunk_id": "QMS_PRD_TR_072_c006",
+      "schema_version": "1.0.0",
+      "decision": "The Industrial Designer and the User Interface Designer will work together to prepare the prototype.",
+      "topic": "prototype preparation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It would be better."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Industrial Designer, User Interface Designer",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So to prepare the prototype I would suggest that the Industrial Designer and the User Interface Designer uh work together.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 7,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

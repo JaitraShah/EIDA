@@ -1,0 +1,756 @@
+{
+  "source_id": "QMS_PRD_TR_025",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_025_c000_d1",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c000",
+      "schema_version": "1.0.0",
+      "decision": "The priority for the remote control design is fancy look and feel, technological innovation, and ease of use, in that order.",
+      "topic": "remote control design priorities",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "From market research, fancy is the highest priority, followed by technological innovation, and ease of use."
+      ],
+      "conditions": [
+        "The design should reflect the look and feel of the Real Reaction company."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So basically I just want to present to you some recent results we've had from um looking at uh um some remote control market research and some fashion trends around the world . Um the fashion trends we got from talking to our our contacts in the fashion industry based in Paris and Milan .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "From our f fashion people in Paris and Milan , um we've discovered that this year um fruit the fruit and vegetable motif will be the most important thing in in clothes , shoes and furniture .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "So um in conclusion , we need a our remote control needs to be something that's really fancy , um has lots of technolog tech technology in it . {vocalsound} Um somehow would be good to have it related to fruit and vegetables with a spongy feel .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c001_d1",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be designed to be easy to use.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The feature easy to use is more important than being fancy."
+      ],
+      "conditions": [
+        "The remote control should have round edges and a shape that can be easily taken in hand."
+      ],
+      "dissent": [
+        "The Industrial Designer does not like the spongy design."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , the more frequent buttons should be larger , they should be placed in a good position uh uh inside the remote control .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it's better to put uh more frequent uh uh uh ke uh buttons which are used more in the middle of the remote control , and they should be bigger in size .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't like it as {gap}",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c002_d1",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use a seven-inch TFT screen.",
+      "topic": "screen size",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team found that the seven-inch TFT screen is good news for them, as they wanted to include a display."
+      ],
+      "conditions": [
+        "The actual size of the screen in reality needs to be checked."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "This is the stuff that I can use to",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "seven seven inch T_F_T_ screen",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So I I probably draw it down raw scheme .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "It depends where you put your screen , because the screen is uh seven inch",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c002_d2",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use an infra-red unit for communication.",
+      "topic": "communication method",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team decided to use the infra-red unit because their company has also developed the chip for communication by the infra-red."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The good news is that we can uh we decided to use the infra-red unit because our company has also developed the chip for communication by the infra-red",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c003_d1",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to cut the TFT screen to make four smaller screens.",
+      "topic": "screen size",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "original TFT screen",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "To make the size of the graphic card one fourth.",
+        "Because it will fit in the hand better."
+      ],
+      "conditions": [
+        "The team will discuss the decision further.",
+        "The energy source is still undecided."
+      ],
+      "dissent": [
+        "The Industrial Designer initially thought it should be seven centimetres, but it's seven inches."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So let's cut the TFT.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So for the same price we have four screens now.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "We have to take decision today, so I think we have to do some work to finalise our idea and take decisions.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c004_d1",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c004",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a size of approximately 5x10 centimeters and will have a shape that is easier to hold, with a slightly thinner middle.",
+      "topic": "size and shape of the remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The remote control should be easy to take in hand.",
+        "The general shape should be like some joysticks."
+      ],
+      "conditions": [
+        "The size and shape should be feasible."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think their being uh large or small is not important . The only important thing is to be able to take it in uh inside hand easily . So let's say an average size , okay ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "and it should not be very heavy also . And I prefer to is it shouldn't have a uniform shape , so in the middle it should be a little bit thinner , maybe maybe . So we c it's like like some joysticks .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "seven centimetre by seven centimetre is a little bit large . So uh seven {disfmarker} not seven but let's say five by ten it's I think it's {disfmarker} that's my opinion . It's easier .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "How could we do it ? We could put the board next to , well , under the L_C_D_ and for example make the L_C_D_ be totally unrelated to the thing that you hold in your hand .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c005_d1",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c005",
+      "schema_version": "1.0.0",
+      "decision": "A smaller L_C_D_ will be used.",
+      "topic": "L_C_D_ size",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "a larger L_C_D_",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "It's feasible and fits within the time limit."
+      ],
+      "conditions": [
+        "The time limit is one month."
+      ],
+      "dissent": [
+        "There was no clear dissent.",
+        "The Industrial Designer suggested a bigger banana but it was not rejected."
+      ],
+      "owner": "Industrial Designer",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay , so five to ten , I I think it's it's feasible .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So let's go for a small L_C_D_ .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'll make it .",
+          "speaker": "Industrial Designer",
+          "supports": "owner"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c005_d2",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c005",
+      "schema_version": "1.0.0",
+      "decision": "A smaller screen will be used instead of a touch screen.",
+      "topic": "screen type",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "a touch screen",
+          "rejected": null,
+          "reason": "not decided to use a touch screen but decided on a smaller screen instead"
+        }
+      ],
+      "rationale": [
+        "It's a better choice given the time limit."
+      ],
+      "conditions": [
+        "The time limit is one month."
+      ],
+      "dissent": [
+        "There was no clear dissent."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But for now if we don't want to use such kind of screens I I think we using a a smaller screen is better ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So let's go for a small L_C_D_ .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c005_d3",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c005",
+      "schema_version": "1.0.0",
+      "decision": "The L_C_D_ will be designed to be easy to use and fit in a hand.",
+      "topic": "L_C_D_ design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "an L_C_D_ that is not easy to use or does not fit in a hand",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "It should be easy to use and fit in a hand."
+      ],
+      "conditions": [
+        "The L_C_D_ should be easy to use and fit in a hand."
+      ],
+      "dissent": [
+        "There was no clear dissent."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Something like touching the screen . Something like tactile .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c005_d4",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c005",
+      "schema_version": "1.0.0",
+      "decision": "The L_C_D_ will be designed to resemble a fruit or vegetable.",
+      "topic": "L_C_D_ design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "an L_C_D_ that does not resemble a fruit or vegetable",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The color of the company is more yellow and it should be easy to take in a hand."
+      ],
+      "conditions": [
+        "The L_C_D_ should resemble a fruit or vegetable, be yellow, and easy to take in a hand."
+      ],
+      "dissent": [
+        "There was no clear dissent."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "My first idea is because our colour is more yellow , and the it should be easy to take in a hand , I thought about banana , or something like that , which is fruits , and",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c006_d1",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed to use a banana-shaped design for the screen.",
+      "topic": "screen design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team thinks it would be a unique and appreciated design."
+      ],
+      "conditions": [
+        "The feasibility of creating a spongy layer and the technical challenges were discussed but not resolved."
+      ],
+      "dissent": [
+        "The User Interface expressed some doubts about the technical feasibility."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we are agree with the banana thing ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "But {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Like like peeling of the banana you s {vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "It would be cool, yeah.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Is it is it possible to do that ? It would be a great idea, but is it possible technically ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh {vocalsound} {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c006_d2",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use infrared for the remote.",
+      "topic": "remote technology",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Everyone agreed in the meeting."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Project Manager: Everybody's agreed.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c006_d3",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed using hidden buttons on the side of the user interface.",
+      "topic": "user interface design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The idea was brought up in the meeting."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Project Manager: In the last meeting we talked about uh hidden buttons.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c007_d1",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c007",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of making the device's cover soft, using Velcro or magnetic materials, and incorporating a speech recognition system.",
+      "topic": "design features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It would be great for users and very good for marketing.",
+        "A softer cover might be more appealing."
+      ],
+      "conditions": [
+        "The team is unsure about the technical feasibility of certain design elements."
+      ],
+      "dissent": [
+        "The Industrial Designer expressed concerns about the practicality of making the device soft."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I think if it's so then it's cool ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think for sure. Definitely.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "We could use Velcro.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or uh maybe a magnetic",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It would be great for users I think, and very good for marketing.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I cannot imagine it, so far, but it will be terrible.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "We could have a solar cell and this removable cover and a banana.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "So we need that the that the peeling uh I dunno but we should we should take care of these two two things.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yes, I think. I think so.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So we have the design, the good shape, new and so on, and we have also the technology thing will be.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c007_d2",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c007",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the potential inclusion of a speech recognition system.",
+      "topic": "speech recognition system",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "One of our priorities is technology.",
+        "It seems feasible and would be something very great."
+      ],
+      "conditions": [
+        "The team is unsure about the technical feasibility of certain design elements."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we add also the speech recognition device.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it's important.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It seems feasible, and it would be something very great.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "One of our priorities is tech technology.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c008_d1",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c008",
+      "schema_version": "1.0.0",
+      "decision": "The speech recognition device will be added.",
+      "topic": "addition of speech recognition device",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we add also the speech recognition device.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c008_d2",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c008",
+      "schema_version": "1.0.0",
+      "decision": "The Industrial Manager will work on the look and feel design.",
+      "topic": "look and feel design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [],
+      "owner": "Industrial Manager",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The Industrial Manager will work on the look and feel design.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c008_d3",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c008",
+      "schema_version": "1.0.0",
+      "decision": "The User Interface Manager will work on the user interface device.",
+      "topic": "user interface device",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [],
+      "owner": "User Interface Manager",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The User Interface uh uh Mana uh Manager will work on the user interface device.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c008_d4",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c008",
+      "schema_version": "1.0.0",
+      "decision": "The Marketing Expert will do the first project evaluation.",
+      "topic": "first project evaluation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [],
+      "owner": "Marketing Expert",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The Marketing Expert will do the first project evaluation.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_025_c008_d5",
+      "source_id": "QMS_PRD_TR_025",
+      "chunk_id": "QMS_PRD_TR_025_c008",
+      "schema_version": "1.0.0",
+      "decision": "Hamed and Peter will work together on a first prototype.",
+      "topic": "first prototype",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [],
+      "owner": "['Hamed', 'Peter']",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And uh , yeah , I uh I think you should work together , s you uh Hamed and Peter , to work uh in a in a first prototype , and uh more about the shape and so on and how you can manage to put everything together.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 9,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

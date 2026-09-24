@@ -1,0 +1,1630 @@
+{
+  "source_id": "QMS_ACA_TE_008",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TE_008_c000_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c000",
+      "schema_version": "1.0.0",
+      "decision": "The filter bank in the frequency domain starts at 64 Hz and uses triangular weighting.",
+      "topic": "filter bank parameters",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed experimentation results."
+      ],
+      "conditions": [
+        "Discussed potential noise issues."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "This is the filter bank in the frequency domain that starts at sixty - four.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's a weight on the ball spectrum. Triangular weighting.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c001_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c001",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that noise needs to be taken into account in the study.",
+      "topic": "noise consideration",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The noise from the video projector and air conditioning was identified as major components."
+      ],
+      "conditions": [
+        "The prelim study by someone is expected to be done in about a week."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I mean , the main thing is that we need to take account of noise.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , um , I think when he gets done with his prelim study I think one of the next things we'd want to do is to take this noise processing stuff and synthesize some speech from it.",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But , um , it , uh I guess , I maybe I said this last week too but it really became apparent to us that we need to take account of noise.",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c002_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the Mississippi State recognizer could be used for the project.",
+      "topic": "project choice",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "PhD A started working on the Mississippi State recognizer.",
+        "PhD A got in touch with Joe and was added to the mailing list."
+      ],
+      "conditions": [
+        "No decision was made about adjustments for different feature sets."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I started working on the uh Mississippi State recognizer.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And he gave me all of the pointers and everything that I needed.",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c003_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to discuss the issue with Joe privately.",
+      "topic": "discussion method",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor B suggested a private dialogue with Joe about the issue."
+      ],
+      "conditions": [
+        "The issue is about modifying features to account for the fact that they can't modify certain parameters."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But it's still worth, I think, just chatting with Joe about the issue.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But, um, it's probably best to start talking with him just to",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c003_d2",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to use the Solaris version of the software.",
+      "topic": "software version",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "PhD A confirmed that the software compiled fine under Solaris."
+      ],
+      "conditions": [
+        "The software may not be stable for Linux."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So this is now compiled under Solaris?",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "That's good.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c004_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c004",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "graphical models tool kit for speech recognition",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "Professor B mentions a tool kit for doing arbitrary graphical models for speech recognition, but no decision or proposal is made"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So {disfmarker} And Jeff , uh {disfmarker} the two Jeffs were",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , so he did {disfmarker} he did his PHD on dynamic Bayes - nets , uh , for {disfmarker} for speech recognition . He had some continuity built into the model , presumably to handle some , um , inertia in the {disfmarker} in the production system , and , um {disfmarker}",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It should be OK . So the previous system It 's based on the system that has a fifty - three point sixty - six percent improvement . It 's the same system . The only thing that changed is the n a p eh {disfmarker} a es the estimation of the silence probabilities .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c005_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c005",
+      "schema_version": "1.0.0",
+      "decision": "The features used by the network are delta, double-delta, and LDA-filtered features.",
+      "topic": "features used by the network",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed during the conversation."
+      ],
+      "conditions": [
+        "Some parts of the process are in parallel."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So this is the features that are used by our network and then afterwards, you have to compute the delta on the , uh , main feature stream,",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "which is um , delta and double - deltas, which is fifty milliseconds.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "The VAD use , uh , LDA filtered features also.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c005_d2",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c005",
+      "schema_version": "1.0.0",
+      "decision": "The delta can be placed before online normalization.",
+      "topic": "placement of delta",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Suggested by PhD A."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "What if you used a smaller window for the delta?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c005_d3",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c005",
+      "schema_version": "1.0.0",
+      "decision": "The LDA is part of the VAD.",
+      "topic": "LDA and VAD relationship",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed during the conversation."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The VAD use , uh , LDA filtered features also.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c006_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c006",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made about the delta window size.",
+      "topic": "delta window size",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "They are still arguing about the baseline required.",
+        "The main thing is that since they got burned last time, they are staying conscious of it."
+      ],
+      "conditions": [
+        "The hundred milliseconds for smoothing is an arbitrary amount."
+      ],
+      "dissent": [
+        "PhD A questions if they know that what they have is too much since they are still deciding."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "What if you used a smaller window for the delta ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "because {disfmarker}",
+          "speaker": "PhD C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Could that help a little bit ? I mean , I guess there 's a lot of things you could do to {disfmarker}",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "PhD C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Yeah . So if you {disfmarker} if you put the delta before the , uh , ana on - line {disfmarker} If {disfmarker} Yeah {disfmarker}",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Uh , we don't , but it 's just {disfmarker} I mean , the main thing is that since that we got burned last time , and {disfmarker} you know , by not worrying about it very much , we 're just staying conscious of it .",
+          "speaker": "Professor B",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Ah , OK .",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c007_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c007",
+      "schema_version": "1.0.0",
+      "decision": "Right.",
+      "topic": null,
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": "Professor B",
+      "evidence": [
+        {
+          "quote": "Right.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c007_d2",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c007",
+      "schema_version": "1.0.0",
+      "decision": "Uh , static features.",
+      "topic": null,
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": "PhD C",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh , static features.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c007_d3",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c007",
+      "schema_version": "1.0.0",
+      "decision": "So , what you have now is forty for the {disfmarker} the noise , twenty for the delta , and ten for the LDA.",
+      "topic": null,
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Professor B",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , what you have now is forty for the {disfmarker} the noise , twenty for the delta , and ten for the LDA.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c007_d4",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c007",
+      "schema_version": "1.0.0",
+      "decision": "Mm - hmm.",
+      "topic": null,
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": "PhD C",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Mm - hmm.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c007_d5",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c007",
+      "schema_version": "1.0.0",
+      "decision": "And you could experiment with cutting various pieces of these back a bit",
+      "topic": null,
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "The team is still working on improving the system."
+      ],
+      "dissent": [],
+      "owner": "Professor B",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And you could experiment with cutting various pieces of these back a bit",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c007_d6",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c007",
+      "schema_version": "1.0.0",
+      "decision": "Yeah, that's what it seems like to me.",
+      "topic": null,
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": "PhD A",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah, that's what it seems like to me.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c007_d7",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c007",
+      "schema_version": "1.0.0",
+      "decision": "Where {disfmarker} where is this {disfmarker} where is this fifty - seven point O two in {disfmarker} in comparison to the last evaluation ?",
+      "topic": null,
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": "PhD A",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Where {disfmarker} where is this {disfmarker} where is this fifty - seven point O two in {disfmarker} in comparison to the last evaluation ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c007_d8",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c007",
+      "schema_version": "1.0.0",
+      "decision": "Well , it 's {disfmarker} I think it 's better than anything, uh , anybody got.",
+      "topic": null,
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Professor B",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well , it 's {disfmarker} I think it 's better than anything, uh , anybody got.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c007_d9",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c007",
+      "schema_version": "1.0.0",
+      "decision": "Oh , is that right ?",
+      "topic": null,
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": "PhD A",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Oh , is that right ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c007_d10",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c007",
+      "schema_version": "1.0.0",
+      "decision": "The best was fifty - four point five.",
+      "topic": null,
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": "PhD C",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The best was fifty - four point five.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c007_d11",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c007",
+      "schema_version": "1.0.0",
+      "decision": "Point s",
+      "topic": null,
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": "PhD D",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Point s",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c007_d12",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c007",
+      "schema_version": "1.0.0",
+      "decision": "And our system was forty - nine , but with the neural network.",
+      "topic": null,
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": "PhD C",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And our system was forty - nine , but with the neural network.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c007_d13",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c007",
+      "schema_version": "1.0.0",
+      "decision": "Wow . So this is almost ten points higher.",
+      "topic": null,
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": "PhD A",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Wow . So this is almost ten points higher.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c008_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c008",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about reducing the number of features in the neural network model.",
+      "topic": "reducing number of features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about reducing the number of features, but no decision was explicitly made."
+      ],
+      "conditions": [
+        "The limit is now sixty features."
+      ],
+      "dissent": [
+        "PhD A expressed confusion about why adding features might give worse results."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But we have to go down, because the limit is now sixty features.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So, it seems funny that I don't know, maybe I don't quite understand everything, but that adding features...",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c009_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c009",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "experimentation with training sets",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the potential impact of using different training sets."
+      ],
+      "conditions": [
+        "The current training set is TIMIT with noises added."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But we might have to experiment with, uh, better training sets.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "The other thing is, I mean, before you found that was the best configuration, but you might have to retest those things now that we have different rest of it is different.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well, we might have to experiment with, uh, better training sets.",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c009_d2",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c009",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "using KLT on the full set of combined features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the potential benefits of using KLT on the full set of combined features."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "What if you did the KLT on the full set of combined features? Instead of just on the",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I guess. Um. The reason I did it this way is that in February, we tested different things like that, so, having two KLT, having just a KLT for a network, or having a global KLT.",
+          "speaker": "PhD C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c010_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c010",
+      "schema_version": "1.0.0",
+      "decision": "Discussion about adding Macrophone data to the training set of the neural net",
+      "topic": "training set",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Improving the training set might lead to better recognition."
+      ],
+      "conditions": [
+        "The number of Gaussians cannot be increased."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe with the noise removal , uh , these things are now more correlated . So you have two sets of things that are kind of uncorrelated , uh , within themselves , but they 're pretty correlated with one another .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Maybe . You know .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "What are the S N Rs in the training set , TIMIT ?",
+          "speaker": "PhD D",
+          "supports": "condition"
+        },
+        {
+          "quote": "It 's , uh , five hundred hidden units . And",
+          "speaker": "PhD C",
+          "supports": "condition"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c010_d2",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c010",
+      "schema_version": "1.0.0",
+      "decision": "Discussion about the limit of sixty features",
+      "topic": "limit of features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Some people wanted to use hundreds of parameters and that bothered some other people."
+      ],
+      "conditions": [
+        "The limit was chosen arbitrarily."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The issue was that , um , this is supposed to be a standard that 's then gonna be fed to somebody 's recognizer somewhere which might be , you know , it {disfmarker} it might be a concern how many parameters are use {disfmarker} u used and so forth . And so , uh , they felt they wanted to set a limit . So they chose sixty .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Some people wanted to use hundreds of parameters and {disfmarker} and that bothered some other people .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c010_d3",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c010",
+      "schema_version": "1.0.0",
+      "decision": "Discussion about using a single KLT to de-correlate the features",
+      "topic": "KLT usage",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Maybe it would be a better idea now than it was before to , uh , have , uh , one KLT over everything , to de - correlate it."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe . You know .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.7
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c011_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c011",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed whether the performance issue in the high mismatch has something to do with the cleaning up that is done on the TIMIT after adding noise.",
+      "topic": "performance issue",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the possible relation between the performance issue and the cleaning up process."
+      ],
+      "conditions": [
+        "The discussion is ongoing."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "much more than that , it wasn't much better . Hmm .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So is it {disfmarker} is it though the performance , big relation in the high ma high mismatch has something to do with the , uh , cleaning up that you {disfmarker}",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean , earlier you never had any compensation , you just trained it straight away .",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But after cleaning up you have now a different set of S N Rs , right ?",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So the training {disfmarker} the {disfmarker} the neural net is being trained with noise compensated stuff .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But , uh , you 're saying {disfmarker} Yeah , the noisier ones are still going to be , even after our noise compensation , are still gonna be pretty noisy .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , if the initial range of SNR is different , we {disfmarker} the problem was already there before . And {disfmarker}",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , I mean , this may be {disfmarker} Heaven forbid , this noise compensation process may be imperfect , but . Uh , so maybe it 's treating some things differently .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , I {disfmarker} I don't know . I {disfmarker} I just {disfmarker} that could be seen from the TI - digits , uh , testing condition because , um , the noises are from the TI - digits , right ? Noise {disfmarker}",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c012_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c012",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to improve the training set for better results.",
+      "topic": "improving training set",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The neural network doubles the number of deletions."
+      ],
+      "conditions": [
+        "The discussion did not specify the exact method of improving the training set."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think just having a nice variation in acoustic conditions was just a good thing.",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The most noisy cases are the distant microphone for testing.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But without the neural network it's better.",
+          "speaker": "PhD C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c012_d2",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c012",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the TIMIT noises are different from the stationary driving kind of noises.",
+      "topic": "TIMIT noises",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The TIMIT noises are not so much the stationary driving kind of noises."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But, yeah, actually the TIMIT noises are sort of a range of noises and they're not so much the stationary driving kind of noises, right?",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c013_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c013",
+      "schema_version": "1.0.0",
+      "decision": "It was decided that the neural net might be hurting the results, and the focus should be on improving the neural net.",
+      "topic": "improving the neural net",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The neural net was helping when the features were bad, but was worse than just the features when LDA on-line normalization and other things were added."
+      ],
+      "conditions": [
+        "The overall effect of the neural net needs to be evaluated."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So what 's the overall effect is.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it 's it was one or two percent . That 's not that bad, but it was like two percent relative worse on SpeechDat - Car. I have to check that.",
+          "speaker": "PhD C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "If it really is that the net is hurting you at the moment, then I think the issue is to focus on improving the net.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "You 've been wondering about something.",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c014_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to run another kind of LDA on the features before they go into the HMM, but no decision was made.",
+      "topic": "machine learning approach",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussed the potential benefits of using another kind of LDA before feeding the features into the HMM."
+      ],
+      "conditions": [
+        "No decision was made."
+      ],
+      "dissent": [
+        "No dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I mean , what if you put ran the other kind of LDA , uh , on your features right before they go into the HMM ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "But I mean , w but the other features that you have , um , th the non - tandem ones ,",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The a the argument i is kind of i in {disfmarker} and it 's not like we really know , but the argument anyway is that , um , uh , we always have the prob I mean , discriminative things are good . LDA , neural nets , they 're good .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c015_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c015",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to try using LDA on the non-tandem features for the Hub-five system.",
+      "topic": "experiment design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To show a clear path and compare the results with the neural net.",
+        "To follow the idea that the neural net should be better but LDA should be tried as well."
+      ],
+      "conditions": [
+        "This will be done after PhD A finishes the other thing."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Did you do that",
+          "speaker": "Professor B",
+          "supports": "dissent"
+        },
+        {
+          "quote": "That's what we're gonna do next as soon as I finish this other thing.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well, I think that's a good idea.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "We just want to show.",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I mean, it everybody believes it,",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c016_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c016",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "VAD (Voice Activity Detection) approach",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different VAD approaches, but no clear decision or preference expressed."
+      ],
+      "conditions": [
+        "Need for a consistent threshold that works across different databases."
+      ],
+      "dissent": [
+        "No clear dissent or objection voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "but",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "but {disfmarker} but {disfmarker} but , uh ,",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , what I mean is it 's {disfmarker} it 's like in the Hub - five evaluations , you know , and you read the system descriptions and everybody 's got , {vocalsound} you know , LDA on their features .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And now they all have that . I see .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "And so .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "It 's the transformation they 're estimating on {disfmarker} Well , they are trained on the same data as the final HMM are .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , so it 's different . Yeah , exactly . Cuz they don't have these , you know , mismatches that {disfmarker} that you guys have .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So that 's why I was wondering if maybe it 's not even a good idea .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't know . I {disfmarker} I don't know enough about it ,",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "but {disfmarker} Um .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean , part of why {disfmarker} I {disfmarker} I think part of why you were getting into the KLT {disfmarker} Y you were describing to me at one point that you wanted to see if , uh , you know , getting good orthogonal features was {disfmarker} and combining the {disfmarker} the different temporal ranges {disfmarker} was the key thing that was happening or whether it was this discriminant thing , right ? So you were just trying {disfmarker} I think you r I mean , this is {disfmarker} it doesn't have the LDA aspect but th as far as the orthogonalizing transformation , you were trying that at one point , right ?",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think you were .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm . Yeah .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Does something . It doesn't work as well . Yeah . Yeah .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , yeah , I 've been exploring a parallel VAD without neural network with , like , less latency using SNR and energy , um , after the cleaning up . So what I 'd been trying was , um , uh {disfmarker} After the b after the noise compensation , n I was trying t to f find a f feature based on the ratio of the energies , that is , cl after clean and before clean . So that if {disfmarker} if they are , like , pretty c close to one , which means it 's speech . And if it is n if it is close to zero , which is {disfmarker} So it 's like a scale @ @ probability value . So I was trying , uh , with full band and multiple bands , m ps uh {disfmarker} separating them to different frequency bands and deriving separate decisions on each bands , and trying to combine them . Uh , the advantage being like it doesn't have the latency of the neural net if it {disfmarker} if it can",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "just like {disfmarker} Which means that it 's {disfmarker} it 's doing a slightly better job than the previous VAD ,",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "uh , at a l lower delay .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um , so , um {disfmarker}",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "i d I 'm sorry ,",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "so {disfmarker} u",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "so {disfmarker} u",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It still has the median filter .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So it still has most of the delay ,",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It still has the median filter .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So {disfmarker}",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . So the {disfmarker} the {disfmarker} di the biggest {disfmarker} The problem f for me was to find a consistent threshold that works {pause} well across the different databases , because I t I try to make it work on tr SpeechDat - Car",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c017_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c017",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to put the 'before and after clean' feature into the neural net.",
+      "topic": "feature integration",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To potentially improve the VAD."
+      ],
+      "conditions": [
+        "The team needs to figure out the neural nets."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we've been thinking about putting it into the neural net also.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "What about using it in the neural net?",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because they did that itself",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c017_d2",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c017",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to add additional information, like the VAD flag, to the input of the neural net.",
+      "topic": "neural net input",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To potentially provide the neural net with additional discriminating information."
+      ],
+      "conditions": [
+        "The team needs to figure out the neural nets."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Um instead of just having c uh , those cleaned up t cepstrum, sh should we feed some additional information, like",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "The VAD what?",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "The VAD flag. I mean, should we f feed the VAD flag, also, at the input so that it has some additional discriminating information at the input?",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c019_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c019",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to investigate if the high mismatch case in the output of the network causes more deletions due to a high silence probability.",
+      "topic": "investigation of network output",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The output of the network on the high mismatch case has more deletions."
+      ],
+      "conditions": [
+        "It would be interesting to see if that was the problem."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But if you look at the , um , highly mism high mismat the output of the net on the high mismatch case and just look at , you know , the distribution versus the other ones , do you see more peaks or something ?",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It may not be that. It has a high rate energy the VAD has a high rate energy",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c019_d2",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c019",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to take the feature that is fed into the VAD and feed it into the other network as well.",
+      "topic": "feeding feature into other network",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Maybe it would just learn it better."
+      ],
+      "conditions": [
+        "But that's an interesting thing to try to see, if what's going on is that in the highly mismatched condition, it's causing deletions by having this silence probability up at some point where the VAD is saying it's actually speech."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But that's an interesting thing to try to see, if what's going on is that in the highly mismatched condition, it's causing deletions by having this silence probability up at some point where the VAD is saying it's actually speech.",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And then maybe it would just learn it better.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c020_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c020",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "research direction for tandem net",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "targets",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "phonemes",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "generalized diphones",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "context dependent units",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "KLT reduction",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "speech noise stuff",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "correlation between stuff",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussing potential research directions for tandem net, but no clear decision was made."
+      ],
+      "conditions": [
+        "Results from TI - digits test set are not yet available."
+      ],
+      "dissent": [
+        "No clear dissent or objection voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . Well , we just started working with it . But these are {disfmarker} these are some good ideas I think .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm . Yeah , and the other thing {disfmarker} Well , there are other issues maybe for the tandem , like , uh , well , do we want to , w uh n Do we want to work on the targets ? Or , like , instead of using phonemes , using more context dependent units ?",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "For the tandem net you mean ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , I 'm {disfmarker} Yeah .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I 'm thinking , also , a w about Dan 's work where he {disfmarker} he trained {vocalsound} a network , not on phoneme targets but on the HMM state targets . And {disfmarker} it was gi",
+          "speaker": null,
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c021_d1",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c021",
+      "schema_version": "1.0.0",
+      "decision": "The team will have meetings for the next two weeks, and will resume meetings on the 13th of August.",
+      "topic": "meeting schedule",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor B mentioned the upcoming absence of some team members and suggested meetings during their absence."
+      ],
+      "conditions": [
+        "Professor B will be absent for 2.5 weeks starting next Wednesday."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it 's just , uh , the next two where there will be meetings,",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "but I just won't be at them.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "and then starting up on the thirteenth,",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_008_c021_d2",
+      "source_id": "QMS_ACA_TE_008",
+      "chunk_id": "QMS_ACA_TE_008_c021",
+      "schema_version": "1.0.0",
+      "decision": "The evaluation is tentatively scheduled for the 5th and 6th of December.",
+      "topic": "evaluation schedule",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "PhD C mentioned a proposed date for the evaluation."
+      ],
+      "conditions": [
+        "The evaluation is tentative."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so the evaluation should be on a week before or",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "p s It 's tentatively all full. Yeah.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 21,
+  "chunks_failed": [
+    "QMS_ACA_TE_008_c018"
+  ],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

@@ -1,0 +1,793 @@
+{
+  "source_id": "QMS_ACA_TR_026",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_026_c000_d1",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c000",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "experimenting with the SRI system",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the results of Meeting Recorder digits tests, comparison between SRI System and other systems, differences between having a lot of training data or not, and potential improvement of the back-end."
+      ],
+      "conditions": [
+        "Discussion about adapting the SRI system, potential improvement of the back-end, and the amount of data."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We 're going ? OK . Sh - Close your door on {disfmarker} door on the way out ?",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK . Thanks .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Thanks .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . Probably wanna get this other door , too . OK . So . Um . {vocalsound} {vocalsound} What are we talking about today ?",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , well , first there are perhaps these uh Meeting Recorder digits that we tested .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Oh , yeah . That was kind of uh interesting .",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "The {disfmarker} both the uh {disfmarker} {vocalsound} the SRI System and the oth",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Um .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Probably wanna get this other door , too . OK . So . Um . {vocalsound} {vocalsound} What are we talking about today ?",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Of data ? Yeah .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "uh , the uh {disfmarker} {vocalsound} The best kind of number we have on the English uh {disfmarker} on near microphone only is {disfmarker} is uh three or four percent .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "And uh it 's significantly better than that , using fairly simple front - ends {vocalsound} on {disfmarker} {vocalsound} on the uh {disfmarker} {vocalsound} uh , with the SRI system .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "So I th I think that the uh {disfmarker} But that 's {disfmarker} that 's using uh a {disfmarker} a pretty huge amount of data , mostly not digits , of course , but {disfmarker} but then again {disfmarker} Well , yeah . In fact , mostly not digits for the actual training the H M Ms whereas uh in this case we 're just using digits for training the H M",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah . Right .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Did anybody mention about whether the {disfmarker} the SRI system is a {disfmarker} {vocalsound} is {disfmarker} is doing the digits um the wor as a word model or as uh a sub s sub - phone states ?",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I guess it 's {disfmarker} it 's uh allophone models ,",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . Probably .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So . There is one difference {disfmarker} Well , the SRI system {disfmarker} the result for the SRI system that are represented here are with adaptation . So there is {disfmarker} It 's their complete system and {disfmarker} including on - line uh unsupervised adaptation .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "That 's true .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And if you don't use adaptation , the error rate is around fifty percent worse , I think , if I remember .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "It 's tha it 's that much , huh ?",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Nnn . It 's {disfmarker} Yeah . It 's quite significant .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh . OK .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Still .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "But {disfmarker} but uh what {disfmarker} what I think I 'd be interested to do given that , is that we {disfmarker} we should uh {vocalsound} take {disfmarker} I guess that somebody 's gonna do this , right ? {disfmarker} is to take some of these tandem things and feed it into the SRI system , right ?",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "We can do something like that .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because {disfmarker}",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . So it 's {disfmarker} Yeah .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "But {disfmarker} but uh , uh , you know . But , yeah , so far he hadn't gotten any big improvement ,",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "but {disfmarker} but uh , uh , you know . But , yeah , so far he hadn't gotten any big improvement ,",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "but that 's all with the same amount of data which is pretty small .",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_026_c001_d1",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c001",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that adding more data to train on the Meeting Recorder digits might improve results.",
+      "topic": "data training",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Perhaps we can learn something from this, what's wrong, what is different between TI-digits and these digits."
+      ],
+      "conditions": [
+        "If we add enough data to train on the Meeting Recorder digits, we could have better results."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well , I guess what I meant is that well , let 's say if we add enough data to train on the um on the Meeting Recorder digits , I guess we could have better results than this .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "What I meant is that perhaps we can learn something uh from this , what's wrong uh what's different between TI-digits and these digits and",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "What kind of numbers are we getting on TI-digits ?",
+          "speaker": "Professor A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_026_c002_d1",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c002",
+      "schema_version": "1.0.0",
+      "decision": "The reason for the difference in accuracy between the TI - digits database and the Meeting Recorder digits is not explicitly decided.",
+      "topic": "difference in accuracy between databases",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the differences, but no conclusion reached."
+      ],
+      "conditions": [
+        "No resolution on the cause of the difference."
+      ],
+      "dissent": [
+        "No explicit dissent voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So in the actual TI - digits database we 're getting point eight percent ,",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and here we 're getting three or four {disfmarker} three , let 's see , three for this ?",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And {disfmarker} and also , as you point out , there 's adaptation in these numbers also . So if you , you know , put the ad adap take the adaptation off , then it {disfmarker} for the English - Near you get something like two percent .",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But to me it just {disfmarker} it just meant a practical {vocalsound} point that um if we want to {vocalsound} publish results on digits that {disfmarker} that people pay {vocalsound} attention to we probably should uh {disfmarker} Cuz we 've had the problem before that you get {disfmarker} show some {vocalsound} nice improvement on something that 's {disfmarker} that 's uh , uh {disfmarker} it seems like too large a number , and uh {vocalsound} uh people don't necessarily take it so seriously .",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Given {disfmarker} given the same {disfmarker} Yeah . So ignore {disfmarker} ignoring the {disfmarker} the {disfmarker} the SRI system for a moment ,",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It 's {disfmarker} I think it 's {disfmarker} it 's the indication it 's harder .",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_026_c003_d1",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team will work on implementing the good VAD in the system.",
+      "topic": "implementing VAD",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The good VAD makes a huge difference and the results are similar to the France Telecom results."
+      ],
+      "conditions": [
+        "The problem is that it's very big and we still have to think how to put it and where to put it."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So there is this point . Uh . The problem is that it's very big and we still have to think how to put it and where to put it.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um . So there is this point . Uh . The problem is that it 's very big and we still have to think how to put it and where to put it.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "The problem is that it 's very big and we still have to think how to put it and where to put it and because it either some delay and we if we put it on the server side , it doesn't work , because on the server side features you already have LDA applied from the f from the terminal side and so you accumulate the delay so the VAD should be before the LDA which means perhaps on the terminal side and then smaller",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um . So , yeah . I think , yeah , this is perhaps one of the reason why our system was not the best , because with the new VAD , it 's very good and the results are similar to the France Telecom results and perhaps even better sometimes.",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_026_c004_d1",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c004",
+      "schema_version": "1.0.0",
+      "decision": "A new filter was designed to reduce delay from the LDA filters.",
+      "topic": "filter design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To reduce delay from the LDA filters."
+      ],
+      "conditions": [
+        "The filter is running, but its performance is unknown."
+      ],
+      "dissent": [],
+      "owner": "PhD E",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I designed a new filter because when I designed other filters with shorter delay from the LDA filters, there was one filter with fifty millisecond delay and the other with ten milliseconds",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "and Hynek suggested that both could have sixty - five",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_026_c004_d2",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c004",
+      "schema_version": "1.0.0",
+      "decision": "A new system with MSG stream will be tried next week.",
+      "topic": "system experimentation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To experiment with a new system similar to the proposal but with MSG stream."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "PhD E",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and next week I think we will perhaps try to have um a new system with uh uh MSG stream also see what happens",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_026_c004_d3",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to use a different VAD if a smaller one is available.",
+      "topic": "VAD selection",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To use a smaller VAD if available."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But the other thing is uh to use a different VAD entirely. I mean , uh i if there 's a if {disfmarker} if there 's a I don't know what the thinking was amongst the the the ETSI folk but um if everybody agreed sure let 's use this VAD and take that out of there",
+          "speaker": "Professor A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_026_c004_d4",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the VAD should be before the LDA which means perhaps on the terminal side.",
+      "topic": "VAD and LDA arrangement",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Because on the server side features you already have LDA applied from the terminal side and so you accumulate the delay so the VAD should be before the LDA which means perhaps on the terminal side."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "because it {disfmarker} it {disfmarker} well , this VAD uh either some delay and we {disfmarker} if we put it on the server side , it doesn't work , because on the server side features you already have LDA applied {vocalsound} from the f from the terminal side and {vocalsound} so you accumulate the delay so the VAD should be before the LDA which means perhaps on the terminal side and then smaller {vocalsound} and",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_026_c004_d5",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the VAD should be small and work fine.",
+      "topic": "VAD requirements",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The assumption is that we will be able to make a VAD that's small and that works fine."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So . Yeah . But the abso assumption is that we will be able to make a VAD that 's small and that works fine . And . So we can",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_026_c004_d6",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that there might be some interaction between feature extraction and VAD or frame dropping.",
+      "topic": "interaction between feature extraction and VAD",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "They still want to just give some um requirement for this VAD because it 's not part of the standard."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But they still {vocalsound} want to {disfmarker} just to give some um {vocalsound} requirement for this VAD because it 's not part of the standard.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_026_c005_d1",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c005",
+      "schema_version": "1.0.0",
+      "decision": "It was not decided which method to use for the voiced-unvoiced decision.",
+      "topic": "voiced-unvoiced decision method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about parameters and methods, but no decision was made."
+      ],
+      "conditions": [
+        "Need more data (TIMIT) and a clearer graph."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Mmm.",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "OK.",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "No, I w {vocalsound} I begin to play {vocalsound} with Matlab and to found some parameter robust for voiced - unvoiced decision . But only to play .",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And , well , is more or less robust . Is good for clean speech . Is quite good {vocalsound} for noisy speech .",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "but um we must to have bigger statistic with TIMIT ,",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "and is not ready yet to use on ,",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , basically we wa want to look at something like the ex the ex excitation signal and {disfmarker}",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I have here . I have here for one signal , for one frame .",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The {disfmarker} the mix of the two , noise and unnoise , and the signal is this . Clean , and this noise .",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Oh . I must to have .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So this should the {disfmarker} the {disfmarker} the t voiced portions .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The p the peaks should be voiced portion .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "This is , for example , for one frame .",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And this is the difference ?",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_026_c006_d1",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to modify the mel spectrum to have something smoother on low frequencies.",
+      "topic": "mel spectrum modification",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To reduce additional variability in the envelope."
+      ],
+      "conditions": [
+        "If the width of the lower frequency mel filters is smaller than the pitch."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , what I was talking about was just , starting with the FFT you could uh do a very rough thing to estimate uh pitch .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "And .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "And .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "And .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "And .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_026_c007_d1",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c007",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "method for feature detection and time series modeling",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about extending Larry Saul's work, factorial HMMs, and modulation spectrum as features, but no decision was made."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah . What I was talking about was just , starting with the FFT you could uh do a very rough thing to estimate uh pitch .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And uh uh , given {disfmarker} you know , given that , uh {vocalsound} you could uh uh come up with some kind of estimate of how much of the low frequency energy was {disfmarker} was explained by {disfmarker} {vocalsound} by uh uh those harmonics .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh . It 's uh a variant on what you 're s what you 're doing . The {disfmarker} I mean , the {disfmarker} the {vocalsound} the mel does give a smooth thing . But as you say it 's not that smooth here . And {disfmarker} and so if you {disfmarker} {vocalsound} if you just you know subtracted off uh your guess of the harmonics then something like this would end up with {vocalsound} quite a bit lower energy in the first fifteen hundred hertz or so and {disfmarker} and our first kilohertz , even .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So you oughta be able to {vocalsound} pick out voiced segments . At least it should be another {disfmarker} another cue . So . {vocalsound} Anyway .",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "um {vocalsound} our t I went to {vocalsound} talk with uh Mike Jordan this {disfmarker} this week",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "um thinking of maybe using um {vocalsound} um m modulation spectrum stuff to {vocalsound} um {disfmarker} as features um also in the {disfmarker} in the sub - bands",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , um . Yeah . Just that 's about it .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_ACA_TR_026_c009_d1",
+      "source_id": "QMS_ACA_TR_026",
+      "chunk_id": "QMS_ACA_TR_026_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use natural pronunciation for digit recognition instead of spelling it out.",
+      "topic": "digit recognition method",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "orthographic",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "They wanted to get at more the way people would really say things."
+      ],
+      "conditions": [
+        "People might have different pronunciations for digits."
+      ],
+      "dissent": [
+        "Grad B prefers to say 'O' because it's easier."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "That's also why they're bunched together in these different groups.",
+          "speaker": "Professor A",
+          "supports": "decision"
+        },
+        {
+          "quote": "It was spelled out, and they decided they wanted to get at more the way people would really say things.",
+          "speaker": "Professor A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah it's shorter.",
+          "speaker": "Grad B",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 9,
+  "chunks_failed": [
+    "QMS_ACA_TR_026_c008"
+  ],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

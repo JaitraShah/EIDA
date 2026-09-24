@@ -1,0 +1,928 @@
+{
+  "source_id": "QMS_PRD_TR_011",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_011_c000_d1",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the potential lack of teletext in the product and its impact on marketing.",
+      "topic": "product marketing",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Teletext is becoming outdated, but it is widely used and people are comfortable with it.",
+        "The remote control could potentially work with the Internet instead."
+      ],
+      "conditions": [
+        "The product is only intended for television use.",
+        "The selling price of the product is twenty-five Euros."
+      ],
+      "dissent": [
+        "The Industrial Designer thinks it's a stupid decision to remove teletext."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we are here to talk about functional design . Now hopefully we've all got a better idea from {vocalsound} {disfmarker} than we did f leaving the last meeting as to what it is we are up to now .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So that's , from a marketing perspective I I see I see a lack .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well tha that first point could uh also be an op opportunity because in seeing that teletext is becoming outdated , some sort remote control that can work with the Internet {disfmarker} {vocalsound} there is the opportunity that's presented , I guess .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think we take with you .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "That's what I'm that's what I'm talking about is is that we have to find something that is gonna be very attractive about this product 'cause somebody , some people are gonna be hap unhappy 'cause it took {disfmarker} they can't ac access their teletext .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c001_d1",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c001",
+      "schema_version": "1.0.0",
+      "decision": "The basic components for the remote were discussed.",
+      "topic": "remote components",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussing the basic components of the remote."
+      ],
+      "conditions": [
+        "No decision was made on the specific components."
+      ],
+      "dissent": [
+        "Marketing stated that the technology is not cutting edge."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay . 'Cause we're talking about eighty percent or ninety percent or ninety-five percent of the televisions out there are are teletext .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "So it's it's not that I'm criticizing the product at all . It's just when we eliminate that then what do we bring ? What are we bringing in to take the place of this ,",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm .",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "If we lose one we need to bring two or three .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Obviously the the w it has to be branded . 'Kay .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So then the double R_ will be our our {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think one of {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So you all know me , I'm the Industrial Designer . And we've some basic components that um our remote is gonna need , just basically every remote'll need 'em .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "We need some kinda of power d power source . Um we have to decide on our our user interface , which is his department , but the in user interface is also a major component . Um we need a programmable digital signal processor to um to take the input from the user and translate that into uh into electronic signal , which we pass to the infra-red L_E_D_ , which you aim at the television uh which {disfmarker} and it receives that signal . You need a on-off switch um I don't know how that got in there . And uh we also need to um have the {vocalsound} {disfmarker} if we want a universal remote we need to have encryption codes for the different makes of T_V_s . So we need to know all the different you know all the different signals and so that'll require some memory as well . Um so here's just a basic layout of how how the remote would work . You ha the v the power source is in the upper right-hand corner there , and you can see that uh we have the user interface here which is connected to the chip which does all our signal processing , and then passes that signal on to the infra-red L_E_D_ and that signal is then emitted and received by the television at the photo-transistor . So {vocalsound} those are the basic components that need to go into this and everything else is pretty much uh open to move around .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c002_d1",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote should have a simple and user-oriented design.",
+      "topic": "remote design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Fashion and simplicity are prioritized.",
+        "The remote should look good.",
+        "Teletext should be removed."
+      ],
+      "conditions": [
+        "The cost of adding teletext should be considered.",
+        "The colors on the logo will be changed."
+      ],
+      "dissent": [
+        "The Project Manager still thinks teletext should be included if it's cheap enough."
+      ],
+      "owner": "Industrial Designer",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So yeah . That's all I have really .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think , honestly , we should keep technology low and just simple basically and try to aim for design .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "although I th I th I'm still here recommending the teletext so I'll remove that , I guess , but um we should go for the user-oriented device , so simple controls and good ergonomics .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But I t I think what the management recommendation was less that there's a worry that teletext will become outdated rather than we shouldn't have it . So I I still think if it's cheap enough functionality-wise to include , it really should be in there .",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c003_d1",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed whether to include teletext in the remote, but no decision was made.",
+      "topic": "include teletext in the remote",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "include teletext",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "exclude teletext",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the potential outdatedness of teletext, convenience, and the integration of Internet and television."
+      ],
+      "conditions": [
+        "Potential cost of an extra button and the future integration of Internet and television."
+      ],
+      "dissent": [
+        "No explicit dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But I t I think what the management recommendation was less that there's a worry that teletext will become outdated rather than we shouldn't have it . So I I still think if it's cheap enough functionality-wise to include , it really should be in there .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I have maybe a silly question . I {disfmarker} in the very beginning it said with the with the advent of computers there's gonna be the {disfmarker} it's gonna be out-moded teletext . I I don't understand how those two things are connected . How does how does computers and teletext {disfmarker} h how {disfmarker} why is one eliminating the need of the other ? I don't understand that .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well maybe what we're getting into here is the the idea of uh Internet through the T_V_ for example . So that might play on what we can do .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah the they're basically aiming at saying that {vocalsound} you would use {disfmarker} you know a couple of years ago teletext to be the easiest way to check like for uh uh the scheduling and the next programme and stuff like that",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Scheduling . Um to find out what what you're watching even if there's commercials you know .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and now {disfmarker} Yeah",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think I ha I agree .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah 'cause , yeah , I just {disfmarker} I don't see the cross-over between computers and television . I mean I do see the cross-over in some sense ,",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , but it's not happen yet . Yeah .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So so if we make the cross-over and we're gonna view television on computers then we're then we're losing the the necessity of the remote .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well there there is a {disfmarker} for example on digital T_V_ systems you have {disfmarker} you can press a button and you can buy things in adverts ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "A a family member of mine has got a system where you just um you can {disfmarker} Yeah , and there's other features for example on other systems where you can pause live T_V_ and things like that . They're just features from the Internet uh from computers are are coming into the T_V_ sort of under the covers , but you still use it through a teletext .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well for me {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well you have digital T_V_ still already .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So now the things to think here are that that there's gonna be more functionality , potentially that we can handle .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah but we we're not aiming a command for that . That's the thing . And all of those require the other commands with more complexity and more software and {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c004_d1",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c004",
+      "schema_version": "1.0.0",
+      "decision": "The decision is to keep teletext in the remote design, or to remove it and design a separate interface.",
+      "topic": "remote interface design",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "keep teletext",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "remove teletext and design a separate interface",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The team discussed the potential benefits of future-proofing the system, but also the need to sell to an existing market and keep costs low.",
+        "The team discussed the potential for a high-priced design to justify the cost of the remote.",
+        "The team discussed the potential for a lower price for a basic remote."
+      ],
+      "conditions": [
+        "The team will need to communicate with management about the decision."
+      ],
+      "dissent": [
+        "Marketing disagrees with the elimination of teletext."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah but we would increase the price to try to make it a trainable one, so",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think if it's possible you should try to you know have a talk with management about that",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Marketing disagrees with the elimination of teletext.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c005_d1",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team did not make a decision about adding voice-activated features to the remote.",
+      "topic": "voice-activated features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about voice-activated features was brought up, but no decision was made."
+      ],
+      "conditions": [
+        "No explicit conditions stated."
+      ],
+      "dissent": [
+        "Marketing expressed interest in adding voice-activated features."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I would really like it when you can come up with some more bells and whistles, eh.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I think that's probably a question more for for this guy here, yeah.",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c006_d1",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to focus on design as the main marketing strategy for the remote product.",
+      "topic": "marketing strategy",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team believes that a beautiful and attractive design will help the product sell itself."
+      ],
+      "conditions": [],
+      "dissent": [
+        "Marketing expresses doubts about the market niche for the product and its price."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So what I did is I I decided that this needs to be a product in a in a sense can market itself.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "We're making the most beautiful attractive uh whatever we decide it is.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c007_d1",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c007",
+      "schema_version": "1.0.0",
+      "decision": "A power cradle for the remote was proposed to address the issue of losing remotes and reduce battery usage.",
+      "topic": "power source solution",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "solar remote",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Reducing battery usage, environmental sensitivity, potential for a unique design"
+      ],
+      "conditions": [
+        "Increased cost, potential for design and manufacturing challenges"
+      ],
+      "dissent": [
+        "Marketing expressed concern about the increased cost"
+      ],
+      "owner": "User Interface",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And what we can do is , well you know that batteries throwing a aw remotes run through batteries like crazy . Right ?",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "But solar",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Like a a cradle that is is there to hold the remote when you're not using it , so you'll always know where the remote is 'cause you have to put it back there to charge the remote , and we can , instead of having instead of having , you know , replaceable batteries we'll just have a power cell that stays there for the life of the remote . You never have to get through the different batteries .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "There's uh I mean I don't see it anyway . Yeah , that's gonna be up to these guys .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c008_d1",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c008",
+      "schema_version": "1.0.0",
+      "decision": "The team did not decide on the price or features of the remote control.",
+      "topic": "price and features of the remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the price and features, but no decision was made."
+      ],
+      "conditions": [
+        "Discussion about increasing costs, but no decision was made."
+      ],
+      "dissent": [
+        "Marketing expressed a desire to make the product exclusive and expensive, but User Interface questioned the feasibility."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'm an advocate to make this an exclusive product.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I just don't have enough money right now.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I don't think it's our place to create their product for them.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I don't see the market niche for the product that they're handing us right now.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I have to disagree though.",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I think our market niche is basically people who need...",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c009_d1",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the marketability and positioning of the remote product.",
+      "topic": "product positioning",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team questioned the market niche for the product, discussed the need for exclusivity, and discussed the importance of branding and reliability."
+      ],
+      "conditions": [
+        "The team discussed the cost of the product and its potential impact on market positioning."
+      ],
+      "dissent": [
+        "Marketing questioned the marketability of the product and its demand."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we really can't chase that.",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I don't . {vocalsound}",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I think what we {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "We're really looking for something basic.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "W {vocalsound}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Is twenty-five Euros a mid-market price for a remote ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c010_d1",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c010",
+      "schema_version": "1.0.0",
+      "decision": "The team did not decide on the cradle idea for the remote control.",
+      "topic": "cradle idea for remote control",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "cradle idea",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the cradle idea was not resolved.",
+        "Marketing likes the idea but has concerns about cost and usability."
+      ],
+      "conditions": [
+        "Cost and usability concerns were raised."
+      ],
+      "dissent": [
+        "Marketing likes the idea but has concerns about cost and usability."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I like it .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "No , but I {disfmarker} that's the thing I I don't think it's necessarily the other end .",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "The other the o the problem with that in my mind I just think off-hand as a as a consumer , would I wanna buy that ?",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But it it takes away the ease of use of the remote to a certain extent .",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "You have to l sort of remember .",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well it lasts {disfmarker} it would last for several hours on its own power , but when you're done with it you put it back in the cradle .",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But it it takes away the ease of use of the remote to a certain extent .",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Yeah",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well , I think again it's it {disfmarker} we have a cost issue here . You know if we're gonna go in this direction , to me we're going to the other side of the cost range .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c010_d2",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c010",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the cost range for the remote control.",
+      "topic": "cost range for remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the cost range for the remote control."
+      ],
+      "conditions": [
+        "Cost concerns were raised."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well , I think again it's it {disfmarker} we have a cost issue here . You know if we're gonna go in this direction , to me we're going to the other side of the cost range .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Are we gonna make this {disfmarker} selling selling the cost as a high high-tech uh um environmentally sensitive whatever , or are we gonna go to the lower side of the range ? {vocalsound}",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c010_d3",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c010",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the design and cost of the remote control.",
+      "topic": "design and cost of remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the design and cost of the remote control."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well I'd be inclined to say , if we can make the design better than any comparable remote while reducing the cost , then that's the way we really should play it . If we can take it down to you know fifteen rather than twenty-five and make a low profit-margin on it ,",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c010_d4",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c010",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the branding strategy for the remote control.",
+      "topic": "branding strategy for remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the branding strategy for the remote control."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And I can communicate this to to the more senior {vocalsound} uh mm people within the company here to to get a reaction . {vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c010_d5",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c010",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the idea of positioning the remote control as a high-tech or environmentally sensitive product.",
+      "topic": "positioning the remote control as a high-tech or environmentally sensitive product",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about positioning the remote control as a high-tech or environmentally sensitive product."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Are we gonna make this {disfmarker} selling selling the cost as a high high-tech uh um environmentally sensitive whatever , or are we gonna go to the lower side of the range ? {vocalsound}",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c010_d6",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c010",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the idea of Pedro having an opinion on the cradle idea for the remote control.",
+      "topic": "Pedro's opinion on the cradle idea for the remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about Pedro's opinion on the cradle idea for the remote control."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So what do we think maybe we should {disfmarker} Pedro , do you have any opinion on it ?",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c011_d1",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c011",
+      "schema_version": "1.0.0",
+      "decision": "Investigating the possibility of a power cradle for the remote.",
+      "topic": "power cradle",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "To reduce the risk of losing the remote."
+      ],
+      "conditions": [
+        "Investigation only, no decision on implementation."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I really think i in a certain sense it almost like for me I would want to have that just, because I know at the end of when I'm done watching T_V_ that when I'm done, oh I better go find the remote and put it back where it belongs. Maybe th th th that's just some people that like that.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I mean there's also remote controls I remember that that worked uh, this hasn't been done in a while I think, but th as a as a watch.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c011_d2",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c011",
+      "schema_version": "1.0.0",
+      "decision": "Discussing the design of the remote, considering multiple designs, a unique design, and a design that doesn't look like a traditional remote.",
+      "topic": "remote design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To make the product unique and stand out."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "W a question I have in in a a 'cause I I I think I agree with you on , we gotta make it a box . The box is gonna sell it I think , the outside , the casing .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "What ab what ab 'cause I mean we all know what a remote looks like on the outside . They're selling these things everywhere . Maybe that could be part of our design exclusivity , is we make a remote that doesn't even look like a remote it it opens like a telephone .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or what if it looks like a pen ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It 'cause I mean we all know what a remote looks like on the outside . They're selling these things everywhere . Maybe that could be part of our design exclusivity , is we make a remote that doesn't even look like a remote it it opens like a telephone .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Doesn't matter , yeah .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_011_c012_d1",
+      "source_id": "QMS_PRD_TR_011",
+      "chunk_id": "QMS_PRD_TR_011_c012",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed creating a charging system for a remote control product.",
+      "topic": "charging system for remote control product",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team thought it could be cheaper to make remote control watches now.",
+        "The team thought a locator feature might be expensive.",
+        "The team thought they could use existing power-adaptor products."
+      ],
+      "conditions": [
+        "The team needs to look into whether they can do the locator feature.",
+        "The team needs to finish up the meeting."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "but I think they're a sorta eighties thing , so it might not be easy to market in it",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Those things may have been inexpensive for all I know",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The last remote you'll ever buy",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The locator'll definitely be more expensive",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "We sell power-adaptor products",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "we can cut costs through using the manufacturing that's already gonna be in place here",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "we have the ability to create this",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "we have probably five or six or seven really strong marketing characteristics",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think one of the things that we can put right on the box is , never buy another battery",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 13,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

@@ -1,18 +1,106 @@
 {
   "model": "mistral",
-  "meetings_scored": 1,
-  "wall_seconds": 0.1,
+  "meetings_scored": 227,
+  "wall_seconds": 2.0,
   "by_domain_split": {
+    "Academic/test": {
+      "meetings": 9,
+      "records": 321,
+      "q_total": 986,
+      "q_grounded": 729,
+      "q_strict": 644,
+      "chunks_failed": 3,
+      "evidence_grounding": 0.739,
+      "unsupported_evidence_rate": 0.261,
+      "strict_verbatim_rate": 0.653
+    },
     "Academic/train": {
-      "meetings": 1,
-      "records": 26,
-      "q_total": 91,
-      "q_grounded": 74,
-      "q_strict": 69,
+      "meetings": 41,
+      "records": 1244,
+      "q_total": 4334,
+      "q_grounded": 3153,
+      "q_strict": 2810,
+      "chunks_failed": 22,
+      "evidence_grounding": 0.728,
+      "unsupported_evidence_rate": 0.272,
+      "strict_verbatim_rate": 0.648
+    },
+    "Academic/val": {
+      "meetings": 9,
+      "records": 299,
+      "q_total": 1021,
+      "q_grounded": 763,
+      "q_strict": 682,
+      "chunks_failed": 4,
+      "evidence_grounding": 0.747,
+      "unsupported_evidence_rate": 0.253,
+      "strict_verbatim_rate": 0.668
+    },
+    "Committee/test": {
+      "meetings": 6,
+      "records": 368,
+      "q_total": 969,
+      "q_grounded": 936,
+      "q_strict": 936,
       "chunks_failed": 1,
-      "evidence_grounding": 0.813,
-      "unsupported_evidence_rate": 0.187,
-      "strict_verbatim_rate": 0.758
+      "evidence_grounding": 0.966,
+      "unsupported_evidence_rate": 0.034,
+      "strict_verbatim_rate": 0.966
+    },
+    "Committee/train": {
+      "meetings": 24,
+      "records": 1476,
+      "q_total": 3535,
+      "q_grounded": 3341,
+      "q_strict": 3341,
+      "chunks_failed": 3,
+      "evidence_grounding": 0.945,
+      "unsupported_evidence_rate": 0.055,
+      "strict_verbatim_rate": 0.945
+    },
+    "Committee/val": {
+      "meetings": 6,
+      "records": 386,
+      "q_total": 937,
+      "q_grounded": 885,
+      "q_strict": 884,
+      "chunks_failed": 0,
+      "evidence_grounding": 0.945,
+      "unsupported_evidence_rate": 0.055,
+      "strict_verbatim_rate": 0.943
+    },
+    "Product/test": {
+      "meetings": 15,
+      "records": 300,
+      "q_total": 1356,
+      "q_grounded": 1237,
+      "q_strict": 1174,
+      "chunks_failed": 0,
+      "evidence_grounding": 0.912,
+      "unsupported_evidence_rate": 0.088,
+      "strict_verbatim_rate": 0.866
+    },
+    "Product/train": {
+      "meetings": 97,
+      "records": 1813,
+      "q_total": 7095,
+      "q_grounded": 6159,
+      "q_strict": 5792,
+      "chunks_failed": 2,
+      "evidence_grounding": 0.868,
+      "unsupported_evidence_rate": 0.132,
+      "strict_verbatim_rate": 0.816
+    },
+    "Product/val": {
+      "meetings": 20,
+      "records": 395,
+      "q_total": 1716,
+      "q_grounded": 1549,
+      "q_strict": 1451,
+      "chunks_failed": 1,
+      "evidence_grounding": 0.903,
+      "unsupported_evidence_rate": 0.097,
+      "strict_verbatim_rate": 0.846
     }
   },
   "per_meeting": [
@@ -21,10 +109,2270 @@
       "domain": "Academic",
       "split": "train",
       "records": 26,
-      "quotes": "74/91",
-      "unsupported_evidence_rate": 0.187,
-      "strict_verbatim_rate": 0.758,
+      "quotes": "112/128",
+      "unsupported_evidence_rate": 0.125,
+      "strict_verbatim_rate": 0.828,
       "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_001",
+      "domain": "Academic",
+      "split": "train",
+      "records": 21,
+      "quotes": "75/107",
+      "unsupported_evidence_rate": 0.299,
+      "strict_verbatim_rate": 0.664,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_002",
+      "domain": "Academic",
+      "split": "train",
+      "records": 33,
+      "quotes": "66/95",
+      "unsupported_evidence_rate": 0.305,
+      "strict_verbatim_rate": 0.6,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_003",
+      "domain": "Academic",
+      "split": "train",
+      "records": 32,
+      "quotes": "67/104",
+      "unsupported_evidence_rate": 0.356,
+      "strict_verbatim_rate": 0.558,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_004",
+      "domain": "Academic",
+      "split": "train",
+      "records": 34,
+      "quotes": "117/145",
+      "unsupported_evidence_rate": 0.193,
+      "strict_verbatim_rate": 0.69,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_005",
+      "domain": "Academic",
+      "split": "train",
+      "records": 33,
+      "quotes": "69/95",
+      "unsupported_evidence_rate": 0.274,
+      "strict_verbatim_rate": 0.642,
+      "chunks_failed": 2
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_006",
+      "domain": "Academic",
+      "split": "train",
+      "records": 15,
+      "quotes": "36/50",
+      "unsupported_evidence_rate": 0.28,
+      "strict_verbatim_rate": 0.66,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_007",
+      "domain": "Academic",
+      "split": "train",
+      "records": 21,
+      "quotes": "58/77",
+      "unsupported_evidence_rate": 0.247,
+      "strict_verbatim_rate": 0.675,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_008",
+      "domain": "Academic",
+      "split": "train",
+      "records": 16,
+      "quotes": "23/33",
+      "unsupported_evidence_rate": 0.303,
+      "strict_verbatim_rate": 0.576,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_009",
+      "domain": "Academic",
+      "split": "train",
+      "records": 43,
+      "quotes": "86/128",
+      "unsupported_evidence_rate": 0.328,
+      "strict_verbatim_rate": 0.562,
+      "chunks_failed": 2
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_010",
+      "domain": "Academic",
+      "split": "train",
+      "records": 22,
+      "quotes": "75/97",
+      "unsupported_evidence_rate": 0.227,
+      "strict_verbatim_rate": 0.732,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_011",
+      "domain": "Academic",
+      "split": "train",
+      "records": 32,
+      "quotes": "60/92",
+      "unsupported_evidence_rate": 0.348,
+      "strict_verbatim_rate": 0.554,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_012",
+      "domain": "Academic",
+      "split": "train",
+      "records": 26,
+      "quotes": "96/122",
+      "unsupported_evidence_rate": 0.213,
+      "strict_verbatim_rate": 0.648,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_013",
+      "domain": "Academic",
+      "split": "train",
+      "records": 35,
+      "quotes": "72/103",
+      "unsupported_evidence_rate": 0.301,
+      "strict_verbatim_rate": 0.612,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_014",
+      "domain": "Academic",
+      "split": "train",
+      "records": 27,
+      "quotes": "36/58",
+      "unsupported_evidence_rate": 0.379,
+      "strict_verbatim_rate": 0.569,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_015",
+      "domain": "Academic",
+      "split": "train",
+      "records": 47,
+      "quotes": "92/133",
+      "unsupported_evidence_rate": 0.308,
+      "strict_verbatim_rate": 0.647,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_016",
+      "domain": "Academic",
+      "split": "train",
+      "records": 33,
+      "quotes": "53/81",
+      "unsupported_evidence_rate": 0.346,
+      "strict_verbatim_rate": 0.531,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_017",
+      "domain": "Academic",
+      "split": "train",
+      "records": 39,
+      "quotes": "76/105",
+      "unsupported_evidence_rate": 0.276,
+      "strict_verbatim_rate": 0.657,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_018",
+      "domain": "Academic",
+      "split": "train",
+      "records": 23,
+      "quotes": "126/148",
+      "unsupported_evidence_rate": 0.149,
+      "strict_verbatim_rate": 0.791,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_019",
+      "domain": "Academic",
+      "split": "train",
+      "records": 34,
+      "quotes": "94/129",
+      "unsupported_evidence_rate": 0.271,
+      "strict_verbatim_rate": 0.628,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_020",
+      "domain": "Academic",
+      "split": "train",
+      "records": 23,
+      "quotes": "51/76",
+      "unsupported_evidence_rate": 0.329,
+      "strict_verbatim_rate": 0.618,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_021",
+      "domain": "Academic",
+      "split": "train",
+      "records": 19,
+      "quotes": "33/54",
+      "unsupported_evidence_rate": 0.389,
+      "strict_verbatim_rate": 0.556,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_022",
+      "domain": "Academic",
+      "split": "train",
+      "records": 37,
+      "quotes": "148/188",
+      "unsupported_evidence_rate": 0.213,
+      "strict_verbatim_rate": 0.686,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_023",
+      "domain": "Academic",
+      "split": "train",
+      "records": 44,
+      "quotes": "87/121",
+      "unsupported_evidence_rate": 0.281,
+      "strict_verbatim_rate": 0.62,
+      "chunks_failed": 2
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_024",
+      "domain": "Academic",
+      "split": "train",
+      "records": 36,
+      "quotes": "68/88",
+      "unsupported_evidence_rate": 0.227,
+      "strict_verbatim_rate": 0.716,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_025",
+      "domain": "Academic",
+      "split": "train",
+      "records": 43,
+      "quotes": "68/98",
+      "unsupported_evidence_rate": 0.306,
+      "strict_verbatim_rate": 0.592,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_026",
+      "domain": "Academic",
+      "split": "train",
+      "records": 14,
+      "quotes": "82/95",
+      "unsupported_evidence_rate": 0.137,
+      "strict_verbatim_rate": 0.853,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_027",
+      "domain": "Academic",
+      "split": "train",
+      "records": 50,
+      "quotes": "181/229",
+      "unsupported_evidence_rate": 0.21,
+      "strict_verbatim_rate": 0.751,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_028",
+      "domain": "Academic",
+      "split": "train",
+      "records": 27,
+      "quotes": "69/102",
+      "unsupported_evidence_rate": 0.324,
+      "strict_verbatim_rate": 0.52,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_029",
+      "domain": "Academic",
+      "split": "train",
+      "records": 16,
+      "quotes": "67/90",
+      "unsupported_evidence_rate": 0.256,
+      "strict_verbatim_rate": 0.711,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_030",
+      "domain": "Academic",
+      "split": "train",
+      "records": 24,
+      "quotes": "59/88",
+      "unsupported_evidence_rate": 0.33,
+      "strict_verbatim_rate": 0.545,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_031",
+      "domain": "Academic",
+      "split": "train",
+      "records": 35,
+      "quotes": "58/92",
+      "unsupported_evidence_rate": 0.37,
+      "strict_verbatim_rate": 0.533,
+      "chunks_failed": 3
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_032",
+      "domain": "Academic",
+      "split": "train",
+      "records": 20,
+      "quotes": "41/65",
+      "unsupported_evidence_rate": 0.369,
+      "strict_verbatim_rate": 0.538,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_033",
+      "domain": "Academic",
+      "split": "train",
+      "records": 17,
+      "quotes": "26/41",
+      "unsupported_evidence_rate": 0.366,
+      "strict_verbatim_rate": 0.561,
+      "chunks_failed": 2
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_034",
+      "domain": "Academic",
+      "split": "train",
+      "records": 19,
+      "quotes": "67/93",
+      "unsupported_evidence_rate": 0.28,
+      "strict_verbatim_rate": 0.634,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_035",
+      "domain": "Academic",
+      "split": "train",
+      "records": 65,
+      "quotes": "113/170",
+      "unsupported_evidence_rate": 0.335,
+      "strict_verbatim_rate": 0.576,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_036",
+      "domain": "Academic",
+      "split": "train",
+      "records": 37,
+      "quotes": "106/155",
+      "unsupported_evidence_rate": 0.316,
+      "strict_verbatim_rate": 0.652,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_037",
+      "domain": "Academic",
+      "split": "train",
+      "records": 27,
+      "quotes": "93/122",
+      "unsupported_evidence_rate": 0.238,
+      "strict_verbatim_rate": 0.672,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_038",
+      "domain": "Academic",
+      "split": "train",
+      "records": 42,
+      "quotes": "91/143",
+      "unsupported_evidence_rate": 0.364,
+      "strict_verbatim_rate": 0.559,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_039",
+      "domain": "Academic",
+      "split": "train",
+      "records": 40,
+      "quotes": "126/153",
+      "unsupported_evidence_rate": 0.176,
+      "strict_verbatim_rate": 0.752,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TR_040",
+      "domain": "Academic",
+      "split": "train",
+      "records": 17,
+      "quotes": "30/41",
+      "unsupported_evidence_rate": 0.268,
+      "strict_verbatim_rate": 0.634,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_VA_000",
+      "domain": "Academic",
+      "split": "val",
+      "records": 47,
+      "quotes": "88/126",
+      "unsupported_evidence_rate": 0.302,
+      "strict_verbatim_rate": 0.643,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_VA_001",
+      "domain": "Academic",
+      "split": "val",
+      "records": 39,
+      "quotes": "33/59",
+      "unsupported_evidence_rate": 0.441,
+      "strict_verbatim_rate": 0.475,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_VA_002",
+      "domain": "Academic",
+      "split": "val",
+      "records": 29,
+      "quotes": "63/90",
+      "unsupported_evidence_rate": 0.3,
+      "strict_verbatim_rate": 0.656,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_VA_003",
+      "domain": "Academic",
+      "split": "val",
+      "records": 32,
+      "quotes": "64/87",
+      "unsupported_evidence_rate": 0.264,
+      "strict_verbatim_rate": 0.632,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_VA_004",
+      "domain": "Academic",
+      "split": "val",
+      "records": 32,
+      "quotes": "71/109",
+      "unsupported_evidence_rate": 0.349,
+      "strict_verbatim_rate": 0.514,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_VA_005",
+      "domain": "Academic",
+      "split": "val",
+      "records": 34,
+      "quotes": "126/149",
+      "unsupported_evidence_rate": 0.154,
+      "strict_verbatim_rate": 0.772,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_VA_006",
+      "domain": "Academic",
+      "split": "val",
+      "records": 38,
+      "quotes": "186/222",
+      "unsupported_evidence_rate": 0.162,
+      "strict_verbatim_rate": 0.788,
+      "chunks_failed": 4
+    },
+    {
+      "meeting_id": "QMS_ACA_VA_007",
+      "domain": "Academic",
+      "split": "val",
+      "records": 33,
+      "quotes": "93/121",
+      "unsupported_evidence_rate": 0.231,
+      "strict_verbatim_rate": 0.645,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_VA_008",
+      "domain": "Academic",
+      "split": "val",
+      "records": 15,
+      "quotes": "39/58",
+      "unsupported_evidence_rate": 0.328,
+      "strict_verbatim_rate": 0.603,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TE_000",
+      "domain": "Academic",
+      "split": "test",
+      "records": 32,
+      "quotes": "77/105",
+      "unsupported_evidence_rate": 0.267,
+      "strict_verbatim_rate": 0.629,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TE_001",
+      "domain": "Academic",
+      "split": "test",
+      "records": 40,
+      "quotes": "62/95",
+      "unsupported_evidence_rate": 0.347,
+      "strict_verbatim_rate": 0.568,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TE_002",
+      "domain": "Academic",
+      "split": "test",
+      "records": 40,
+      "quotes": "88/116",
+      "unsupported_evidence_rate": 0.241,
+      "strict_verbatim_rate": 0.681,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TE_003",
+      "domain": "Academic",
+      "split": "test",
+      "records": 29,
+      "quotes": "82/100",
+      "unsupported_evidence_rate": 0.18,
+      "strict_verbatim_rate": 0.67,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_ACA_TE_004",
+      "domain": "Academic",
+      "split": "test",
+      "records": 36,
+      "quotes": "64/100",
+      "unsupported_evidence_rate": 0.36,
+      "strict_verbatim_rate": 0.48,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TE_005",
+      "domain": "Academic",
+      "split": "test",
+      "records": 49,
+      "quotes": "146/197",
+      "unsupported_evidence_rate": 0.259,
+      "strict_verbatim_rate": 0.711,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TE_006",
+      "domain": "Academic",
+      "split": "test",
+      "records": 24,
+      "quotes": "61/77",
+      "unsupported_evidence_rate": 0.208,
+      "strict_verbatim_rate": 0.753,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_ACA_TE_007",
+      "domain": "Academic",
+      "split": "test",
+      "records": 28,
+      "quotes": "43/59",
+      "unsupported_evidence_rate": 0.271,
+      "strict_verbatim_rate": 0.508,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_ACA_TE_008",
+      "domain": "Academic",
+      "split": "test",
+      "records": 43,
+      "quotes": "106/137",
+      "unsupported_evidence_rate": 0.226,
+      "strict_verbatim_rate": 0.745,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_000",
+      "domain": "Committee",
+      "split": "train",
+      "records": 49,
+      "quotes": "101/105",
+      "unsupported_evidence_rate": 0.038,
+      "strict_verbatim_rate": 0.962,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_001",
+      "domain": "Committee",
+      "split": "train",
+      "records": 45,
+      "quotes": "98/107",
+      "unsupported_evidence_rate": 0.084,
+      "strict_verbatim_rate": 0.916,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_002",
+      "domain": "Committee",
+      "split": "train",
+      "records": 38,
+      "quotes": "86/89",
+      "unsupported_evidence_rate": 0.034,
+      "strict_verbatim_rate": 0.966,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_003",
+      "domain": "Committee",
+      "split": "train",
+      "records": 113,
+      "quotes": "271/285",
+      "unsupported_evidence_rate": 0.049,
+      "strict_verbatim_rate": 0.951,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_004",
+      "domain": "Committee",
+      "split": "train",
+      "records": 76,
+      "quotes": "102/116",
+      "unsupported_evidence_rate": 0.121,
+      "strict_verbatim_rate": 0.879,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_005",
+      "domain": "Committee",
+      "split": "train",
+      "records": 57,
+      "quotes": "102/110",
+      "unsupported_evidence_rate": 0.073,
+      "strict_verbatim_rate": 0.927,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_006",
+      "domain": "Committee",
+      "split": "train",
+      "records": 33,
+      "quotes": "77/82",
+      "unsupported_evidence_rate": 0.061,
+      "strict_verbatim_rate": 0.939,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_007",
+      "domain": "Committee",
+      "split": "train",
+      "records": 35,
+      "quotes": "75/75",
+      "unsupported_evidence_rate": 0.0,
+      "strict_verbatim_rate": 1.0,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_008",
+      "domain": "Committee",
+      "split": "train",
+      "records": 58,
+      "quotes": "166/167",
+      "unsupported_evidence_rate": 0.006,
+      "strict_verbatim_rate": 0.994,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_009",
+      "domain": "Committee",
+      "split": "train",
+      "records": 53,
+      "quotes": "106/115",
+      "unsupported_evidence_rate": 0.078,
+      "strict_verbatim_rate": 0.922,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_010",
+      "domain": "Committee",
+      "split": "train",
+      "records": 82,
+      "quotes": "192/203",
+      "unsupported_evidence_rate": 0.054,
+      "strict_verbatim_rate": 0.946,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_011",
+      "domain": "Committee",
+      "split": "train",
+      "records": 34,
+      "quotes": "52/59",
+      "unsupported_evidence_rate": 0.119,
+      "strict_verbatim_rate": 0.881,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_012",
+      "domain": "Committee",
+      "split": "train",
+      "records": 111,
+      "quotes": "324/347",
+      "unsupported_evidence_rate": 0.066,
+      "strict_verbatim_rate": 0.934,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_013",
+      "domain": "Committee",
+      "split": "train",
+      "records": 43,
+      "quotes": "126/128",
+      "unsupported_evidence_rate": 0.016,
+      "strict_verbatim_rate": 0.984,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_014",
+      "domain": "Committee",
+      "split": "train",
+      "records": 94,
+      "quotes": "199/208",
+      "unsupported_evidence_rate": 0.043,
+      "strict_verbatim_rate": 0.957,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_015",
+      "domain": "Committee",
+      "split": "train",
+      "records": 40,
+      "quotes": "111/115",
+      "unsupported_evidence_rate": 0.035,
+      "strict_verbatim_rate": 0.965,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_016",
+      "domain": "Committee",
+      "split": "train",
+      "records": 44,
+      "quotes": "119/125",
+      "unsupported_evidence_rate": 0.048,
+      "strict_verbatim_rate": 0.952,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_017",
+      "domain": "Committee",
+      "split": "train",
+      "records": 102,
+      "quotes": "264/281",
+      "unsupported_evidence_rate": 0.06,
+      "strict_verbatim_rate": 0.94,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_018",
+      "domain": "Committee",
+      "split": "train",
+      "records": 46,
+      "quotes": "81/86",
+      "unsupported_evidence_rate": 0.058,
+      "strict_verbatim_rate": 0.942,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_019",
+      "domain": "Committee",
+      "split": "train",
+      "records": 36,
+      "quotes": "74/78",
+      "unsupported_evidence_rate": 0.051,
+      "strict_verbatim_rate": 0.949,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_020",
+      "domain": "Committee",
+      "split": "train",
+      "records": 82,
+      "quotes": "166/177",
+      "unsupported_evidence_rate": 0.062,
+      "strict_verbatim_rate": 0.938,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_021",
+      "domain": "Committee",
+      "split": "train",
+      "records": 125,
+      "quotes": "242/258",
+      "unsupported_evidence_rate": 0.062,
+      "strict_verbatim_rate": 0.938,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_022",
+      "domain": "Committee",
+      "split": "train",
+      "records": 45,
+      "quotes": "137/143",
+      "unsupported_evidence_rate": 0.042,
+      "strict_verbatim_rate": 0.958,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TR_023",
+      "domain": "Committee",
+      "split": "train",
+      "records": 35,
+      "quotes": "70/76",
+      "unsupported_evidence_rate": 0.079,
+      "strict_verbatim_rate": 0.921,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_VA_000",
+      "domain": "Committee",
+      "split": "val",
+      "records": 124,
+      "quotes": "255/272",
+      "unsupported_evidence_rate": 0.062,
+      "strict_verbatim_rate": 0.938,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_VA_001",
+      "domain": "Committee",
+      "split": "val",
+      "records": 33,
+      "quotes": "75/80",
+      "unsupported_evidence_rate": 0.062,
+      "strict_verbatim_rate": 0.938,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_VA_002",
+      "domain": "Committee",
+      "split": "val",
+      "records": 66,
+      "quotes": "117/122",
+      "unsupported_evidence_rate": 0.041,
+      "strict_verbatim_rate": 0.951,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_VA_003",
+      "domain": "Committee",
+      "split": "val",
+      "records": 35,
+      "quotes": "72/81",
+      "unsupported_evidence_rate": 0.111,
+      "strict_verbatim_rate": 0.889,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_VA_004",
+      "domain": "Committee",
+      "split": "val",
+      "records": 37,
+      "quotes": "103/105",
+      "unsupported_evidence_rate": 0.019,
+      "strict_verbatim_rate": 0.981,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_VA_005",
+      "domain": "Committee",
+      "split": "val",
+      "records": 91,
+      "quotes": "263/277",
+      "unsupported_evidence_rate": 0.051,
+      "strict_verbatim_rate": 0.949,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TE_000",
+      "domain": "Committee",
+      "split": "test",
+      "records": 73,
+      "quotes": "159/163",
+      "unsupported_evidence_rate": 0.025,
+      "strict_verbatim_rate": 0.975,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TE_001",
+      "domain": "Committee",
+      "split": "test",
+      "records": 104,
+      "quotes": "295/303",
+      "unsupported_evidence_rate": 0.026,
+      "strict_verbatim_rate": 0.974,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TE_002",
+      "domain": "Committee",
+      "split": "test",
+      "records": 18,
+      "quotes": "94/95",
+      "unsupported_evidence_rate": 0.011,
+      "strict_verbatim_rate": 0.989,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TE_003",
+      "domain": "Committee",
+      "split": "test",
+      "records": 76,
+      "quotes": "189/196",
+      "unsupported_evidence_rate": 0.036,
+      "strict_verbatim_rate": 0.964,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_CMT_TE_004",
+      "domain": "Committee",
+      "split": "test",
+      "records": 39,
+      "quotes": "86/92",
+      "unsupported_evidence_rate": 0.065,
+      "strict_verbatim_rate": 0.935,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_CMT_TE_005",
+      "domain": "Committee",
+      "split": "test",
+      "records": 58,
+      "quotes": "113/120",
+      "unsupported_evidence_rate": 0.058,
+      "strict_verbatim_rate": 0.942,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_000",
+      "domain": "Product",
+      "split": "train",
+      "records": 10,
+      "quotes": "37/43",
+      "unsupported_evidence_rate": 0.14,
+      "strict_verbatim_rate": 0.721,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_001",
+      "domain": "Product",
+      "split": "train",
+      "records": 24,
+      "quotes": "145/152",
+      "unsupported_evidence_rate": 0.046,
+      "strict_verbatim_rate": 0.928,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_002",
+      "domain": "Product",
+      "split": "train",
+      "records": 5,
+      "quotes": "33/35",
+      "unsupported_evidence_rate": 0.057,
+      "strict_verbatim_rate": 0.886,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_003",
+      "domain": "Product",
+      "split": "train",
+      "records": 29,
+      "quotes": "104/128",
+      "unsupported_evidence_rate": 0.188,
+      "strict_verbatim_rate": 0.789,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_004",
+      "domain": "Product",
+      "split": "train",
+      "records": 19,
+      "quotes": "80/97",
+      "unsupported_evidence_rate": 0.175,
+      "strict_verbatim_rate": 0.804,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_005",
+      "domain": "Product",
+      "split": "train",
+      "records": 16,
+      "quotes": "79/87",
+      "unsupported_evidence_rate": 0.092,
+      "strict_verbatim_rate": 0.897,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_006",
+      "domain": "Product",
+      "split": "train",
+      "records": 7,
+      "quotes": "14/14",
+      "unsupported_evidence_rate": 0.0,
+      "strict_verbatim_rate": 1.0,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_007",
+      "domain": "Product",
+      "split": "train",
+      "records": 2,
+      "quotes": "17/18",
+      "unsupported_evidence_rate": 0.056,
+      "strict_verbatim_rate": 0.833,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_008",
+      "domain": "Product",
+      "split": "train",
+      "records": 15,
+      "quotes": "45/53",
+      "unsupported_evidence_rate": 0.151,
+      "strict_verbatim_rate": 0.774,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_009",
+      "domain": "Product",
+      "split": "train",
+      "records": 26,
+      "quotes": "126/141",
+      "unsupported_evidence_rate": 0.106,
+      "strict_verbatim_rate": 0.794,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_010",
+      "domain": "Product",
+      "split": "train",
+      "records": 27,
+      "quotes": "127/142",
+      "unsupported_evidence_rate": 0.106,
+      "strict_verbatim_rate": 0.873,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_011",
+      "domain": "Product",
+      "split": "train",
+      "records": 19,
+      "quotes": "76/89",
+      "unsupported_evidence_rate": 0.146,
+      "strict_verbatim_rate": 0.809,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_012",
+      "domain": "Product",
+      "split": "train",
+      "records": 26,
+      "quotes": "120/129",
+      "unsupported_evidence_rate": 0.07,
+      "strict_verbatim_rate": 0.907,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_013",
+      "domain": "Product",
+      "split": "train",
+      "records": 22,
+      "quotes": "28/40",
+      "unsupported_evidence_rate": 0.3,
+      "strict_verbatim_rate": 0.675,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_014",
+      "domain": "Product",
+      "split": "train",
+      "records": 30,
+      "quotes": "115/124",
+      "unsupported_evidence_rate": 0.073,
+      "strict_verbatim_rate": 0.903,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_015",
+      "domain": "Product",
+      "split": "train",
+      "records": 26,
+      "quotes": "159/179",
+      "unsupported_evidence_rate": 0.112,
+      "strict_verbatim_rate": 0.838,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_016",
+      "domain": "Product",
+      "split": "train",
+      "records": 7,
+      "quotes": "22/23",
+      "unsupported_evidence_rate": 0.043,
+      "strict_verbatim_rate": 0.913,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_017",
+      "domain": "Product",
+      "split": "train",
+      "records": 19,
+      "quotes": "76/85",
+      "unsupported_evidence_rate": 0.106,
+      "strict_verbatim_rate": 0.882,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_018",
+      "domain": "Product",
+      "split": "train",
+      "records": 24,
+      "quotes": "134/148",
+      "unsupported_evidence_rate": 0.095,
+      "strict_verbatim_rate": 0.878,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_019",
+      "domain": "Product",
+      "split": "train",
+      "records": 18,
+      "quotes": "60/66",
+      "unsupported_evidence_rate": 0.091,
+      "strict_verbatim_rate": 0.879,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_020",
+      "domain": "Product",
+      "split": "train",
+      "records": 40,
+      "quotes": "93/106",
+      "unsupported_evidence_rate": 0.123,
+      "strict_verbatim_rate": 0.821,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_021",
+      "domain": "Product",
+      "split": "train",
+      "records": 7,
+      "quotes": "25/29",
+      "unsupported_evidence_rate": 0.138,
+      "strict_verbatim_rate": 0.793,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_022",
+      "domain": "Product",
+      "split": "train",
+      "records": 24,
+      "quotes": "101/116",
+      "unsupported_evidence_rate": 0.129,
+      "strict_verbatim_rate": 0.845,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_023",
+      "domain": "Product",
+      "split": "train",
+      "records": 4,
+      "quotes": "13/14",
+      "unsupported_evidence_rate": 0.071,
+      "strict_verbatim_rate": 0.929,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_024",
+      "domain": "Product",
+      "split": "train",
+      "records": 17,
+      "quotes": "38/39",
+      "unsupported_evidence_rate": 0.026,
+      "strict_verbatim_rate": 0.949,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_025",
+      "domain": "Product",
+      "split": "train",
+      "records": 20,
+      "quotes": "41/52",
+      "unsupported_evidence_rate": 0.212,
+      "strict_verbatim_rate": 0.712,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_026",
+      "domain": "Product",
+      "split": "train",
+      "records": 12,
+      "quotes": "44/49",
+      "unsupported_evidence_rate": 0.102,
+      "strict_verbatim_rate": 0.878,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_027",
+      "domain": "Product",
+      "split": "train",
+      "records": 21,
+      "quotes": "55/60",
+      "unsupported_evidence_rate": 0.083,
+      "strict_verbatim_rate": 0.85,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_028",
+      "domain": "Product",
+      "split": "train",
+      "records": 12,
+      "quotes": "39/55",
+      "unsupported_evidence_rate": 0.291,
+      "strict_verbatim_rate": 0.618,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_029",
+      "domain": "Product",
+      "split": "train",
+      "records": 17,
+      "quotes": "93/96",
+      "unsupported_evidence_rate": 0.031,
+      "strict_verbatim_rate": 0.906,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_030",
+      "domain": "Product",
+      "split": "train",
+      "records": 32,
+      "quotes": "115/128",
+      "unsupported_evidence_rate": 0.102,
+      "strict_verbatim_rate": 0.867,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_031",
+      "domain": "Product",
+      "split": "train",
+      "records": 40,
+      "quotes": "132/156",
+      "unsupported_evidence_rate": 0.154,
+      "strict_verbatim_rate": 0.821,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_032",
+      "domain": "Product",
+      "split": "train",
+      "records": 29,
+      "quotes": "78/104",
+      "unsupported_evidence_rate": 0.25,
+      "strict_verbatim_rate": 0.731,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_033",
+      "domain": "Product",
+      "split": "train",
+      "records": 25,
+      "quotes": "52/74",
+      "unsupported_evidence_rate": 0.297,
+      "strict_verbatim_rate": 0.649,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_034",
+      "domain": "Product",
+      "split": "train",
+      "records": 22,
+      "quotes": "106/118",
+      "unsupported_evidence_rate": 0.102,
+      "strict_verbatim_rate": 0.864,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_035",
+      "domain": "Product",
+      "split": "train",
+      "records": 30,
+      "quotes": "67/76",
+      "unsupported_evidence_rate": 0.118,
+      "strict_verbatim_rate": 0.789,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_036",
+      "domain": "Product",
+      "split": "train",
+      "records": 38,
+      "quotes": "92/110",
+      "unsupported_evidence_rate": 0.164,
+      "strict_verbatim_rate": 0.782,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_037",
+      "domain": "Product",
+      "split": "train",
+      "records": 24,
+      "quotes": "94/108",
+      "unsupported_evidence_rate": 0.13,
+      "strict_verbatim_rate": 0.833,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_038",
+      "domain": "Product",
+      "split": "train",
+      "records": 26,
+      "quotes": "62/72",
+      "unsupported_evidence_rate": 0.139,
+      "strict_verbatim_rate": 0.819,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_039",
+      "domain": "Product",
+      "split": "train",
+      "records": 14,
+      "quotes": "61/64",
+      "unsupported_evidence_rate": 0.047,
+      "strict_verbatim_rate": 0.922,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_040",
+      "domain": "Product",
+      "split": "train",
+      "records": 20,
+      "quotes": "66/82",
+      "unsupported_evidence_rate": 0.195,
+      "strict_verbatim_rate": 0.72,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_041",
+      "domain": "Product",
+      "split": "train",
+      "records": 22,
+      "quotes": "57/71",
+      "unsupported_evidence_rate": 0.197,
+      "strict_verbatim_rate": 0.761,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_042",
+      "domain": "Product",
+      "split": "train",
+      "records": 17,
+      "quotes": "81/90",
+      "unsupported_evidence_rate": 0.1,
+      "strict_verbatim_rate": 0.833,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_043",
+      "domain": "Product",
+      "split": "train",
+      "records": 8,
+      "quotes": "8/16",
+      "unsupported_evidence_rate": 0.5,
+      "strict_verbatim_rate": 0.438,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_044",
+      "domain": "Product",
+      "split": "train",
+      "records": 17,
+      "quotes": "88/93",
+      "unsupported_evidence_rate": 0.054,
+      "strict_verbatim_rate": 0.903,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_045",
+      "domain": "Product",
+      "split": "train",
+      "records": 10,
+      "quotes": "34/46",
+      "unsupported_evidence_rate": 0.261,
+      "strict_verbatim_rate": 0.739,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_046",
+      "domain": "Product",
+      "split": "train",
+      "records": 19,
+      "quotes": "30/44",
+      "unsupported_evidence_rate": 0.318,
+      "strict_verbatim_rate": 0.568,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_047",
+      "domain": "Product",
+      "split": "train",
+      "records": 10,
+      "quotes": "104/116",
+      "unsupported_evidence_rate": 0.103,
+      "strict_verbatim_rate": 0.836,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_048",
+      "domain": "Product",
+      "split": "train",
+      "records": 16,
+      "quotes": "40/53",
+      "unsupported_evidence_rate": 0.245,
+      "strict_verbatim_rate": 0.698,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_049",
+      "domain": "Product",
+      "split": "train",
+      "records": 8,
+      "quotes": "12/18",
+      "unsupported_evidence_rate": 0.333,
+      "strict_verbatim_rate": 0.556,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_050",
+      "domain": "Product",
+      "split": "train",
+      "records": 4,
+      "quotes": "16/16",
+      "unsupported_evidence_rate": 0.0,
+      "strict_verbatim_rate": 0.812,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_051",
+      "domain": "Product",
+      "split": "train",
+      "records": 22,
+      "quotes": "48/54",
+      "unsupported_evidence_rate": 0.111,
+      "strict_verbatim_rate": 0.815,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_052",
+      "domain": "Product",
+      "split": "train",
+      "records": 15,
+      "quotes": "55/61",
+      "unsupported_evidence_rate": 0.098,
+      "strict_verbatim_rate": 0.852,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_053",
+      "domain": "Product",
+      "split": "train",
+      "records": 7,
+      "quotes": "25/26",
+      "unsupported_evidence_rate": 0.038,
+      "strict_verbatim_rate": 0.885,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_054",
+      "domain": "Product",
+      "split": "train",
+      "records": 11,
+      "quotes": "28/38",
+      "unsupported_evidence_rate": 0.263,
+      "strict_verbatim_rate": 0.632,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_055",
+      "domain": "Product",
+      "split": "train",
+      "records": 35,
+      "quotes": "74/88",
+      "unsupported_evidence_rate": 0.159,
+      "strict_verbatim_rate": 0.784,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_056",
+      "domain": "Product",
+      "split": "train",
+      "records": 24,
+      "quotes": "55/64",
+      "unsupported_evidence_rate": 0.141,
+      "strict_verbatim_rate": 0.844,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_057",
+      "domain": "Product",
+      "split": "train",
+      "records": 7,
+      "quotes": "67/69",
+      "unsupported_evidence_rate": 0.029,
+      "strict_verbatim_rate": 0.957,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_058",
+      "domain": "Product",
+      "split": "train",
+      "records": 15,
+      "quotes": "23/28",
+      "unsupported_evidence_rate": 0.179,
+      "strict_verbatim_rate": 0.786,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_059",
+      "domain": "Product",
+      "split": "train",
+      "records": 7,
+      "quotes": "17/20",
+      "unsupported_evidence_rate": 0.15,
+      "strict_verbatim_rate": 0.8,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_060",
+      "domain": "Product",
+      "split": "train",
+      "records": 23,
+      "quotes": "63/77",
+      "unsupported_evidence_rate": 0.182,
+      "strict_verbatim_rate": 0.701,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_061",
+      "domain": "Product",
+      "split": "train",
+      "records": 10,
+      "quotes": "24/25",
+      "unsupported_evidence_rate": 0.04,
+      "strict_verbatim_rate": 0.8,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_062",
+      "domain": "Product",
+      "split": "train",
+      "records": 22,
+      "quotes": "53/67",
+      "unsupported_evidence_rate": 0.209,
+      "strict_verbatim_rate": 0.716,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_063",
+      "domain": "Product",
+      "split": "train",
+      "records": 22,
+      "quotes": "120/135",
+      "unsupported_evidence_rate": 0.111,
+      "strict_verbatim_rate": 0.859,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_064",
+      "domain": "Product",
+      "split": "train",
+      "records": 25,
+      "quotes": "68/75",
+      "unsupported_evidence_rate": 0.093,
+      "strict_verbatim_rate": 0.853,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_065",
+      "domain": "Product",
+      "split": "train",
+      "records": 23,
+      "quotes": "64/72",
+      "unsupported_evidence_rate": 0.111,
+      "strict_verbatim_rate": 0.847,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_066",
+      "domain": "Product",
+      "split": "train",
+      "records": 23,
+      "quotes": "63/69",
+      "unsupported_evidence_rate": 0.087,
+      "strict_verbatim_rate": 0.87,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_067",
+      "domain": "Product",
+      "split": "train",
+      "records": 11,
+      "quotes": "90/92",
+      "unsupported_evidence_rate": 0.022,
+      "strict_verbatim_rate": 0.967,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_068",
+      "domain": "Product",
+      "split": "train",
+      "records": 10,
+      "quotes": "20/25",
+      "unsupported_evidence_rate": 0.2,
+      "strict_verbatim_rate": 0.76,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_069",
+      "domain": "Product",
+      "split": "train",
+      "records": 30,
+      "quotes": "53/67",
+      "unsupported_evidence_rate": 0.209,
+      "strict_verbatim_rate": 0.761,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_070",
+      "domain": "Product",
+      "split": "train",
+      "records": 30,
+      "quotes": "121/131",
+      "unsupported_evidence_rate": 0.076,
+      "strict_verbatim_rate": 0.901,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_071",
+      "domain": "Product",
+      "split": "train",
+      "records": 19,
+      "quotes": "56/63",
+      "unsupported_evidence_rate": 0.111,
+      "strict_verbatim_rate": 0.81,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_072",
+      "domain": "Product",
+      "split": "train",
+      "records": 15,
+      "quotes": "39/46",
+      "unsupported_evidence_rate": 0.152,
+      "strict_verbatim_rate": 0.696,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_073",
+      "domain": "Product",
+      "split": "train",
+      "records": 17,
+      "quotes": "65/76",
+      "unsupported_evidence_rate": 0.145,
+      "strict_verbatim_rate": 0.776,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_074",
+      "domain": "Product",
+      "split": "train",
+      "records": 19,
+      "quotes": "29/37",
+      "unsupported_evidence_rate": 0.216,
+      "strict_verbatim_rate": 0.784,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_075",
+      "domain": "Product",
+      "split": "train",
+      "records": 32,
+      "quotes": "47/54",
+      "unsupported_evidence_rate": 0.13,
+      "strict_verbatim_rate": 0.815,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_076",
+      "domain": "Product",
+      "split": "train",
+      "records": 8,
+      "quotes": "28/32",
+      "unsupported_evidence_rate": 0.125,
+      "strict_verbatim_rate": 0.812,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_077",
+      "domain": "Product",
+      "split": "train",
+      "records": 18,
+      "quotes": "46/57",
+      "unsupported_evidence_rate": 0.193,
+      "strict_verbatim_rate": 0.737,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_078",
+      "domain": "Product",
+      "split": "train",
+      "records": 11,
+      "quotes": "23/34",
+      "unsupported_evidence_rate": 0.324,
+      "strict_verbatim_rate": 0.618,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_079",
+      "domain": "Product",
+      "split": "train",
+      "records": 26,
+      "quotes": "32/47",
+      "unsupported_evidence_rate": 0.319,
+      "strict_verbatim_rate": 0.638,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_080",
+      "domain": "Product",
+      "split": "train",
+      "records": 21,
+      "quotes": "70/81",
+      "unsupported_evidence_rate": 0.136,
+      "strict_verbatim_rate": 0.827,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_081",
+      "domain": "Product",
+      "split": "train",
+      "records": 28,
+      "quotes": "128/145",
+      "unsupported_evidence_rate": 0.117,
+      "strict_verbatim_rate": 0.834,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_082",
+      "domain": "Product",
+      "split": "train",
+      "records": 17,
+      "quotes": "85/90",
+      "unsupported_evidence_rate": 0.056,
+      "strict_verbatim_rate": 0.867,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_083",
+      "domain": "Product",
+      "split": "train",
+      "records": 22,
+      "quotes": "99/118",
+      "unsupported_evidence_rate": 0.161,
+      "strict_verbatim_rate": 0.797,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_084",
+      "domain": "Product",
+      "split": "train",
+      "records": 20,
+      "quotes": "45/51",
+      "unsupported_evidence_rate": 0.118,
+      "strict_verbatim_rate": 0.784,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_085",
+      "domain": "Product",
+      "split": "train",
+      "records": 15,
+      "quotes": "42/48",
+      "unsupported_evidence_rate": 0.125,
+      "strict_verbatim_rate": 0.75,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_086",
+      "domain": "Product",
+      "split": "train",
+      "records": 23,
+      "quotes": "35/47",
+      "unsupported_evidence_rate": 0.255,
+      "strict_verbatim_rate": 0.681,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_087",
+      "domain": "Product",
+      "split": "train",
+      "records": 21,
+      "quotes": "82/98",
+      "unsupported_evidence_rate": 0.163,
+      "strict_verbatim_rate": 0.796,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_088",
+      "domain": "Product",
+      "split": "train",
+      "records": 6,
+      "quotes": "42/48",
+      "unsupported_evidence_rate": 0.125,
+      "strict_verbatim_rate": 0.708,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_089",
+      "domain": "Product",
+      "split": "train",
+      "records": 22,
+      "quotes": "47/62",
+      "unsupported_evidence_rate": 0.242,
+      "strict_verbatim_rate": 0.677,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_090",
+      "domain": "Product",
+      "split": "train",
+      "records": 12,
+      "quotes": "38/50",
+      "unsupported_evidence_rate": 0.24,
+      "strict_verbatim_rate": 0.64,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_091",
+      "domain": "Product",
+      "split": "train",
+      "records": 38,
+      "quotes": "76/90",
+      "unsupported_evidence_rate": 0.156,
+      "strict_verbatim_rate": 0.744,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_092",
+      "domain": "Product",
+      "split": "train",
+      "records": 20,
+      "quotes": "76/88",
+      "unsupported_evidence_rate": 0.136,
+      "strict_verbatim_rate": 0.795,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_093",
+      "domain": "Product",
+      "split": "train",
+      "records": 11,
+      "quotes": "57/66",
+      "unsupported_evidence_rate": 0.136,
+      "strict_verbatim_rate": 0.848,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_094",
+      "domain": "Product",
+      "split": "train",
+      "records": 12,
+      "quotes": "115/124",
+      "unsupported_evidence_rate": 0.073,
+      "strict_verbatim_rate": 0.823,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_095",
+      "domain": "Product",
+      "split": "train",
+      "records": 7,
+      "quotes": "74/77",
+      "unsupported_evidence_rate": 0.039,
+      "strict_verbatim_rate": 0.909,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TR_096",
+      "domain": "Product",
+      "split": "train",
+      "records": 5,
+      "quotes": "18/19",
+      "unsupported_evidence_rate": 0.053,
+      "strict_verbatim_rate": 0.895,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_000",
+      "domain": "Product",
+      "split": "val",
+      "records": 24,
+      "quotes": "99/110",
+      "unsupported_evidence_rate": 0.1,
+      "strict_verbatim_rate": 0.836,
+      "chunks_failed": 1
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_001",
+      "domain": "Product",
+      "split": "val",
+      "records": 18,
+      "quotes": "25/33",
+      "unsupported_evidence_rate": 0.242,
+      "strict_verbatim_rate": 0.667,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_002",
+      "domain": "Product",
+      "split": "val",
+      "records": 23,
+      "quotes": "88/93",
+      "unsupported_evidence_rate": 0.054,
+      "strict_verbatim_rate": 0.882,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_003",
+      "domain": "Product",
+      "split": "val",
+      "records": 16,
+      "quotes": "79/90",
+      "unsupported_evidence_rate": 0.122,
+      "strict_verbatim_rate": 0.833,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_004",
+      "domain": "Product",
+      "split": "val",
+      "records": 22,
+      "quotes": "74/82",
+      "unsupported_evidence_rate": 0.098,
+      "strict_verbatim_rate": 0.89,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_005",
+      "domain": "Product",
+      "split": "val",
+      "records": 15,
+      "quotes": "32/38",
+      "unsupported_evidence_rate": 0.158,
+      "strict_verbatim_rate": 0.763,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_006",
+      "domain": "Product",
+      "split": "val",
+      "records": 28,
+      "quotes": "121/135",
+      "unsupported_evidence_rate": 0.104,
+      "strict_verbatim_rate": 0.844,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_007",
+      "domain": "Product",
+      "split": "val",
+      "records": 12,
+      "quotes": "40/45",
+      "unsupported_evidence_rate": 0.111,
+      "strict_verbatim_rate": 0.822,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_008",
+      "domain": "Product",
+      "split": "val",
+      "records": 31,
+      "quotes": "155/168",
+      "unsupported_evidence_rate": 0.077,
+      "strict_verbatim_rate": 0.881,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_009",
+      "domain": "Product",
+      "split": "val",
+      "records": 35,
+      "quotes": "86/95",
+      "unsupported_evidence_rate": 0.095,
+      "strict_verbatim_rate": 0.853,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_010",
+      "domain": "Product",
+      "split": "val",
+      "records": 11,
+      "quotes": "193/204",
+      "unsupported_evidence_rate": 0.054,
+      "strict_verbatim_rate": 0.907,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_011",
+      "domain": "Product",
+      "split": "val",
+      "records": 19,
+      "quotes": "55/59",
+      "unsupported_evidence_rate": 0.068,
+      "strict_verbatim_rate": 0.898,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_012",
+      "domain": "Product",
+      "split": "val",
+      "records": 10,
+      "quotes": "21/28",
+      "unsupported_evidence_rate": 0.25,
+      "strict_verbatim_rate": 0.679,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_013",
+      "domain": "Product",
+      "split": "val",
+      "records": 22,
+      "quotes": "88/95",
+      "unsupported_evidence_rate": 0.074,
+      "strict_verbatim_rate": 0.811,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_014",
+      "domain": "Product",
+      "split": "val",
+      "records": 23,
+      "quotes": "56/65",
+      "unsupported_evidence_rate": 0.138,
+      "strict_verbatim_rate": 0.8,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_015",
+      "domain": "Product",
+      "split": "val",
+      "records": 6,
+      "quotes": "14/15",
+      "unsupported_evidence_rate": 0.067,
+      "strict_verbatim_rate": 0.933,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_016",
+      "domain": "Product",
+      "split": "val",
+      "records": 14,
+      "quotes": "47/53",
+      "unsupported_evidence_rate": 0.113,
+      "strict_verbatim_rate": 0.717,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_017",
+      "domain": "Product",
+      "split": "val",
+      "records": 24,
+      "quotes": "71/84",
+      "unsupported_evidence_rate": 0.155,
+      "strict_verbatim_rate": 0.762,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_018",
+      "domain": "Product",
+      "split": "val",
+      "records": 26,
+      "quotes": "92/106",
+      "unsupported_evidence_rate": 0.132,
+      "strict_verbatim_rate": 0.83,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_VA_019",
+      "domain": "Product",
+      "split": "val",
+      "records": 16,
+      "quotes": "113/118",
+      "unsupported_evidence_rate": 0.042,
+      "strict_verbatim_rate": 0.915,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_000",
+      "domain": "Product",
+      "split": "test",
+      "records": 7,
+      "quotes": "108/112",
+      "unsupported_evidence_rate": 0.036,
+      "strict_verbatim_rate": 0.938,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_001",
+      "domain": "Product",
+      "split": "test",
+      "records": 15,
+      "quotes": "41/50",
+      "unsupported_evidence_rate": 0.18,
+      "strict_verbatim_rate": 0.68,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_002",
+      "domain": "Product",
+      "split": "test",
+      "records": 21,
+      "quotes": "89/96",
+      "unsupported_evidence_rate": 0.073,
+      "strict_verbatim_rate": 0.844,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_003",
+      "domain": "Product",
+      "split": "test",
+      "records": 7,
+      "quotes": "74/75",
+      "unsupported_evidence_rate": 0.013,
+      "strict_verbatim_rate": 0.987,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_004",
+      "domain": "Product",
+      "split": "test",
+      "records": 25,
+      "quotes": "89/101",
+      "unsupported_evidence_rate": 0.119,
+      "strict_verbatim_rate": 0.851,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_006",
+      "domain": "Product",
+      "split": "test",
+      "records": 19,
+      "quotes": "104/110",
+      "unsupported_evidence_rate": 0.055,
+      "strict_verbatim_rate": 0.909,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_008",
+      "domain": "Product",
+      "split": "test",
+      "records": 33,
+      "quotes": "174/183",
+      "unsupported_evidence_rate": 0.049,
+      "strict_verbatim_rate": 0.934,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_011",
+      "domain": "Product",
+      "split": "test",
+      "records": 27,
+      "quotes": "79/91",
+      "unsupported_evidence_rate": 0.132,
+      "strict_verbatim_rate": 0.824,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_013",
+      "domain": "Product",
+      "split": "test",
+      "records": 23,
+      "quotes": "46/51",
+      "unsupported_evidence_rate": 0.098,
+      "strict_verbatim_rate": 0.804,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_014",
+      "domain": "Product",
+      "split": "test",
+      "records": 15,
+      "quotes": "35/52",
+      "unsupported_evidence_rate": 0.327,
+      "strict_verbatim_rate": 0.596,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_015",
+      "domain": "Product",
+      "split": "test",
+      "records": 19,
+      "quotes": "76/80",
+      "unsupported_evidence_rate": 0.05,
+      "strict_verbatim_rate": 0.85,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_016",
+      "domain": "Product",
+      "split": "test",
+      "records": 14,
+      "quotes": "91/95",
+      "unsupported_evidence_rate": 0.042,
+      "strict_verbatim_rate": 0.947,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_017",
+      "domain": "Product",
+      "split": "test",
+      "records": 16,
+      "quotes": "26/39",
+      "unsupported_evidence_rate": 0.333,
+      "strict_verbatim_rate": 0.59,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_018",
+      "domain": "Product",
+      "split": "test",
+      "records": 11,
+      "quotes": "70/83",
+      "unsupported_evidence_rate": 0.157,
+      "strict_verbatim_rate": 0.771,
+      "chunks_failed": 0
+    },
+    {
+      "meeting_id": "QMS_PRD_TE_019",
+      "domain": "Product",
+      "split": "test",
+      "records": 48,
+      "quotes": "135/138",
+      "unsupported_evidence_rate": 0.022,
+      "strict_verbatim_rate": 0.949,
+      "chunks_failed": 0
     }
   ]
 }

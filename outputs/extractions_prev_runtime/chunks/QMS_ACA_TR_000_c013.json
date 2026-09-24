@@ -1,0 +1,43 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c013_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c013",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to double-check the transcriptions of NSA meetings for jargon and foreign language terms.",
+      "topic": "transcription checking",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To improve the performance of the recognizer.",
+        "To get people's approval."
+      ],
+      "conditions": [
+        "The checked versions will be run through the recognizer.",
+        "There are a lot of these in there."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": "Professor B",
+      "evidence": [
+        {
+          "quote": "I'm hoping that when the checked versions are run through the recognizer that you'll see substantial improvements in performance cuz the you know , there're a lot of these in there.",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "But it's definitely good that these are fixed. I mean, obviously.",
+          "speaker": "PhD H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "Professor B",
+          "supports": "approver"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

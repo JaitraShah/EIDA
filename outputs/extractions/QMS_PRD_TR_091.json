@@ -1,0 +1,1331 @@
+{
+  "source_id": "QMS_PRD_TR_091",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_091_c000_d1",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c000",
+      "schema_version": "1.0.0",
+      "decision": "The cost of the prototype remote control is estimated to be around fifteen dollars.",
+      "topic": "cost of prototype remote control",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "The prototype is made for about fifteen dollars."
+      ],
+      "conditions": [
+        "The cost may be reduced during production."
+      ],
+      "dissent": [
+        "The Project Manager stated that the cost is above the budget."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "this prototype is um made for about uh well fi fi fifteen fifteen dollars",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Ah it's above it's above the budget.",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c000_d2",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c000",
+      "schema_version": "1.0.0",
+      "decision": "The remote control prototype comes with a charger.",
+      "topic": "remote control prototype features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The remote control comes up with its charger."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And so this remote control comes up with its charger.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c000_d3",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c000",
+      "schema_version": "1.0.0",
+      "decision": "The remote control prototype has a single microphone.",
+      "topic": "remote control prototype microphone",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It's just a single microphone."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "it's just a single microphone",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c001_d1",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will use a rechargeable battery.",
+      "topic": "battery type",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "non-rechargeable battery",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Because they have the charger."
+      ],
+      "conditions": [
+        "The specific type of rechargeable battery was not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "A_A rechargeable batteries .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "because we have the charger .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "We have the charger so it's no problem .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c001_d2",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a single button that functions as a joystick.",
+      "topic": "remote control button",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "multiple buttons",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Because it allows for 360-degree movement."
+      ],
+      "conditions": [
+        "The specific functions associated with the button were not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "This button is like the mouse {disfmarker} is like a joystick ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "you can move in three hundred and sixty degrees of direction so you can make a turn and it {disfmarker} the additi functions associated to all the actions you ma you have a click you have a double click all in a single button {vocalsound} .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So um yeah according to what you said it's more robust to the user .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Basically it's the same uh things uh uh as uh I presented before . But here we have uh we have uh four buttons for navigation .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c001_d3",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c001",
+      "schema_version": "1.0.0",
+      "decision": "A new prototype of the remote control with a different button configuration will be considered.",
+      "topic": "remote control prototype",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "the previously presented prototype",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "To potentially make the remote control more robust to the user."
+      ],
+      "conditions": [
+        "The specifics of the new prototype were not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we have the the second version also with the different uh button configuration . The second version is also simpler , we d uh we had just uh I have to put the microphone also {vocalsound} .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it's not a good idea because after maybe one or two months of function is {gap} getting destroyed .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So basically th it's the same uh things uh uh as uh I presented before . But here we have uh we have uh four buttons for navigation .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c002_d1",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a modular design, allowing users to add or remove features for an additional cost.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The modular design makes the remote control flexible in price."
+      ],
+      "conditions": [
+        "The price of the charger is expected to be cheap due to it being a standard module."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it's embed in the uh speech recognition system.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's that same charger that you can use for the hand-phone but uh again depends on the types.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "The price should be below twelve and a half Euro.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "for example the L_C_D_ , you can take it you can put it back in , or you can use the other one ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c002_d2",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a price of 25 Euros.",
+      "topic": "remote control price",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The price of selling is 25 Euros."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The price of selling is twenty five Euros.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c002_d3",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a price that is flexible based on the added features.",
+      "topic": "remote control price",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "If you want more functions, you pay more."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "for example the L_C_D_ , you can take it you can put it back in , or you can use the other one ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "You want a microphone to put in the speech recogniser you don't wan you pay less for the system you see.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c002_d4",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have parental control modules as an optional feature.",
+      "topic": "remote control features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "You can add up the parental control modules to your remote control."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "that that you ca you can add up {vocalsound} to the remote control",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.7
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c003_d1",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a speech recognizer as an add-on or detachable feature.",
+      "topic": "speech recognizer feature",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It provides additional functionality."
+      ],
+      "conditions": [
+        "The exact cost of production is not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The first one is the speech recogniser, again it's detachable or add-on.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "it's very robust",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c003_d2",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a security feature.",
+      "topic": "security feature",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It provides additional security."
+      ],
+      "conditions": [
+        "The exact nature of the security feature is not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "it's very robust",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c003_d3",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a battery life that is endurable.",
+      "topic": "battery life",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It provides sufficient battery life."
+      ],
+      "conditions": [
+        "The exact battery type is not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The battery life is an endurable one",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c003_d4",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a reminder feature for misplacing the device.",
+      "topic": "reminder feature",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It helps users to remember to put the device back to the charger."
+      ],
+      "conditions": [
+        "The exact nature of the reminder is not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So when you finish watching your T_V_ and you the you t you turn off the T_V_ , uh and then there's this message coming out that uh please put that back to the charger",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c003_d5",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a programmable channel and vocabulary.",
+      "topic": "programmable channel and vocabulary",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It allows users to define their own vocabulary."
+      ],
+      "conditions": [
+        "The exact nature of the programmable channel and vocabulary is not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And it also use a programmable channel and vocabulary",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c003_d6",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a feature that allows users to choose TV programs by genre.",
+      "topic": "TV program genre selection",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It provides a more personalized TV viewing experience."
+      ],
+      "conditions": [
+        "The exact nature of the feature is not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So instead of choosing the channel you are choosing the T_V_ contents of the night",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c003_d7",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a design that can be improved upon.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It allows for potential design improvements."
+      ],
+      "conditions": [
+        "The exact nature of the design improvements is not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And also like the {gap} and the fancy designs yeah",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c003_d8",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will be made of titanium.",
+      "topic": "remote control material",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It provides durability and robustness."
+      ],
+      "conditions": [
+        "The exact nature of the titanium use is not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The titanium",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c003_d9",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a feature that reminds users to charge the device.",
+      "topic": "reminder to charge the device",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It helps users to remember to charge the device."
+      ],
+      "conditions": [
+        "The exact nature of the reminder is not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So when you finish watching your T_V_ and you the you t you turn off the T_V_ , uh and then there's this message coming out that uh please put that back to the charger",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c004_d1",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the cost breakdown of the device, including the cost of production, microphone and speech recognition systems, add-on modules, and charger. The total cost for all functionalities was estimated to be about fifteen dollars.",
+      "topic": "cost breakdown",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussed cost components of the device."
+      ],
+      "conditions": [
+        "No decision was made about the cost."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well so the price to produce {disfmarker} For uh the simplest one , say we start from four dollars to produce such a device .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "it's about uh well two dollars to produce uh the microphone and speech recognition systems .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Two dollars for the uh for the add-on modules , and finally three dollars for the charger . So if you uh sum up uh everything wi with the L_C_D_ {vocalsound} , which costs two dollar , you have two plus four plus four plus two plus two .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But it's just if you want all functionalities .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's below the bu the budget .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So I think it should be much more customised to make a different uh shapes .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "And the second thing is , and if the material , they really do not want it to be very hard , as in the case of very pl plastic or titanium , it should be somewhat spongy .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c004_d2",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c004",
+      "schema_version": "1.0.0",
+      "decision": "Marketing presented evaluation criteria for the product, including a preference for a fancy look and feel, technological innovation, and ease of use. The criteria also suggested that the product should be customizable and have a spongy material.",
+      "topic": "evaluation criteria",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Marketing presented evaluation criteria for the product."
+      ],
+      "conditions": [
+        "No decision was made about the evaluation criteria."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So the marketing made an evaluation criteria and these were some of the findings , and uh in the market the people are not really interested with L_C_D_ , without L_C_D_ , with speech recognition interface , or without speech recognition interface , but most of the people what they are interested is {disfmarker} first thing is , they want to have an fancy look and feel , it should be very fancy with colourful and uh very handy to hold .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "And the second thing is it should be much more technologically innovative .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Of course in that we could put L_C_D_ or recognition to be more technologically innovative .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "So I think it should be much more customised to make a different uh shapes .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "And the second thing is , and if the material , they really do not want it to be very hard , as in the case of very pl plastic or titanium , it should be somewhat spongy .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c005_d1",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed to evaluate the remote control on a seven-point scale, with one indicating a lack of fancy look and seven indicating a very fancy look.",
+      "topic": "evaluation criteria",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To assess the aesthetic appeal of the remote control."
+      ],
+      "conditions": [
+        "The evaluation will be conducted by the designers."
+      ],
+      "dissent": [
+        "The Industrial Designer suggested that the design could be improved."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So now you have with L_C_D_ and without L_C_D_ , so on this scale, if it is true, if it has a fancy look you could just tell me one, or if it is false, it doesn't {disfmarker} it looks uh {disfmarker} it doesn't look much fancy, then you could just tell me seven. So {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "And you both agree for that?",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Um we have been focused all this time on the technical aspect, functional aspect, but also the simplicity.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c005_d2",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed to rate the remote control's ease of use on the same seven-point scale.",
+      "topic": "ease of use evaluation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To assess the user-friendliness of the remote control."
+      ],
+      "conditions": [
+        "The evaluation will be conducted by the designers."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So these are the f uh three criteria on which we are going to build our remote.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "And for each of the product you could just give me the scale according to this.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "D is it very fancy or doesn't look much fancy?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c005_d3",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed to evaluate the remote control's innovation on a seven-point scale.",
+      "topic": "innovation evaluation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To assess the novelty and originality of the remote control."
+      ],
+      "conditions": [
+        "The evaluation will be conducted by the designers."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And in the sense of innovativeness, with L_C_D_.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well it's the same for both so {vocalsound} I will give a five, six.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c005_d4",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of hiring a designer to help improve the design of the remote control.",
+      "topic": "hiring a designer",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To potentially bring in fresh design ideas."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "As for the design maybe we could hire a designer to help {vocalsound}.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c006_d1",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to remove the L_C_D_ (Liquid Crystal Display) from the product.",
+      "topic": "L_C_D_ removal",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "keeping L_C_D_",
+          "rejected": true,
+          "reason": "increases price"
+        }
+      ],
+      "rationale": [
+        "The Project Manager thinks it's better to do it without L_C_D_."
+      ],
+      "conditions": [
+        "The display on the L_C_D_ is not yet determined."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So let's remove it.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because that's with L_C_D_ just will increase the price,",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c007_d1",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c007",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to remove the speech recognition and L_C_D_ modules from the remote control.",
+      "topic": "remote control modules",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It will reduce the cost.",
+        "It will be simpler to use.",
+        "It will give more liberty to have a fancy look."
+      ],
+      "conditions": [
+        "The speech recogniser is an add-on module.",
+        "The parental module can be made optional."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "without L_C_D_",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it's better to have this without L_C_D_",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "and it's going to be much simpler to use",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "yes and to improve the the look",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "What about the sys speech recognition?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's an optional.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "In the same set, yeah,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c008_d1",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c008",
+      "schema_version": "1.0.0",
+      "decision": "The decision about the modularity of the remote control is still undecided.",
+      "topic": "modularity of the remote control",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "modular remote control",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "single piece remote control",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the cost, customer preferences, and potential updates."
+      ],
+      "conditions": [
+        "Discussion about the production cost and the potential impact on customers."
+      ],
+      "dissent": [
+        "The Project Manager expressed a preference against a Microsoft-like update model."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So you mean that even if these modules will be will be functional uh will be optional .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it inc increase .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "We're not trying to follow the Microsoft and we don't want to the m {gap}",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And and we we we we we we don't want that .",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c009_d1",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c009",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made about making meetings more interactive or interesting.",
+      "topic": "meeting interaction",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about new ideas, but no specific decision was reached."
+      ],
+      "conditions": [
+        "No specific proposal or plan was presented."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Come up with new product.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Less fancy.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean uh what type of product would you think could we make this more interesting?",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "We need more cakes, more biscuits on the table while we have meetings.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c009_d2",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team was satisfied with the laboratory nearby for building modules.",
+      "topic": "lab for building modules",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team found the laboratory suitable for their needs."
+      ],
+      "conditions": [
+        "The laboratory is nearby."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And the leadership was excellent.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I feel it's fine, we know we don't need anything else.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I suppose that you this criteria, is it?",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah anyway we have the laboratory nearby to build our modules so it's okay.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c009_d3",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team was satisfied with the project presentation.",
+      "topic": "project presentation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team found the project presentation good."
+      ],
+      "conditions": [
+        "The project presentation was finished."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "That was good.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "This is fine for making a presentation for project presentations.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I suppose that you this criteria, is it?",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah anyway we have the laboratory nearby to build our modules so it's okay.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c009_d4",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c009",
+      "schema_version": "1.0.0",
+      "decision": "The teamwork was very good.",
+      "topic": "teamwork",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team found the teamwork excellent."
+      ],
+      "conditions": [
+        "No specific conditions mentioned."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The teamwork was very very good.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c009_d5",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c009",
+      "schema_version": "1.0.0",
+      "decision": "The Project Manager was satisfied with the team's work.",
+      "topic": "satisfaction with team's work",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager expressed satisfaction with the team's work."
+      ],
+      "conditions": [
+        "No specific conditions mentioned."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I was really satisfying to work with with you.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c009_d6",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team was given the liberty to talk as they want.",
+      "topic": "freedom to talk",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager gave the team the liberty to talk as they want."
+      ],
+      "conditions": [
+        "No specific conditions mentioned."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "He gave you the liberty to talk as you wants.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c010_d1",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c010",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that a celebration with a coffee machine is planned.",
+      "topic": "celebration plans",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not explicitly stated."
+      ],
+      "conditions": [
+        "Not explicitly stated."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So coffee machine.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah {vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "free free coffee",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c010_d2",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c010",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that more cakes and biscuits should be provided during meetings.",
+      "topic": "food during meetings",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not explicitly stated.",
+        "User Interface suggests more cakes and biscuits."
+      ],
+      "conditions": [
+        "Not explicitly stated."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Mm we {disfmarker} I I know something , we need more cakes , more biscuits on the table while we have meetings . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c010_d3",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c010",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that clear points should be prepared before meetings.",
+      "topic": "preparation for meetings",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not explicitly stated.",
+        "Industrial Designer suggests a list of points."
+      ],
+      "conditions": [
+        "Not explicitly stated."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "uh prior to the meeting to have uh well a list with the points who will be discussed or things like that , but I think it's alright . We achieved uh project goal I think .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_091_c010_d4",
+      "source_id": "QMS_PRD_TR_091",
+      "chunk_id": "QMS_PRD_TR_091_c010",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the evaluation will be done without L_C_D_ and without speech recognition.",
+      "topic": "evaluation method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not explicitly stated.",
+        "Project Manager suggests evaluation without L_C_D_ and without speech recognition."
+      ],
+      "conditions": [
+        "Not explicitly stated."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Without without L_C_D_ , without speech recognition , it will be simple .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    }
+  ],
+  "chunks_processed": 11,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

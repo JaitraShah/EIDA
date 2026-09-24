@@ -1,0 +1,548 @@
+{
+  "source_id": "QMS_PRD_VA_007",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_VA_007_c000_d1",
+      "source_id": "QMS_PRD_VA_007",
+      "chunk_id": "QMS_PRD_VA_007_c000",
+      "schema_version": "1.0.0",
+      "decision": "The working design of the remote control was found and saved.",
+      "topic": "working design of the remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Industrial Designer had trouble finding the working design, but eventually found it."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Industrial Designer",
+      "approver": "Project Manager",
+      "evidence": [
+        {
+          "quote": "It's the technical function or the functional requirements.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Where have I put it ? My Documents or not ? Hmm . I've save it on my computer , my presentation.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Working design.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah that's the empty one.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Save as .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Save.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Very good.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_007_c001_d1",
+      "source_id": "QMS_PRD_VA_007",
+      "chunk_id": "QMS_PRD_VA_007_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have one battery, a menu button for the company's televisions, and a beep signal for battery status and locating the remote.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "two batteries",
+          "rejected": true,
+          "reason": "would make the remote control more expensive and larger"
+        }
+      ],
+      "rationale": [
+        "One battery will be cheaper than two.",
+        "A menu button will make it easier to use on the company's televisions.",
+        "A beep signal will help locate the remote and indicate when the battery is low."
+      ],
+      "conditions": [
+        "The remote control should work on all televisions.",
+        "The remote control should be long-lasting."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We shouldn't make it too big.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Only one battery on it.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "A long-lasting battery.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Use only plastic.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Not too much buttons on it.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "A menu button uh with a {gap} {disfmarker} menu uh button.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But we can also use it uh a bleep like something, when the battery's empty, then there is a bleep.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "If we w if we use only just one uh small pen-light, then it will be cheaper than when we use two.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah but when you use two, you can use it two times longer.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah but then we'll have to make the um remote control uh long lasting.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think we have to use it also on other televisions though.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Then this is an option.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_007_c002_d1",
+      "source_id": "QMS_PRD_VA_007",
+      "chunk_id": "QMS_PRD_VA_007_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team decided not to proceed with the idea of a remote control with interchangeable covers.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team was unsure if the idea would make enough profit.",
+        "The Project Manager did not think it was necessary."
+      ],
+      "conditions": [
+        "The cost and design of the covers were discussed."
+      ],
+      "dissent": [
+        "The Industrial Designer thought it was a good idea."
+      ],
+      "owner": null,
+      "approver": "Project Manager",
+      "evidence": [
+        {
+          "quote": "Yeah but I don't think we have to do it.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "No.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "If it won't works then we'll get something else.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah but are their profits bigger than their cost?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it will be a little more difficult, but not too much.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_007_c003_d1",
+      "source_id": "QMS_PRD_VA_007",
+      "chunk_id": "QMS_PRD_VA_007_c003",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about the functionality of the remote control.",
+      "topic": "remote control functionality",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "basic remote control",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "multifunctional remote control",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The Project Manager said they will get back on the topic later.",
+        "The User Interface expressed uncertainty about the way they would go."
+      ],
+      "conditions": [
+        "No specific decision or plan was outlined."
+      ],
+      "dissent": [
+        "The Industrial Designer made a vocal sound but no disagreement was stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We'll got back on that later.",
+          "speaker": "Project Manager",
+          "supports": "status"
+        },
+        {
+          "quote": "That was just on my mind.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So I'm gonna have a presentation about um the market",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_007_c004_d1",
+      "source_id": "QMS_PRD_VA_007",
+      "chunk_id": "QMS_PRD_VA_007_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to aim the new remote control at the younger market (aged between 16 and 45).",
+      "topic": "target market",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Young users are highly interested in features and are more critical on their money spending."
+      ],
+      "conditions": [
+        "The older group (aged between 46 and 65) will also buy the remote control, but less of them will do so."
+      ],
+      "dissent": [
+        "The Industrial Designer expressed concerns about the usability of the remote control."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The first group is bigger.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Even young people say it's hard to use, remote control.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I think the younger will be most interested in it.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_007_c004_d2",
+      "source_id": "QMS_PRD_VA_007",
+      "chunk_id": "QMS_PRD_VA_007_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team considered adding speech recognition to the new remote control.",
+      "topic": "speech recognition feature",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Speech recognition was seen as an interesting idea by young users."
+      ],
+      "conditions": [
+        "Older users were not in favor of this feature."
+      ],
+      "dissent": [
+        "The Industrial Designer expressed concerns about the usability of the remote control."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well we found out that there are two markets at which we can aim.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Here we see the same.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_007_c005_d1",
+      "source_id": "QMS_PRD_VA_007",
+      "chunk_id": "QMS_PRD_VA_007_c005",
+      "schema_version": "1.0.0",
+      "decision": "Teletext is not a necessary product requirement.",
+      "topic": "product requirements",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "teletext",
+          "rejected": true,
+          "reason": "not necessary"
+        }
+      ],
+      "rationale": [
+        "We don't use it.",
+        "It's a new requirement."
+      ],
+      "conditions": [],
+      "dissent": [
+        "Marketing thinks teletext is a good option."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So not necessary.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's a new requirement.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_007_c005_d2",
+      "source_id": "QMS_PRD_VA_007",
+      "chunk_id": "QMS_PRD_VA_007_c005",
+      "schema_version": "1.0.0",
+      "decision": "The age group for the remote control design is younger than forty.",
+      "topic": "age group for remote control design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "age group of forty plus",
+          "rejected": true,
+          "reason": "younger than forty chosen"
+        }
+      ],
+      "rationale": [
+        "It's a big group, and not very much people buy our stuff."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We look at the age group of younger than forty.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_007_c005_d3",
+      "source_id": "QMS_PRD_VA_007",
+      "chunk_id": "QMS_PRD_VA_007_c005",
+      "schema_version": "1.0.0",
+      "decision": "Our corporate colour and slogan must be used in the design.",
+      "topic": "corporate colour and slogan usage",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "not using corporate colour and slogan in the design",
+          "rejected": true,
+          "reason": "very important for the design"
+        }
+      ],
+      "rationale": [
+        "So you can see it on our site."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Our corporate colour and slogan must be used.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_007_c005_d4",
+      "source_id": "QMS_PRD_VA_007",
+      "chunk_id": "QMS_PRD_VA_007_c005",
+      "schema_version": "1.0.0",
+      "decision": "A discussion about the product requirements is needed.",
+      "topic": "discussion about product requirements",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "no discussion about product requirements",
+          "rejected": true,
+          "reason": "needed"
+        }
+      ],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe we should first have a discussion about that.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_007_c005_d5",
+      "source_id": "QMS_PRD_VA_007",
+      "chunk_id": "QMS_PRD_VA_007_c005",
+      "schema_version": "1.0.0",
+      "decision": "Controls needed for the remote control: power, separate channels.",
+      "topic": "controls for remote control",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "other controls",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "What controls do we need?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well a power button?",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh the well um I think separate channels.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_007_c006_d1",
+      "source_id": "QMS_PRD_VA_007",
+      "chunk_id": "QMS_PRD_VA_007_c006",
+      "schema_version": "1.0.0",
+      "decision": "The buttons for the remote control will be: channel, volume, mute, and a menu button.",
+      "topic": "remote control buttons",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Ease of use, cost, and appeal to the younger market."
+      ],
+      "conditions": [
+        "The design of the remote control and the conceptual design are for the next phase."
+      ],
+      "dissent": [
+        "Concerns about having only four buttons and the need for more."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So now we don't have a lot of buttons. Is this enough?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mute.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Maybe more?",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But now we have only the buttons.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "And uh we don't yet have to decide what the remote control would look like?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    }
+  ],
+  "chunks_processed": 7,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

@@ -1,0 +1,1222 @@
+{
+  "source_id": "QMS_PRD_TR_032",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_032_c001_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c001",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the remote control design, but no decision was reached."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay . {vocalsound} And that makes uh the the infra-red lights signal which is sent to the television set . Uh which has a sensor in it to uh sense uh the signal of the infra-red . That's basically uh how it works . Um the findings uh uh that I found uh searching up some uh detailed information about the remote controls , are that uh they are very easy to produce , uh it is possible to uh make them in mass production because it is as eas it is as easy as uh printing a page , uh just uh fibreglass plate um is b uh is covered with uh some uh coatings and uh uh {vocalsound} and chips .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I personally uh pref prefer that uh it would be p uh come available in the various colours , and uh easy to use buttons . But I suppose that the one of the other team members uh uh thought of that uh too . {vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c002_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to focus on younger users for the remote design.",
+      "topic": "user focus",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Younger people, from sixteen to forty-five years, are more interested in features like LCD screens, speech recognition, etc."
+      ],
+      "conditions": [
+        "The team possesses about two thirds of the market from the range of age sixteen to forty-five."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The methods I prefer is we're going to look which section of the users we are going to focus on more. Are the younger people going to buy the remote control or the elderly people ? And then",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Younger people, from sixteen to forty-five years, are more interested in features like LCD screens, speech recognition, etc.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The team possesses about two thirds of the market from in that range of age",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c002_d2",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team decided that the remote should not be too small.",
+      "topic": "remote size",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Fifty percent of the users lose their remote often."
+      ],
+      "conditions": [
+        "Seventy-five percent of the users also find it ugly."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we don't have to make it very small, like uh like a mobile phone or something, but some somewhat bigger than small, so you don't lose it that much anymore.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Fifty percent of the users lose their remote often.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Seventy-five percent of the users also find it ugly.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c003_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a low power usage.",
+      "topic": "power usage of the remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "75% of the users only zap one time an hour, so the power usage should be one time an hour."
+      ],
+      "conditions": [
+        "The problem with the L_C_D screen is that elderly people from 45 to 65 years don't use the L_C_D screen a lot."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The remote control has to have to have a low power usage, because s w seventy five percent of the users only zap one time an hour, so the power usage is also one one time an hour, or so, with a high power usage we would use a lot of but batteries.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "The volume button and the channel buttons are the two most important buttons on the remote control, so those have to h be find very easily.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c003_d2",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c003",
+      "schema_version": "1.0.0",
+      "decision": "The L_C_D screen should be easy to use.",
+      "topic": "L_C_D screen usability",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "You can implement a lot of buttons in one remote with not that much buttons."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The last but not least, younger people are more critical about the features. Because they use the remote control often more often, and are more technical than the older people.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "My colleague also announced it that labels should be scratched off",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c003_d3",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be easy to find.",
+      "topic": "ease of finding the remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "So you don't lose it that much anymore."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we don't have to make it very small, like uh like a mobile phone or something, but some somewhat bi bigger than small, so you don't lose it that much anymore.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c003_d4",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have minimalized buttons.",
+      "topic": "number of buttons on the remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Buttons have to be minimalized, or should be covered, or in L_C_D screen."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Like what all colleagues said, have to have to be minimalized.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c003_d5",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c003",
+      "schema_version": "1.0.0",
+      "decision": "The volume buttons, the channel buttons, and the number buttons to zap through the channels should be easy to use.",
+      "topic": "ease of use for specific buttons",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "And that is it."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And that is it.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c003_d6",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be easy to use for elderly people.",
+      "topic": "ease of use for elderly people",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "We have to keep in mind to to focus not a lot on the younger people, but also somewhat on the elderly people."
+      ],
+      "conditions": [
+        "Elderly people from 45 to 65 years don't use the L_C_D screen a lot."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we have to keep in mind to to focus not a lot on the younger people, but also somewhat on the elderly people.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "The problem with the L_C_D screen is that elderly people from 45 to 65 years don't use the L_C_D screen a lot.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c003_d7",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c003",
+      "schema_version": "1.0.0",
+      "decision": "Teletext has become outdated since the popularity of the internet.",
+      "topic": "status of teletext",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Teletext does has become outdated since the popularity of the internet.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c004_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c004",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should only be used for the television.",
+      "topic": "remote control functions",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Makes it a lot easier.",
+        "Our current customers are within the age group of forty plus, and new product should reach a new market with customers that are younger than forty."
+      ],
+      "conditions": [
+        "Some television models do not accommodate the function of pressing one and then two to make twelve."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Only be used for television.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Only the television.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Makes it a lot easier, huh?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And the video also, or not uh?",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well it says only for television here, huh.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Only the television.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh. Alright. Okay.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Makes it a lot easier, huh?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And per perhaps uh s sh A button where you can uh change from one number to two numbers.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it's I think it's easy to implement a button with a s s what which especially do that, because some T_V_s, if you press the t one and then the two, it be between five secs it make twelve,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It makes it twelve, yeah.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well, not really",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "to user.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "And there are some models that don't uh accommodate that function.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "d uh wh the Philip's television makes it possible in that indeed to uh press one and then two to uh to get uh tj to reach channel twelve.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So that it easy and fast.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "But uh all the television makes uh use of those button where you first press that button and then press two digits to uh to get",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , so you should have that one on.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh yeah , think so.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Our main targets' age are ? were ? Forty five plus , or ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mute misschien also.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c005_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use an LCD screen for the new product.",
+      "topic": "product screen type",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "traditional remote control",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Younger people are more interested in LCD screens.",
+        "Easier to use.",
+        "Possibility to adjust buttons on the screen."
+      ],
+      "conditions": [
+        "Cost of LCD screen is unknown."
+      ],
+      "dissent": [
+        "Concern about exceeding production cost.",
+        "Concern about making it cheap."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So perhaps we should we should focus on that LCD screen.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "And if the only f Yeah , because our target is sixteen to forty five.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "So we're going for an LCD screen ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . Would be yeah .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it's the most easier thing,",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "That's my uh {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And hoping that when we produce a lot it won't be too expensive.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Any guesses ? {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c006_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c006",
+      "schema_version": "1.0.0",
+      "decision": "LCD screens will be used for the remote controls.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "rubber buttons",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "If the younger people are interested in LCD screens, we should make them.",
+        "Market share for people aged 40 and younger is higher than that of people aged 65 and younger."
+      ],
+      "conditions": [
+        "Cost of LCD screens will be provided later.",
+        "75% of users find LCD screens ugly."
+      ],
+      "dissent": [
+        "Some concern that LCD screens might be too expensive.",
+        "Users find LCD screens ugly."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And if that is our d uh market share to uh and our goal to uh deliver those uh remote controls {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But he also said that we should not only focus on the younger people , but also on the older , and will they use it if it only has an L_C_D_ screen ?",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Yeah , if it costs {disfmarker} gets too much , too expensive , then yeah , we should be sticking to rubber buttons .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And then not {disfmarker} yeah .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Okay , so L_C_D_ it is ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "An Yes .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c007_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c007",
+      "schema_version": "1.0.0",
+      "decision": "A mute button was proposed for the remote.",
+      "topic": "remote features",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Channel selection, volume control, and power usage are the most important things on a remote control."
+      ],
+      "conditions": [
+        "No costs discussed."
+      ],
+      "dissent": [
+        "No disagreements voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "A mute button.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "The most important things on a f on an on an uh remote control are channel selection, volume con selection, and power s power usage.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c007_d2",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c007",
+      "schema_version": "1.0.0",
+      "decision": "A separate menu for teletext was proposed.",
+      "topic": "remote features",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Teletext is less important but should be there."
+      ],
+      "conditions": [
+        "No costs discussed."
+      ],
+      "dissent": [
+        "No disagreements voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "A separate menu on the L_C_D_ uh screen for teletext.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c007_d3",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c007",
+      "schema_version": "1.0.0",
+      "decision": "Sub-menus for less important features were proposed.",
+      "topic": "remote features",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Less important things should be there but not pressable directly."
+      ],
+      "conditions": [
+        "No costs discussed."
+      ],
+      "dissent": [
+        "No disagreements voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "but in a sub sub-menu or something like that.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c007_d4",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c007",
+      "schema_version": "1.0.0",
+      "decision": "Making it possible to not use batteries was proposed.",
+      "topic": "remote power supply",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "It's important to not use batteries and use ac batteries instead."
+      ],
+      "conditions": [
+        "No costs discussed."
+      ],
+      "dissent": [
+        "No disagreements voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh I think it's also important to uh make it possible to um how do you call it in English, uh , to not use batteries, and use ac uh bat uh {gap} batteries to uh to be {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c007_d5",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote should go to standby mode when not in use.",
+      "topic": "remote power supply",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Going to standby mode when not used saves power."
+      ],
+      "conditions": [
+        "No costs discussed."
+      ],
+      "dissent": [
+        "No disagreements voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And go to standby mode when you don't use it, so that {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c007_d6",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote should automatically switch off when the TV shuts down.",
+      "topic": "remote power supply",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "It's better when the TV shuts down, the remote shuts down."
+      ],
+      "conditions": [
+        "No costs discussed."
+      ],
+      "dissent": [
+        "No disagreements voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But then you can't {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c007_d7",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote should automatically switch to standby mode when not in use and turn off when the TV shuts down.",
+      "topic": "remote power supply",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "It saves power and is better when the TV shuts down, the remote shuts down."
+      ],
+      "conditions": [
+        "No costs discussed."
+      ],
+      "dissent": [
+        "No disagreements voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But then you can't {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And go to standby mode when you don't use it, so that {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c008_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c008",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to go for a recharger for the remote control.",
+      "topic": "remote control recharger",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It's convenient to put the remote control in the charger when done watching television.",
+        "A recharger will prevent losing the remote control.",
+        "A recharger will ensure the batteries last long enough."
+      ],
+      "conditions": [
+        "The batteries should work a lot longer than a couple of days.",
+        "The recharger should be easy to use.",
+        "The recharger should be small and portable.",
+        "The recharger should have speech recognition."
+      ],
+      "dissent": [
+        "There was a concern about the batteries not lasting long enough.",
+        "There was a concern about forgetting to put the remote control in the charger.",
+        "There was a concern about forgetting to buy batteries."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we are going for the for the recharger.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "But you'll also forget to put it in",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "but {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I think the batteries should should work a lot longer than a couple of days",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "High power usage.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "High power user cell, i uh it should be uh a standard move to to put your remote control in the charger when you're done watching television,",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "True . Yeah . Yeah . True .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c009_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed implementing both LCD screen and speech recognition in a remote control, but the cost is unknown.",
+      "topic": "remote control features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the potential benefits of both LCD screen and speech recognition."
+      ],
+      "conditions": [
+        "The cost of implementing both features is unknown."
+      ],
+      "dissent": [
+        "No clear dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But when you look at the percentages",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think an LCD screen should be sufficient.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But would it be useful to implement both?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah, if the costs allow it.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c010_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c010",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to implement speech recognition for the remote, but only if there's enough money left.",
+      "topic": "speech recognition for the remote",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "If it could be done, it should be done."
+      ],
+      "conditions": [
+        "There's not enough money decided yet."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Let's do speech.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "For speech recognition.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay, so we only do this when we have enough money left.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "If it could be done, we should do it.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c010_d2",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c010",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to include an on/off button, volume selection, channel selection, digits from one to zero, a digits button to switch between one and two digits, mute button, a separate menu for teletext, a battery indicator, the possibility to enlarge buttons or to have large buttons for the remote.",
+      "topic": "features for the remote",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "General features for the remote."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I've written down an on or off button, volume selection, channel selection, uh the digits from one to zero, huh . Um {disfmarker} or from zero to nine . Uh a digits button to switch uh between one and two digits , mute button , a separate menu for teletext , a battery indicator . Um we're going to use a docking station and uh probably L_C_D_ and if there's enough money , speech recognition . And uh the possibility to uh enlarge buttons or to have large buttons",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c011_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c011",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to implement a separate menu for teletext, audio settings, screen settings, and channel settings.",
+      "topic": "menu structure",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It should be available but not directly available.",
+        "It should be there but not ready there."
+      ],
+      "conditions": [
+        "It should be easy to use.",
+        "The user should not be confused."
+      ],
+      "dissent": [
+        "The Industrial Designer questioned if it would confuse the user."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay , so not too much teletext support , but in a separate menu , and",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I guess we've got them all .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So actually it is there but it's just not ready there .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So those four , and of course the main .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "But that should also be a sub then , a sub uh menu thing .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , so we should also implement se screen settings .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , screen settings , audio settings , teletext settings you have .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c011_d2",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c011",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to implement a sub-menu for channel, audio, screen settings, and teletext.",
+      "topic": "menu structure",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It should be available but not directly available.",
+        "It should be there but not ready there."
+      ],
+      "conditions": [
+        "It should be easy to use.",
+        "The user should not be confused."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It should be available , but then in separate screen settings or something .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , so the first you see the main , and the other ones you can uh go to uh {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Like tap screens or something",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c012_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c012",
+      "schema_version": "1.0.0",
+      "decision": "A general menu with the most used functions, teletext, screen settings, audio settings, channel settings, and options for the remote itself (large icons or small icons) was proposed.",
+      "topic": "remote control menu structure",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "General menu with the most used functions",
+        "Teletext",
+        "Screen settings",
+        "Audio settings",
+        "Channel settings",
+        "Options for the remote itself"
+      ],
+      "conditions": [
+        "We can work that out later, I guess."
+      ],
+      "dissent": [
+        "But",
+        "Or otherwise you have a menu button, press menu then you have uh main uh menu search uh all the all the settings."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we're having a a general menu with the most used functions, uh teletext, screen settings, audio settings, channel settings, and maybe there are options for the remote itself ? Like uh large icons or small icons",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "But",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Or otherwise you have a menu button, press menu then you have uh main uh menu search uh all the all the settings.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c013_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c013",
+      "schema_version": "1.0.0",
+      "decision": "A decision about the presence of normal buttons on the remote was not reached.",
+      "topic": "remote design",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "normal buttons on the remote",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the presence of normal buttons on the remote, but no clear decision was made."
+      ],
+      "conditions": [
+        "Discussion about charging the remote, automatic standby mode, touch screen, and LCD screen."
+      ],
+      "dissent": [
+        "Industrial Designer questioned the need for normal buttons on the remote."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I don't know whether it's handy to have a normal on button, a rubber for TV, for TV,",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "A normal button on the remote control,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well I I guess if you use the LCD screen, you first have to search where is the on button, then you uh you you then turn it, and then the TV goes on. But if you have a normal on button on the on the remote, then you do the on, and then you search the channel which you want.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_032_c014_d1",
+      "source_id": "QMS_PRD_TR_032",
+      "chunk_id": "QMS_PRD_TR_032_c014",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to create a button-less remote.",
+      "topic": "remote design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It looks fancier without buttons on the remote."
+      ],
+      "conditions": [
+        "If they can afford it."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So actually we're going to create a a button-less uh remote . No buttons at all .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it looks a lot more fancy if you use uh if you don't have any buttons on the s on on remote control .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , I think so too . Otherwise y wet e k Yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 15,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

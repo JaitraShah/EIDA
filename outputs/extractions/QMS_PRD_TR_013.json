@@ -1,0 +1,682 @@
+{
+  "source_id": "QMS_PRD_TR_013",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_013_c000_d1",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c000",
+      "schema_version": "1.0.0",
+      "decision": "The detailed design of the product was discussed as the main agenda for the meeting.",
+      "topic": "meeting agenda",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager stated that they were there to talk about the detailed design of the product."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we're here to talk about the detailed design of the product, 'kay ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And here's the agenda for this meeting.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c000_d2",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c000",
+      "schema_version": "1.0.0",
+      "decision": "Pedro was assigned the product for demonstration during the meeting.",
+      "topic": "product demonstrator",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The User Interface stated that Pedro can have it."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Pedro can have it.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c000_d3",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c000",
+      "schema_version": "1.0.0",
+      "decision": "The Industrial Designer presented the product's design and features.",
+      "topic": "product presentation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The Industrial Designer gave a presentation of the wonder product."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You guys are gonna give us a presentation of our wonder product that I can see some demonstrations of over there.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c001_d1",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team decided against adding a trigger button on the remote control.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "trigger button",
+          "rejected": true,
+          "reason": "debated and decided against"
+        }
+      ],
+      "rationale": [
+        "The team decided it wasn't interesting or necessary."
+      ],
+      "conditions": [
+        "None stated."
+      ],
+      "dissent": [
+        "Industrial Designer expressed interest in the trigger button."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "we were thinking that it might be interesting to have a trigger button here because you have this finger {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah {vocalsound} it's the right shape isn't it ?",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "we decided to go against it",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c002_d1",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c002",
+      "schema_version": "1.0.0",
+      "decision": "The final colour scheme will be decided by the marketing team.",
+      "topic": "colour scheme",
+      "status": "deferred",
+      "alternatives": [],
+      "rationale": [
+        "The user interface team did not want to touch the colour scheme anymore."
+      ],
+      "conditions": [
+        "The current colour scheme is temporary."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we'll leave the colour scheme up to the marketing people.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I couldn't create it in the PowerPoint",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c002_d2",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c002",
+      "schema_version": "1.0.0",
+      "decision": "The marketing team will suggest a colour scheme of silvers and blacks.",
+      "topic": "colour scheme",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Marketing's suggestion for the colour scheme."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "My my suggestion is we're gonna go go to the silvers and blacks like most of the televisions.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c002_d3",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c002",
+      "schema_version": "1.0.0",
+      "decision": "The scroll wheels are a problem.",
+      "topic": "scroll wheels",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The scroll wheels fell off."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The scroll wheels , {gap} a problem with them not being sort of {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c003_d1",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c003",
+      "schema_version": "1.0.0",
+      "decision": "The cost of the product will be between 30 and 50 Euros.",
+      "topic": "product cost",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The product has unique features and characteristics, and the company wants to make a name for itself."
+      ],
+      "conditions": [
+        "The cost may be adjusted based on corporate decisions."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We're gonna be competitive, and we're gonna have a market niche. Um w",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm hoping for is people are not gonna even notice. There's gonna be somebody going home and say oh sh this thing doesn't work for my D_V_D_ and my {disfmarker} but I like these other things, so they keep it, they don't take it back.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c003_d2",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c003",
+      "schema_version": "1.0.0",
+      "decision": "The product will have a lifetime guarantee for normal use.",
+      "topic": "product guarantee",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Marketing expressed interest in a lifetime guarantee."
+      ],
+      "conditions": [
+        "The guarantee may have conditions or limitations."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I would be interested in . Um so {vocalsound} yeah without uh going into great details, we have a we have a product, it has the features and the characteristics, and the background, I believe, to make it marketable I believe at a cost of of of thirty thirty five to to fifty Euros . We're gonna be competitive, and we're gonna have a market niche . Um w",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "But I'm sh I'm sure open to to market this in either direction . But you guys came up with a great product , and at that cost I think it uh {disfmarker} there's nobody else that's putting this this combination of of ingredients together . The only limitations I see to this is that we're focused on television only . Uh that's the only that's the only drawback I see to this .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c003_d3",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c003",
+      "schema_version": "1.0.0",
+      "decision": "The product may be upgradable.",
+      "topic": "product upgradability",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Marketing suggested the possibility of an upgradable product."
+      ],
+      "conditions": [
+        "The upgradability may have technical and warranty implications."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "One of one of the thoughts that I had is can can this unit be be produced in a way that makes it upgradable ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c004_d1",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c004",
+      "schema_version": "1.0.0",
+      "decision": "The cost of the remote was estimated to be 15.8 Euros.",
+      "topic": "cost estimation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The cost was calculated based on the production costs of the individual units."
+      ],
+      "conditions": [
+        "There might have been a miscalculation in the cost estimation."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well , that was just just our technical team added up the um production costs of the individual units .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I've made a few assumptions here in that I'm assuming that our power adaptor we can make for a cost of four Euros ,",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Do don't speak so it's in here , in that",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It was a pretty accurate estimate I would say .",
+          "speaker": "User Interface",
+          "supports": "status"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c005_d1",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed that they did well during the presentation.",
+      "topic": "performance evaluation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "I think we did pretty well.",
+        "I think we did pretty well too.",
+        "Yeah."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think we did pretty well.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think we did pretty well too.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c005_d2",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed that they were creative during the project.",
+      "topic": "creativity evaluation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "I think we ended up being quite creative there.",
+        "We got a couple innovative ideas."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think we ended up being quite creative there.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "We got a couple innovative ideas.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c005_d3",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed that they adjusted every criterion given by Paul.",
+      "topic": "criteria adjustment",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "we raised the price of it",
+        "we've added two new technology to it"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "we raised the price of it",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "we've added two new technology to it",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c005_d4",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed that they broke with the specs a little bit.",
+      "topic": "specification deviation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "we did we break with the specs a little bit I guess"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "we did we break with the specs a little bit I guess",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c005_d5",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed that the meeting room was good.",
+      "topic": "meeting room evaluation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "These cables suck",
+        "Yeah.",
+        "And that's way far down lapel mic.",
+        "Yep.",
+        "And that's almost a crotch mi cr"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "These cables suck",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "And that's way far down lapel mic.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yep.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And that's almost a crotch mi cr",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c005_d6",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed that the white board worked well.",
+      "topic": "whiteboard evaluation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It worked really well without any problem"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It worked really well without any problem",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c006_d1",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c006",
+      "schema_version": "1.0.0",
+      "decision": "The costs are within the budget.",
+      "topic": "budget",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The costs were originally under twelve fifty Euros. No requirements are changed. They are now under twenty Euros to build."
+      ],
+      "conditions": [
+        "The costs were originally under twelve fifty Euros. No requirements are changed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And the costs within the budget ? Not the original budget , but they are now.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Nope.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c006_d2",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c006",
+      "schema_version": "1.0.0",
+      "decision": "The project is evaluated.",
+      "topic": "project evaluation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Implicit in the discussion."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Is the project evaluated ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c006_d3",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c006",
+      "schema_version": "1.0.0",
+      "decision": "Comfortable headsets would be nice for the meeting room.",
+      "topic": "meeting room equipment",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Implicit in the discussion."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Comfortable headsets would be nice.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c006_d4",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c006",
+      "schema_version": "1.0.0",
+      "decision": "Remote control microphones would be a nice solution to all these cables.",
+      "topic": "meeting room equipment",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Marketing suggested remote control microphones as a solution to cables."
+      ],
+      "conditions": [
+        "There might be justification for the current cables that Marketing does not know about."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Remote control microphones would be a nice solution to all these cables",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_013_c006_d5",
+      "source_id": "QMS_PRD_TR_013",
+      "chunk_id": "QMS_PRD_TR_013_c006",
+      "schema_version": "1.0.0",
+      "decision": "There will be a celebration.",
+      "topic": "celebration",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Implicit in the discussion."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Free coke provided at the cafeteria.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 7,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

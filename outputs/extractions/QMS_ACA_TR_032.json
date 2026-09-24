@@ -1,0 +1,821 @@
+{
+  "source_id": "QMS_ACA_TR_032",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_032_c000_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to work on the recognizer to parser thing and the generator.",
+      "topic": "project work",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team has already talked with Andreas, Thilo, and David and some lines of code were already written today and almost tested.",
+        "The team wants to say they have the recognizer to parser thing where they're working on and that should be no problem.",
+        "The team plans to develop the project as needed when they enter the tourism domain."
+      ],
+      "conditions": [
+        "The team needs someone to look over Tilman's shoulder while he is changing the grammars to English.",
+        "The team plans to run through the entire system input through output on at least one or two sample things."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I thought two things uh we 'll introduce ourselves and what we do.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "and um we already talked with Andreas, Thilo and David and some lines of code were already written today and almost tested and just gonna say we have um again the recognizer to parser thing where we 're working on and that should be no problem and then that can be sort of developed uh as needed when we get {disfmarker} enter the tourism domain . em we have talked this morning with the {disfmarker} with Tilman about the generator.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "the {disfmarker} the ultimate goal is that before they leave we {disfmarker} we can run through the entire system input through output on at least one or two sample things . And um and by virtue of doing that then in this case Johno will have acquired the knowledge of how to extend it . Ad infinitum . When needed , if needed , when wanted and so forth.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c001_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c001",
+      "schema_version": "1.0.0",
+      "decision": "A meeting will be scheduled later in the week to discuss SmartKom plans and potential changes.",
+      "topic": "meeting scheduling",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "To get everyone caught up on what's going on.",
+        "To discuss plans beyond what's already in code."
+      ],
+      "conditions": [
+        "Depends on finding a time later in the week that works for everyone."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "OK , So we'll find a time later in the week to get together and talk about your understanding of what SmartKom plans are .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "and how we can change them .",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "What does not work for me is Thursday afternoon . I can do earlier in the day on Thursday , or most of the time on Friday , not all .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Thursday morning sounds fine ?",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c001_d2",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c001",
+      "schema_version": "1.0.0",
+      "decision": "The meeting will take place on Thursday at 11 AM.",
+      "topic": "meeting time",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Eleven on Thursday was agreed upon."
+      ],
+      "conditions": [
+        "Grad E will have left by 11 AM."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Eleven ? Eleven on Thursday ?",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "I was just thinking I will have leavened by eleven .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right . Right . This is then out of deference to our non - morning people .",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c001_d3",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c001",
+      "schema_version": "1.0.0",
+      "decision": "David may be invited to the meeting.",
+      "topic": "invitees",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "David knows everything about the SmartKom recognizer."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Thilo . OK well yeah maybe we'll see if David could make it . That would be good .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c001_d4",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c001",
+      "schema_version": "1.0.0",
+      "decision": "The experiment involves collecting data via a computer call system that gives tourist information and breaks halfway through with a human operator.",
+      "topic": "experiment details",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To find out whether people change their linguistic verbal behavior when they think they speak to a machine and then to a human."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and it breaks halfway through the experiment and a human operator comes on .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "and part of that is sort of trying to find out whether people change their linguistic verbal behavior when first thinking they speak to a machine and then to a human .",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c002_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c002",
+      "schema_version": "1.0.0",
+      "decision": "A decision was made to construct interfaces and a belief net for a module that guesses the underlying intention from user utterances and enriches M-three-L structures with additional information.",
+      "topic": "project direction",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To offer additional information that can be used by someone, and to construct suitable interfaces."
+      ],
+      "conditions": [
+        "The GIS from email is not able to calculate viewpoints dynamically."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And so what uh uh a s you s let 's say a simple parse from a s from an utterance won't really give us is what the person actually wants.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I mean t s Ultimately if you can offer that information, somebody 's gonna s do something with it sooner or later.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "but if we can offer it that distinction, maybe somebody will go ahead and implement it.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c003_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c003",
+      "schema_version": "1.0.0",
+      "decision": "The location of the module within SmartKom has not been decided.",
+      "topic": "location of the module",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about potential locations for the module, but no decision was made."
+      ],
+      "conditions": [
+        "The current design suggests that if the belief net is equivocal, an option is to go back and ask for the information."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so far I 've thought of it as sort of adding it onto the modeler knowledge module .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "but it could sit anywhere in the attention - recognition I mean basically this is what attention - recognition literally sort of can",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well it 's supposed to do . Yeah",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So that 's a a discrete decision .",
+          "speaker": "Professor F",
+          "supports": "status"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c003_d2",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c003",
+      "schema_version": "1.0.0",
+      "decision": "The belief net for the system is not fully instantiated.",
+      "topic": "belief net",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the belief net, but no decision was made."
+      ],
+      "conditions": [
+        "The belief net that doesn't have fully instantiated combination rules and ways of getting the conditional probabilities."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "There 's a first cut at a belief - net that doesn't have fully instantiated , and in particular some of the combination rules and ways of getting the conditional probabilities aren't there .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c003_d3",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c003",
+      "schema_version": "1.0.0",
+      "decision": "The AVE thing (access, view, or enter a thing) is a discrete decision.",
+      "topic": "AVE thing",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor F stated that it is a discrete decision with only three possibilities."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So one of the decisions is what we call this AVE thing .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c004_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the action plans might be X M L -ified and that the transition networks will be what the action planner interprets.",
+      "topic": "action plans format",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Currently, they are agreeing on an X M L -ification of a state - transition network of how dialogues would proceed."
+      ],
+      "conditions": [
+        "It was mentioned that this might happen some months from now."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The suggestion then is that you um look into the currently ongoing discussion about how the action plans are supposed to look like . And they 're currently um Agreeing or in the process of agreeing on an X M L -ification of um something like a state - transition network of how dialogues would proceed .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "The transition networks uh will be what the action planner interprets in a sense.",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c005_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c005",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the current action plan and dialogue manager might not be suitable for the tourist domain.",
+      "topic": "suitability of current action plan and dialogue manager for tourist domain",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The tourist domain is not just an information retrieval system.",
+        "The current tasks and concepts are based on slots with fixed values, but in the tourist domain, slots might contain complex structured information."
+      ],
+      "conditions": [
+        "Complex slots of that type are not being taken into consideration.",
+        "The M-three-L specification for the natural language input for the tourist path domain is not defined yet."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , if it 's only like in the film and T V thing , OK , you can do this . And you just get information and give it to people . But what happens when you actually get them moving and so forth and so on",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "whereas in the a um tourist domain it might be an entire route . Set - based , or even very complex structured information in these slots",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I 'm not sure if complex slots of that type are really um being taken into consideration .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So that 's really something we could put a message into the right place to see if we can at least ask that question ?",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c006_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the input end needs feedback from the planning end.",
+      "topic": "feedback between input and planning ends",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The action planner's suggestions affect the user's response, and the language end needs to know these suggestions."
+      ],
+      "conditions": [
+        "The specifics aren't yet defined."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think there are a lot of reasons why it matters.",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "One would have to see the details.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "We talked about this several times that the input end is gonna need a fair amount of feedback from the planning end.",
+          "speaker": "Professor F",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c006_d2",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was suggested to change the terminology so that the dialogue planner is called a 'dialogue planner' instead of an 'action planner'.",
+      "topic": "terminology change for dialogue planner",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "There's another thing in the tourist domain called a 'route planner'."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Would there be any chance of getting the terminology changed so that the dialogue planner was called a 'dialogue planner' ?",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c007_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c007",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about the name of the system.",
+      "topic": "name of the system",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "action planner",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "dialogue manager",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "spatial planner",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "route planner",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the name, but no decision was reached."
+      ],
+      "conditions": [
+        "Marcus, who is responsible for the implementation, will rewrite everything in Java."
+      ],
+      "dissent": [
+        "No clear dissent was voiced."
+      ],
+      "owner": "Marcus",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "That 'd be nice .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "or It 's really gonna be an action planner . And i it",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "It oughta be called a a dialogue manager . cuz that 's what everybody else calls it .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I would think ,",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So , s So what would happen if we sent a note saying \" Gee we 've talked about this and couldn't we change this uh th the whole word ? \" I have no idea how complicated these things are .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Depends on who you talk to how . We 'll see . I 'll go check , cause I completely agree . Yeah ,",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "and I think this is just for historical reasons within uh , the preparation phase of the project and not because somebody actually believes it ought to be action planner . So if there is resistance against changing it , that 's just because \" Oh , We don't want to change things . \" That that not deep reason",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "OK , anyway . I if that c in persists then we 're gonna need another term . for the thing that actually does the planning of the uh routes and whatever we are doing for the tourist .",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c008_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c008",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the idea of having a well-defined interface for the dialogue manager to allow it to formulate queries and run them back through the dialogue manager and output module.",
+      "topic": "dialogue manager interface",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To allow the dialogue manager to change state when needed.",
+        "To keep external services like tourist information external."
+      ],
+      "conditions": [
+        "The concept is that there is something like kernel modules with kernel functionality that can be plugged with certain applications.",
+        "The more complex, the more this idea becomes utopian but slowly getting into the realm of the contingent."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It doesn't really have to worry ab how route planner A or how route planner B actually wants it . So this is seemed like a good idea . In the beginning .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I totally agree . But what it nee but th what the point is the in that case the dialogue manager is sort of event driven . So the dialogue manager may think it 's in a dialogue state of one sort ,",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And the underlying idea of course is that there is something like kernel modules with kernel functionality that you can plug uh certain applications like tourist information or um the home scenario with uh controlling a VCR and so on . And then extend it to an arbitrary number of applications eventually . So wouldn't That 's an additional reason to have this well - defined interface and keep these things like uh tourist information external .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But of course the more complex ,",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c009_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team is considering integrating syntactic analysis and adding segmentation to the parser.",
+      "topic": "parser improvements",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "To improve deep understanding analysis."
+      ],
+      "conditions": [
+        "The chosen parser must be fast and robust.",
+        "The team is considering using a chunk parser."
+      ],
+      "dissent": [],
+      "owner": "Grad D",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "it's to integrate and syntactic analysis . and um add some more features like segmentation . So then an utter more than one utterance is",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , the um {disfmarker} So the idea is to uh {disfmarker} have a pa y y a particular {disfmarker}",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "And they are not fast enough.",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So there was a chunk parser in Verbmobil , that was one of the uh branchers .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c010_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c010",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made about the parser to use.",
+      "topic": "parser selection",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "chunk parser from Tuebingen",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "FORWISS chunk parser",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "Fastus",
+          "rejected": null,
+          "reason": "not much information available"
+        },
+        {
+          "option": "Morfix",
+          "rejected": null,
+          "reason": "not explicitly discussed as an alternative"
+        }
+      ],
+      "rationale": [
+        "Discussion about the constraints, the language, and the available options, but no clear decision was reached."
+      ],
+      "conditions": [
+        "Discussion focused on English and German, but no clear decision was made for both."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But is that the kind of thing y It sounds like the kind of thing that you were thinking of.",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But uh given the constraints, that you want it to be small and fast and so forth, my guess is you're probably into some kind of chunk parsing.",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The chunk parser from Tuebingen",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So it was done in Tuebingen, yeah. Definitely.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So this is sort of came as a surprise to me that you know, embassy's {comment} is featuring a nice parser but it's {pause} what I hear.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It may be that's what you guys finally decide to do.",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Did we look at the German? I don't remember.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c011_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c011",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use Morphix for deriving the lexicon.",
+      "topic": "lexicon derivation tool",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Morphix is not used online, so the lexicon might be derived by Morphix",
+        "It would be a full foreign lexicon."
+      ],
+      "conditions": [
+        "The team has to make certain decisions that will be fed to the route planner."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so it would be a full foreign lexicon.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "but What's happening on-line is just um um a retrieval from the lexicon which would give all the stemming information",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "You really might wanna do it in a significantly different way.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c012_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c012",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed using a deep semantic approach based on cognitive linguistics for the knowledge modeler and function module.",
+      "topic": "approach for knowledge modeler and function module",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The approach is based on a deep semantics based on cognitive linguistics and the notion that there are a relatively small number of primitive conceptual schemas that characterize a lot of activity."
+      ],
+      "conditions": [
+        "This is also a research project and there are a couple of people not here for various reasons who are doing doctoral dissertations on this."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we talked about the fact that There 're going to be a certain number of decisions That you want the knowledge modeler to make , that will be then fed to the function module , that does uh , route planning . It 's called the \" route planner \" or something .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , um So what you might try to do is just build more templates , saying uh we 're trying to build a template that w uh somehow would capture the fact that he wants to take a picture .",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And that all sorts of things , particularly in the tourist domain , can be represented in terms of uh source , path and goal . So the idea would be could we build an analyser that would take an utterance and say \" Aha ! this utterance is talking about an attempt to reach a goal . The goal is this , the pers the , uh traveller is that , uh the sor w where we are at now is is this , they 've mentioned possible obstacles , et cetera . \" So th the",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_032_c013_d1",
+      "source_id": "QMS_ACA_TR_032",
+      "chunk_id": "QMS_ACA_TR_032_c013",
+      "schema_version": "1.0.0",
+      "decision": "The belief net will be used to combine evidence from the dialogue, ontology, and situation.",
+      "topic": "belief net application",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not explicitly stated."
+      ],
+      "conditions": [
+        "Not explicitly stated."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So the idea is , let 's take this business about going to the Powder - Tower .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "part of it comes from the ontology . The tower is this kind of object .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Part of it comes from the user model .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "But Nancy isn't gonna talk about that , just about the um construction grammar .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 14,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

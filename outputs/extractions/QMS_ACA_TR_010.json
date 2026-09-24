@@ -1,0 +1,1032 @@
+{
+  "source_id": "QMS_ACA_TR_010",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_010_c000_d1",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c000",
+      "schema_version": "1.0.0",
+      "decision": "Transcription status was discussed",
+      "topic": "transcription status",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the progress of transcription and hiring more transcribers."
+      ],
+      "conditions": [
+        "One more week needed for double checking the transcriptions."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I can do that quickly.",
+          "speaker": "Postdoc A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I've been uh finishing up the uh double checking.",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I g",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "Could I get a hold of uh the data even if it's not really corrected yet just so I can get the data formats and make sure the information retrieval stuff is working?",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c000_d2",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c000",
+      "schema_version": "1.0.0",
+      "decision": "The command line version of the indexing and querying for the THISL tools is now working",
+      "topic": "DARPA demos, THISL tools",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about using the THISL tools for information retrieval on meeting data."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So at least on the one meeting that I had the transcript for uh conveniently you can now do information retrieval on it, do type in a string and get back a list of start - end times for the meeting",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c001_d1",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c001",
+      "schema_version": "1.0.0",
+      "decision": "Grad H suggests using the Tcl-TK THISL GUI front-end for Broadcast News as the user interface for the project.",
+      "topic": "user interface",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "web-based tool by SoftSound",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "other unmentioned options",
+          "rejected": true,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Grad H thinks it looks great and it would be easier to port to Windows."
+      ],
+      "conditions": [
+        "Grad H intends to do a prettier user interface based on this choice."
+      ],
+      "dissent": [
+        "No dissent stated."
+      ],
+      "owner": "Grad H",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh the other option is Dan did the Tcl-TK THISL GUI front-end for Broadcast News",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think that's the way we should go.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "but it does mean you need to be running a web server.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "And so I think that's the way we should go.",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c002_d1",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c002",
+      "schema_version": "1.0.0",
+      "decision": "Grad H will check if Dan has already ported THISL tools to SPRACHcore",
+      "topic": "porting THISL tools",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad H mentions that Dan ported it to SPRACHcore before"
+      ],
+      "conditions": [
+        "Grad H will check with Dan"
+      ],
+      "dissent": [],
+      "owner": "Grad H",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I 'll check at that",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "All you need to do is say to Dan 'gee it would be nice if this worked under Autoconf' and it'll be done in a day.",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c002_d2",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c002",
+      "schema_version": "1.0.0",
+      "decision": "Grad H will also correspond with the SoftSound guy",
+      "topic": "correspondence with SoftSound guy",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad H mentions correspondence with the SoftSound guy"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Grad H",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and I 've been corresponding with Dan and also with uh uh , SoftSound guy",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c003_d1",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c003",
+      "schema_version": "1.0.0",
+      "decision": "Discussion about merging Transcriber and THISL IR as Tcl interfaces for improved functionality",
+      "topic": "software integration",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Improved functionality by merging Tcl interfaces",
+        "Potential for running transcripts speaker to speaker",
+        "Possibility of using Multitrans or similar for user interface"
+      ],
+      "conditions": [
+        "Requires further investigation and testing",
+        "Difficulty in getting the merger to work in the short segments they'd be talking about and maintaining search tools"
+      ],
+      "dissent": [
+        "Grad H expresses uncertainty about the feasibility of the idea"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Why don't you try and merge Transcriber and THISL IR? They're both Tcl interfaces.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't know.",
+          "speaker": "Grad H",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And then you get the Windows media playing for free.",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well that's Snack, not Transcriber.",
+          "speaker": "Grad H",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Yeah . Well my thought was is that it would be nice to have the running transcripts um eh you know , from speaker to speaker.",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And if it doesn't",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right ? Do you have , you know , a speaker mark here and a speaker mark here ?",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Right , we 'll have to figure out a user interface for that , so .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "The thing I was asking about with , um , free BSD is that it might be easier to get PowerPoint shows running in free BSD than to get this other package running in",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It might be fairly difficult to get that to work in the little short segments we 'd be talking about and having the search tools and so on . We can look into it ,",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c003_d2",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c003",
+      "schema_version": "1.0.0",
+      "decision": "Discussion about showing off the Transcriber interface itself",
+      "topic": "software demonstration",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Showing off the Transcriber interface itself",
+        "Possibility of merging the Transcriber demo with other demos"
+      ],
+      "conditions": [
+        "Requires further discussion and planning"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But um , uh {disfmarker} and part of that was showing off the Transcriber interface itself and as you say , maybe we could even merge those in some sense ,",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c003_d3",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c003",
+      "schema_version": "1.0.0",
+      "decision": "Discussion about showing Don's prosody work",
+      "topic": "software demonstration",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Showing some of the prosody work that Don's been doing",
+        "Potential for demonstrating features and finding sentence and turn boundaries"
+      ],
+      "conditions": [
+        "Requires further discussion and planning",
+        "Uncertainty about its interest"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So another idea I w t had just now actually for the demo was whether it might be of interest to show some of the prosody uh {vocalsound} work that Don 's been doing .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c004_d1",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use XML as the general format for everything.",
+      "topic": "transcription format",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "There are a lot of tools that let you do extraction and reformatting of XML."
+      ],
+      "conditions": [
+        "It might cause some processing to get the utterance."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I've been doing a bunch of XML tools where you're sort of moving to XML as the general format for everything and I think that's definitely the right way to go because there are a lot of tools that let you do extraction and reformatting of XML tools.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "And so yet again we should probably meet to talk about transcription formats in XML because I'm not particularly happy with what we have now.",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c005_d1",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c005",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to start using a specific tool for filling in seat information and microphone details in the Key files.",
+      "topic": "tool for filling in seat and microphone details",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It was easier to skip those things with the plain text.",
+        "The tool has a place to fill it in."
+      ],
+      "conditions": [
+        "Some of the details were missing.",
+        "Some details were filled in under 'description' instead of 'participants'."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So if Right . Well I just realized I hadn't been doing it",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "I had told you guys about it",
+          "speaker": "Grad H",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I don't ,",
+          "speaker": "PhD G",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I was looking at Chuck 's , like , \" oh what did Chuck do , OK I 'll do that \" . So .",
+          "speaker": "Grad H",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I know",
+          "speaker": "PhD G",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And then uh also in a couple of places instead of filling the participants under \" participants \" they were filled in under \" description \" .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c006_d1",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team will change to easier microphones that have a bigger difference in level when on and off.",
+      "topic": "microphone type",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Crown microphones",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Easier to tell whether the microphone is connected or not."
+      ],
+      "conditions": [
+        "The new microphones are not quite ready yet."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'm working on another version of this tool, the one that shows up here, that will flash yellow if the mike isn't connected.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "These ones, they are much easier, there's a bigger difference.",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Will that also include like batteries dying? Just any time the mike's putting out zeros basically.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c006_d2",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team will continue using the current backup system and perform manual backups.",
+      "topic": "backup system",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "putting all the Meeting Recorder stuff on non-backed-up disk",
+          "rejected": true,
+          "reason": "considered but deemed a bad idea"
+        }
+      ],
+      "rationale": [
+        "Data cannot be recovered if a mistake is made and we lose the backup or the archive."
+      ],
+      "conditions": [
+        "The new backup system is not yet implemented."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I spoke with Dave Johnson about putting all the Meeting Recorder stuff on non - backed - up disk to save the overhead of backup and he pretty much said ' yeah, you could do that if you want ' but he thought it was a bad idea.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "And so if a mistake is made and we lose the backup we should have the archive and if then a mistake is made and we lose the archive we should have the backup.",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And uh , so the only issue here is the timing between getting more disks and uh recording meetings.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c006_d3",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team will consider adding light indicators or a buzzer to the tool.",
+      "topic": "tool improvements",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "no improvements",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "To make it easier to notice if the microphone is connected."
+      ],
+      "conditions": [
+        "The suggestions are still under consideration."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It would be nice if these had little light indicators, little L E Ds for",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh buzzer.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "Actually",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c006_d4",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team will reserve non-backed-up space for things that are recreatable.",
+      "topic": "disk usage",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "no specific usage for non-backed-up space",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "To save overhead of backup and recover data that can be easily recreated."
+      ],
+      "conditions": [
+        "The specific usage is subject to the implementation of the new backup system."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we can get more disk . Yeah . So .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , basically things that are recreatable.",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The expanded files and things like that.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c006_d5",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team will burn CDs as a backup method.",
+      "topic": "backup method",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "not burning CDs",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Painful process."
+      ],
+      "conditions": [
+        "The decision is still under discussion."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Um unfortunately we could burn C Ds but first of all it's a pain.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c007_d1",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c007",
+      "schema_version": "1.0.0",
+      "decision": "It was decided that the Channeltrans interface will be installed on a Windows machine.",
+      "topic": "Channeltrans interface installation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Because Tcl-TK runs on it, things will just work."
+      ],
+      "conditions": [
+        "The Snack version and the Transcriber version problem was solved."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Basically it's done",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah it's just a problem with the Snack version and the Transcriber version but it's solved.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because you have to copy it down to the PC and then burn it and that's a multi - step procedure.",
+          "speaker": "Grad H",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c007_d2",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c007",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that CrossPads will not be used.",
+      "topic": "CrossPads usage",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad H never takes notes and it's another level of infrastructure to deal with."
+      ],
+      "conditions": [
+        "The pen is noisy."
+      ],
+      "dissent": [
+        "PhD F asked what a CrossPad is."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "My opinion on it is, first, I never take notes anyway so I'm not gonna use it, um and second, it's another level of infrastructure that we have to deal with.",
+          "speaker": "Grad H",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And I have, uh so my feeling on it is that I think in principle it's a really nice idea, and you have the time tags which makes it better than just taking raw notes. On the other hand, I, the down side for me was that I think the pen is really noisy.",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Got an email from uh James Landay who basically said 'if you're not using them, could you return them?' So he said he doesn't need them, he just periodically sends out email to everyone who was recorded as having them and asks them if they're still using them.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c008_d1",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c008",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about having a scribe to take notes during meetings.",
+      "topic": "scribe for meetings",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the usefulness of having a scribe, but no decision was reached."
+      ],
+      "conditions": [
+        "Technical difficulties with synchronizing the time on CrossPads and the recording."
+      ],
+      "dissent": [
+        "PhD E questioned the need for a scribe."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah .",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yep .",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "right ? And so the it seemed like a neat idea .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yep , and then just sort of died out .",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "probably chose the wrong scribe but it was",
+          "speaker": "Professor B",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well I did it one time",
+          "speaker": "Postdoc A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "but um",
+          "speaker": "Postdoc A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I mean we 're transcribing it anyways , why do we need notes ?",
+          "speaker": "PhD F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Oh it 's la it 's useful ,",
+          "speaker": "Postdoc A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Because that 's summary .",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think there 's also this use that",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "the",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , what if you 're sitting there and you just wanna make an X and you don't wanna take notes and you 're",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Doodle .",
+          "speaker": "PhD F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "the",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "the",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "I was thinking and I know Morgan disagrees with me on this but suppose you have a group in here and you wanna let them note whenever they think there might be something later",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Right .",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "so .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I guess so , you know , what",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "what makes one think i is maybe we should actually schedule some periods where people go over something later",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "so .",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "there 'd be some scribe who would actually listen , w who 'd agreed to actually listen to the whole thing , not transcribe it , but just sort of write down things that struck them as important . But",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "then you don't",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Right . And you don't have a lot of other cues that might be useful ,",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "PhD F",
+          "supports": "decision"
+        },
+        {
+          "quote": "How do you synchronize the time in the CrossPad and the time of the recording ?",
+          "speaker": "PhD F",
+          "supports": "decision"
+        },
+        {
+          "quote": "so .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean that was one of the issues we talked about originally and that that 's w part of the difficulty is that we need an infrastructure for using the time",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "When {disfmarker}",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "And so you {disfmarker}",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "and so you {disfmarker}",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c009_d1",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c009",
+      "schema_version": "1.0.0",
+      "decision": "A decision was made to experiment with synchronizing events in meetings using a PDA with a wireless card.",
+      "topic": "synchronization method",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Adam hated taking notes, Jane is more into it, and Professor B suggested getting someone to buy into the idea of doing this as part of the task."
+      ],
+      "conditions": [
+        "The success of the experiment depends on getting someone to buy into it and having a series of meetings where they do it."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well one thing that we might try um is on some set of meetings , some collection of meetings , maybe EDU is the right one or maybe something else , we get somebody to buy into the idea of doing this as part of the task .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "if you 're not worried about",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "But buttons .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c010_d1",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c010",
+      "schema_version": "1.0.0",
+      "decision": "One CrossPad will be returned.",
+      "topic": "CrossPad return",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "We haven't used it at all."
+      ],
+      "conditions": [
+        "We have aspirations of using them."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": "Professor B",
+      "evidence": [
+        {
+          "quote": "So we have no but uh by I would suggest you return one.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "We have some aspirations of using them",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c010_d2",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c010",
+      "schema_version": "1.0.0",
+      "decision": "A student project could be done with the CrossPads.",
+      "topic": "student project with CrossPads",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Maybe someone who wants to do this as their main like s project for something would be cool."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe we could do like a student project , you know , maybe someone who wants to do this as their main like s project for something would be cool.",
+          "speaker": "PhD G",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_010_c011_d1",
+      "source_id": "QMS_ACA_TR_010",
+      "chunk_id": "QMS_ACA_TR_010_c011",
+      "schema_version": "1.0.0",
+      "decision": "They decided to conduct a simultaneous recognition run",
+      "topic": "recognition run",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt"
+      ],
+      "conditions": [
+        "Data needs to be saved before the next group comes in"
+      ],
+      "dissent": [
+        "Not specified in the excerpt"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We could do simultaneous.",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well OK , so let's do one of those simultaneous ones.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right , so we might n we might need to do that actually.",
+          "speaker": "PhD G",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 12,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

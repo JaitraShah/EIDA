@@ -1,0 +1,584 @@
+{
+  "source_id": "QMS_PRD_VA_001",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_VA_001_c000_d1",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c000",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will be television only.",
+      "topic": "remote control type",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Information received from the board."
+      ],
+      "conditions": [
+        "The board's decision includes the remote control not being D_V_D_ or anything else."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": "the board",
+      "evidence": [
+        {
+          "quote": "So um basically I'm just gonna go over real quickly um some news I've just got from the board on how we're supposed to do with this um {vocalsound} remote control . And then I'm gonna turn over to you guys to make brief presentations um on what you've found and then we'll have a bit of discussion . So basically uh what I've just found out from the board I dunno if you guys got this email as well but it needs to be television only . So no {disfmarker} we're not doing D_V_D_ , we're not doing anything else ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "it's just gonna be a television remote .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c000_d2",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c000",
+      "schema_version": "1.0.0",
+      "decision": "The remote control must have the company colours (red and black) and the slogan 'we put fashion in electronics'.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Information received from the board."
+      ],
+      "conditions": [
+        "The board's decision includes the remote control having the company colours and the slogan."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": "the board",
+      "evidence": [
+        {
+          "quote": "Um it also needs to have the company colours included in it .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And it has to have the slogan , case you guys forget the slogan it's , we put fashion in electronics .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c001_d1",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c001",
+      "schema_version": "1.0.0",
+      "decision": "The design for the remote control should have a simple formatted display for easier use.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To attain the functionality of a complicated device but use a simple formatted display for the user."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Revolutionise the idea of uh a remote control . Um so attain the functionality of a complicated device but use a simple formatted display uh for the user to to work with .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Great . Thanks for that Ron .",
+          "speaker": "Project Manager",
+          "supports": "approver"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c002_d1",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to target the younger demographic for the remote design.",
+      "topic": "demographic target",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "older demographic",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The Industrial Designer suggested going with plastic and simpler functions, and the younger demographic is interested in voice recognition options."
+      ],
+      "conditions": [
+        "The team needs to consider how to make the remote better, smaller, and faster."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I've got w if we're gonna go for a sleek look I mean we are putting the fashion in electronics",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "we've got y the Industrial Designer suggests uh or pretty much emphatically suggested that we need to go with plastic",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "seventy five percent of people under thirty five wanted , thought about voice control",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c003_d1",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to incorporate voice recognition technology into the remote control, with the option for users to choose between voice commands and traditional buttons.",
+      "topic": "voice recognition technology in remote control",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "traditional buttons only",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The team believes it would cater to both younger and older markets."
+      ],
+      "conditions": [
+        "The difficulty would be in ensuring the voice commands can be heard clearly when the remote is hidden or far away."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think it would be possible to combine the locator device and the voice recognition technology.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "That could work. I like that.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "The difficulty would be in um I think like i you couldn't speak into the remote that you're trying to find.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "The other thing is we might be able to handle the simplicity of a remote control and kind of put the more complicated things into a voice control.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c003_d2",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team is considering a touch pad screen for the remote control's primary screen.",
+      "topic": "touch pad screen for remote control",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "traditional buttons",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The team finds it an interesting option for its simplicity and potential to house complicated settings."
+      ],
+      "conditions": [
+        "The team is still investigating the technical feasibility and costs of touch screen methods."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The uh if we're gonna do this touch pad screen thing , it would be still , do we know if that's an option technically right now to that ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "they seem to be uh you know almost as cheap as a button method at this point.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c004_d1",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of including face plates in the remote control design, but decided it might be a gimmick and not worth the cost.",
+      "topic": "face plates inclusion",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It sounds like a gimmick that wouldn't really go anywhere."
+      ],
+      "conditions": [
+        "No tests on face plates and whether there's interest out there."
+      ],
+      "dissent": [
+        "Industrial Designer: Off the top of my head it sounds kind of like a gimmick that wouldn't really go anywhere."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Off the top of my head it sounds kind of like a gimmick that wouldn't really go anywhere.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Yeah 'cause then ha you would have to who all",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well hopefully some people have people coming t over to w to hang out at your house",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c004_d2",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of a paging function, a touch screen, and face plates for the remote control.",
+      "topic": "remote control features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The idea of a paging function, a touch screen, and face plates."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think this voice recognition thing is a we've got a market for it uh I don't think there's too many , we'd more or less be cornering the market on it as well , we don't have many um .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c004_d3",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of sacrificing face plates for a touch screen.",
+      "topic": "face plates vs touch screen",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "We'd have to maybe sacrifice the face plates for a touch screen?"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I see {vocalsound} would there not be a {vocalsound} we'd have to maybe sacrifice the face plates for a touch screen ?",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c005_d1",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c005",
+      "schema_version": "1.0.0",
+      "decision": "A touch screen with a cutting edge battery technology will be provisionally used for the remote control.",
+      "topic": "remote control technology",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "a well presented plastic simple",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The team discussed the cost, quality, and battery life of different options."
+      ],
+      "conditions": [
+        "The team will look into new battery technology.",
+        "The final decision is subject to cost and affordability."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Let's go for a plastic built or uh plastic cased 'cause that's easy on the cost, try to look for some kind of high quality recycled plastic as you recommended and I think that's a great idea.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "you can put the basics on the centre easiest you know , you know people know the channel and volume function make them large and easy to get at and then the the other bits and bobs you know go through menu",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well I I don't think yeah I can't see anybody buying a remote control that they have to plug in so we'd have to see some kind of new battery technology.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c006_d1",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "A nice black and red interface on the touch screen was decided for the remote control.",
+      "topic": "remote control interface",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It would be aesthetically pleasing."
+      ],
+      "conditions": [
+        "The remote control will have a touch screen."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'm in agreement with that, I'm wondering how we're gonna get uh we put fashion into electronics onto this device.",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Think we just need to come up with a nice black and red interface on the touch screen.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c006_d2",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "A temporary display of the company's name or logo on the touch screen was proposed.",
+      "topic": "remote control display",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "It would help to put fashion into electronics."
+      ],
+      "conditions": [
+        "The temporary display would only appear when the remote control is turned on."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well but if we're gonna use a touch screen where it's gonna come on like on your cell phone it'll have your your carrier provider name come up first like while it's loading",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c006_d3",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "A subliminal display of the company's name or logo on the touch screen was proposed.",
+      "topic": "remote control display",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "It would be a subtle way to put fashion into electronics."
+      ],
+      "conditions": [
+        "The subliminal display would only last for half a millisecond."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'm hoping for a subliminal maybe half a millisecond as it turns on.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c006_d4",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "A P_D_A_ (Personal Digital Assistant) was proposed as a way to connect the remote control to other devices.",
+      "topic": "remote control connectivity",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "A P_D_A_ would make sense for connecting the remote control to other devices."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think that that one might just be out of the range for this particular remote control",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c006_d5",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "A button for the remote control to turn on was proposed.",
+      "topic": "remote control power",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Turning on the remote control requires a button press."
+      ],
+      "conditions": [
+        "The remote control will have a touch screen."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But then again who wants to turn on a remote control . Kind of if i",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c006_d6",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "A way for people to download or import skins into the remote control was discussed.",
+      "topic": "remote control skins",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "If you were going to do a skin, you'd need to have some way for people to download or import skins into the remote control."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Project Manager: W it's my understanding that if you were going to do a skin you'd need to have some way for people to download or import skins into the remote control.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c007_d1",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c007",
+      "schema_version": "1.0.0",
+      "decision": "The logo will be placed in the boot up screen.",
+      "topic": "logo placement",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Project Manager likes the idea."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Oh yeah I like that I like the idea of um putting the logo in the boot up screen , nice .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_001_c007_d2",
+      "source_id": "QMS_PRD_VA_001",
+      "chunk_id": "QMS_PRD_VA_001_c007",
+      "schema_version": "1.0.0",
+      "decision": "Files will be saved and placed in the shared folder for later reference.",
+      "topic": "file management",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Project Manager will save a copy of the meeting and minutes, and User Interface has already put their files in the shared folder."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'm gonna save a copy of this in case you guys need any reminders .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I've put my files in the shared folder as well .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 8,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

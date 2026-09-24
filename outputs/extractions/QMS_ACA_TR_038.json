@@ -1,0 +1,1730 @@
+{
+  "source_id": "QMS_ACA_TR_038",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_038_c000_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c000",
+      "schema_version": "1.0.0",
+      "decision": "The agenda for the meeting includes discussing plans for the field trip next week, logistics for the field trip, a progress report, discussing resource issues, and discussing if there are any other topics not listed.",
+      "topic": "meeting agenda",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor F was jotting down things to discuss during the meeting."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So . That 's if these are anonymized , but Yeah",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Then maybe later on in the meeting we should talk about what we actually you know , might accomplish .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Another topic I had was that uh Dave here had said Give me something to do .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "And then uh , talk a little bit about about disks and resource issues that 's starting to get worked out .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c000_d2",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c000",
+      "schema_version": "1.0.0",
+      "decision": "Professor F suggested taking a plane that leaves at 7:20 AM for the field trip.",
+      "topic": "field trip travel arrangements",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor F wanted to make the visit more meaningful for those who have to come back the same day."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I wanted to start this with this mundane thing . Um {disfmarker} I {disfmarker} I {disfmarker} it was {disfmarker} it was kind of my bright idea to have us take a plane that leaves at seven twenty in the morning .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c001_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c001",
+      "schema_version": "1.0.0",
+      "decision": "Professor F will drive some participants to the airport at 6 AM.",
+      "topic": "transportation to airport",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It would be easier for participants who are not familiar with the area to get to the airport at 6:30.",
+        "It would take approximately 30 minutes to get to the airport."
+      ],
+      "conditions": [
+        "Participants need to arrive at 6 AM.",
+        "Professor F will be at the designated location."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "OK . So . Would it be easier for you if you came here and I drove you ? Yeah ? Yeah , yeah , OK .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "So that leaves us fifty minutes before the plane. It'll just yeah . So Great , OK so that'll It's I mean , it's still not going to be really easy but well Particularly for uh Barry and me , we're not staying overnight so we don't need to bring anything particularly except for a pad of paper and",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Grad C: So , s six AM , in front .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c002_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c002",
+      "schema_version": "1.0.0",
+      "decision": "The plan is to analyze three dimensions: the feature dimension, the training data dimension, and the test data dimension.",
+      "topic": "analysis plan",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To analyze the different dimensions of the task data."
+      ],
+      "conditions": [
+        "The plan involves using neural networks trained on task data."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh we actually we want to , mmm , Uh , analyze three dimensions , the feature dimension , the training data dimension , and the test data dimension . Um . Well , what we want to do is first we have number for each ...",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "So we have the um , TI - digit task , the Italian task , the French task ...",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c002_d2",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c002",
+      "schema_version": "1.0.0",
+      "decision": "The possibility of using the Language ID corpus was discussed.",
+      "topic": "corpus discussion",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To find a suitable corpus for the analysis."
+      ],
+      "conditions": [
+        "The corpus should be phonetically balanced."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So - so we had talked at one point about maybe , the language ID corpus ?",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Is that a possibility for that ?",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c002_d3",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c002",
+      "schema_version": "1.0.0",
+      "decision": "The OGI multilingual database was mentioned.",
+      "topic": "database mention",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To find a suitable corpus for the analysis."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Did you happen to find out anything about the OGI multilingual database ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c003_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team is considering using three generic databases for multilingual part of the project.",
+      "topic": "databases for multilingual part",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "These databases are generic and already have English, Spanish, and French with microphone speech."
+      ],
+      "conditions": [
+        "The team is considering the cross-language issue but not focusing too much on it."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well . Yeah , for the multilingual part we were thinking of using these three databases .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "So .",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well , w w we were thinking that perhaps the cross - language issue is not , uh , so big of a issue .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c003_d2",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team is considering using TIMIT for the project.",
+      "topic": "TIMIT for the project",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "TIMIT was suggested as another option."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah . Perhaps {disfmarker} yeah , there is also TIMIT .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "We could use TIMIT .",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c003_d3",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team is planning to test the cube.",
+      "topic": "testing the cube",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The basic plan is to test this cube."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The basic plan is to , uh , test this cube . Yes .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c004_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the cellular industry's image is that it's distributed speech recognition, where the probabilistic part, semantics, and so forth are all on the servers, and you compute features of the speech on the phone.",
+      "topic": "speech recognition architecture",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Because that's what they're asking for."
+      ],
+      "conditions": [
+        "It was discussed that the OGI folks' perspective is that the envir acoustic-environment mismatch might be the bigger deal."
+      ],
+      "dissent": [
+        "Professor F expressed concern that they can't ignore the cross-language issue."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , we say \" OK , this is the year two thousand , we 've got something much better than mel cepstra . It 's , you know , gobbledy - gook . \" OK ? And so we give them these gobbledy - gook features but these gobbledy - gook features are supposed to be good for any language .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "But that 's the image they have .",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It could be ,",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "I know unfortunately I don't",
+          "speaker": "Professor F",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c005_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c005",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to test the model with a real cross-language dataset, but it was not decided whether to include the target language in the training or not.",
+      "topic": "cross-language testing",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "test with a real cross-language dataset and include the target language in the training",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "test with a real cross-language dataset and exclude the target language from the training",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the complexity of switching nets based on language, and the possibility of including the target language in the training."
+      ],
+      "conditions": [
+        "It wasn't decided whether to include the target language in the training or not."
+      ],
+      "dissent": [
+        "No clear dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we really have to do test with a real cross - language. I mean , train for instance training on English and testing on Italian, or",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "or we can train a net on, uh , a range of languages and which can include the test the target language,",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "There 's , uh , from a purist 's standpoint it 'd be nice not to because then you can say when because surely someone is going to say at some point, \" OK , so you put in the German and the Finnish .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "And so , ideally , what you 'd wanna do is you 'd wanna run it with and without the target language and the training set for a wide range of languages .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c006_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c006",
+      "schema_version": "1.0.0",
+      "decision": "Grad C is considering using PLP for the neural net training.",
+      "topic": "neural net training method",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "something other than PLP",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Grad C mentioned considering PLP but hasn't decided yet."
+      ],
+      "conditions": [
+        "The final decision on the initial thing is not yet made."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I haven't decided on the initial thing.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Probably something like PLP.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c006_d2",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c006",
+      "schema_version": "1.0.0",
+      "decision": "Grad C is using HTK with transformed features for neural net training.",
+      "topic": "neural net training setup",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "other setup",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Professor F explained the setup."
+      ],
+      "conditions": [
+        "The training could be from Digits itself or from TIMIT."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And you use HTK with it with the transformed features using a neural net that's trained.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c006_d3",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c006",
+      "schema_version": "1.0.0",
+      "decision": "The testing would be on foreign language.",
+      "topic": "testing subject",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "other subject",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Professor F mentioned the testing would be these other things which might be foreign language."
+      ],
+      "conditions": [
+        "The testing could involve general speech or specific speech."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and then the testing would be these other things which might be foreign language.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c007_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c007",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed whether to use the TIMIT or ICSI phone set for the training tandem system.",
+      "topic": "phone set for training tandem system",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "TIMIT phone set",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "ICSI phone set",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the differences between the two phone sets, their phoneeme mappings, and the potential need for a superset.",
+        "Discussion about the need to develop a subset of phonemes that includes all the phonemes of the training languages."
+      ],
+      "conditions": [
+        "Discussion about the potential need to generate new transcriptions for the database.",
+        "Discussion about the potential need to do a lot of work."
+      ],
+      "dissent": [
+        "No clear dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think you 're doing this test because you want to determine whether or not, uh , having a general speech performs as well as having specific speech .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "But {disfmarker} but , um , uh , it {disfmarker} it , um , it might be a better source . So , i it 's {disfmarker} you 're right . It would be another interesting scientific question to ask , \" Is it because it 's a broad source or because it was , you know , carefully ? \"",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Other than the language , is there a reason not to use the TIMIT phone set ? Cuz it 's larger ? As opposed to the ICSI {pause} phone set ?",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Grad C: Oh , you mean why map the sixty - one to the fifty - six ?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c008_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c008",
+      "schema_version": "1.0.0",
+      "decision": "The group decided to discuss the whole cube and possibly section it for individual work.",
+      "topic": "discussion topic",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad C suggested discussing the whole cube and sectioning it for individual work."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "to talk about the whole cube",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "and maybe we could sections in the cube for people to work on.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c009_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to add MFCC to the ANN, and to compare MFCC with the neural net and MFCC without the net.",
+      "topic": "addition of MFCC to the ANN",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It'd be an interesting test.",
+        "Conceptually it makes sense as a baseline."
+      ],
+      "conditions": [
+        "Dan did some of that in his previous Aurora experiments.",
+        "OGI folks have been doing that too."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "we could add MFCC also .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "Probably should .",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It 'd be an interesting test just to do MFCC with the neural net",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Compare that with just M- MFCC without the net .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think Dan did some of that .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um , I think OGI folks have been doing that , too .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c010_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c010",
+      "schema_version": "1.0.0",
+      "decision": "They decided to train with noise incorporating the same kinds of noises that Aurora is in their training corpus.",
+      "topic": "training corpus",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To help out in other kinds of noise even if it's not matching just because there's some more variance that you've built into things."
+      ],
+      "conditions": [
+        "They cannot train on the unseen noise conditions."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And , um , within the training corporas um , we 're , uh , thinking about , um , training with noise . So , incorporating the same kinds of noises that , um , Aurora is in incorporating in their , um {disfmarker} in their training corpus . Um , I don't think we we 're given the , uh {disfmarker} the unseen noise conditions , though , right ?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think what they were saying was that , um , for this next test there 's gonna be some of the cases where they have the same type of noise as you were given before hand and some cases where you 're not.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c011_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c011",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to test on Spanish.",
+      "topic": "language for testing",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Hynek predicts the testing will be available at the end of November."
+      ],
+      "dissent": [
+        "Grad D questioned the need for noise conditions, but the question was dismissed."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Spanish . Oh yeah , we can test on s Spanish .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "There 's Spanish testing in the Aurora ?",
+          "speaker": "Professor F",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Three tests . Um , type - A , type - B , and type - C .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c011_d2",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c011",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use three tests: type - A, type - B, and type - C.",
+      "topic": "tests to be used",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "The tests will be tested with one training of the HTK system."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Three tests . Um , type - A , type - B , and type - C .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c011_d3",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c011",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to train on noise files that they have.",
+      "topic": "training data",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad C stated they will be training on the noise files that they do have."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "we 're gonna be , um , training on the noise files that we do have .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c011_d4",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c011",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to try PLP and MSG together.",
+      "topic": "combination of techniques",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor F mentioned the major advantage of MSG combined with PLP."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "PLP and MSG I think we definitely wanna try cuz we 've had a lot of good experience with putting those together .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c012_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c012",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed whether to use one net trained on multiple languages or separate nets for each language, but no decision was made.",
+      "topic": "training method for multilingual net",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "one net trained on multiple languages",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "separate nets for each language",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the pros and cons of each method."
+      ],
+      "conditions": [
+        "No decision was made."
+      ],
+      "dissent": [
+        "No dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well , you gotta do the KL transformation ,",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Good question .",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So , in the broader training corpus we can use , uh , the three , or , a combination of two two languages .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "It 's not too much .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c013_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c013",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that HTK training takes around 6 hours, but it depends on the corpus and the neural net.",
+      "topic": "duration of HTK training",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the duration of HTK training."
+      ],
+      "conditions": [
+        "Depends on the corpus and the neural net."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It's around six hours, I think.",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "For training and testing, yeah.",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "More than six hours.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "For the Italian, yes. Maybe one day.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's six hours.",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's a few hours.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "something like that.",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "I would say two days.",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "Depends on the corpuses, right?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "It depends.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "It s also depends on the net.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "For Albayzin I trained on neural network, uh, was, um, one day also.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "On a SPERT board.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c014_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c014",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to focus on tasks they already know how to do and data they already have, and calculate the outer product of all these things.",
+      "topic": "research focus",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Limited time and available computational resources.",
+        "New features and learning processes would require additional time and effort."
+      ],
+      "conditions": [
+        "Need to discuss with Chuck and Adam about attacking the problem as a mass problem using many machines.",
+        "Presentation at OGI next week."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So this is Yeah , I mean , I kind of like this because what it is that we already know how to do .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't see how we 'd do it . So what I like about this is you basically have listed all the things that we already know how to do .",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So then I think it 's just the missing piece is that you need to , uh , you know , talk to , uh , Chuck , talk to , uh , Adam , uh , sort out about , uh , what 's the best way to really , you know , attack this as a mass problem in terms of using many machines .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c015_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c015",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "converting labels for Spanish neural network",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the difficulty of converting labels for the Spanish neural network"
+      ],
+      "conditions": [
+        "Need to find a solution to convert labels from one format to another"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I begin to work with the Italian database to nnn, to with the f front - end and with the HTK program and the @ @ . And I trained eh, with the Spanish two neural network with PLP and with LogRASTA PLP. I don't know exactly what is better if LogRASTA or JRASTA.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well, um, JRASTA has the potential to do better, but it doesn't always. It's i i JRASTA is more complicated. It's, uh, instead of doing RASTA with a log, you're doing RASTA with a log-like function that varies depending on a J parameter, uh, which is supposed to be sensitive to the amount of noise there is. So, it's sort of like the right transformation to do the filtering in, is dependent on how much noise there is.",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And so in JRASTA you attempt to do that. It's a little complicated because once you do that, you end up in some funny domain and you end up having to do a transformation afterwards, which requires some tables. And, uh,",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'll do better.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "So, it's that's that's that's a little messier, uh, there's more ways that it can go wrong, uh, but if if if you're careful with it, it can do better.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's a bit I'll do better.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um, and I think to to recognize the Italian digits with the neural netw Spanish neural network, and also to train another neural network with the Spanish digits, the database of Spanish digits. And I working that.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "But prepare the that are difficult.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm sorry,",
+          "speaker": "PhD E",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I didn't understand.",
+          "speaker": "Professor F",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Uh, for example Albayzin database was labeled automatically with HTK. It's not hand that's not labels by hand.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "I have a p I had a problem with the pronunciation.",
+          "speaker": "Professor F",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I'm sorry,",
+          "speaker": "PhD E",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I'm sorry,",
+          "speaker": "Professor F",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I have a problem with the pronunciation.",
+          "speaker": "Professor F",
+          "supports": "dissent"
+        },
+        {
+          "quote": "The labels . I'm sorry . The labels .",
+          "speaker": "PhD E",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Yeah , OK .",
+          "speaker": "Professor F",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Oh , also that",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "So you're just having a problem converting the labels.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's that's that's that's complicated",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "but well, I know how we can did that.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "So it's just usual kind of uh sometimes say housekeeping, right? To get these things sorted out.",
+          "speaker": "Professor F",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c016_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c016",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made in this excerpt",
+      "topic": "housekeeping",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "The team is discussing sorting out mundane but real problems and pushing through to figure out what's best."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it 's just usual kind of uh sometimes say housekeeping , right ? To get these things sorted out .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "if you work on getting the , uh , assembly lines together , and then the pieces sort of get ready to go into the assembly line and gradually can start , you know , start turning the crank , more or less .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c017_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c017",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to move data closer to the computation for faster processing.",
+      "topic": "data processing strategy",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The machines are getting faster, but the data movement is a significant drag on the time."
+      ],
+      "conditions": [
+        "It may take a couple weeks to get the additional disk space."
+      ],
+      "dissent": [],
+      "owner": "Chuck",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , you don't w especially in something with repetitive computation where you 're going over it multiple times , you do not want to have the data that you 're working on distant from where it 's being done if you can help it .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Then , when you 're working with something and accessing it many times , you copy the piece of it that you 're working with over to some place that 's close to where the computation is and then do all the work there .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "That 's the idea .",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It may be too late for this , uh , precise crunch we 're in now , but , uh , we 're , uh {disfmarker} It 's gonna take us a couple weeks at least to get the , uh , uh , the amount of disk we 're gonna be getting .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c018_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c018",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to check the disk space on Mustard and Nutmeg.",
+      "topic": "disk space check",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To see if there is space that could be used."
+      ],
+      "conditions": [
+        "If there is enough space on the slash - scratch directories."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You could also use slash - X - whatever disks on Mustard and Nutmeg .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "You could also check slash - scratch on those [Mustard and Nutmeg] to see if [there's space that you could use there].",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c019_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c019",
+      "schema_version": "1.0.0",
+      "decision": "PhD A will move some databases to a new disk to free up space on other disks.",
+      "topic": "disk space management",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "There's more space on the new disk, which will free up space for doing experiments."
+      ],
+      "conditions": [
+        "PhD A hasn't deleted anything off the old disk to make room yet."
+      ],
+      "dissent": [],
+      "owner": "PhD A",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , um , I 've copied a couple of Carmen 's , um , databases over there . We haven't deleted them off of the slash - DC disk that they 're on right now in Abbott , um , uh , but we 've been going through and copying data that is , you know , some kind of corpus stuff usually , that we 've got on a CD - ROM or something , onto that new disk to free up space on other disks .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , anything that you don't need backed up , we can put on this new disk . Um , but if it's experiments and you 're creating files and things that you 're gonna need , you probably wanna have those on a disk that 's backed up , just in case something goes wrong .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c019_d2",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c019",
+      "schema_version": "1.0.0",
+      "decision": "They will use the normalization scheme as OGI is using.",
+      "topic": "normalization scheme",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It seems to be a good idea."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , but Uh . So that this could be another dimension , but we think perhaps we can use the best , uh , um , uh , normalization scheme as OGI is using , so , with parameters that they use there ,",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean it 's i i we seem to have enough dimensions as it is . So probably if we sort of take their online normalization because then it 's if we do anything else , we 're gonna end up having to do on - line normalization too , so we may as well just do on - line normalization .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c019_d3",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c019",
+      "schema_version": "1.0.0",
+      "decision": "They will discuss goals for the next week's meeting.",
+      "topic": "goals for the next week's meeting",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It seems to me that we wanna do is flush out what you put on the board here . Uh . You know , maybe , have it be somewhat visual , a little bit."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So . Um . So , I guess , yeah , th the other topic I {disfmarker} I {disfmarker} maybe we 're already there , or almost there , is goals for the {disfmarker} for next week 's meeting . Uh . i i i it seems to me that we wanna do is flush out what you put on the board here . Uh . You know , maybe , have it be somewhat visual , a little bit.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c020_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c020",
+      "schema_version": "1.0.0",
+      "decision": "The team did not settle on which specific tasks they will focus during the field trip.",
+      "topic": "field trip tasks",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about settling on specific tasks, but no decision was made."
+      ],
+      "conditions": [
+        "The team is planning to go on a field trip next week."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh , so we can say what we 're doing ,",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "And , uh , when we come back we can charge in and do it . Um . Anything else that I a a Actually started out this field trip started off with , uh , Stephane talking to Hynek , so you may have had other goals , uh , for going up , and any anything else you can think of would be we should think about accomplishing ? I mean , I 'm just saying this because maybe there 's things we need to do in preparation .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "And uh {disfmarker} and the other {disfmarker} the {disfmarker} the last topic I had here was , um , uh d Dave 's fine offer to , uh , do something {pause} {vocalsound} on this .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c020_d2",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c020",
+      "schema_version": "1.0.0",
+      "decision": "PhD G suggested focusing on speech and noise detection during the field trip.",
+      "topic": "field trip tasks",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "speech and noise detection",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "PhD G suggested focusing on speech and noise detection during the field trip."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Um , yeah , I was thinking perhaps if , um , additionally to all these experiments , which is not really research , well I mean it 's , uh , running programs and , um , {vocalsound} trying to have a closer look at the perhaps the , um , {vocalsound} speech , uh , noise detection or , uh , voiced - sound - unvoiced - sound detection and Which could be important in noise noise noise",
+          "speaker": "PhD G",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c020_d3",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c020",
+      "schema_version": "1.0.0",
+      "decision": "PhD A agreed that focusing on speech and noise detection during the field trip could be important.",
+      "topic": "field trip tasks",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "PhD A agreed that focusing on speech and noise detection during the field trip could be important."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think that 's a big deal . Because the thing that Sunil was talking about , uh , with the labels , uh , labeling the database when it got to the noisy stuff ? The that really throws things off . You know , having the noise all of a sudden , your speech detector , I mean the , um , speech detector , I mean the , um {disfmarker} What was it ? What was happening with his thing ?",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c020_d4",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c020",
+      "schema_version": "1.0.0",
+      "decision": "Professor F suggested figuring out additional tasks that could benefit from an extra person before deciding where to use Dave's help.",
+      "topic": "using Dave's help",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor F suggested figuring out additional tasks that could benefit from an extra person before deciding where to use Dave's help."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The only problem {disfmarker} I mean , maybe that 's the right thing {disfmarker} the only problem I have with it is exactly the same reason why you thought it 'd be a good thing to do . Um , I {disfmarker} I think that {disfmarker} Let 's fall back to that . But I think the first responsibility is sort of to figure out if there 's something {pause} that , uh , an {disfmarker} an additional {disfmarker} Uh , that 's a good thing you {disfmarker} remove the mike . Go ahead , good . Uh , uh . What an additional clever person could help with when we 're really in a crunch for time . Right ? Cuz Dave 's gonna be around for a long time ,",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c021_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c021",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that a piece of work that is just running programs and doesn't require research could potentially be handed to someone to do, given the time crunch.",
+      "topic": "work distribution",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "We're strapped for time, and have only another month or two to get a lot done."
+      ],
+      "conditions": [
+        "The work needs to be well defined."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "if possible , coming up with something that really was development and wasn't research because we 're have a time crunch.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "if there 's something that would save some time that someone else could do on some other piece , then we should think of that first.",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "that really was development and wasn't research because we 're have a time crunch.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c021_d2",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c021",
+      "schema_version": "1.0.0",
+      "decision": "It was suggested to train a multilingual net for labeling between TIMIT and Spanish.",
+      "topic": "data labeling",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "To help with the work."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "What about training up a , um , a multilingual net ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , so defining the superset , and , uh , joining the data and Mmm .",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c022_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c022",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to create a multilingual superset and modify the lab labels for matching the superset.",
+      "topic": "multilingual superset",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Current speech recognition throws away all the harmonicity information. The harmonic detail does tell you something."
+      ],
+      "conditions": [
+        "Creating the superset from looking at multiple languages, creating mappings, and modifying labels on TIMIT or multiple languages."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "the other suggestion that just came up was , well what about having him work on the , uh , multilingual super f superset kind of thing . Uh , coming up with that and then , you know , training it training a net on that , say , um , from , uh , from TIMIT or something . Is that or uh , for multiple databases . What would you think it would consist of ?",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Creating the superset , and , uh , modifying the lab labels for matching the superset . Uh .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , it would consist in , uh , well , um , creating the mappings , actually .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "Creating a superset from looking at the multiple languages ,",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "From each language to the superset ,",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "Carmen was talking about this SAMPA thing , and it 's , um , {vocalsound} it 's an effort by linguists to come up with , um , a machine readable IPA , um , sort of thing , right ?",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c023_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c023",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed whether to leverage OGI's work on phoneme clusters or create a superset for handling cross-language.",
+      "topic": "approach for handling cross-language",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "leverage OGI's work on phoneme clusters",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "create a superset",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the potential benefits and drawbacks of each approach."
+      ],
+      "conditions": [
+        "More information needed about the results of OGI's work on phoneme clusters."
+      ],
+      "dissent": [
+        "No clear dissent voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So that does make an interesting question, though.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "But {disfmarker}",
+          "speaker": "PhD G",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Is there 's some way that we should tie into that with this . Um . Right ? I mean , if {disfmarker}",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think that there 's something wrong",
+          "speaker": "PhD G",
+          "supports": "dissent"
+        },
+        {
+          "quote": "So , I 'm",
+          "speaker": "PhD G",
+          "supports": "dissent"
+        },
+        {
+          "quote": "So , maybe we could look at articulatory type stuff ,",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But that 's what I thought they were gonna {disfmarker}",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "They 're talking about it ,",
+          "speaker": "PhD G",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c024_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c024",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of translating phone labels into articulatory features instead of translating to a superset.",
+      "topic": "translation method",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "translating to a superset",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussed as a potential way to improve results, inspired by a previous experiment."
+      ],
+      "conditions": [
+        "The feasibility of this method with their current software is uncertain."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So the targets of the net are these ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "but",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "You either do that or you have multiple nets.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "You could , uh , just translate instead of translating to a superset ,",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "it 'd be an interesting experiment just to see",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_038_c025_d1",
+      "source_id": "QMS_ACA_TR_038",
+      "chunk_id": "QMS_ACA_TR_038_c025",
+      "schema_version": "1.0.0",
+      "decision": "It was not decided whether to use linear outputs or not",
+      "topic": "linear outputs",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "linear outputs",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "sigmoid outputs",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the choice of outputs, but no decision was made."
+      ],
+      "conditions": [
+        "Training on sigmoid - X and chopping off the final nonlinearity was mentioned."
+      ],
+      "dissent": [
+        "No dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Did we just run out of disk,",
+          "speaker": "Professor F",
+          "supports": "status"
+        },
+        {
+          "quote": "The soft training of the nets still requires the vector to sum to one, though, right?",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So you can't really feed it, like, two articulatory features that are on at the same time with ones cuz it 'll kind of normalize them down to one half or something like that, for instance.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But perhaps you have the choice of the final nonlinearity?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So if you choose sigmoid it 's o it 's OK?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "You , um {disfmarker}",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , we 're {disfmarker} we 're {disfmarker} we 're off the air, or {disfmarker} ? About to be off the air.",
+          "speaker": "Professor F",
+          "supports": "status"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 26,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

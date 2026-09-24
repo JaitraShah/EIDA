@@ -1,0 +1,257 @@
+{
+  "source_id": "QMS_PRD_TR_059",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_059_c000_d1",
+      "source_id": "QMS_PRD_TR_059",
+      "chunk_id": "QMS_PRD_TR_059_c000",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt.",
+      "topic": "project start",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "'Kay , hello everybody . Uh , I guess you all know what is it about , you all received the email , I guess . Uh , we are actually doing this meeting to start a new project which is about designing a remote control . So I'm going to be the project manager of this uh project . And uh so I'm present myself . I'm Fabien Cardinaux and uh I I guess you can present yourself . So I dunno , you can starts .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "My name is Hamed Getabdar , and uh I'm going to be Interface Designer in this project .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So what is the goal of this project ? Is to design a new remote control .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_059_c001_d1",
+      "source_id": "QMS_PRD_TR_059",
+      "chunk_id": "QMS_PRD_TR_059_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the design and functionality of the remote control.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the design and functionality of the remote control."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Put it a Maybe put it on the desk or something .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I should get used to the tool , so .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "it works like this .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Your lapel microphone's fallen off .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Are you left-handed ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "No .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm not good very good in drawing .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , let's talk about money .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "We expect a production cost of maximum uh twelve point fifty Euro .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_059_c001_d2",
+      "source_id": "QMS_PRD_TR_059",
+      "chunk_id": "QMS_PRD_TR_059_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to sell the remote control for 25 Euro and expected a profit of around 50 million Euro.",
+      "topic": "remote control pricing",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the pricing of the remote control."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , let's talk about money . Uh we are going to to sell uh this remote control for twenty five Euro Euro .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And uh we are trying to to have a market all around the world . So , um . The We expect a production cost of maximum uh twelve point fifty Euro .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_059_c002_d1",
+      "source_id": "QMS_PRD_TR_059",
+      "chunk_id": "QMS_PRD_TR_059_c002",
+      "schema_version": "1.0.0",
+      "decision": "The Industrial Designer will work on the design of the remote control.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "The Industrial Designer is the one who will work on the design."
+      ],
+      "dissent": [],
+      "owner": "Industrial Designer",
+      "approver": "Project Manager",
+      "evidence": [
+        {
+          "quote": "The interface interface developer will work on the on the design of the remote control",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I am the Technical Designer",
+          "speaker": "Industrial Designer",
+          "supports": "owner"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_059_c002_d2",
+      "source_id": "QMS_PRD_TR_059",
+      "chunk_id": "QMS_PRD_TR_059_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will use radio waves instead of infrared rays.",
+      "topic": "remote control technology",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Remote control working with infra-red rays is difficult to tune.",
+        "Radio waves do not require a specific direction."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": "Project Manager",
+      "evidence": [
+        {
+          "quote": "I prefer um remote control working with radio waves",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah, that's true.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_059_c003_d1",
+      "source_id": "QMS_PRD_TR_059",
+      "chunk_id": "QMS_PRD_TR_059_c003",
+      "schema_version": "1.0.0",
+      "decision": "Hamed will work on the technical functions of the remote control.",
+      "topic": "remote control technical functions",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not explicitly stated."
+      ],
+      "conditions": [
+        "Not explicitly stated."
+      ],
+      "dissent": [],
+      "owner": "Hamed",
+      "approver": "Project Manager",
+      "evidence": [
+        {
+          "quote": "And for the User Interface Designer , which is Hamed um , you are going to work on the technical functions of the remote control.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_059_c003_d2",
+      "source_id": "QMS_PRD_TR_059",
+      "chunk_id": "QMS_PRD_TR_059_c003",
+      "schema_version": "1.0.0",
+      "decision": "Bob will try to find the user requirements for the remote control.",
+      "topic": "user requirements for remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not explicitly stated."
+      ],
+      "conditions": [
+        "Not explicitly stated."
+      ],
+      "dissent": [],
+      "owner": "Bob",
+      "approver": "Project Manager",
+      "evidence": [
+        {
+          "quote": "And for the Marketing uh Manager , I dunno , okay , which is Bob , uh you are going to try to to find the user requirements f uh for the remote control.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 4,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

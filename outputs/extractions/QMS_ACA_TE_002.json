@@ -1,0 +1,1457 @@
+{
+  "source_id": "QMS_ACA_TE_002",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TE_002_c000_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c000",
+      "schema_version": "1.0.0",
+      "decision": "The group decided to discuss the influence structure and belief nodes.",
+      "topic": "discussion topic",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor B's idea was to build the influence links and decide what kinds of belief nodes are needed."
+      ],
+      "conditions": [
+        "The group will discuss the techy stuff at some point."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "My idea for today and we can decide that that isn't the right thing to do was to at spend at least part of the time trying to build the influence links, you know which sets of things are relevant to which decisions and actually I had a specific suggestion to start first with the path ones.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK so let's start with the belief - nets, the general influence stuff and then we'll also at some point break and talk about the techy stuff.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c001_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c001",
+      "schema_version": "1.0.0",
+      "decision": "The group decided to use a belief net program to solve their belief nets.",
+      "topic": "belief net program",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It will solve belief nets for them.",
+        "It's a GUI to a simulator that will give a functioning belief net at the other end."
+      ],
+      "conditions": [
+        "The program will update the value of the user's budget externally to the belief net."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So Keith w what 's behind this is actually a program that will once you fill all this in actually s solve your belief - nets for you and stuff .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So this is not just a display , this is actually a GUI to a simulator that will if we tell it all the right things we 'll wind up with a functioning belief - net at the other end .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c002_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c002",
+      "schema_version": "1.0.0",
+      "decision": "The first item under the user home base will be chosen for further consideration.",
+      "topic": "user home base item",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "It was the one they 're already thinking they did."
+      ],
+      "conditions": [
+        "They plan to link it up to see if it can be further developed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "let's do the first one let's do the one that we sort of already think we did so w that was the endpoint ?",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So my suggestion is we just pick uh one particular one of the uh well let's do the first one let's do the one that we sort of already think we did so w that was the endpoint ?",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "and let's see if we can get it linked up just to get ourselves started .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c002_d2",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c002",
+      "schema_version": "1.0.0",
+      "decision": "They will consider the difference between mode and endpoint.",
+      "topic": "mode vs endpoint",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad C asked about the difference between mode and endpoint."
+      ],
+      "conditions": [
+        "They plan to discuss it further."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "What's the difference between mode and endpoint ?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Would it be an endpoint if you were crossing over it ?",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "this is ju",
+          "speaker": "Grad D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c002_d3",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c002",
+      "schema_version": "1.0.0",
+      "decision": "They will consider if they should propagate beliefs every single time it's updated or only when needed.",
+      "topic": "belief propagation",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad D asked if they should propagate beliefs every single time it's updated or only when needed."
+      ],
+      "conditions": [
+        "They plan to discuss it further."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The other thing is that um every time that's updated beliefs will have to be propagated but then the question is do you do we wanna propagate beliefs every single time it's updated or only when we need to ?",
+          "speaker": "Grad D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c002_d4",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c002",
+      "schema_version": "1.0.0",
+      "decision": "They will consider if there should be a lazy mode.",
+      "topic": "lazy mode",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Professor B asked if it has a lazy mode."
+      ],
+      "conditions": [
+        "They plan to discuss it further."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah , does it have a lazy mode ? I don't remember .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c002_d5",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c002",
+      "schema_version": "1.0.0",
+      "decision": "They will consider if they should track down whether Srini's thing has an option for proper inferences that doesn't happen automatically.",
+      "topic": "proper inferences",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad D mentioned there was an option like proper inferences which suggests that it doesn't happen automatically."
+      ],
+      "conditions": [
+        "They plan to discuss it further."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh Well , I mean , in Srini 's thing there was this thing {disfmarker} there was this um option like proper inferences which suggests that uh doesn't happen , automatically .",
+          "speaker": "Grad D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c002_d6",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c002",
+      "schema_version": "1.0.0",
+      "decision": "They will consider if they should add more things to the list.",
+      "topic": "additional list items",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad A suggested they might think of more things."
+      ],
+      "conditions": [
+        "They plan to discuss it further."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe we can think of more things , cross",
+          "speaker": "Grad D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c002_d7",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c002",
+      "schema_version": "1.0.0",
+      "decision": "They will consider if crossing the Charles Bridge is an endpoint.",
+      "topic": "Charles Bridge as endpoint",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad A mentioned crossing the Charles Bridge and discussed it as a potential endpoint."
+      ],
+      "conditions": [
+        "They plan to discuss it further."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The Charles Bridge , you know .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c003_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c003",
+      "schema_version": "1.0.0",
+      "decision": "The design of the system will include three intermediate nodes based on the user model, ontology, and discourse.",
+      "topic": "system design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The design we had was there were three intermediate nodes based on the user model, ontology, and discourse."
+      ],
+      "conditions": [
+        "If they get combined somehow, there will be more things to worry about."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "the way we had been designing this , there were three intermediate nodes uh which were the endpoint decision as seen from the uh user model as seen from the ontology and as seen from the discourse . So each of those the way we had it designed , now we can change the design , but the design we had was there was a decision with the same three outcomes uh based on the th those three separate considerations",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "so if we wanted to do that would have to put in uh three intermediate nodes",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c003_d2",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c003",
+      "schema_version": "1.0.0",
+      "decision": "The endpoint can be renamed to 'mode'.",
+      "topic": "endpoint renaming",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "We can just rename that , yeah ."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We can just rename that , yeah .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c003_d3",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c003",
+      "schema_version": "1.0.0",
+      "decision": "The system will consider 'slurred' and 'angry' as inputs to the model.",
+      "topic": "input consideration",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "That 's a",
+        "Grad A: Can I ask about 'slurred' and 'angry' as inputs to this ?"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "That 's a",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c003_d4",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team will focus on identifying strong influences on user behavior.",
+      "topic": "user behavior influence identification",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "But yeah , that was what he had in mind . So my advice to do is get this down to what we think is actually likely to be a strong influence ."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But yeah , that was what he had in mind . So my advice to do is get this down to what we think is actually likely to be a strong influence .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c004_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c004",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed merging the 'selling', 'fixing', and 'servicing' decision nodes into an intermediate node for the endpoint decision.",
+      "topic": "endpoint decision node structure",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The group thought it might simplify the endpoint decision by merging the three nodes."
+      ],
+      "conditions": [
+        "The group acknowledged that the belief net would still need to know what the place is selling or servicing."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So if well it may be more than endpoint decisions, so the idea would be that you might wanna merge those three",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "You could , yeah . Yeah , so let 's do that . No no , no eh to an inter no , an intermediate node .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "That if any of those things is true then it 's the kind of place that you uh",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So you just wanna have them all pointing to a summary thing ?",
+          "speaker": "Grad D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c005_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c005",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the properties and organization of the entity type, but no specific decision was made.",
+      "topic": "entity type properties and organization",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the properties and organization of the entity type."
+      ],
+      "conditions": [
+        "The group may need to decide on the properties and organization of the entity type."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You could , yeah . Yeah , so let's do that . No no , no eh to an inter no , an intermediate node .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I would call that a service , but I don't know .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Say w w well it 's co I would s a a again for this purpose I think it 's commercial . Someplace you want to go in to do some kind of business .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well couldn't I do {disfmarker} let's do commercial uh landmark and",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well accessible I think is different cuz that 's tempor that {disfmarker} that varies temporally ,",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well you could , that 's a {disfmarker} that's a choice .",
+          "speaker": "Professor B",
+          "supports": "dissent"
+        },
+        {
+          "quote": "OK . I 'm just thinking about how people , human beings who know about places and places to go and so on would store this and it would probably {disfmarker} you wouldn't just sort of remember that they sell stuff and then deduce from that that it must be going on inside or something .",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well I think an entity maybe should be regard as a vector of several possible things , it can either em do s do sell things , fix things , service things , exhibit things , it can be a landmark at the same time as doing these things ,",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c006_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c006",
+      "schema_version": "1.0.0",
+      "decision": "A new node for the endpoint decision based on the user models will be created.",
+      "topic": "creation of a new node",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To have an intermediate thing that will determine the endpoint decision based on the user models."
+      ],
+      "conditions": [
+        "The endpoint decision will be related from the user model."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "let's make a new node",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "let's do endpoint underbar - U",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So let's actually yeah so link that up to the",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c006_d2",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c006",
+      "schema_version": "1.0.0",
+      "decision": "The endpoint will be named underscore - E.",
+      "topic": "naming of the endpoint",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To differentiate it from other entities."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "let's say underbar - E",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's underscore - E",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c006_d3",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c006",
+      "schema_version": "1.0.0",
+      "decision": "The user interest vector of five hundred values will be used.",
+      "topic": "use of user interest vector",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It comes from the user model."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Gothic churches versus Baroque townhouses versus",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c006_d4",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c006",
+      "schema_version": "1.0.0",
+      "decision": "Two ways to handle the user interest vector will be considered.",
+      "topic": "handling of user interest vector",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To find a suitable method to handle the user interest vector."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You could ignore it.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or you could have an and this will give you the flavor of the of what you could have a node that's",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c007_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c007",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the design problem of encapsulating user compatibility with the requirements of an action to the state of the user.",
+      "topic": "design problem",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The design problem was discussed for technical reasons and potential reuse of the solution."
+      ],
+      "conditions": [
+        "The group discussed the potential advantages of subgrouping and making the design more tree-like."
+      ],
+      "dissent": [
+        "Grad C questioned if everything wouldn't just contribute to user state again."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it yeah , there are two advantages . That 's that 's we can't do that , so we we 're gonna have to",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It does .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I guess the question uh is It 's hard for me to imagine how everything wouldn't just contribute to user state again . Or user compatibility.",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c008_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c008",
+      "schema_version": "1.0.0",
+      "decision": "A decision about what to do next in the planner was not reached.",
+      "topic": "planner next step",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the user model, situation model, and discourse model, but no decision about the next step in the planner."
+      ],
+      "conditions": [
+        "More work to be done on the current topic."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well let 's this go there or not I think is a good one .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well you tell me , so in terms of the uh planner what 's a good one to do ?",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So Keith this is gonna get into your world because uh we 're gonna want to know you know , which constructions indicate various of these properties",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So that that the Go - there decision will have a node from uh discourse , and I guess why don't we just stick a discourse thing up there to be as a placeholder for",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c009_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the discourse model is not yet represented.",
+      "topic": "discourse model representation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The discourse model is not yet present."
+      ],
+      "conditions": [
+        "Discourse model for endpoint will have three values."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and so again re that 's completely correct , we have the user model , the situation model here , we don't have the discourse model here yet . Much the same way as we didn't we don't have the ontology here .",
+          "speaker": "Grad E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But the discourse we don't have it represented at all yet .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c009_d2",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the discourse model for endpoint will have three values.",
+      "topic": "discourse model values",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "It'll have the EVA values if we have it."
+      ],
+      "conditions": [
+        "The EVA values are true, false, and possibly a user Go-there and maybe that's all."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It'll have the EVA values if we have it.",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c009_d3",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that a single situational node may not be enough.",
+      "topic": "situational node sufficiency",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "One situational node by itself wouldn't distinguish."
+      ],
+      "conditions": [
+        "More situational nodes may be needed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "That node by itself wouldn't distinguish",
+          "speaker": "Grad D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c009_d4",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that there should be a link from the endpoint decision.",
+      "topic": "endpoint decision link",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "This is where things are gonna get very messy from the endpoint uh decision",
+        "There should be a link , and this is where things are gonna get very messy from the endpoint uh decision"
+      ],
+      "conditions": [
+        "Things will get messy from the endpoint decision."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "This is where things are gonna get very messy from the endpoint uh decision",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "There should be a link , and this is where things are gonna get very messy from the endpoint uh decision",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c010_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c010",
+      "schema_version": "1.0.0",
+      "decision": "The decision about the link between the Endpoint and the Go-there node is still under discussion",
+      "topic": "link between Endpoint and Go-there node",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different possibilities and potential issues",
+        "Professor B suggests feeding the Endpoint node into the Go-there node"
+      ],
+      "conditions": [
+        "Important not to have loops in the belief world net",
+        "Discussion about recursive action"
+      ],
+      "dissent": [
+        "Grad A questions the current approach and suggests a different way of thinking about the user node"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so now the other thing that Bhaskara eh pointed out is what this says is that uh there sh should be a link , and this is where things are gonna get very messy from the endpoint uh decision",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Could be , yeah .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , no it 's not a loop yet , I 'm just saying we {disfmarker} we , in no , in",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think so . S",
+          "speaker": "Professor B",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Uh . If you needed it to do that .",
+          "speaker": "Professor B",
+          "supports": "owner"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c010_d2",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c010",
+      "schema_version": "1.0.0",
+      "decision": "The decision about the discourse endpoint (endpoint sub-D) is still under discussion",
+      "topic": "discourse endpoint (endpoint sub-D)",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about making a Keith note to remember discourse"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And then also the discourse endpoint , I {disfmarker} I guess endpoint sub - D is {disfmarker} if you wanna make it consistent .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just sort of so we don't forget . Oops . Have to get used to this . OK , whoops .",
+          "speaker": "Grad E",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c011_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c011",
+      "schema_version": "1.0.0",
+      "decision": "The organization of the project will be that Keith will worry about various constructions that people might use, and Johno will be the parser wizard.",
+      "topic": "project organization",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor B's current idea on the organization of the project."
+      ],
+      "conditions": [
+        "Closure that there will be a system which is able to take the discourse in context and have outputs that can feed the rest of the belief net."
+      ],
+      "dissent": [],
+      "owner": "['Keith', 'Johno']",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so what 's going to happen is that eventually like by the time he graduates , OK uh they 'll be some sort of system which is able to take the discourse in context and have outputs that can feed the rest of belief - net .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "and Johno has committed himself to being the parser wizard ,",
+          "speaker": "Professor B",
+          "supports": "owner"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c011_d2",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c011",
+      "schema_version": "1.0.0",
+      "decision": "The semantics that you'll get out of the discourse will be of values that go into the various discourse-based decision nodes.",
+      "topic": "semantics of discourse",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor B's statement."
+      ],
+      "conditions": [
+        "Not clear yet how much of the discourse history goes into the decision nodes."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So uh if there is an and there is mode of transportation",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c011_d3",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c011",
+      "schema_version": "1.0.0",
+      "decision": "There might be a split if you look at the discourse in more detail, with something coming from the discourse and something coming from the discourse history.",
+      "topic": "discourse analysis",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad E's statement."
+      ],
+      "conditions": [
+        "Not clear yet whether the discourse gadget itself integrates the discourse and the context."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "That 's uh two things then .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c011_d4",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c011",
+      "schema_version": "1.0.0",
+      "decision": "It's not clear yet whether the discourse gadget itself integrates the discourse and the context or if they are two separate things.",
+      "topic": "discourse gadget integration",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor B's statement."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "This is getting into the thing I wanna talk about next ,",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c011_d5",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c011",
+      "schema_version": "1.0.0",
+      "decision": "There might be a meta node for ontology in each decision on the very bottom.",
+      "topic": "meta node for ontology",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad E's question."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But is this picture that 's emerging here just my wish that you have noticed already for symmetry or is it that we get for each {disfmarker} each decision on the very bottom we sort of get the sub - E , sub - D , sub - U and maybe a sub - O {disfmarker}",
+          "speaker": null,
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c011_d6",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c011",
+      "schema_version": "1.0.0",
+      "decision": "It's not clear yet how to combine the E, D, U, and O nodes.",
+      "topic": "combining E, D, U, and O nodes",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor B's question."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "which is s if that 's true uh how do we wanna combine those ? O or when it 's true ?",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c012_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c012",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the complexity of the decision tree, noting it could be large but manageable.",
+      "topic": "complexity of decision tree",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The group acknowledged the large number of possibilities but believed it was not beyond what the system could solve."
+      ],
+      "conditions": [
+        "The group discussed the need for careful knowledge engineering to avoid the decision tree exploding."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It's too much?",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well i if it's four things and each of them has four values it turns out to be a big CPT, it's not s completely impossible I mean it's not beyond what the system could solve but it's probably beyond what we could actually uh write down . or learn .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Two fifty - six ,",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "No .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But four didn't we decide that all of these had true or false ? So is it's four",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh for go there, but not f but not for the other one's three values for endpoint already .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Each so you're uh uh from each point of view you're making the same decision .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So from the point of view of the ob of the entity",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "This and also , I mean , the other places where , like for example consider endpoint view , it has inputs coming from user budget , user thrift",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , here's one of the things that that I th you sh you no , I don't know how easy it is to do this in the interface but you it would be great if you could actually just display at a given time uh all the things that you pick up , you click on \" endpoint \", OK and everything else fades",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c013_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c013",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the use of decision nodes and the possible choices for these in a belief net.",
+      "topic": "use of decision nodes in a belief net",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The group wants to combine the decisions of experts and create a weighted combination."
+      ],
+      "conditions": [
+        "The group needs to specify the conditional property of the belief net given all its parents."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So um recall the basic problem which is that um you have a belief - net and you have like a lot of different nodes all contributing to one node . Right ? So as we discussed specifying this kind of thing is a big pain and it 's so will take a long time to write down because for example if these S have three possibilities each and this has three possibilities then you know you have two hundred and forty - three possibilities which is already a lot of numbers to write down . So what um helps us in our situation is that these all have values in the same set , right ? These are all like saying EV or A , right ? So it 's not just a generalized situation like I mean basically we wanna just take a combination of {disfmarker} we wanna view each of these as experts ea who are each of them is making a decision based on some factors and we wanna sort of combine their decisions and create you know , um sorta weighted combination .",
+          "speaker": "Grad D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The group discussed the use of decision nodes and the possible choices for these in a belief net.",
+          "speaker": null,
+          "supports": "decision"
+        },
+        {
+          "quote": "Is that uh I {disfmarker} yeah , I just wanna make sure everybody is with us before he goes on .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c014_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c014",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed a method for computing probabilities based on voting and weighted averages.",
+      "topic": "computation method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To find a principled way of saying what each of these is and to ensure it is a valid probability distribution."
+      ],
+      "conditions": [
+        "Assumes symmetry and equal weights, which may or may not be a good assumption."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So what uh I guess , what Jerry suggested earlier was basically that we , you know view these guys as voting and we just take the uh we essentially take um averages , right ?",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So for example here two people have voted for A , one has voted for V , and one has voted for E , so we could say that the probabilities are , you know , probability of being E is one over four , because one person voted for E out of four and similarly , probability of so this is probability of E s and then probability of A given all that is um two out of four and probability of V is one out of four .",
+          "speaker": "Grad D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "so that assumes symmetry and equal weights and all this sort of things , which may or may not be a good assumption ,",
+          "speaker": "Grad D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c014_d2",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c014",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the possibility of giving different weights to the votes.",
+      "topic": "vote weighting",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To account for the importance of the verbal content of what the person said."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so currently we 've been giving them all weight one fourth so we could replace this by uh W - one , W - two , W - three , and W - four",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "And in order for this to be a valid probability distribution for each um X - hat , we just need that the W 's sum to one . So they can be for example , you know you {disfmarker} you could have point one , point three , point two , and point four , say .",
+          "speaker": "Grad D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c014_d3",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c014",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the computation of the weighted average.",
+      "topic": "weighted average computation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To compute the probability of each outcome."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You 'd compute the weighted average , so the probability of E would be uh",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "so in this case um we would still compute the average ?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK , so {disfmarker} so it 'd be so in this case the probability that Y equals A would be uh {comment} W one times {disfmarker}",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c015_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c015",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the use of a mixture of experts to handle situations where one expert may be more reliable than others.",
+      "topic": "mixture of experts",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The group discussed the possibility of one expert being more reliable than others in certain situations."
+      ],
+      "conditions": [
+        "The group discussed the need for data with people's intentions to learn the situations for the mixture of experts."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Probability of",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . Yeah . OK . So , alright . So this is uh step two . So the next possibility is that um we 've given just a single weight to each expert , right , whereas it might be the case that um in certain situations one of the experts is more uh reliable and in certain situations the other expert is more reliable . So the way this is handled is by what 's called a mixture of experts , so what you can have is you augment these diagrams like this so you have a new thing called \" H \", OK ? This is a hidden variable . And what this is is it gets its input from X - one , X - two , X - three , and X - four , and what it does is it decides which of the experts is to be trusted in this particular situation . Right ?",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "It could .",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "It could ? A vector of the weights as the selection criteria for the next node?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , it could",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh it 's basically to tell the bottom node which one of the situations that it 's in or which one of the weighting systems",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right , so I mean the way you decide the function of the thing that comes out of H is very different from the function of the other inputs . It 's driving how the other four are interpreted . OK .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So H passes a vector on to the next node ?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "It could .",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So H passes a vector of weights as the selection criteria for the next node?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , it could",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh The situations that H has , are they built into the net or OK , so they could either be hand coded or learned or OK .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Based on training data , OK .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . Yes .",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So you specify one of these things for every one of those possible situations . Oh yeah .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . Um Well , I mean to learn them we need data , where are we gonna get data ? Well I mean we need data with people intentions , right ?",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right , right .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh - huh .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm . But what 's the data about like , are we able to get these nodes from the data ?",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Like how thrifty the user is , or do we have access to that ? Mm - hmm . Oh right . Oh good . OK .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm . Mm - hmm . OK .",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , but that 's my question , like how do we have data about something like um um endpoint sub - E , or endpoint sub uh {pause} you know s S ?",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , basically you would say , based on {disfmarker} in this dialogue that we have which one of the things that they said eh whether it was the entity relations or whatever was the thing that determined what mode it was ,",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_002_c016_d1",
+      "source_id": "QMS_ACA_TE_002",
+      "chunk_id": "QMS_ACA_TE_002_c016",
+      "schema_version": "1.0.0",
+      "decision": "It was not decided whether to gather data from user interactions with the system.",
+      "topic": "data collection",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about data collection, but no decision was made."
+      ],
+      "conditions": [
+        "No specific data collection method or scope was agreed upon."
+      ],
+      "dissent": [
+        "No clear dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So Yeah . Yeah . By the way um uh just talking about uh about that general end of things uh is there gonna be data soon from what people say when they 're interacting with the system and so on ?",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I was talking about the , you know , if you wanted to do it really in detail and we don't really need all the detail for what we 're doing right now but anyway in terms of just narrowing that task you know which fifty do I do , I wanna see what people are using , so Well , it will inspire me .",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 17,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

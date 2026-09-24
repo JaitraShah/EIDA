@@ -1,0 +1,54 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c001_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c001",
+      "schema_version": "1.0.0",
+      "decision": "The meetings involved in the set are Robustness and Meeting Recorder.",
+      "topic": "meetings involved",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Postdoc A mentioned the meetings that are involved in the set."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The German ones will be ready for next week . Those are three of those . A different set of people . And we can impose",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_000_c001_d2",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c001",
+      "schema_version": "1.0.0",
+      "decision": "The German, Dutch, and Spanish meetings are the NSA meetings.",
+      "topic": "meetings identity",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor B identified the German, Dutch, and Spanish meetings as the NSA meetings."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "German , Dutch , Swiss and Spanish .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

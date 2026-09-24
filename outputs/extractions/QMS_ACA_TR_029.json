@@ -1,0 +1,821 @@
+{
+  "source_id": "QMS_ACA_TR_029",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_029_c000_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c000",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about coordinating work on filters.",
+      "topic": "coordination of work on filters",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team is still interested in doing what they're doing, but there was no coordination before and there might be overlapping work."
+      ],
+      "conditions": [
+        "The filters have not been tested yet."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So what are you doing?",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "we 're just kind of plugging on ahead",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "we 've a little bit worked on trying to see , uh , what were the bugs and the problem with the latencies.",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So they had two filters, one for the low frequency bands and another for the high frequency bands.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But it 's not yet test.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "You should talk with him.",
+          "speaker": "Professor C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "because the whole problem that happened before was coordination",
+          "speaker": "Professor C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I will I will send him an email and tell him exactly what we are doing, so.",
+          "speaker": "PhD B",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c001_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c001",
+      "schema_version": "1.0.0",
+      "decision": "A decision was made to add a low-pass filter at 25 Hz to reduce delay, add a downsampling filter, and adjust the online normalization filter to improve performance.",
+      "topic": "filter adjustments",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To reduce delay, improve performance, and potentially address noise issues."
+      ],
+      "conditions": [
+        "The total delay through the system will be around 240 milliseconds."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we will try also to add a nice downsampling having a filter that",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "well , a low - pass filter at twenty - five hertz .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "and {disfmarker} but this is a filter , so it has also a delay . Uh , and when we look at this filter actually it has a delay of eighty - five milliseconds .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So it would be around two hundred and forty {disfmarker} so , well ,",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But , well , when we add up everything it 's {disfmarker} it will be alright . We would be at six so , sixty - five , plus ten , plus {disfmarker} for the downsampling , plus eighty - five for the on - line normalization . So it 's",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c002_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c002",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "latency in system",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the latency in the system, but no decision was explicitly made."
+      ],
+      "conditions": [
+        "No specific conditions or caveats were stated."
+      ],
+      "dissent": [
+        "No dissent or objections were voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Complementary.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think the best systems {disfmarker} so , uh , everything that we did in in a way it was {disfmarker} it was just adamantly insisting on going in with a brain damaged system, which is something {disfmarker} actually, we 've done a lot over the last thirteen years.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "We just , uh , you know , trained up systems to be more discriminant.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "We did {disfmarker} we actually did nothing about additive noise.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , um , the , uh , spectral sub subtraction schemes a couple places did seem to seem to do a nice job.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "And so , uh , we 're talking about putting {disfmarker} putting some of that in while still keeping some of our stuff.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think you should be able to end up with a system that 's better than both but clearly the way that we 're operating for this other stuff does involved some latency to {disfmarker} to get rid of most of that latency.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "These aren't large vocabulary things so the decoder shouldn't take a really long time, and.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So . No . What {disfmarker} what does {disfmarker} wa was your experience when you were doing this stuff with, uh, the {disfmarker} the {disfmarker} the surgical, uh, uh, microscopes and so forth.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um , we had a silence detector, so we would look for the end of an utterance based on the silence detector.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And I {disfmarker} I can't remember now off the top of my head how many frames of silence we had to detect before we would declare it to be the end of an utterance.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So {disfmarker} you {disfmarker} so you had a",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "this w",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "so you had a {disfmarker} a quarter second delay before , uh , plus some little processing time, and then the {disfmarker} the microscope would start moving or something.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "And there 's physical inertia there, so probably the {disfmarker} the motion itself was all {disfmarker}",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "And it felt to , uh , the users that it was instantaneous. I mean , as fast as talking to a person. It {disfmarker} th I don't think anybody ever complained about the delay.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , so you would think as long as it 's under half a second or something.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , I 'm not an expert on that",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c003_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c003",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "neural net latency reduction strategies",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about various strategies to reduce latency in neural nets, but no decision was made."
+      ],
+      "conditions": [
+        "Further experimentation is needed to determine the effectiveness of the proposed strategies."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think we could cut down on the neural net time by playing around a little bit, going more into the past, or something like that.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But we played a little bit with asymmetric, guys.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Also we were thinking to apply the eh , spectral subtraction from Ericsson",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and to change the contextual KLT for LDA.",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c004_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to have a third party run a good VAD and determine boundaries, and then have everyone do the recognition.",
+      "topic": "VAD and boundaries",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To avoid bias in VAD and to ensure fairness in the test."
+      ],
+      "conditions": [
+        "The decision is not yet clear, and more information is needed."
+      ],
+      "dissent": [
+        "No dissent was voiced in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so {disfmarker} so you know that {disfmarker} that {disfmarker} that the way that they 're {disfmarker}",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "And then given those boundaries , then have everybody do the recognition .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "And so , uh , I guess they argued about that yesterday and , yeah , I 'm sorry , I don't {disfmarker} don't know the answer but we should find out . I 'm sure we 'll find out soon what they , uh {disfmarker} what they decided .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c004_d2",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to perform spectral subtraction on the mel frequency bands.",
+      "topic": "spectral subtraction",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To improve the performance of the non-discriminant linear transformation."
+      ],
+      "conditions": [
+        "The exact timing of the spectral subtraction is unclear."
+      ],
+      "dissent": [
+        "No dissent was voiced in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it would be on the um {disfmarker} on {disfmarker} on the mel frequency bands ,",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "we {disfmarker} no {disfmarker} nnn We {disfmarker} we was thinking to do before after VAD or",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c005_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c005",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the estimate of the noise spectrum can be a running estimate or calculated with a smaller amount, but it might be rough.",
+      "topic": "estimation of the noise spectrum",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different ways of computing the noise spectrum."
+      ],
+      "conditions": [
+        "Different tasks and different spectral subtraction methods were mentioned."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well , that 's what differs from different tasks and different s uh , spectral subtraction methods .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So you have a histogram . Now , if you have signal and you have noise , you basically have these two bumps in the histogram , which you could approximate as two Gaussians .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c006_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c006",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "method for determining signal-to-noise ratio",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different methods, but no clear choice was made."
+      ],
+      "conditions": [],
+      "dissent": [
+        "No clear dissent voiced"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So {disfmarker} so basically now you have this mixture of two Gaussians , you {disfmarker} you n know what they are , and , uh {disfmarker} I mean , sorry , you estimate what they are , and , uh , so this gives you what the signal is and what the noise e energy is in that band in the spectrum .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , but , you know , it 's {disfmarker} that {disfmarker} that {disfmarker} that 's tricky to do . It has mistakes . Uh , and if you 've got enough time , uh , this other method appears to be somewhat more reliable . Uh , a variant on that for just determining signal - to - noise ratio is to just , uh {disfmarker} you can do a w a uh {disfmarker} an iterative thing , EM - like thing , to determine means only . I guess it is EM still , but just {disfmarker} just determine the means only . Don't worry about the variances .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But what is the {disfmarker} it seems like this kind of thing could add to the latency . I mean , depending on where the window was that you used to calculate {pause} the signal - to - noise ratio .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , yeah ,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Not necessarily . Cuz if you don't look into the future , right ?",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "If - if you want to have a good estimation on non - stationary noise you have to look in the {disfmarker} in the future . I mean , if you take your window and build your histogram in this window , um , what you can expect is to have an estimation of th of the noise in {disfmarker} in the middle of the window , not at the end . So {disfmarker}",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , yeah ,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But what does {disfmarker} what {disfmarker} what does Alcatel do ?",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "The They just look in the past . I guess it works because the noise are , uh pret uh , almost stationary",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Pretty stationary .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , the thing , e e e e",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "y I mean , you 're talking about non - stationary noise but I think that spectral subtraction is rarely {disfmarker} is {disfmarker} is not gonna work really well for {disfmarker} for non - stationary noise ,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But {disfmarker} Mm - hmm .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "That 's what spectral subtraction will help with , practically speaking .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm . Mm - hmm .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c007_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c007",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "method for estimating noise",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different methods and their potential issues, but no clear decision or consensus"
+      ],
+      "conditions": [
+        "Discussion about the need for adaptive schemes, dictionaries, and slow adaptation"
+      ],
+      "dissent": [
+        "Discussion about the potential usefulness of a dictionary and the need for local characteristics in time"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "If it varies a lot , to get a good estimate you need a few seconds of speech , even if it 's centered , right ?",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I mean , imagine e five hertz is the middle of the speech modulation spectrum ,",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think y um , Hirsch does experiment with windows of like between five hundred milliseconds and one second .",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But I think y um , Hirsch does experiment with windows of like between five hundred milliseconds and one second .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "We could probably get a really good estimate of the noise if we just went to the noise files , and built the averages from them .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But {disfmarker} but {disfmarker}",
+          "speaker": "Professor C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "A dictionary .",
+          "speaker": "PhD D",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Very slow adaptation .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "The word ' stationary ' is {disfmarker} has a very precise statistical meaning . But , you know , in signal - processing really what we 're talking about I think is things that change slowly , uh , compared with our processing techniques .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c008_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c008",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to use a voice activity detector that will tell the boundaries of the speech for estimating speech parameters.",
+      "topic": "voice activity detector",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To avoid delay issues."
+      ],
+      "conditions": [
+        "It was mentioned that France Telecom might do something similar."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , uh , we 'll have to figure ways without it . Um ,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "If they 're going to provide a , uh , voice activity detector that will tell you the boundaries of the speech , then , couldn't you just go outside those boundaries and do your estimate there ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I d I Y you know , perhaps ?",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Does France Telecom do this {disfmarker}",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c008_d2",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c008",
+      "schema_version": "1.0.0",
+      "decision": "Grad E is planning to extend the work done by Larry Saul, John Allen, and Mazin Rahim.",
+      "topic": "Grad E's proposal",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Grad E",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Um . Well , I 've talked to some of you already . Um , but I 'm , uh , looking into extending the work done by Larry Saul and John Allen and uh Mazin Rahim .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c010_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c010",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "method for training detectors",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different properties of the method, but no decision was made."
+      ],
+      "conditions": [
+        "Discussion about the need for targets for the individual bands and the difficulty of labeling them."
+      ],
+      "dissent": [
+        "Grad E expresses concern about the difficulty of labeling the individual bands."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And you initialize these parameters , um , in some way and use EM to come up with your training targets for a for the low - level detectors .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "And then , once you get that done , you train the whole thing on maximum likelihood .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "And , uh so that 's just that 's just one detector . So you can imagine building many of these detectors on different features .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , um , that 's the direction which I 'm thinking about going in my quals .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "You know , it has a number of properties that I really liked .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Another thing I like about it is that you train this thing explicitly trained for a product of errors rule , which is what , uh , Allen keeps pointing out that Fletcher observed in the twenties ,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But , you know , I think having a bunch of people listening to critical band wide , chunks of speech trying to determine whether that 's sonorant or not ?",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Grad E: Ouch .",
+          "speaker": "Grad E",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c011_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c011",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that using smooth spectral envelopes for speech recognition may not be the best approach for detecting sonorants or non-sonorants.",
+      "topic": "approach for speech recognition",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussed concerns about the performance of the detector and the unfair test it was subjected to."
+      ],
+      "conditions": [
+        "Future discussion about an oracle experiment to test the improvement of speech recognition with perfect sonorant detection."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , um , if you knew you were doing that , if you were doing something say for a , uh {disfmarker} a , uh {disfmarker} a Vocoder , you wouldn't use the same kind of features . You would use something that was sensitive to the periodicity and {disfmarker} and not just the envelope . Uh , and so in that sense it was an unfair test . Um , so I think that the questioner was right . It {disfmarker} it was in that sense an unfair test . Nonetheless , it was one that was interesting because , uh , this is what we are actually using for speech recognition , these smooth envelopes . And this says that perhaps even , you know , trying to use them in the best way that we can , that {disfmarker} that {disfmarker} that we ordinarily do , with , you know , Gaussian mixtures and H M Ms {comment} and so forth , you {disfmarker} you don't , uh , actually do that well on determining whether something is sonorant or not .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "The - these same people ?",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Hmm .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c012_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c012",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "features for transcription",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about possible features that could be marked by humans",
+        "Possibility of having extra transcriber time to mark some portion of the data"
+      ],
+      "conditions": [
+        "John will help with transcriptions of the meeting data, but details are not clear"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "These are things which , uh , John felt that a human annotator would be able to reliably mark.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "because of having maybe some extra transcriber time we thought we could go through and mark some portion of the data for that.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c013_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c013",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made in this excerpt.",
+      "topic": "method for far-mike speech recognition",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "No decision was made in this excerpt."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , um , we 're interested in , um , methods for far mike speech recognition , um , mainly , uh , methods that deal with the reverberation in the far mike signal .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "And , um , {vocalsound} it looks like we 're gonna use the Meeting Recorder digits data for that .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "There 's also this , uh , um , uh , echo cancellation stuff that we 've sort of been chasing , so , uh we have , uh {disfmarker} and when we 're saying these digits now we do have a close microphone signal and then there 's the distant microphone signal .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_029_c015_d1",
+      "source_id": "QMS_ACA_TR_029",
+      "chunk_id": "QMS_ACA_TR_029_c015",
+      "schema_version": "1.0.0",
+      "decision": "Professor C will enter their credit card number later",
+      "topic": "credit card entry",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Professor C was about to read the forms but noticed they were blank."
+      ],
+      "conditions": [
+        "None stated."
+      ],
+      "dissent": [
+        "None stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'm sitting here and I was about to read them too . It's a , uh , blank sheet of paper .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'll do my credit card number later .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 15,
+  "chunks_failed": [
+    "QMS_ACA_TR_029_c014"
+  ],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

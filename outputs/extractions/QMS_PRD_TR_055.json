@@ -1,0 +1,1267 @@
+{
+  "source_id": "QMS_PRD_TR_055",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_055_c000_d1",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c000",
+      "schema_version": "1.0.0",
+      "decision": "The remote control case will be made of rubber.",
+      "topic": "remote control case material",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "titanium",
+          "rejected": true,
+          "reason": "too expensive"
+        }
+      ],
+      "rationale": [
+        "Rubber is suitable for the remote control, it's easy to color, and it's strong."
+      ],
+      "conditions": [
+        "No conditions stated."
+      ],
+      "dissent": [
+        "Marketing suggested a bright or fancy color, but the Industrial Designer decided on black."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The case was made from rubber, I suppose.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Rubber is, I think, the best suitable material to use for our remote control.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Titanium was also an option, but it's a very expensive material.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But rubber is a very strong material.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Rubber lets itself color.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Titanium you have to paint it and with that it's possible to scratch it or uh yeah make it ugly.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But it's a very strong material.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So it also looks nice when it's on your table.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c001_d1",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a LCD touch screen, be made of strong plastic, be bright, have long-lasting batteries, have an advanced chip, and potentially have the business colours.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The LCD touch screen is easy to clean, the advanced chip can facilitate speaker speech recognition, the strong plastic and long-lasting batteries are durable, and the business colours align with the corporate image."
+      ],
+      "conditions": [
+        "The advanced chip's ability to facilitate speaker speech recognition is still in a test phase."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And um it should be made of strong plastic and it should be bright.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "And next step is the chip uh th the component that's uh makes or transmits the signal to the television.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think uh because uh of our uh highly uh requiring uh requirements , there should be an advanced chip in it",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I personally liked uh the single curved uh remote control , because it yeah it makes sense.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , business colours I thought it was the the slogan and uh the corporate image , so yeah , it needs colour ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "We could make a little R_ and R_ on the top of the machine.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c002_d1",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control interface will have an LCD screen, no buttons, and speech recognition for user interaction.",
+      "topic": "remote control interface",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Speech recognition technology is new and already implemented in a coffee maker.",
+        "It could be useful for people who lose the remote.",
+        "It could simplify the interface."
+      ],
+      "conditions": [
+        "The design is based on the group's thoughts.",
+        "The LCD screen design is not final.",
+        "The remote design needs to be more ergonomic.",
+        "A microphone for speech recognition is needed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I thought a little bit about the interface . Uh how it should look . And uh {vocalsound} uh we uh determined that will not be no buttons , but only an L_C_D_ screen , so I had to uh look on that . And the design is therefore based on what we just uh uh thought of .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "This uh and there's an easy way to uh program that uh you say record into the device into the speaker and then you say the question and three seconds later you say the answer and then when you say the question it gives you the answer . Um perhaps it's useful ,",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And perhaps we could uh implement that .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c003_d1",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a fancy look.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The most important thing people liked last year was that the remote control should be look look fancy."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The most important thing people liked last year was that the remote control should be look look fancy.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c003_d2",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have fruity colors.",
+      "topic": "remote control colors",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The personal preferences for the young people, they liked fruity colours like uh banana yellow, uh strawberry red and stuff."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The personal preferences for the young people, they liked fruity colours like uh banana yellow, uh strawberry red and stuff.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c003_d3",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have round shapes and soft materials.",
+      "topic": "remote control shape and material",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The round shapes, and soft material m materials like the rubber.",
+        "It should be soft uh i it should feeling spongy or s Sponge Bob like things."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The round shapes, and soft material m materials like the rubber.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It should be soft uh i it should feeling spongy or s Sponge Bob like things.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c003_d4",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control for the elderly people should have older colors.",
+      "topic": "remote control colors for elderly",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Elderly people like colours which y are being seen in autumn like um woods um dark brown, red, deep reds and stuff."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Elderly people like colours which y are being seen in autumn like um woods um dark brown, red, deep reds and stuff.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c003_d5",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control for the older people should have a more traditional form.",
+      "topic": "remote control design for older people",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Project Manager: So for the older people, a more traditional uh form."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Project Manager: So for the older people, a more traditional uh form.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c003_d6",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a LCD screen.",
+      "topic": "remote control features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The second important thing that w should be if innovative, okay, like the L_C_D_ screen that's quite innovative so that should be great meeting for this."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The second important thing that w should be if innovative, okay, like the L_C_D_ screen that's quite innovative so that should be great meeting for this.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c003_d7",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have only one menu and four buttons (channel, volume).",
+      "topic": "remote control features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The third thing is it should be easy to use. I think with only one menu, four button, channel, volume, it should also be enough for easy to use."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The third thing is it should be easy to use. I think with only one menu, four button, channel, volume, it should also be enough for easy to use.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c003_d8",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c003",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have round corners but square shape.",
+      "topic": "remote control shape",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Perhaps you could find something in the middle. Round but square."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Perhaps you could find something in the middle. Round but square.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c004_d1",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c004",
+      "schema_version": "1.0.0",
+      "decision": "The remote control design will have a square shape with round corners and a bit of a middle indent, resembling a beer glass.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed design elements to appeal to both young and old users."
+      ],
+      "conditions": [
+        "Discussed using different materials, soft rubber for young users and plain wood for old users."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it's a bit square , but it's also a bit uh round .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Kinda like a beer glass .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But that's easily to do with the colour , I think .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because otherwise we have to get different shapes , and colour way easier than yeah the shapes . In material yeah rubber , like I said , young people like more soft materials and spongy ones",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c004_d2",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c004",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a spongy feeling.",
+      "topic": "remote control feel",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed the need for a spongy feeling to appeal to both young and old users."
+      ],
+      "conditions": [
+        "Discussed using different materials, soft rubber for young users and plain wood for old users."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we need a spongy feeling .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's feels kind s spongy .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c004_d3",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c004",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a colour scheme with autumn colours like red and brown.",
+      "topic": "remote control colour scheme",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed colour scheme to appeal to both young and old users."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So maybe we could give it like wooden loo look look or something in that colour .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c005_d1",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c005",
+      "schema_version": "1.0.0",
+      "decision": "The size of the L_C_D_ screen should be larger.",
+      "topic": "size of L_C_D_ screen",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "the size as it is",
+          "rejected": true,
+          "reason": "discussed and rejected"
+        }
+      ],
+      "rationale": [
+        "So you don't have to put your hands on the screen.",
+        "To accommodate larger hands."
+      ],
+      "conditions": [
+        "Some fat people with thick fingers will press three buttons at the same time.",
+        "The zoom option can be used."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But if you pu",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But it won't get that small because you have how much ? Nine ten eleven twelve thirteen fourteen fifteen buttons on the screen.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "You always touch it",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "You have to you have to",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because if you lose the pen uh if you lose the pen uh you can't use",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c006_d1",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use rechargeable batteries for the remote.",
+      "topic": "energy source",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "normal batteries",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Rechargeable batteries can be recharged through the docking station."
+      ],
+      "conditions": [
+        "The team had previously decided on rechargeable batteries."
+      ],
+      "dissent": [
+        "The Industrial Designer seemed to prefer normal batteries."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We already decided that on the previous meeting.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Maybe it's better to to include rechargeable batteries",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-hmm.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "You can buy those at the supermarket or retail shop.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c007_d1",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a CPU to know the state it is in and which button is being pressed.",
+      "topic": "remote control features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The remote control needs to know whether it's in a settings menu or just wanting to turn up the volume."
+      ],
+      "conditions": [
+        "The remote control will project buttons on the LCD screen."
+      ],
+      "dissent": [
+        "Marketing is unsure if the LCD screen needs a big CPU."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it has to have some kind of a calculation unit or CPU",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-hmm . Because we're projecting projecting the buttons on the LCD screen.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah yeah okay but I d I I don't know if nor o s it's quite a simple L_C_D_ .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c007_d2",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote control case will be made of hard rubber.",
+      "topic": "remote control case material",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Hard rubber is easy to handle."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And a touch screen makes it uh possible to uh to get the coordination of your finger on the screen.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah but a hard rubber like this ?",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh hard rubber I think.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c007_d3",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a touch screen.",
+      "topic": "remote control features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "A touch screen makes it possible to get the coordination of your finger on the screen."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And a touch screen makes it uh possible to uh to get the coordination of your finger on the screen.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c007_d4",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a rubber case.",
+      "topic": "remote control case material",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The rubber case is discussed."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And the case, yeah we already discussed the case,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c007_d5",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a single curve design.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The single curve design is suggested."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Because it's a gadget and you want to show it off, of course.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c007_d6",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a design that appeals more to younger people.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The remote control's design is discussed as appealing more to younger people."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it meets I think it meets more the young people than the older people.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c007_d7",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have different colors.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Different colors are discussed for the remote control."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We have different colours.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c008_d1",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c008",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made about the layout of the remote control buttons",
+      "topic": "remote control layout",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "buttons horizontal",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "buttons vertical",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the layout of the remote control buttons, but no clear decision was reached."
+      ],
+      "conditions": [
+        "No clear decision was made, further discussion or examples may be needed."
+      ],
+      "dissent": [
+        "No clear dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You can put it on your table with the L_C_D screen ,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "you don't have to put it get it in your hand , you can put it next to you",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's a lot easier .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think it's easier to handle this way ,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Would you like the the buttons horizontal or v vertical ?",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it's it's easier to have it something like {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think I would put a plus and a min uh here . And then the P_ in the mid in the middle and the sound uh in the middle .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c009_d1",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c009",
+      "schema_version": "1.0.0",
+      "decision": "The placement of the buttons on the remote was not decided.",
+      "topic": "remote button placement",
+      "status": "deferred",
+      "alternatives": [],
+      "rationale": [
+        "They decided to discuss the remote button placement but did not reach a conclusion."
+      ],
+      "conditions": [
+        "The discussion is ongoing."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Let's cut to the chase.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "just the concepts.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Component.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "This concept is in the actual design, but you should know where you would place a {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c009_d2",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c009",
+      "schema_version": "1.0.0",
+      "decision": "The implementation of speech functionality was discussed but not decided.",
+      "topic": "speech functionality",
+      "status": "deferred",
+      "alternatives": [],
+      "rationale": [
+        "They discussed the possibility of implementing speech functionality but did not reach a conclusion."
+      ],
+      "conditions": [
+        "The discussion is ongoing."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And the speech uh shall we implement that ? Or uh {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah well we just heard about the new uh technology, huh ?",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah I think it's it's easy for that, where are you, but then it says I'm here.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c009_d3",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c009",
+      "schema_version": "1.0.0",
+      "decision": "The placement of the microphone on the remote was discussed but not decided.",
+      "topic": "remote microphone placement",
+      "status": "deferred",
+      "alternatives": [],
+      "rationale": [
+        "They discussed possible placements for the microphone but did not reach a conclusion."
+      ],
+      "conditions": [
+        "The discussion is ongoing."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You could if you do it like this you could put it in a corner or something . You can talk into the corner.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah maybe at the bottom where you can can hel hold it with you hand that there's also a microphone uh",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c010_d1",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c010",
+      "schema_version": "1.0.0",
+      "decision": "The microphone will be placed on the side of the remote",
+      "topic": "microphone placement",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "underneath",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "in a logo of the company",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "left under corner",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "in an important position where people can see it",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "It should be in a handy position.",
+        "The young people do like scroll."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well maybe where the one hand {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think the left s under corner should be the best.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "That doesn't doesn't really matter.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or at least {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So why not , on on side .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "the the young people do like uh scroll uh",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Use the scroll . Yeah I think so too .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c011_d1",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c011",
+      "schema_version": "1.0.0",
+      "decision": "The standard colour for the remote was not decided.",
+      "topic": "standard colour for the remote",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different colour options, but no decision was made."
+      ],
+      "conditions": [
+        "No agreement on a single standard colour."
+      ],
+      "dissent": [
+        "Discussion about different colour options."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But you should have a standard colour.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "You should have a black one",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But if you want to be different, then uh {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But if you use uh silver, uh rubber s silver rubber isn't fancy.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c011_d2",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c011",
+      "schema_version": "1.0.0",
+      "decision": "A rubber scroll wheel was proposed for the remote.",
+      "topic": "scroll wheel for the remote",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the ease of use of a rubber scroll wheel."
+      ],
+      "conditions": [
+        "No caveats, unresolved costs, risks, or dependencies stated."
+      ],
+      "dissent": [
+        "No disagreement or objection voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So then it's uh very handy to to scroll down",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just put it on the side and it's very easy to use.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c011_d3",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c011",
+      "schema_version": "1.0.0",
+      "decision": "A silver and black colour scheme was proposed for the remote.",
+      "topic": "colour scheme for the remote",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the popularity of silver and black colours."
+      ],
+      "conditions": [
+        "No caveats, unresolved costs, risks, or dependencies stated."
+      ],
+      "dissent": [
+        "No disagreement or objection voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And I think I would it would make even more fancy because you have another interesting thing on the side",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think we have silver, black and between those {vocalsound} is like I dunno s five colours between them or something .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c011_d4",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c011",
+      "schema_version": "1.0.0",
+      "decision": "A yellow colour was proposed for the remote.",
+      "topic": "yellow colour for the remote",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the potential fanciness of a yellow colour."
+      ],
+      "conditions": [
+        "No caveats, unresolved costs, risks, or dependencies stated."
+      ],
+      "dissent": [
+        "No disagreement or objection voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "could be ugly, but it's definitely fancy.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c011_d5",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c011",
+      "schema_version": "1.0.0",
+      "decision": "Red, green, wood, brown colours were proposed for the remote.",
+      "topic": "colour options for the remote",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different colour options."
+      ],
+      "conditions": [
+        "No caveats, unresolved costs, risks, or dependencies stated."
+      ],
+      "dissent": [
+        "No disagreement or objection voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Green, wood, brown. Yeah.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c011_d6",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c011",
+      "schema_version": "1.0.0",
+      "decision": "A titanium colour was mentioned as potentially making silver fancy.",
+      "topic": "titanium colour",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the potential fanciness of a titanium colour."
+      ],
+      "conditions": [
+        "No caveats, unresolved costs, risks, or dependencies stated."
+      ],
+      "dissent": [
+        "No disagreement or objection voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "When you use titanium, silver is fancy",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_055_c012_d1",
+      "source_id": "QMS_PRD_TR_055",
+      "chunk_id": "QMS_PRD_TR_055_c012",
+      "schema_version": "1.0.0",
+      "decision": "The Industrial Designer and the User Interface Designer are going to work together on a prototype drawing on a smart board.",
+      "topic": "prototype creation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Specific instructions will be emailed by our personal coach."
+      ],
+      "dissent": [],
+      "owner": "['Industrial Designer', 'User Interface Designer']",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and especially notice that uh the Industrial Designer and the User Interface Designer are going to work together on a prototype drawing on a smart board",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 13,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

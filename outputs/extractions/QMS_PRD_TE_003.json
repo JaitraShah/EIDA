@@ -1,0 +1,532 @@
+{
+  "source_id": "QMS_PRD_TE_003",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TE_003_c000_d1",
+      "source_id": "QMS_PRD_TE_003",
+      "chunk_id": "QMS_PRD_TE_003_c000",
+      "schema_version": "1.0.0",
+      "decision": "The selling price of the product was decided to be twenty-five Euros.",
+      "topic": "selling price",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager believes it's a good price."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The selling price of the product will be twenty five Euros.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_PRD_TE_003_c000_d2",
+      "source_id": "QMS_PRD_TE_003",
+      "chunk_id": "QMS_PRD_TE_003_c000",
+      "schema_version": "1.0.0",
+      "decision": "The roles for each team member were assigned.",
+      "topic": "team roles",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager will manage the group, the Industrial Designer will handle Industrial Design, the User Interface Designer will handle User Interface Design, and Marketing Expert will handle Marketing."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I will manage all all the group.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I am the Industrial Design, yeah ?",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I'm user interface design.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Marketing Expert, it's me.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_PRD_TE_003_c001_d1",
+      "source_id": "QMS_PRD_TE_003",
+      "chunk_id": "QMS_PRD_TE_003_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be an international product.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Everybody will have to use it.",
+        "It's like keyboards."
+      ],
+      "conditions": [
+        "The product cost won't exceed 12.50 Euros."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And when designing y the remote control just remember that uh it has to be a kind of international product.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "so really the remote control to be international.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's sor the same as keyboards. You know , you have Qwerty , Azerty , French and U_K_ keyboard ,",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_003_c001_d2",
+      "source_id": "QMS_PRD_TE_003",
+      "chunk_id": "QMS_PRD_TE_003_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should not be too expensive.",
+      "topic": "remote control cost",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "We want to maximise the benefit.",
+        "It should be simple and easy to use."
+      ],
+      "conditions": [
+        "The product cost won't exceed 12.50 Euros."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And to be sure that really people will be interested in buying a new remote control with maybe new functionalities that don't exist in the mm existing remote controls now .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And you have to keep it under twelve Euros and f fifty , so .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "As we want to maximise the benefit.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_003_c001_d3",
+      "source_id": "QMS_PRD_TE_003",
+      "chunk_id": "QMS_PRD_TE_003_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be simple and easy to use.",
+      "topic": "remote control usability",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "We want to maximise the benefit.",
+        "It should be simple and not too expensive."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And easy to use.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And you have to keep it under twelve Euros and f fifty , so .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_003_c002_d1",
+      "source_id": "QMS_PRD_TE_003",
+      "chunk_id": "QMS_PRD_TE_003_c002",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made about drawing something on the board",
+      "topic": "drawing something on the board",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about drawing something, but no decision was made."
+      ],
+      "conditions": [],
+      "dissent": [
+        "Industrial Designer was unsure about drawing."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm . It's clear .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "There was a step about drawing something in the in the board , I don't know .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "You can draw something which is very simple .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's a cat .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's a fat cat .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's not a fat cat .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Can you draw uh um rabbit ?",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's a rabbit .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "A clown .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Rabbit .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's not so bad so .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_003_c003_d1",
+      "source_id": "QMS_PRD_TE_003",
+      "chunk_id": "QMS_PRD_TE_003_c003",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt",
+      "topic": "unspecified",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "That's a that's a fish ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Let's try to draw something .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "You forgot the chips .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh yeah , doesn't look so fine .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Have to be really careful .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Fish and chips .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay ,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Ah {vocalsound} it's my turn .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "it's your turn .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh . Okay , be careful .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So . {gap} {gap} It's ok",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Of",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "No problem , no problem .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , what can I draw some more ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh {gap} . {gap} ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "No . Mm {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "A person ? {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh yeah . {vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Dog . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Good .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Transfer . It's a dog in a village . {vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound} {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So what are you sug going to do now ? {gap}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it's done .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , I think {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's done ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Good .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "So we have break .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just have to {disfmarker} present project ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So we have break .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "discuss a little bit about it .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh my God .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh , we have twenty five minutes for the meeting .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , if you have questions .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh . Hmm .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Know what time is it ? No .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "No . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's okay ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , it's okay .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "You know your job ? you know your job ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I have an idea of my job {vocalsound} so {disfmarker} yeah so . Yeah .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    }
+  ],
+  "chunks_processed": 4,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

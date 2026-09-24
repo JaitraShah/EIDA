@@ -1,0 +1,272 @@
+{
+  "source_id": "QMS_PRD_TR_043",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_043_c000_d1",
+      "source_id": "QMS_PRD_TR_043",
+      "chunk_id": "QMS_PRD_TR_043_c000",
+      "schema_version": "1.0.0",
+      "decision": "Michael drew a spider on the whiteboard",
+      "topic": "drawing on whiteboard",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Michael wanted to draw his favourite animal and chose a spider because it can be drawn well in the corner of a whiteboard."
+      ],
+      "conditions": [],
+      "dissent": [
+        "Industrial Designer expressed dislike for the drawing."
+      ],
+      "owner": "User Interface",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Ah well if no one else wants to, yeah. Okay so, want me to draw my favourite animal.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm gonna draw a spider about the uh spider lives in a web",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Industrial Designer expressed dislike for the drawing.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_043_c000_d2",
+      "source_id": "QMS_PRD_TR_043",
+      "chunk_id": "QMS_PRD_TR_043_c000",
+      "schema_version": "1.0.0",
+      "decision": "Guillermo wanted to draw a panther on the whiteboard",
+      "topic": "drawing on whiteboard",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Guillermo wanted to draw his favourite animal as a child."
+      ],
+      "conditions": [],
+      "dissent": [
+        "Industrial Designer expressed doubt about drawing a panther."
+      ],
+      "owner": "Marketing",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Guillermo you want to?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I dunno why, but when I was a child I wanted to be a panther",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Industrial Designer expressed doubt about drawing a panther.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_043_c001_d1",
+      "source_id": "QMS_PRD_TR_043",
+      "chunk_id": "QMS_PRD_TR_043_c001",
+      "schema_version": "1.0.0",
+      "decision": "The chosen animal for the remote control design is an elephant.",
+      "topic": "animal for remote control design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "black panther",
+          "rejected": false,
+          "reason": "liked for being fast, black, and powerful"
+        }
+      ],
+      "rationale": [
+        "The black panther was liked but not chosen because it hunts and the elephant is friendly."
+      ],
+      "conditions": [
+        "The chosen elephant could be either Indian or African, and the design should not specify the type."
+      ],
+      "dissent": [
+        "No dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think I'll draw elephant.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I like it because it's fast, and it's black as well, so it can hide itself very easily and it's it's powerful, strong, uh I dunno.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The black panther was a favourite animal, but not the chosen one.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_043_c001_d2",
+      "source_id": "QMS_PRD_TR_043",
+      "chunk_id": "QMS_PRD_TR_043_c001",
+      "schema_version": "1.0.0",
+      "decision": "The target selling price for the remote control is set at twenty-five Euros.",
+      "topic": "selling price of remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "This price would generate a profit of fifty million Euros."
+      ],
+      "conditions": [
+        "The target is the international market."
+      ],
+      "dissent": [
+        "No dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "we should target selling price of twenty-five Euro for this remote control and uh we have um {vocalsound} {disfmarker} which which would generate a profit of of um {vocalsound} fifty million Euros , okay .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And we should target the international market.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_043_c002_d1",
+      "source_id": "QMS_PRD_TR_043",
+      "chunk_id": "QMS_PRD_TR_043_c002",
+      "schema_version": "1.0.0",
+      "decision": "The target selling price for the remote control is set at 25 Euro.",
+      "topic": "selling price",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To generate a profit of 50 million Euros."
+      ],
+      "conditions": [
+        "The product's specifications are not yet determined."
+      ],
+      "dissent": [
+        "The User Interface finds it strange to set the price without knowing the product details."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we should target selling price of twenty-five Euro for this remote control and uh we have um which which would generate a profit of of um fifty million Euros , okay .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So it seems the the first thing that they've kinda specified is the price like based on how much profit we wanna make , which seems to a kind of a little strange if we don't know what the the product is yet , but I guess if that's the requirement that we need to to design the the product to actually fit that that price bracket so , I guess we're gonna need to find out what's actually you know , what people ar are willing to pay for um what kind of product they're expecting for twenty-five Euro",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_043_c002_d2",
+      "source_id": "QMS_PRD_TR_043",
+      "chunk_id": "QMS_PRD_TR_043_c002",
+      "schema_version": "1.0.0",
+      "decision": "The international market is the target market for the remote control.",
+      "topic": "target market",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And we should target the inter an international market .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_043_c002_d3",
+      "source_id": "QMS_PRD_TR_043",
+      "chunk_id": "QMS_PRD_TR_043_c002",
+      "schema_version": "1.0.0",
+      "decision": "The discussion about the type of remote control (specific or universal) will be continued in the next meeting.",
+      "topic": "type of remote control",
+      "status": "deferred",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So let's go to it . So um we should decide which kind of remote control we want to uh we want to uh we want to go . Should be should should it be um specific remote control to some specific device ? Should it be a universal one ? And uh etcetera . So um {vocalsound} so I'm waiting for your for your inputs very quickly because we have only three three minutes to go .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_043_c002_d4",
+      "source_id": "QMS_PRD_TR_043",
+      "chunk_id": "QMS_PRD_TR_043_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team members are assigned tasks for the project.",
+      "topic": "tasks assignment",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So um you have to work on the on the working design , you have to uh work on the technical functions , and uh you have to work on us user requirements specs , alright ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 3,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

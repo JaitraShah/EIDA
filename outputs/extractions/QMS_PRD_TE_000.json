@@ -1,0 +1,710 @@
+{
+  "source_id": "QMS_PRD_TE_000",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TE_000_c000_d1",
+      "source_id": "QMS_PRD_TE_000",
+      "chunk_id": "QMS_PRD_TE_000_c000",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt",
+      "topic": "introductions",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Hi I'm Chiara , I'm the um Marketing Expert .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm the Project Manager but I figured you all knew that already",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm Krista and I'm the Industrial Designer .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm Stephanie and I am the User Interface Designer .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So here's our agenda for today .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_PRD_TE_000_c000_d2",
+      "source_id": "QMS_PRD_TE_000",
+      "chunk_id": "QMS_PRD_TE_000_c000",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt",
+      "topic": "animal drawing exercise",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we're gonna try out our white board . If we'll all draw our favourite animal .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Who starts ? We ought to decide who starts and all that . No ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Does anyone know what they wanna draw ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'll draw . I'll draw one .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So what characteristics do you like about your animal ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_PRD_TE_000_c001_d1",
+      "source_id": "QMS_PRD_TE_000",
+      "chunk_id": "QMS_PRD_TE_000_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to design a remote control that is water resistant, strong, and furry.",
+      "topic": "design of the remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager suggested a water resistant, strong, and furry remote control."
+      ],
+      "conditions": [
+        "The selling price goal is twenty-five Euro and the profit aim is fifty million Euro."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I'm thinking we should design a remote control that's water resistant , strong and furry . What do you think , yeah ? This is",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Textile tactile ,",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Although uh I'll just put there . Right .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_000_c001_d2",
+      "source_id": "QMS_PRD_TE_000",
+      "chunk_id": "QMS_PRD_TE_000_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to set a selling price goal of twenty-five Euro and a profit aim of fifty million Euro.",
+      "topic": "pricing goals",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager stated the pricing goals."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Our selling price goal is twenty five Euro and profit aim is fifty million Euro .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um selling price is twenty five Euro . Profit aim fifty million Euro .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_000_c002_d1",
+      "source_id": "QMS_PRD_TE_000",
+      "chunk_id": "QMS_PRD_TE_000_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed ideas for a convenient, practical, and nice remote control design.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team wants the remote control to be easy to find, have a call button, possibly a light or vibrating feature, and a home for it."
+      ],
+      "conditions": [
+        "The team is considering the cost and feasibility of some of the proposed features."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So do we have any initial ideas for uh how this remote control should be designed or formatted or the the buttons it should have .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think one thing is that it should be easy to find",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I was thinking that too .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think we should design something that has like a {disfmarker} so you can {disfmarker} like you {disfmarker} I mean you always know where your T_V_ is , so just have a call button ,",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I've always wanted that ,",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "so like {vocalsound} you can push a button on your T_V_ {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , yeah yeah yeah yeah .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , yeah yeah yeah , so you should have a call button on your television to be able to find your remote control .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah . And even I think a little light . Um or even a {disfmarker} maybe a vib a vibrating thing . I dunno but someth because it's usually under the sofa .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah . Yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "In which case you're going to be l but if it has a sort of signal which isn't any sound {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't {disfmarker} yeah I mean it {disfmarker} but like I mean {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Maybe call is enough . But yeah .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "just I mean like your phone even just has so {disfmarker} like it can vibrate , it can light up and make noise and I dunno {vocalsound}",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah yeah yeah . Yeah .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "What if it had something like um just like a magnet on the back of it and you could {disfmarker} I mean j just to have some place to put it besides like a base . You know like a portable phone has a base ,",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah . Yeah , or if it had a {disfmarker} yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "like just to have a home for it .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah yeah yeah yeah .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah ,",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "'Cause people just stick it on top of their T_V_ , but the point of having a remote is not to have to walk over to the T_V_ , so {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I mean {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well that's why it's always in the couch .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah {vocalsound} .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , in in the couch {vocalsound} .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Do you think it needs to be bigger to not lose , or does that not factor in ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And the other thing is {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TE_000_c003_d1",
+      "source_id": "QMS_PRD_TE_000",
+      "chunk_id": "QMS_PRD_TE_000_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the design of the remote control, including the possibility of a screen and fewer buttons.",
+      "topic": "design of remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the benefits of a screen and fewer buttons, and ideas for the design."
+      ],
+      "conditions": [
+        "Discussion about the cost and feasibility of a screen, and the possibility of using the TV screen instead."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Not not huge , but {vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But definitely not {disfmarker} well I don't know .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It can't be that hard to put some kind of a noise on it .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "No , it can't be , uh-uh .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "No it really wouldn't be .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Huh .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It can't be that hard to put some kind of a noise on it .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or like or a light thing . You know . I dunno {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Like spaceship .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": ". Yeah {vocalsound} . Or make it mobile so it runs around and comes come find you yeah {vocalsound} .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "That would be really {disfmarker} I'm sure we could do that for twenty five Euros a pop .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Little homing device . {vocalsound} {vocalsound} Um .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound} Yeah {vocalsound} . Uh .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay . So what do we think this remote control should {disfmarker} Five minutes .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh dear .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Till the meeting {disfmarker} oh right . This is what we have left . Um , oh we just {gap}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I also think though that it shouldn't have too many buttons ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , I agree .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "'cause I hate that when they have too many buttons and {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound} B_ button and the F_ button , they don't do anything .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , yeah yeah .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean I know it has to have enough functions but like , I don't know you , just have like eight thousand buttons and you're like , no , you never use half of them . So .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "You {disfmarker} what if um may be a little fancy but what if it had like a little screen , so it has less buttons but it still has all the functions . Like the way a mobile phone does .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "That would be cool .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . I mean it just seems like {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "But , would you have the screen on the thing , or would you have it on the telly transmitting the screen .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's something we could decide . Mm .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I guess they would go together somehow ? I dunno .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "But yeah for sure . Something like not {disfmarker} it's not on the button but it's telling you what to do ,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right . Mm .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or like you h you see those you know people {disfmarker} I'm thinking of like celebrity cribs kind of things when like they have all those {disfmarker} these things that at their house you know {disfmarker} their entire house is so electronic , and they have like this one master control that {disfmarker} and it's like a hand held like {disfmarker} turns on everything sort of control and it has like a screen and like {disfmarker} so I think it should be possible to have some kind of a screen , I don't know if {disfmarker} it must be {disfmarker} it would probably {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "But like mobile phones have screens and they're cheap .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TE_000_c004_d1",
+      "source_id": "QMS_PRD_TE_000",
+      "chunk_id": "QMS_PRD_TE_000_c004",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt.",
+      "topic": "unspecified",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Mm .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "But like mobile phones have screens and they're cheap .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , yeah . Yeah that's true .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean , we have to remember our budget is twelve point {disfmarker} twelve fifty for {disfmarker} to actually make the device .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "User Interface: {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh I was just {disfmarker} {vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "User Interface: {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Marketing: It says on that email but it {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Industrial Designer: It was in the email .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "User Interface: It does but it {disfmarker} I just don't really {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Industrial Designer: I wrote down what mine were .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Marketing: It said um {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "User Interface: {vocalsound} What effect should the thing ha should it have , okay . Alright .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Marketing: Yeah",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "User Interface: And working design .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Marketing: like {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "User Interface: Okay .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Project Manager: And the M_E_ , what does that stand for {vocalsound} ? M",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Industrial Designer: Marketing .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Project Manager: Marketing , right . Um {vocalsound} .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Marketing: Marketing . Oh it's written here , but um .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Project Manager: So we'll be working on the user requirements , um {disfmarker} Yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Marketing: Okay .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Project Manager: So I guess that wraps it up . I'll see you all in thirty minutes . I just did .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    }
+  ],
+  "chunks_processed": 5,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

@@ -1,0 +1,1388 @@
+{
+  "source_id": "QMS_ACA_VA_007",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_VA_007_c000_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c000",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made in this excerpt.",
+      "topic": "experiment design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about experiment design, but no decision or proposal for a decision was made."
+      ],
+      "conditions": [
+        "No clear conditions or caveats stated."
+      ],
+      "dissent": [
+        "No clear dissent or objection stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We 're testing noise robustness but let 's not get silly.",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So since last week we 've started to fill the column with um features w with nets trained on PLP with on - line normalization but with delta also, because the column was not completely {disfmarker}",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But , actually , um , for English training on TIMIT is still better than the other languages.",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So , yeah . And , yeah , and here the gap is still more important between using delta and not using delta.",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c001_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to train the net on a large database containing sentences from French, Spanish, TIMIT, SPINE, English digits, and Italian digits.",
+      "topic": "training data",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To improve the performance of the net."
+      ],
+      "conditions": [
+        "The results are on another document."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And , fff {comment} um , yeah . What we see is that these nets are not as good , except for the multi - English , which is always one of the best . Yeah , then we started to work on a large dat database containing , uh , sentences from the French , from the Spanish , from the TIMIT , from SPINE , uh from {comment} uh English digits , and from Italian digits . So this is the {disfmarker} another line {disfmarker} another set of lines in the table . Uh , @ @ with SPINE",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm",
+          "speaker": "Professor D",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c001_d2",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use a single KLT transformed MLP outputs for feature combination experiments.",
+      "topic": "feature combination experiments",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To improve the performance of the net."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The second is using features and KLT transformed MLP outputs.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c001_d3",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to combine different types of features for feature combination experiments.",
+      "topic": "feature combination experiments",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To improve the performance of the net."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And this is {disfmarker} The results are on the other document . Uh , we can discuss this after , perhaps {disfmarker} well , just , @ @ . Yeah , so basically there are four {disfmarker} four kind of systems .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c001_d4",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use the multi-English MLP for the rest of the experiments.",
+      "topic": "MLP for experiments",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Because the multi-English MLP performs well."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "for the ne {disfmarker} rest of experiment I use multi - English , only multi - English .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c001_d5",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team decided not to use the MSG-three feature for the Italian database because it doesn't help to increase the accuracy.",
+      "topic": "feature for Italian database",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "MSG-three feature",
+          "rejected": true,
+          "reason": "doesn't help to increase the accuracy"
+        }
+      ],
+      "rationale": [
+        "Because the MSG-three feature doesn't work for the Italian database."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But when PhD B: w Yeah , this {disfmarker} Yeah , this number recognition acc PhD A: So it 's not the {disfmarker} {vocalsound} Again we switch to another {disfmarker} PhD B: Yes , and the baseline {disfmarker} the baseline have {disfmarker} i is eighty - two .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "PhD A: So , um {vocalsound} uh , well , I don't think this is a bug but this {disfmarker} this is something in {disfmarker} probably in the MSG um process that uh I don't know what exactly . Perhaps the fact that the {disfmarker} the {disfmarker} there 's no low - pass filter , well , or no pre - emp pre - emphasis filter and that there is some DC offset in the Italian , or , well , something simple like that . But {disfmarker} that we need to sort out if want to uh get improvement by combining PLP and MSG",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c002_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that PLP and MSG together have a higher accuracy than PLP alone, without the neural net.",
+      "topic": "accuracy of PLP and MSG",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Adding MSG increases accuracy."
+      ],
+      "conditions": [
+        "The discussion is about the accuracy of PLP and MSG, without the neural net."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So even just PLP, uh , it is not, in the matched condition ... Um I wonder if it's a difference between PLP and mel cepstra, or whether it's that the net half, for some reason, is not helping.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um , so we have nine ... Um {comment} which is uh {comment} what we have also if use PLP and MSG together,",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um , so adding MSG increases accuracy.",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But she had said eighty - two.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c003_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c003",
+      "schema_version": "1.0.0",
+      "decision": "Applying online normalization and a neural network results in a high accuracy of around 89%.",
+      "topic": "accuracy of machine learning model",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "When we apply on-line normalization we jump to almost ninety percent.",
+        "When we apply a neural network, is the same. We jump to ninety percent."
+      ],
+      "conditions": [
+        "Minor differences in accuracy."
+      ],
+      "dissent": [
+        "PhD B: We don't know exactly."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So what happens is that when we apply on-line normalization we jump to almost ninety percent.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh, when we apply a neural network, is the same. We jump to ninety percent.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "We don't know exactly.",
+          "speaker": "PhD B",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c003_d2",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c003",
+      "schema_version": "1.0.0",
+      "decision": "Adding MSG does not help in the case of Italian.",
+      "topic": "effectiveness of MSG in Italian",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor D: The other ones, we'd have to look at it, but And the multi - English, does uh {disfmarker} So if we think of this in error rates, we start off with, uh eighteen percent error rate, roughly."
+      ],
+      "conditions": [
+        "Professor D: And we cut off, I guess about twenty-five percent of the error."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And then adding the MSG does nothing, basically.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "And we cut off, I guess about twenty-five percent of the error.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c003_d3",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c003",
+      "schema_version": "1.0.0",
+      "decision": "Using multi-English instead of the matching condition reduces the error rate by approximately 16%.",
+      "topic": "error rate reduction with multi-English",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor D: And the MSG doesn't however affect things.",
+        "Professor D: Not matching condition, but uh, the uh, Italian training."
+      ],
+      "conditions": [
+        "Professor D: Not quite that, is it."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And the MSG doesn't however affect things.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Not matching condition, but uh, the uh, Italian training.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c003_d4",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c003",
+      "schema_version": "1.0.0",
+      "decision": "The French and Spanish data were not hand-labeled.",
+      "topic": "labeling of French and Spanish data",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad C: Well Stephane was saying that they weren't hand-labeled,"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well Stephane was saying that they weren't hand-labeled",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c004_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that training a neural network with PLP delta and delta - delta might improve the results.",
+      "topic": "neural network training method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Maybe if we have the new neural network trained with PLP delta and delta - delta, maybe the final result must be better."
+      ],
+      "conditions": [
+        "It was not decided if the new training method would be used."
+      ],
+      "dissent": [
+        "PhD B suggested that it might help, but there was no explicit disagreement."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe if we have the new neural network trained with PLP delta and delta - delta, maybe the final result must be better . I don't know .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Maybe if we have the new neural network trained with the PLP delta and delta - delta, maybe that can help.",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c005_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c005",
+      "schema_version": "1.0.0",
+      "decision": "They decided to change the variances associated with the two streams that come in.",
+      "topic": "HTK configuration",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To effectively scale the streams without changing the scripts for HTK."
+      ],
+      "conditions": [
+        "Requires further experiments."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": "Grad C",
+      "evidence": [
+        {
+          "quote": "so this is what we decided to do.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , I guess you have to do the HTK training also.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "And , um , so , um , if you do that , for instance it may be the case that , um , the MLP should not be considered as strongly , for instance.",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And then you can vary it. Yeah.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c006_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to potentially change the diagonal covariance matrices in the HTK models and affect the strength that features are applied.",
+      "topic": "HTK models",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor D's suggestion, Hari's suggestion"
+      ],
+      "conditions": [
+        "Potentially opening a can of worms because different numbers for each kind of test set"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , i it's precisely given that model you can very simply affect , uh , the strength that you apply the features . That was that was , uh , Hari's suggestion .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , i it's precisely given that model you can very simply affect , uh , the strength that you apply the features .",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "but OK .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c006_d2",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to start something about articulatory stuff with Steve and Shawn next week.",
+      "topic": "articulatory stuff",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussion with Steve and Shawn"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , the next point , yeah , we've had some discussion with Steve and Shawn , um , about their um , uh , articulatory stuff , um . So we'll perhaps start something next week .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c007_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c007",
+      "schema_version": "1.0.0",
+      "decision": "Discussion about starting something next week regarding articulatory stuff",
+      "topic": "discussion about articulatory stuff",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "No specific reason stated in the excerpt"
+      ],
+      "conditions": [
+        "No specific conditions stated in the excerpt"
+      ],
+      "dissent": [
+        "No specific dissent stated in the excerpt"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , the next point , yeah , we 've had some discussion with Steve and Shawn , um , about their um , uh , articulatory stuff , um . So we 'll perhaps start something next week .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c007_d2",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c007",
+      "schema_version": "1.0.0",
+      "decision": "Discussion about plugging in their networks with Hynek, Sunil, and Pratibha's block diagram",
+      "topic": "discussion about network integration",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "No specific reason stated in the excerpt"
+      ],
+      "conditions": [
+        "No specific conditions stated in the excerpt"
+      ],
+      "dissent": [
+        "No specific dissent stated in the excerpt"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Um , discussion with Hynek , Sunil and Pratibha for trying to plug in their our {disfmarker} our networks with their {disfmarker} within their block diagram , uh , where to plug in the {disfmarker} the network , uh , after the {disfmarker} the feature , before as um a as a plugin or as a anoth another path",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c007_d3",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c007",
+      "schema_version": "1.0.0",
+      "decision": "Discussion about multi-band and TRAPS",
+      "topic": "discussion about multi-band and TRAPS",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "No specific reason stated in the excerpt"
+      ],
+      "conditions": [
+        "No specific conditions stated in the excerpt"
+      ],
+      "dissent": [
+        "No specific dissent stated in the excerpt"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Um , actually Hynek would like to see , perhaps if you remember the block diagram there is , uh , temporal LDA followed b by a spectral LDA for each uh critical band . And he would like to replace these by a network which would , uh , make the system look like a TRAP . Well , basically , it would be a TRAP system . Basically , this is a TRAP system {disfmarker} kind of TRAP system , I mean , but where the neural network are replaced by LDA . Hmm . {vocalsound} Um , yeah , and about multi - band , uh , I started multi - band MLP trainings , um mmh {comment} Actually , I w I w hhh {comment} prefer to do exactly what I did when I was in Belgium . So I take exactly the same configurations , seven bands with nine frames of context , and we just train on TIMIT , and on the large database , so , with SPINE and everything . And , mmm , I 'm starting to train also , networks with larger contexts . So , this would {disfmarker} would be something between TRAPS and multi - band because we still have quite large bands , and {disfmarker} but with a lot of context also .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c007_d4",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c007",
+      "schema_version": "1.0.0",
+      "decision": "Discussion about testing two networks on Finnish",
+      "topic": "discussion about testing networks on Finnish",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "No specific reason stated in the excerpt"
+      ],
+      "conditions": [
+        "No specific conditions stated in the excerpt"
+      ],
+      "dissent": [
+        "No specific dissent stated in the excerpt"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and see which one is the {disfmarker} the {disfmarker} the best . Uh , well , the next part of the document is , well , basically , a kind of summary of what {disfmarker} everything that has been done . So . We have seventy - nine M L Ps trained on one , two , three , four , uh , three , four , five , six , seven ten {disfmarker} on ten different databases .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c008_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c008",
+      "schema_version": "1.0.0",
+      "decision": "The group decided to use 'On-line normalization 2' instead of the original 'On-line normalization'.",
+      "topic": "On-line normalization",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "On-line normalization",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The group agreed that it might be a simple issue or just a high-pass filter.",
+        "Professor D: 'But my guess would be that it's something that is a simple thing that could take a while to find.'"
+      ],
+      "conditions": [
+        "The group will continue to work on the issue."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But this was the bad on-line normalization.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "But I don't know.",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , probably.",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , it's a good.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , it's good with the good.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK . Yeah . So it's probably something simple uh , if someone wants to play with it for a little bit.",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c009_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the language dependency and noise dependency affect the performance of the neural network.",
+      "topic": "performance of neural network",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Some stuff works and some stuff doesn't."
+      ],
+      "conditions": [
+        "Not enough results to talk about the language dependency."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "If it's not on the target task, then, depending on how different it is, you can get a reduction in performance.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "The reason is that the perhaps the target task dependency, the language dependency, the noise dependency, and the noise dependency",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Some stuff works and some stuff doesn't OK",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c009_d2",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was suggested to look at the Spanish alignments.",
+      "topic": "alignments",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "It's not clear to me you necessarily would do so badly from a Viterbi alignment."
+      ],
+      "conditions": [
+        "Depends how good the recognizer is"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Might be interesting to look at it.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Did - did you look at the Spanish alignments Carmen ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.7
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c010_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c010",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to use phonetic targets for training, but it was also suggested to explore using articulatory targets, soft targets, and networks that do regression instead of classification.",
+      "topic": "training targets",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "phonetic targets",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "articulatory targets",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "soft targets",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "networks that do regression",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "networks that do classification",
+          "rejected": true,
+          "reason": "suggested as an alternative to networks that do regression"
+        }
+      ],
+      "rationale": [
+        "PLP work as well as MFCC, but it seems important to use the delta.",
+        "Results are only coming for this net."
+      ],
+      "conditions": [
+        "Still no answer about the network size.",
+        "Still no answer about the training set."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh , the training set , well , some kind of answer . We can , we can tell which training set gives the best result , but {vocalsound} we don't know exactly why .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "It 's {disfmarker} Yeah . Yeah .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "For moment you use {disfmarker} we use phonetic targets but we could also use articulatory targets , soft targets , and perhaps even , um use networks that doesn't do classification but just regression so uh , train to have neural networks that um , um , uh ,",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm . Mm - hmm .",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c011_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c011",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "approach for reducing language dependency and handling noise",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about possible approaches, but no decision was made."
+      ],
+      "conditions": [
+        "Future work involves connecting to the OGI system, open questions remain about where to put the MLP."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , this is one thing , this could be could help could help perhaps to reduce language dependency and for the noise part um we could combine this with other approaches , like , well , the Kleinschmidt approach . So the d the idea of putting all the noise that we can find inside a database .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm . Mm - hmm .",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and So this is one approach and the other is multi - band uh , that I think is more robust to the noisy changes .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm . Mm - hmm .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So perhaps , I think something like multi - band trained on a lot of noises with uh , features - based targets could help .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , if you i It's interesting thought maybe if you just trained up I mean w yeah , one fantasy would be you have something like articulatory targets and you have some reasonable database , um but then which is um copied over many times with a range of different noises ,",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So . Yeah , OK .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , um , yeah . The future work is , well , try to connect to the to make to plug in the system to the OGI system . Um , there are still open questions there , where to put the MLP basically .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "And I guess , you know , the real open question , I mean , e u there's lots of open questions , but one of the core quote open questions for that is um , um , if we take the uh best ones here , maybe not just the best one , but the best few or something You want the most promising group from these other experiments . Um , how well do they do over a range of these different tests , not just the Italian ?",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mmm ,",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "y Right ? And then um see , again , how We know that there's a mis there's a uh a loss in performance when the neural net is trained on conditions that are different than , uh we 're gonna test on , but well , if you look over a range of these different tests um , how does that compare between the",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So all the test sets you mean , yeah .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "All the different test sets ,",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and for and for the couple different ways that you have of combining them .",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "That's another possibility if you have time , yeah . Yeah .",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c012_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c012",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to compare the results of the MLP trained on the provided feature files and labels from the other team, and possibly retrain the HTK to ensure the same results.",
+      "topic": "MLP training comparison and potential HTK retraining",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To ensure the same results as the other team and understand the meaning of the features."
+      ],
+      "conditions": [
+        "Different languages, different noises, and different conditions."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we wanna get their path running here, right ? If so, we can add this other stuff.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just to make sure that we get the exact same results as them on HTK.",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But otherwise, you know, we won't know what things mean.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c012_d2",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c012",
+      "schema_version": "1.0.0",
+      "decision": "It was suggested to try networks with LogRASTA filtered features.",
+      "topic": "LogRASTA networks",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To explore the possibility of using LogRASTA filtered features."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We can try networks with LogRASTA filtered features.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c013_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c013",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that training multiple MLPs for different conditions might not be feasible due to limited training data.",
+      "topic": "MLP training strategy",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "There is enormous variability in the test set in terms of language, noise type, and channel characteristics. The neural net might not have enough parameters to represent all of the variability."
+      ],
+      "conditions": [
+        "Limited training data for the task"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "If we have some drastically different conditions and we just train up different M L Ps with them . PhD A:",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "But if you had , say , a heavily - reverberation case and a no - reverberation case , uh , and then you fed the thing , uh something that was a modest amount of reverberation then you 'd get some result in between the two . So it was sort of behaved reasonably .",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I 'm just concerned that we don't really have the data to train up the neural net of the size that we have , um , all of the variability that we 're gonna be covering .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c014_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c014",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "methodology for working with OGI",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about using LDA RASTA, neural net, improving results, CPU memory issues, and MLP were discussed but no decision was reached."
+      ],
+      "conditions": [
+        "Need to get a reference point for CPU and memory, need to know what OGI is working on."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah . I just sort of have a feeling",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But Yeah . Mm - hmm .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah . I mean {disfmarker} {vocalsound} i i e The um {disfmarker} I think it 's true that the OGI folk found that using LDA {pause} RASTA , which is a kind of LogRASTA , it 's just that they have the {disfmarker} I mean it 's done in the log domain , as I recall , and it 's {disfmarker} it uh {disfmarker} it 's just that they d it 's trained up , right ? That that um benefitted from on - line normalization . So they did",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But {disfmarker}",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "But we have to address the problem of CPU and memory we",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "But {disfmarker}",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "But I li Well , I think {disfmarker} My impression {disfmarker} You {disfmarker} you folks have been looking at this more than me . But my impression was that {vocalsound} uh , there was a {disfmarker} a {disfmarker} a {disfmarker} a strict constraint on the delay ,",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "but beyond that it was kind of that uh using less memory was better , and {vocalsound} using less CPU was better . Something like that ,",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . So , yeah , but we 've {disfmarker} I don't know . We have to get some reference point to where we {disfmarker} Well , what 's a reasonable number ? Perhaps be because if it 's {disfmarker} if it 's too large or {disfmarker} large or @ @ {disfmarker}",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um , well I don't think we 're {vocalsound} um {vocalsound} completely off the wall . I mean I think that if we {disfmarker} if we have {disfmarker} Uh , I mean the ultimate fall back that we could do {disfmarker} If we find uh {disfmarker} I mean we may find that we {disfmarker} we 're not really gonna worry about the M L You know , if the MLP ultimately , after all is said and done , doesn't really help then we won't have it in .",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mmm .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "If the MLP does , we find , help us enough in some conditions , uh , we might even have more than one MLP . We could simply say that is uh , done on the uh , server .",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And {disfmarker} Yeah .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So I think the key thing was um , this plug into OGI . Um , what {disfmarker} what are they {disfmarker} What are they gonna be working {disfmarker} Do we know what they 're gonna be working on while we take their features ,",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "They 're {disfmarker} They 're starting to wor work on some kind of multi - band .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and {disfmarker} ?",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So . Um {disfmarker} This {disfmarker} that was Pratibha . Sunil , what was he doing , do you remember ?",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Sunil ?",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I {disfmarker} I don't re I didn't remember . Maybe he 's working with {pause} neural network .",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't think so . Trying to tune wha networks ?",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , I think so .",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think they were also mainly , well , working a little bit of new things , like networks and multi - band , but mainly trying to tune their {disfmarker} their system as it is now to {disfmarker} just trying to get the best from this {disfmarker} this architecture .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah . PhD A:",
+          "speaker": null,
+          "supports": "decision"
+        },
+        {
+          "quote": "OK . So I guess the way it would work is that you 'd get {disfmarker} There 'd be some point where you say , \" OK , this is their version - one \" or whatever , and we get these VAD labels and features and so forth for all these test sets from them ,",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c015_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c015",
+      "schema_version": "1.0.0",
+      "decision": "The most wide open thing is the issues about the training set and the training targets.",
+      "topic": "research focus",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Limited time and many things to look at."
+      ],
+      "conditions": [
+        "There will be a next round to explore more."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And it seems like much more core questions are issues about the training set and the training targets",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think that the most wide open thing is the issues about the uh , you know , different trainings . You know , da training targets and noises and so forth .",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c016_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c016",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "next steps for research",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about trying different things, going back to work on what is most intriguing, and continuing research."
+      ],
+      "conditions": [
+        "Nothing that anyone is going to do is going to completely solve the problem."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So uh I think so , yeah . And then , you know , once we {disfmarker} Um , having gone through this {pause} process and trying many different things , I would imagine that certain things uh , come up that you are curious about uh , that you 'd not getting to and so when the dust settles from the evaluation uh , I think that would time to go back and take whatever intrigued you most , you know , got you most interested uh and uh {disfmarker} and {disfmarker} and work with it , you know , for the next round . Uh , as you can tell from these numbers uh , nothing that any of us is gonna do is actually gonna completely solve the problem .",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So . So , {comment} there 'll still be plenty to do . Barry , you 've been pretty quiet .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well I figured that , but {disfmarker} {vocalsound} That {disfmarker} what {disfmarker} what were you involved in in this primarily ?",
+          "speaker": "Professor D",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Um , {vocalsound} helping out {vocalsound} uh , preparing {disfmarker} Well , they 've been kind of running all the experiments and stuff and I 've been uh , uh w doing some work on the {disfmarker} on the {disfmarker} preparing all {disfmarker} all the data for them to {disfmarker} to um , train and to test on . Um Yeah . Right now , I 'm {disfmarker} I 'm focusing mainly on this final project I 'm working on in Jordan 's class .",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Oh ! OK . Well , that sounds interesting .",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Al - actually I should mention {disfmarker} So if {disfmarker} {comment} um , about the Linux machine ' Swede . '",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c017_d1",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c017",
+      "schema_version": "1.0.0",
+      "decision": "No decision about the CPU, disk, or driver was made.",
+      "topic": "CPU, disk, or driver",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the state of the CPU, disk, and driver, but no decision was reached."
+      ],
+      "conditions": [
+        "Problems with the disk and driver were mentioned."
+      ],
+      "dissent": [
+        "No dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So . Yeah , as far as you can tell , you 're actually OK on C - on CPU uh , for training and so on ? Yeah .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Ah yeah . I think so . Well , more is always better , but mmm , I don't think we have to train a lot of networks , now that we know We just select what works fine",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And we 're OK on disk ?",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "and It 's OK , yeah . Well sometimes we have some problems .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c017_d2",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c017",
+      "schema_version": "1.0.0",
+      "decision": "PhD A will go first due to battery issues.",
+      "topic": "order of speakers",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "PhD A's battery is low, so they will go first."
+      ],
+      "conditions": [
+        "PhD A's battery is low."
+      ],
+      "dissent": [
+        "No dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "My battery is low .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , let 's hope it works . Maybe you should go first and see so that you 're OK .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "batteries ?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_007_c017_d3",
+      "source_id": "QMS_ACA_VA_007",
+      "chunk_id": "QMS_ACA_VA_007_c017",
+      "schema_version": "1.0.0",
+      "decision": "The transcript will be saved as transcript uh two.",
+      "topic": "transcript file name",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The transcript file name was discussed and decided."
+      ],
+      "conditions": [],
+      "dissent": [
+        "No dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Transcript uh two {disfmarker}",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 18,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

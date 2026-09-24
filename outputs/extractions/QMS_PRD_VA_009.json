@@ -1,0 +1,1289 @@
+{
+  "source_id": "QMS_PRD_VA_009",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_VA_009_c000_d1",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c000",
+      "schema_version": "1.0.0",
+      "decision": "The presentation of the prototype will be the first topic in the meeting.",
+      "topic": "agenda",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager stated that the prototype presentation is the first item on the agenda."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The prototype presentation from you two, so you can show us what you've been working on so diligently.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c000_d2",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c000",
+      "schema_version": "1.0.0",
+      "decision": "Cat will present the evaluation criteria.",
+      "topic": "evaluation criteria presentation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager stated that Cat will present the evaluation criteria."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Then Cat's going to present the evaluation criteria that we're going to be evaluating this against.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c000_d3",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c000",
+      "schema_version": "1.0.0",
+      "decision": "There will be a discussion about finance.",
+      "topic": "finance discussion",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager stated that they need to check that the project fits the finance criteria."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Then I need to say some st a few things about finance, 'cause we have to check that it's within the finance criteria.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c000_d4",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team will evaluate the whole process of production and design.",
+      "topic": "production and design evaluation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager stated that the team will evaluate the production and design process."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Then we're going to evaluate the whole process of production and design.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c001_d1",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c001",
+      "schema_version": "1.0.0",
+      "decision": "The design of the remote control includes a scrolling wheel for volume control, a mute button on the main menu, and a display screen.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The scrolling wheel is user-friendly and allows for volume control.",
+        "The mute button is added to the main menu.",
+        "The display screen is included for user convenience."
+      ],
+      "conditions": [
+        "The mute button can be accessed by holding the scrolling wheel.",
+        "The voice recognition is also part of the design."
+      ],
+      "dissent": [
+        "Industrial Designer is against having a mute button on the cover."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So uh the user interface as as we discussed last time uh mm on on the cover we just have the very basic things.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "The volume is scrolling.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "On the wheel if you hold the wheel down then it will mute.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "A mute button .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well , we'll have this on the screen , on the display .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c002_d1",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to evaluate the new design using a seven-point scale.",
+      "topic": "evaluation criteria",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To evaluate each user requirement and work done."
+      ],
+      "conditions": [
+        "The criteria will use a one to seven scale."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we're gonna be using a seven point scale",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "So for each of these we need to give it a one to seven",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "But if you can imagine that they say A_, B_, C_, and D_, then that would be really good.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c002_d2",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to give maximum points in everything.",
+      "topic": "evaluation scores",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The design is attractive."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I guess we'll give it maximum points in everything.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c002_d3",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team forgot about the locatable feature.",
+      "topic": "locatable feature",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team realized they forgot about it."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Oh, the locatable thing we actually forgot.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c003_d1",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c003",
+      "schema_version": "1.0.0",
+      "decision": "Seven was chosen as the rating for the RSI indicator.",
+      "topic": "RSI indicator rating",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "five",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The majority are right-handed, so it's not a big issue."
+      ],
+      "conditions": [
+        "The RSI issue needs a little bit of investigation."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Seven , yeah , it's terribly sexy . Yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it does .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "so if you're left-handed you're kind of left uh scrolling with your finger .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Maybe we need to put that needs a little bit of investigation , maybe give it a five , I would say ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c004_d1",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c004",
+      "schema_version": "1.0.0",
+      "decision": "The design team discussed the opening mechanism of the device and decided to change it to a flip-open design from the side, as long as the side remains flat.",
+      "topic": "opening mechanism",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "opening on the side",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "flipping from the top",
+          "rejected": true,
+          "reason": "interferes with the I_R_ channel"
+        }
+      ],
+      "rationale": [
+        "The flip-open design from the side is more intuitive for users."
+      ],
+      "conditions": [
+        "The side must remain flat."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it won't be a problem",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But you were thinking about making it smaller",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "If this means intuitive",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I'd say six",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c004_d2",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the location of a speaker for the device.",
+      "topic": "location of speaker",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "speaker on the device",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "speaker on the TV",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "A speaker is needed for the device to make sounds."
+      ],
+      "conditions": [
+        "The speaker sample speaker is included in the device."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So that means you need a little speaker on it though",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm that you stick on T_V_",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah well w but l but the speak sample speaker is included",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.7
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c004_d3",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the intuitive nature of the device's design.",
+      "topic": "intuitive design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The standard layout for numbers is three three three and one, rather than the way you've got it."
+      ],
+      "conditions": [
+        "The scroll is a new technology."
+      ],
+      "dissent": [
+        "The Project Manager prefers the standard layout for numbers."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'd say six",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So it is kind of not very intuitive but uh it's a good technology",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.7
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c005_d1",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c005",
+      "schema_version": "1.0.0",
+      "decision": "Voice control was given a score of 7",
+      "topic": "scoring of voice control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It is technologically innovative."
+      ],
+      "conditions": [
+        "None of the components are actually new, but they have been brought together in a remote."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Voice control have seven.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "G_ technologically innovative.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c005_d2",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c005",
+      "schema_version": "1.0.0",
+      "decision": "The sample speaker is relatively new",
+      "topic": "novelty of the sample speaker",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "We have the sample speaker as well."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But at the same time they are all they are all relatively new.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c005_d3",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c005",
+      "schema_version": "1.0.0",
+      "decision": "The ergonomic design of the remote control was discussed",
+      "topic": "ergonomic design of the remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The ergonomic design {disfmarker}"
+      ],
+      "conditions": [
+        "The repetitive stress things"
+      ],
+      "dissent": [
+        "The ergonomic design {disfmarker}",
+        "The repetitive stress things"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "ergonom ergonomic design {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "but then who would be really pushing the buttons so much on the on the remote control anyway,",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "but the repetitive stress things,",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c005_d4",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote control was given a score of 6",
+      "topic": "scoring of the remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It is superb."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Six ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "But otherwise it's superb.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c005_d5",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote control was given a score of 5",
+      "topic": "scoring of the remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It is intuitive but {disfmarker}"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Five ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Intuitive but {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c005_d6",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote control was given a score of 6 for its ergonomic design",
+      "topic": "scoring of the remote control's ergonomic design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It is varied."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Six ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's varied.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c006_d1",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team assessed the remote control design with a score of approximately 6.5",
+      "topic": "remote control design assessment",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team discussed the design and gave their individual scores."
+      ],
+      "conditions": [
+        "The team will need to consider the cost of the design in the future."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But do {disfmarker} yeah , yeah . Yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It still has to do what i what it has to do .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Put fashion in electronics .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The carrot banana remote . {vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So , we need the average here , so we got {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "The average is about six and something .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "about six point five .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Close enough .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c007_d1",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c007",
+      "schema_version": "1.0.0",
+      "decision": "The production costs are to be calculated using an Excel spreadsheet.",
+      "topic": "production costs calculation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team needs to calculate the production costs."
+      ],
+      "conditions": [
+        "The costs are provisional."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Can you read that ? Almost .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I started filling it in , but of course these are provisional , so we have to go down.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c007_d2",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c007",
+      "schema_version": "1.0.0",
+      "decision": "The power source will be a simple battery.",
+      "topic": "power source",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "hand dynamo",
+          "rejected": true,
+          "reason": "rejected in the discussion"
+        }
+      ],
+      "rationale": [
+        "The team decided against a hand dynamo."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "No hand dynamo , right ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "One simple battery .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c007_d3",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c007",
+      "schema_version": "1.0.0",
+      "decision": "No kinetic energy or solar power will be used.",
+      "topic": "power source",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team decided against kinetic energy and solar power."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "No kinetic energy , no solar .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c007_d4",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c007",
+      "schema_version": "1.0.0",
+      "decision": "An advanced chip on print will be used.",
+      "topic": "power source",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "An advanced chip on print .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c008_d1",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c008",
+      "schema_version": "1.0.0",
+      "decision": "The scroll wheel will be on the side of the device.",
+      "topic": "device design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "scroll wheel and pushbutton",
+          "rejected": true,
+          "reason": "decided to use only scroll wheel"
+        }
+      ],
+      "rationale": [
+        "It's not on our list."
+      ],
+      "conditions": [
+        "The scroll wheel comes with the L_C_D_."
+      ],
+      "dissent": [
+        "Industrial Designer thought they were referring to a different design."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We decided, 'cause it's not on our list.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's with the L_C_",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "That comes with the L_C_D_ ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c009_d1",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c009",
+      "schema_version": "1.0.0",
+      "decision": "The design will have push buttons instead of a scroll wheel for volume control.",
+      "topic": "volume control design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "scroll wheel",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "It's a cost-saving measure.",
+        "The scroll wheel is a gimmick that was never used anyway."
+      ],
+      "conditions": [
+        "The design will still have voice recognition and LCD display."
+      ],
+      "dissent": [
+        "The Industrial Designer expressed some reservations about losing the locator."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Instead of scrolling here we have two buttons here, up for up and down.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "We just got rid of a gimmick that was never anyway",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "We keep all the features, we keep voice recognition, we keep LCD display.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I have",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c009_d2",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c009",
+      "schema_version": "1.0.0",
+      "decision": "The design will have a beeping feature instead of a locator.",
+      "topic": "locator replacement",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "locator",
+          "rejected": true,
+          "reason": "replaced by beeping feature"
+        }
+      ],
+      "rationale": [
+        "It's a cost-saving measure.",
+        "The beeping feature will still allow for locating the device."
+      ],
+      "conditions": [
+        "The design will still have voice recognition and LCD display."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So instead of speaker,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But yeah, it's it's not like sample speaker, but it will just beep, so we still have the locate.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c009_d3",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c009",
+      "schema_version": "1.0.0",
+      "decision": "The color of the beeping feature can be yellow.",
+      "topic": "beeping feature color",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It can match the case color."
+      ],
+      "conditions": [
+        "The design will still have voice recognition and LCD display."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But it can be yellow as well. It can come in the same color as the the case.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c009_d4",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c009",
+      "schema_version": "1.0.0",
+      "decision": "The design will not vibrate.",
+      "topic": "vibration feature",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "vibration",
+          "rejected": true,
+          "reason": "not discussed or decided"
+        }
+      ],
+      "rationale": [
+        "No explicit reason given."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But only for a very short time.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c009_d5",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c009",
+      "schema_version": "1.0.0",
+      "decision": "The design will have a vegetable-like color.",
+      "topic": "color design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Marketing's suggestion."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think you should make it more vegetable-like.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c010_d1",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c010",
+      "schema_version": "1.0.0",
+      "decision": "No specific decision was made in this excerpt",
+      "topic": "project feedback",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the project, feedback, and process, but no decision was made."
+      ],
+      "conditions": [
+        "No specific conditions or caveats were stated."
+      ],
+      "dissent": [
+        "No specific dissent or objection was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well done , team . Um we need we've just got about ten minutes or so left of the meeting , so it would be good if we could just have a little talk about the project itself and how it went , um so that we can feed back to the management for next time they're designing a product .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it mm",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Feedback ? Ideas ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah mm , as far as creativity is concerned , yeah I think there was there was room for creativity . The only the only problem being that at the end we had to cut some things down because of the the budget we had .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think uh n one thing that was lacking uh was that we did not know what the various things cost to begin with .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Um we kap kept a adding things randomly .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "If we'd had that sheet at the beginning {gap} should've been like , okay , so we can have that lot , let's just throw it together and do what we can .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , that or not , yeah .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c011_d1",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c011",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made",
+      "topic": "unspecified",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The thing flew in",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "you didn't have the whole whooshing thing",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I wasn't like a a dictating leader",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Did anyone feel that they were getting sort of covered up and not being able to say their bit ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "To express them mm mm",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I was I was satisfied with with the leadership",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "You weren't like a a dictating leader",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'll leave the room and you can have another go",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I have no stake in it",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it worked quite quite nicely",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it worked quite well",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Did anyone feel that they were getting sort of covered up and not being able to say their bit ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "To express them mm mm",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I was I was satisfied with with the leadership",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "You weren't li",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c012_d1",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c012",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "final questionnaire and meeting summary",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The questionnaire was not discussed whether it was sent or not."
+      ],
+      "conditions": [
+        "The questionnaire's status is unclear."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I don't know if it's already sent or not.",
+          "speaker": "Project Manager",
+          "supports": "condition"
+        },
+        {
+          "quote": "No, it hasn't been.",
+          "speaker": "Marketing",
+          "supports": "condition"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c012_d2",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c012",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "whether to stay in the current room or go back to the other room",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The decision about the room was not discussed."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay, so the other way.",
+          "speaker": "Marketing",
+          "supports": "condition"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c012_d3",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c012",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "whether to draw animals on the board",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The decision about drawing animals was not discussed."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We could draw animals on the board again.",
+          "speaker": "Marketing",
+          "supports": "condition"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_009_c012_d4",
+      "source_id": "QMS_PRD_VA_009",
+      "chunk_id": "QMS_PRD_VA_009_c012",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "whether to use Play-Doh",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The decision about using Play-Doh was not discussed."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I don't like Play-Doh, no.",
+          "speaker": "Marketing",
+          "supports": "condition"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 13,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

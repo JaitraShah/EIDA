@@ -1,0 +1,66 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c015_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c015",
+      "schema_version": "1.0.0",
+      "decision": "They decided to get an additional 100 gigabytes of disk space.",
+      "topic": "disk space",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To accommodate more experiments for the paper they are writing."
+      ],
+      "conditions": [
+        "The new disk space will be added to the main file server."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We've just ordered a hundred gigabytes.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So we just need to",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "They should be coming in soon.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_000_c015_d2",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c015",
+      "schema_version": "1.0.0",
+      "decision": "Grad F offered some space on their drive if Grad D is desperate.",
+      "topic": "disk space",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad F mentioned having some space on their drive."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Grad F",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "If you're desperate, I have some space on my drive.",
+          "speaker": "Grad F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

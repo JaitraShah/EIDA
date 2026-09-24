@@ -1,0 +1,1356 @@
+{
+  "source_id": "QMS_PRD_TR_070",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_070_c000_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c000",
+      "schema_version": "1.0.0",
+      "decision": "The final design of the remote control will include an LCD screen, a number pad, and a jog-dial.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed cost and complexity of having open buttons and internal components, decided to simplify the design."
+      ],
+      "conditions": [
+        "The final design is subject to the size of the buttons and the slogan placement."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So um if you want to present your prototype go ahead .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um , there are a few changes we've made .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "so instead we've um {disfmarker} this is gonna be an L_C_D_ screen , um just a a very very basic one , very small um with access to the menu through the the scroll wheel and uh confirm um button .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um , apart from that , it's just pretty much the same as we discussed last time .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "It might even be one , a bit more complex L_C_D_ panel with pictures like maybe the sun or the , you know , the the symbols of the various functions .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's a number pad .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c001_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c001",
+      "schema_version": "1.0.0",
+      "decision": "The button will be used as a power button, confirm button for the LCD screen, and jog-dial.",
+      "topic": "button functionality",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Because it's red it's very prominent.",
+        "It can be the power button if you hold it for maybe two seconds it'll send a stand-by signal.",
+        "It's gonna be used as a confirm button for the LCD screen.",
+        "You use this as a jog-dial."
+      ],
+      "conditions": [],
+      "dissent": [
+        "Industrial Designer asked about the width of the device."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But um {disfmarker} We're gonna have again the the sort of the foggy um yellow from last time that lit up when you pushed the button .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Um apart from that it's gonna be used as a confirm button for the L_C_D_ screen",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Oh we've discussed how high it is , but how wide is it ? {vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Um you can use it for um more advanced functions like contrast , colour and {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c001_d2",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c001",
+      "schema_version": "1.0.0",
+      "decision": "The jog-dial will be used for volume control.",
+      "topic": "jog-dial function",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Because we've got the LCD and the jog-dial we just thought we'd use that as the volume."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Um , were gonna have the volume control here , but um because we've got the the L_C_D_ and the jog-dial we just thought we'd um use that as the volume .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c001_d3",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c001",
+      "schema_version": "1.0.0",
+      "decision": "The device will have channel tuning functionality.",
+      "topic": "channel tuning",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Are you having a V_C_R_ , are you having {disfmarker} you know which input do you have ?",
+        "Things like um brightness , contrast ,"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh what can a T_V_ do ?",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Um .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c001_d4",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c001",
+      "schema_version": "1.0.0",
+      "decision": "The device will have auxiliary inputs.",
+      "topic": "auxiliary inputs",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Are you having a V_C_R_ , are you having {disfmarker} you know which input do you have ?",
+        "What else ?"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh what can a T_V_ do ?",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "What else ? Um .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c002_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c002",
+      "schema_version": "1.0.0",
+      "decision": "The power source for the project will be a battery.",
+      "topic": "power source",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "kinetic",
+          "rejected": true,
+          "reason": "not available"
+        }
+      ],
+      "rationale": [
+        "Cost restraints"
+      ],
+      "conditions": [
+        "None stated"
+      ],
+      "dissent": [
+        "None stated"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The battery.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "No.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yep.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c002_d2",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c002",
+      "schema_version": "1.0.0",
+      "decision": "An advanced chip will be used for the electronics.",
+      "topic": "electronics",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "None stated"
+      ],
+      "conditions": [
+        "None stated"
+      ],
+      "dissent": [
+        "None stated"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We need an advanced chip I think, yep.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c002_d3",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c002",
+      "schema_version": "1.0.0",
+      "decision": "The case will be double-curved.",
+      "topic": "case design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "None stated"
+      ],
+      "conditions": [
+        "None stated"
+      ],
+      "dissent": [
+        "None stated"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yep.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c002_d4",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c002",
+      "schema_version": "1.0.0",
+      "decision": "The case will be made of plastic.",
+      "topic": "case material",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "None stated"
+      ],
+      "conditions": [
+        "None stated"
+      ],
+      "dissent": [
+        "None stated"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Plastic.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c002_d5",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c002",
+      "schema_version": "1.0.0",
+      "decision": "The case will have one special color.",
+      "topic": "case color",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "None stated"
+      ],
+      "conditions": [
+        "None stated"
+      ],
+      "dissent": [
+        "None stated"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Just one colour.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c002_d6",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c002",
+      "schema_version": "1.0.0",
+      "decision": "The interface will be the third option with the L_C_ display.",
+      "topic": "interface",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "None stated"
+      ],
+      "conditions": [
+        "None stated"
+      ],
+      "dissent": [
+        "None stated"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "One and the L_C_ display.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c002_d7",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c002",
+      "schema_version": "1.0.0",
+      "decision": "There will be four buttons for the scroll wheel.",
+      "topic": "buttons",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Safety measure"
+      ],
+      "conditions": [
+        "None stated"
+      ],
+      "dissent": [
+        "None stated"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay let's just be safe and put like say four buttons for that one.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c002_d8",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c002",
+      "schema_version": "1.0.0",
+      "decision": "There will be a special color for the buttons.",
+      "topic": "button color",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "None stated"
+      ],
+      "conditions": [
+        "None stated"
+      ],
+      "dissent": [
+        "None stated"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe a special colour for the buttons, so maybe four again.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c003_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c003",
+      "schema_version": "1.0.0",
+      "decision": "The LCD panel and the advanced chip will be removed, to be replaced with a regular chip.",
+      "topic": "hardware components",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "keeping the LCD panel and the advanced chip",
+          "rejected": true,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "To reduce cost."
+      ],
+      "conditions": [
+        "The cost reduction is estimated to be 2.3 Euro.",
+        "The TV will respond and react when the user interacts with it, so the LCD panel and advanced chip may not be necessary."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we're just estimating that yeah it would be less.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "To be replaced with a regular chip.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "We just report that it has to be over budget",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c004_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c004",
+      "schema_version": "1.0.0",
+      "decision": "The dimensions of the device will be approximately 3 cm wide, 2.5 cm tall, and have a depth that is comfortable to hold.",
+      "topic": "device dimensions",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed for comfort and aesthetics."
+      ],
+      "conditions": [
+        "No specific caveats, costs, risks, or dependencies stated."
+      ],
+      "dissent": [
+        "Marketing suggested a slightly taller device."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So there's one more dimension to the thing which we need to to add,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "about that thick.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay . Ach , that is {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Maybe closer to three even or two and a half.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c004_d2",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c004",
+      "schema_version": "1.0.0",
+      "decision": "The device will not have the L_C_D_ anymore and will instead have an on/off button on the TV.",
+      "topic": "device buttons",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed for clarity and functionality."
+      ],
+      "conditions": [
+        "No specific caveats, costs, risks, or dependencies stated."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well well there we go . So I'm just gonna have to redraw this now . So we're not gonna have the L_C_D_ anymore , and we'll just gonna have an on t on the T_V_ it'll show you what you're doing , which I think is fair enough , and so this is gonna be one big thing here . Um .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c005_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c005",
+      "schema_version": "1.0.0",
+      "decision": "The design evaluation will be done first before discussing other topics.",
+      "topic": "order of discussion",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Industrial Designer suggested doing the design evaluation first."
+      ],
+      "conditions": [
+        "The Project Manager was unsure who was supposed to do the evaluation."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe we should do the design evaluation first.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Evaluation.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Evaluation.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c005_d2",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c005",
+      "schema_version": "1.0.0",
+      "decision": "Marketing will do the design evaluation using PowerPoint.",
+      "topic": "responsibility for design evaluation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Marketing offered to do the design evaluation."
+      ],
+      "conditions": [
+        "The Project Manager was unsure who was supposed to do the evaluation."
+      ],
+      "dissent": [],
+      "owner": "Marketing",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'll need to plug into PowerPoint",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c005_d3",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c005",
+      "schema_version": "1.0.0",
+      "decision": "The power cord is not needed for the design evaluation.",
+      "topic": "need for power cord",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Industrial Designer pointed out that the power cord is not needed.",
+        "Marketing agreed."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "No, the power cord itself.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh course,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c006_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team collectively rated the design of the remote control on a scale of 1 to 7.",
+      "topic": "design rating",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To review where they stand with the design."
+      ],
+      "conditions": [
+        "The team used a consensus system to reach an agreement."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So to sort of bring together two things, sort of design goals and also the market research that we had, uh when we rate this, one is v high in in succeeding or fitting to our original aim and seven is low,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I rate that pretty highly.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "What does anybody else think?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I would say five or six.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c007_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c007",
+      "schema_version": "1.0.0",
+      "decision": "The design will involve a series of colors and potentially three-dimensional shapes.",
+      "topic": "design",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "a flat design",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Marketing suggested refining the design, revisiting original goals, and using a series of colors and potentially three-dimensional shapes."
+      ],
+      "conditions": [
+        "The proposal is not pushed through but left open for further discussion."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It's not something I need to push through, but I thought should we thinking more about the dimensions, um sort of like more of a three dimensional shapes as well as opposed to just that flat um {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Could our design involve a series of colours so that it's more of like a line where we have like sort of the , I don't know like the harvest line or the vibrant ,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c008_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c008",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "project evaluation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the project evaluation, but no decision or proposal was made."
+      ],
+      "conditions": [],
+      "dissent": [
+        "Marketing expresses concerns about the room not being the center point of creativity."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Right , okay . Um well do you wanna um just individually say what you think about about these four points and those four points , my four points , sorry , forgotten that . You got a different uh",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I like those printer cables that just have the two little butterfly clips like that.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well d do you feel though that that you were able to have quite a lot of creative input into the thing ?",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "d debating",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c009_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c009",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about the room for creativity",
+      "topic": "room for creativity",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the constraints and the need for a more relaxed atmosphere, but no decision was made."
+      ],
+      "conditions": [
+        "The need for a more relaxed atmosphere and the need to address the constraints on creativity."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "No , of course , yeah .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "You feel like you're caged within whatever y",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The constraints do come in very fast .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So you think a more relaxed atmosphere would be more kind of conducive to creative thought or",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I feel like I'm hiding behind the equipment , rather than the equipment is helping me , and you know .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c009_d2",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c009",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about leadership",
+      "topic": "leadership",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about leadership but no decision was made."
+      ],
+      "conditions": [
+        "The need for guidance, direction, and encouragement from personal coaches and team leaders."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I don't know if that means like , if I did a good job or something .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "my sense on that is sort of what kind of guidance and direction , encouragement",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "From like your personal coach person and stuff like that , do you think maybe ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "just sort of acting as team leader .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c010_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c010",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the issue of communication and collaboration tools, concluding that the current tools do not support teamwork effectively.",
+      "topic": "communication and collaboration tools",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The tools given are fancy but they don't support collaboration."
+      ],
+      "conditions": [
+        "If they could communicate outside the meeting, it would be easier."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think you tried to use the common share folder to to to to communicate",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Fully agree.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "but um it just comes back to us so slow in the email",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "If we could just go up to somebody outside the meeting and have a quick talk with them , that would've been a lot easier.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "The tools that they were given , the tool set that were given to us are fancy but they don't support collaboration",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c011_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c011",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "work process",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the current work process being contrary to the principle of teamwork due to tasks being divided and worked on in isolation, but no clear alternative proposed."
+      ],
+      "conditions": [
+        "No clear alternative work process proposed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "the tasks were d d sort of um divided , and then the work went on in isolation",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't know what you guys did while you were together , maybe that was a bit different ,",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "We had Play-Doh fun {vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "but um yeah , but um but actually if you if you imagine not entire the completely same task given to us but us said okay , first thing we have to do is come up with um let's say um a design concept , and we sit here together and do it ,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think the whiteboard , for me , is the kind of thing I would use all the time , but it's um not quite as useful as to us as it could have been , maybe just in the way that we we use it , in the sense that once we have an idea out there or while work was going on in between meetings , that could have been up on a board uh you know as opposed to in like in text .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c011_d2",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c011",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "use of whiteboard and PowerPoint",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the usefulness of the whiteboard and PowerPoint, but no clear decision made."
+      ],
+      "conditions": [
+        "No clear alternative use of whiteboard and PowerPoint proposed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It will be cooler to have the whiteboard rather than the the PowerPoint ,",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "or maybe the whiteboard and the PowerPoint in the same place ,",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "you know in the centre of the {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "It was provided to us while we had time to prepare , whereas I can imagine if I'd been encouraged to use Paintbrush , for example , or whatever , I would've actually used it ,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c012_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c012",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "meeting format",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the use of PowerPoints, digital pens, and computers in meetings."
+      ],
+      "conditions": [
+        "No clear decision or action was taken."
+      ],
+      "dissent": [
+        "The Industrial Designer expressed concerns about the use of PowerPoints and computers in meetings."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "um 'ca you know , just 'cause that's sorta how we {disfmarker} what we were set up to to use while we had our time .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think that there were too many PowerPoints in the meetings {vocalsound} . 'Cause the plug-in and the plugging spent {disfmarker} we spent a lot of time doing that .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And a lot of the information on the PowerPoints , I don't think , you know , we needed to actually {disfmarker} it could have , we could have gone through it {gap} verbally ,",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But I think the pen's good .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And o on the topic of the technology , it just occurred to me that we actually didn't need to move our computers because each computer has all of the files .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think too many computers are just distracting .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c013_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c013",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt.",
+      "topic": "unspecified",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Um {vocalsound} what else uh any wh I do I'm not really sure what they're looking for when they say new ideas found . Um I don't know is {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Is this for the project or {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , the w main one for me is that uh the process na in a natural f context would not have been interrupted by this necessity to discommunicate ourselves from each other .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm . Yeah if we just had uh {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , that's kind of a new idea for me is like just sort of that idea , well you know it's kind of s hard to keep f working forward on a team a team based project when when you're told you must now work away from your team .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-hmm .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah I I dunno I think it was quite good that we had time limits on the meetings because they really could have run on and like my experience with meetings is that they really do , and you can spend a lot of time talking about {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh yeah . Yeah , yeah .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "The only thing is though like when we had our meeting about the conceptual design , I thought there {disfmarker} maybe another fifteen minutes would have been useful there but um {vocalsound} yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-hmm , mm-hmm , mm-hmm .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I really thi i I think maybe if we'd like all been working in the one room , and they just said you know like every hour or something everybody make sure yo you know just have a have a short meeting and then just c",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-hmm . Mm-hmm .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "There you go . Um so in closing ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Hmm .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Wonderful . Okay um are the costs within the budget , yes they are . And is the project evaluated , yes it is . So now celebrate {vocalsound} .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Great .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh yeah .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And we have Ninja Homer .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So it {disfmarker} So now we {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh wow . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Hmm .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "That is lovely . {vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Hey yeah , I said Ninja Homer . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "What did you call it ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Ninja Homer . See it looks like Homer Simpson",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Huh , huh .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "but it's electronic so it's made in Japan .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So is that j is that just is that just a logo or does it do anything ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Logo .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah it's just a logo .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "The the red is supposed to represent the whatever else you wanna print on the side of it .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-hmm .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it's quite nice .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Fashion technology or something .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "You can wear Homer ,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "{gap}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's clunky .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Hmm .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm slightly gutted that we couldn't get plastic and rubber , I think that would have been nice .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , yeah .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound} Ah well , maybe from now on real reaction should give us more money .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-hmm .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_PRD_TR_070_c014_d1",
+      "source_id": "QMS_PRD_TR_070",
+      "chunk_id": "QMS_PRD_TR_070_c014",
+      "schema_version": "1.0.0",
+      "decision": "No decision about using Play-Doh in the creative process was made.",
+      "topic": "use of Play-Doh in creative process",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the usefulness of Play-Doh, but no decision or proposal to use it in the creative process."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Ah well , maybe from now on real reaction should give us more money .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Play-Doh s",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's helpful to the creative process.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It engages all your senses not just your sight , but your sense of feel your sense of touch .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And it helps you to understand dimension as well .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It becomes tangible .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't know if there's anything else we needed to discuss .",
+          "speaker": "Project Manager",
+          "supports": "status"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 15,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

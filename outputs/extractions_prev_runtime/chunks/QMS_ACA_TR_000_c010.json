@@ -1,0 +1,43 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c010_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c010",
+      "schema_version": "1.0.0",
+      "decision": "A method for acknowledging receipt of emails is being discussed",
+      "topic": "email acknowledgement method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about potential glitches, email overload, and the need for an easy response method."
+      ],
+      "conditions": [
+        "No explicit decision or chosen method is stated."
+      ],
+      "dissent": [
+        "Postdoc A suggests simply replying to the email."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So . {vocalsound} And , uh {disfmarker} and I 'm sorry responding without , uh , having much knowledge , but the thing is , uh , I am , like , one of these people who gets a gazillion mails and {disfmarker} and stuff comes in as",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , and that 's exactly why I did it the way I did it , which is the default is if you do nothing we 're gonna release it.",
+          "speaker": "Grad F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Postdoc A: Yeah .",
+          "speaker": "Postdoc A",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    }
+  ]
+}

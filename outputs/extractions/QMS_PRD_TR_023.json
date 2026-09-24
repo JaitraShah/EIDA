@@ -1,0 +1,160 @@
+{
+  "source_id": "QMS_PRD_TR_023",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_023_c000_d1",
+      "source_id": "QMS_PRD_TR_023",
+      "chunk_id": "QMS_PRD_TR_023_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team will brainstorm new ideas for the design of the television remote control individually, and then discuss and decide on the functional design, conceptual design, and detailed design together.",
+      "topic": "design process",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To ensure the design is usable, feasible to create, and meets the team's vision."
+      ],
+      "conditions": [
+        "Each team member will work on the project individually before discussing and deciding together."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The way that we're going to go about this is , um , we'll have a time where we can , um come up with new ideas alone , and , and work on the project and then , um , after we've brainstormed and , and thought about , we can come together in a meeting and , and discuss what , what um , what kind of functional design we want to use . Same with conceptual design and detailed design .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "making sure that it , it's usable , that as a , um {disfmarker} and that it's , it's feasible to create , and uh , to come up with a concept of it want , what we want it to look like .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_023_c001_d1",
+      "source_id": "QMS_PRD_TR_023",
+      "chunk_id": "QMS_PRD_TR_023_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to express their favourite animals and the characteristics of those animals using a whiteboard as a team-building exercise.",
+      "topic": "team-building exercise",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "As a sort of team-building moment."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'd like us to , um , try out the whiteboard by expressing our favourite animal and the charac characteristics of that animal.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_023_c002_d1",
+      "source_id": "QMS_PRD_TR_023",
+      "chunk_id": "QMS_PRD_TR_023_c002",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made",
+      "topic": "favourite animals",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Right , I'm gonna take minutes while , um , you guys express your favourite animals .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay , I'll go next . I am a big animal lover . like all sorts of animals , but for the moment I'm gonna draw a cat , in memory of my poor cat that died recently . {vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Very good . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'll rub that out . There you go . {vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay . I think my favourite animal would be a dog , but I'm not really sure {vocalsound} how to draw one .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "A s I don't ev Oh , oh well . {vocalsound} It's a scary cartoon dog . That {disfmarker} This ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's a dog . {vocalsound} . Um , I like dogs because , um , they're so good to humans , like they can be trained to be police dogs and seeing-eye dogs , and they're just such friendly animals . And , like they're more of a companion than cats .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_023_c003_d1",
+      "source_id": "QMS_PRD_TR_023",
+      "chunk_id": "QMS_PRD_TR_023_c003",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt.",
+      "topic": "design or financial discussion",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "The discussion is about the design and financial aspects of a remote control."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So now that we know how to use the whiteboard ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "the next , um , thing we need to address is our financial department ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "so it is discussion time . So this is time for us to bring our initial ideas , any um suggestions that you may have so far , a um your personal experiences with remote controls , and um , um , areas you see that , uh , could be improved in your experience with them .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 5,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

@@ -1,0 +1,454 @@
+{
+  "source_id": "QMS_PRD_TR_054",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_054_c000_d1",
+      "source_id": "QMS_PRD_TR_054",
+      "chunk_id": "QMS_PRD_TR_054_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the roles and responsibilities for the project.",
+      "topic": "roles and responsibilities",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Each team member presented their role and responsibilities for the three stages of design."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'm Nick Debusk , I'm the Project Manager .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I am Corinne Whiting and I will be the Marketing Expert and in each of the three phases I will have a different role .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Hiya , I'm Ryan . Um I'm the User Interface Designer .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm Manuel and I'm the Industrial Designer in in this project um .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_054_c000_d2",
+      "source_id": "QMS_PRD_TR_054",
+      "chunk_id": "QMS_PRD_TR_054_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of making the remote a universal remote.",
+      "topic": "universal remote",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The discussion centered around the functions the remote should have, and the possibility of it controlling various electrical products was raised."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we want it to be um a T_V_ remote or I I mean do we want it to to do other things besides just be a a television remote ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh right . I suppose you c try make it a universal remote",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_054_c001_d1",
+      "source_id": "QMS_PRD_TR_054",
+      "chunk_id": "QMS_PRD_TR_054_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a feature for easy finding.",
+      "topic": "remote control features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Because you always lose remotes."
+      ],
+      "conditions": [
+        "There are certain restrictions in designing the remote.",
+        "The material and stability of the remote need to be considered."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So if there's a way of finding it quite easily, I thought that'd be quite good quite a good feature.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So we should set our remote control up to where it has a uh tracking device ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Like a tracking device ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It makes a noise,",
+          "speaker": "Project Manager",
+          "supports": "alternative"
+        },
+        {
+          "quote": "there's a button on the T_V_ that you press",
+          "speaker": "Project Manager",
+          "supports": "alternative"
+        },
+        {
+          "quote": "and it'd beep.",
+          "speaker": "User Interface",
+          "supports": "alternative"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_054_c001_d2",
+      "source_id": "QMS_PRD_TR_054",
+      "chunk_id": "QMS_PRD_TR_054_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be modern and stand out.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "We want something new that's gonna stand out.",
+        "A modern remote should be modern."
+      ],
+      "conditions": [
+        "There are certain restrictions in designing the remote."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "A m a modern so our remote should be",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "You know , we want something new that's gonna stand out.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Lot more modern.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_054_c001_d3",
+      "source_id": "QMS_PRD_TR_054",
+      "chunk_id": "QMS_PRD_TR_054_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control could be spherical or have the controls inside.",
+      "topic": "remote control design",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "If it was in a ball, and maybe the actual controls are inside."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think maybe , because people always tend to throw a remote control about the place to one another if it was in a ball , and maybe the actual controls are inside or something .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_054_c001_d4",
+      "source_id": "QMS_PRD_TR_054",
+      "chunk_id": "QMS_PRD_TR_054_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be sturdy.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "We want it to be sturdy, we want it to hold up to somebody's child, you know, throwing it across the room or, as you said, people kinda throw it.",
+        "It should be sturdy."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay so yeah , so we want it to be sturdy ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Pretty much um . What are we gonna build that thing out of ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_054_c002_d1",
+      "source_id": "QMS_PRD_TR_054",
+      "chunk_id": "QMS_PRD_TR_054_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed ideas for the design of the remote control.",
+      "topic": "design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team wants the remote to be modern, fun, sturdy, universal, and easy to find."
+      ],
+      "conditions": [
+        "The remote is supposed to sell for about twenty five Euros and the goal for profits is fifty million Euros."
+      ],
+      "dissent": [
+        "The Industrial Designer pointed out that a ball-shaped design would roll and have weak points."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So our form and our function.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Maybe we could have different ones for different target audiences",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Maybe a hinge that'll have to be the strongest part of it.",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "The ball is a nice idea because of it's stability really, but of course, since it's a ball, it'll roll, so we'd have to have it flat on one side at least, down here somewhere.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_054_c003_d1",
+      "source_id": "QMS_PRD_TR_054",
+      "chunk_id": "QMS_PRD_TR_054_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the design of the remote, considering a keyboard-like shape, a hinge, a joystick, and a one-handed design.",
+      "topic": "remote design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the design being easy, stable, and fitting in the hand better."
+      ],
+      "conditions": [
+        "Concerns about the size and functionality of the remote."
+      ],
+      "dissent": [
+        "No clear dissent stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It's not new, it's not innovative, it's everybody does long remote because it's easy.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "My idea was just to have it be kind of like a keyboard type shape, you know, like video games",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think definitely doing something different is a good idea.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Maybe design something, that's sort of like a one-handed design.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So perhaps the joystick or the keyboard idea might work better.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "With the one-handed design you also have the problem of the size because you know from cell phones, they can be too small.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_054_c004_d1",
+      "source_id": "QMS_PRD_TR_054",
+      "chunk_id": "QMS_PRD_TR_054_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to design a remote control with a flat bottom and grips on the side, and to avoid a ball function.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "remote control with ball function",
+          "rejected": true,
+          "reason": "removed due to design changes"
+        }
+      ],
+      "rationale": [
+        "The ball function was removed to make it easier to hold.",
+        "The cover flipping over to cover the ball was not a viable solution.",
+        "The hinge was a problem with a flat bottom design."
+      ],
+      "conditions": [
+        "The remote control should not roll away.",
+        "The remote control should be easy to use.",
+        "The remote control should be one-handed."
+      ],
+      "dissent": [
+        "The Industrial Designer questioned the need for a lid on the remote control.",
+        "The Industrial Designer suggested that the remote control should have a round shape underneath for comfort."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So you know um s so it's easier to hold onto that way .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "But if we're flat on the bottom , it's not gonna roll away , it'll stay where we want .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "The question is also , I dunno , d do you really always want to open that thing when you have to use it ?",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But it's one-handed um .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "You also have to know which way around to point this thing .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_054_c005_d1",
+      "source_id": "QMS_PRD_TR_054",
+      "chunk_id": "QMS_PRD_TR_054_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to start making some good ideas and evaluate them.",
+      "topic": "project plan",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To move forward with the project."
+      ],
+      "conditions": [
+        "Marketing will look and see what people want."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Let's.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "And Project Manager will design a better meeting for next time around, be a little bit more prepared.",
+          "speaker": "Project Manager",
+          "supports": "status"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_054_c005_d2",
+      "source_id": "QMS_PRD_TR_054",
+      "chunk_id": "QMS_PRD_TR_054_c005",
+      "schema_version": "1.0.0",
+      "decision": "The design of the device, or the point of putting two sensors on both sides, was discussed as a potential solution.",
+      "topic": "device design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussed as a potential solution for pointing the device in the right direction."
+      ],
+      "conditions": [
+        "If that's your thing and you got something like that instead."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "but um it's rather about an instinctual thing ,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "or the the point of putting two sensors on both sides um would probably work .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 6,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

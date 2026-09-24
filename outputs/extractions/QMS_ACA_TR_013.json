@@ -1,0 +1,1292 @@
+{
+  "source_id": "QMS_ACA_TR_013",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_013_c000_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c000",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to have Guenter visit for about three weeks.",
+      "topic": "Guenter's visit",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor C mentioned that Guenter will be visiting for about three weeks."
+      ],
+      "conditions": [
+        "Guenter might end up with a longer collaboration or something."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And uh Hans - uh , Hans - Guenter will be here , um , I think by next Tuesday or so .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "We might {disfmarker} might end up with some longer collaboration or something .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c000_d2",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c000",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to wait a week for others to present their new results.",
+      "topic": "waiting for others' new results",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "PhD A mentioned that they didn't meet last week and figured they should wait a week for others to present their new results."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , um , {disfmarker} why don't we {disfmarker} why don't we start with you , Dave , and then , um , we can go on .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c000_d3",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c000",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to test the mean log m magnitude spectral subtraction using past only and plus the present to calculate the mean.",
+      "topic": "testing the mean log m magnitude spectral subtraction",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad E discussed testing the mean log m magnitude spectral subtraction using past only and plus the present to calculate the mean."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , um , since we 're looking at putting this , um {disfmarker} mean log m magnitude spectral subtraction , um , into the SmartKom system , I I did a test seeing if , um , it would work using past only {comment} and plus the present to calculate the mean .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c001_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c001",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed whether training the models using the same length of time as in the test would make a significant difference.",
+      "topic": "model training method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the impact of training models with different lengths of time."
+      ],
+      "conditions": [
+        "Discussion about the impact of training models with different lengths of time."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I was curious , what if I trained the models using twelve seconds but I gave it a situation where the test set I was subtracted using two seconds , or four seconds , or six seconds .",
+          "speaker": "Grad E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But it doesn't hurt that much . Um , usually less than point five percent , although I think I did see one where it was a point eight percent or so rise in word error rate .",
+          "speaker": "Grad E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But it hurts compared to if you actually train the models using the same length of time as in the test .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The other thing , um , which maybe relates a little bit to something else we 've talked about in terms of windowing and so on is , that , um , I wonder if you trained with twelve seconds , and then when you were two seconds in you used two seconds , and when you were four seconds in , you used four seconds , and when you were six {disfmarker} and you basically build up to the twelve seconds . So that if you have very long utterances you have the best ,",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c002_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed whether to calculate the mean for the mean cepstral subtraction method, but no decision was made.",
+      "topic": "calculating the mean for mean cepstral subtraction",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the potential impact of calculating the mean, the length of silence regions, and the effectiveness of different time periods for calculating the mean."
+      ],
+      "conditions": [
+        "Need to play with the setup more to decide how to set it up for the SmartKom system."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But do you really want to calculate the mean ? And you neglect all the silence regions {comment} or you just use everything that 's twelve seconds, and",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well, if I only use six seconds, it still works pretty well.",
+          "speaker": "Grad E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I was trying twelve seconds cuz that was the best {pause} in my test before",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c002_d2",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was suggested to think of mean cepstral subtraction as a filter.",
+      "topic": "mean cepstral subtraction as a filter",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the potential filtering perspective of mean cepstral subtraction."
+      ],
+      "conditions": [
+        "If someone using the SmartKom system for a while, their first utterance might not get a full benefit of the method."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And , um , if you take this filtering perspective and if you essentially have it build up over time . I mean , if you computed means over two and then over four, and over six, essentially what you 're getting at is a kind of , uh , ramp up of a filter anyway.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c002_d3",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was mentioned that someone using the SmartKom system might cache utterances.",
+      "topic": "caching utterances in SmartKom system",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the potential caching of utterances in the SmartKom system."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well, I 'm saying in practice, yeah,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c003_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c003",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "method for improving speech recognition system",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about various methods and their potential benefits, but no explicit decision was made."
+      ],
+      "conditions": [
+        "More research needed on the system's capabilities for second passes."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "What would be really cool is if you could have ... before they began to use it they had to introduce themselves, verbally.",
+          "speaker": "PhD A",
+          "supports": "alternative"
+        },
+        {
+          "quote": "And couldn't you ... if you sort of did a first pass ... and then ... you might not take very much time.",
+          "speaker": "Professor C",
+          "supports": "alternative"
+        },
+        {
+          "quote": "So , um , if your second pass takes a millisecond who cares?",
+          "speaker": "Professor C",
+          "supports": "condition"
+        },
+        {
+          "quote": "The idea of the second pass would be waiting till you have more recorded speech?",
+          "speaker": "Grad E",
+          "supports": "condition"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c004_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c004",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "Wiener filtering approach",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about Wiener filtering, its improvement over the baseline, and potential combinations with other methods."
+      ],
+      "conditions": [
+        "Discussion about word errors rates and accuracies."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I've been working on that Wiener filtering.",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The improvement is somewhere around, like, thirty percent over the baseline.",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So I just plug in the Wiener filtering.",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It actually improves over the baseline of not having a Wiener filter in the whole system.",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But that's what I'm confused about, cuz I think I thought that our system was more like forty percent without the Wiener filtering.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "If you do all these in word error rates it's a lot easier actually.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "The baseline is something similar to a w I mean, the t the baseline that you are talking about is the MFCC baseline, right?",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c005_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c005",
+      "schema_version": "1.0.0",
+      "decision": "The performance of the single stage Wiener filter with noise estimation based on the first ten frames was discussed.",
+      "topic": "Wiener filter performance",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The performance was compared to a baseline without the Wiener filter."
+      ],
+      "conditions": [
+        "The performance was found to not improve a lot on the baseline."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "This is the single stage Wiener filter, with...",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "The noise estimation was based on first ten frames...",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And so this was giving...",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c005_d2",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c005",
+      "schema_version": "1.0.0",
+      "decision": "The use of a VAD to estimate noise was discussed.",
+      "topic": "VAD for noise estimation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The VAD was found to work for Italian but not for Finnish and Spanish."
+      ],
+      "conditions": [
+        "The VAD was trained on Italian."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It works for Italian because the VAD was trained on Italian...",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I started with using the VAD to estimate noise...",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It works only for Italian by using a VAD to estimate noise...",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c005_d3",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c005",
+      "schema_version": "1.0.0",
+      "decision": "The performance of the Wiener filter with a second stage of Wiener filtering was discussed.",
+      "topic": "Second stage Wiener filter performance",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The second stage of Wiener filtering was found to reduce variance."
+      ],
+      "conditions": [
+        "The second stage of Wiener filtering was based on the cleaned up speech."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So, uh, I ran this stuff with one more stage of Wiener filtering on it...",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I estimated the new Wiener filter based on the cleaned up speech...",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "...and did, uh, smoothing in the frequency to reduce the variance...",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c006_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c006",
+      "schema_version": "1.0.0",
+      "decision": "PhD B is experimenting with a new Wiener filtering schema",
+      "topic": "Wiener filtering schema",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "PhD B explains the new approach and its differences from the French Telecom system."
+      ],
+      "conditions": [
+        "PhD B mentions that they haven't run the new approach for the whole case."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , I still don't have the word error rate . I 'm sorry about it . But the overall improvement was like fifty - six point four six .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It 's different in a sense like I 'm actually cleaning up the cleaned up spectrum which they 're not doing .",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And actually I tried it on the original clean spectrum where , like , I",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c007_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c007",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to use the output of the channel zero for channel one for the VAD.",
+      "topic": "VAD method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The speech is very noisy for channel one, so using the output of the channel zero can reduce noise."
+      ],
+      "conditions": [
+        "The overall improvement that they have with this method is forty percent, but in some cases it doesn't improve at all."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But the only thing is that the speech is very noisy for channel one, so you can actually use the output of the channel zero for channel one for the VAD.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "And they keep, uh, two hundred milliseconds before speech and two hundred after speech.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c007_d2",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c007",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the overall improvement using this method is forty percent.",
+      "topic": "improvement of the method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "In some cases it doesn't improve at all."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And the overall improvement over the MFCC baseline So , when they just , uh , add this frame dropping in addition it 's forty percent, right ?",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c007_d3",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c007",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that there is still work to be done on the VAD.",
+      "topic": "VAD work",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "This shows that there is still work to be done on the VAD."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I think this shows that there is still work to be done on the VAD.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c007_d4",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c007",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that Wiener filtering is used to minimize the difference between the noisy signal and the clean signal if you have two channels.",
+      "topic": "Wiener filtering",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The basic principle of Wiener filter is like you try to minimize the difference between the noisy signal and the clean signal if you have two channels."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "OK , so the Wiener filter , it 's like {disfmarker} it 's like you try to minimize {disfmarker} I mean , so the basic principle of Wiener filter is like you try to minimize the , uh , difference between the noisy signal and the clean signal if you have two channels.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c008_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c008",
+      "schema_version": "1.0.0",
+      "decision": "PhD B chose Wiener filtering over spectral subtraction and another technique for noise reduction",
+      "topic": "noise reduction technique",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "spectral subtraction",
+          "rejected": false,
+          "reason": "PhD B chose Wiener filtering instead"
+        },
+        {
+          "option": "another technique",
+          "rejected": true,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "PhD B had a choice between spectral subtraction, Wiener filtering, and another technique, and chose Wiener filtering."
+      ],
+      "conditions": [
+        "Stephane is working on spectral subtraction."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I picked up",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , Stephane is working on spectral subtraction .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , I picked up",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c009_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c009",
+      "schema_version": "1.0.0",
+      "decision": "PhD B is testing two noise production compensation techniques and comparing their performance.",
+      "topic": "noise production compensation techniques",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To improve the performance of the noise compensation."
+      ],
+      "conditions": [
+        "PhD B is still testing and does not have results for all cases."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Y Yeah ,",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "we just wanted to have a few noise production {disfmarker} compensation techniques",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "pick one .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So they were just kind of trying to cover a bunch of different things with this task and see , you know , what are {disfmarker} what are the issues for each of them .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "And that seems to be working .",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So that 's where I got like fifty - six point five percent improvement on SpeechDat - Car with that .",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So the other thing what I tried was I used still the ten frames of noise estimate but I used this channel zero VAD to drop the frames .",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So I 'm not {disfmarker} still not estimating .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c010_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c010",
+      "schema_version": "1.0.0",
+      "decision": "PhD B is investigating why the power spectrum seems to be getting the best result.",
+      "topic": "investigation on power spectrum",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "PhD B mentioned that the power spectrum seems to be giving improvement."
+      ],
+      "conditions": [
+        "PhD B needs more time to investigate the issue on TI-digits."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , uh {disfmarker} so the other {disfmarker} the other thing is {disfmarker} like I 've been {disfmarker} I 'm doing all this stuff on the power spectrum . So {disfmarker} Tried this stuff on the mel as well {disfmarker} mel and the magnitude , and mel magnitude , and all those things . But it seems to be the power spectrum seems to be getting the best result . So , one of {disfmarker} one of reasons I thought like doing the averaging , after the filtering using the mel filter bank , that seems to be maybe helping rather than trying it on the mel filter ba filtered outputs .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm . Mm - hmm .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c010_d2",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c010",
+      "schema_version": "1.0.0",
+      "decision": "PhD D is working on spectral subtraction.",
+      "topic": "spectral subtraction",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "PhD D mentioned that they have been working on spectral subtraction."
+      ],
+      "conditions": [
+        "PhD D needs more time to complete the work."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , {vocalsound} I 've been , uh , working still on the spectral subtraction . Um , So to r to remind you {vocalsound} {vocalsound} a little bit of {disfmarker} of what I did before , is just {vocalsound} to apply some spectral subtraction with an overestimation factor also to get , um , an estimate of the noise , uh , spectrum , and subtract this estimation of the noise spectrum from the , uh , signal spectrum , {comment} but subtracting more when the SNR is {disfmarker} is , uh , low , which is a technique that it 's often used .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c011_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c011",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that spectral subtraction can result in negative values",
+      "topic": "spectral subtraction",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussed the possibility of negative values due to spectral subtraction."
+      ],
+      "conditions": [
+        "Discussed the deviations from the ideal, uncorrelated signal and noise, and the potential issue of negative values."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "There can be frequency bins with negative values.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So what does that mean?",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "That means that ... you have an estimation of the noise spectrum, but sometimes, of course, it's too small, so you don't subtract enough. But sometimes it can be too large also.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So, in an ideal world, if the noise were always the same, then, when you subtracted it the worst that I you would get would be a zero.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um, also, we speak the whole where all this stuff comes from is from an assumption that signal and noise are uncorrelated.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean, for instance, you're talking about the signal and noise, at a particular point. And even if something is sort of stationary in statistical terms of statistics, there's no guarantee that any particular instantiation or piece of it is exactly a particular number or bounded by a particular range.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um, also, we speak the whole where all this stuff comes from is from an assumption that signal and noise are uncorrelated.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean, because Um, are you taking the log before you add them up to the mel?",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c012_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c012",
+      "schema_version": "1.0.0",
+      "decision": "Discussing potential methods for spectral subtraction noise reduction",
+      "topic": "spectral subtraction noise reduction methods",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the issues with current method and potential improvements"
+      ],
+      "conditions": [
+        "No clear decision or chosen method"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I mean , because Um , are you taking the log before you add them up to the mel ?",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , um , uh , i in fact , what you 'd be doing is saying , \" well , we 're d we 're going to definitely diminish the effect of this frequency in this little frequency bin in the overall mel summation \" . It 's just a thought . I d I don't know if it would be",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "People can also , uh , reflect it back up and essentially do a full wave rectification instead of a half wave .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , actually I tried , {vocalsound} something else based on this , um , is to put some smoothing , um , because it seems to help or it seems to help the Wiener filtering",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c013_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c013",
+      "schema_version": "1.0.0",
+      "decision": "PhD D presented a nonlinear smoothing method for spectral subtraction",
+      "topic": "research method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "PhD D explained the method and its results"
+      ],
+      "conditions": [
+        "The method was tested on Italian and Finnish, but no detailed improvements were provided"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So what I did is , uh , some kind of nonlinear smoothing . Actually I have a recursion that computes",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "And {disfmarker} Mmm . So , well , basically that 's this idea , and it seems to give pretty good results",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't know if you have these improvement the detailed improvements for Italian , Finnish , and Spanish there",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c014_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the filtering technique used is a variant of Wiener filtering and involves smoothing techniques in both the time and frequency domains.",
+      "topic": "filtering technique",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It was similar to what someone else had done, and involved two kinds of smoothing."
+      ],
+      "conditions": [
+        "It was noted that the smoothing in the time domain helped reduce musical noise."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well , it 's some kind of Wiener filtering {disfmarker}",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "But it 's not exactly Wiener filtering but some variant of Wiener filtering .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So they would take this HF squared back , taking inverse Fourier transform . And they convolve the time domain signal with that .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But they also have two {disfmarker} two different smoothing @ @ .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "One in the time domain and one in the frequency domain by just taking the first , um , coefficients of the impulse response .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , basically it 's similar . I mean , what you did , it 's similar",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "But , when you look at the spectrogram , if you don't have an any smoothing , you clearly see , like {disfmarker} in silence portions , and at the beginning and end of speech , you see spots of high energy randomly distributed over the {disfmarker} the spectrogram .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um {disfmarker}",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c015_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c015",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to try training a neural network for spectral subtraction.",
+      "topic": "neural network training",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "It could do a nonlinear spectral subtraction.",
+        "It's another approach."
+      ],
+      "conditions": [
+        "The targets need to be figured out.",
+        "The objection is that it's good for mapping from a particular noise to clean but then you get a different noise."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Could you train a neural net to do spectral subtraction ?",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , it could do a nonlinear spectral subtraction",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "but I don't know if it {disfmarker} I mean , you have to figure out what your targets are .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "People do that ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "y yeah , in fact , we had visitors here who did that I think when you were here ba way back when .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "but to some extent that 's kind of what we 're doing . I mean , we 're not doing exactly that , we 're not trying to generate good examples but by trying to do the best classifier you possibly can , for these little phonetic categories ,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c016_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c016",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to potentially consider adding a latency of 25 milliseconds to the algorithm.",
+      "topic": "algorithm latency",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Professor C suggested being conservative to avoid ending up in a bind."
+      ],
+      "conditions": [
+        "The discussion did not cover other parts of the algorithm that have not been optimized yet."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , um , you know , maybe you could make it twenty - five . You know what I mean ?",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "because if we completely ignore latency , and then we discover that we really have to do something about it , we 're going to be find ourselves in a bind .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c017_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c017",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that voice activity detection can be done in parallel with other filtering, but the latency might not always be consistent.",
+      "topic": "voice activity detection",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussed the possibility of doing voice activity detection and filtering in parallel."
+      ],
+      "conditions": [
+        "Latency might not always be consistent."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We can do something in parallel also, in some like some cases like, if you wanted to do voice activity detection.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But by then you already have the sufficient samples to do the filtering.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because I mean the transmission over the air interface is like a buffer.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c017_d2",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c017",
+      "schema_version": "1.0.0",
+      "decision": "It was mentioned that adding noise helped the system, but the level and shape of the noise need further investigation.",
+      "topic": "noise addition",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Adding noise helped the system, but the level and shape of the noise need further investigation."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I played a little bit with this overestimation factor, but I still have to look more at this, um, at the level of noise I add after.",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c017_d3",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c017",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the number of frames used for noise estimation can affect the results.",
+      "topic": "number of frames for noise estimation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussed the effect of the number of frames used for noise estimation on the results."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I used ten frames just ten frames.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But possibly more. I mean, if channel one VAD gives you",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c018_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c018",
+      "schema_version": "1.0.0",
+      "decision": "The method for noise estimation using a technique from Belgium was discussed.",
+      "topic": "noise estimation technique",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussing different methods for noise estimation."
+      ],
+      "conditions": [
+        "The method from Belgium was found to require sixty-four millisecond FFTs."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and for this I u simply used some code that , uh , {vocalsound} I had from Belgium , which is technique that , um , takes a bunch of frame , um , and for each frequency bands of this frame , takes a look at the minima of the energy.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So I take {disfmarker} to {disfmarker} I take a bunch of these sixty - four millisecond frame to cover five hundred milliseconds",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c019_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c019",
+      "schema_version": "1.0.0",
+      "decision": "PhD D is planning to improve the noise estimation method used in their system by replacing the current noise estimate with a new one.",
+      "topic": "noise estimation method improvement",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "PhD D believes the new method might be better."
+      ],
+      "conditions": [
+        "PhD D is still testing the new method and does not have results yet."
+      ],
+      "dissent": [],
+      "owner": "PhD D",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I 'm trying to improve on this , and by replacing their noise estimate by , uh , something that might be better .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "But I di",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't estimate the f noise on the ten frames but use his estimate .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c019_d2",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c019",
+      "schema_version": "1.0.0",
+      "decision": "PhD B is also using the new noise estimate technique on Wiener filtering.",
+      "topic": "use of new noise estimate technique",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "PhD B mentioned using the new noise estimate technique."
+      ],
+      "conditions": [
+        "PhD B does not have the results yet."
+      ],
+      "dissent": [],
+      "owner": "PhD B",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I 'm also using that n new noise estimate technique on this Wiener filtering what I 'm trying .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c021_d1",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c021",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed training a neural network for voice activity detection on all the available data, including SpeechDat - Car data, and trying different features as input to the VAD network.",
+      "topic": "voice activity detection",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To develop a better voice activity detector."
+      ],
+      "conditions": [
+        "The team will try different kinds of features as input to the VAD network."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , yeah , the next thing I started to do is to , {vocalsound} uh , try to develop a better voice activity detector .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "And , um {disfmarker} I d um {disfmarker} yeah , for this I think we can maybe try to train the neural network for voice activity detection on all the data that we have , including all the SpeechDat - Car data .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "And we came up with a bunch of features that we want to try like , um , the spectral slope , the , um , the degree o degree of voicing with the features that , uh , we started to develop with Carmen , um , e with , uh , the correlation between bands and different kind of features ,",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The energy also .",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_013_c021_d2",
+      "source_id": "QMS_ACA_TR_013",
+      "chunk_id": "QMS_ACA_TR_013_c021",
+      "schema_version": "1.0.0",
+      "decision": "Professor C mentioned that Hans - Guenter will be interested in all the things discussed.",
+      "topic": "interest of Hans - Guenter",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor C stated that Hans - Guenter will be interested in all the things discussed."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "OK . Well , Hans - Guenter will be here next week so I think he 'll be interested in all {disfmarker} all of these things .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 21,
+  "chunks_failed": [
+    "QMS_ACA_TR_013_c020"
+  ],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

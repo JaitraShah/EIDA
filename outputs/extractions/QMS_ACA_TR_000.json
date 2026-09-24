@@ -34,13 +34,13 @@
           "supports": "rationale"
         },
         {
-          "quote": "No . We had spoken w about this before",
-          "speaker": "Grad F",
-          "supports": "dissent"
+          "quote": "Why was that date chosen ? You just felt you wanted to ?",
+          "speaker": "Professor B",
+          "supports": "decision"
         },
         {
-          "quote": "You said you wanted it to be available then.",
-          "speaker": "Postdoc A",
+          "quote": "Jane told me July fifteenth.",
+          "speaker": "Grad F",
           "supports": "dissent"
         }
       ],
@@ -56,7 +56,7 @@
       "status": "decided",
       "alternatives": [],
       "rationale": [
-        "Postdoc A mentioned the meetings that are involved in the set."
+        "Postdoc A mentioned the meetings that were involved."
       ],
       "conditions": [],
       "dissent": [],
@@ -81,7 +81,7 @@
       "status": "decided",
       "alternatives": [],
       "rationale": [
-        "Professor B identified the German, Dutch, and Spanish meetings as the NSA meetings."
+        "Professor B identified the meetings as the NSA meetings."
       ],
       "conditions": [],
       "dissent": [],
@@ -176,7 +176,7 @@
         "Risk of some participants not responding due to being out of town."
       ],
       "dissent": [
-        "Grad F prefers to send out the data release date without specifying a response time."
+        "Grad F did not want to have a discussion with every person if it can be avoided."
       ],
       "owner": null,
       "approver": null,
@@ -190,6 +190,11 @@
           "quote": "It {disfmarker} well , it {disfmarker} well , you 're right . Sometimes somebody will be {pause} away and , uh , you know , there 's , uh {disfmarker} for any length of time that you {vocalsound} uh , choose {pause} there is some person sometime who will not {pause} end up reading it .",
           "speaker": "Professor B",
           "supports": "decision"
+        },
+        {
+          "quote": "I ha I have one question . This is in the summer period and presumably people may be out of town . But we can make the assumption , can't we ? that , um , they will be receiving email , uh , most of the month . Right ? Because if someone {disfmarker}",
+          "speaker": "Postdoc A",
+          "supports": "dissent"
         },
         {
           "quote": "Well , they 've already signed a form .",
@@ -209,14 +214,16 @@
       "status": "decided",
       "alternatives": [],
       "rationale": [
-        "To find out the status of the email and avoid doing something unnecessary"
+        "To find out the status on the email issue",
+        "To avoid doing something unnecessary"
       ],
       "conditions": [
-        "People may not respond to the email"
+        "People won't respond to the email",
+        "There are people who will be hard to contact"
       ],
       "dissent": [],
       "owner": "Postdoc A",
-      "approver": null,
+      "approver": "Grad F",
       "evidence": [
         {
           "quote": "Grad F: Morgan, can you talk to our lawyer about it, and find out what the status is on this ? Cuz I don't wanna do something that we don't need to.",
@@ -224,9 +231,9 @@
           "supports": "decision"
         },
         {
-          "quote": "I'll either wonder at the beginning or you'll wonder at the end.",
-          "speaker": "PhD E",
-          "supports": "rationale"
+          "quote": "I'm telling you, people won't respond to the email. No matter what you do, you're gonna have to make a lot of effort to get in contact with.",
+          "speaker": "Grad F",
+          "supports": "decision"
         }
       ],
       "extraction_confidence": 0.9
@@ -236,7 +243,7 @@
       "source_id": "QMS_ACA_TR_000",
       "chunk_id": "QMS_ACA_TR_000_c005",
       "schema_version": "1.0.0",
-      "decision": "Well , then we make the effort .",
+      "decision": "It was discussed whether to follow up each person and get a signature, but no decision was made.",
       "topic": "following up for signatures",
       "status": "unclear",
       "alternatives": [],
@@ -278,28 +285,128 @@
           "supports": "rationale"
         },
         {
-          "quote": "Except I really think in this case {disfmarker} I {disfmarker} I 'm agr I agree with Liz , that we need to be {pause} in the clear and not have to after the fact say",
-          "speaker": null,
+          "quote": "Except I really think in this case I agree with Liz , that we need to be in the clear and not have to after the fact say \" oh , but I assumed \" , and \" oh , I'm sorry that your email address was just accumulating mail without notifying you \" , you know .",
+          "speaker": "Postdoc A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "If this is a purely administrative task , we can actually have administration do it .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , we had talked about this before",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "and I thought that we had even gone by the lawyers asking about that and they said you have to s they 've already signed away the f with that form {disfmarker} that they 've already signed once .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't remember that this issue of the time period allowed for response was ever covered .",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or the date at which they would be receiving the email from you .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or how they would indicate",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . We never really talked about that .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or {disfmarker} or how they would indicate {disfmarker}",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "We do it like with these {disfmarker}",
+          "speaker": "PhD H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "That was something that was sort of just within our implementation .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well , it 's just , we 've gone from one extreme to the other , where at one point , a few months ago , Morgan was saying let 's not do anything ,",
+          "speaker": "Grad F",
+          "supports": "dissent"
+        },
+        {
+          "quote": "and now we 're saying we have to follow up each person and get a signature ?",
+          "speaker": "Grad F",
+          "supports": "dissent"
+        },
+        {
+          "quote": "It might well be the case that this is enough to give us a basis t to just , eh , assume their consent if they don't reply .",
+          "speaker": "PhD H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But , I 'm not {disfmarker} you know , me not being a lawyer , I wouldn't just wanna do that without {pause} having the {disfmarker} the expert , uh , opinion on that .",
+          "speaker": "PhD H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And how many people ? Al - altogether we 've got twenty people . These people are people who read their email almost all the time .",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Then I think we had better find out , so that we can find a",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Let me look at this again .",
+          "speaker": "Professor B",
           "supports": "decision"
         }
       ],
-      "extraction_confidence": null
+      "extraction_confidence": 0.9
     },
     {
       "decision_id": "QMS_ACA_TR_000_c007_d1",
       "source_id": "QMS_ACA_TR_000",
       "chunk_id": "QMS_ACA_TR_000_c007",
       "schema_version": "1.0.0",
-      "decision": "It was discussed that email is enough for sending notifications, but it was not decided what to do when contact information is outdated or incorrect.",
-      "topic": "notification method",
-      "status": "unclear",
+      "decision": "It was discussed that email is enough for sending the required information.",
+      "topic": "method of sending information",
+      "status": "decided",
       "alternatives": [],
       "rationale": [
         "Email is enough.",
-        "If someone's email address may not work, they can be found through other means."
+        "It's unusual that they didn't have forwards to other accounts."
       ],
       "conditions": [
-        "Discussed boundary case when contact information is outdated or incorrect."
+        "If someone can't be reached, Professor B might call the attorney."
       ],
       "dissent": [],
       "owner": null,
@@ -308,15 +415,20 @@
         {
           "quote": "I i i em email is enough.",
           "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , so how far do we have to go ? Do we need to get someone 's signature ? Or , is email enough ?",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "I i i em email is enough.",
+          "speaker": "Professor B",
           "supports": "rationale"
         },
         {
-          "quote": "I just don't think we will.",
-          "speaker": "Postdoc A",
-          "supports": "dissent"
-        },
-        {
-          "quote": "So if we get to a boundary case like that then maybe I will call the attorney about it.",
+          "quote": "Well , the way ICSI goes , people , uh , who , uh , were here ten years ago still have acc {vocalsound} have forwards to other accounts and so on .",
           "speaker": "Professor B",
           "supports": "decision"
         }
@@ -333,10 +445,10 @@
       "status": "provisional",
       "alternatives": [],
       "rationale": [
-        "To ensure everyone has a chance to respond and indicate they received the email."
+        "To ensure everyone responds and to give them a chance to indicate they received the email."
       ],
       "conditions": [
-        "If people don't respond, they won't be off the hook."
+        "If people don't respond, they might have to go to the page to accept the changes."
       ],
       "dissent": [],
       "owner": null,
@@ -348,14 +460,9 @@
           "supports": "decision"
         },
         {
-          "quote": "And actually ,",
-          "speaker": "Postdoc A",
-          "supports": "rationale"
-        },
-        {
           "quote": "But {disfmarker}",
           "speaker": "Professor B",
-          "supports": "rationale"
+          "supports": "dissent"
         },
         {
           "quote": "I {disfmarker} I {disfmarker} didn't anticipate this so I {disfmarker} that 's why I didn't give this comment , and it {disfmarker} I {disfmarker} this discussion has made me think it might be nice to have a follow - up email within the next couple of days saying \" by the way , you know , we wanna hear back from you by X date and please {disfmarker} \", and then add what Liz said {disfmarker} \" please , uh , respond to {disfmarker} please indicate you received this mail . \"",
@@ -363,7 +470,7 @@
           "supports": "decision"
         },
         {
-          "quote": "Uh , or well , maybe even additionally , uh , um , \" Even if you 've decided you have no changes you 'd like to make , if you could tell us that \" .",
+          "quote": "Uh , or e well , maybe even additionally , uh , \" Even if you 've decided you have no changes you 'd like to make , if you could tell us that \" .",
           "speaker": "Professor B",
           "supports": "decision"
         },
@@ -380,18 +487,18 @@
       "source_id": "QMS_ACA_TR_000",
       "chunk_id": "QMS_ACA_TR_000_c009",
       "schema_version": "1.0.0",
-      "decision": "It was discussed to use various channels, but no specific decision was made about which one to use.",
-      "topic": "channel to use",
+      "decision": "It was discussed to use various channels, but no specific decision was made about which ones to use.",
+      "topic": "channels to use",
       "status": "unclear",
       "alternatives": [],
       "rationale": [
-        "Discussion about the need to use all the channels."
+        "Discussion about the need for multiple channels."
       ],
       "conditions": [
         "No specific decision was made."
       ],
       "dissent": [
-        "Grad D suggested just doing one channel."
+        "Grad F expressed some frustration about the ongoing discussions."
       ],
       "owner": null,
       "approver": null,
@@ -399,32 +506,57 @@
         {
           "quote": "Can't you just do that channel ?",
           "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh , no . We have to do {disfmarker}",
+          "speaker": "PhD C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "No , of course not .",
+          "speaker": "Grad F",
           "supports": "dissent"
         },
         {
-          "quote": "You need all the channels.",
-          "speaker": "Grad F",
-          "supports": "rationale"
-        },
-        {
-          "quote": "You have to do all of them",
+          "quote": "You need all the channels .",
           "speaker": "PhD E",
           "supports": "rationale"
         },
         {
-          "quote": "Discussion about the other close - talking",
-          "speaker": "PhD C",
-          "supports": "decision"
-        },
-        {
-          "quote": "You could just do it in that time period",
+          "quote": "You have to do all of them ,",
           "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Grad D",
           "supports": "decision"
         },
         {
-          "quote": "I hate deleting any data.",
+          "quote": "You have to copy the whole file .",
           "speaker": "Grad F",
           "supports": "decision"
+        },
+        {
+          "quote": "Right ? Because we 're gonna be releasing the whole file .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "I delete the old one , put the new one in .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "There 's nothing left of the original signal .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't want {disfmarker} I really would rather make a copy of it , rather than bleep it out",
+          "speaker": "Grad F",
+          "supports": "dissent"
         },
         {
           "quote": "Are you del are you bleeping it by adding ?",
@@ -432,34 +564,114 @@
           "supports": "decision"
         },
         {
-          "quote": "I delete the old one, put the new one in.",
+          "quote": "I I I I understand , but is {disfmarker} is it summing signals",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh , OK . Cuz {disfmarker}",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh . Cuz if you were summing , you could {disfmarker} No . But anyway {disfmarker}",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . It would be qui quite easy to get it back again .",
           "speaker": "Grad F",
           "supports": "decision"
         },
         {
-          "quote": "Then someday we can sell the unedited versions.",
+          "quote": "But {disfmarker} {vocalsound} And then w I was gonna say also that the they don't have to stay on the system , as you know ,",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Then someday we can sell the {pause} unedited versions .",
           "speaker": "PhD E",
           "supports": "decision"
         },
         {
-          "quote": "I have an idea. You reverse the signal",
+          "quote": "Can't you rely on the archiving to preserve the older version ?",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh , yeah .",
           "speaker": "PhD H",
           "supports": "decision"
         },
         {
-          "quote": "So {disfmarker}",
+          "quote": "It wouldn't be that hard to hide it .",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right . Exactly . I see .",
           "speaker": "PhD E",
           "supports": "decision"
         },
         {
-          "quote": "If it makes {disfmarker}",
+          "quote": "See , this is good . I wanted to create some {pause} side conversations in these meetings .",
+          "speaker": "PhD E",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I have an idea . You reverse the signal ,",
+          "speaker": "PhD H",
+          "supports": "decision"
+        },
+        {
+          "quote": "so it {disfmarker} it lets people say what they said backwards .",
+          "speaker": "PhD H",
+          "supports": "decision"
+        },
+        {
+          "quote": "Then you have , like , subliminal , uh , messages ,",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "But , ha you 've seen the {disfmarker} this {disfmarker} the speech recognition system that reversed very short segments .",
           "speaker": "Grad F",
           "supports": "decision"
         },
         {
-          "quote": "There 're bound to be some glitches the first time through.",
-          "speaker": "Postdoc A",
+          "quote": "Yeah .",
+          "speaker": "PhD H",
           "supports": "decision"
+        },
+        {
+          "quote": "Did you read that paper ? It wouldn't work .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "No .",
+          "speaker": "PhD H",
+          "supports": "decision"
+        },
+        {
+          "quote": "The speech recognizer still works .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . And if you do it backward then {disfmarker}",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Good point . A point . Well , I 'm sorry if I sound a little peeved about this whole thing . It 's just we 've had meeting after meeting after meeting a on this and it seems like we 've never gotten it resolved .",
+          "speaker": "Grad F",
+          "supports": "dissent"
         }
       ],
       "extraction_confidence": 0.9
@@ -474,13 +686,13 @@
       "status": "unclear",
       "alternatives": [],
       "rationale": [
-        "Discussion about potential glitches, email overload, and the need for an easy response method."
+        "Discussion about potential glitches, email overload, and the need for an easy response method"
       ],
       "conditions": [
-        "No explicit decision or chosen method is stated."
+        "No explicit decision or chosen method"
       ],
       "dissent": [
-        "Postdoc A suggests simply replying to the email."
+        "Postdoc A suggests simply replying to the email"
       ],
       "owner": null,
       "approver": null,
@@ -496,7 +708,7 @@
           "supports": "rationale"
         },
         {
-          "quote": "Postdoc A: Yeah .",
+          "quote": "But why shouldn't they just {pause} email back ? I don't see there 's a problem.",
           "speaker": "Postdoc A",
           "supports": "dissent"
         }
@@ -509,14 +721,14 @@
       "chunk_id": "QMS_ACA_TR_000_c011",
       "schema_version": "1.0.0",
       "decision": "The decision on how to send out the meeting transcripts was not made.",
-      "topic": "transcript sending",
+      "topic": "transcript sending method",
       "status": "unclear",
       "alternatives": [],
       "rationale": [
         "Discussion about sending out transcripts, but no decision was made."
       ],
       "conditions": [
-        "The decision is pending further discussion and checking of transcripts."
+        "The method of sending out transcripts needs to be checked for accuracy."
       ],
       "dissent": [],
       "owner": null,
@@ -530,12 +742,7 @@
         {
           "quote": "That's on my list.",
           "speaker": "Postdoc A",
-          "supports": "decision"
-        },
-        {
-          "quote": "It's gonna have to go through our regular process.",
-          "speaker": "PhD C",
-          "supports": "decision"
+          "supports": "owner"
         }
       ],
       "extraction_confidence": 0.9
@@ -545,15 +752,15 @@
       "source_id": "QMS_ACA_TR_000",
       "chunk_id": "QMS_ACA_TR_000_c011",
       "schema_version": "1.0.0",
-      "decision": "Postdoc A will have the NSA meetings transcripts done by Monday.",
-      "topic": "NSA meetings transcripts",
+      "decision": "Postdoc A will handle the NSA meetings transcripts.",
+      "topic": "NSA meetings transcripts handling",
       "status": "decided",
       "alternatives": [],
       "rationale": [
-        "Postdoc A stated they will have the transcripts done by Monday."
+        "Postdoc A mentioned they will handle the NSA meetings transcripts."
       ],
       "conditions": [
-        "No other conditions mentioned."
+        "Postdoc A will have the transcripts done by Monday."
       ],
       "dissent": [],
       "owner": "Postdoc A",
@@ -568,80 +775,68 @@
       "extraction_confidence": 0.9
     },
     {
-      "decision_id": "QMS_ACA_TR_000_c012_d1",
+      "decision_id": "QMS_ACA_TR_000_c011_d3",
       "source_id": "QMS_ACA_TR_000",
-      "chunk_id": "QMS_ACA_TR_000_c012",
+      "chunk_id": "QMS_ACA_TR_000_c011",
       "schema_version": "1.0.0",
-      "decision": "It was discussed that the missing backchannels in the transcripts might be due to them not being caught by the pre-segmenter.",
-      "topic": "missing backchannels",
-      "status": "unclear",
+      "decision": "IBM has not responded regarding the transcripts.",
+      "topic": "IBM response on transcripts",
+      "status": "decided",
       "alternatives": [],
       "rationale": [
-        "The discussion revolved around the possibility that the backchannels were not caught by the pre-segmenter."
+        "No response from IBM was mentioned."
       ],
-      "conditions": [
-        "It was mentioned that the detector for this issue might improve in the future."
-      ],
+      "conditions": [],
       "dissent": [],
       "owner": null,
       "approver": null,
       "evidence": [
         {
-          "quote": "Yeah . It 's gonna have to go through our regular process .",
-          "speaker": "PhD C",
-          "supports": "decision"
-        },
-        {
-          "quote": "I mean , the one thing I noticed is it did miss a lot of backchannels .",
-          "speaker": "Grad F",
+          "quote": "We heard anything from IBM ? at all ?",
+          "speaker": "Professor B",
           "supports": "rationale"
-        },
-        {
-          "quote": "Yes , absolutely . Absolutely .",
-          "speaker": "Grad F",
-          "supports": "decision"
-        },
-        {
-          "quote": "Do you suppose that was because they weren't caught by the pre - segmenter ?",
-          "speaker": "Postdoc A",
-          "supports": "rationale"
-        },
-        {
-          "quote": "Yes , absolutely . Absolutely .",
-          "speaker": "Grad F",
-          "supports": "decision"
         }
       ],
       "extraction_confidence": 0.9
     },
     {
-      "decision_id": "QMS_ACA_TR_000_c012_d2",
+      "decision_id": "QMS_ACA_TR_000_c012_d1",
       "source_id": "QMS_ACA_TR_000",
       "chunk_id": "QMS_ACA_TR_000_c012",
       "schema_version": "1.0.0",
-      "decision": "It was decided to send the transcripts corresponding to six meetings to the University of Washington.",
-      "topic": "sharing transcripts with University of Washington",
-      "status": "decided",
+      "decision": "It was discussed that the transcriber's uncertainty about certain parts of the transcripts is a good indication of the transcript's quality.",
+      "topic": "transcript quality",
+      "status": "unclear",
       "alternatives": [],
       "rationale": [
-        "The decision was made to share the transcripts with the University of Washington."
+        "The transcriber's uncertainty about certain parts indicates the quality of the transcript."
       ],
       "conditions": [
-        "It was mentioned that the University of Washington would be downloading the audio files."
+        "The discussion did not result in a decision or a clear course of action."
       ],
       "dissent": [],
       "owner": null,
       "approver": null,
       "evidence": [
         {
-          "quote": "So they 'll be doing that .",
+          "quote": "So , this is from one of the NSA meetings and , uh , if you're familiar with the diff format , the arrow to the left is what it was , and the arrow to the right is what it was changed to . So , um .",
           "speaker": "Postdoc A",
           "supports": "decision"
         },
         {
-          "quote": "Mm - hmm . Yeah , I pointed them to the set that Andreas put , uh , on the web so th if they want to compare directly with his results they can .",
-          "speaker": "PhD C",
-          "supports": "decision"
+          "quote": "The next one . This was about , uh , Claudia and {pause} she 'd been really b busy with stuff , such as waivers . Uh , OK . Um , next one . Um .",
+          "speaker": "Postdoc A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The transcriber was uncertain about that.",
+          "speaker": "Postdoc A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So she 's right to be uncertain.",
+          "speaker": "Postdoc A",
+          "supports": "rationale"
         }
       ],
       "extraction_confidence": 0.9
@@ -651,34 +846,28 @@
       "source_id": "QMS_ACA_TR_000",
       "chunk_id": "QMS_ACA_TR_000_c013",
       "schema_version": "1.0.0",
-      "decision": "It was decided to double-check the transcriptions of NSA meetings for jargon and foreign language terms.",
+      "decision": "It was decided to double-check the transcriptions of NSA meetings for terminology and jargon.",
       "topic": "transcription checking",
       "status": "decided",
       "alternatives": [],
       "rationale": [
-        "To improve the performance of the recognizer.",
-        "To get people's approval."
+        "The transcriptions contain a lot of jargon and terminology that needs to be checked.",
+        "Improvements in performance are expected when the checked versions are run through the recognizer."
       ],
       "conditions": [
-        "The checked versions will be run through the recognizer.",
-        "There are a lot of these in there."
+        "The checked versions are expected to improve performance substantially."
       ],
       "dissent": [],
       "owner": null,
       "approver": "Professor B",
       "evidence": [
         {
-          "quote": "I'm hoping that when the checked versions are run through the recognizer that you'll see substantial improvements in performance cuz the you know , there're a lot of these in there.",
+          "quote": "but , you know in this area it really does pay to , um {disfmarker} to double check and I 'm hoping that when the checked versions are run through the recognizer that you 'll see s substantial improvements in performance cuz the {disfmarker} you know , there 're a lot of these in there .",
           "speaker": "Postdoc A",
           "supports": "decision"
         },
         {
-          "quote": "But it's definitely good that these are fixed. I mean, obviously.",
-          "speaker": "PhD H",
-          "supports": "rationale"
-        },
-        {
-          "quote": "Yeah.",
+          "quote": "Yeah .",
           "speaker": "Professor B",
           "supports": "approver"
         }
@@ -721,18 +910,13 @@
           "supports": "decision"
         },
         {
-          "quote": "We have spare headsets.",
+          "quote": "I have them.",
           "speaker": "Postdoc A",
           "supports": "decision"
         },
         {
-          "quote": "I have W Well, the thing is, that if we have four people come to work for a day, I was hanging on to the others for spares,",
+          "quote": "Cambridge SoundWorks, just down the street.",
           "speaker": "Postdoc A",
-          "supports": "decision"
-        },
-        {
-          "quote": "Just buy them.",
-          "speaker": "Professor B",
           "supports": "decision"
         },
         {
@@ -741,8 +925,8 @@
           "supports": "decision"
         },
         {
-          "quote": "Cambridge SoundWorks, just down the street.",
-          "speaker": "Postdoc A",
+          "quote": "Grad F: W uh , could you email out the brand ?",
+          "speaker": "Grad F",
           "supports": "decision"
         }
       ],
@@ -753,13 +937,12 @@
       "source_id": "QMS_ACA_TR_000",
       "chunk_id": "QMS_ACA_TR_000_c014",
       "schema_version": "1.0.0",
-      "decision": "It was discussed to email out the brand of the new headphones.",
-      "topic": "emailing out the brand of new headphones",
+      "decision": "It was discussed to talk about disk space.",
+      "topic": "discussion about disk space",
       "status": "unclear",
       "alternatives": [],
       "rationale": [
-        "People are interested.",
-        "Grad F asked to email out the brand."
+        "Don wanted to talk about disk space."
       ],
       "conditions": [],
       "dissent": [],
@@ -767,13 +950,8 @@
       "approver": null,
       "evidence": [
         {
-          "quote": "Could you email out the brand?",
+          "quote": "Uh , the only one was Don wanted to, uh , talk about disk space yet again.",
           "speaker": "Grad F",
-          "supports": "decision"
-        },
-        {
-          "quote": "Oh, sure. Yeah. OK.",
-          "speaker": "Postdoc A",
           "supports": "decision"
         }
       ],
@@ -826,11 +1004,11 @@
       "status": "provisional",
       "alternatives": [],
       "rationale": [
-        "Grad F mentioned having some space on their drive."
+        "Grad F mentioned having some free space on their drive."
       ],
       "conditions": [],
       "dissent": [],
-      "owner": "Grad F",
+      "owner": null,
       "approver": null,
       "evidence": [
         {
@@ -839,40 +1017,50 @@
           "supports": "decision"
         }
       ],
-      "extraction_confidence": 0.9
+      "extraction_confidence": 0.8
     },
     {
       "decision_id": "QMS_ACA_TR_000_c016_d1",
       "source_id": "QMS_ACA_TR_000",
       "chunk_id": "QMS_ACA_TR_000_c016",
       "schema_version": "1.0.0",
-      "decision": "Professor B will prepare an annual report for DARPA, starting from papers and status reports.",
-      "topic": "preparation of annual report",
+      "decision": "Professor B will be putting together the annual report for DARPA.",
+      "topic": "annual report",
       "status": "decided",
       "alternatives": [],
       "rationale": [
         "DARPA asked for it.",
-        "The status reports are helpful."
+        "Professor B will gather information from papers, status reports, and possibly ask for more clarification."
       ],
       "conditions": [
-        "Professor B will end up bugging people for more clarification about stuff."
+        "The fiscal year starts in October, but the annual report is being written in July."
       ],
       "dissent": [],
       "owner": null,
       "approver": null,
       "evidence": [
         {
-          "quote": "I 'll be putting together stuff . I 'll do it , uh , you know , as much as I can without bothering people , just by looking at papers and status reports .",
+          "quote": "I 'll be putting together stuff.",
           "speaker": "Professor B",
           "supports": "decision"
         },
         {
-          "quote": "Uh , so I can grab stuff there . And if , uh {disfmarker} if I have some questions I 'll {disfmarker}",
+          "quote": "So anyway , I 'll be putting together stuff.",
           "speaker": "Professor B",
           "supports": "rationale"
         },
         {
-          "quote": "But , um , I 'm {disfmarker} I 'm sure before it 's all done , I 'll end up bugging people for more clarification about stuff .",
+          "quote": "I 'll do it , uh , you know , as much as I can without bothering people",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So DARPA just said do an annual report.",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't quite understand w w why we do an annual report that we 're writing in July.",
           "speaker": "Professor B",
           "supports": "decision"
         }
@@ -885,28 +1073,28 @@
       "chunk_id": "QMS_ACA_TR_000_c016",
       "schema_version": "1.0.0",
       "decision": "Grad F and PhD E will discuss the status of speech transcription and automatic transcription.",
-      "topic": "discussion about speech transcription and automatic transcription",
-      "status": "unclear",
+      "topic": "status of speech transcription and automatic transcription",
+      "status": "deferred",
       "alternatives": [],
       "rationale": [
-        "Grad F mentioned it."
+        "Grad F mentioned they were running late."
       ],
       "conditions": [
-        "They are running late."
+        "They will discuss it off-line later."
       ],
       "dissent": [],
       "owner": null,
       "approver": null,
       "evidence": [
         {
-          "quote": "So we were gonna do sort of status of speech transcription {disfmarker} automatic transcription , but we 're kind of running late . So .",
+          "quote": "So we were gonna do sort of status of speech transcription",
           "speaker": "Grad F",
           "supports": "decision"
         },
         {
-          "quote": "How long does it take you to save the data ?",
-          "speaker": "PhD E",
-          "supports": "decision"
+          "quote": "But we 're kind of running late.",
+          "speaker": "Grad F",
+          "supports": "rationale"
         }
       ],
       "extraction_confidence": 0.9
@@ -916,27 +1104,27 @@
       "source_id": "QMS_ACA_TR_000",
       "chunk_id": "QMS_ACA_TR_000_c017",
       "schema_version": "1.0.0",
-      "decision": "The schedule for the next meeting was set",
+      "decision": "The schedule for the next meeting was set.",
       "topic": "meeting schedule",
       "status": "decided",
       "alternatives": [],
       "rationale": [
-        "To discuss automatic transcription status and any real timely topics"
+        "Discussion about alternating the subject of the meeting and automatic transcription status."
       ],
       "conditions": [
-        "The team has not done anything since last week"
+        "No specific conditions stated."
       ],
       "dissent": [],
       "owner": null,
       "approver": null,
       "evidence": [
         {
-          "quote": "So now we have the schedule. So next week we'll do automatic transcription status, plus anything that's real timely.",
+          "quote": "So now we have the schedule.",
           "speaker": "Grad F",
           "supports": "decision"
         },
         {
-          "quote": "But we sort of failed.",
+          "quote": "Next week we 'll do automatic transcription status, plus anything that 's real timely.",
           "speaker": "Grad F",
           "supports": "decision"
         }
@@ -948,28 +1136,23 @@
       "source_id": "QMS_ACA_TR_000",
       "chunk_id": "QMS_ACA_TR_000_c017",
       "schema_version": "1.0.0",
-      "decision": "The team will work on automatic alignments of the background speech",
-      "topic": "automatic alignments",
+      "decision": "The paper for the ISCA Workshop on Prosody in Speech Recognition and Understanding was accepted.",
+      "topic": "paper acceptance",
       "status": "decided",
       "alternatives": [],
       "rationale": [
-        "To improve the accuracy of automatic alignments"
+        "Discussion about the accepted abstract for the workshop."
       ],
       "conditions": [
-        "The team has been experiencing problems with timed speech segments"
+        "The paper isn't due until August."
       ],
       "dissent": [],
       "owner": null,
       "approver": null,
       "evidence": [
         {
-          "quote": "And then, um, the new data that Don will start to process",
+          "quote": "We got our abstract accepted for this conference, um, workshop, ISCA workshop, in, um, New Jersey.",
           "speaker": "PhD E",
-          "supports": "decision"
-        },
-        {
-          "quote": "But, we haven't actually",
-          "speaker": "PhD H",
           "supports": "decision"
         }
       ],
@@ -980,28 +1163,29 @@
       "source_id": "QMS_ACA_TR_000",
       "chunk_id": "QMS_ACA_TR_000_c017",
       "schema_version": "1.0.0",
-      "decision": "The team's abstract was accepted for an ISCA workshop in New Jersey",
-      "topic": "abstract acceptance",
-      "status": "decided",
+      "decision": "A discussion about going to Eurospeech was proposed.",
+      "topic": "Eurospeech attendance",
+      "status": "provisional",
       "alternatives": [],
       "rationale": [
-        "The abstract was of poor quality but accepted quickly"
+        "Grad F expressing interest in going to Eurospeech."
       ],
       "conditions": [
-        "The paper isn't due until August"
+        "Discussion about whether to discuss it further.",
+        "Professor B's response: We'll discuss it."
       ],
       "dissent": [],
       "owner": null,
       "approver": null,
       "evidence": [
         {
-          "quote": "But, I mean, the good news is that that will have sort of the European experts in prosody",
-          "speaker": "PhD E",
+          "quote": "I 'd kinda like to go, if I could.",
+          "speaker": "Grad F",
           "supports": "decision"
         },
         {
-          "quote": "The abstracts were already due.",
-          "speaker": "PhD E",
+          "quote": "We 'll discuss it.",
+          "speaker": "Professor B",
           "supports": "decision"
         }
       ],

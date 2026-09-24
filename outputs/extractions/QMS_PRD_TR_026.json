@@ -1,0 +1,497 @@
+{
+  "source_id": "QMS_PRD_TR_026",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_026_c000_d1",
+      "source_id": "QMS_PRD_TR_026",
+      "chunk_id": "QMS_PRD_TR_026_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team was introduced.",
+      "topic": "introduction",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'm Bart ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "My name's Frank .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm {gap} .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Industrial Designer",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_026_c000_d2",
+      "source_id": "QMS_PRD_TR_026",
+      "chunk_id": "QMS_PRD_TR_026_c000",
+      "schema_version": "1.0.0",
+      "decision": "The project's aim was explained.",
+      "topic": "project aim",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The project aim is a new remote control. It has to be original, trendy, and user-friendly."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Our project aim is as you can see a new remote control . It has to be original , trendy , and user friendly .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_026_c000_d3",
+      "source_id": "QMS_PRD_TR_026",
+      "chunk_id": "QMS_PRD_TR_026_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team's roles were explained.",
+      "topic": "team roles",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "We've got the Marketing Expert for the trendy and user-friendly look.",
+        "And Industrial Designer there's also user-friendly and a bit original.",
+        "And we've got our User Interface Designer."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We've got the Marketing Expert for uh the trendy and user friendly look .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And Industrial Designer uh there's also user friendly and a bit original .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And we've got our User Interface Designer .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_026_c001_d1",
+      "source_id": "QMS_PRD_TR_026",
+      "chunk_id": "QMS_PRD_TR_026_c001",
+      "schema_version": "1.0.0",
+      "decision": "The roles and responsibilities for the remote control project were assigned.",
+      "topic": "project roles",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager explained the roles and responsibilities for the remote control project."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "['Industrial Designer', 'User Interface Designer', 'Marketing']",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The Industrial Designer is going to work on the working design, uh components design and a bit of the look and feel design.",
+          "speaker": "Project Manager",
+          "supports": "owner"
+        },
+        {
+          "quote": "The User Interface Designer is going to do the technical function design, user interface concept and user interface design.",
+          "speaker": "Project Manager",
+          "supports": "owner"
+        },
+        {
+          "quote": "The marketing expert is doing a little bit of user requirement specification, trend watching and project product ev evaluation.",
+          "speaker": "Project Manager",
+          "supports": "owner"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_026_c001_d2",
+      "source_id": "QMS_PRD_TR_026",
+      "chunk_id": "QMS_PRD_TR_026_c001",
+      "schema_version": "1.0.0",
+      "decision": "A training session was scheduled for learning to use the high-tech tools.",
+      "topic": "training session",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager mentioned a first tool training session."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Then we've got our first tool training.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_026_c001_d3",
+      "source_id": "QMS_PRD_TR_026",
+      "chunk_id": "QMS_PRD_TR_026_c001",
+      "schema_version": "1.0.0",
+      "decision": "The smart boards and shared folder were introduced as resources for the project.",
+      "topic": "resources",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager introduced the smart boards and shared folder as resources for the project."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We've got our shared folder, project documents.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And these are available on the smart boards as well, so if you have a document you wanna show, just open it from the folder.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_026_c002_d1",
+      "source_id": "QMS_PRD_TR_026",
+      "chunk_id": "QMS_PRD_TR_026_c002",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt",
+      "topic": null,
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "'Kay .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Another thing is you have to be uh a bit slow . 'Cause if you're going to draw like really fast then um the pen won't hold up .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Then the line width . I think seven will be nice .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Now you'll see my drawing capabilities .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "These are not very much , but uh {disfmarker} Uh , see you have to do it real slow . {vocalsound} Oh {gap}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So what {disfmarker} yeah it's {disfmarker} this is bit of the swordfish .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . Yeah .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "But it's close .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm thinking about a swordfish .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's a swordfish .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_PRD_TR_026_c003_d1",
+      "source_id": "QMS_PRD_TR_026",
+      "chunk_id": "QMS_PRD_TR_026_c003",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt",
+      "topic": "project finance",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "The team discussed the project finance, selling price, profit aim, international market, and production cost."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We move along to the project finance.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um as you can see, we um for our remote control, a selling price is uh twenty five Euros.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Our selling price is uh twenty five Euros.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Our profit aim is fifty million Euros.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um but that's all in the later stadium.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So we have to work together to reach our aims.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "We can do it international, so we have to focus on different kind of users, different kind of cultures, and different kind of trends as well.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um but that's all in the later stadium.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Our production cost um can be maximal twelve and a half Euros, so that's also a point we have to keep in mind, that we won't make remote controls with small televisions inside, and stuff like that. It won't work.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_026_c004_d1",
+      "source_id": "QMS_PRD_TR_026",
+      "chunk_id": "QMS_PRD_TR_026_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that a remote control that can operate multiple devices could be beneficial.",
+      "topic": "remote control functionality",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It would make it easier to operate multiple devices."
+      ],
+      "conditions": [
+        "The potential cost increase due to infra-red technology and battery status display needs to be considered."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And it also operates on infra-red, so you have to got the little device inside your room, and then you can operate it from the third or th or second floor.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So I think you can take minutes again.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "But only the I think that if you can put different kind of devices in one remote control, it makes it a lot easier as well.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So that's pretty handy when you have a video recorder or D_V_D_ player downstairs and you've got a link to your T_V_ on the second floor.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_026_c004_d2",
+      "source_id": "QMS_PRD_TR_026",
+      "chunk_id": "QMS_PRD_TR_026_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was suggested to add a battery status display to the remote control.",
+      "topic": "battery status display",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It would allow users to see how much battery is left."
+      ],
+      "conditions": [
+        "The potential cost increase needs to be considered."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But maybe just a little LED, I don't know.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So you can see how much is left in the battery.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But they'll also really drag up the production costs, so think we'll have to see about that too.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_026_c004_d3",
+      "source_id": "QMS_PRD_TR_026",
+      "chunk_id": "QMS_PRD_TR_026_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was suggested to make the remote control shock proof.",
+      "topic": "remote control durability",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Because the speaker's remote control tends to fall a lot."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "'cause my remote control tends to fall a lot.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_026_c004_d4",
+      "source_id": "QMS_PRD_TR_026",
+      "chunk_id": "QMS_PRD_TR_026_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was suggested to make the remote control waterproof.",
+      "topic": "remote control durability",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Unspecified reason."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Waterproof.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 6,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

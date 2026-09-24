@@ -1,0 +1,144 @@
+{
+  "source_id": "QMS_PRD_TR_007",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_007_c000_d1",
+      "source_id": "QMS_PRD_TR_007",
+      "chunk_id": "QMS_PRD_TR_007_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the design and features of the remote control, including its size, color, and potential gimmicks.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The remote control needs to be trendy, have a lot of neat features, a good design, and a gimmick."
+      ],
+      "conditions": [
+        "The remote control should be sold for twenty five Euros."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh , making a profit of fifty million Euros .",
+          "speaker": "Project Manager",
+          "supports": "condition"
+        },
+        {
+          "quote": "So yeah , I've {disfmarker} The only the only remote controls I've used usually come with the television , and they're fairly basic .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah the universal ones . Yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But to sell it for twenty five you need a lot of neat features . For sure .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Slim .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , yeah .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Um well my first thoughts would be most remote controls are grey or black . As you said they come with the T_V_ so it's normally just your basic grey black remote control {gap}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "so maybe we could think about colour ?",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The keyrings , yeah yeah .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "being as a Marketing Expert I will like to say like before deciding the cost of this remote control or any other things we must see the market potential for this product like what is the competition in the market ? What are the available prices of the other remote controls in the prices ?",
+          "speaker": "Marketing",
+          "supports": "condition"
+        },
+        {
+          "quote": "They really want to have something good , having a good design in their hands ,",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "so , yes ,",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Uh , what do we think a {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "We're {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Industrial Designer: Uh , what do we think a good size would be for this ? {gap}",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_007_c001_d1",
+      "source_id": "QMS_PRD_TR_007",
+      "chunk_id": "QMS_PRD_TR_007_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to allocate tasks for designing the remote control.",
+      "topic": "task allocation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To make the remote control within the budget of twelve Euros fifty."
+      ],
+      "conditions": [
+        "Other instructions will come from the personal coach."
+      ],
+      "dissent": [],
+      "owner": "{'User Interface': 'look into a bit, shapes and suggested shades or whatever', 'Marketing': 'look at competition and design'}",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So you do the looking around at other remote controls .",
+          "speaker": "Project Manager",
+          "supports": "owner"
+        },
+        {
+          "quote": "And you look at competition and design .",
+          "speaker": "Project Manager",
+          "supports": "owner"
+        },
+        {
+          "quote": "Shapes and colours and um basically how to make it attractive .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 2,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

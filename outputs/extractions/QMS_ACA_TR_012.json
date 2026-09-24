@@ -1,0 +1,1205 @@
+{
+  "source_id": "QMS_ACA_TR_012",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_012_c000_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c000",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "signal processing",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "Jane is not present"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It also should be later.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because Jane uh is not here yet.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c001_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c001",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that normalization factor probably needs improvement due to different people talking different amounts.",
+      "topic": "normalization factor",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "When the researcher looks at examples of the data and can not see a change in how big the signal is, it's a problem."
+      ],
+      "conditions": [
+        "Normalization factor probably is not a good measure."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Then , that 's a problem right there . So . I think you should at least be able , doing casual looking and can get the sense , \" Hey , there 's something there . \" and then you can play around with the measures . And when he 's looking in the log domain he 's not really seeing it .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So . And when he 's looking in straight energy he is , so that 's a good place to start .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "There 's a good chance then given that different people do talk different amounts that there is still a lot more to be gained from gain norm normalization with some sort",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c001_d2",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c001",
+      "schema_version": "1.0.0",
+      "decision": "It was agreed that in addition to gain norm normalization, there should be stuff related to pitch and harmonics.",
+      "topic": "pitch and harmonics",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But we were agreed that in addition to that uh there should be s stuff related to pitch and harmonics and so forth .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c002_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was agreed to examine the distribution of unnormalized log energy.",
+      "topic": "data analysis",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To start with the most basic thing",
+        "To look at the distribution before getting complicated"
+      ],
+      "conditions": [
+        "The distribution's shape might not be assumed",
+        "The results were not yet available"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But we were agreed that in addition to that uh there should be s stuff related to pitch and harmonics and so forth .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "That 's a good q",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "That 's uh cuz I 'd mentioned scatter plots before but she 's right ,",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I mean , even before you get the scatter plots , just looking at a single feature uh , looking at the distribution , is a good thing to do .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c003_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to look at the distribution of two things in one dimension before looking at more complicated things.",
+      "topic": "data analysis approach",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It's harder to interpret a table with standard deviation, variance, and so forth than just looking at the same kind of picture."
+      ],
+      "conditions": [
+        "There will be overlap between the distributions, but the question is if it's a reasonable feature with some separation."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But I had maybe made it too complicated by suggesting early on, that you look at scatter plots because that's looking at a distribution in two dimensions. Let's start off just in one, uh , with this feature.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "And she's right, that a having a having having this table, with a whole bunch of things, with the standard deviation, the variance and so forth, it's harder to interpret than just looking at the same kind of picture you have here.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "There'll be overlap between the distributions, but the question is, 'If it's a reasonable feature at all, there's some separation.'",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c003_d2",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that pitch-related things are likely to help.",
+      "topic": "usefulness of pitch-related things",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Pitch-related things are a really likely candidate to help."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Um And then we w I think we're agreed that pitch-related things are going to be a really likely candidate to help.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c003_d3",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to feed all of these features into some discriminative system.",
+      "topic": "data analysis approach",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Even if one of the features does a good job at one type of overlap, another feature might do a good job at another type of overlap."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And so even if one of the features does a good job at one type of overlap, another feature might do a good job at another type of overlap.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c004_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c004",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "method for analyzing overlaps",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different methods, but no decision was made."
+      ],
+      "conditions": [
+        "Need to simplify the analysis, but no specific method chosen."
+      ],
+      "dissent": [
+        "No clear dissent stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And so even if one of the features does a good job at one type of overlap , another feature might do a good job at another type of overlap .",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Right . I mean the reason I had suggested the scatter f p features is I used to do this a lot , when we had thirteen or fifteen or twenty features to look at .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well , especially for normalizing .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "I had the same intuition last week .",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        },
+        {
+          "quote": "That was a great overlap by the way .",
+          "speaker": "Grad A",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c005_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c005",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "analyzing overlapping in conversations",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different types of overlap, categorizing some of them, and labeling data for analysis."
+      ],
+      "conditions": [
+        "Don, a new student, will be starting again in mid-January and is interested in trying to distinguish the types of overlap."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Or {disfmarker} or what if what if the equipment {disfmarker} what if the equipment adjusts somehow ,",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or they get louder .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "there 's some equalizing in there ?",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah or {disfmarker}",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , no we don't have that .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "But I think that 's what I was saying about different types of overlap .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK .",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Saturation .",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        },
+        {
+          "quote": "There are {disfmarker}",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So . It {disfmarker}",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Actually the s new student , Don , who um Adam has met , and he was at one of our meetings {disfmarker}",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "He 's {pause} getting his feet wet and then he 'll be starting again {pause} in mid - January . He 's interested in trying to distinguish the types of overlap . I don't know if he 's talked with you yet . But in sort of honing in on these different types",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . I don't consider that possibility .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So maybe {disfmarker}",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So you don't have to worry about it . And here 's the three types of overlaps .",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Um .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Consider different class of overlap ?",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , that we would be working on anyway .",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Then maybe {pause} you can try some different things for those three cases , and see if that helps , or {disfmarker}",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah . Yeah . This is the thing I {disfmarker}",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I comment with you before , that uh we have a great variation of th situation of overlapping .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And the behavior for energy is , uh log energy , {vocalsound} is not uh the same all the time .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But I guess I was just saying that {disfmarker}",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c006_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c006",
+      "schema_version": "1.0.0",
+      "decision": "The group decided to reconsider the energy analysis approach.",
+      "topic": "energy analysis approach",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The group realized they hadn't done something simple in their energy analysis."
+      ],
+      "conditions": [
+        "If they generate something like that just for the energy and see, and if they have smaller, more coherent groups to look at later."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , uh if you i if there close to things it does",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "This often happens, you do fairly complicated things, and then you stand back from them and you realize that you haven't done something simple.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And then that should give us some indication between those, should give us some indication of whether there's anything to be achieved from energy at all.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c007_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c007",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made in this excerpt",
+      "topic": "coding of types of overlaps",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the coding of types of overlaps, but no decision was made."
+      ],
+      "conditions": [
+        "Discussion about the coding of types of overlaps is a research effort in and of itself."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I wanted to ask just s something on the end of this top topic . So , when I presented my results about the uh distribution of overlaps and the speakers and the profiles of the speakers , at the bottom of that I did have a proposal ,",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        },
+        {
+          "quote": "and I had plan to go through with it , of co coding the types of overlaps that people were involved in s just with reference to speaker style so , you know , with reference",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        },
+        {
+          "quote": "but it you know it 's like it sounds like you also have uh something in that direction .",
+          "speaker": "Postdoc B",
+          "supports": "dissent"
+        },
+        {
+          "quote": "We have nothing that 'd be great .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "If you 're w willing to do that or",
+          "speaker": "PhD D",
+          "supports": "owner"
+        },
+        {
+          "quote": "It would be much better if you can do it . You 'd be much better at doing it also because",
+          "speaker": "PhD D",
+          "supports": "owner"
+        },
+        {
+          "quote": "It would be interesting , though , to talk , maybe not at the meeting , but at some other time about what are the classes .",
+          "speaker": "Grad A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "That 'd be great .",
+          "speaker": "PhD D",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c008_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c008",
+      "schema_version": "1.0.0",
+      "decision": "The decision was to consider only the small window near the overlapping zone for normalization.",
+      "topic": "normalization window",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The portion of the backchannel won't effect anything."
+      ],
+      "conditions": [
+        "The window shouldn't be larger than the backchannel."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The decision was to consider only the small window near the overlapping zone for normalization.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "The portion of the backchannel won't effect anything.",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The window shouldn't be larger than the backchannel.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c009_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to consider only the small window near the overlapping zone for analysis.",
+      "topic": "analysis window",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the small window being more manageable."
+      ],
+      "conditions": [
+        "The effectiveness of the small window depends on the normalization."
+      ],
+      "dissent": [
+        "Grad A mentioned they might not have a forced alignment."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "This is the the idea , to consider only the the small window near near near the the overlapping zone .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "You shouldn't be more than like You should definitely not be three times as big as your backchannel .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "I wasn't planning to label the time marks .",
+          "speaker": "Postdoc B",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c009_d2",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to use a forced alignment for time marks.",
+      "topic": "forced alignment",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the need for a forced alignment to get time marks."
+      ],
+      "conditions": [
+        "The group acknowledged they wouldn't be able to do any work without a forced alignment."
+      ],
+      "dissent": [
+        "Grad A mentioned they might not have a forced alignment."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But it is definitely true that we need to have the time marks ,",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well again for the close mike stuff , we could come up take a s take the Switchboard system or something ,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I guess we could do a very bad one with Broadcast News .",
+          "speaker": "Grad A",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c009_d3",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to use a different system for close-mike stuff.",
+      "topic": "close-mike system",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about using a different system for close-mike stuff."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well again for the close mike stuff , we could come up take a s take the Switchboard system or something ,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c010_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c010",
+      "schema_version": "1.0.0",
+      "decision": "The order of the Date and Time fields in the new forms was intentionally changed.",
+      "topic": "order of date and time fields",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The user fills out the first three fields and the researcher fills out the rest."
+      ],
+      "conditions": [
+        "The change was intentional."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it was intentional.",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "If you look at the form in front of you ? that you're going to fill out when you read the digits ? you'll see I've already filled in the date but not the time.",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The reason I put the time in, is so that the person who's extracting the digits, meaning me, will know where to look in the meeting, to try to find the digits.",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c011_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c011",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the differences between the old and new digit form.",
+      "topic": "discussion about digit forms",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Comparison between the old and new digit forms.",
+        "Discussion about the changes in the fields."
+      ],
+      "conditions": [
+        "The group is still discussing and comparing the forms."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "This would be a radical suggestion but",
+          "speaker": "Postdoc B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I could put instructions ? Nah .",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Ei - either that or maybe you could maybe write down when people start reading digits on that particular session .",
+          "speaker": "Postdoc B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I didn't realize there was 'uhoh I'm about to read this and I should'",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        },
+        {
+          "quote": "If your professional use, you’re gonna already have the date, and the session",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        },
+        {
+          "quote": "What ?",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "What ?",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well, because If your professional use, you’re gonna already have the date, and the session",
+          "speaker": "Postdoc B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The digit form doesn't have a 'for official use only' line . It just has a line, which is what you’re supposed to read .",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So the main thing that the person fills out um ... is the name and email and time ?",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "And there's an addition of the native language, which is a bit redundant .",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c012_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c012",
+      "schema_version": "1.0.0",
+      "decision": "It was not decided how to categorize the Region field for English variety",
+      "topic": "categorization of English variety",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad A expressed uncertainty about how to categorize the regions."
+      ],
+      "conditions": [
+        "The regions weren't developed in the database."
+      ],
+      "dissent": [
+        "Grad A asked if someone from a South Midland speaking region would know it."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I'm not sure what to do about the Region field for English variety. You know, when I wrote those down, I was thinking, 'You know, these are great if you're a linguist'.",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't know.",
+          "speaker": "PhD D",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I think if you're talking in terms of places, as opposed to names different people have given to different ways of talking, I would think North Midwest, and South Midwest would be more common than saying Midland, right, I mean, I went to school in...",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c012_d2",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c012",
+      "schema_version": "1.0.0",
+      "decision": "A suggestion was made to include a map with the regions",
+      "topic": "inclusion of a map",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "PhD D suggested including a map with the regions."
+      ],
+      "conditions": [
+        "The map would take less time and be cute."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Because it takes less time, and it's sort of cute",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c014_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c014",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the possibility of asking participants about their English accent instead of their location.",
+      "topic": "participant information collection",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It could provide good information on where they're from, but it doesn't tell us anything about their English accent."
+      ],
+      "conditions": [
+        "Some participants might find it difficult to identify their accent."
+      ],
+      "dissent": [
+        "Grad A suggested asking 'What variety of English do you speak' instead of 'Where are you from' to avoid confusion."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe we should put a little map and say ' put an X on where you 're from '",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "No , that's",
+          "speaker": "PhD D",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And if you put the state ?",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well well we sort of",
+          "speaker": "Grad A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I mean it gives us good information on where they're from, but that doesn't tell us anything",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "And {disfmarker}",
+          "speaker": "Grad A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I 'd say , uh , ' Boston , New York City , the South and Regular ' .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So let 's make it up . S I mean , who cares . Right ? We can make up our own",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c015_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c015",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed changing the instructions for the accent characterization task to be more open-ended.",
+      "topic": "accent characterization task instructions",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To allow for a more comprehensive response and to understand the granularity."
+      ],
+      "conditions": [
+        "The group acknowledged potential difficulties in interpreting responses due to varying responses."
+      ],
+      "dissent": [
+        "Grad A initially proposed taking out 'Northern' and not changing the instructions beyond that, but the group discussed the benefits of a more open-ended approach."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I propose, take out Northern, add, don't know.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I was suggesting not having the options, just having them",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't know if I read this form, I think they're going to answer the same way if you say, 'What's the variety of English do you speak? Region.' as if you say 'what variety of region do you speak? Please characterize your accent?' They're going to answer the same way.",
+          "speaker": "Grad A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well, I was not sure that...",
+          "speaker": "Postdoc B",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Each one has pros and cons",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's true.",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "What if we put in both?",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's what the 'Other' is for.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And {disfmarker} Would people {disfmarker} No, I mean what if we put in both ways of asking them? So. One is {pause} Region and the another one is 'if you had to characterize yourself {disfmarker} your accent, what would you say?'",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c016_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c016",
+      "schema_version": "1.0.0",
+      "decision": "The group decided to change the regions list to include 'South Midwest' for Kansas, 'North Midwest' for Colorado, and 'Western' for the rest.",
+      "topic": "regions list",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To better represent the regions and reduce the list size."
+      ],
+      "conditions": [
+        "The group acknowledged that there is variation in dialects in all regions."
+      ],
+      "dissent": [
+        "Grad A questioned whether 'Midwest' is one word."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So . th I 'm from Kansas , actually .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "And Colorado , right across the border , would be North Midland .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "And wouldn't South Midwest . Right ?",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "And wouldn't Yeah .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But ,",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But you do in the others , too . So .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I have no clue . I was going to say the only one that doesn't have a huge variety is New York City . But I have no idea whether it does or not .",
+          "speaker": "Grad A",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c017_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c017",
+      "schema_version": "1.0.0",
+      "decision": "The group decided to collect data on native language, region, time spent in an English-speaking country, and possibly the parent's native language.",
+      "topic": "data collection method",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To get at both granularity and ease on the subjects."
+      ],
+      "conditions": [
+        "The group will consider adding the parent's native language."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Actually , maybe we do one non - English one as well .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "That 's right . And it 's easy on the subjects .",
+          "speaker": "Postdoc B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yep .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Now I have one suggestion on the next section .",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yep , just which one . I think that 's fine .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c017_d2",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c017",
+      "schema_version": "1.0.0",
+      "decision": "The group decided to discuss the multitrans email.",
+      "topic": "multitrans email discussion",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad A sent an email on the multitrans."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Um , did you guys get my email on the multitrans ? That OK .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c018_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c018",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to try Dan's program first and consider changing the code if necessary.",
+      "topic": "program to use",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "using a different program",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Dan's program has the mixed signal and is usable enough.",
+        "It's not too bad to find places in the stream where things are happening with Dan's program."
+      ],
+      "conditions": [
+        "The team will try Dan's program first and consider changing the code if necessary.",
+        "The team will consider displaying things other than the waveform as a faster alternative."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Let's try it with Dan's and if that isn't enough, we can do it otherwise.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it is, cuz when I was playing with it, the mixed signal has it all in there. And so it's really not too bad to find places in the stream where things are happening.",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I'm just wondering if we can display things other than the waveform. So. Suppose we have a feature stream. And it's just, you know, a uni-dimensional feature, varying in time.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_012_c019_d1",
+      "source_id": "QMS_ACA_TR_012",
+      "chunk_id": "QMS_ACA_TR_012_c019",
+      "schema_version": "1.0.0",
+      "decision": "The multi-wave thing is proposed to be incorporated into the central code in the future version.",
+      "topic": "incorporation of multi-wave thing",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "The Transcriber central people responded favorably to the proposal."
+      ],
+      "conditions": [
+        "The multi-wave thing has not been incorporated yet."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So . Dan proposed it to the Transcriber central people , and it 's likely that uh {disfmarker} So . And {disfmarker} and they responded favorably looks as though it will be incorporated in the future version .",
+          "speaker": "Postdoc B",
+          "supports": "decision"
+        },
+        {
+          "quote": "They said that the only reason they hadn't had the multi the parallel uh stream one before was simply that {pause} they hadn't had time to do it .",
+          "speaker": "Postdoc B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    }
+  ],
+  "chunks_processed": 19,
+  "chunks_failed": [
+    "QMS_ACA_TR_012_c013"
+  ],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

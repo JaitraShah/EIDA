@@ -1,0 +1,520 @@
+{
+  "source_id": "QMS_ACA_TR_008",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_008_c000_d1",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c000",
+      "schema_version": "1.0.0",
+      "decision": "The block diagram for the top row will be the same as the bottom row, but without low-pass filtering",
+      "topic": "block diagram",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The TI-digits part is not available yet",
+        "The results are very close whatever the system for TI-digits"
+      ],
+      "conditions": [
+        "The numbers have not been put together into a single number representing the result yet"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "For the first yellow line you mean ?",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah so it's uh basically the same except that we don't have this uh low - pass filtering so we have only two streams.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But yeah. Generally what you observe with TI-digits is that the results are very close whatever the system.",
+          "speaker": "PhD C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "OK so that should be pretty easy to do and that would be good",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c001_d1",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c001",
+      "schema_version": "1.0.0",
+      "decision": "A second silence detection is not possible due to a large delay on the feature computation.",
+      "topic": "second silence detection",
+      "status": "rejected",
+      "alternatives": [],
+      "rationale": [
+        "There's no room left for any silence detector at the server side because of the delay."
+      ],
+      "conditions": [
+        "The team is still working on reducing the delay of the silence detector."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "No .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh we can't do it . Oh OK .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "For that we",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Too bad . Good idea , but can't do it .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c001_d2",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c001",
+      "schema_version": "1.0.0",
+      "decision": "Low-pass filter cepstrum might help in a couple places.",
+      "topic": "low-pass filter cepstrum",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "It looks like it you know maybe could help in a couple places."
+      ],
+      "conditions": [
+        "This is a provisional decision, more analysis is needed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But it looks like it you know maybe could help in a couple places.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c001_d3",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c001",
+      "schema_version": "1.0.0",
+      "decision": "A weighted measure should be compared to the current method because it might even come out better.",
+      "topic": "weighted measure",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "When we do this weighted measure we should compare the two cuz it might even come out better."
+      ],
+      "conditions": [
+        "This is a provisional decision, more analysis is needed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I would put that one also as a maybe .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c002_d1",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to run significance tests to determine the significance of small differences in word error rates.",
+      "topic": "significance tests",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "To know the numbers of the test sets."
+      ],
+      "conditions": [
+        "The sizes of the test sets were not specified."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "we could run some kind of significance tests",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "since these well also just to know the numbers",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c003_d1",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to include the silence of the MLP in addition to the KLT outputs.",
+      "topic": "inclusion of silence and KLT outputs",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Because when we apply the KLT, we don't keep all the dimensions after the KLT."
+      ],
+      "conditions": [
+        "It's not clear here."
+      ],
+      "dissent": [
+        "Professor B initially questioned the inclusion of the silence in addition to the KLT outputs, but eventually agreed."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And we not s we are not sure if we pick the silence.",
+          "speaker": "PhD D",
+          "supports": "dissent"
+        },
+        {
+          "quote": "So we try to add the silence also in addition to the these twenty - eight dimensions.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "And with the all the output of the combo.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c003_d2",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c003",
+      "schema_version": "1.0.0",
+      "decision": "Professor B suggested to also consider the second row with the combo stuff.",
+      "topic": "consideration of the second row",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor B thought that was the second row."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and then um if we can um",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c003_d3",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was agreed that the same ones should be looked at.",
+      "topic": "agreement on which ones to look at",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor B agreed with PhD C's choice."
+      ],
+      "conditions": [
+        "Given that they have to take the filt ones out of the running because of this delay problem."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "but I just would add the these",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c003_d4",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to operate with something that will be provided tomorrow.",
+      "topic": "operating with something provided tomorrow",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "PhD C mentioned that Dave promised to get them something tomorrow."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and then we 'll operate with that",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c003_d5",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed whether the weighting scheme of forty, thirty-five, twenty-five is on percentages or raw errors.",
+      "topic": "weighting scheme interpretation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor B asked about the interpretation of the weighting scheme."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "but I mean what 's the these last row mean ?",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "when they 're using this weighting scheme of forty , thirty - five , twenty - five is that on the percentages or on the raw errors ? I guess it 's probably on the percentages right ?",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c004_d1",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c004",
+      "schema_version": "1.0.0",
+      "decision": "The decision to fix the system on Tuesday was made.",
+      "topic": "when to fix the system",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Because they could start the write-up soon and there are only minor differences between the data."
+      ],
+      "conditions": [
+        "The system descriptions format is not yet clear."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But we could",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "do we fix the system uh tomorrow or do we fix the system on Tuesday ?",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think we fixed on Tuesday , yeah . Yeah . Mm - hmm . Mm - hmm .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Write up something .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c005_d1",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to complete the work by Tuesday.",
+      "topic": "deadline",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "The deadline is Wednesday, but there is a time difference issue."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think we have to actually get it done Tuesday",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "maybe .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c005_d2",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to discuss potential research directions after the current work is completed.",
+      "topic": "research direction",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "maybe next meeting we can start talking a little bit about where we want to go from here uh in terms of uh the research.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c005_d3",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the idea of potential research directions, but did not decide on any specific ideas.",
+      "topic": "research direction",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Oh , Stephane always has these great ideas and oh , but uh we don't have time.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c006_d1",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c006",
+      "schema_version": "1.0.0",
+      "decision": "PhD C suggests trying a fourth architecture with a single KLT.",
+      "topic": "architecture experiment",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "three architectures",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "PhD C thinks it might be worth focusing on this architecture."
+      ],
+      "conditions": [
+        "If they can fit it in."
+      ],
+      "dissent": [],
+      "owner": "PhD C",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think we 'll try to focus on these three architectures and perhaps I was thinking also a fourth one with just a single KLT because we did not really test that",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_008_c006_d2",
+      "source_id": "QMS_ACA_TR_008",
+      "chunk_id": "QMS_ACA_TR_008_c006",
+      "schema_version": "1.0.0",
+      "decision": "Professor B mentions the offer of a server farm of IBM machines from Jeff at the University of Washington.",
+      "topic": "computing resources",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor B is informing the group about the offer."
+      ],
+      "conditions": [
+        "If they have big jobs and want to run them."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So . It 's uh when he was here eh uh he used i not only every machine here but every machine on campus as far as I could tell , so in some ways he just got his payback , but uh again I don't know if we 'll end up with that's an offer . OK well uh you guys doing great stuff so that 's that's really neat and uh we 'll uh uh go don't think we need to um Oh well the other thing I guess that I will say is that uh the digits that we 're gonna record momentarily is starting to get into a pretty good size collection and um in addition to the SpeechDat stuff we will have those to work with really pretty soon now so that's another source of data . Um which is s under somewhat better control and that we can make measurements of the room the uh that uh you know if we feel there's other measurements we don't have that we 'd like to have we can make them and uh Dave and I were just talking about that a little while ago so uh that's another possibility for this this kind of work .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 7,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

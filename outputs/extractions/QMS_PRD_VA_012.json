@@ -1,0 +1,372 @@
+{
+  "source_id": "QMS_PRD_VA_012",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_VA_012_c000_d1",
+      "source_id": "QMS_PRD_VA_012",
+      "chunk_id": "QMS_PRD_VA_012_c000",
+      "schema_version": "1.0.0",
+      "decision": "The favorite animal of the User Interface is a rabbit",
+      "topic": "favorite animal",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It was guessed correctly by the Project Manager."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "That's my favourite one.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "A rabbit.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_012_c000_d2",
+      "source_id": "QMS_PRD_VA_012",
+      "chunk_id": "QMS_PRD_VA_012_c000",
+      "schema_version": "1.0.0",
+      "decision": "The favorite animal of Marketing is a human",
+      "topic": "favorite animal",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It was guessed correctly by the Industrial Designer."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "A human",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "A human, yay.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_012_c000_d3",
+      "source_id": "QMS_PRD_VA_012",
+      "chunk_id": "QMS_PRD_VA_012_c000",
+      "schema_version": "1.0.0",
+      "decision": "The favorite animal of Industrial Designer is unclear",
+      "topic": "favorite animal",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The favorite animal of Industrial Designer was not guessed correctly."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Is the white {disfmarker} okay.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_012_c001_d1",
+      "source_id": "QMS_PRD_VA_012",
+      "chunk_id": "QMS_PRD_VA_012_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be colourful.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "black remote control",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Nobody has colourful remote controls."
+      ],
+      "conditions": [
+        "The remote control should be robust and child-proof."
+      ],
+      "dissent": [
+        "User Interface Designer thinks colourful remote controls are not practical."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "No, that's a good idea.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "it has to be nice looking, colourful, maybe",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "but this one could be I dunno, purple or blue",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_VA_012_c001_d2",
+      "source_id": "QMS_PRD_VA_012",
+      "chunk_id": "QMS_PRD_VA_012_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be unbreakable.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The remote control should be robust because it will be used by a child."
+      ],
+      "conditions": [
+        "The remote control should be child-proof."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it has to be very robust.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "it has to be uh wha [gap] baby proof",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "So they have to be waterproof maybe ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_VA_012_c001_d3",
+      "source_id": "QMS_PRD_VA_012",
+      "chunk_id": "QMS_PRD_VA_012_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a child lock.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The remote control should be child-proof."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Ah .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.7
+    },
+    {
+      "decision_id": "QMS_PRD_VA_012_c002_d1",
+      "source_id": "QMS_PRD_VA_012",
+      "chunk_id": "QMS_PRD_VA_012_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be small, palm-sized, and have a changeable color frame.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Easier to hold, less prone to misclicks."
+      ],
+      "conditions": [
+        "The design should avoid extremes in size."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So you you think it's better if small than bigger.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just to hold it.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But uh what would be different from this, from the others?",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "No, not too small, yeah.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_VA_012_c002_d2",
+      "source_id": "QMS_PRD_VA_012",
+      "chunk_id": "QMS_PRD_VA_012_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should not have a screen.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Too complex and expensive."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So, some kind of idea with um um {vocalsound} cellular phone with a a screen that will tell you what {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "No, no screens, it's too complex.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_VA_012_c003_d1",
+      "source_id": "QMS_PRD_VA_012",
+      "chunk_id": "QMS_PRD_VA_012_c003",
+      "schema_version": "1.0.0",
+      "decision": "The design for the remote control will have adaptability for both right-handed and left-handed users.",
+      "topic": "remote control design",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "non-adaptable remote control",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about making the remote control adaptable for both right-handed and left-handed users."
+      ],
+      "conditions": [
+        "Discussion about the number of actions to be implemented in the remote control."
+      ],
+      "dissent": [
+        "Marketing mentioned they only use three or four channels but did not object to the adaptable design."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so tha your switch on and off should be on",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Adaptable.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Maybe , if if it's possible , yeah .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "If it {disfmarker} if we want a universal remote control that we sa like we say before it may may need more than three mm three button , three mm possibilities , ye yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "But for standard actions you usually what do you do , you change channels , and nothing else .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because I'm only using three or four channels but {disfmarker} {vocalsound}",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_VA_012_c004_d1",
+      "source_id": "QMS_PRD_VA_012",
+      "chunk_id": "QMS_PRD_VA_012_c004",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt.",
+      "topic": "unspecified",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I think we have full of ideas.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "We're going to meet again in thirty minutes and um I want you to work on these ideas and try to make a um the ones important and what are the one that we don't want.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Meeting's over?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    }
+  ],
+  "chunks_processed": 5,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

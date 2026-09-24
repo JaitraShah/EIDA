@@ -1,0 +1,272 @@
+{
+  "source_id": "QMS_PRD_TR_049",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_049_c000_d1",
+      "source_id": "QMS_PRD_TR_049",
+      "chunk_id": "QMS_PRD_TR_049_c000",
+      "schema_version": "1.0.0",
+      "decision": "The Industrial Designer will be responsible for the interface design.",
+      "topic": "design responsibilities",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Industrial Designer stated they will be doing the interface design."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Industrial Designer",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'm doing the interface.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Are you using the interface?",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_049_c000_d2",
+      "source_id": "QMS_PRD_TR_049",
+      "chunk_id": "QMS_PRD_TR_049_c000",
+      "schema_version": "1.0.0",
+      "decision": "The Project Manager will be responsible for the industrial design.",
+      "topic": "design responsibilities",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager took responsibility for the industrial design."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Project Manager",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'll for industrial design.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_049_c000_d3",
+      "source_id": "QMS_PRD_TR_049",
+      "chunk_id": "QMS_PRD_TR_049_c000",
+      "schema_version": "1.0.0",
+      "decision": "The roles for the design project will be assigned from the email received from the account manager.",
+      "topic": "role assignment",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team agreed that the roles for the design project will be assigned from the email received from the account manager."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Our responsibilities will be assigned when we in our mail we received from the account manager.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_049_c001_d1",
+      "source_id": "QMS_PRD_TR_049",
+      "chunk_id": "QMS_PRD_TR_049_c001",
+      "schema_version": "1.0.0",
+      "decision": "A speech recognition interface for the remote control was proposed.",
+      "topic": "remote control interface",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "It would make the remote control more useful."
+      ],
+      "conditions": [
+        "The cost of including a lot of technology on the remote control was a concern."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe you can have a speech recognition interface. You just tell the television I want...",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think if we include a lot of technology on the remote control it will be very costly.",
+          "speaker": "Project Manager",
+          "supports": "condition"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_049_c002_d1",
+      "source_id": "QMS_PRD_TR_049",
+      "chunk_id": "QMS_PRD_TR_049_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed using speech interface to reduce the number of buttons on the remote control.",
+      "topic": "remote control interface",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Speech interface would make the remote control more natural and reduce the number of buttons.",
+        "The idea of using speech to reduce the button count was discussed."
+      ],
+      "conditions": [
+        "The technical feasibility of implementing this idea was discussed.",
+        "The availability of X_M_L_ format or similar for TV programmes was mentioned."
+      ],
+      "dissent": [
+        "The Industrial Designer thought it might be technically tricky to achieve this."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You can use uh well for example anything . The idea of using speech to reduce the button , but uh and it's more natural . Yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think if you want t to choose uh from a list of programme or something like that you you may have to to use uh w uh I dunno",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "So it's more powerful . Yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "No . No , because you see now all the T_V_ programmes are available on the webs . They they are {disfmarker} they are {disfmarker} they are available in X_M_L_ format or whatever the format . We don't care . We just say that this are some content . We just want to retrieve the content and then classi sort them by the types of programmes . Some of the websites they already provide this service ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "This is {gap} good idea .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_049_c003_d1",
+      "source_id": "QMS_PRD_TR_049",
+      "chunk_id": "QMS_PRD_TR_049_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed that the remote control should allow users to choose content or channels.",
+      "topic": "remote control functionality",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Both options allow users to navigate the content."
+      ],
+      "conditions": [
+        "The team needs to find a way to gather information about the contents."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we have both. The user can choose with which one they want, right?",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "By content or by channel.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_049_c003_d2",
+      "source_id": "QMS_PRD_TR_049",
+      "chunk_id": "QMS_PRD_TR_049_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team acknowledged the challenge of browsing by content.",
+      "topic": "browsing by content",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Browsing by content is a little bit tricky."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think that's the thing the things to do",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_049_c004_d1",
+      "source_id": "QMS_PRD_TR_049",
+      "chunk_id": "QMS_PRD_TR_049_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to discuss the functional designer aspect in the next meeting.",
+      "topic": "discussion topic",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "The team needs to reflect and gather more information."
+      ],
+      "conditions": [
+        "The team will meet again in about 5 minutes to discuss other aspects."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think that's the things to do",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So we are {disfmarker} we'll discuss it {disfmarker} we will get some information in the next meeting , so for now we get uh the funct this is the functional designer {gap} ? That's the first aspect . Right . We will {gap} get information and then we'll come back in . {gap} .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay . Thank you everybody . {vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Okay . Well thank you all {gap} . {vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    }
+  ],
+  "chunks_processed": 5,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

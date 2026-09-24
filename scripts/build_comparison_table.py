@@ -17,6 +17,7 @@ partial run never silently produces a complete-looking table.
 
     python scripts/build_comparison_table.py
     python scripts/build_comparison_table.py --graphrag 0.15 --graphrag-note "15 meetings, local search"
+    # scripts/run_graphrag_comparison.py prints the exact command, incl. --graphrag-lex
 """
 
 from __future__ import annotations
@@ -85,6 +86,8 @@ def main(argv=None) -> int:
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--graphrag", type=float, default=None,
                     help="GraphRAG completeness (0-1) if you ran it end-to-end")
+    ap.add_argument("--graphrag-lex", type=float, default=None,
+                    help="GraphRAG lexical completeness (0-1); scripts/run_graphrag_comparison.py prints both")
     ap.add_argument("--graphrag-note", default="")
     args = ap.parse_args(argv)
 
@@ -111,7 +114,7 @@ def main(argv=None) -> int:
         f"| EDIA + CoT | {cell(cot['lex'] if cot else None)} | "
         f"{cell(cot['sem'] if cot else None)} | "
         f"{cell(cot['halluc'] if cot else None)} | CoT helps reasoning at answer time, not retrieval |",
-        f"| GraphRAG | — | "
+        f"| GraphRAG | {cell(args.graphrag_lex) if args.graphrag_lex is not None else '—'} | "
         f"{cell(args.graphrag)} | — | Designed for static structured text, not "
         f"conversational multi-speaker data"
         + (f" ({args.graphrag_note})" if args.graphrag_note else

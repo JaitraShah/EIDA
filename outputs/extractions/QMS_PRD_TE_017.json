@@ -1,0 +1,570 @@
+{
+  "source_id": "QMS_PRD_TE_017",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TE_017_c001_d1",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c001",
+      "schema_version": "1.0.0",
+      "decision": "Industrial Designer proposed using an infrared base for the remote control.",
+      "topic": "remote control design",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "laser technology",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "It's cheaper and less technology than laser.",
+        "For the cheap price we want to have infrared control."
+      ],
+      "conditions": [
+        "The cost of the remote control is approximately 12-12.5.",
+        "The findings inside the system are a bulb and an infrared bulb."
+      ],
+      "dissent": [],
+      "owner": "Industrial Designer",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I propose a nifra infrared base.",
+          "speaker": "Industral Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think that it is better.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think it's cheaper than laser, so",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "You can move to the next slide, so.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c002_d1",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c002",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about the type of connection between the remote control and the TV.",
+      "topic": "type of connection between remote control and TV",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "cable",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "wireless",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about feasibility, cost, and practicality of both options."
+      ],
+      "conditions": [
+        "Need to research or ask people about their preference for wireless or wired remote control."
+      ],
+      "dissent": [
+        "Industrial Designer expressed a preference for both wired and wireless options."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it's I think it should be wire wireless re remote con",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "but Industrial Designer , do you think that it will be feasible to have uh linked or to have link between the remote control and the television ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I always want to have you know ,",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I think wha wha with the wire it's mm cheaper but you know the wireless it's more practical , so .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think it's more your problem . Mayb maybe you have just to to kind of research or try to ask people if they will like something wireless or not .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c003_d1",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to design a wireless remote control.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The usability of a wireless remote control was discussed."
+      ],
+      "conditions": [
+        "If the wireless remote control is lost, it may cause issues."
+      ],
+      "dissent": [],
+      "owner": "User Interface",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Design a wireless remote control.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just think of the problem.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "If when you have wireless remote control and if you lose it ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c003_d2",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to investigate the usability issues of the current remote control design.",
+      "topic": "remote control usability",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The usability issues of the current remote control design were discussed."
+      ],
+      "conditions": [
+        "Thirty-five percent of people take too much time to learn how to use the remote control.",
+        "Twenty-six percent of users have RSI problems with the current remote control."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it's interesting information, I think.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Remote controls are often lost somewhere in the room.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Remote control are really bad for RSI problems for twenty six percent of the users.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c003_d3",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to study user preferences for remote control design.",
+      "topic": "remote control user study",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "A study was conducted to observe user preferences for remote control design."
+      ],
+      "conditions": [
+        "The study involved one hundred subjects and a questionnaire.",
+        "Seventy-five percent of users find the current remote controls ugly."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We had one hundred subjects, um , we observe their remote control use in a lab and then after all the experiments they had to fill up a questionnaire, um , and see what was okay or not for them.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So seventy five percent of the users find the most remote controls ugly, okay, so that's",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c003_d4",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to minimize the number of unused buttons on the remote control.",
+      "topic": "remote control button usage",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Ten percent of the buttons are actually used in the remote control."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But I'll come back to it later.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c004_d1",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of reducing the number of buttons on the remote control while maintaining the same functionality.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To make it easier to use and potentially sell more."
+      ],
+      "conditions": [
+        "The concern about making the remote control look fancy was raised."
+      ],
+      "dissent": [
+        "The User Interface Designer expressed uncertainty about the ease of use with multiple functions on one button."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So my pres personal preferences for this problem is we have to meet the user needs. If we can make it look fancy then we might sell more than our uh concurrent, okay.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And definitely if it could have less buttons, still maybe the same number of um functions, but less buttons, this would definitely be a good way of selling more.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But I'm not sure",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But what I'm not so sure is about how to make the remote control look fancy",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I think the solution is to have many colours of you know instead of having one grey standard",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c005_d1",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will only be used for television.",
+      "topic": "remote control usage",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Because if we want to make a remote control for multiple devices, it will become too complex and increase the price."
+      ],
+      "conditions": [
+        "The remote control will not have buttons to control other devices like the recorder or garage door."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , the remote control will only be used for television , so for you your designing , you're not had buttons to just to manipulate things like that .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's because if we want to do remote control which will be used for for the television , for the recorder , for the camcorder and all the others , it will become too complex and it will increase the price and we can't do that .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c005_d2",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c005",
+      "schema_version": "1.0.0",
+      "decision": "The colour of the product and the slogan should be recognisable in the remote control.",
+      "topic": "product recognition",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "So you will have to use the colour of the product, of the real reaction."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I mean that's uh if uh you want to buy a remote control and if you go in a shop and if you see the remote control you will recognise directly that s it's our product .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c005_d3",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote control design should focus on simplicity and power.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "So maybe it will be easier for you to to design it , to have very powerful and easy."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So maybe it will be easier for you to to design it , to have very powerful and easy .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c005_d4",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote control design should avoid using teletext.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Because now everybody has internet at home , so it's better to use internet then teletext."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , you will have to think about it in your in in the design of your remote control , and also the remote control will only be used for television , so for you your designing , you're not had buttons to just to manipulate things like that .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c005_d5",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a yellow color.",
+      "topic": "remote control color",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Has to be yellow."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So has to be yellow .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c006_d1",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c006",
+      "schema_version": "1.0.0",
+      "decision": "The color of the remote control has been decided to be yellow.",
+      "topic": "color of remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It has to be fashion.",
+        "The image of the society has to be recognized."
+      ],
+      "conditions": [
+        "The global usage has to be considered.",
+        "The remote control has to be attractive."
+      ],
+      "dissent": [
+        "The Industrial Designer questioned if people like the color yellow."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think it has to be yellow.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yellow ? Do you think that people like the color yellow ?",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "It has to be fashion.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The image of the society has to be recognized.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think if you have you know like a yellow ribbon here is the double R_ . Or should be.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c006_d2",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c006",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will not be used for teletext anymore.",
+      "topic": "use of teletext",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It would be simpler."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And also it has to be attractive, because if you want to sell the remote control.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Regarding the first line, what ? So we're just expecting no more use of the teletext.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think it would be simpler.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c007_d1",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c007",
+      "schema_version": "1.0.0",
+      "decision": "The session was closed",
+      "topic": "session closure",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "No reason stated"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think the um session is closed.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TE_017_c007_d2",
+      "source_id": "QMS_PRD_TE_017",
+      "chunk_id": "QMS_PRD_TE_017_c007",
+      "schema_version": "1.0.0",
+      "decision": "David Jordan was instructed to record his presentations in his own folder",
+      "topic": "presentation recording",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "No reason stated"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Mister David Jordan",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Mister David Jordan , please record your presentations in your own folder.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 8,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

@@ -1,0 +1,1025 @@
+{
+  "source_id": "QMS_PRD_TR_075",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_075_c000_d1",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c000",
+      "schema_version": "1.0.0",
+      "decision": "The agenda for the meeting was set.",
+      "topic": "meeting agenda",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "As stated by the Project Manager."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Our agenda is , as before , for me to open the meeting , for us to go over the previous minutes , then for the two of you to present your prototype and for you to g um Sarah present the evaluation criteria . We then have a finance aspect , which is a spreadsheet , an Excel spreadsheet .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c000_d2",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c000",
+      "schema_version": "1.0.0",
+      "decision": "The minutes from the previous meeting were reviewed.",
+      "topic": "review of previous minutes",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "As stated by the Project Manager."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "From meeting three , is it alright with you if I don't switch it to show , just use it as is ? 'Cause this way I can more easily flip it.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c000_d3",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c000",
+      "schema_version": "1.0.0",
+      "decision": "The prototype presentations were scheduled.",
+      "topic": "prototype presentations",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "As stated by the Project Manager."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Over to you.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c000_d4",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c000",
+      "schema_version": "1.0.0",
+      "decision": "Two prototypes were presented.",
+      "topic": "prototype presentations",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Implied by the dialogue between the Industrial Designer and User Interface."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Ta-da.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c000_d5",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c000",
+      "schema_version": "1.0.0",
+      "decision": "The prototype made by User Interface was presented.",
+      "topic": "User Interface's prototype presentation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Implied by the dialogue between the Project Manager and User Interface."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "This is the one that I made.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c001_d1",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c001",
+      "schema_version": "1.0.0",
+      "decision": "The design of the remote control will have two material options: smooth hard plastic or spongy rubber.",
+      "topic": "remote control material",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "smooth hard plastic",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "spongy rubber",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Depending on cost restraints."
+      ],
+      "conditions": [
+        "Discussion about the material is ongoing."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We have two different options, because we did make a another one, which wa uh is in the shape of banana, it's just if you can imagine this as yellow with black buttons, like just like this but in the shape of a banana,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So we have the two options we can follow, either the smooth hard plastic or the spongy rubber, depending on cost restraints.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c001_d2",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a curved, hand-held design with big easy buttons.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "User Interface's description of the design."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It is uh curved, easy to hold, hand-held, nice and small with big easy buttons.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c001_d3",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a scroll and push button technology.",
+      "topic": "remote control technology",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "User Interface's description of the buttons' functionality."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The function of these buttons is up, down, left and right in the different menus.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c001_d4",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have an on/off switch.",
+      "topic": "remote control features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "User Interface mentioned an on/off switch."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And it's gonna have the logo imprinted on it uh in there.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And it's gonna have the on off switch, 'cause I think we do need that, and I think it gives it a nice balance.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c001_d5",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a yellow and black color scheme.",
+      "topic": "remote control color",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "bright yellow with black buttons",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "User Interface's preference towards bright yellow with black buttons."
+      ],
+      "conditions": [
+        "Discussion about the color is ongoing."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I definitely have a preference towards bright yellow with black buttons, because that's the company colours, but if anybody's got any other suggestions, I'm quite willing to consider them as well.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c001_d6",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a banana shape as an option.",
+      "topic": "remote control shape",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "User Interface described another prototype in the shape of a banana."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "which is also nice and easy to hold and feels good and has a similar sort of scroll push button technology, just a slightly different design.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c002_d1",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control design with a prominent key arrangement resembling a compass point and a simple design was chosen for further development.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It looks identifiable, it's different from other remotes.",
+        "The design looks better.",
+        "The components are cheap to make."
+      ],
+      "conditions": [
+        "The technology for programming the menus and text boxes needs to be developed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It's really kind of a [disfmarker]",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It looks just like a logo, that arrangement of the keys. Like a c like a compass point, you know,",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's texting.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's also in terms of um being lost it's it's quite [disfmarker]",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "but we do definitely think that it's a viable option.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The next item is evaluation.",
+          "speaker": "Project Manager",
+          "supports": "status"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c003_d1",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use the term 'E_F' to describe the aesthetic of the remote control.",
+      "topic": "aesthetic term for remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The term 'E_F' is a combination of 'elegant' and 'fancy', which were discussed as suitable alternatives."
+      ],
+      "conditions": [
+        "The team acknowledged that the term 'fancy' is commonly used by the public."
+      ],
+      "dissent": [
+        "The Industrial Designer expressed some reservations about calling the design 'elegant'."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So let's let's take it to the next level .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well okay , so in terms of elegant , fancy . we'll call it E_F um",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think we n we need to",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I don't know if I'd call them elegant .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c003_d2",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use the term 'yellow' to describe the color of the remote control.",
+      "topic": "color of remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The remote control is already yellow with black buttons, and the team discussed the possibility of representing this in the design."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So what we re really need to decide is whether we want the actual banana shape or just a a purely blob or some sort of abstraction in between the two",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c004_d1",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to evaluate a design that is somewhere between a banana shape and a purely abstract shape.",
+      "topic": "design evaluation",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "banana shape",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "purely abstract shape",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "a design that is curved as a banana but spongy",
+          "rejected": true,
+          "reason": "discussed but not chosen due to concerns about robustness"
+        }
+      ],
+      "rationale": [
+        "The team found a design that is quirky and sellable."
+      ],
+      "conditions": [
+        "The team has not completely developed the energy side of the design yet."
+      ],
+      "dissent": [
+        "The Industrial Designer expressed concerns about the robustness of a curved, spongy design."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So what we really need to decide is whether we want the actual banana shape or just a purely blob or some sort of abstraction in between the two",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think that many of us are abstract enough to look at the yellow one and say we'll call it the banana .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't really think that's gonna work",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "It could be quite a good brand, like a good little object.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c004_d2",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided that the design should be environmentally friendly with kinetic energy.",
+      "topic": "energy source",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "non-kinetic energy",
+          "rejected": true,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The team found that the design would be kinetic."
+      ],
+      "conditions": [
+        "The team has not completely developed that side of the design yet."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "we'll c we'll say it's a cost saving enviro",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c004_d3",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided that the design should be cost-saving.",
+      "topic": "cost",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team found that the design could be cost-saving."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "we'll c we'll say it's a cost saving enviro",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c005_d1",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use a kinetic energy source for the remote.",
+      "topic": "energy source",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "hand dynamo",
+          "rejected": true,
+          "reason": "forgotten"
+        },
+        {
+          "option": "battery",
+          "rejected": true,
+          "reason": "not chosen"
+        },
+        {
+          "option": "solar cells",
+          "rejected": true,
+          "reason": "not chosen"
+        }
+      ],
+      "rationale": [
+        "The kinetic energy source is the cheapest option for a remote with push buttons."
+      ],
+      "conditions": [
+        "The team needs to find someone to develop the menu system."
+      ],
+      "dissent": [
+        "The Industrial Designer was unsure about the kinetic energy source."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah , that's not a cheap thing to get .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "it might be the yeah , yeah , true . True .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well , just kinetic then ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c006_d1",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use a single-curved case for the remote.",
+      "topic": "case shape",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "double curved",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The single curve is chosen because of the chunkiness."
+      ],
+      "conditions": [
+        "The total cost has been calculated as nine Pounds twenty out of the twelve and a half they were allowed."
+      ],
+      "dissent": [
+        "The Industrial Designer suggested combining plastic and rubber, but it depends on the cost."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay , the case will be uncurved and flat or a single curve or a double curve . It looks like it {gap} single curve , 'cause of th the chunkiness . It's {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "yep .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "We had the special colour . And did we say plastic ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c006_d2",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use rubber buttons for the remote.",
+      "topic": "button material",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "plastic buttons",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The team can put the rubber on top of plastic buttons."
+      ],
+      "conditions": [
+        "The total cost has been calculated as nine Pounds twenty out of the twelve and a half they were allowed."
+      ],
+      "dissent": [
+        "The Industrial Designer suggested combining plastic and rubber, but it depends on the cost."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Project Manager: And the buttons {disfmarker} Wha what is the buttons made of , rubber ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh they'll be rubber , yep .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "The Industrial Designer suggested combining plastic and rubber, but it depends on the cost.",
+          "speaker": "dissent",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c006_d3",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use a push-button interface for the remote.",
+      "topic": "interface type",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The interface button is what they're using."
+      ],
+      "conditions": [
+        "The total cost has been calculated as nine Pounds twenty out of the twelve and a half they were allowed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Project Manager: Interface button {disfmarker} push button interface . That's what we're using ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's just button .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c006_d4",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use a special color for the buttons.",
+      "topic": "button color",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The buttons will be in a special color of black."
+      ],
+      "conditions": [
+        "The total cost has been calculated as nine Pounds twenty out of the twelve and a half they were allowed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Button supplements , they'll be in a special color .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c006_d5",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use one button for the remote.",
+      "topic": "number of buttons",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team only needs one of the buttons."
+      ],
+      "conditions": [
+        "The total cost has been calculated as nine Pounds twenty out of the twelve and a half they were allowed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Industrial Designer: Do we need to say how many buttons , or",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c006_d6",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to save the Excel document into the project documents.",
+      "topic": "document storage",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager is going to save the document into the project documents."
+      ],
+      "conditions": [
+        "The total cost has been calculated as nine Pounds twenty out of the twelve and a half they were allowed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Project Manager: Okay , I'm going to save this into our {vocalsound} desktop , project documents . Okay . As our project document bit .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c006_d7",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to stay within the budget of twelve and a half pounds.",
+      "topic": "budget",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The total cost has been calculated as nine Pounds twenty out of the twelve and a half they were allowed."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Project Manager: The total cost has been calculated as nine Pounds twenty out of the twelve and a half they were allowed.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c007_d1",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c007",
+      "schema_version": "1.0.0",
+      "decision": "The team is satisfied with all the project aspects discussed.",
+      "topic": "project satisfaction",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team went over all the aspects and found them satisfactory."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , we went over all those things and we're satisfied with all the above .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah well , 'cause I mean it's so hard to describe what you mean just with words and pointing at photographs and saying , well we quite want this , but imagine it rounder . So much better just to go and , you know , this is it , this is what we want .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c007_d2",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c007",
+      "schema_version": "1.0.0",
+      "decision": "The average evaluation score is 1.88.",
+      "topic": "project evaluation score",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Marketing calculated and shared the average evaluation score."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "um it's uh {disfmarker} the average evaluation score is one point eight eight , so it means w you know , I can I can spell it out . There were six true or ones , four um pardon me , two s almost true or close to true , so that was four points , and then uh one false , seven points , so seventeen divided by nine {disfmarker} we're between one and two . I would say that's ex excellent in terms of uh ho how much we adhere to the ideals of the uh market place .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c007_d3",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c007",
+      "schema_version": "1.0.0",
+      "decision": "The false evaluation score is due to the choice to keep a simple old technology.",
+      "topic": "evaluation score false reason",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team discussed that the false evaluation score was due to the choice to keep a simple old technology."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The only false one is because we've chosen to keep a simple old technology ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c007_d4",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c007",
+      "schema_version": "1.0.0",
+      "decision": "The team counts as excellent or one in terms of adherence to market ideals.",
+      "topic": "adherence to market ideals",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Marketing explained that the team's adherence to market ideals was excellent or one based on the evaluation score."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I would say that's ex excellent in terms of uh ho how much we adhere to the ideals of the uh market place .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c007_d5",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c007",
+      "schema_version": "1.0.0",
+      "decision": "The team has to do the final questionnaire and meeting summary.",
+      "topic": "final questionnaire and meeting summary",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Project Manager stated that the team has to do the final questionnaire and meeting summary."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And we have to do the final questionnaire and do the meeting summary , I have a final report to present , um and then we're done .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c007_d6",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c007",
+      "schema_version": "1.0.0",
+      "decision": "There will be a product launch party.",
+      "topic": "product launch party",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Industrial Designer mentioned the product launch party."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Product launch party ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_075_c008_d1",
+      "source_id": "QMS_PRD_TR_075",
+      "chunk_id": "QMS_PRD_TR_075_c008",
+      "schema_version": "1.0.0",
+      "decision": "Marketing wants to save everything in the right files",
+      "topic": "file organization",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Marketing thinks that everything is not saved in the right files"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I wanna do is save everything in the right files",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 9,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

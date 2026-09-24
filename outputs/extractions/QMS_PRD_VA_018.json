@@ -1,0 +1,1137 @@
+{
+  "source_id": "QMS_PRD_VA_018",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_VA_018_c000_d1",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to conduct a survey on the use of remote controls to gather user feedback.",
+      "topic": "survey on remote control usage",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Because users find current remote controls ugly and not easy to use, and they are willing to pay for a nice-looking remote control."
+      ],
+      "conditions": [
+        "The survey results will show what users like, dislike, and do with their remote controls."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So basically what I suggest is that instead of deciding ourselves what could be and what should be a good uh remote control, let's ask people who are users of remote controls how they feel about the current remote controls, what they like, what they don't like and um and what they do with them by the way",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "because they are supposed to be useful",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "what is interesting is that in fact it seems that they were willing to pay for nice and looking uh remote control",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c001_d1",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c001",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Users find current remote controls ugly, hard to use, often lost, and have unnecessary buttons.",
+        "Users are willing to pay for a nice-looking remote control.",
+        "Users suggest a feature to locate the remote control."
+      ],
+      "conditions": [
+        "R_S_I_ is mentioned but its meaning is unclear."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "because they are supposed to be useful . {vocalsound} Don't forget about that .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Current remote controls as you know they're the same as this one uh they're not nice colour , not nice shape , I mean they're all the same , and they're not l good looking .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "it's {vocalsound} it's often lost somewhere in the in the {disfmarker} in your home and nobody knows where it is .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Maybe if we have something where we could {vocalsound} ask the remote control please , where are you ?",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And because of the fact that there are so many buttons in these remote controls that nobody use ,",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm-hmm . Mm nobody has any idea about that ? Well I'll check uh with my",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But twenty five . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c002_d1",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c002",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "speech recognition in remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the relevance of speech recognition in remote control depending on the target age group."
+      ],
+      "conditions": [
+        "Discussion about the target age group of the remote control."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "That's for the main functions I think and uh then we can ask uh ourselves uh what people don't have that may be useful . For instance I think {disfmarker} net next slide . {vocalsound} One of the thing {disfmarker} the trend uh that uh you are probably aware of is the possibility {disfmarker} the eventual possibility of having speech recognition in your remote control , so you wouldn't have to tap tap in your buttons but just tell your remote control or whatever you need you have what you want . So we've conducted a survey about uh whether people would like or not to have uh this kind of uh functionality in their remote control and as we can see it really depends on the age . Young people , probably because it's a buzz word , find it very relevant . And uh as the age goes up {vocalsound} the {vocalsound} the relevance goes down .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think if we are targeting young people then uh it's probably something we have to consider . If we are targeting very old people this is something they really don't know why they {disfmarker} this should be so now",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-mm . Okay .",
+          "speaker": "Project Manager",
+          "supports": "status"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c003_d1",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team did not make a decision about the target demographic for the remote control.",
+      "topic": "target demographic",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "young people",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "old people",
+          "rejected": true,
+          "reason": "Marketing thinks they might not be interested"
+        }
+      ],
+      "rationale": [
+        "Discussion about the target demographic, but no conclusion was reached."
+      ],
+      "conditions": [
+        "The meeting was tight and Marketing did not have time to conclude."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think if we are targeting young people then uh it's probably something we have to consider . If we are targeting you very old people this is something they really don't know why they {disfmarker} this should be so now",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-mm . Okay .",
+          "speaker": "Project Manager",
+          "supports": "status"
+        },
+        {
+          "quote": "I didn't have time the meeting was very tight , so that's basically my findings .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm I think it's good , okay . You done a good review .",
+          "speaker": "Project Manager",
+          "supports": "status"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c003_d2",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c003",
+      "schema_version": "1.0.0",
+      "decision": "Mark Dwight was assigned to present about the technical functions design.",
+      "topic": "presentation assignment",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "someone else",
+          "rejected": true,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Project Manager asked Mark Dwight to give a presentation about technical functions design."
+      ],
+      "conditions": [
+        "Mark Dwight is an artist and less technical, but responsible for User Interface Design."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "However , uh mm Project Manager asked me to give you some presentation about technical functions design . Uh , as I'm a more an artist",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c003_d3",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed on the principle of Occam's Razor for the remote control design.",
+      "topic": "design principle",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "other design principles",
+          "rejected": true,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "User Interface emphasized the importance of not complicating things too much and making a simple remote control."
+      ],
+      "conditions": [
+        "Current remote controls are never easy enough to use."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , make a click , please . So here is this remote control . It's quite a standard one , but it's not from a T_V_ , it's from a much easier device like air conditioning or something . But you know , we can use it for a T_V_ easily . Only buttons we need is on off , volume , channels and maybe some options or something else , and please make a click , compared to this one",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Makes sense . {vocalsound}",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c004_d1",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c004",
+      "schema_version": "1.0.0",
+      "decision": "The concept for the design of the remote control includes a titanium body, a screen with a back light that can change colors, a few buttons, automatic power on/off, and volume control that adjusts based on the user's distance.",
+      "topic": "remote control design",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "simple desires into simple actions",
+        "be simple and lean on the market",
+        "market is a difficult field to play"
+      ],
+      "conditions": [
+        "depends on the technical feasibility of automatic power on/off and distance-based volume control"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I would propose this concept for design, just few buttons, a screen with a back light which can change colours, titanium",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Be simple. Be simple and you'll lean on this market.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "For personal preferences I think that to make a baby-proof remote control it got to be a titanium.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's a really good style, it going to be look like like this. It is unbreakable and it is very universal.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I would propose this concept for design, just few buttons, a screen with a back light which can change colours, titanium",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And another nice feature that I would like to implement is uh volume control. Suppose you set up some volume and then you move out or you move to the other corner of the room and take your control with you. Like, you want to to change the chair or you want to move to the armchair from the sofa or something, and then the volume changes.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c005_d1",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed a universal remote control with a menu-based interface and voice control.",
+      "topic": "remote control interface",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Easier to find, responds to voice, universal, simple designs, few actions for everything."
+      ],
+      "conditions": [
+        "Targeting TV for the moment, may make it more generalised later."
+      ],
+      "dissent": [
+        "Marketing expressed concern about zapping through hundreds of channels."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Distance .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "According to the distance . {gap} Yeah yeah yeah . So {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh I'm not sure about the screen , wha what is the use usefulness of the screen ? Uh is it a touch screen by the way ?",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I think it can be just a menu which can be controlled with a left , right , up , down and enter .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So , its main purpose in fact is a back light ,",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So basically that's it .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Project Manager: {vocalsound} Um I see that you target uh several s application not only T_V_ but i like we talk about um universal uh remote control .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Can be easily done ,",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Let it be universal , so you want to use it for your hi-fi system . You want to change tracks and you want to adjust volume .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "All the rest , we sh we'll put it into this menu on the screen .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Since we were targeting a really soon uh uh date for the the the um i issuing of this uh remote control I think we will only concentrate on T_V_ for the moment and then maybe m make it more generalised {disfmarker} yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay , okay .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But even we can have some uh L_C_D_ display , like you can uh de you can just button the number",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Go to channel twenty five .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "In fact I would propose another solution .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Basically you use just four or five channels , right ?",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "so {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But you have to {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Mm . We got these buttons here . Next next .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c006_d1",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c006",
+      "schema_version": "1.0.0",
+      "decision": "The working design of the remote control was discussed.",
+      "topic": "remote control design discussion",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the design of the remote control."
+      ],
+      "conditions": [
+        "Research on the need for certain functions is proposed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Or say this can be back .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Could we carry out some research if we really need this .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c006_d2",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c006",
+      "schema_version": "1.0.0",
+      "decision": "The energy source, user interface, chip, and infrared LED source for the remote control were discussed.",
+      "topic": "remote control components",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the components of the remote control."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And usually this .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So we will have a portable device which will send message to the the main device like T_V_ .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So we need to have some energy source to do what .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And then we have some chip , it's mainly digital signal processing chip .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Then we'll have the infrared L_E_D_ source which sends the information to the main device .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c006_d3",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c006",
+      "schema_version": "1.0.0",
+      "decision": "The need for research on the use of certain functions was proposed.",
+      "topic": "research on remote control functions",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Proposal to conduct research on the need for certain functions."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "User Interface",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Could we carry out some research if we really need this .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c006_d4",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c006",
+      "schema_version": "1.0.0",
+      "decision": "The need for an universal device was discussed.",
+      "topic": "universal device",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about making the device universal."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "To make it quite uh an universal uh device uh .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c007_d1",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c007",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to incorporate a simple speech recogniser into the DSB chip of the remote control device.",
+      "topic": "speech recogniser",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It can be a selling point for young people.",
+        "It can make the remote control more user-friendly."
+      ],
+      "conditions": [
+        "The speech recogniser should be simple and easy to use.",
+        "The speech recogniser should be trainable for particular users."
+      ],
+      "dissent": [
+        "The User Interface finds the speech recogniser too complex."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "we can have another, like uh simple speech recogniser on our D_S_B_ chip.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "because we can't really say user to say same wording",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Too complex.",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c007_d2",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c007",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed on a price range of less than five Euros for the component.",
+      "topic": "price of the component",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "They want to make the device affordable and sell in bulk."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So maybe we can make it in five Euros and even less than that",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "It mm okay.",
+          "speaker": "Project Manager",
+          "supports": "approver"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c008_d1",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c008",
+      "schema_version": "1.0.0",
+      "decision": "The team did not decide on a specific method for volume control.",
+      "topic": "volume control method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different options, but no decision was made."
+      ],
+      "conditions": [
+        "Cost and complexity of gesture recognition were mentioned."
+      ],
+      "dissent": [
+        "Marketing suggested personalized remote controls, but it was not decided."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and and because we can't really say user to say same wording",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Couple of words .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "then it become more mechanical and {disfmarker} yeah .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm-hmm .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Um .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "we don't want like B_B_C_ or C_N_N_ or something else",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "because it will be complicated so we'll have only these three uh main basic uh anyway volume is not really speech recognition problem ,",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "we don't want like B_B_C_ or C_N_N_ or something else",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Of course uh it has to be {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay , for this budget like twelve Euros .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , I dunno . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah actually we we can have one switch to like uh switch on , on and off , this {gap} processor and {disfmarker} This really {gap} , suppose like here we have our main chip which controls power , volume and this part and this D_S_P_s .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm-hmm .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Again , this to have some interaction like suppose people use D_S_P_ then it particularly sends some information to the chip like in some form , like volume and {gap} like this key .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Okay.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So but uh {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And volume control .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And well , what about the idea of automatic on off on the button , yeah .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm why ?",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "That's just {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And volume control .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c009_d1",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to equip the remote control with speakers.",
+      "topic": "remote control features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Speakers in the remote control could help find it."
+      ],
+      "conditions": [
+        "The cost of implementing this feature was not discussed."
+      ],
+      "dissent": [
+        "The Industrial Designer expressed concerns about the power consumption."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Speakers in the remote cont",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "It just beeps.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And it's answered.",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c009_d2",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to implement a speech recognizer in the remote control.",
+      "topic": "remote control features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "A speech recognizer could help control the remote without buttons."
+      ],
+      "conditions": [
+        "The cost of implementing this feature was not discussed."
+      ],
+      "dissent": [
+        "The Industrial Designer expressed concerns about the power consumption."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Speech recogniser can be possible.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Implemented.",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c009_d3",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to make the remote control respond to whistles.",
+      "topic": "remote control features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Responding to whistles could help find the remote."
+      ],
+      "conditions": [
+        "The cost of implementing this feature was not discussed."
+      ],
+      "dissent": [
+        "The Industrial Designer expressed concerns about the power consumption."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You want to whistle them and and they",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "And it's answered.",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c009_d4",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to have a cheap alternative for phone calls through the remote control.",
+      "topic": "remote control features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "A cheap alternative for phone calls could be an option."
+      ],
+      "conditions": [
+        "The cost of implementing this feature was not discussed."
+      ],
+      "dissent": [
+        "The Industrial Designer expressed concerns about the power consumption."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Something very cheap.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "But that's expensive.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c009_d5",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to have individual work after the lunch break.",
+      "topic": "meeting agenda",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Individual work was proposed as part of the meeting agenda."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Then we will work again for thirty minutes individual work",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c009_d6",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to focus on individual actions and components in the next meeting.",
+      "topic": "meeting agenda",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team decided to focus on individual actions and components in the next meeting."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "um you will focus on the component concept um",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c009_d7",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to have UID Mark focus on the user interface concept.",
+      "topic": "meeting roles",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "UID Mark was assigned to focus on the user interface concept."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and uh of course the U_I_D_ Mark will be uh focused on the user interface concept",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c009_d8",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to have Sammy Benjo focus on trend watching.",
+      "topic": "meeting roles",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Sammy Benjo was assigned to focus on trend watching."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and uh our m Market Expert Sammy Benjo uh on the trend watching .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c009_d9",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to send specific instructions to team members by their personal coaches.",
+      "topic": "meeting procedures",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Specific instructions were to be sent to team members by their personal coaches."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well I think that's all . And we have um maybe we have to {disfmarker} we say , only for T_V_ , not teletext ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c009_d10",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c009",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that automatic on/off control is not possible.",
+      "topic": "remote control features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team agreed that automatic on/off control is not possible."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh I think automatic on off control uh it's not possible.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_VA_018_c010_d1",
+      "source_id": "QMS_PRD_VA_018",
+      "chunk_id": "QMS_PRD_VA_018_c010",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to incorporate a clap feature into the device's interface.",
+      "topic": "clap feature",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It's universal.",
+        "It's a good feature."
+      ],
+      "conditions": [
+        "It might interfere with other devices.",
+        "It needs to be thought about more on how to incorporate it."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Clap is good.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think it's universal.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It {disfmarker} yes . {vocalsound} Okay .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Think about it.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It {disfmarker} yes . {vocalsound} Okay .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 11,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

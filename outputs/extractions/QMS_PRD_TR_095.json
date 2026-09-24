@@ -1,0 +1,542 @@
+{
+  "source_id": "QMS_PRD_TR_095",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_095_c000_d1",
+      "source_id": "QMS_PRD_TR_095",
+      "chunk_id": "QMS_PRD_TR_095_c000",
+      "schema_version": "1.0.0",
+      "decision": "The participants introduced themselves.",
+      "topic": "introductions",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'd uh like to welcome you to our first meeting .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm the Project Manager of this project .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well uh I'm uh {gap} and my uh function is User Interface Design , I think .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm {gap} uh I'm the Industrial Designer and I uh hope to uh {disfmarker} look forward to uh a very uh pleasing uh end of this uh project .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "My name's {gap} . I'm uh {vocalsound} Marketing Expert .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_095_c001_d1",
+      "source_id": "QMS_PRD_TR_095",
+      "chunk_id": "QMS_PRD_TR_095_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed to use smart boards and a white board for the project.",
+      "topic": "tools for the project",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The team was introduced to the tools available for the project."
+      ],
+      "conditions": [
+        "The team was instructed on how to use the tools."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I already talked about the cameras and microphones , but they are not of uh much use to us . Uh we will have to take advantage of these two things . They are smart boards . As you can see , you can give a presentation on them . And uh this one here is a white board . I will uh instruct you about that soon .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "As you can see you have to move it a little bit slow , it's not such a fast board , it's a smart board but also a slow board .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_095_c001_d2",
+      "source_id": "QMS_PRD_TR_095",
+      "chunk_id": "QMS_PRD_TR_095_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team agreed to draw their favourite animal as the first exercise.",
+      "topic": "first exercise",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager introduced the first exercise as a way to get to know each other."
+      ],
+      "conditions": [
+        "The exercise involves drawing on a blank sheet, using different colours, and different pen widths."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'm going to ask you to draw your favourite animal .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's also to gets to know each other because um I'm asking three things , uh for that uh drawing , to do it on a blank sheet , with different colours and I just showed you how to pick a colour , and also with different pen widths which I also showed you .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_095_c003_d1",
+      "source_id": "QMS_PRD_TR_095",
+      "chunk_id": "QMS_PRD_TR_095_c003",
+      "schema_version": "1.0.0",
+      "decision": "No specific decision was made about the design of the remote control.",
+      "topic": "design of remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "The discussion focused on potential issues with current remote controls, but no specific design was proposed."
+      ],
+      "dissent": [
+        "Marketing suggested that integrating multiple remote controls could lead to too many buttons, which was met with agreement."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "A lot of buttons . And you always lose them .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Complex .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Not user friendly .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Boring . It's not fun to use a remote .",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Black , all black .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Mm .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Black colours .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Mm-hmm .",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Industrial Designer: They use batteries and batteries uh and poor signal .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-hmm .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Your stereo and your TV",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Industrial Designer: Uh .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Marketing: The angle you have to use . You had different remote controls for different devices .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Industrial Designer: Yeah , different remote controls ,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "User Interface: Perhaps that you have a lot of road remotes r road con remote controls .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Marketing: The the angle you have to use . You had different remote controls for different devices .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Industrial Designer: Yeah , different remote controls ,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "User Interface: and uh . Perhaps that's an idea .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Marketing: Yeah but then again you you still have a lot of buttons ,",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "User Interface: Yeah , that's right . And which you don't use .",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Industrial Designer: Yeah",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Marketing: so",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Industrial Designer: but you could uh I thin uh there's a possibility to g uh to uh to put those buttons uh behind some uh kind of uh protection",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Marketing: Flap",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Industrial Designer: That's possible , so that you only get the",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Marketing: but it'll get very big the the remote control .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "User Interface: {vocalsound} Yeah . You should just give it to {gap} . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_095_c004_d1",
+      "source_id": "QMS_PRD_TR_095",
+      "chunk_id": "QMS_PRD_TR_095_c004",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a minimalist design with the least possible amount of buttons.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To make it user-friendly.",
+        "To avoid bothering people with loads of buttons."
+      ],
+      "conditions": [
+        "The remote control should have all the buttons needed, including those for teletext."
+      ],
+      "dissent": [
+        "There was a disagreement about accommodating all the buttons for different television sets on one remote control."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So maybe a a minimalist design , the least uh possible amount uh of buttons .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think so , yeah .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But it is impossible to uh to accommodate uh accommodate uh all the buttons on the s on the difference {disfmarker} different televisions sets on one remote control . It's impossible .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Yeah , that's right .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_095_c005_d1",
+      "source_id": "QMS_PRD_TR_095",
+      "chunk_id": "QMS_PRD_TR_095_c005",
+      "schema_version": "1.0.0",
+      "decision": "The roles and tasks for each team member were assigned.",
+      "topic": "assignments",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Each team member was given specific tasks related to their role."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Project Manager",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The Marketing Expert will uh will take a look at the user requirement specification.",
+          "speaker": "Project Manager",
+          "supports": "owner"
+        },
+        {
+          "quote": "The User Interface Designer will work out the technical functions design.",
+          "speaker": "Project Manager",
+          "supports": "owner"
+        },
+        {
+          "quote": "The Industrial Designer will take a look at the working design,",
+          "speaker": "Industrial Designer",
+          "supports": "owner"
+        },
+        {
+          "quote": "and the in uh usability interaction",
+          "speaker": "Industrial Designer",
+          "supports": "owner"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_095_c006_d1",
+      "source_id": "QMS_PRD_TR_095",
+      "chunk_id": "QMS_PRD_TR_095_c006",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt",
+      "topic": "unspecified",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Sorry . Let's just use the acronyms . Um and of course specific instructions uh will be sent to you uh through your personal coach .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So I should look at uh what you should be able to do with the remote , or uh , or how I don't really",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh well those instructions will be uh in the email you will receive uh shortly , I hope . {vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right . Alright . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And of course you have your own uh expertise .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well uh that was what I had to say .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh are there any more questions ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "No .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "No .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "No ? Okay well I think then we have to head uh back to our offices and uh start working .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I have one question .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay , one question ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Where does it says we have to make a remote , because I presumed {disfmarker} {gap} She didn't know who . Okay , no {vocalsound} , no problem .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound} {vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "we're still going {gap} {vocalsound} .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound} No problem . Yeah .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay , well I expect everything will be much clearer with the instructions we will receive uh shortly .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Alright .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-hmm .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay well uh see you all in about thirty minutes , then .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Alrighty . Okay .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Thank you very much .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound} {vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound} Yeah . {vocalsound} Okay . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    }
+  ],
+  "chunks_processed": 7,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

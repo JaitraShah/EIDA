@@ -1,0 +1,911 @@
+{
+  "source_id": "QMS_ACA_TR_020",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_020_c000_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c000",
+      "schema_version": "1.0.0",
+      "decision": "The group agreed to re-evaluate the performance of voice activity detectors without it, or to make changes to the algorithm if possible.",
+      "topic": "re-evaluation of voice activity detector",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The group agreed that the current voice activity detector is not working correctly and needs to be changed or re-evaluated."
+      ],
+      "conditions": [
+        "Nobody officially acknowledged that changing the algorithm is possible due to concerns about intellectual property."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And in principle I ... we agreed.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But unfortunately nobody ever officially can somehow acknowledge that this can be done, because French Telecom was saying 'no, no, no, now everybody has access to our code, so everybody is going to copy what we did.'",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "We said uh ' yeah '.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c001_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c001",
+      "schema_version": "1.0.0",
+      "decision": "The requirement for a 50% improvement will only apply to well-matched conditions, and a 25% improvement will apply to serial cases.",
+      "topic": "improvement requirement",
+      "status": "deferred",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the improvement requirement, and concerns about making a major decision lightly."
+      ],
+      "conditions": [
+        "Official discussion about the decision will continue."
+      ],
+      "dissent": [
+        "Nokia is complaining and looking for support, QualComm is saying they should not abandon the 50% requirement yet."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And so , so now they want to say \" we will require fifty percent improvement only for well matched condition , and only twenty - five percent for the serial cases . \"",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So now officially , Nokia is uh uh complaining and said they are looking for support , uh I think QualComm is uh saying , too \" we shouldn't abandon the fifty percent yet . We should at least try once again , one more round . \"",
+          "speaker": "PhD E",
+          "supports": "dissent"
+        },
+        {
+          "quote": "However , there is only ten or fifteen lines , so people can't even participate.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c002_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that Nokia is looking for support and QualComm suggested trying one more round with the current 50%.",
+      "topic": "support for Nokia | round of discussion",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "QualComm thinks it's worth trying one more round."
+      ],
+      "conditions": [
+        "The weights for the different systems were already decided half a year ago."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So now officially , Nokia is uh uh complaining and said they {disfmarker} they are looking for support , uh I think QualComm is uh saying , too 'we shouldn't abandon the fifty percent yet . We should at least try once again , one more round . '",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , of course people will not like it . Now {disfmarker} What is happening now is that I th I think that people try to match the criterion to solution .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c002_d2",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the current weights for the different systems may not be the best and alternative methods were suggested.",
+      "topic": "weights for different systems",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor B thinks the current weights may not be the best and suggests looking into alternative methods."
+      ],
+      "conditions": [
+        "The weights were already decided half a year ago."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But weights were also deter already decided uh half a year ago . So {disfmarker}",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "we are looking in ways is {disfmarker} in uh which {disfmarker} uh with which we can provide better initial estimate of the mel spectrum basically , which would be a l uh , f more robust to noise , and so far not much uh success .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c002_d3",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that adding moderate amount of noise to all data could potentially improve noise handling.",
+      "topic": "adding noise to data",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor B suggests adding moderate amount of noise to all data to improve noise handling."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So . {comment} I mean , uh uh add moderate amount of noise to all data .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c003_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c003",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "data processing technique",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "yet to be seen how much, it's a very simple technique."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And it was working at the time . It was kind of like one of these things , you know , but if you think about it , it 's actually pretty ingenious . So well , you know , just take a {disfmarker} take a spectrum and {disfmarker} and {disfmarker} and add of the constant , C , to every {disfmarker} every value .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well you 're {disfmarker} you 're basically y Yeah . So you 're making all your training data more uniform .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "But of course you cannot add too much noise because then you 'll s then you 're clean recognition goes down , but I mean it 's yet to be seen how much , it 's a very simple technique .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "And then most of the effort is uh now also aimed at this e e TRAP recognition . This uh {disfmarker} this is this recognition from temporal patterns .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "And you {disfmarker} so you classi so it 's a very different vector , very different properties , we don't know much about it , but the truth is {disfmarker}",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c004_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team is considering using two critical bands at the same time for analysis.",
+      "topic": "analysis method",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "one critical band",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Because there are some reasons for that. Because of masking experiments which yield critical bands, and also experiments with release of masking, which actually tell you that something is happening across critical bands."
+      ],
+      "conditions": [
+        "The team is learning more about the implications of using two critical bands."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But uh the latest uh observation uh is that you can get quite a big advantage of using two critical bands at the same time.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So we 're thinking about de - correlating them.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But then now we are thinking a lot how to use at least the neighboring band because that seems to be happening",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c005_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c005",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "research direction",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the effects of noise on signal recognition and its potential use in a real recognizer."
+      ],
+      "conditions": [
+        "Probably not having anything which complies with the rules before the next evaluation."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And so for instance if you d if you add the noise that normally masks the uh the signal right ?",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Probably not.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c006_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c006",
+      "schema_version": "1.0.0",
+      "decision": "No decision about latency or processing methods was made",
+      "topic": "latency and processing methods",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "Sunil is on a one month vacation"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "latency currently chops the require uh significant uh latency amount of processing",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "because uh we don't know any better, yet, than to use the neural net classifiers",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Though the work which uh everybody is looking at now aims at s trying to find out what to do with these vectors",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So this is uh what's happening",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c006_d2",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c006",
+      "schema_version": "1.0.0",
+      "decision": "No decision about Sunil's vacation or personal matters was made",
+      "topic": "Sunil's vacation and personal matters",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "Sunil is on a one month vacation"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So he's in India",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "And uh {disfmarker}",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c006_d3",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c006",
+      "schema_version": "1.0.0",
+      "decision": "No decision about Narayanan's PhD was made",
+      "topic": "Narayanan's PhD",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "Narayanan needed a PhD because they wouldn't give him his wife"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh well, he may be looking for a girl",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So he finally had some incentive to finish",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c006_d4",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c006",
+      "schema_version": "1.0.0",
+      "decision": "No decision about Aurora evaluation was made",
+      "topic": "Aurora evaluation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "Next meeting is in June"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And uh uh but like getting {disfmarker} get together",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "And this uh {disfmarker} that {disfmarker} that sort of stuff",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c006_d5",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c006",
+      "schema_version": "1.0.0",
+      "decision": "No decision about improving speaker recognition was made",
+      "topic": "improving speaker recognition",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "People will say it's impossible"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Because people will s will be saying it 's impossible",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because people will s will be saying it 's impossible",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c007_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c007",
+      "schema_version": "1.0.0",
+      "decision": "A decision about whether to stick to a 50% improvement or not is still being discussed.",
+      "topic": "improvement criterion",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "50% improvement",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "higher improvement",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the new criterion.",
+        "QualComm suggested sticking to 50% and exploring other options."
+      ],
+      "conditions": [
+        "Possibility that the decision may get through and they will stick to 50%.",
+        "Ericsson's troubles and potential withdrawal from the Aurora activity."
+      ],
+      "dissent": [
+        "Ericsson and others objecting to the decision."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So . And Harry said \" Yeah . But I mean we think that we didn't say the last word yet , that we have other things which we can try . \"",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So . So there 's a lot of discussion now about this uh new criterion . Because Nokia was objecting , with uh QualComm 's we basically supported that , we said \" yes \".",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Possibility that uh {disfmarker} that {disfmarker} that it may get through , that we will still stick to fifty percent .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Ericsson 's laying off twenty percent of people .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Ericsson's laying off twenty percent of people .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c008_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c008",
+      "schema_version": "1.0.0",
+      "decision": "Discussing a potential experiment for a graduate student",
+      "topic": "potential experiment",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussed as a way to get a lot of numbers on something",
+        "Discussed as an alternative way to play with a fudge factor"
+      ],
+      "conditions": [
+        "Not clear if the experiment has been run yet"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we were just discussing , since you mentioned that , in the car with Morgan this morning , we were discussing a good experiment for b for beginning graduate student who wants to run a lot of ...",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "you will start putting every co any coefficient , which you are using in your vector , in some general power .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and he was saying well this might be the alternative way how to play with a fudge factor , you know , uh in the ...",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c009_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c009",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "method for adjusting parameter importance",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about various lifters, exponential lifter, triangle lifter, and the need for a genetic algorithm to find the best combination of parameters."
+      ],
+      "conditions": [
+        "Requires a lot of graduate students and computing power."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And I said ' well in that case why don't we just start compressing individual elements , like when ...'",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But so they may be a way to fiddle with the f with the f Insertions .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "You need to have a genetic algorithm , that basically tries random permutations of these things .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "You need a lot of graduate students , and a lot of computing power .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c010_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c010",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to modify the standard deviation in the models to make certain dimensions less important.",
+      "topic": "modification of model standard deviation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To make certain dimensions less important."
+      ],
+      "conditions": [
+        "It was not clear how the model math would be affected."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You want to say if uh obs you ... that C - one is not important, you can do two things.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think you 'd have to modify the standard deviation or something, so that you make it {vocalsound} wider or narrower.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Effectively, that 's {disfmarker} that 's {disfmarker} that 's {disfmarker} I {disfmarker} Exactly . That 's what you do . That 's what you do, you {disfmarker} you {disfmarker} you modify the standard deviation as it was trained.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "By making it narrower, your scores get worse for {disfmarker}",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c011_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c011",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the component in the model can be de-weighted or compressed to make it less important.",
+      "topic": "model component importance",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To make a dimension less important, this particular component in the model can be multiplied by w or compressed."
+      ],
+      "conditions": [
+        "The model was trained expecting a certain variance on C-one."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So in order to make dimension which Stephane sees uh less important , uh uh I mean not useful , less important , what you do is that this particular component in the model you can multiply by w you can basically de - weight it in the model . But you can't do it in a test data because you don't have a model for th I mean uh when the test comes , but what you can do is that you put this particular component in and and you compress it . That becomes uh th gets less variance , subsequently becomes less important .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "And because the model thinks C-one is important . After you train the model , you sort of you could do you could do still what I was proposing initially , that during the training you compress C-one that becomes then it becomes less important in a training .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "No , that would be a severe mismatch ,",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c012_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c012",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to adjust the variance of a component in a model to change its importance in the overall score.",
+      "topic": "model adjustment",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussed ways to change the importance of a component in the model."
+      ],
+      "conditions": [
+        "The exact method of adjusting the variance was not decided."
+      ],
+      "dissent": [
+        "No dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So what you will do is that a component in the model for C - one , you will divide it by two .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Then you divide it by four and you take a square , f fourth root .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Then if you think that some component is more important then th th th it then uh uh i it is , based on training , then you uh multiply this particular component in the model by",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "You would have to modify the mean in the model . I agree with you .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just adjust the model , yeah .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just muck with the variance .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Could increase the variance to decrease the importance .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c014_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c014",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "experiment setup",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about an interesting experiment idea, but no decision or plan to execute it was made."
+      ],
+      "conditions": [
+        "No specific plan or timeline for the experiment was discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So . So . Yeah .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It would be similar ... I knew some people who were ...",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "That wouldn't be too difficult to try .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Maybe I could set that up .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well , at least go test the assumption about C - C - one I mean to begin with .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , so the first set of uh variance weighting vectors would be just you know one modifying one and leaving the others the same .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c015_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c015",
+      "schema_version": "1.0.0",
+      "decision": "They decided to set up a mailing list named 'Aurora' to facilitate communication between different parts of the distributed center.",
+      "topic": "communication setup",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To avoid two people working on the same thing and wasting effort."
+      ],
+      "conditions": [
+        "The mailing list will include OGI people."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We should definitely set up a mailing list that includes the OGI people.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Maybe just call it 'Aurora' or something that would...",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So maybe just call it 'Aurora' or something that would...",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "So i What is it...",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c016_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c016",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the software written by Lucash for Aurora-two system might be useful for the group's research.",
+      "topic": "software utility",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Lucash wrote the software for Intel, but the intentions were to distribute it for free.",
+        "The software might have been rewritten or reused to include MLP trained software."
+      ],
+      "conditions": [
+        "It was not clear if the software uses Intel math libraries, which might make it difficult to use on another architecture."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Because Morgan's point is that He is an experienced guy. He says ' well you know it's very difficult to collaborate if you are working with supposedly the same thing, in quotes, except which is not s is not the same .'",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It might be a reasonable point for p perhaps uh start converging .",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Is it useful ?",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean , I remember when we were trying to put together all the ICSI software for the submission .",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_020_c017_d1",
+      "source_id": "QMS_ACA_TR_020",
+      "chunk_id": "QMS_ACA_TR_020_c017",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use Intel libraries for their development.",
+      "topic": "development libraries",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Intel provided them with good machines for very little money or nothing."
+      ],
+      "conditions": [
+        "They have only three SUNs and they have them only because they have a SPERT board in."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we run everything on Intel.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I know there was some issues that initially of course we d do all the development on Linux but we use Intel.",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So can maybe can I t maybe start then ?",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 17,
+  "chunks_failed": [
+    "QMS_ACA_TR_020_c013"
+  ],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

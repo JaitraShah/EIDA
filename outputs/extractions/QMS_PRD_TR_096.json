@@ -1,0 +1,215 @@
+{
+  "source_id": "QMS_PRD_TR_096",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_096_c000_d1",
+      "source_id": "QMS_PRD_TR_096",
+      "chunk_id": "QMS_PRD_TR_096_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to design a new remote control.",
+      "topic": "designing a new remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To have an advantage over competitors, be original, trendy, and user-friendly."
+      ],
+      "conditions": [
+        "The meeting was scheduled for 25 minutes but one participant had another meeting to attend."
+      ],
+      "dissent": [
+        "The UI participant had another meeting and asked the PM to hurry up."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we are here for the kickoff meeting of uh the process of designing a new remote control.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "The goal is to have a remote control so to have an advantage over our competitors we have to be original, we have to be trendy and we have to also try to be user-friendly.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "You have another meeting soon ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's true. I have another meeting so if you could uh {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_096_c000_d2",
+      "source_id": "QMS_PRD_TR_096",
+      "chunk_id": "QMS_PRD_TR_096_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to divide the design process into three main points: functional design, conceptual design, and desired design.",
+      "topic": "dividing the design process",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To identify the main user needs and technical functions the remote control should fulfill, specify the different components involved, and detail the choices made."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So the design step will be divided in three uh main points . First it will be the functional design . Third is the conceptual design and then is the desired design .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "The functional design is to identify the main user needs , the technical function the remote control should fulfil .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_096_c000_d3",
+      "source_id": "QMS_PRD_TR_096",
+      "chunk_id": "QMS_PRD_TR_096_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to ask each member to draw their favorite animal on the whiteboard.",
+      "topic": "asking members to draw their favorite animal",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "As an original and fun icebreaker for the design meeting."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I will now ask you which is very important for the design of a new remote control for to uh each of us to to draw uh your favourite animal on the white board .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_096_c002_d1",
+      "source_id": "QMS_PRD_TR_096",
+      "chunk_id": "QMS_PRD_TR_096_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a waterproof feature.",
+      "topic": "remote control features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To make the remote control usable in the bath.",
+        "To make the remote control original."
+      ],
+      "conditions": [
+        "The remote control may be sold with a plastic protection and a waterproof box.",
+        "The remote control may have a special button to make it beep."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe it is original because you can uh use it in your uh bath whereas the others can't.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Water-proof as well.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Waterproof .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Waterproof .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Water-proof would be very original .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But maybe we can bulk it with uh already this plastic thing and uh the waterproof uh stuff as well .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_096_c003_d1",
+      "source_id": "QMS_PRD_TR_096",
+      "chunk_id": "QMS_PRD_TR_096_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to explore the possibility of a whistle-controlled remote control.",
+      "topic": "remote control design",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Improves originality and can provide an advantage over competitors."
+      ],
+      "conditions": [
+        "The team will ask the Industrial Designer to find out more about the industrial design, the User Interface Designer to consider the number of buttons and convenience for the user, and the Market Expert to find out the absolute requirements for the user."
+      ],
+      "dissent": [],
+      "owner": "Industrial Designer",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we can uh have a whistle uh remote control ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . Yeah whistle .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I don't know , whistle-able ?",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Whistle tracking .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "That's a good idea , that's very original and that's can uh improve .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's cool . I think I like the idea , but I'm not sure about the what you ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 4,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

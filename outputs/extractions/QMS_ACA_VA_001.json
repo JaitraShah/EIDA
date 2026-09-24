@@ -1,0 +1,1137 @@
+{
+  "source_id": "QMS_ACA_VA_001",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_VA_001_c000_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to stick to the concept to speech approach.",
+      "topic": "approach for the dialogue manager",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It was decided to stick to the concept to speech approach because it was considered simpler."
+      ],
+      "conditions": [
+        "The team has already written the syntax trees for three or four of the twelve possible utterances."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I'm going backwards now, so 'synthesis' is where you sort of make these sounds, and 'concept to speech' is feeding into this synthesis module giving it what needs to be said, and the whole syntactic structure so it can pronounce things better, presumably.",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "And , uh , we decided to stick to the so - called concept to speech approach.",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c001_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c001",
+      "schema_version": "1.0.0",
+      "decision": "The system was designed to work with a Siemens virtual touch screen, but it is being used via mouse instead.",
+      "topic": "system design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The system was designed for gestural recognition with the Siemens virtual touch screen, but we don't have it here."
+      ],
+      "conditions": [
+        "The system was designed for the Siemens virtual touch screen, but it is being used via mouse instead."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And so we 're doing it via mouse , but the whole system was designed to work with this thing and it was a lot of engineering stuff . No science in there whatsoever , but it 's working now , and um , that 's the good news .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "And so we 're doing it via mouse , but the whole system was designed to work with this thing and it was a lot of engineering stuff . No science in there whatsoever , but it 's working now , and um , that 's the good news .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c001_d2",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c001",
+      "schema_version": "1.0.0",
+      "decision": "The parsing and generation modules are the only parts that are not language independent.",
+      "topic": "language independence of modules",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Everything else proved to be language independent except for the parsing and the generation."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And so we 're doing it via mouse , but the whole system was designed to work with this thing and it was a lot of engineering stuff . No science in there whatsoever , but it 's working now , and um , that 's the good news . So everything else actually did prove to be language independent except for the parsing and the generation.",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c001_d3",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c001",
+      "schema_version": "1.0.0",
+      "decision": "Grad B still doesn't understand the information flow and the modules in the system.",
+      "topic": "understanding of the system",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad B still doesn't exactly understand the information flow in this thing, or what the modules are and so on."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I still don't exactly understand sort of the information flow in this thing , or what the modules are and so on .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c001_d4",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c001",
+      "schema_version": "1.0.0",
+      "decision": "Professor C suggested that Keith, Robert, or Johno could walk Grad B through the system when they have free time.",
+      "topic": "help with understanding the system",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Professor C suggested that Keith, Robert, or Johno could walk Grad B through the system when they have free time."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And you can ask all the questions about how this all fits together .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c002_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c002",
+      "schema_version": "1.0.0",
+      "decision": "The plan for the summer is to step back from the applied project and focus on basic issues.",
+      "topic": "summer plan",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The idea is to focus on the basic issues."
+      ],
+      "conditions": [
+        "The demo requirements for this Fall are taken care of later this week."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The plan for this summer uh , really is to step back from the applied project ,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "And , so The idea is there 's this uh , other subgroup that 's worrying about formalizing the notation . But sort of in parallel with that , uh , the hope is tha in particularly you will work on constructions in English Ge - and German for this domain ,",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c003_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c003",
+      "schema_version": "1.0.0",
+      "decision": "A plan to give a talk about SmartKom project, including a demo, to the institute was proposed.",
+      "topic": "presentation plan",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "To give a sensible answer about SmartKom to people on the streets.",
+        "To show the project to anyone interested."
+      ],
+      "conditions": [
+        "The bugs need to be worked out.",
+        "The ontology, constructions, and execution engine need to be defined."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , c sh we could set that up as actually an institute wide thing ? Just give a talk in the big room, and ...",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's got ... What I think is ... is a good idea that I can ... can show to anyone who's interested, we can even make a sort of an internal demo, and I ... I show you what I do,",
+          "speaker": "Grad E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But any so that ... e e It's clear, then, I think . Actually, roughly starting uh let's say, nex next meeting, cuz this meeting we have one other thing to tie up besides the trip report .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c004_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c004",
+      "schema_version": "1.0.0",
+      "decision": "Grad E proposes to open the internal 'group-ware' server at EML to allow for collaboration with Tilman and Ralf from the System Gruppe.",
+      "topic": "collaboration",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad E mentions the potential for synergy and overlap in their work."
+      ],
+      "conditions": [
+        "Grad E mentions the need to find someone at EML interested in the collaboration."
+      ],
+      "dissent": [],
+      "owner": "Grad E",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "part of my responsibility is uh to use our internal 'group-ware' server at EML, make that open to all of us and them",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "If I find someone at EML that is interested in that",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c005_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c005",
+      "schema_version": "1.0.0",
+      "decision": "A running belief net for the specific subdomain is to be completed in the next few weeks.",
+      "topic": "belief net",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Bhaskara is switching projects and will leave an inheritance, which is a belief net that does these things."
+      ],
+      "conditions": [
+        "Bhaskara doesn't need help from this group on the technical aspects."
+      ],
+      "dissent": [],
+      "owner": "Bhaskara",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And so the current state of things is that, again, starting now, um we'd like to actually get a running belief - net for this particular subdomain done in the next few weeks.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But in terms of what are the decisions and stuff like that, that's something that we all have to work out. Is that right? I mean that's both you guys' understanding of where we are?",
+          "speaker": "Professor C",
+          "supports": "status"
+        },
+        {
+          "quote": "We had um decided",
+          "speaker": "Grad E",
+          "supports": "status"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c006_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to consider Hugin as a potential software for the project.",
+      "topic": "software choice",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Hugin is free and people seem to use it."
+      ],
+      "conditions": [
+        "It may be free to academics."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Hugin, yeah that's free.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And Hugin, yeah that's free.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Hugin, or whatever?",
+          "speaker": "Grad G",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c006_d2",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was suggested not to spend two weeks in changing the JavaBayes code.",
+      "topic": "coding effort",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It's not necessary."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "No,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c006_d3",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was agreed that Grad E will provide the internal structure of the belief net.",
+      "topic": "data provision",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad E offered to do so."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Grad E",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I will give you the input in terms of the internal structure.",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c006_d4",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was agreed that Grad G will be available on Tuesdays and Thursdays afternoon-ish.",
+      "topic": "availability",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad G confirmed his availability."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I can be around.",
+          "speaker": "Grad G",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c006_d5",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was agreed that the process of deciding what these connections are will involve designing and learning.",
+      "topic": "decision-making process",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor C explained the process."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Right. Well there are two different things you do.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c007_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c007",
+      "schema_version": "1.0.0",
+      "decision": "Grad E will send the transcribed data in English and German.",
+      "topic": "data sharing",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad E mentioned they already have data in English and German."
+      ],
+      "conditions": [
+        "The data is in English and German."
+      ],
+      "dissent": [],
+      "owner": "Grad E",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I will send you that.",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "So . Transcribed. I will send you that. OK.",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c007_d2",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c007",
+      "schema_version": "1.0.0",
+      "decision": "A mediocre design will do in the beginning.",
+      "topic": "design approach",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad E suggested a mediocre design will do in the beginning."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But to solve our problems a mediocre design will do I think in the beginning.",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c007_d3",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c007",
+      "schema_version": "1.0.0",
+      "decision": "Grad B will look for the transcript of initial interactions with the system.",
+      "topic": "data analysis",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad B expressed interest in looking at the transcript of initial interactions with the system."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Grad B",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I could swore uh , I could swear I saw it sitting on someone 's desk at some point , but is there a um a transcript of any of the , sort of , initial interactions of people with the system ? Cuz you know , I 'm still sort of itching to to look at what look at the stuff , and see what people are saying.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c008_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c008",
+      "schema_version": "1.0.0",
+      "decision": "Leaving Japanese constructions outside of the scope for now.",
+      "topic": "scope of study",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think we should leave Japanese constructions maybe outside of the scope for now,",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "but um definitely it 's interesting to look at cross the bordered there.",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c008_d2",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c008",
+      "schema_version": "1.0.0",
+      "decision": "Investigating differences in spatial descriptions.",
+      "topic": "research focus",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And there is a huge uh project on spatial descriptions uh differences in spatial descriptions.",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c008_d3",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c008",
+      "schema_version": "1.0.0",
+      "decision": "Considering the relative position and direction relative to the speaker.",
+      "topic": "consideration of relative position",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Are you going to pay any attention to the relative position of the direction relative to the speaker?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c010_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c010",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that there are separate brain areas for things within reach and things that are out of reach.",
+      "topic": "brain areas for reach",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Linguistic stuff about near and far, yon and so forth."
+      ],
+      "conditions": [
+        "Apparently, the amazing result is that people with a deficit can do tasks with distant objects but not with nearby objects."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "There 's this linguistic facts . But apparently , the amazing result , um , they say . You get someone with a deficit so that they have a perfectly normal ability at distance things . So the s typical task is subdivision . So there 's a line on the wall over there , and you give them a laser pointer , and you say , \" Where 's the midpoint ? \" And they do fine . If you give them the line , and they have to touch it , they can't . There 's just that part of the brain isn't functioning , so they can't do that . Here 's the real experiment . The same thing on the wall , you give them a laser , \" where is it ? \", they do it . Give them a stick , long stick , and say \" do it \" , they can't do it . So there 's a remapping of distant space into nearby space.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So there 's uh all this linguistic stuff about you know , near and far , or yon and so forth.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c011_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c011",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "experimental evidence for a neural difference between proximal and distal manipulation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about experimental evidence, but no decision or conclusion stated."
+      ],
+      "conditions": [
+        "More research and experiments are planned."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So this was the first actual experimental evidence I 'd seen that was consistent with this anecdotal stuff.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "we 'll look at this.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c012_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c012",
+      "schema_version": "1.0.0",
+      "decision": "A decision on the ontology needs to be made.",
+      "topic": "ontology",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To build the parser and analyzer, an ontology needs to be decided."
+      ],
+      "conditions": [
+        "There are multiple options for ontology APIs and ontologies to choose from."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And so , uh , in addition to the business about just getting the linguistics right , and the formalism and stuff , we 're actually gonna build something and uh , Johno is point person on the parser , analyzer , whatever that is , and we 're gonna start on that in parallel with the um , the grammar stuff .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But to do that we 're gonna need to make some decisions like ontology , so , um",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c012_d2",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c012",
+      "schema_version": "1.0.0",
+      "decision": "The construction analyzer for the applied project can potentially be the same as the one Nancy needs for child language modeling.",
+      "topic": "construction analyzer",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "The construction analyzer for the applied project and the one for child language modeling might be the same."
+      ],
+      "conditions": [
+        "It's only one piece of a bigger system."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It looks like we 're now in a position that the construction analyzer that we want for this applied project can be the same as the construction analyzer that Nancy needs for the child language modeling .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c013_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c013",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that Robert will pick a piece of the space for his absentee thesis.",
+      "topic": "Robert's thesis topic",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt"
+      ],
+      "conditions": [
+        "The specific piece Robert will pick needs to be worked out over the next few weeks"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Professor C: ... Robert's gonna pick a piece of this space, ...",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "PhD A: It's possible yeah.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c013_d2",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c013",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that a new doctoral student in computer science named Eva will be joining the project.",
+      "topic": "New doctoral student joining the project",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt"
+      ],
+      "conditions": [
+        "Eva will join the project either next week or the first of August, depending on the blandishments of Microsoft"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Professor C: ... And her name is Eva. ...",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c013_d3",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c013",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that there is a drive-in thesis service in Saarbruecken.",
+      "topic": "Drive-in thesis service",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt"
+      ],
+      "conditions": [
+        "The cost of the service was mentioned but no specific details were given"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Professor C: ... It costs a lot. ...",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c013_d4",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c013",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that there is an undergraduate who wants to do an honors thesis on the belief net stuff.",
+      "topic": "Undergraduate wanting to do an honors thesis",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt"
+      ],
+      "conditions": [
+        "No specific details were given about the undergraduate"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Professor C: ... Uh, I talked today to a uh undergraduate who wants to do an honors thesis on this. ...",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c014_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to continue the work on the belief net and the ideas involved in it for the next few weeks.",
+      "topic": "continuation of belief net work",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It makes sense to get closure on the belief net and the ideas involved."
+      ],
+      "conditions": [
+        "It partly depends on what your thesis turns out to be and how that goes."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So anyway , uh , but uh she 's another one of these ones with a three point nine average and so forth and so on .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think as far as this group goes , um , it 's certainly worth continuing for the next few weeks to get closure on the uh belief - net and the ideas that are involved in that , and what are th what are the concepts .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I tho It 's probably better if I come next week with the um version O point nine of the structure .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c014_d2",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to have Ami give a talk at EML or something like that.",
+      "topic": "Ami giving a talk at EML",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It was suggested and agreed upon."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We can m undoubtedly get Ami uh to give a talk at uh EML or something like that . While he 's in {disfmarker} in uh {disfmarker}",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c014_d3",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that PhD A might have to go to Switzerland for between two weeks and four weeks.",
+      "topic": "PhD A's potential trip to Switzerland",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "PhD A mentioned the possibility."
+      ],
+      "conditions": [
+        "PhD A might have to go to Switzerland for between two weeks and four weeks."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I {disfmarker} I may have to go to Switzerland for {disfmarker} in June or beginning of July for between two weeks and four weeks , but uh , after that or before that.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK , fine .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c014_d4",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that PhD A could visit either Heidelberg or the German AI center while in Switzerland.",
+      "topic": "PhD A visiting Heidelberg or the German AI center",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It was suggested as a possibility."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And , um , if it 's useful we can probably arrange for you to drop by and visit either at Heidelberg or at the German AI center , while you 're in {disfmarker} in the neighborhood .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c014_d5",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that PhD A is invited to do some consulting with a bank in Geneva which has an affiliation with a research institute in Geneva.",
+      "topic": "PhD A's invitation to do consulting in Geneva",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "PhD A mentioned the invitation."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I {disfmarker} I 'm invited to do some consulting with a bank in Geneva which has an affiliation with a research institute in Geneva , which I forgot the name of.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c014_d6",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that there is a significant connection between ICSI and EPFL.",
+      "topic": "Connection between ICSI and EPFL",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor C mentioned the connection."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We 're connected to uh {disfmarker} There 's a {disfmarker} there 's a {disfmarker} a very significant connection between {disfmarker} We 'll {disfmarker} we 'll go through this ,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c014_d7",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that there is a research institute in Geneva that has an affiliation with a bank in Geneva.",
+      "topic": "Research institute in Geneva with bank affiliation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "PhD A mentioned the research institute."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I 'm invited to do some consulting with a bank in Geneva which has an affiliation with a research institute in Geneva , which I forgot the name of.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c014_d8",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that there is a very significant connection between DFKI and EPFL.",
+      "topic": "Connection between DFKI and EPFL",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor C mentioned the connection."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Cuz they 've actually {disfmarker} these DFKI guys have done as much as anyone over the last decade in trying to build them . So we 'll set that up .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c014_d9",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that there is a book that PhD A will be building up some audience for it.",
+      "topic": "Book that PhD A will build audience for",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor C mentioned the book."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And you 'll get feedback from these guys . Cuz they 've actually {disfmarker} these DFKI guys have done as much as anyone over the last decade in trying to build them . So we 'll set that up .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c015_d1",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c015",
+      "schema_version": "1.0.0",
+      "decision": "Professor C suggests that Grad E, Grad G, and Grad B come up with a partial proposal and partial questions about the belief net and decisions, and that the group will try to finish it by next Monday.",
+      "topic": "discussion of belief net and decisions",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Professor C thinks they won't get lots more information, it's a design problem."
+      ],
+      "conditions": [
+        "Grad E will come next week with version O point nine of the structure."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "OK . So , how about if you two guys between now and next week come up with something that is partially proposal , and partially questions , saying \" here 's what we think we understand , here are the things we think we don't understand \" . And that we as a group will try to to finish it . What I 'd like to do is shoot f for finishing all this next Monday .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I I tho It 's probably better if I come next week with the um version O point nine of the structure .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_001_c015_d2",
+      "source_id": "QMS_ACA_VA_001",
+      "chunk_id": "QMS_ACA_VA_001_c015",
+      "schema_version": "1.0.0",
+      "decision": "Professor C suggests catching up with Ellen to discuss image schemas.",
+      "topic": "discussion of image schemas",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Professor C wants the image schemas, wants them formalized."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So let me make a note to do that .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 16,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

@@ -1,0 +1,74 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c016_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c016",
+      "schema_version": "1.0.0",
+      "decision": "Professor B will prepare an annual report for DARPA, starting from papers and status reports.",
+      "topic": "preparation of annual report",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "DARPA asked for it.",
+        "The status reports are helpful."
+      ],
+      "conditions": [
+        "Professor B will end up bugging people for more clarification about stuff."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I 'll be putting together stuff . I 'll do it , uh , you know , as much as I can without bothering people , just by looking at papers and status reports .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , so I can grab stuff there . And if , uh {disfmarker} if I have some questions I 'll {disfmarker}",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But , um , I 'm {disfmarker} I 'm sure before it 's all done , I 'll end up bugging people for more clarification about stuff .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_000_c016_d2",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c016",
+      "schema_version": "1.0.0",
+      "decision": "Grad F and PhD E will discuss the status of speech transcription and automatic transcription.",
+      "topic": "discussion about speech transcription and automatic transcription",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad F mentioned it."
+      ],
+      "conditions": [
+        "They are running late."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we were gonna do sort of status of speech transcription {disfmarker} automatic transcription , but we 're kind of running late . So .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "How long does it take you to save the data ?",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

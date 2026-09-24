@@ -1,0 +1,923 @@
+{
+  "source_id": "QMS_ACA_TE_007",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TE_007_c000_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c000",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to start the meeting since they started recording.",
+      "topic": "starting the meeting",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Since they started recording, it was better to just start."
+      ],
+      "conditions": [
+        "They started late."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well, we started recording, but Yeah.",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "Since we're starting late I figured we'd better just start.",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c000_d2",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c000",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to work on the mock-up for question answering or something separate from the interface.",
+      "topic": "working on a mock-up",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "They were going to do a mock-up, like question answering or something separate from the interface."
+      ],
+      "conditions": [
+        "They need to sort it out and get somebody going on it because they have a month left."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We were gonna do a mock-up, like question answering or something, I thought, that was totally separate from the interface.",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "That was the thing we talked about, I think, before the transcriber.",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c000_d3",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c000",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to choose between having everyone say digits at the same time or having the same exact strings said at different times.",
+      "topic": "choice of digit comparison method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "They discussed the choice between having everyone say digits at the same time or having the same exact strings said at different times."
+      ],
+      "conditions": [
+        "They need to see how long they go and how good the snack is."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The choice is, uh, which we want more, the comparison, uh, of everybody saying them at the same time or the comparison of people saying the same digits at different times that?",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't know.",
+          "speaker": "PhD G",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c001_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to consider doing meeting recognition on automatic segmentations.",
+      "topic": "meeting recognition",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Because Thilo's segmenter is working well."
+      ],
+      "conditions": [
+        "The experiment is still not complete."
+      ],
+      "dissent": [
+        "Professor F suggested increasing the error rate."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But one issue actually that just came up in discussion with Liz and Don was , um , as far as meeting recognition is concerned , um , we would really like to , uh , move , uh , to , uh , doing the recognition on automatic segmentations.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Y think you think we should increase the error rate.",
+          "speaker": "Professor F",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c002_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c002",
+      "schema_version": "1.0.0",
+      "decision": "They decided to use beeps and digits to help the transcriber",
+      "topic": "transcription method",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The transcriber thought that the easiest thing for them would be if there was a beep and then the number, a digit, and then a beep at the beginning of each one",
+        "Adam wrote a little script to generate those beeps"
+      ],
+      "conditions": [
+        "They will send one more sample meeting to the transcriber",
+        "Thilo has run his segmentation",
+        "Adam will generate the chunked file"
+      ],
+      "dissent": [],
+      "owner": "Adam",
+      "approver": "Professor F",
+      "evidence": [
+        {
+          "quote": "And so he talked it over with the transcriber and the transcriber thought that the easiest thing for them would be if there was a beep and then the nu a number , a digit , and then a beep , uh , at the beginning of each one",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "And , um , so Adam wrote a little script to generate those style , uh , beeps",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So , um , we 're gonna send them one more sample meeting , uh , and Thilo has run his segmentation . Adam 's gonna generate the chunked file . And then , um , I 'll give it to Brian and they can try that out . And when we get that back we 'll see if that sort of fixes the problem we had with , uh , too many beeps in the last transcription .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c003_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to hire another transcriber",
+      "topic": "hiring of transcribers",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Attrition of current transcribers",
+        "Need for more transcriptions"
+      ],
+      "conditions": [
+        "Attrition reasons: baby, personal reasons, initial project timeline"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'm thinking of hiring another one",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't mean anything against the others.",
+          "speaker": "Postdoc A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "No backs.",
+          "speaker": "Professor F",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c003_d2",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to have a stream of transcriptions for the DARPA meeting in July",
+      "topic": "transcriptions for DARPA meeting",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Being in production mode",
+        "Knowing how well it does and how it operates"
+      ],
+      "conditions": [
+        "DARPA meeting in July"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think that would certainly be a very good thing to know.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "I hope we can get a better estimate from this one that we send them.",
+          "speaker": "PhD D",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c004_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c004",
+      "schema_version": "1.0.0",
+      "decision": "The plan is to keep the staff on the leaner side, rather than hiring eight to ten people right now.",
+      "topic": "staff hiring",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "If the IBM thing comes through quickly, they wouldn't want to have to lay people off and stuff."
+      ],
+      "conditions": [
+        "The IBM thing coming through quickly"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "but the plan is just as , uh , Morgan was saying we discussed this , and the plan right now is to keep the staff on the leaner side , you know , rather than hiring , like , eight to ten right now ,",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean , we also just couldn't sustain that forever .",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c004_d2",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c004",
+      "schema_version": "1.0.0",
+      "decision": "They might need help again getting the tighter boundaries or some hand-labeled data for experimentation.",
+      "topic": "data labeling",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To have a ground truth for this segmentation work"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "PhD G",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It 'd be great , too , if , um , we can we might need help again getting the tighter boundaries or some hand",
+          "speaker": "PhD G",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c004_d3",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c004",
+      "schema_version": "1.0.0",
+      "decision": "They could use the transcriptions which are done by now, and to use them for training a model or for whatever.",
+      "topic": "transcription use",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To create some speech-nonspeech labels out of them"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "PhD E",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And to use them for training a or for whatever .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c005_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c005",
+      "schema_version": "1.0.0",
+      "decision": "Postdoc A wants to organize a meeting of the transcribers.",
+      "topic": "meeting organization",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Postdoc A wants to discuss adjustments made by the transcribers."
+      ],
+      "conditions": [
+        "Helen is out of town for a couple of weeks."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I really want to have this meeting of the transcribers.",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I haven't done it yet, but I wanna do that and she's out of town, um, for a couple of weeks, but I wanna do that when she returns.",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c005_d2",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c005",
+      "schema_version": "1.0.0",
+      "decision": "Professor F and PhD D discussed reorganizing the directory structure for all meetings.",
+      "topic": "directory structure reorganization",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Jane and Adam and I had a meeting where we talked about the reorganization of the directory structure for all of the meeting",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c006_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c006",
+      "schema_version": "1.0.0",
+      "decision": "A plan was made to organize the meeting data and create an HTML page to display the organized data on the Meeting Recorder web page.",
+      "topic": "organization of meeting data",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To keep people updated about the status of various meetings."
+      ],
+      "conditions": [
+        "PhD D needs to get more information from Jane to fill in gaps."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I went through all of the data that we have collected so far , and have been putting it into , uh , a spreadsheet ... And so , the idea is that we can take this and then export it as HTML and put it on the Meeting Recorder web page so we can keep people updated about what's going on.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "I 've gotta get some more information from Jane cuz I have some gaps here that I need to get her to fill in",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c006_d2",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c006",
+      "schema_version": "1.0.0",
+      "decision": "A milestone was set to have the organized meeting data available by the middle of July for the DARPA meeting.",
+      "topic": "availability of organized meeting data",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To avoid continuing to say that none of the data is available and to have a subset that is available right now."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we can say ' here is a subset that is available right now '",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c008_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c008",
+      "schema_version": "1.0.0",
+      "decision": "The decision to handle the change of transcripts off-line before July was made.",
+      "topic": "transcript change handling",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Extended conversations and not getting anywhere."
+      ],
+      "conditions": [
+        "The people involved figure it out and take care of it before it's July."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": "Professor F",
+      "evidence": [
+        {
+          "quote": "let me just suggest that off - line that, uh, the people involved figure it out and take care of it before it 's July.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yes . It 's done, ready, available. Good.",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c009_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team is considering using time position normalized by speaking rate as a feature for their analysis.",
+      "topic": "analysis feature",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussed as a potential improvement for their analysis."
+      ],
+      "conditions": [
+        "They didn't try it yet."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "How about time position normalized by speaking rate?",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "And it depends on speaking rate",
+          "speaker": "PhD G",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c010_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c010",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the findings of the punctuation type, disfluency boundaries, and interruption prediction.",
+      "topic": "discussion of findings",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion of the team's work on finding punctuation type, disfluency boundaries, and interruption prediction."
+      ],
+      "conditions": [
+        "More data and more data per speaker are needed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But we one of the interesting things was I guess you reported on some te punctuation type {disfmarker}",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "And so the classifier learns more about Morgan than it does about sort of the average person",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And I think Don , um {disfmarker} Well , we have a long list of things he 's starting to look at now over the summer",
+          "speaker": "PhD G",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c011_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c011",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made in this excerpt.",
+      "topic": "tuning parameters for speech recognition system",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "Need to tune the size of the Gaussian system and the feature vector."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So just , um , uh the next thing to do is probably to tune the size of the Gaussian system , um , to this feature vector , which we haven't done at all . We just used the same configuration as we used for the standard system .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But the PLP features work um , uh , you know , continue to improve the ,",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c012_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c012",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to improve the PLP features using Dan's vocal tract normalization option.",
+      "topic": "improvement of PLP features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Improvement by one percent, which is about what we get with actually doing both training and test normalization."
+      ],
+      "conditions": [
+        "Numbers for the retraining everything with vocal tract length normalization will be available in a few hours."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But the PLP features work um , uh , you know , continue to improve the ,",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "As I said before , the uh using Dan 's , uh , uh , vocal tract normalization option works very well . So , um , @ @ {comment} I ran one experiment where we 're just did the vocal tract le normalization only in the test data ,",
+          "speaker": "PhD C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So , in a few hours we 'll have the numbers for the for retraining everything with vocal tract length normalization and",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c012_d2",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c012",
+      "schema_version": "1.0.0",
+      "decision": "It was noted that the current Switchboard MLP isn't trained on very good features.",
+      "topic": "quality of features for current Switchboard MLP",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Because it was trained on whatever was used last time you did Hub-five stuff, which didn't have any of the."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And that suggests also is of course that the current Switchboard MLP isn't trained on very good features.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c013_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c013",
+      "schema_version": "1.0.0",
+      "decision": "Professor F decided to add a high-pass filter to the code",
+      "topic": "code modification",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor F realized there was a DC offset in the recorded electronics data and wanted to take care of the problem."
+      ],
+      "conditions": [
+        "The high-pass filter was set at 90 Hz for a 16 kHz sampling rate, but it should have been 45 Hz."
+      ],
+      "dissent": [],
+      "owner": "Professor F",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , um , I don't know if Dan fixed it or",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "and I never put anything in to adjust it for different",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "He made it a parameter .",
+          "speaker": "PhD C",
+          "supports": "owner"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c014_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to retrain the net that was trained on PLP without all these things in it for the tandem system.",
+      "topic": "retraining the net",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To see if it has an effect on the tandem processing."
+      ],
+      "conditions": [
+        "After completing the current experiments."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "One experiment we should probably need to do though when um , at some point , is , since we 're using that same the net that was trained on PLP without all these things in it , for the tandem system , we may wanna go back and retrain ,",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , we But we may not . I mean , if it doesn't perform as well , we may not know why . Right ? Cuz we need to do the exact experiment .",
+          "speaker": "PhD D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c015_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c015",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to potentially use principal components and take out 13 components, and do deltas and double-deltas on that.",
+      "topic": "data processing method",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "To potentially reduce the number of components and get more context."
+      ],
+      "conditions": [
+        "It may not apply to the current case.",
+        "There might be bugs in the way they are feeding the tandem features."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so we treated the first thirteen as though they were standard features.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "But, again, given all these differences, maybe it's more important in your case that you not take a lot of these low-variance, uh, components.",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But there the main point is that, um, you know, it took us a while but we have the procedure for coupling the two systems debugged now and I mean, there's still conceivably some bug somewhere in the way we're feeding the tandem features.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c015_d2",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c015",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to debug the issue with feeding the tandem features into the system.",
+      "topic": "debugging",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "To find and fix potential bugs in the way they are feeding the tandem features."
+      ],
+      "conditions": [
+        "There might be a bug in the way they are generating or feeding the tandem features."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But there the main point is that, um, you know, it took us a while but we have the procedure for coupling the two systems debugged now and I mean, there's still conceivably some bug somewhere in the way we're feeding the tandem features.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c016_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c016",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "experiment with tandem features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the possibility of optimizing features for the word error, but no decision was made."
+      ],
+      "conditions": [
+        "Discussion about potential issues such as mismatch in phone sets, size of the network, and time-saving."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So another huge experiment we could do would be to take the tandem features, uh, do SRI forced alignments using those features, and then re - do the net with those.",
+          "speaker": "PhD D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm.",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Another thing is since you 're not using the net for recognition per se but just for this transformation, it 's probably bigger than it needs to be.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "And there 's a mismatch in the phone sets.",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c017_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c017",
+      "schema_version": "1.0.0",
+      "decision": "The current best system in the Aurora thing is the one that concatenates the neural net outputs and the regular features",
+      "topic": "best system in the Aurora thing",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Stephane's idea was to take as the input feature vector to the Gaussian mixture system a concatenation of the neural net outputs and the regular features. It helped a lot."
+      ],
+      "conditions": [
+        "Check with Stephane for details on which combination worked best."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , uh , his idea was to take as the input feature vector to the , uh , Gaussian mixture system , {vocalsound} uh , a concatenation of the neural net outputs and the regular features .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "and {disfmarker} {vocalsound} and {disfmarker} and it helped a lot .",
+          "speaker": "Professor F",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c017_d2",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c017",
+      "schema_version": "1.0.0",
+      "decision": "The team will do the digits together",
+      "topic": "digits analysis",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Given that we're in a hurry for snacks, maybe we should do them together."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I g I think , given that we 're in a hurry for snacks , maybe we should do them together .",
+          "speaker": "Professor F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TE_007_c018_d1",
+      "source_id": "QMS_ACA_TE_007",
+      "chunk_id": "QMS_ACA_TE_007_c018",
+      "schema_version": "1.0.0",
+      "decision": "The group decided to use 'zeros' as the representation for the number '0'.",
+      "topic": "number representation",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "disfmarker",
+          "rejected": true,
+          "reason": "not chosen"
+        }
+      ],
+      "rationale": [
+        "It was agreed to be consistent."
+      ],
+      "conditions": [
+        "No other reason or caveat stated."
+      ],
+      "dissent": [
+        "No dissent stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Why don't we do zer i Anyone have a problem with saying zero ? Is zero OK ?",
+          "speaker": "Professor F",
+          "supports": "decision"
+        },
+        {
+          "quote": "No.",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 18,
+  "chunks_failed": [
+    "QMS_ACA_TE_007_c007"
+  ],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

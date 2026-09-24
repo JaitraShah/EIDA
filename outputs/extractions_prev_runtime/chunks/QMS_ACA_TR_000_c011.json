@@ -1,0 +1,68 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c011_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c011",
+      "schema_version": "1.0.0",
+      "decision": "The decision on how to send out the meeting transcripts was not made.",
+      "topic": "transcript sending",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about sending out transcripts, but no decision was made."
+      ],
+      "conditions": [
+        "The decision is pending further discussion and checking of transcripts."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah . Now we haven't actually had anyone go through that meeting, to see whether the transcript is correct and to see how much was missed and all that sort of stuff.",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's on my list.",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's gonna have to go through our regular process.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_000_c011_d2",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c011",
+      "schema_version": "1.0.0",
+      "decision": "Postdoc A will have the NSA meetings transcripts done by Monday.",
+      "topic": "NSA meetings transcripts",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Postdoc A stated they will have the transcripts done by Monday."
+      ],
+      "conditions": [
+        "No other conditions mentioned."
+      ],
+      "dissent": [],
+      "owner": "Postdoc A",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I will have them done by Monday.",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

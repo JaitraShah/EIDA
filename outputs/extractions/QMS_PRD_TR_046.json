@@ -1,0 +1,652 @@
+{
+  "source_id": "QMS_PRD_TR_046",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_046_c000_d1",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c000",
+      "schema_version": "1.0.0",
+      "decision": "The functions of the remote control are to be determined.",
+      "topic": "functions of the remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Determining the technical functions of the remote control."
+      ],
+      "conditions": [
+        "Discussion on the functions of the remote control is ongoing."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Determine the technical functions, what is the effect of the apparatus, what actually is it supposed to do, what do people pick up the remote and use it for.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And then we're going to determine its working design, how exactly will it perform its functions, that's the whole technical side of it.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "The function of a remote control, as what uh we've been informed, is basically to send messages to the television set, for example, switch it on, switch it off, go to this channel, go to channel nine, turn the volume up, etcetera.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c001_d1",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be simple yet high-tech looking.",
+      "topic": "remote control design",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Users are not happy with current remote controls, 75% think they're ugly, 80% are willing to spend more for a fancier design.",
+        "It needs to be snazzy and simple."
+      ],
+      "conditions": [
+        "The exact design is not yet decided."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So that's really what we need to do . And we need we need it to be simple , yet it needs to be high-tech looking .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "my team wasn't very clear.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "We only use ten per cent of our brains .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c002_d1",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the need for a simple remote control design that is user-friendly and open to a wide range of consumers.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The functionality of the product really needs to be considered as to like what type of buttons do we really need on it.",
+        "It needs to be open to a wide range of consumers.",
+        "The engineering ones tend to make it look more complicated than it really is."
+      ],
+      "conditions": [
+        "The age range of the consumers was mentioned.",
+        "The purpose of the remote (D_V_D_ player, TiVo, etc.) was discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So saying from y your slide , your presentation , the engineering versus the user-specified remotes , I think that we should go with something that's more user-friendly .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "The functionality of the product really needs to be considered as to like what type of buttons do we really need on it.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It needs to be open to a wide range of consumers.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The engineering ones tend to make it look more complicated than it really is.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And it needs to be open to a wide range of consumers, so even though we need a small number of buttons, we also need to take in like are most people going to be using it for a D_V_D_ player, a TiVo, what what exactly are we using it for, as well as the age range.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c002_d2",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of incorporating speech recognition in the remote control.",
+      "topic": "speech recognition in remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Speech recognition is an up-and-coming thing consumers are really interested in.",
+        "Since our findings found that people are willing to pay more money for a remote with speech recognition."
+      ],
+      "conditions": [
+        "The specific implementation of speech recognition was not detailed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And also we found our team found that speech recognition is it's like an up-and-coming thing they really consumers are really interested in it, and since our findings found that people are willing to pay more money for a remote for it to be more high-class we could consider it.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Speech recognition is an up-and-coming thing consumers are really interested in it.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Since our findings found that people are willing to pay more money for a remote with speech recognition.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c003_d1",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c003",
+      "schema_version": "1.0.0",
+      "decision": "The design includes a power source, a smart chip, a large on-off button, a selection button for various entertainment devices, a switch, an extra bulb for flashiness, a subcomponent for power diversion, and an infra-red bulb.",
+      "topic": "remote design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We need a power source, we're gonna need a smart chip if we're gonna make it multi-functional. Um extra functions will probably need an additional chip. Either that or the smart chip will have to be extremely smart.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um power source, I figured, batteries, 'cause they're easily available. Typically a remote has either two double A_s or four triple A_s, sometimes three. Uh it really kinda depends on the size of the actual remote itself.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "A large on-off button, 'cause demographically we're moving towards an older generation of people, so a large on-off button would probably be good.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Selection button for various entertainment devices, so you want something that will permit you to select the D_V_D_ player or the T_V_ or the stereo system.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Smart chip that permits, sorry, universal application again, something that'll allow us to skip over between devices, and that's kinda it.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Power source over here. We're gonna have a switch obviously between the power source and the rest of it, and you're gonna need the switch.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Extra bulb could just be for flashiness.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "The chip and of course the infra-red bulb, so it can communicate with the various devices that it needs to talk to.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c004_d1",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to make the buttons on the remote glow in the dark.",
+      "topic": "remote design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It was considered good."
+      ],
+      "conditions": [
+        "The team will discuss the new project requirements later."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We should make it glow in the dark.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah, definitely.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c004_d2",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to make the buttons on the remote larger.",
+      "topic": "remote design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It was considered a good idea because the existing examples had small buttons."
+      ],
+      "conditions": [
+        "The team will discuss the new project requirements later."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Should it be larger buttons in general, you know like uh the examples that I had, they were swi quite small.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c004_d3",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to make the buttons on the remote round.",
+      "topic": "remote design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It was considered a good design idea."
+      ],
+      "conditions": [
+        "The team will discuss the new project requirements later."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think we should do something like maybe bigger and round like bubbles.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c004_d4",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to include the company color and slogan on the remote.",
+      "topic": "remote design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It was decided to promote the company more."
+      ],
+      "conditions": [
+        "The team will discuss the new project requirements later."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And we need to promote our company more, so we need to somehow include our colour and our company slogan on the remote.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c004_d5",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to design the remote to be a TV-only remote, not multi-functional.",
+      "topic": "remote function",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It was decided to not over-complicate things."
+      ],
+      "conditions": [
+        "The team will discuss the new project requirements later."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It's not gonna be multi-functional.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c004_d6",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to exclude Teletext from the remote design.",
+      "topic": "remote features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It was considered out-dated due to the Internet."
+      ],
+      "conditions": [
+        "The team will discuss the new project requirements later."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Nobody needs to go to the teletext channel to check the news, because of the Internet.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c005_d1",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote should have a homing device to help find it easily.",
+      "topic": "finding device",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "People are looking for a remote that's more high-tech."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I need we need a like homing device.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c005_d2",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c005",
+      "schema_version": "1.0.0",
+      "decision": "The number of buttons on the remote should be kept down because people only use ten percent.",
+      "topic": "number of buttons",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "People only use ten percent of the buttons."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'll make a note here that we wanna keep the number of buttons down.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c005_d3",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote should be able to send messages to the TV, change the channel, turn on and off, and adjust volume.",
+      "topic": "remote functions",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we said it needs to send messages to the T_V_ , needs to change the channel , turn on and off , just basic simple stuff like this.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c006_d1",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to discuss the power source for the remote, including whether it will have a charger or run strictly off batteries.",
+      "topic": "power source",
+      "status": "deferred",
+      "alternatives": [],
+      "rationale": [
+        "Discussion of different desires for the remote's features."
+      ],
+      "conditions": [
+        "Discussion of speech recognition as a potential feature."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay . I I think we can make a decision about that later . Uh we'll still put that as a point that we need to discuss . So that would include battery source Power source rather . Is it going to have a charger , or is it going to be run strictly off batteries ? And we also need to deal with the issue you mentioned of speech recognition , if we want that.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , then do you put the voice recognition do you put the r like receiver on the actual television , in the base , or in the actual remote ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c006_d2",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of including speech recognition in the remote.",
+      "topic": "speech recognition",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Different age groups have different desires for speech recognition."
+      ],
+      "conditions": [
+        "Discussion of where to place the speech recognition receiver."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well , then do you put the voice recognition do you put the r like receiver on the actual television , in the base , or in the actual remote ,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "The speech recognition could be part of the lost and found device , too . If we said , find remote , locate remote , or something .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c006_d3",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of leaving out the numbers zero through nine on the remote.",
+      "topic": "remote numbers",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion of whether the numbers are necessary."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well , I don't know , I mean , if you can like well {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c007_d1",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote will have buttons for up, down, and side-to-side for menus.",
+      "topic": "remote design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "all functions on one button",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "a separate box for less-used functions",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The foreign film market is expanding and subtitles are needed."
+      ],
+      "conditions": [
+        "The average user doesn't need to adjust audio and video settings often."
+      ],
+      "dissent": [
+        "The UI suggested combining functions or having a separate box for less-used functions."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we need up, down, and side-to-side buttons.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "For the menus.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "We need up, down, and side-to-side buttons. For the menus.",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well, that could be combined with like the channel or the volume buttons.",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_046_c008_d1",
+      "source_id": "QMS_PRD_TR_046",
+      "chunk_id": "QMS_PRD_TR_046_c008",
+      "schema_version": "1.0.0",
+      "decision": "A menu button will be added for various things needed, including voice recognition if available.",
+      "topic": "menu design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about menu design options."
+      ],
+      "conditions": [
+        "Voice recognition settings are to be included if available."
+      ],
+      "dissent": [],
+      "owner": "I_D_ (Industrial Designer)",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we just have it like add a menu button then for the various things needed, including v voice recognition if we have any like settings for voice recognition now",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "In the middle perhaps",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I put the minutes for the first meeting already in the project documents folder, if you'd like to review them.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 9,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

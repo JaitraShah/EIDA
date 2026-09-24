@@ -1,0 +1,98 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c014_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to purchase new headphones.",
+      "topic": "purchase of new headphones",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The new headphones are preferred.",
+        "Problem with low gain in the original headphones."
+      ],
+      "conditions": [
+        "Four people might come to work for a day."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We should get it.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just buy them.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It'd just have to be a separate order.",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "We have spare headsets.",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I have W Well, the thing is, that if we have four people come to work for a day, I was hanging on to the others for spares,",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just buy them.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just get the model number",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Cambridge SoundWorks, just down the street.",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_000_c014_d2",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c014",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to email out the brand of the new headphones.",
+      "topic": "emailing out the brand of new headphones",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "People are interested.",
+        "Grad F asked to email out the brand."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Could you email out the brand?",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh, sure. Yeah. OK.",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

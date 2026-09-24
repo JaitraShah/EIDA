@@ -1,0 +1,1119 @@
+{
+  "source_id": "QMS_ACA_VA_002",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_VA_002_c000_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c000",
+      "schema_version": "1.0.0",
+      "decision": "It was decided that participants will read digit strings for transcription.",
+      "topic": "transcription process",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To minimize breath sounds, ensure clarity, and facilitate transcription."
+      ],
+      "conditions": [
+        "Participants need to wear microphones correctly, fill out speaker and consent forms, and have the opportunity to edit transcripts."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , when you 're reading the digit strings , the first thing to do is just say which transcript you 're on .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , you can see the transcript ? There 's two large number strings on the digits ? So you would just read that one .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And I 'll read the digit strings first , so can see how that goes .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c000_d2",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c000",
+      "schema_version": "1.0.0",
+      "decision": "It was decided that transcripts will be anonymized but not the audio.",
+      "topic": "anonymization of transcripts",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To maintain privacy and reduce concerns about excising parts from the transcript."
+      ],
+      "conditions": [
+        "Identification by name will not be included in the transcript."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We 'll anonymize it in the transcript .",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So the transcript will not include names.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c001_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c001",
+      "schema_version": "1.0.0",
+      "decision": "The project's data collection method will include both table top microphones and close talking microphones.",
+      "topic": "data collection method",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To provide high quality audio for language research and to isolate the difference between the two types of microphones."
+      ],
+      "conditions": [
+        "The data will be released to the public through a body like the LDC."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So what we wanted is a room that's instrumented with both the table top microphones, and these are very high quality pressure zone mikes, as well as the close talking mikes.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , for people who are more interested in language, we didn't want to penalize them by having only the far field mikes available.",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Our intention is to release this data to the public, um, probably through f through a body like the LDC.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c002_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c002",
+      "schema_version": "1.0.0",
+      "decision": "A crude prototype will be created for the purpose of implementing, researching, and modeling the idea of inferring intentions from features in context.",
+      "topic": "prototype creation",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "To pursue the idea if it's worth it and to come up with a crude prototype."
+      ],
+      "conditions": [
+        "The prototype will be a very first and crude one."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think we will agree on that, um, to come up with a sort of very, very first crude prototype, and do some implementation work, and do some research, and some modeling.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But you can tell that we deliberately cut out this part. Because otherwise we couldn't get our GIS system to take to lead people this way.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c003_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed naming the modes of interaction as Vista, Enter, and Tango.",
+      "topic": "naming of interaction modes",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad B suggested the names Vista, Enter, and Tango for the modes of interaction."
+      ],
+      "conditions": [
+        "Grad B mentioned that the Tango mode could be relevant for approaching a building without entering."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But sometimes the Tango mode is really relevant in the sense that, um, if you want to, uh If you don't have the intention of entering your building, but you know that something is really close to it, and you just want to approach it, or get to that building.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So this ' Tango ' means, literally translated, ' to touch '.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I always come up with with silly names.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So this ' Tango ' means, literally translated, ' to touch '.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c003_d2",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the device needs to be switched on.",
+      "topic": "switching on the device",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor C mentioned that the device needs to be switched on."
+      ],
+      "conditions": [
+        "The reason for switching on the device was not explicitly stated."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It 's on ? OK , good.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c004_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c004",
+      "schema_version": "1.0.0",
+      "decision": "Grad B proposed a method to differentiate between different user intentions based on parsed input and context.",
+      "topic": "method for differentiating user intentions",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "The current parser used in the SmartKom system is too crude to capture differences in user intentions."
+      ],
+      "conditions": [
+        "The method requires additional part of speech, information on the verb, and modifiers."
+      ],
+      "dissent": [
+        "Grad E has no recollection of the email discussing this method."
+      ],
+      "owner": "Grad B",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "My suggestion is really simple. We start with, um {disfmarker} Now, Let me, uh, say one more thing. What we do know, is that the parser we use in the SmartKom system will never differentiate between any of these. So, basically all of these things will result in the same XML M - three - L structure. Sort of action 'go' and then an object.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's up for discussion. We can change all of it, any bit of it. Throw it all away.",
+          "speaker": "Grad B",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c005_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c005",
+      "schema_version": "1.0.0",
+      "decision": "A belief network will be used to understand the tourist domain.",
+      "topic": "method for understanding tourist domain",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The proposed task is well-formed and serves as a starter task for a deeper understanding in the tourist domain.",
+        "The current front-end doesn't provide enough information to understand the tourist domain."
+      ],
+      "conditions": [
+        "The structure of the belief network and the sources of information are yet to be determined.",
+        "The need for intermediate nodes in the belief network is acknowledged."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , what is important is that we understand what the proposed task is . And , the {disfmarker} the i uh , Robert and I talked about this some on Friday . And we think it 's well - formed . So we think it 's a well - formed , uh , starter task for this , uh , deeper understanding in the tourist domain .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Robert 's point is that the current front - end doesn't give you any way to {disfmarker} Not only doesn't it do it , but it also doesn't give you enough information to do it . It isn't like , if you just took what the front - end gives you , and used some clever inference algorithm on it , you would be able to figure out which of these is going on .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "i uh , d naively speaking , you 've {disfmarker} you 've got a {disfmarker} for this little task , a belief - net , which is going to have as output , the conditional pr probability of one of three things , that the person wants to {disfmarker} uh , to View it , to Enter it , or to Tango with it .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c006_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team did not decide on a specific method for extracting information from the M-three-L.",
+      "topic": "method for extracting information from M-three-L",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The M-three-L does not have the required information."
+      ],
+      "conditions": [
+        "The team needs to have a better way of referring to the parsed output."
+      ],
+      "dissent": [
+        "Grad B suggests that the team will get intention hypotheses."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we have to have a better way of referring to ...",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "The M-three-L does not have any of that.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Where would we extract that information from? From the M-three-L?",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "No. No. See, the M-three-L is not gonna give what he was saying is, the M-three-L does not have any of that.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well, they keep it. We have to request it.",
+          "speaker": "Grad B",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c007_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c007",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the SmartKom system should output information about the location of a building, including its distance and directions if necessary, based on the user's intention.",
+      "topic": "SmartKom system output",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the SmartKom system's ability to understand user intentions and provide appropriate information."
+      ],
+      "conditions": [
+        "The outcome will depend on the system's ability to interpret user intentions."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , if someone says , \" I wanna touch the side of the Powder - Tower \" , that would basically , we need to pop up Tango mode and the directions ?",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "But it wouldn't.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK . But that doesn't necessarily mean that we 'd have to infer a Source - Path - Goal to some degree for touching the side , right ?",
+          "speaker": "Grad E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , that 's a question mark . sh A lot of parsers , um , just , uh {disfmarker} That 's way beyond their scope , is {disfmarker} of interpreting that . You know ? But um , still outcome w the outcome will be some form of structure , with the town hall and maybe saying it 's a WH focus on the town hall . But to interpret it ,",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It 's a granularity factor ,",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But if it 's the post office , you will tell them how to get there .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So th They have done some interesting experiments on that in Hamburg as well .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But {disfmarker} i Go {disfmarker} go back to the {disfmarker} the uh , th",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c008_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c008",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to build a belief net that would make a three-way distinction in a plausible way, given the transcripts.",
+      "topic": "building a belief net",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The belief net is a good way of doing the inferential combination."
+      ],
+      "conditions": [
+        "The real issue is determining the factors involved in making the three-way distinction."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , the reason the belief - net is in blue , is the notion would be Uh , this may be a bad dis bad idea , but the idea is to take as a first goal , see if we could actually build a belief - net that would make this three way distinction uh , in a plausible way , given these We have all these transcripts and we 're able to , by hand , extract the features to put in the belief - net .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think that , uh , if we can get the information , a belief - net is a perfectly good way of doing the inferential combination of it .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c009_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use a room for recording subjects and start recording subjects within a month.",
+      "topic": "recording subjects",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The goal is to figure out how to solve problems.",
+        "The recording of subjects will help when starting data collection."
+      ],
+      "conditions": [
+        "The team may need to push the effort to get the information they need.",
+        "The team wants help from the subjects when recording."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , uh , I think you all know this , but we are going to actually use this little room Grad D:",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Professor C: and start recording subjects probably within a month or something .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Professor C: from that task , yeah . So , uh , I think you all know this , but we are going to actually use this little room Grad D:",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Professor C: So , uh , I think you all know this , but we are going to actually use this little room Grad D:",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c010_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c010",
+      "schema_version": "1.0.0",
+      "decision": "The data collection method for the study was described",
+      "topic": "data collection method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad B described the data collection method for the study"
+      ],
+      "conditions": [
+        "The exact details of the data collection method are still to be determined"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Imagine you 're the subject . You 're gonna be in here , and somebody {disfmarker} And {disfmarker} and you see , uh , either th the three - D model , or uh , a QuickTime animation of standing u in a square in Heidelberg . So you actually see that . Um . The uh , um , first thing is you have to read a text about Heidelberg . So , just off a textbook , uh , tourist guide , to familiarize , uh , yourself with that sort of odd - sounding German street names , like Fischergasse and so forth . So that 's part one . Part two is , you 're told that this huge new , wonderful computer system exists , that can y tell you everything you want to know , and it understands you completely . And so you 're gonna pick up that phone , dial a number , and you get a certain amount of tasks that you have to solve . First you have to know {disfmarker} find out how to get to that place , maybe with the intention of buying stamps in there . Maybe {disfmarker} So , the next task is to get to a certain place and take a picture for your grandchild . The third one is to get information on the history of an object . The fourth one {disfmarker} And then the g system breaks down . It crashes , And {disfmarker}",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK . Imagine you 're the {disfmarker} the subject . You 're gonna be in here , and somebody {disfmarker} And {disfmarker} and you see , uh , either th the three - D model , or uh , a QuickTime animation of standing u in a square in Heidelberg . So you actually see that . Um . The uh , um , first thing is you have to read a text about Heidelberg . So , just off a textbook , uh , tourist guide , to familiarize , uh , yourself with that sort of odd - sounding German street names , like Fischergasse and so forth . So that 's part one . Part two is , you 're told that this huge new , wonderful computer system exists , that can y tell you everything you want to know , and it understands you completely . And so you 're gonna pick up that phone , dial a number , and you get a certain amount of tasks that you have to solve . First you have to know {disfmarker} find out how to get to that place , maybe with the intention of buying stamps in there . Maybe {disfmarker} So , the next task is to get to a certain place and take a picture for your grandchild . The third one is to get information on the history of an object . The fourth one {disfmarker} And then the g system breaks down . It crashes , And {disfmarker}",
+          "speaker": "Grad D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c011_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c011",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to hire Fey Parrill, a graduate student with linguistics background, to act as the wizard for the experiment.",
+      "topic": "hiring the wizard",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "She has background in all this stuff.",
+        "She is a linguist.",
+        "She is looking for part-time work while waiting for graduate school."
+      ],
+      "conditions": [
+        "She will be in touch.",
+        "Nancy and Jane have offered to help with data collection and design."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "She 's gonna get in touch with me.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "She 's graduated.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "She is a graduate, OK.",
+          "speaker": "Grad D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "She started taking the class last year and then didn't continue.",
+          "speaker": "Grad D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "She 's a graduate, OK.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "She 's looking for some more part time work while she 's waiting actually for graduate school.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "She 's got you know , some background in all this stuff.",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "She 's a linguist st",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Nancy , we 'll have an At some point we 'll have another discussion on exactly what that 's gonna go.",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c012_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c012",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the details of data collection and design for the project.",
+      "topic": "data collection and design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To clarify the details of the data collection and design for the project."
+      ],
+      "conditions": [
+        "The group is still figuring out the details of the data collection and design."
+      ],
+      "dissent": [
+        "Grad E questioned the level of detail of the task."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And um , Jane , but also , uh , Liz have offered to help us do this , uh , data collection and design and stuff .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , when we get to that we 'll have some people doing it that know what they 're doing .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I guess the reason I was asking about the sort of the de the details of this kind of thing is that , um , it 's one thing to collect data for , I don't know , speech recognition or various other tasks that have pretty c clear correct answers , but with intention {vocalsound} um , obviously , as you point out , there 's a lot of di other factors and {disfmarker} I 'm not really sure , um , how {disfmarker} how {disfmarker} e the question of how to make it a t appropriate toy version of that {disfmarker} Um , it 's ju it 's just hard . So , I mean , obviously it 's a {disfmarker}",
+          "speaker": "Grad D",
+          "supports": "dissent"
+        },
+        {
+          "quote": "So , we that 's part of what we 'll have to figure out .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c012_d2",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c012",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the terminology for the intentions: Go back, View it, Enter it.",
+      "topic": "terminology for intentions",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To clarify the terminology for the intentions."
+      ],
+      "conditions": [
+        "The group is still discussing the terminology for the intentions."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The problem that I was tr gonna try to focus on today was , let 's suppose by magic you could collect dialogues in which , one way or the other , you were able to , uh , figure out both the intention , and set the context , and know what language was used . So let 's suppose that we can get that kind of data . Um . The issue is , can we find a way to , basically , featurize it so that we get some discrete number of features so that , uh , when we know the values to all those features , or as many as possible , we can w come up with the best estimate of which of the , in this case three little intentions , are most likely .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Th - the terminology we 're using is to {disfmarker}",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "It seems to me those are clear .",
+          "speaker": "Grad D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "All these So , like , the question is how what features can {disfmarker}",
+          "speaker": "Grad F",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c012_d3",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c012",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the referent of Tango mode.",
+      "topic": "referent of Tango mode",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To clarify the referent of Tango mode."
+      ],
+      "conditions": [
+        "The group is still discussing the referent of Tango mode."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Just sort of {disfmarker}",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "All these So , like , the question is how what features can {disfmarker}",
+          "speaker": "Grad F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Grad D: All right .",
+          "speaker": "Grad D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c012_d4",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c012",
+      "schema_version": "1.0.0",
+      "decision": "Grad E suggested that Tango could be a waltz instead of a tango.",
+      "topic": "interpretation of Tango",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad E thought Tango could be a waltz instead of a tango."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Grad E",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "See , I would have thought it was more of a waltz .",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c013_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c013",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to pick a belief network package for their project.",
+      "topic": "belief network package",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "The project requires interactive abilities, ease of modification, and transcript files."
+      ],
+      "conditions": [
+        "The team will choose a package that is stable."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So one of the things we wanna do is actually , uh , pick a package , doesn't matter which one , uh , presumably one that 's got good interactive abilities , cuz a lot of what we 're gonna be d You know , we don't need the one that 'll solve massive , uh , belief - nets quickly . d w These are not gonna get big in {disfmarker} in the foreseeable future . But we do want one in which it 's easy to interact with and , uh , modify . Because i that 's {disfmarker} A lot of what it 's gonna be , is , um , playing with this .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But it {disfmarker} what I like about it is it 's very concrete . OK ? We {disfmarker} we have a {disfmarker} we know what the outcomes are gonna be , and we have some {disfmarker} some data that 's loose , we can use our own intuition , and see how hard it is , and , importantly , what intermediate nodes we think we need . So it {disfmarker} if it turns out that just , thinking about the problem , you come up with things you really need to {disfmarker} You know , this is the kind of thing that is , you know , an intermediate little piece in your belief - net . That 'd be really interesting .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c014_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c014",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made about the choice of programming language or toolkit for the project.",
+      "topic": "programming language or toolkit",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "JavaBayes belief net",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "new end of Java libraries",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "m tool kit developed by Kevin Murphy",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the advantages and potential usefulness of different options, but no explicit decision.",
+        "Discussion about the compatibility with XML, a preferred interchange format."
+      ],
+      "conditions": [
+        "Discussion about the possibility of meeting Kevin Murphy."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But it may not be the best choice and there 're plenty of people around , students in the department who , you know , live and breathe Bayes - nets . So , uh ,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "No , th It turns out that there is a , uh {disfmarker} The new end of Java libraries . OK , and it turns out one called",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right . It 's OK .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Nancy knows him well . I don't know I don't know whether you guys have met Kevin yet or not ,",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But i But since we all probably are pretty sure that , um , the {disfmarker} For example , this th th the dialogue history is {disfmarker} is um , producing XML documents . M - three - L of course is XML . And the ontology that um , uh the student is {disfmarker} is constructing for me back in {disfmarker} in EML is in OIL and that 's also in XML . And so that 's where a lot of knowledge about bakeries , about hotels , about castles and stuff is gonna come from .",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So , yeah , we 're sort of {nonvocalsound} committed to XML as the kind of , uh , interchange . But that 's , you know , not a big deal .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c015_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c015",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed using XML for data input and output.",
+      "topic": "data input and output format",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "XML is a common format, easy to implement, and can be used for data specification."
+      ],
+      "conditions": [
+        "The team may consider using XML packages from the SmartKom system."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , in terms of {disfmarker} of {disfmarker} interchanging in and out of any module we build , It 'll be XML .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't {disfmarker} I don't see {disfmarker}",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , you could have an X {disfmarker} yeah , you could make and XML format for that . Sure .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "The {disfmarker} the lib M - three - L library does that . It 's also {disfmarker}",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c016_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c016",
+      "schema_version": "1.0.0",
+      "decision": "Professor C suggests to have a first cut at the belief net package and present it in the next meeting.",
+      "topic": "belief net package presentation",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Professor C wants to have a first cut at the belief net package and present it in the next meeting."
+      ],
+      "conditions": [
+        "The belief net package needs to be unpacked and run on both Swede and the current machine."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and tell us what it is , and give us a pointer so we can play with it or something .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        },
+        {
+          "quote": "And , then as soon as we have it , I think we should start trying to populate it for this problem .",
+          "speaker": "Professor C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But um , maybe it might be interesting if if the two of you can agree on who 's gonna be the speaker next Monday , to tell us something about the net you picked , and what it does , and how it does that .",
+          "speaker": "Professor C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c016_d2",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c016",
+      "schema_version": "1.0.0",
+      "decision": "Grad B suggests that Grad F and another graduate student present the belief net they picked in the next meeting.",
+      "topic": "presentation of the belief net",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad B suggests that Grad F and another graduate student present the belief net they picked in the next meeting."
+      ],
+      "conditions": [
+        "Grad F agrees to present the belief net."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But um , maybe it might be interesting if if the two of you can agree on who 's gonna be the speaker next Monday , to tell us something about the net you picked , and what it does , and how it does that .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , y",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c016_d3",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c016",
+      "schema_version": "1.0.0",
+      "decision": "Grad B suggests that the two students who pick the belief net package should decide who will present it in the next meeting.",
+      "topic": "decision on who will present the belief net",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Grad B suggests that the two students who pick the belief net package should decide who will present it in the next meeting."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But um , maybe it might be interesting if if the two of you can agree on who 's gonna be the speaker next Monday , to tell us something about the net you picked , and what it does , and how it does that .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c016_d4",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c016",
+      "schema_version": "1.0.0",
+      "decision": "Grad E asks about the relation between changing the table so that the system works in English and the belief net.",
+      "topic": "relation between changing the table and the belief net",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad E asks about the relation between changing the table so that the system works in English and the belief net."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And what 's the relation to this with {disfmarker} Changing the table so that the system works in English ?",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c016_d5",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c016",
+      "schema_version": "1.0.0",
+      "decision": "Grad B informs that the full NT and the full Linux version of the belief net package are available.",
+      "topic": "availability of the belief net package",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad B informs that the full NT and the full Linux version of the belief net package are available."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Then it will be my job to get this whole thing running both on Swede and on this machine .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c017_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c017",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the navigation system should be improved to take the user to the correct entrance instead of the postal address.",
+      "topic": "navigation system improvement",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The current system takes the user to the postal address instead of the entrance.",
+        "The system should produce better answers."
+      ],
+      "conditions": [
+        "The improvement depends on the successful implementation of Johno's and Bhaskara's belief net."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So this was actually an actual problem that we encountered, which nobody has because car navigation systems don't really care. You know, they get you to the beginning of the street, some now do the house number. But even that is problematic.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "If you wanna drive to the SAP in Waldorf, I'm sure the same is true of Microsoft, it takes you to the address, whatever, street number blah-blah-blah, you are miles away from the entrance.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Because the s postal address is maybe a mailbox somewhere.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c018_d1",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c018",
+      "schema_version": "1.0.0",
+      "decision": "Grad B and others will work on extracting features from the sample data for the project.",
+      "topic": "project work distribution",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad B suggested they use their intuition to extract features from the sample data."
+      ],
+      "conditions": [
+        "There is more sample data than what was shown."
+      ],
+      "dissent": [],
+      "owner": "['Grad B']",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "but sort of on your intuition of you know , \"Aha ! This is maybe a sign for that ,\"",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So , yeah . Later this week we should sort of get together , and sort of start thinking about that , hopefully .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "but sort of on your intuition of you know , \"Aha ! This is maybe a sign for this .\"",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_VA_002_c018_d2",
+      "source_id": "QMS_ACA_VA_002",
+      "chunk_id": "QMS_ACA_VA_002_c018",
+      "schema_version": "1.0.0",
+      "decision": "The Powder Tower is named after the ammunition stored in it, which caused it to explode when hit by a cannonball.",
+      "topic": "history of the Powder Tower",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad B explained that the Powder Tower stored ammunition and exploded when hit by a cannonball."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And that's why , when it was hit by uh , a cannon ball , it exploded.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It exploded . That's why they call it the Powder - Tower.",
+          "speaker": "Grad E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 19,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

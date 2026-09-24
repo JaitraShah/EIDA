@@ -1,0 +1,36 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c004_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c004",
+      "schema_version": "1.0.0",
+      "decision": "Postdoc A will talk to the lawyer about the email status",
+      "topic": "legal consultation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To find out the status of the email and avoid doing something unnecessary"
+      ],
+      "conditions": [
+        "People may not respond to the email"
+      ],
+      "dissent": [],
+      "owner": "Postdoc A",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Grad F: Morgan, can you talk to our lawyer about it, and find out what the status is on this ? Cuz I don't wanna do something that we don't need to.",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'll either wonder at the beginning or you'll wonder at the end.",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

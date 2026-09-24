@@ -1,0 +1,584 @@
+{
+  "source_id": "QMS_ACA_TR_040",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_040_c000_d1",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c000",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "comparison of research results",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor D mentions comparing results from other places, but no decision or comparison is explicitly stated."
+      ],
+      "conditions": [
+        "Professor D mentions having a little bit of time to compare results."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "OK . So , uh You can fill those out , uh {pause} after , actually , so So , I got , uh {pause} these results from , uh , Stephane . Also , um , I think that , uh {pause} um {pause} we might hear later today , about other results . I think s that , uh , there were some other very good results that we 're gonna wanna compare to . But , {vocalsound} r our results from other {disfmarker} other places , yeah .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "I I 'm sorry ? I didn't",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Uh , go ahead .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Y Actually , uh , um , for the Danish , there 's still some kind of mystery because , um , um , when we use the straight features , we are not able to get these nice number with the ICSI OGI one , I mean . We don't have this ninety - three seventy - eight , we have eight",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And it looks like the overall result as they are now , even without , you know , any {disfmarker} any bugs being fixed is that , uh , on the {disfmarker} the other tasks , we had this average of , uh , forty uh {disfmarker} nine percent , or so , improvement . And here we have somewhat better than that than the Danish , and somewhat worse than that on the German , but I mean , it sounds like , uh , one way or another , the methods that we 're doing can reduce the error rate from {disfmarker} from mel ceptrum {pause} down by , you know {pause} a fourth of them to , uh , a half of them . Somewhere in there , depending on the {pause} exact case . So So that 's good . I mean , I think that , uh , one of the things that Hynek was talking about was understanding what was in the other really good proposals and {disfmarker} and trying to see if what should ultimately be proposed is some , uh , combination of things . Um , if , uh {disfmarker} Cuz there 's things that they are doing {pause} there that we certainly are not doing . And there 's things that we 're doing that {pause} they 're not doing . And {disfmarker} and they all seem like good things .",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c001_d1",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c001",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about combining the best ideas from different systems.",
+      "topic": "combining best ideas",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the performance of different systems, but no decision about combining the best ideas."
+      ],
+      "conditions": [
+        "Critical for the test is the amount of resources used."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I think Um {pause} It 's probably a good time to look at what 's really going on and seeing if there 's a way to combine the best ideas while at the same time not blowing up the amount of , uh , resources used , cuz that 's critical for this test.",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So I think Um {pause} It 's probably a good time to look at what 's really going on and seeing if there 's a way to combine the best ideas while at the same time not blowing up the amount of , uh , resources used , cuz that 's critical for this test.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c001_d2",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c001",
+      "schema_version": "1.0.0",
+      "decision": "It was not clear who had the lowest performance on the development set.",
+      "topic": "best performing system on dev set",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the performance of different systems, but no clear answer about who had the lowest performance on the development set."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Do we know anything about who 's was it that had the lowest on the dev set ?",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c001_d3",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c001",
+      "schema_version": "1.0.0",
+      "decision": "The main technique used by the best performing systems was spectral subtraction.",
+      "topic": "technique used by best performing systems",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the techniques used by the best performing systems, with spectral subtraction being mentioned."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But some people have done exactly that sort of thing , of {disfmarker} of {disfmarker} and the {disfmarker} I mean it 's not {disfmarker} To {disfmarker} to look in {pause} speech only , to try to m to measure these things during speech ,",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "yeah .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c002_d1",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to use a filtering and reduction in the bandwidth in the modulation spectrum to downsample and reduce the transmission rate for the bits.",
+      "topic": "data transmission method",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "This method was used in what they did and it leads to a reduction in the bandwidth in the modulation spectrum, which allows for downsampling."
+      ],
+      "conditions": [
+        "This method was tested and it was misreported as having a higher transmission rate due to repeating packets."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And so , um , uh , it 's possible that some combination of these different things that were done would be the best thing to do . But the only caveat to that is that everybody 's being real conscious of how much memory and how much CPU they 're using",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "That was misreported the first time out . It said the same amount because for convenience sake in the particular way that this is being tested , uh , they were repeating the packets . So it was they were s they had twenty - four hundred bits per second , but they were literally creating forty - eight hundred bits per second , {vocalsound} um , even though y it was just repeated.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c003_d1",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to add a filter on the terminal's side and add some stuff on the server's side as a reasonable standard.",
+      "topic": "standard for the terminal's side and server's side",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To cut the data rate in half."
+      ],
+      "conditions": [
+        "If the filtering generalizes well to German and Danish."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , um , uh , that 's one aspect of it . And then on the terminal's side , I don't know how much , um , memory and CPU it takes , but it seems like the filtering {pause} Uh , I mean , the VAD stuff they both had , right ? And , um , so {disfmarker} and they both had some kind of on - line normalization , right ?",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "They are working on this already ? Because {disfmarker} yeah , Su - Sunil told me that he was trying already to put some kind of , uh , filtering in the {vocalsound} {pause}",
+          "speaker": "PhD A",
+          "supports": "owner"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c004_d1",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to analyze the speech data to understand the causes of degradation, particularly for noisy speech.",
+      "topic": "analysis of speech data",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To potentially have a large gain by improving the recognition of phoneme classes, particularly for noisy speech."
+      ],
+      "conditions": [
+        "The confusion matrices are expected to be different when there is noise."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Or more generally , I guess , what is causing the degradation.",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And perhaps we could have a large gain, eh, just by looking at improving the, uh, recognition, not of phonemes, but of phoneme classes, simply.",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And which is a simpler problem, perhaps, but which is perhaps important for noisy speech.",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c005_d1",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the challenges of speech recognition in noisy conditions using a realistic database.",
+      "topic": "speech recognition challenges",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The database is realistic but still presents challenges."
+      ],
+      "conditions": [
+        "The training and testing are done on different conditions and microphones.",
+        "The mismatched condition has different driving conditions for training and testing.",
+        "The last condition is close microphone for training and distant for testing."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The other thing that strikes me , just looking at these numbers is , just taking the best cases , I mean , some of these , of course , even with all of our wonderful processing , still are horrible kinds of numbers . But just take the best case , the well - matched uh , German case after we the kind of numbers we're getting are about eight or nine uh p percent error per digit .",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And {disfmarker} which is a s a s a simpler problem , perhaps , but {disfmarker} which is perhaps important for noisy speech .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "No ?",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean , it 's {disfmarker} it 's , uh , {vocalsound} um So , I mean , the other thing is that , uh {disfmarker} And {disfmarker} and {disfmarker} a and {disfmarker} and also , um {pause} part of what 's nice about this is that this is , uh , {vocalsound} um {pause} a realistic {disfmarker} almost realistic database . I mean , it 's still not people who are really trying to accomplish something , but {disfmarker} but , uh , within the artificial setup , it isn't noise artificially added , you know , simulated , uh , additive noise .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "No , actually {disfmarker} actually the well - matched condition {pause} is {pause} still quite di still quite difficult .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And the last condition is close microphone for training and distant for testing . Yeah .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c006_d1",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was decided that the optimistic approach is not working and there is a need to do more work.",
+      "topic": "approach for the project",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The numbers obtained were not good enough for a real system."
+      ],
+      "conditions": [
+        "More work needs to be done."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "it doesn't work.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , in a way , that 's , you know , that 's sort of the dominant thing is that even , say on the development set stuff that we saw , the , uh , the numbers that , uh , that Alcatel was getting when choosing out the best single numbers , it was just you know , it wasn't good enough for a real system.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "You {disfmarker} you {disfmarker} you , {vocalsound} um So , uh , we still have stuff to do.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c006_d2",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was suggested to try the articulatory feature again.",
+      "topic": "experiment for the project",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Some experiments didn't work and it was suggested to try again with the articulatory feature."
+      ],
+      "conditions": [
+        "More experiments might be needed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe {vocalsound} we trying again with the articulatory feature.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.7
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c006_d3",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c006",
+      "schema_version": "1.0.0",
+      "decision": "Barry will continue working on multi-band things.",
+      "topic": "responsibilities for the project",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Professor D mentioned that Barry will continue working on multi-band things."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Barry",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We were just talking about , um , {vocalsound} some , uh , some work that we 're interested in . Kind of inspired by the stuff by Larry Saul with the , uh {pause} uh , learning articulatory feature in {disfmarker} I think , in the case of his paper {disfmarker} with sonorance based on , uh , multi - band information where you have a {disfmarker} a combination of gradient learning an and , uh , EM.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c007_d1",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c007",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "research direction",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about various research directions, but no decision was explicitly made."
+      ],
+      "conditions": [
+        "No clear indication of a timeline or specific focus for the research."
+      ],
+      "dissent": [
+        "PhD A mentions that some experiments did not work as expected."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We were just talking about , um , {vocalsound} some , uh , some work that we 're interested in .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "This is what 's nice about the Aurora data and the data here , is that {disfmarker} is that it 's sort of a realistic room situation {pause} uh , acoustics {disfmarker} acoustic situation , both terms in noise and reflections , and so on and n n",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And , uh , uh , with something that 's still relatively realistic , it 's still very very hard to do very well . So Yeah .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Again , it 's the kind of {disfmarker} of thing that , uh , we were thin thinking {disfmarker} thinking that it would work , but it didn't work .",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c007_d2",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c007",
+      "schema_version": "1.0.0",
+      "decision": "Professor D expressed interest in experiments using data from multiple languages to train the neural net.",
+      "topic": "experiments with multiple languages",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor D proposes the idea of using data from multiple languages to train the neural net."
+      ],
+      "conditions": [
+        "No clear indication of a timeline or specific focus for the research."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "About other experiments ? Uh , now , I 'm interested in , um , uh {pause} looking at the experiments where you use , um {pause} uh , data from multiple languages to train the neural net .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c008_d1",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c008",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that hand-labeled data from other languages could be interesting to explore.",
+      "topic": "data collection",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Hand-labeled data worked best.",
+        "It could provide diversity in data."
+      ],
+      "conditions": [
+        "Finding hand-labeled data from other languages might not be easy."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "What worked best is the hand - labeled data .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "It 's not so easy to find .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "That would be something interesting to see .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c008_d2",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c008",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that multiple nets trained on different data could be beneficial.",
+      "topic": "data training",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Different data could provide diversity in training."
+      ],
+      "conditions": [
+        "Combining multiple nets was not the main focus in the experiments."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So one form of different data was is from different languages , but the other Well , i in fact , uh , m in those experiments it wasn't so much combining multiple nets , it was a single net that had different",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "But , um , I don't think we know for sure .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c008_d3",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c008",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that meeting two weeks from now would be the next meeting.",
+      "topic": "meeting schedule",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "One member will be in Europe next week."
+      ],
+      "conditions": [
+        "The meeting will be in Amsterdam."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , um Right . So , next week , we , uh , won't meet because you 'll be in Europe .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , Amsterdam , I think , yeah ?",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_040_c008_d4",
+      "source_id": "QMS_ACA_TR_040",
+      "chunk_id": "QMS_ACA_TR_040_c008",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that digits should be the first topic to discuss.",
+      "topic": "discussion order",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Should we do digits first ?",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 9,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

@@ -1,0 +1,42 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c007_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c007",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that email is enough for sending notifications, but it was not decided what to do when contact information is outdated or incorrect.",
+      "topic": "notification method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Email is enough.",
+        "If someone's email address may not work, they can be found through other means."
+      ],
+      "conditions": [
+        "Discussed boundary case when contact information is outdated or incorrect."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I i i em email is enough.",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I just don't think we will.",
+          "speaker": "Postdoc A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "So if we get to a boundary case like that then maybe I will call the attorney about it.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

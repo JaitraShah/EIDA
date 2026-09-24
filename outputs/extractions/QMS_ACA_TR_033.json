@@ -1,0 +1,594 @@
+{
+  "source_id": "QMS_ACA_TR_033",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_033_c000_d1",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c000",
+      "schema_version": "1.0.0",
+      "decision": "A decision was not made in this excerpt",
+      "topic": "XML schema for Bayes net input",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "The XML schema is not yet confirmed to be compatible with the Bayes net spec"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we thought that , {disfmarker} We can write up uh , an element , and {disfmarker} for each of the situation nodes that we observed in the Bayes - net ? So . What 's the situation like at the entity that is mentioned ? if we know anything about it ? Is it under construction ? Or is it on fire or something {pause} happening to it ? Or is it stable ? and so forth , going all the way um , f through Parking , Location , Hotel , Car , Restroom , @ @ {comment} Riots , Fairs , Strikes , or Disasters .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , yeah . I just don't know if this is the what the {disfmarker} Does {disfmarker} This is what Java Bayes takes ? as a Bayes - net ?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "No , because I mean if we {disfmarker} I mean we 're sure gonna interface to {disfmarker} We 're gonna get an XML document from somewhere . Right ? And that XML document will say \" We are able to {disfmarker} We were able to observe that w the element , um , @ @ {comment} of the Location that the car is near . \" So that 's gonna be {disfmarker} {vocalsound} {comment} Um .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "When you {disfmarker} when you say {pause} the input to the {pause} v Java Bayes , {comment} it takes a certain format ,",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yep . And , all the possible outputs , too . So , we have , um , for example , the , uh , Go - there decision node",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c001_d1",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c001",
+      "schema_version": "1.0.0",
+      "decision": "The decision on how to interpret and handle the output of the Java Bayes program is still undecided.",
+      "topic": "interpretation of Java Bayes output",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The output always includes all posterior probabilities for all values of all decision nodes."
+      ],
+      "conditions": [
+        "The team needs to decide what to do with the output before they can determine what specific information they are interested in."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So we get this whole list of things, and the question is what to do with it, what to hand on, how to interpret it, in a sense.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "The reason is why I think it's a little bit more complex or why we can even think about it as an interesting problem in and of itself is...",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c003_d1",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c003",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the use of a Bayes net to answer the question 'Where is X?'",
+      "topic": "Bayes net application",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussing the Bayes net as a potential solution for answering the question 'Where is X?'"
+      ],
+      "conditions": [
+        "Assuming the Bayes net has three decision nodes for the time being, dealing with the simple case of not worrying about timing or anything"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So where are we?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "We’re discussing this.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "w We’re wanna know how to answer the question 'Where is X?'",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "In this case we would probably all agree that he wants to go there.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c003_d2",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c003",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the possibility of the Bayes net not being able to handle French",
+      "topic": "Bayes net language capability",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussing the potential limitation of the Bayes net in handling French"
+      ],
+      "conditions": [
+        "Assuming the question 'Where is X?' is in French"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I don’t think it can handle French, but anyway.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c003_d3",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c003",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the potential use of a Timing node in the Bayes net",
+      "topic": "Bayes net Timing node",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussing the possibility of adding a Timing node in the Bayes net"
+      ],
+      "conditions": [
+        "Assuming the Bayes net has a Timing node"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I can do the Timing node in here, too, and say 'OK.'",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c003_d4",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c003",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the potential use of Info-on node in the Bayes net",
+      "topic": "Bayes net Info-on node",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussing the possibility of adding an Info-on node in the Bayes net"
+      ],
+      "conditions": [
+        "Assuming the Bayes net has an Info-on node"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Info-on has True or False and Location.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c004_d1",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c004",
+      "schema_version": "1.0.0",
+      "decision": "The question of how to decide which decision node to listen to in the Bayes net was discussed.",
+      "topic": "decision making process",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The final decision is the combination of these three."
+      ],
+      "conditions": [
+        "The question is about dealing with a finite set of constructions."
+      ],
+      "dissent": [
+        "Grad C questions the feasibility of the current approach."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So is the only reason we can make all these smaller Bayes - nets, because we know we can only deal with a finite set of constructions ? Cuz otherwise If we 're just taking arbitrary language in, we couldn't have a node for every possible question, you know ?",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But how does the expert system know how who which one to declare the winner, if it doesn't know the question it is, and how that question should be answered?",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "The final d decision is the combination of these three. So again, it's some kind of, uh",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c006_d1",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c006",
+      "schema_version": "1.0.0",
+      "decision": "A decision tree or Bayes net will be used to make decisions based on specific questions.",
+      "topic": "decision making process",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Discussed as a potential solution for making decisions based on specific questions."
+      ],
+      "conditions": [
+        "The specific details of the decision tree or Bayes net are still under discussion."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You first look at the lowball ones, and then",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I just realized that I had my hand in between my mouth and my micr er, my and my microphone.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Show us the way, Bhaskara.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I guess the other thing is that um , yeah . I mean , when you're asked a specific question and you don't even",
+          "speaker": "Grad A",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c007_d1",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c007",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to have a rerun of the three of them sitting together sometime this week to finish up the values of this.",
+      "topic": "meeting schedule",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Believe it or not, they have all the bottom ones here."
+      ],
+      "conditions": [
+        "Assuming Jerry and Nancy know about the meeting."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Because basically, what we also have decided, prior to this meeting is that we would have a rerun of the three of us sitting together sometime this week again",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Believe it or not, we have all the bottom ones here.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c008_d1",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c008",
+      "schema_version": "1.0.0",
+      "decision": "The group decided to schedule out what they want to surprise Jerry with when he comes back.",
+      "topic": "surprise for Jerry",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt"
+      ],
+      "conditions": [
+        "Not specified in the excerpt"
+      ],
+      "dissent": [
+        "Grad C suggested they should disappoint Jerry instead."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So . Part of what we actually want to do is sort of schedule out what we want to surprise him with when he comes back.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh , I think we should disappoint him.",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c008_d2",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c008",
+      "schema_version": "1.0.0",
+      "decision": "Grad B had planned for the group to do a lot of work while he does nothing during Jerry's absence.",
+      "topic": "work distribution during Jerry's absence",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt"
+      ],
+      "conditions": [
+        "Not specified in the excerpt"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I had sort of scheduled out in my mind that you guys do a lot of work, and I do nothing.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c008_d3",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c008",
+      "schema_version": "1.0.0",
+      "decision": "Grad B suggested they should do a re-run of the work in the upcoming days.",
+      "topic": "re-run of the work",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt"
+      ],
+      "conditions": [
+        "Not specified in the excerpt"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We should do this the upcoming days.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c008_d4",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c008",
+      "schema_version": "1.0.0",
+      "decision": "The group will meet next Tuesday.",
+      "topic": "meeting schedule",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt"
+      ],
+      "conditions": [
+        "Not specified in the excerpt"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Let's meet again next Tuesday.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c009_d1",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to call the Keith node 'Keith-Johno' for now.",
+      "topic": "Keith node name",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "For now, the weights of the nodes will be 'zero'."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I can get it in here .",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Let's call it 'Keith-Johno'",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "All the D's are",
+          "speaker": "Grad D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c010_d1",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c010",
+      "schema_version": "1.0.0",
+      "decision": "The decision was made to make the weights 'zero' for now.",
+      "topic": "weights",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It doesn't matter what those nodes are because we'll just make the weights 'zero' for now."
+      ],
+      "conditions": [
+        "The construction parser would find the closest construction, but if there was no construction whatsoever, people wouldn't have any idea what was being talked about."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It doesn't matter what those nodes are, anyway, because we'll just make the weights 'zero' for now.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "We'll make them zero for now, because it who knows what they come up with, what's gonna come in there.",
+          "speaker": "Grad B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But if you said something for which there was no construction whatsoever, people wouldn't have any idea what you were talking about.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c010_d2",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c010",
+      "schema_version": "1.0.0",
+      "decision": "The decision was made to start on Thursday.",
+      "topic": "meeting schedule",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "And, um, then should we start on Thursday?"
+      ],
+      "conditions": [
+        "Grad B will send an email to make a time suggestion."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And, um, then should we start on Thursday?",
+          "speaker": "Grad B",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK.",
+          "speaker": "Grad A",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK. I'll send an email, make a time suggestion.",
+          "speaker": "Grad B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_033_c011_d1",
+      "source_id": "QMS_ACA_TR_033",
+      "chunk_id": "QMS_ACA_TR_033_c011",
+      "schema_version": "1.0.0",
+      "decision": "A discussion about using different variables and levels of activation across multiple neurons to specify different values",
+      "topic": "neural network activation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about using different variables and levels of activation across multiple neurons"
+      ],
+      "conditions": [
+        "Bandwidth issue"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "No , wait . Not necessarily , is it ? We can end the {pause} meeting . I just Can't you use different var different levels of activation ? across , uh lots of different neurons , to specify different values ?",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "Grad B",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Um , yeah , but there 's , like , a certain level of {disfmarker}",
+          "speaker": "Grad A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Turn off the mikes . Otherwise it gets really tough for the tr",
+          "speaker": null,
+          "supports": "condition"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 10,
+  "chunks_failed": [
+    "QMS_ACA_TR_033_c002",
+    "QMS_ACA_TR_033_c005"
+  ],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

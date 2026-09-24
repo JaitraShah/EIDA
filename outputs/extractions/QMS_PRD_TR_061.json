@@ -1,0 +1,358 @@
+{
+  "source_id": "QMS_PRD_TR_061",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_061_c000_d1",
+      "source_id": "QMS_PRD_TR_061",
+      "chunk_id": "QMS_PRD_TR_061_c000",
+      "schema_version": "1.0.0",
+      "decision": "The project is about creating a remote control for a new TV.",
+      "topic": "project goal",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager mentioned they are making a remote control."
+      ],
+      "conditions": [
+        "The exact product is still unclear as there was a mention of coffee earlier."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think maybe I'll hand out to the Ed, so to explain uh what is the project because he's in the sales and the accounting.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "we'll start with the remote control for television then.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_061_c001_d1",
+      "source_id": "QMS_PRD_TR_061",
+      "chunk_id": "QMS_PRD_TR_061_c001",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about the design or marketing plan for the product.",
+      "topic": "product design and marketing plan",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the design and marketing plan, but no decision was explicitly made."
+      ],
+      "conditions": [
+        "Industrial Designer is still working on the design and has other projects.",
+        "No clear time frame or budget was discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So uh you'll be leading the team for your design team or how many members is working in the team , for the design ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I have not begun working on the design",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , you know um , I kind of think that in general you have to do um y you have to have something that's very fashionable , that's uh very attractive",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I need something in the writing",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_061_c002_d1",
+      "source_id": "QMS_PRD_TR_061",
+      "chunk_id": "QMS_PRD_TR_061_c002",
+      "schema_version": "1.0.0",
+      "decision": "The Industrial Designer will provide a marketing plan as soon as possible.",
+      "topic": "marketing plan",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager needs the plan to present to the management."
+      ],
+      "conditions": [
+        "The Industrial Designer will coordinate with other teams if needed."
+      ],
+      "dissent": [],
+      "owner": "Industrial Designer",
+      "approver": "Project Manager",
+      "evidence": [
+        {
+          "quote": "I need some kind of uh the plan in the writing from you .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "B as soon as possible .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh well if uh if we have enough time uh then d do you think um two weeks is a {disfmarker} is close enough ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yes I think uh that would be good , because I need to go to the management and uh tell them what we are going to do , and uh what cost is , okay , and what's the time frame and what's the project plan , because uh without any uh documentations , I cannot go to the management and say , so we are going to do this and we need this much money , okay , so then it's it's difficult for me to say , okay , that's the reason I need uh some kind of plan from you , initially , okay , then we can have the further discussion again .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Okay , I'll get back to you on that .",
+          "speaker": "Industrial Designer",
+          "supports": "owner"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_061_c002_d2",
+      "source_id": "QMS_PRD_TR_061",
+      "chunk_id": "QMS_PRD_TR_061_c002",
+      "schema_version": "1.0.0",
+      "decision": "The marketing strategy and sales strategy will be decided by the marketing team.",
+      "topic": "marketing and sales strategy",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The marketing team will research other companies' designs, ideas, and markets."
+      ],
+      "conditions": [
+        "The marketing strategy and sales strategy will be simple to use and new."
+      ],
+      "dissent": [],
+      "owner": "Marketing",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well not yet other than uh doing research and taking remote controls and looking what other companies have to do uh , what they're building , their designs , their ideas ,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "uh also have to pinpoint which market we're gonna go into .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It should be a fairly large market because uh the number of people that uh {disfmarker} the competition ,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "uh th I agree it has to be something {disfmarker} it has to be something new , it has to be something that that draws people saying eh , I like this . Whether it works or not , they have to first say I like this , I like the design , and then it's gotta be simple to use .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_061_c002_d3",
+      "source_id": "QMS_PRD_TR_061",
+      "chunk_id": "QMS_PRD_TR_061_c002",
+      "schema_version": "1.0.0",
+      "decision": "The marketing team will interact more with the Christine's team.",
+      "topic": "interaction with Christine's team",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager believes the marketing team should interact more with Christine's team to sell the product."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Project Manager",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "so because you know what she is going to do it , okay , and you know how to sell it . Okay , because uh she is doing the design , but you are the core because you are in the marketing , okay ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "so because uh you need to sell {disfmarker} and you're the responsible for the all the money , the finance , okay , tomorrow .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_061_c003_d1",
+      "source_id": "QMS_PRD_TR_061",
+      "chunk_id": "QMS_PRD_TR_061_c003",
+      "schema_version": "1.0.0",
+      "decision": "The Industrial Designer, User Interface, and Marketing will interact quite a bit to build the plan.",
+      "topic": "interaction between teams",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To take all factors into account."
+      ],
+      "conditions": [
+        "Keep Ed in the loop."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I think all three groups will need to interact quite a bit . Um , and then I guess build the plan based on all of that , because I think you need to take all the factors into account.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "But what I request , okay , {gap} keep Ed in the loop , okay , in between your uh meeting and Christine meeting , because uh he should know what's happening.",
+          "speaker": "Project Manager",
+          "supports": "condition"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_061_c003_d2",
+      "source_id": "QMS_PRD_TR_061",
+      "chunk_id": "QMS_PRD_TR_061_c003",
+      "schema_version": "1.0.0",
+      "decision": "The Industrial Designer, User Interface, and Marketing will discuss the functional design and user acceptance.",
+      "topic": "discussion topics",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To discuss about further things."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So then we can discuss about uh further things.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_061_c004_d1",
+      "source_id": "QMS_PRD_TR_061",
+      "chunk_id": "QMS_PRD_TR_061_c004",
+      "schema_version": "1.0.0",
+      "decision": "The Project Manager agreed to send a copy of their slides after the meeting.",
+      "topic": "sharing slides",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Request made by Industrial Designer."
+      ],
+      "conditions": [
+        "None stated."
+      ],
+      "dissent": [
+        "None stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yes , I will .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'll copy",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_061_c004_d2",
+      "source_id": "QMS_PRD_TR_061",
+      "chunk_id": "QMS_PRD_TR_061_c004",
+      "schema_version": "1.0.0",
+      "decision": "The Project Manager agreed to keep all emails and copies for everyone.",
+      "topic": "sharing documents",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Request made by Project Manager."
+      ],
+      "conditions": [
+        "None stated."
+      ],
+      "dissent": [
+        "None stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'll copy , uh le let us keep all the emails and all the copies , okay , share each other , okay",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_061_c004_d3",
+      "source_id": "QMS_PRD_TR_061",
+      "chunk_id": "QMS_PRD_TR_061_c004",
+      "schema_version": "1.0.0",
+      "decision": "The Project Manager provided their availability for further communication.",
+      "topic": "communication availability",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Request made by Industrial Designer."
+      ],
+      "conditions": [
+        "None stated."
+      ],
+      "dissent": [
+        "None stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "If anything you need anytime so please either you can call me , or just send me email , or uh just come and uh knock my door , okay , so I'm available here .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 5,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

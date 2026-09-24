@@ -1,0 +1,549 @@
+{
+  "source_id": "QMS_PRD_TR_090",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_090_c000_d1",
+      "source_id": "QMS_PRD_TR_090",
+      "chunk_id": "QMS_PRD_TR_090_c000",
+      "schema_version": "1.0.0",
+      "decision": "The design and functionality of the remote control will be decided later.",
+      "topic": "design and functionality of the remote control",
+      "status": "deferred",
+      "alternatives": [],
+      "rationale": [
+        "The Industrial Designer plans to conduct a survey about what is available on the market and what is the cheapest possible things they can use."
+      ],
+      "conditions": [
+        "The Industrial Designer will work with the technical team to build a prototype and troubleshoot communication problems."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And we have think I got a new project requirement.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So I think uh teletext becomes outdated.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and I think we don't need lighting adaptive",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So uh I will talk about the the working design and",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So uh can you go one page down , please . So I think the first things to do is to define the hardware components neededs to achieve uh what we want to do .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_090_c001_d1",
+      "source_id": "QMS_PRD_TR_090",
+      "chunk_id": "QMS_PRD_TR_090_c001",
+      "schema_version": "1.0.0",
+      "decision": "FPGA will be used for the functionalities.",
+      "topic": "functionality chip",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Bluetooth",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "FPGA can be programmed with whatever is wanted.",
+        "FPGA produces the data to send."
+      ],
+      "conditions": [
+        "The battery will be embedded in the remote.",
+        "The battery will be charged when not in use."
+      ],
+      "dissent": [
+        "The idea of using PDA to control the TV was considered but rejected."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It's field programmable uh something array.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "FPGA is just a chip you can uh you can pr programme it uh wi with wh whatever you want.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The F_P_G_A_ will produce the the data to send.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's a good idea.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_090_c001_d2",
+      "source_id": "QMS_PRD_TR_090",
+      "chunk_id": "QMS_PRD_TR_090_c001",
+      "schema_version": "1.0.0",
+      "decision": "The battery will be embedded in the remote.",
+      "topic": "battery placement",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "The battery will be charged when not in use."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think uh we have uh to to uh have uh embedded uh b batteries in in the t.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Into the t.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_090_c001_d3",
+      "source_id": "QMS_PRD_TR_090",
+      "chunk_id": "QMS_PRD_TR_090_c001",
+      "schema_version": "1.0.0",
+      "decision": "The battery will be charged when not in use.",
+      "topic": "battery charging",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It's a good idea . Having a charger rather than putting the battery cells always .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_090_c002_d1",
+      "source_id": "QMS_PRD_TR_090",
+      "chunk_id": "QMS_PRD_TR_090_c002",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the design of the remote control interface.",
+      "topic": "remote control interface design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team was looking for important questions to ask about the apparatus's effect.",
+        "The team wanted to find competing prototypes from competitors.",
+        "The team wanted to make the interface easy to use."
+      ],
+      "conditions": [
+        "The team needed the TV to be connected to the internet.",
+        "The team needed some preprocessing."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I propose the easy to use uh prototype . You can navigate on T_V_ screen and we can the user's preference and we need to have the T_V_ connected to internet so we end in order to access the T_V_ programmes by X_M_L_ and we need some to do some preprocessing . From the technical aspect , the processing should be done on the T_V_ set than on the remote controller , right ?",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I propose the easy to use uh prototype . You can navigate on T_V_ screen and we can the user's preference and we need to have the T_V_ connected to internet so we end in order to access the T_V_ programmes by X_M_L_ and we need some to do some preprocessing .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So I found on a webs on the internet",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I spent a lot of time searching",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "For example switch on , switch off , switch the next channel and so on and so on .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But then I found if you look at you see on the left one there are too many buttons",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "so it's very lousy .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So you move to the next the next one .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , so I talk about the problem . And then I I look at the user manual they are a hundred pages thick , so we don't want that .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "So I propose the easy to use uh prototype . You can navigate on T_V_ screen and we can the user's preference and we need to have the T_V_ connected to internet so we end in order to access the T_V_ programmes by X_M_L_ and we need some to do some preprocessing .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And then we the speech recognition as uh Harry says we may just put in we may K_I_V_ .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_090_c003_d1",
+      "source_id": "QMS_PRD_TR_090",
+      "chunk_id": "QMS_PRD_TR_090_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the design of the remote control, including the use of speech recognition, navigation buttons, and a small size.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team discussed the convenience, power consumption, and ease of finding the remote control."
+      ],
+      "conditions": [
+        "The team discussed the need for a device to navigate channels and send messages."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah , I think so . J j just the remote control .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , not the T_V_s .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think there there is there is a a technology like show view who is already available on most of the T_V_ set on recorders or thing like that",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So i the processing on on the remote controller",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "but {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , then y you you go to the main menu and uh you have uh go to channel",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Maybe you {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "How the {gap} this remote ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "you just uh shout {disfmarker} y h just {disfmarker} it just has to re respond to you when you look for the device .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_090_c004_d1",
+      "source_id": "QMS_PRD_TR_090",
+      "chunk_id": "QMS_PRD_TR_090_c004",
+      "schema_version": "1.0.0",
+      "decision": "Adding a speech interface to the TV remote control is a good idea.",
+      "topic": "speech interface",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It allows to choose the program without adding buttons.",
+        "It's not going to take much space and will be very slim.",
+        "It's an important extra feature."
+      ],
+      "conditions": [
+        "The feasibility of the speech recognition technology needs to be considered.",
+        "The remote control needs to have a microphone."
+      ],
+      "dissent": [
+        "There is a concern about the feasibility of the speech recognition technology.",
+        "There is a concern about the cost of the remote control."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "it's not going to take much space also . It's going to be very slim .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And of course most of the people are interested in if it's less expensive",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think that if we go for quality people may tolerate for high quality and of course comes with uh reasonable cost .",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well , uh {vocalsound} {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_090_c005_d1",
+      "source_id": "QMS_PRD_TR_090",
+      "chunk_id": "QMS_PRD_TR_090_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed adding a microphone to the remote control.",
+      "topic": "microphone in remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think this should be a good idea, to put this features.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "we just have to find a mean how to to add a m a a a microphone or uh well",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "If it's necessary can you do that.",
+          "speaker": "Project Manager",
+          "supports": "owner"
+        },
+        {
+          "quote": "I think i",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_090_c005_d2",
+      "source_id": "QMS_PRD_TR_090",
+      "chunk_id": "QMS_PRD_TR_090_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of integrating lighting adaptive options.",
+      "topic": "lighting adaptive options",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "What about lighting adaptive options?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah as discussed in the earlier meeting, but",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "According to the new requirements I think we don't need that.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_090_c005_d3",
+      "source_id": "QMS_PRD_TR_090",
+      "chunk_id": "QMS_PRD_TR_090_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of adding teletext in various languages to the remote control.",
+      "topic": "teletext in remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , I think this should be a good idea, to put this features . And the fourth one was the teletext in various languages .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "And regarding the teletext uh these are the text information which you got on the televisions .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And if I am a German then I would like to have the my options in German .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_090_c005_d4",
+      "source_id": "QMS_PRD_TR_090",
+      "chunk_id": "QMS_PRD_TR_090_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of using the television to access the internet.",
+      "topic": "internet access via television",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it's a good idea if i i if we i if if we uh think about how to to build up our remote uh control w with this functionality in a few years .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.7
+    },
+    {
+      "decision_id": "QMS_PRD_TR_090_c006_d1",
+      "source_id": "QMS_PRD_TR_090",
+      "chunk_id": "QMS_PRD_TR_090_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the need to anticipate future changes in technology and find a way to add functionality to the remote control in an easy manner.",
+      "topic": "future technology and remote control functionality",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The future demand, market demand."
+      ],
+      "conditions": [
+        "All the TV sets will be digital, right."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it's a good idea if i if we i if if we uh think about how to to to build up our remote uh control w with this functionality in a {disfmarker} w which will c which will come in a few years .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "The functionality in the future .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "The future demand , market demand . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    }
+  ],
+  "chunks_processed": 7,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

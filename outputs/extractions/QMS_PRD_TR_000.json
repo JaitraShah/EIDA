@@ -1,0 +1,473 @@
+{
+  "source_id": "QMS_PRD_TR_000",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_000_c001_d1",
+      "source_id": "QMS_PRD_TR_000",
+      "chunk_id": "QMS_PRD_TR_000_c001",
+      "schema_version": "1.0.0",
+      "decision": "The microphone location on the remote control prototype was discussed, but no final decision was made.",
+      "topic": "microphone location",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "on the top",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "on the middle",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "under the flip",
+          "rejected": null,
+          "reason": "discussed but not chosen"
+        },
+        {
+          "option": "on the side",
+          "rejected": null,
+          "reason": "suggested but not chosen"
+        }
+      ],
+      "rationale": [
+        "Debate about accessibility, feasibility, and user experience."
+      ],
+      "conditions": [
+        "No mention of specific conditions."
+      ],
+      "dissent": [
+        "Disagreement about the best location for the microphone."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think the microphone is on on the top , uh on the middle , the under the flip .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yes , okay . Uh-huh .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But it shouldn't be under the flip either , because you can have the remote control closed , but you still might want to activate it by voice .",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Yeah , the sides maybe is good .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , I mean I can pass this around if anyone wants to",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's um It's um",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Compliments to the artist .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "You need to work on the weight a little bit .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And maybe the shape of the buttons ,",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_000_c002_d1",
+      "source_id": "QMS_PRD_TR_000",
+      "chunk_id": "QMS_PRD_TR_000_c002",
+      "schema_version": "1.0.0",
+      "decision": "The budget for the project is reduced from 12.5 Euro to 9.95 Euro.",
+      "topic": "project budget",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The budget was under the initial budget, saving some money."
+      ],
+      "conditions": [
+        "The cost may increase for marketing and sales."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So then we have sample sensor and sample speaker, then uh we have the wood material, then special colour and push button. So it's uh actually, our budget was uh twelve point five Euro, but uh it's coming to nine point nine five Euro, so we are under uh below the budget, okay, so still we are saving some money. I think it's a good figure.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yes, great I'm surprised.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_000_c002_d2",
+      "source_id": "QMS_PRD_TR_000",
+      "chunk_id": "QMS_PRD_TR_000_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed whether to include an LCD display, but the cost and production considerations were not resolved.",
+      "topic": "LCD display inclusion",
+      "status": "deferred",
+      "alternatives": [],
+      "rationale": [
+        "The cost of the LCD display was not clear."
+      ],
+      "conditions": [
+        "The cost of the LCD display is expensive.",
+        "The production cost needs to be considered.",
+        "The profit margin needs to be considered."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So that means we can put the uh L_C_D_ in, yeah.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "We don't have the price up there,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's not.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's number thirty.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "We don't have the price up there,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh, yeah, yeah,",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_000_c003_d1",
+      "source_id": "QMS_PRD_TR_000",
+      "chunk_id": "QMS_PRD_TR_000_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the feasibility of taking enough of the market to justify production.",
+      "topic": "market feasibility",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team discussed the fan stylishness, ease of use, cost, and speech recognition."
+      ],
+      "conditions": [
+        "The market changes very quickly, and there might be no more interest in buying the product in 18 months."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , if we put an inflated price of fifty Euro at a production cost that cannot exceed twenty-five Euro , okay , we're already in that that price , okay ,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Now , the company must evaluate the feasibility of being able to take enough of the market to justify in production .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Obviously we w w I just did a run down the evaluation of the form , the fan uh the fancy stylishness of the unit , the ease of use , speech recognition , cost , we've gone through these .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_000_c003_d2",
+      "source_id": "QMS_PRD_TR_000",
+      "chunk_id": "QMS_PRD_TR_000_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the availability of the market to absorb 8-9 million units per year.",
+      "topic": "market availability",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team discussed the independent study and the company's internal evaluation."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So if we continue , we'll look at the findings . Next screen .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Our internal company evaluation puts it between eight to nine million which is approximately the same as the independent study .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_000_c003_d3",
+      "source_id": "QMS_PRD_TR_000",
+      "chunk_id": "QMS_PRD_TR_000_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the need to have a profit of 25 Euro per unit to get to a 50 million Euro profit.",
+      "topic": "profit requirements",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team discussed the cost, promotion, transport, and labor."
+      ],
+      "conditions": [
+        "The team discussed the need to sell 2 million units to reach the profit goal."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Twenty-five percent of the market to get to two million units . At two million units , we have to have a profit of twenty-five Euro per unit to get to the fifty million unit Eu Euro profit .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "With transport , promotion , labour , because we hav {gap} gi included the promotion in the cost , transport for the material to the stores or whatever how however we're gonna break this down between our our retailers .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_000_c004_d1",
+      "source_id": "QMS_PRD_TR_000",
+      "chunk_id": "QMS_PRD_TR_000_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to explore the possibility of using the internet for promotion and ordering, and to drop-ship the product to the customer's residence.",
+      "topic": "sales and distribution strategy",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To sell more units and potentially lower the price of the unit."
+      ],
+      "conditions": [
+        "The feasibility of being able to take enough of the market to justify in production is still to be evaluated."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I would like to explore the possibility of using um alternative um delivery and sales channel which would be um to use the internet for promotion and ordering",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Directly.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "The point of sale is online.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , that's a good idea.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Going with um {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "To impro more profit and uh {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "S Upscale technology.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "There are several companies that have gone that way.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "There's a lot of online that's {disfmarker} that is doing this now.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Maybe there's a possibility of selling more than two million units in one year, which could {vocalsound} you know , feasibili feasibility uh lower the price of the unit.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_000_c005_d1",
+      "source_id": "QMS_PRD_TR_000",
+      "chunk_id": "QMS_PRD_TR_000_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to proceed with the current design model for the marketing direction.",
+      "topic": "design model",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "No more changes will be made in this basic design."
+      ],
+      "conditions": [
+        "Feedback from customers will be taken for the first generation, then a second generation can be considered."
+      ],
+      "dissent": [
+        "The Industrial Designer expressed concern about the possibility of a first generation flop and the lack of a second generation if necessary."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So no more changes will be made, okay, in this basic design.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "The problem is there might not be a second generation if the first generation flops for some silly reason that we haven't thought of.",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_000_c006_d1",
+      "source_id": "QMS_PRD_TR_000",
+      "chunk_id": "QMS_PRD_TR_000_c006",
+      "schema_version": "1.0.0",
+      "decision": "A strategy for additional user testing and synchronising the launch of a user-tested device with a major sports event or a movie release was proposed.",
+      "topic": "user testing strategy",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "To give more time for user testing and to leverage potential advertising opportunities."
+      ],
+      "conditions": [
+        "The exact timing of the World Cup or other major sports events is not specified."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I think what we need to do is perhaps to synchronise the final launch of a user-tested device with some special event .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's actually a good place to advertise it too .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And to work with motion pictures .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_000_c007_d1",
+      "source_id": "QMS_PRD_TR_000",
+      "chunk_id": "QMS_PRD_TR_000_c007",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to celebrate the completion of the project.",
+      "topic": "project celebration",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The project is complete.",
+        "The team's efforts and work are appreciated."
+      ],
+      "conditions": [
+        "The product evaluation and cost check will be done later."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Let's come to the closing and are the costs within the budget",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Celebration.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "So let's meet up this evening to hang up for some party.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Very good.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 7,
+  "chunks_failed": [
+    "QMS_PRD_TR_000_c000"
+  ],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

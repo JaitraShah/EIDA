@@ -1,0 +1,48 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c000_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c000",
+      "schema_version": "1.0.0",
+      "decision": "The consent form will be available for signing on July 15th.",
+      "topic": "consent form availability",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Jane told Grad F to set the date."
+      ],
+      "conditions": [
+        "The date was chosen for an unspecified reason."
+      ],
+      "dissent": [
+        "Postdoc A questioned the choice of date, but it was not changed."
+      ],
+      "owner": "Grad F",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , as most of you should know , I did send out the consent form thingies and , uh , so far no one has made any comments on them . So , no one has bleeped out anything.",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "July fifteenth.",
+          "speaker": "Grad F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "No . We had spoken w about this before",
+          "speaker": "Grad F",
+          "supports": "dissent"
+        },
+        {
+          "quote": "You said you wanted it to be available then.",
+          "speaker": "Postdoc A",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

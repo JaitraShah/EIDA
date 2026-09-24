@@ -1,0 +1,1529 @@
+{
+  "source_id": "QMS_PRD_TR_036",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_036_c000_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c000",
+      "schema_version": "1.0.0",
+      "decision": "The decision to use a touch-screen with a case around it for the remote control concept.",
+      "topic": "remote control concept",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To make it less breakable."
+      ],
+      "conditions": [
+        "Not specified."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The first one is really about the the the the the total package uh with uh {disfmarker} Well , we have decided to do a {disfmarker} do the uh {disfmarker} with a touch-screen that must be a case around it so uh it won't be uh uh as breakable.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "how how about the energy ? Can you uh can you reload it or uh just have batteries which you must exchange ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c001_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c001",
+      "schema_version": "1.0.0",
+      "decision": "Kinetic energy was chosen as the energy source for the remote.",
+      "topic": "energy source",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "battery",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "solar panel",
+          "rejected": true,
+          "reason": "not enough space for the interface"
+        },
+        {
+          "option": "TV light",
+          "rejected": true,
+          "reason": "would take up all the space and wouldn't have the full amount of power"
+        }
+      ],
+      "rationale": [
+        "Kinetic energy is a bit more high-tech than a normal battery."
+      ],
+      "conditions": [
+        "The costs aren't that much higher than a normal battery."
+      ],
+      "dissent": [
+        "The Project Manager questioned the practicality of kinetic energy."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But uh the two basic sources that I found were the best possible were the battery uh versus kinetic.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I figured , well that's ki kinda high-tech , when when you have a remote control that well , when you pick it up , it has power.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But you don't move a a remote control too much.",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And it it {disfmarker} if it isn't , you just shake it a bit and and add add with power up again.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c002_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c002",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "design of the device's case",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "standard design",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "single curved design",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "double curved design",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "plastic case",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "rubber case",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about different options for the design and material of the device's case."
+      ],
+      "conditions": [
+        "No clear decision or agreement on the design or material."
+      ],
+      "dissent": [
+        "No clear dissent or objection voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And it it {disfmarker} if it isn't , you just shake it a bit and and add with power up again .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But , what l what Jarek said , you could you could use a battery that you'd just keep it on the recharging whenever it moves . And for rest , you'd just add juice on the battery .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "We have uh different options uh concerning the cases . You ha I {disfmarker} you sim uh you simply add a basic uh standard uh model uh {disfmarker} it was kind of square and uh I figured that's a bit boring . So you you {disfmarker} we could go for uh the single curved or the double curved . Um , single curve , it's just a {disfmarker} well , uh , you know , it's just uh a nice curve . Or but but you could go in an double curves . And that's {gap} like several different dimensions .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Let's say y uh you uh {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "That gives you an whole new uh effec Project Manager: Dynamic dynamic look ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "You want me to draw in three-D_ ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well uh let's say y uh you uh {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But but you could have uh uh a whole new uh the back back the the depth , you could you could uh just play around a bit with .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "You you don't have to use standard uh {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But , are you going to draw it ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "What ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "You want me to draw in three-D_ ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "The {disfmarker} Yeah . Yeah .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , I c I can't imagine .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well uh let's say y uh you uh {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So y you you just {disfmarker} Yeah , this is a {disfmarker} this {vocalsound} bit uh difficulty in {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh , okay . Okay .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's soft .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's the material the younger people want uh , ain't it ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um {disfmarker} {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c003_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use a combination of battery and kinetic energy for the remote.",
+      "topic": "energy source",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "battery",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "kinetic",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "traditional buttons",
+          "rejected": true,
+          "reason": "would require a simple chip set if used"
+        },
+        {
+          "option": "touch screen",
+          "rejected": true,
+          "reason": "would require an advanced chip set if used, and would bring necessary costs"
+        }
+      ],
+      "rationale": [
+        "The team believes that a combination of battery and kinetic energy would be more effective."
+      ],
+      "conditions": [
+        "The team acknowledges that using both battery and kinetic energy may bring additional costs."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You agree ?",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I would prefer uh both uh too .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Combine them .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "That that shouldn't be uh that big a issue . I'll I'll I'll just add , uh uh I put a big summary here , so we could discuss it a bit . Uh {gap} what i what are your ideas concerning battery versus kinetic ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "A combination . Uh , {gap} you use the battery and w charge it up with kinetic . When you pick it up , it charges up .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c004_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c004",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use a rubber casing for the remote.",
+      "topic": "remote casing material",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "plastic",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "It's firm and not bendable.",
+        "It shouldn't flop over when held.",
+        "It might bounce back when dropped."
+      ],
+      "conditions": [
+        "The chip set will hold it firm in place.",
+        "A LCD screen also."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I I I would choose rubber.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah, me too.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "You sure? You seemed to hesitate a bit.",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well, as long as it's it's uh it's firm, and you don't uh {disfmarker} it's not bendable or something,",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It might even bounce back when you drop it on the floor.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The chip set will hold it firm in place,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "and uh and and uh and a LCD screen also {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c005_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c005",
+      "schema_version": "1.0.0",
+      "decision": "The main audience for the remote control will be people below forty.",
+      "topic": "target audience",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Findings from trend-watching in Paris and Milan."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , uh we decided to take mm yeah the people below forty .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Our main audience , uh so that's people below forty , uh prefer the following .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c005_d2",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have removable covers for customization.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Idea inspired by removable covers in the mobile telephone market."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Here , think about removable covers , as seen in mobile telephon telephone market . To customise your own remote control .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Like the Nokia uh the removable covers , uh just put a red on it and go to the shop and buy a green one .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c005_d3",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c005",
+      "schema_version": "1.0.0",
+      "decision": "The material for the remote control could be rubber.",
+      "topic": "remote control material",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Rubber fits current market trends and adds safety."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh , material being used uh could well be stuff like rubber .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , it adds safety to your remote uh when you drop it .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c005_d4",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a wooden look.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Preference for traditional colors and materials among people above forty."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Like uh you have those fake uh fake panels on the floor .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "But , that's our secondary audience .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c005_d5",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should look fancy, technological, and innovative.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Overall thoughts about new remote controls."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "They have to look fancy . Um , they should be technological in innovative .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c005_d6",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be easy to use.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Common requirement for devices."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But that's common . My personal preferences .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c005_d7",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c005",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a choice of colors.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Personal preference."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Would you prefer uh uh {gap} that you can choose the colour of your uh remote control or {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c006_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed adding a speech function and speech recognition to the remote.",
+      "topic": "speech function and speech recognition",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The market is just screaming for new technologies, like speak and speech recognition and stuff."
+      ],
+      "conditions": [
+        "Cost needs to be considered."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So that you say um S_P_S_S_ , and it goes to uh {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It can be very expensive.",
+          "speaker": "Marketing",
+          "supports": "condition"
+        },
+        {
+          "quote": "You also take {vocalsound} uh t {vocalsound}",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c006_d2",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed building games like Snake or Tetris into the remote.",
+      "topic": "building games into the remote",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To amuse the younger users."
+      ],
+      "conditions": [
+        "Not using games when watching television or making a telephone call."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Building games like Snake or Tetris {vocalsound} to amuse the younger users.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "You take your remote control with you to school.",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c006_d3",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed adding a log-in functionality with a slogan 'take parental control to a new dimension' to the remote.",
+      "topic": "log-in functionality and slogan",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To add parental control to a new dimension."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And third , I stick with it , {vocalsound} the log-in functionality uh with the slogan , take parental control to a new dimension . {vocalsound}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c006_d4",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed creating a dynamic PowerPoint mock-up for the interface.",
+      "topic": "dynamic PowerPoint mock-up for the interface",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To make the interface more dynamic."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "In {disfmarker} Okay . Um the interface contents . Well that's a just simple PowerPoint mock-up I want to m make it more as dynamic for you so I'll draw there .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c007_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c007",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a single touch screen, primary buttons should be clear and visible, the menu structure should be changeable, and the remote should be broad enough to be held with one hand and used with the thumb on the main buttons and the other hand on the menu structure.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The remote should be easy to use, with a simple and clear design."
+      ],
+      "conditions": [
+        "The remote should have a single touch screen."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "In okay . Um the interface contents . Well that's a just simple PowerPoint mock-up I want to make it more as dynamic for you so I'll draw there . But , the main concept is um take one big touch screen . Um , always display the primary buttons clear and visible . Maybe even li like this with uh uh {vocalsound} u uses of a lot of space . And uh make the menu structure changeable . So if you press um system , that's {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And um well , how do {disfmarker} uh do we want to look at uh uh f um {disfmarker} Yeah {vocalsound} Does a remote look {disfmarker} Well , it's {disfmarker} you've gotta hold it in one hand . So um the middle like all remotes have to be in a little bit small , so you can put it in inside your hands . And some remotes you can use with your thumb . But I think that's too difficult for this one . So you can make it s a little broader . Yeah . And here ? And maybe use your thumb on the on the main buttons . And use your other hands on the menu structure . So here are gonna be the program buttons . One , two {vocalsound} , three , four , et cetera . And the the volume control and program control maybe . And , down here , um , I added , this could be one uh big L_C_D_ . Um , the menu structure . So you can use it in uh in this way . Um {disfmarker} {vocalsound} One thing you've gotta keep in mind , keep the remote clear of too much functions at the same time.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "But just the um uh just in one button if possible . And um , well , you kn you all know the T_V_ levels . Um , channel one , two . And when you get to n to uh to ten , ye and want to go back , uh well you have a problem . Just m most most modern T_V_s , you {gap} {disfmarker} you press one zero , and it goes to ten . And else , to one and through after that . So the s a button less . And um , things like teletext , put them in the menu . Things like um um {disfmarker} Yeah .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , yeah w Yeah , I I find I must trying to uh tell it .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Is uh volume plus and minus ? And this is program uh plus and minus . Uh {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , yeah w Yeah , I I find I must trying to uh tell it .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c008_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c008",
+      "schema_version": "1.0.0",
+      "decision": "A decision was made to include an option for parental control in the remote's menu structure.",
+      "topic": "parental control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "There's a big market for it.",
+        "Children are influenced by television."
+      ],
+      "conditions": [
+        "If the grandad buys the remote, he wouldn't want to bother with additional steps."
+      ],
+      "dissent": [
+        "The Industrial Designer is unsure if it's worth the time and effort to program it."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think that's a big market for it",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "because you read many times in magazines same kind of stuff",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and you heard on the news that uh that he Yeah , they believe that children uh are influenced by the television",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well , I agree , just put it in the menu structure somewhere",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just make through a remote as it is , but make an option to insert profiles",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just make it an option in menu , ins install powerful profiles or something",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c009_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c009",
+      "schema_version": "1.0.0",
+      "decision": "A separate device for parental control is proposed as an optional feature for the remote control.",
+      "topic": "parental control feature",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "parental control integrated into the remote control",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the possibility of a separate device for parental control."
+      ],
+      "conditions": [
+        "Discussion about the feasibility of constant signaling from the remote control.",
+        "Discussion about the possibility of a parent profile and a family profile."
+      ],
+      "dissent": [
+        "Discussion about the possibility of children bypassing the parental control.",
+        "Discussion about the potential inconvenience of an optional device."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But , well , if you want to incorporate uh the parental control , uh let's say we do , and and well whatever , choose uh child just goes up to the T_V_ and presses up {vocalsound} for instance .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I wouldn't put it in an optional device . That that then then then it becomes too much , I think .",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "What m what may be better is to incorporate an uh a separate device that uh that you can program with the remote control . And that uh provides parental control , for instance . And that's just an optional uh device . So there's n that's {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "alternative"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c010_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c010",
+      "schema_version": "1.0.0",
+      "decision": "The parental control feature will be optional and can be selected when buying the remote.",
+      "topic": "parental control feature",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "parental control as a primary feature",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "It would be difficult to incorporate parental control as a primary feature."
+      ],
+      "conditions": [
+        "The implementation details of the optional parental control feature are still unclear."
+      ],
+      "dissent": [
+        "The Industrial Designer suggested building in parental control as a separate receiver, but it would be more expensive."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But , only difference is uh {vocalsound} the uh the people buying the remote control will now get the f added feature of parental control ,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , you {disfmarker} you'd be",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well , I don't know . I I figure if you had two different remotes , you could bo choose one with uh well uh uh a receiver in it . So you could actually easily uh build in uh parental control . But it would would be uh more expensive . So , a and that that way uh you could make cheap model and a expensive model . Could ma make the uh {gap} simple model and the deluxe model , uh for instance .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Oh , it's a p Yeah .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c010_d2",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c010",
+      "schema_version": "1.0.0",
+      "decision": "The games feature will be included in the remote.",
+      "topic": "games feature",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "excluding the games feature",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The games feature was deemed popular and useful."
+      ],
+      "conditions": [
+        "The implementation details of the games feature are still unclear."
+      ],
+      "dissent": [
+        "The voice recognition and games were considered too much.",
+        "Marketing: Mm yeah .",
+        "Project Manager: Yeah .",
+        "Industrial Designer: Yeah ."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Project Manager: Okay . And what do you uh guys think of the games in the voice recognition ? I personally think that that becomes too much .",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Marketing: {vocalsound} games . It doesn't {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Industrial Designer: Yeah . I can see games happening . Yeah .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Project Manager: The games uh are in it .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c010_d3",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c010",
+      "schema_version": "1.0.0",
+      "decision": "The voice recognition feature will not be included in the remote.",
+      "topic": "voice recognition feature",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "including the voice recognition feature",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Concerns about voice recognition interfering with TV audio and channel switching."
+      ],
+      "conditions": [
+        "The implementation details of the voice recognition feature are still unclear."
+      ],
+      "dissent": [
+        "The voice recognition was deemed too much.",
+        "Marketing: Mm yeah .",
+        "Project Manager: Yeah .",
+        "Industrial Designer: Yeah ."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Project Manager: Okay . And what do you uh guys think of the games in the voice recognition ? I personally think that that becomes too much .",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "User Interface: A mail too from management that it's very popular to use voice recon recognition .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "User Interface: But I don't think when you're watching T_V_ uh , hearing loud noises from the T_V_ , someone screaming {vocalsound} one , and you f the channel switches , uh {vocalsound} Yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Project Manager: It's more like it gets you to the functionality , but {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c011_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c011",
+      "schema_version": "1.0.0",
+      "decision": "The remote will have a combination of battery and kinetic energy.",
+      "topic": "energy source",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think we have decided on the things that from Janus, the energy, the combination between battery and kinetic.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c011_d2",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c011",
+      "schema_version": "1.0.0",
+      "decision": "The case will be double-curved and rubber, in a flashy fruity color with a removable cover.",
+      "topic": "remote case design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The case will be double-curved and rubber, in a flashy fruity colour uh that with cover is removable.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c011_d3",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c011",
+      "schema_version": "1.0.0",
+      "decision": "The buttons will be touch-screen.",
+      "topic": "remote buttons",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The buttons will be uh touch-screen.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c011_d4",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c011",
+      "schema_version": "1.0.0",
+      "decision": "There may not be too many buttons.",
+      "topic": "number of remote buttons",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And in the the menu structure , uh there must not to be uh too many levels.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c011_d5",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c011",
+      "schema_version": "1.0.0",
+      "decision": "The menu structure will be simple when not in use.",
+      "topic": "remote menu structure",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You use the simple view when you don't use it is simple.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c011_d6",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c011",
+      "schema_version": "1.0.0",
+      "decision": "The parental control will be incorporated, but it must be not too complex.",
+      "topic": "parental control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The parental control will be incorporated, but it must be not too complex.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c011_d7",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c011",
+      "schema_version": "1.0.0",
+      "decision": "The remote will have games.",
+      "topic": "remote features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So the games are in it.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c011_d8",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c011",
+      "schema_version": "1.0.0",
+      "decision": "There will be an expert view and a simple view in the remote.",
+      "topic": "remote views",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [
+        "Not specified in the excerpt."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe it's handy to build in an expert view and a simple view.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c012_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c012",
+      "schema_version": "1.0.0",
+      "decision": "The name 'Real Reaction remote R_3' was proposed for the product.",
+      "topic": "product name",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "Marketing suggested 'R_ th R_ to the third power' as a marketing name for the product."
+      ],
+      "conditions": [
+        "The final decision on the product name is pending."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "R_ th R_ to the third power.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Real Reaction remote.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I had another idea to put uh uh the whole the whole idea of uh Real Reaction and uh uh a single brand and uh uh that kind of thing.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c012_d2",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c012",
+      "schema_version": "1.0.0",
+      "decision": "A logo animation was proposed for the remote.",
+      "topic": "remote logo animation",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager suggested a logo animation similar to a telephone animation."
+      ],
+      "conditions": [
+        "The final decision on the logo animation is pending."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Just like when you telephone, you see a little uh animation.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , logo . Yeah ?",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Bling.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c012_d3",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c012",
+      "schema_version": "1.0.0",
+      "decision": "The motto 'fashion in electronics' was proposed.",
+      "topic": "product motto",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager suggested 'fashion in electronics' as a motto."
+      ],
+      "conditions": [
+        "The final decision on the product motto is pending."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And then you go uh {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Uh , logo . Yeah ?",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c012_d4",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c012",
+      "schema_version": "1.0.0",
+      "decision": "A survey result was discussed: people prefer buying from a single large provider.",
+      "topic": "survey result",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager mentioned a survey that showed people prefer buying from a single large provider."
+      ],
+      "conditions": [
+        "The survey results were discussed but no decision was made based on them."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "people like to buy things from a single large provider, instead of those who uh are partnering uh with us.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c012_d5",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c012",
+      "schema_version": "1.0.0",
+      "decision": "Benchmarking was mentioned as a useful practice.",
+      "topic": "benchmarking",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The Project Manager mentioned benchmarking as something other companies did with their marketing campaigns."
+      ],
+      "conditions": [
+        "The usefulness of benchmarking was discussed but no decision was made about implementing it."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "What other companies uh had to uh also with the the the the marketing campaign when they put on a newer remote , just some uh {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c013_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c013",
+      "schema_version": "1.0.0",
+      "decision": "The industrial development centre and user interface will work together on a prototype.",
+      "topic": "prototype collaboration",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Specific instructions will be sent by email."
+      ],
+      "dissent": [
+        "Industrial Designer: 'You wish.'",
+        "Marketing: 'Me too.'"
+      ],
+      "owner": "Project Manager",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The industrial uh development uh centre {vocalsound} and uh user interface uh will work together on a prototype.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "But I think it was a very uh very good uh session, uh gentlemen.",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c013_d2",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c013",
+      "schema_version": "1.0.0",
+      "decision": "The marketing expert will be responsible for product evaluation.",
+      "topic": "product evaluation",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Specific instructions will be sent by email."
+      ],
+      "dissent": [],
+      "owner": "Project Manager",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But the most uh specific instructions will be sent to you by email.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_036_c014_d1",
+      "source_id": "QMS_PRD_TR_036",
+      "chunk_id": "QMS_PRD_TR_036_c014",
+      "schema_version": "1.0.0",
+      "decision": "It is unclear if the team will work together or individually on the project.",
+      "topic": "team collaboration",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "working together",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "working individually",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about individual actions and working together, but no clear decision was made."
+      ],
+      "conditions": [
+        "The project manager works alone, which may imply individual work."
+      ],
+      "dissent": [
+        "The Industrial Designer and User Interface express dissatisfaction with the project manager."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But keep an eye on your uh laptops for a real uh",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , uh I'm not sure if we uh we {disfmarker} Because I saw something about individual actions .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Yeah , but there's there's still the my uh instructions that you will work together .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "No . Don't get what's {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "The project manager always works alone . {vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    }
+  ],
+  "chunks_processed": 15,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

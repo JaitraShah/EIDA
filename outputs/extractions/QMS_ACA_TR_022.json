@@ -1,0 +1,1778 @@
+{
+  "source_id": "QMS_ACA_TR_022",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_022_c000_d2",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c000",
+      "schema_version": "1.0.0",
+      "decision": "A telephone call is scheduled for tomorrow.",
+      "topic": "telephone call",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "there 's a telephone call tomorrow ,",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c000_d3",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c000",
+      "schema_version": "1.0.0",
+      "decision": "Jane will present her research issues.",
+      "topic": "Jane's research issues",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , uh {pause} so , I 'll go through that . Um , {pause} And , Anything else ? {pause} anyone wants to talk about ?",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c000_d4",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c000",
+      "schema_version": "1.0.0",
+      "decision": "Adam and others have research issues to discuss.",
+      "topic": "Adam's and others' research issues",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And , Adam has some short research issues .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c000_d5",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c000",
+      "schema_version": "1.0.0",
+      "decision": "Professor D will discuss a list of things done over the last three months.",
+      "topic": "list of things done over the last three months",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I have a list of things that I think were done over the last three months I was supposed to send off ,",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c001_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c001",
+      "schema_version": "1.0.0",
+      "decision": "The discussion was about analyzing overlaps in speech during a session.",
+      "topic": "analysis of speech overlaps",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To understand the distribution of overlaps and potential usefulness of indicating sentence stress."
+      ],
+      "conditions": [
+        "The analysis is not statistically verified."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "OK.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "Same idea?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "But, same idea. So, if you've looked at this you've seen it before, so {pause} Basically, {vocalsound} um {pause} as you know, uh {pause} part of the encoding {pause} includes a mark that indicates {pause} an overlap. It's not indicated {pause} with, um {pause} uh, tight precision, it's just indicated that {disfmarker} OK, so, It's indicated to {disfmarker} to {disfmarker} so the people know {pause} what parts of speech which {disfmarker} which stretches of speech were in the clear, versus being overlapped by others.",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And, um {pause} and, what I was looking for sp sp specifically was the question of {pause} whether they're distributed evenly throughout or whether they're {pause} bursts of them.",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The part down there, where there's the maximum number of {disfmarker} {pause} of, um {pause} overlaps is an area where we were discussing {pause} {vocalsound} whether or not it would be useful to indi to s to {pause} code {pause} stress, {pause} uh, sentence stress {pause} as possible indication of, uh {pause} information retrieval.",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "What was {disfmarker} what's the {disfmarker} the parenthesized stuff {pause} that says, like {disfmarker} e the first one that says six overlaps and then two point eight?",
+          "speaker": "Professor D",
+          "supports": "condition"
+        },
+        {
+          "quote": "Oh, th {vocalsound} {pause} That's the per cent.",
+          "speaker": "Postdoc F",
+          "supports": "condition"
+        },
+        {
+          "quote": "At the very end, this is when people were, {pause} you know, packing up to go basically, there's {pause} this final stuff, I think we {disfmarker} {pause} I don't remember where the digits {pause} fell. I'd have to look at that.",
+          "speaker": "Postdoc F",
+          "supports": "condition"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c002_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that there might be individual differences in who tends to overlap with others, but no statistical testing was done.",
+      "topic": "individual differences in overlapping",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Postdoc F presented the coding of who tends to be overlapping most often with who and discussed the raw counts."
+      ],
+      "conditions": [
+        "This is just one particular meeting and no statistical testing was done."
+      ],
+      "dissent": [
+        "Professor D suggested that it would be statistically incorrect to conclude that Adam talked too much or something, but this was disputed by Grad H."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , i it seems like it goes through bursts {pause} but , um {pause} that 's kind of it .",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Another question is {pause} is there {disfmarker} are there {pause} individual differences in whether you 're likely to be overlapped with or to overlap with others .",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "And , um {pause} {pause} this is how it breaks down in the individual cells of {pause} who tended to be overlapping most often with who {disfmarker} who else , and {pause} if you look at the marginal totals , which is the ones on the right side and across the bottom , you get {pause} the totals for an individual .",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "And , {pause} then if you look down in the summary table , {pause} then you see that , um {pause} th they 're differences in {pause} whether a person got overlapped with or {pause} overlapped by .",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Professor D: S so , i it would be statistically incorrect to conclude from this that Adam talked too much or something .",
+          "speaker": "Professor D",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Grad H: No {disfmarker} no actually , that would be actually statistically correct ,",
+          "speaker": "Grad H",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c003_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to anonymize the data.",
+      "topic": "data anonymization",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad H mentioned that Jane's email caused them to start thinking about anonymizing the data."
+      ],
+      "conditions": [
+        "The specific method of anonymization was not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "when Jane sent this email first , is what caused me to start thinking about anonymizing the data .",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well , fair enough .",
+          "speaker": "Postdoc F",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c003_d2",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was agreed that different styles of speaker overlap are culturally relative.",
+      "topic": "speaker overlap styles",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Postdoc F discussed the evolution and cultural relativity of speaker overlap styles."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And {disfmarker} and , {pause} you know , in contrast , so Deborah {disfmarker} d and also Deborah Tannen 's {pause} thesis she talked about differences of these types , {pause} that they 're just different styles , and it 's um {pause} you {disfmarker} you can't impose a model of {disfmarker} {pause} there {disfmarker} of the ideal being no overlaps , and {pause} you know , conversational analysts also agree with that , so it 's {pause} now , universally {pause} a ag agreed with .",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c004_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c004",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt.",
+      "topic": "discussion topic",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well , there you go . Fine , that 's alright , that 's OK .",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "And {disfmarker} and , {pause} you know , in contrast , so Deborah {disfmarker} d and also Deborah Tannen 's {pause} thesis she talked about differences of these types , {pause} that they 're just different styles , and it 's um {pause} you {disfmarker} you can't impose a model of {disfmarker} {pause} there {disfmarker} of the ideal being no overlaps , and {pause} you know , conversational analysts also agree with that , so it 's {pause} now , universally {pause} a ag agreed with .",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "And {disfmarker} and , als I mean , I can't say universally , but anyway , the people who used to say it was strict , {pause} um {pause} now , uh {pause} don't . I mean they {disfmarker} they {pause} also {pause} {vocalsound} you know , uh {pause} uh , ack acknowledge the influence of {pause} sub of subcultural norms and {pause} cross - cultural norms and things .",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , um Then it beco {pause} though {disfmarker} so {disfmarker} just {disfmarker} just superficially to give {pause} um {pause} a couple ideas of the types of overlaps involved , I have at the bottom several that I noticed .",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , of course th the biggest , {pause} um {pause} result here , which is one we 've {disfmarker} {pause} we 've talked about many times and isn't new to us , but which I think would be interesting to show someone who isn't familiar with this {vocalsound} {pause} is just the sheer number of overlaps .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "That {disfmarker} that {disfmarker} Right ? {pause} that {disfmarker} that , um",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "here 's a relatively short meeting , it 's a forty {disfmarker} {pause} forty plus minute {pause} {vocalsound} meeting , and not only were there two hundred and fifteen overlaps {vocalsound} {pause} but , {pause} uh I think there 's one {disfmarker} {pause} one minute there where there {disfmarker} where {disfmarker} where there wasn't any overlap ?",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "It 'd be interesting {disfmarker} It 'd be interesting to see what the total amount of time is in the overlaps , versus {disfmarker}",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c005_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c005",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the duration and variation of overlaps in conversations, but no decision was made.",
+      "topic": "duration and variation of overlaps",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the duration and variation of overlaps in conversations."
+      ],
+      "conditions": [
+        "No decision was made."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yes , exactly and that's where Jose's pro project comes in .",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "I have this that information now .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I was about to ask .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "PhD C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Hmm .",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Oh , about how much is it ?",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "The duration of eh of each of the overlaps .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "O oh , what's the average length ?",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "M I I haven't averaged it now but , uh I will , uh I will do the study of the with the program with the with the different , uh the , nnn , with the distribution of the duration of the overlaps .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "You don't know ? OK , you don't have a feeling for roughly how much it is ? Yeah .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because the uh , @ @ is @ @ .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The duration is , uh the variation of the duration is uh , very big on the data",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I suspect that it will also differ , depending on the type of overlap involved .",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So backchannels will be very brief",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because , on your surface a bit of zone of overlapping with the duration eh , overlapped and another very very short .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um , I considered that's an overlap but it's very short , it's an \" X \" with a and the idea is probably , eh when we studied that zone , eh , we have confusion with eh noise .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Can I",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "You split this by minute , um so if an overlap straddles the boundary between two minutes , that counts towards both of those minutes .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK . In that case , um the coding that I was using since we haven't , uh incorporated Adam's , uh coding of overlaps yet um then that would have fallen through the cracks . It would be an underestimate of the number of overlaps because , um I wouldn't be able to pick it up from the way it was encoded so far .",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c006_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c006",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that overlaps in conversations should be counted as single overlaps between two speakers, not multiple overlaps involving more than two speakers.",
+      "topic": "counting overlaps",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To avoid double counting overlaps and to simplify the analysis."
+      ],
+      "conditions": [
+        "The simplifying assumption was discussed to be a rare occurrence."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I should also say I did a simplifying , uh {pause} count in that {vocalsound} if A was speaking {pause} B overlapped with A and then A came back again and overlapped with B again , I {disfmarker} I didn't count that as a three - person overlap , I counted that as a two - person overlap , {pause} and it was A being overlapped with by D.",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "PhD B: I think what 's really interesting though , it is {pause} before d {pause} saying \" yes , meetings have a lot of overlaps \" is to actually find out how many more {pause} we have than two - party.",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c007_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c007",
+      "schema_version": "1.0.0",
+      "decision": "The question of whether there are more overlaps happening in meetings with more people than in two-person conversations was discussed.",
+      "topic": "overlaps in meetings",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the differences between two-person conversations and meetings with more people."
+      ],
+      "conditions": [
+        "No decision was made."
+      ],
+      "dissent": [
+        "No disagreement or objection was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Cuz in two - party conversations , like Switchboard , there 's an awful lot too if you just look at backchannels , if you consider those overlaps ? it 's also ver it 's huge . It 's just that people haven't been {pause} looking at that because they 've been doing single - channel processing for {pause} speech recognition .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , the question is , you know , how many more overlaps {pause} of , say the two - person type , by adding more people . to a meeting , and it may be a lot more but i it may {disfmarker} {pause} it may not be .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "That 's an important question to ask .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c008_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c008",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "study of overlaps in dialogue",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the topic, but no decision or proposal was made."
+      ],
+      "conditions": [
+        "No conditions or caveats were stated."
+      ],
+      "dissent": [
+        "PhD B disagreed with Professor D's comparison to common sense notion of overlap."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Though it wasn't in the design.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "Were you measuring it?",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "There's actually to tell you the truth, the reason why it's hard to measure is because of...",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But, because of the acoustic segmentations that were done and the fact that some of the acoustic data in Switchboard were missing, people couldn't study it, but that doesn't mean in the real world that people don't talk that way.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well, we're looking at it here.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So that's why it's coming to us as new even though it may well be...",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right ?",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's important to distinguish...",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's happening a lot.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "It may not be...",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right ? I was commenting about this.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c009_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c009",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "number of overlaps in conversation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the reasons for overlaps, but no decision was made."
+      ],
+      "conditions": [
+        "Discussion about finding out the added contribution of each additional person."
+      ],
+      "dissent": [
+        "No dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And that's interesting. That's all.",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I'm just ... saying that it may ... the reason you get overlaps may or may not be due to sort of the number of people in the meeting.",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And that would be good to know,",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c010_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c010",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "overlap in speech during conversation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the nature and function of overlaps in conversation, but no decision was made."
+      ],
+      "conditions": [
+        "No clear conditions or caveats stated."
+      ],
+      "dissent": [
+        "No clear dissent or objection stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So you don't want to be cross - cutting.",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "But I you know , of certain types.",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "If you can see them , actually.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But , it 's sort of odd if one person 's speaking and everybody 's listening , and it 's unusual to have everybody going \" uh - huh , uh - huh \"",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "But .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "There 's a lot of head - nodding , in this",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Um .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yep , we need to put trackers on it .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "Plus {disfmarker} plus the {disfmarker} Yeah . So {disfmarker} so actually , um That 's in part because the nodding , if you have visual contact , {pause} the nodding has the same function , but on the phone , in Switchboard {vocalsound} you {disfmarker} you {disfmarker} that wouldn't work . So {vocalsound} so you need to use the backchannel .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "That is an earphone , so if you just put it {pause} so it 's on your ear .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "or {disfmarker} Cuz my impression is sometimes it happens when there 's a pause ,",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "But maybe a {disfmarker} just a small overlap ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "But {pause} you know , from information flow point of view it 's not an overlap in {pause} the predictable information.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c011_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c011",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to study the precise timing of overlaps in Switchboard conversations, specifically distinguishing between benevolent and competitive overlaps.",
+      "topic": "study topic",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It was considered interesting to distinguish between different types of overlaps in Switchboard conversations."
+      ],
+      "conditions": [
+        "The group discussed the possibility of having smaller meetings to beef up the statistics."
+      ],
+      "dissent": [
+        "Postdoc F expressed a feeling that the hostile type of overlaps were not happening in this meeting."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So here's a first interesting labeling task. Uh, to distinguish between, say, backchannels precision timing Sort of you know, benevolent overlaps, and and and w and sort of, um, I don't know, hostile overlaps, where someone is trying to grab the floor from someone else.",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "I wonder what determines who gets the floor?",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But . But . Um . You know , the other thing I was thinking was that , {pause} um {pause} these all these interesting questions are, of course , pretty hard to answer with, uh u {pause} you know , a small amount of data.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c012_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c012",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed whether to record some two-person meetings or not.",
+      "topic": "recording meetings",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussing the potential benefits of recording two-person meetings, such as beefing up statistics and getting rough statistics."
+      ],
+      "conditions": [
+        "The feasibility of recording all meetings was also discussed."
+      ],
+      "dissent": [
+        "No clear dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , um I wonder if what you're saying suggests that we should make a conscious attempt to have, um a fair number of meetings with, uh a smaller number of people. Right? I mean we most of our meetings are currently with say five, six, seven, eight people Should we really try to have some two-person meetings, or some three-person meetings and re record them just to beef up the statistics on that?",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's a control. Well, it seems like there are two possibilities there, I mean if you have just two people it's not really, y like a meeting, w is not as similar as the rest of the sample. It depends on what you're after, of course, but It seems like that would be more a case of the control condition, compared to, uh an experimental condition, with more than two.",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But what do you think about that? Do you think that would be useful? I'm just thinking that as an action item of whether we should try to record some two-person meetings or something.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c013_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c013",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to number the chairs and put labels on them with the seat number.",
+      "topic": "chair labeling",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Having ground truth would be nice."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Grad H",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'll do that on the next set of forms.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's a good idea.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But you have to keep the chairs in the same place.",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c014_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c014",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "placement of digital picture or video during meetings",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the benefits and drawbacks of using a digital picture or video during meetings, but no decision was reached."
+      ],
+      "conditions": [
+        "No decision was made due to ongoing discussion."
+      ],
+      "dissent": [
+        "No clear dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "That's a good idea.",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But you have to keep the chairs in the same place.",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Not the chairs. The chairs are movable.",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Put them on the table where they",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The chair Yeah.",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yep.",
+          "speaker": "PhD C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But you know, they",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "because you get a sense also of posture.",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "but, you know, these are important cues,",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Oh, Andreas was wearing that same old sweater again.",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The fashion statement.",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I mean the body",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "you know ?",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "And",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "And Morgan had that funny hair again.",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well, I mean you black out the that part.",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Hmm.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "But it's just, you know, the body",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "you know ?",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "the body",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "you know ?",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "where we sit at the table, I find is very interesting, that we do tend to",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        },
+        {
+          "quote": "and it's somewhat coincidental.",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Hmm.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "PhD G: Oh, no, you",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I just like to be in charge, that's why you're sitting",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I just want to be at the head of the table.",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Take control.",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Speaking of taking control, you said you had some research to talk about.",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah. Yeah.",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah, I've been playing with, um uh, using the close - talking mike to do",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But does it work for that one speaker throughout the whole meeting?",
+          "speaker": "PhD B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It does work for the one speaker throughout the whole meeting. Um Pretty well.",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "How did you do it Adam?",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Pretty well. How did I do it?",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "What do you mean?",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The algorithm was, uh take every frame that's over the threshold, and then median - filter it,",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So there was a minimum run length,",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "In terms of energy? Ah!",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c015_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c015",
+      "schema_version": "1.0.0",
+      "decision": "Grad H is working on a new attempt to use thresholding as a method for generating candidates for the acoustic change detector.",
+      "topic": "acoustic change detector method",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "The current method is not working well, and Grad H is trying a new approach."
+      ],
+      "conditions": [
+        "Grad H has not finished the new attempt yet."
+      ],
+      "dissent": [],
+      "owner": "Grad H",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "My next attempt, which I'm in the midst of and haven't quite finished yet was actually using the uh , thresholding as the way of generating the candidates.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "But all of this is close - talking mike, so it's, uh just trying to get some ground truth.",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c015_d2",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c015",
+      "schema_version": "1.0.0",
+      "decision": "PhD E thinks there is a great difference in the signal between the mixed file and close talker.",
+      "topic": "signal difference",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "PhD E's statement."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But eh I {disfmarker} I {disfmarker} I think , eh when {disfmarker} when , y I {disfmarker} {vocalsound} I saw the {disfmarker} the {disfmarker} the {disfmarker} the speech from PDA and , eh {pause} close {pause} {vocalsound} talker . I {disfmarker} I think the there is a {disfmarker} a great difference in the {disfmarker} in the signal.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c016_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c016",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed using an onset detector for energy detection.",
+      "topic": "energy detection method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Because there is a high level of energy and a great difference between speakers in mixed files."
+      ],
+      "conditions": [
+        "The discussion did not result in a final decision."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think for , eh {pause} I {disfmarker} I think for , eh algorithm based on energy , {pause} eh , that um h mmm , {disfmarker} more or less , eh , like eh {pause} eh , mmm , first sound energy detector .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean that when {disfmarker} when you use , eh {pause} eh {pause} any algorithm based on energy , eh {pause} it will {pause} i is my opinion .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Onset detector , OK .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c016_d2",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c016",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed the idea of using a neural network to get a broad class of phonetic features from a candidate speech signal.",
+      "topic": "phonetic feature extraction method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To get a broad class of phonetic features from a candidate speech signal."
+      ],
+      "conditions": [
+        "The discussion did not result in a final decision."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And the {disfmarker} the another question , that when I review the {disfmarker} the {disfmarker} the work of Javier . I think the , nnn , the , nnn , {pause} that the idea of using a {pause} neural network {vocalsound} to {disfmarker} to get a broad class of phonetic , eh {pause} from , eh uh a candidate from the {disfmarker} the {disfmarker} the speech signal .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c016_d3",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c016",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed considering hypothesis between each phoneme when working on Broadcast News.",
+      "topic": "hypothesis consideration method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Because it is more realistic to consider the silence between speakers."
+      ],
+      "conditions": [
+        "The discussion did not result in a final decision."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Because , I {disfmarker} I {disfmarker} I think it 's more realistic that , uh {pause} only consider the {disfmarker} {vocalsound} the {vocalsound} the {disfmarker} the silence between the speaker . Eh {pause} there {disfmarker} there exists eh {pause} silence between {disfmarker} between , eh {pause} a speaker . is {disfmarker} is , eh {pause} eh {pause} acoustic , eh {pause} event , important to {disfmarker} to consider .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c017_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c017",
+      "schema_version": "1.0.0",
+      "decision": "A method for processing acoustic change in speech was proposed.",
+      "topic": "speech processing method",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "A more general approach compared to using a neural net or another speech recognizer."
+      ],
+      "conditions": [
+        "Requires retraining of the speech recognizer."
+      ],
+      "dissent": [
+        "Grad H expressed concerns about applying the proposed method to a PDA speech file."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "This is the idea.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think is, eh nnn, it will be a more general approach.",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And then, eh {pause} {vocalsound} eh {pause} without considering the you {disfmarker} you {disfmarker} you , um {pause} you can consider the energy {vocalsound} like a another parameter in the {disfmarker} in the feature vector, eh.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Grad H: Oh, absolutely. This is not what I was suggesting to do.",
+          "speaker": "Grad H",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c018_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c018",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "voice silence detection",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the problem of adapting to new data, the use of different methods, and the complexity of the problem."
+      ],
+      "conditions": [
+        "Discussion about the complexity of the problem and the need for further work."
+      ],
+      "dissent": [
+        "No clear dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I used to work, like, on voice silence detection, you know, and this is this kind of thing.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "If you have somebody who has some experience with this sort of thing, and they work on it for a couple months, they can come up with something that gets most of the cases fairly easily.",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So how are you going to adapt whatever you can very quickly learn about the new data?",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well, also what I'm doing right now is not intended to be an acoustic change detector for far-field mikes.",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "I have to run, but, um, I can imagine building a model of speaker change detection that takes into account both the far-field and the close-talking mike for that speaker, and actually, not just the close-talking mike for that speaker, but actually for all of the speakers.",
+          "speaker": "PhD G",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c019_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c019",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made",
+      "topic": "method for detecting overlapping speech",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "comparing energy measures of a single microphone to a threshold",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "comparing energy measures of multiple microphones",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "using bells on heads to detect speaking",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "using blindfolds and nodding to detect speaking",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "using a single microphone with and without bowing",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about various methods, no clear preference or decision stated."
+      ],
+      "conditions": [
+        "No clear conditions or caveats stated."
+      ],
+      "dissent": [
+        "No clear dissent or objection stated."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Mmm . Mm - hmm .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "right ? And then he had some sort of {vocalsound} reasonable way of doing that ,",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "but {vocalsound} uh , what if you were just looking at very simple measures like energy measures but you don't just compare it to some threshold {pause} overall but you compare it to the {vocalsound} energy in the other microphones .",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "I was thinking about doing that originally to find out {pause} who 's the loudest , and that person is certainly talking .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "But I also wanted to find threshold {disfmarker} uh , excuse me , mol overlap .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , not just {disfmarker} just the loudest .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "But , eh",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "I {disfmarker} I Sorry . I {disfmarker} I have found that when {disfmarker} when I I analyzed the {disfmarker} the speech files from the , {pause} eh {pause} mike , eh {pause} from the eh close eh {pause} microphone , eh {pause} I found zones with a {disfmarker} a different level of energy .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Sorry , I have to go .",
+          "speaker": "PhD G",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK . Could you fill that out anyway ? Just , {pause} put your name in . Are y you want me to do it ? I 'll do it .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "But he 's not gonna even read that . Oh .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I know .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "including overlap zone . including . because , eh {pause} eh {pause} depend on the position of the {disfmarker} of the microph of the each speaker {vocalsound} to , eh , to get more o or less energy {vocalsound} i in the mixed sign in the signal . and then , {vocalsound} if you consider energy to {disfmarker} to detect overlapping in {disfmarker} in , uh , and you process the {disfmarker} the {disfmarker} in {disfmarker} the {disfmarker} the speech file from the {disfmarker} the {disfmarker} the mixed signals . The mixed signals , eh . I {disfmarker} I think it 's {disfmarker} it 's difficult , um {vocalsound} {pause} only to en with energy to {disfmarker} to consider that in that zone We have eh , eh , overlapping zone Eh , if you process only the the energy of the , of each frame .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , it 's probably harder , but I {disfmarker} I think what I was s nnn noting just when he {disfmarker} when Andreas raised that , was that there 's other information to be gained from looking at all {vocalsound} of the microphones and you may not need to look at very sophisticated things ,",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , by the way , I had an idea with {disfmarker} while I was watching Chuck nodding at a lot of these things , is that we can all wear little bells on our heads , {vocalsound} so that {vocalsound} then you 'd know that {disfmarker}",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Ding , ding , ding , ding .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "Ding",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": null
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c020_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c020",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to conduct a meeting or two with blindfolds, but no decision was made about the specifics such as the duration or whether to do it for the entire meeting.",
+      "topic": "conducting a meeting with blindfolds",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It could help reduce distractions and make it easier to focus on non-verbal cues."
+      ],
+      "conditions": [
+        "The meeting has lots of recordings of it."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So . I still think we should try a meeting or two with the blindfolds , at least of this meeting that we have lots of recordings of",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "That could be fun.",
+          "speaker": "Professor D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But then we also have these mikes , is the other thing I was thinking , so we need a barrier that doesn't disturb the sound",
+          "speaker": "PhD B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c020_d2",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c020",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to work on the human subjects form.",
+      "topic": "working on the human subjects form",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It was necessary to get broader input on the agenda item."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "OK . I think we 're going to have to work on the , uh {disfmarker} {pause} on the human subjects {vocalsound} form .",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c020_d3",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c020",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to send the pilot data to IBM for transcription.",
+      "topic": "sending pilot data to IBM for transcription",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The pilot data was ready."
+      ],
+      "conditions": [
+        "The next batch of recorded data was being prepared for shipment to IBM."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But yeah , that 's why I phrased it that way , yeah OK . Um {pause} next batch of recorded data put together on the CD - ROMs for shipment to IBM ,",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "Hasn't been sent yet , but {disfmarker} It 's getting ready .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c021_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c021",
+      "schema_version": "1.0.0",
+      "decision": "The meeting participants have a chance to request audio pixelization of selected parts of their speech.",
+      "topic": "audio pixelization",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To protect the privacy of the meeting participants."
+      ],
+      "conditions": [
+        "The audio pixelization software has been written and tested."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "human subjects approval on campus, uh {pause} and release forms worked out so the meeting participants have a chance to request audio pixelization of selected parts of the spee their speech.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't want to make this twice it 's length but {disfmarker} {vocalsound} but you know , just im improve it.",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c021_d2",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c021",
+      "schema_version": "1.0.0",
+      "decision": "Grad H will explain audio pixelization.",
+      "topic": "explanation of audio pixelization",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad H has worked on the audio pixelization."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Grad H",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Uh , audio pix wh he did it , so why don't you explain it quickly ?",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c022_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c022",
+      "schema_version": "1.0.0",
+      "decision": "The group agreed to use a specific beep sound for censorship in all meetings.",
+      "topic": "censorship method",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The beep is clear, potentially audible, and keeps the time duration of a deleted part."
+      ],
+      "conditions": [
+        "The beep is used on all channels."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "if someone is listening to it , there 's no mistake that it 's been beeped out ,",
+          "speaker": "Grad H",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think the beep is a really good idea .",
+          "speaker": "PhD B",
+          "supports": "decision"
+        },
+        {
+          "quote": "It 's very clear . Then you don't think it 's a long pause .",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "You could potentially recover it .",
+          "speaker": "Grad H",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c022_d2",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c022",
+      "schema_version": "1.0.0",
+      "decision": "Professor D suggested sending agendas for future meetings.",
+      "topic": "agenda sharing",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Professor D wanted to remind people to send agendas."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I did also wanna remind people , uh {pause} {vocalsound} please do send me , you know , uh thoughts for an agenda ,",
+          "speaker": "Professor D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c023_d1",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c023",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to continue with the current meeting format.",
+      "topic": "meeting format",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Grad H doesn't want to change the way they do the meeting."
+      ],
+      "conditions": [
+        "The software comment was not a comment on prescriptions on how to wear microphones."
+      ],
+      "dissent": [
+        "PhD B feels like a troublemaker."
+      ],
+      "owner": null,
+      "approver": "Professor D",
+      "evidence": [
+        {
+          "quote": "I don't want to change the way we do the meeting.",
+          "speaker": "Grad H",
+          "supports": "rationale"
+        },
+        {
+          "quote": "let's do digits.",
+          "speaker": "Professor D",
+          "supports": "approver"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c023_d2",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c023",
+      "schema_version": "1.0.0",
+      "decision": "Postdoc F will take a look at the backchannels and analyze how much they have analyzed.",
+      "topic": "backchannel analysis",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Postdoc F wants to subdivide these further due to the discussion."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Postdoc F",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "what I wanna subdivide these further.",
+          "speaker": "Postdoc F",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_022_c023_d3",
+      "source_id": "QMS_ACA_TR_022",
+      "chunk_id": "QMS_ACA_TR_022_c023",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to put a mark on the bottom of the slides when they have been read.",
+      "topic": "slide marking",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Postdoc F asks if they should put a mark on the bottom of the slides when they've been read."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": "Grad H",
+      "evidence": [
+        {
+          "quote": "Do you want us to put a mark on the bottom of these when they've actually been read, or do you just i i the only one that wasn't read is known, so we don't do it.",
+          "speaker": "Postdoc F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 24,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

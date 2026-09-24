@@ -1,0 +1,285 @@
+{
+  "source_id": "QMS_PRD_TR_053",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_053_c000_d1",
+      "source_id": "QMS_PRD_TR_053",
+      "chunk_id": "QMS_PRD_TR_053_c000",
+      "schema_version": "1.0.0",
+      "decision": "The participants introduced themselves and their roles",
+      "topic": "introductions",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To establish who is who and their roles in the project"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay . Everybody ready ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think so .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "So maybe we start with you ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay . Yeah , my name is Francina . And I'm uh an user interface {disfmarker} my role is uh uh um deal with the {vocalsound} technical-functional designs and specifications of user interface and dealing with user interface design .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And I'm a marketing person . I wanna figure out how to sell them .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . Uh I'm Jeanne-Oui . Um uh my role is industrial designer and my responsibilities are uh uh um deal with the {vocalsound} technical-functional designs and specifications of user interface and dealing with user interface design .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-hmm .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_053_c000_d2",
+      "source_id": "QMS_PRD_TR_053",
+      "chunk_id": "QMS_PRD_TR_053_c000",
+      "schema_version": "1.0.0",
+      "decision": "The participants agreed to redesign the whiteboard",
+      "topic": "whiteboard redesign",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The whiteboard was not working properly"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Maybe we should redesign it .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yes .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_053_c000_d3",
+      "source_id": "QMS_PRD_TR_053",
+      "chunk_id": "QMS_PRD_TR_053_c000",
+      "schema_version": "1.0.0",
+      "decision": "Marketing agreed to draw a cat on the whiteboard",
+      "topic": "drawing a cat on the whiteboard",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "For practice with the whiteboard"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So that it will record okay .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm-hmm .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_053_c001_d1",
+      "source_id": "QMS_PRD_TR_053",
+      "chunk_id": "QMS_PRD_TR_053_c001",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should be compact and multi-functional.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The remote control should be compact.",
+        "The remote control should be multi-functional."
+      ],
+      "conditions": [
+        "The production cost should not exceed 125 Euro."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah , I I feel that all the remote should be very compact.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , those which we get here nowadays it's very long.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And um and it should have multi-purpose.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It should be a multi-functional uh gadget that would um control all your household uh uh machines basically.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_053_c002_d1",
+      "source_id": "QMS_PRD_TR_053",
+      "chunk_id": "QMS_PRD_TR_053_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control should have a feature that helps locate it when lost.",
+      "topic": "remote control features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "People often lose their remotes and it would help if they could find it easily."
+      ],
+      "conditions": [
+        "The specific implementation details (light sensor, beep, voice response) are to be discussed later."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And and they suddenly the phone rings and they want to turn the T_V_ off and they say , where the hell is my my remote control yeah ?",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "because they put a newspaper or they put it behind a plant or , we you know , whatever .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well or yeah or if it's really , if it's really in a dark spot that it gives out a a sound or a signal .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So some {disfmarker} {vocalsound}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or a light should blink .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "And do you think a good c c um clue for that is that it would respond to a clap or it would respond to your voice or it would respond {disfmarker} what what should you have to do to make it beep or blink ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_053_c003_d1",
+      "source_id": "QMS_PRD_TR_053",
+      "chunk_id": "QMS_PRD_TR_053_c003",
+      "schema_version": "1.0.0",
+      "decision": "The working design is the responsibility of the Industrial Designer.",
+      "topic": "responsibility for working design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The Industrial Designer is responsible for the technical-functional design."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Industrial Designer",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , we looking for a working design when we come back .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I_D_ {disfmarker} uh who is this ? The industrial designer {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "owner"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_053_c003_d2",
+      "source_id": "QMS_PRD_TR_053",
+      "chunk_id": "QMS_PRD_TR_053_c003",
+      "schema_version": "1.0.0",
+      "decision": "The marketing manager will create user requirement specifications.",
+      "topic": "creation of user requirement specifications",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The marketing manager will create specifications for friendliness, user requirements in general, and price."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Marketing",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And the marketing manager is coming up with some user requirement specification, like friendliness, and what we just discussed in general.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 4,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

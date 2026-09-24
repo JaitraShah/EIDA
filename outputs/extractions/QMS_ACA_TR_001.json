@@ -1,0 +1,1070 @@
+{
+  "source_id": "QMS_ACA_TR_001",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_001_c000_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c000",
+      "schema_version": "1.0.0",
+      "decision": "Grad C presented an XML format for the database format to store word transcripts and annotations",
+      "topic": "database format",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad C already developed an XML format for this sort of stuff."
+      ],
+      "conditions": [
+        "Grad C will stand up and draw on the board to explain the format."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I had a web page up .",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So that you start with a time - line tag .",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And then I also wanted to be able to not specify specifically what the time was and just have a stamp .",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c001_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c001",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to use an extra level of indirection for time alignment, allowing for changes in time stamps without changing IDs.",
+      "topic": "time alignment",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To allow for changes in time stamps without changing IDs."
+      ],
+      "conditions": [
+        "The time line might become huge."
+      ],
+      "dissent": [
+        "PhD A suggested using an existing way of doing it for phone-level, but it was not discussed further."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "That's why you do that extra level of indirection.",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The who that's why you do that extra level of indirection.",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't think I would do this for phone-level.",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But why not use it for phone-level?",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c002_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c002",
+      "schema_version": "1.0.0",
+      "decision": "Frame-level representation of features is not a good idea due to large file sizes.",
+      "topic": "representation of features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Frame-level files would be gigabyte-size files, exceeding the two-gigabyte limit on most OSs."
+      ],
+      "conditions": [
+        "The average number of phones in an English word is around 5."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Frame - level is probably not a good idea.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "You don't want to do it with that",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "These are big files. These are really",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Right ? Because you have a two - gigabyte limit on most O Ss.",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c002_d2",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c002",
+      "schema_version": "1.0.0",
+      "decision": "Frame-level stuff should be encoded binary or compressed with G-zip.",
+      "topic": "encoding of frame-level stuff",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Frame-level files would be too large and painful to handle.",
+        "Compressing them with G-zip would make them more manageable if space is a concern."
+      ],
+      "conditions": [
+        "The average number of phones in an English word is around 5."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Anything at frame - level you had better encode binary",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "or it 's gonna be really painful.",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I mean these are long meetings and with",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Uh - huh.",
+          "speaker": "PhD D",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I mean these are big files. These are really",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Right ? Because you have a two - gigabyte limit on most O Ss.",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Or you just compre I mean , I like text formats . Um , b you can always , uh , G - zip them , and , um , you know , c decompress them on the fly if y if space is really a concern.",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c002_d3",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c002",
+      "schema_version": "1.0.0",
+      "decision": "Phone-level representation of features is a good idea.",
+      "topic": "representation of features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Frame-level representation is not feasible due to large file sizes, but phone-level representation is more manageable."
+      ],
+      "conditions": [
+        "The average number of phones in an English word is around 5."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But for phone - level stuff it 's perfectly",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And th it 's",
+          "speaker": "PhD F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Phones are every five frames though , so . Or something like that.",
+          "speaker": "PhD F",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c003_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c003",
+      "schema_version": "1.0.0",
+      "decision": "It was debated whether to use P-files or another format for storing features",
+      "topic": "feature storage format",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "P-files",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "another format",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the tightness and space efficiency of P-files, and the existence of other formats like Sphere format."
+      ],
+      "conditions": [
+        "The decision is not clear from the excerpt."
+      ],
+      "dissent": [
+        "Grad C suggested that P-files are not standard and that another format might be worth considering."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I think it's debatable whether you want to do phone-level in the same thing.",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But it's not standard.",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I was just looking for something sort of standard enough that, you know, if we start using this we can give it out, other people can work on it,",
+          "speaker": "PhD F",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I just... we've done this stuff on prosodics and three or four places have asked for those prosodic files, and we just have an ASCII, uh, output of frame-by-frame.",
+          "speaker": "Grad F",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c004_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c004",
+      "schema_version": "1.0.0",
+      "decision": "A decision about the file format for the prosodic data was discussed but not settled.",
+      "topic": "file format for prosodic data",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "a file format that knows about language and speech, and time",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "a file format that is just nodes and links, and the application imposes the structure",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about ease of use, compatibility, and usefulness to other people."
+      ],
+      "conditions": [
+        "No actual decision was made."
+      ],
+      "dissent": [
+        "No explicit dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I don't know enough about what we're gonna do with the data.",
+          "speaker": "PhD F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And especially for the prosody work, what it ends up being is you get features from the signal, and of course those change every time your alignments change.",
+          "speaker": "PhD F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And just, I mean we have to use some we have to make some decision about what to do.",
+          "speaker": "PhD F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And especially for the prosody work, what it ends up being is you get features from the signal, and of course those change every time your alignments change.",
+          "speaker": "PhD F",
+          "supports": "decision"
+        },
+        {
+          "quote": "So, well, the other thing is if we choose to use ATLAS, which maybe we should just do, we should just throw this out before we invest a lot of time in it.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c005_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c005",
+      "schema_version": "1.0.0",
+      "decision": "Grad C will take a closer look at the external file format developed by the infrastructure they are using.",
+      "topic": "database format",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "It is based on the conceptual node annotated transcription graph they like.",
+        "They have developed their own external file format and tools."
+      ],
+      "conditions": [
+        "Grad C will take a closer look at it.",
+        "The tools' compatibility with the translated format is a concern."
+      ],
+      "dissent": [],
+      "owner": "Grad C",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So I 'll take a closer look at it.",
+          "speaker": "Grad C",
+          "supports": "owner"
+        },
+        {
+          "quote": "And that 's exactly what this stuff is based on.",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "The last time I looked at it was a while ago, probably a year ago, uh, when we first started talking about this.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c006_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c006",
+      "schema_version": "1.0.0",
+      "decision": "A new format for the data representation was discussed, but no decision was made.",
+      "topic": "data representation format",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "A desire for a more compact format, less data for ten channels and two hours of a meeting."
+      ],
+      "conditions": [
+        "Discussion about multiple speakers, speaker tags, and linking to the data."
+      ],
+      "dissent": [
+        "Grad C mentions a previous format and speaker ID tags."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I definitely agree and I wanted to find actually a nicer format or a more compact format than what we used before.",
+          "speaker": "PhD F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And in this format you would have a different tag, which would , uh , be linked to the link.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Grad C mentions a previous format and speaker ID tags.",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c007_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c007",
+      "schema_version": "1.0.0",
+      "decision": "A method for expressing a hierarchical relationship between an utterance and the words within it was discussed but not decided.",
+      "topic": "hierarchical relationship expression",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about various ways to express the relationship, but no clear decision was made."
+      ],
+      "conditions": [
+        "Grad C mentions needing to look at it again."
+      ],
+      "dissent": [
+        "No explicit dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So how do you tell that these are the words that belong to that utterance ?",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Um , you would have another structure lower down than this that would be saying they 're all belonging to this ID .",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So it 's not hi it 's sort of bottom - up .",
+          "speaker": "PhD D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "You would have another tag which says this is of type \" sentence \".",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I take that back .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think I 'm forgetting .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c008_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c008",
+      "schema_version": "1.0.0",
+      "decision": "A discussion about segmenting words into sentences and prosodic phrases, and the efficiency of extracting information from such structures.",
+      "topic": "word segmentation and information extraction",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different segmentation methods and potential difficulties in information extraction."
+      ],
+      "conditions": [
+        "The exact level of nesting is unclear."
+      ],
+      "dissent": [
+        "PhD A and PhD F discuss the feasibility of the proposed methods."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So for instance @ @ {comment} sup",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "There 's one level {disfmarker} there 's one more level of indirection that I 'm forgetting .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Suppose you have a word sequence and you have two different segmentations of that same word sequence .",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I I 'm pretty sure that you can do that , but I 'm forgetting the exact level of nesting .",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , you would have to have {vocalsound} two different pointers from the word up {disfmarker} one level up , one to the sentence",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "The other issue that you had was , how do you actually efficiently extract , um {disfmarker} find and extract information in a structure of this type ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well , uh , and , I mean , you guys might {disfmarker} I don't know if this is premature because I suppose once you get the representation you can do this , but the kinds of things I was worried about is ,",
+          "speaker": "PhD F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "No , that 's not clear .",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c009_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c009",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about the format for the representation.",
+      "topic": "format for the representation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different formats and their difficulties.",
+        "Mention of ATLAS API being independent of the back store."
+      ],
+      "conditions": [
+        "Difficulty of relating frame-level features."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Right . So normally what we would do is we would say ' what do we wanna assign rising pitch to ? ' Are we gonna assign it to words ?",
+          "speaker": "PhD F",
+          "supports": "decision"
+        },
+        {
+          "quote": "OK . Well , in that case you would add that to this {pause} format",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "It 's a graph , but",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "The whole point is that the text and the lattice are isomorphic . They {pause} represent each other {pause} completely .",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c010_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c010",
+      "schema_version": "1.0.0",
+      "decision": "The decision on the storage format for the project is still undecided.",
+      "topic": "storage format",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "flat XML files",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "database",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussion about the efficiency, learning curve, and internal representation of the data."
+      ],
+      "conditions": [
+        "The team is still considering the structured XML query language."
+      ],
+      "dissent": [
+        "PhD A expressed doubts about the efficiency of flat file format and its text representation."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "My opinion on that is for the stuff that we're doing, I suspect it's overkill to do a full relational database, that just a flat file and search tools I bet will be enough.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But that's the advantage of ATLAS, is that if we actually take that route completely and we program to their API, then if we wanted to add a database later it would be pretty easy.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm just a little hesitant to try to go whole hog on sort of the whole framework that NIST is talking about, with ATLAS and a database and all that sort of stuff,",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But this is",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "You have to basically",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well, if it's not representing it, then how do you recover it? Of course it's representing it.",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "No. You have to what you have to do is you have to basically",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "That's the whole point.",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But that's what you'll have to do.",
+          "speaker": "PhD A",
+          "supports": "dissent"
+        },
+        {
+          "quote": "For Perl if you want to just do Perl. If you wanted to use the structured XML query language, that's a different thing.",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Is a See, I think the kinds of questions, at least in the next to the end of this year, are there may be a lot of different ones, but they'll all have a similar nature. They'll be looking at either a word-level prosodic, uh, an value, like a continuous value, like the slope of something. But you know, we'll do something where we some kind of data reduction where the prosodic features are sort of uh, either at the word-level or at the segment-level",
+          "speaker": "PhD F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c011_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c011",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to investigate the ATLAS external file representation for the prosody work.",
+      "topic": "prosody work representation",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "It seems like it's rich enough that you could do quick tools and later on, if needed, use the whole ATLAS infrastructure.",
+        "The team wants to get the prosody work done but doesn't want to waste time."
+      ],
+      "conditions": [
+        "The team will need to evaluate if the chosen representation can really do what they want."
+      ],
+      "dissent": [
+        "Grad A suggested looking at the representation themselves to get a sense of what they'll be dealing with."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "if we use the ATLAS external file representation, um, it seems like it's rich enough that you could do quick tools just as I said in Perl, and then later on if we choose to go up the learning curve, we can use the whole ATLAS infrastructure.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't want to waste time, getting the ... getting the ...",
+          "speaker": "PhD F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I have to look at it again to see whether it can really do what we want",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "if you would look at that and let us know what you think",
+          "speaker": "PhD F",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c011_d2",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c011",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the possibility of looking at alternatives to P-file.",
+      "topic": "alternatives to P-file",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Grad C mentioned the reason they like P-file is they are already familiar with it and have expertise, but there's a learning curve problem if they pick something else."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The other thing we might want to look at is alternatives to P-file.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c012_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c012",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to use the P-file format provided by the ATLAS project.",
+      "topic": "P-file format",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It seems reasonable to use it since they have come up with a format."
+      ],
+      "conditions": [
+        "Grad C will look at it again."
+      ],
+      "dissent": [
+        "Grad A expressed some reservations but agreed to look at it again."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , just keep it.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But let me look at it again.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I 've been meaning to look at the ATLAS stuff again anyway.",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c013_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c013",
+      "schema_version": "1.0.0",
+      "decision": "The overlap coding will be done using a separate green ribbon, and it will be time-tagged in a way that's independent of the specific time bin.",
+      "topic": "overlap coding",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Easy to map",
+        "Remains flexible regarding the time bins",
+        "Time-tagging is independent of the time bins",
+        "Unique, anchored, and clear",
+        "Fits with the format and is flexible"
+      ],
+      "conditions": [
+        "The idea is just to have a separate green ribbon",
+        "The overlap coding can indicate various categories"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So that would be i directly ,",
+          "speaker": "PhD F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . And so then it would just be a matter of getting making sure to handle the annotations that are , you know , not at the word - level and , um , t to import the",
+          "speaker": "PhD F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Are you talking about the overlap a annotations ?",
+          "speaker": "Postdoc E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But let me just {disfmarker} No . W the idea is just to have a separate green ribbon , you know , and {disfmarker} and {disfmarker} and let 's say that this is a time bin . There 's a word here . This is the first word of an overlapping segment of any length , overlapping with any other , uh , word {disfmarker} uh , i segment of any length . And , um , then you can indicate that this here was perhaps a ch a backchannel , or you can say that it was , um , a usurping of the turn , or you can {disfmarker} you know , any {disfmarker} any number of categories . But the fact is , you have it time - tagged in a way that 's independent of the , uh , sp particular time bin that the word ends up in . If it 's a large unit or a small unit , or",
+          "speaker": "Postdoc E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I {disfmarker} I just {disfmarker} I don't quite understand what these things are .",
+          "speaker": "PhD D",
+          "supports": "dissent"
+        },
+        {
+          "quote": "It probably doesn't matter .",
+          "speaker": "PhD D",
+          "supports": "dissent"
+        },
+        {
+          "quote": "We don't have to go into the codes .",
+          "speaker": "Postdoc E",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I mean , it doesn't .",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "No , I d",
+          "speaker": "PhD D",
+          "supports": "dissent"
+        },
+        {
+          "quote": "We don't have to go into the codes .",
+          "speaker": "Postdoc E",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I mean , that {disfmarker} not for the topic of this meeting .",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But let me just {disfmarker} No . W the idea is just to have a separate green ribbon , you know , and {disfmarker} and {disfmarker} and let 's say that this is a time bin . There 's a word here . This is the first word of an overlapping segment of any length , overlapping with any other , uh , word {disfmarker} uh , i segment of any length . And , um , then you can indicate that this here was perhaps a ch a backchannel , or you can say that it was , um , a usurping of the turn , or you can {disfmarker} you know , any {disfmarker} any number of categories . But the fact is , you have it time - tagged in a way that 's independent of the , uh , sp particular time bin that the word ends up in . If it 's a large unit or a small unit , or",
+          "speaker": "Postdoc E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm - hmm .",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c014_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c014",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made",
+      "topic": "dialogue annotation format",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the challenges of merging differently annotated versions of the same dialogue."
+      ],
+      "conditions": [
+        "Difficulty in specifying what 'merge' means."
+      ],
+      "dissent": [
+        "Grad C: It's all a question of semantics."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , um , the point is that you're gonna end up with , uh , word sequences that are differently annotated.",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't see any way that file formats are gonna help us with that.",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But the one thing that would work here actually for that is the speaker ons and offs.",
+          "speaker": "PhD F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c015_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c015",
+      "schema_version": "1.0.0",
+      "decision": "The group discussed a method for annotating the corpus, but did not reach a conclusion.",
+      "topic": "annotating the corpus",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different methods, concerns about data integrity, and potential future uses."
+      ],
+      "conditions": [
+        "Lack of a clear consensus and concerns about data merging."
+      ],
+      "dissent": [
+        "Discussion about the merits of different methods and potential issues."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So just to let you know what we were kluging it by, uh, doing Hhh.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Both were based on words, so, bo we have two versions of the same words interspersed with different tags for annotations.",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And that's how",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But, d isn't that something where whoever if the people who are making changes, say in the transcripts, cuz this all happened when the transcripts were different ye um, if they tie it to something, like if they tied it to the acoustic segment if they You know what I mean ? Then Or if they tied it to an acoustic segment and we had the time - marks, that would help.",
+          "speaker": "PhD F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well, can I ask one question ?",
+          "speaker": "Postdoc E",
+          "supports": "decision"
+        },
+        {
+          "quote": "But unfortunately they 've also hand - edited it.",
+          "speaker": "Grad C",
+          "supports": "dissent"
+        },
+        {
+          "quote": "But they 've also Exactly . And so that's exactly what we should somehow when you distribute the data, say that you know, that have some way of knowing how to merge it back in and asking people to try to do that.",
+          "speaker": "PhD F",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Well, then the",
+          "speaker": "Postdoc E",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c016_d1",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c016",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that merging word transcripts with different time stamps could be challenging due to potential differences in wording, chunking, and loss of utterances.",
+      "topic": "merging word transcripts",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Differences in wording, chunking, and loss of utterances could make merging word transcripts difficult."
+      ],
+      "conditions": [
+        "Potential differences in wording, chunking, and loss of utterances"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "You only know the boundaries of the ...",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So ... so in this one you would have to do a best match between the word sequences,",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And then infer that their time - marks are somewhere in between.",
+          "speaker": "Grad C",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Definitely.",
+          "speaker": "PhD F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Definitely.",
+          "speaker": "Postdoc E",
+          "supports": "decision"
+        },
+        {
+          "quote": "It could get very, very ugly.",
+          "speaker": "Grad C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_001_c016_d2",
+      "source_id": "QMS_ACA_TR_001",
+      "chunk_id": "QMS_ACA_TR_001_c016",
+      "schema_version": "1.0.0",
+      "decision": "It was decided that Adam and Don will meet to discuss the digits.",
+      "topic": "meeting to discuss digits",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Adam and Don will meet to discuss the digits."
+      ],
+      "conditions": [
+        "Adam and Don will meet"
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'll read the digits.",
+          "speaker": "PhD F",
+          "supports": "decision"
+        },
+        {
+          "quote": "For the benefit of science we'll read the digits.",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Thanks a lot. It's really helpful.",
+          "speaker": "PhD F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 17,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

@@ -1,0 +1,957 @@
+{
+  "source_id": "QMS_PRD_TR_094",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_PRD_TR_094_c001_d1",
+      "source_id": "QMS_PRD_TR_094",
+      "chunk_id": "QMS_PRD_TR_094_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed power sources for the remote, with options including a basic battery, a hand dynamo, kinetic energy, solar cells, and a power cradle.",
+      "topic": "power source for the remote",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "basic battery",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "hand dynamo",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "kinetic energy",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "solar cells",
+          "rejected": true,
+          "reason": "not a good idea because you could not use the remote at night"
+        },
+        {
+          "option": "power cradle",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Discussed but no decision made."
+      ],
+      "conditions": [
+        "Not provided."
+      ],
+      "dissent": [
+        "Industrial Designer expressed a preference for the kinetic option."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So here are options for our power sources . You can use a basic battery , which we've already discussed , um {vocalsound} th our tech department also said we have the option of doing some kind of hand dynamo where maybe you crank it or something like that .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I wanna change that {vocalsound} .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "It's actually a novel thing because you could sell it a as a novelty , just to be actually serious for a minute here ,",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_094_c002_d1",
+      "source_id": "QMS_PRD_TR_094",
+      "chunk_id": "QMS_PRD_TR_094_c002",
+      "schema_version": "1.0.0",
+      "decision": "No decision about the interface concept was made in this excerpt.",
+      "topic": "interface concept",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [
+        "Industrial Designer: 'That doesn't bode well for it.'"
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think interface concept.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's the end of my presentation.",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Industrial Designer: 'Very long presentation.'",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_094_c003_d1",
+      "source_id": "QMS_PRD_TR_094",
+      "chunk_id": "QMS_PRD_TR_094_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team decided against implementing speech recognition in the remote control.",
+      "topic": "speech recognition in remote control",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Speech recognition would be affected by other speech, interfere with the TV, and change the channel.",
+        "Rubber buttons are more reliable and resistant to damage.",
+        "A smaller remote control would be cooler but more prone to getting lost."
+      ],
+      "conditions": [
+        "If someone said something during a television show, it would change the channel.",
+        "There would still be interference from the TV."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well that doesn't bo bode well for it for it tats as well . Um so , somehow that thing's too big , but um our uh manufacturing division wanted the speech recognition . They say they could put it to work but um we don't think so .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "No . It it it {disfmarker} you'll be you know be affected by the by the other speech and {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "If the T_V_ is working , yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "That's just {disfmarker} I mean it'll {disfmarker} if somebody says up in the middle of a television show , it's gonna change the channel .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah and and fighting for the remote would not be fun anymore ,",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and I think that's one of the things we wanna keep .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But what if you actually had to press a button to make it recognize ? So if you pressed it and went , up ?",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "That kinda would r d",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well then why don't you just press the up button ?",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Man yeah .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah . That would kind of lose it .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But if it's just one thing with a button that you can just go {disfmarker} Up .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Even still there's gonna be interf th there's there still will be interference from the T_V_ .",
+          "speaker": "User Interface",
+          "supports": "condition"
+        },
+        {
+          "quote": "That I would believe .",
+          "speaker": "Marketing",
+          "supports": "condition"
+        },
+        {
+          "quote": "Trend watching has a later date there .",
+          "speaker": "User Interface",
+          "supports": "condition"
+        },
+        {
+          "quote": "But um yeah I think we we need to compromise between those two and somehow we'll do that . Somehow . Um so {vocalsound} the the {disfmarker} what I would propose is something more or less in the uh direction of what is to yo the right of that slide uh but without {disfmarker} with a l a less complicated um design , so the numbers , the volume control , and channel control , and teletext access . Uh the volume and channel control can just become those the the four button array as in if it was a round dial .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_094_c004_d1",
+      "source_id": "QMS_PRD_TR_094",
+      "chunk_id": "QMS_PRD_TR_094_c004",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about the product or its marketing strategy.",
+      "topic": "product marketing strategy",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Marketing expresses uncertainty about the product and its marketability.",
+        "Marketing suggests lowering the cost or developing new technology as potential solutions."
+      ],
+      "conditions": [
+        "The product's design and potential inclusion of a cradle are discussed, but no decision is made."
+      ],
+      "dissent": [
+        "Marketing expresses dissatisfaction with the current product."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I don't have too much to say about how to market this product because we don't have a product to market yet.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And so from my perspective, I don't have a product to market right now.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "And so uh we're gonna have some new technology to enhance the marketability.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well let's get a product then.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_094_c005_d1",
+      "source_id": "QMS_PRD_TR_094",
+      "chunk_id": "QMS_PRD_TR_094_c005",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed whether to include a scroll wheel in the product design.",
+      "topic": "scroll wheel inclusion",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "include scroll wheel",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "exclude scroll wheel",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Marketing sees potential marketing advantages in a scroll wheel.",
+        "Project Manager is concerned about the cost of the scroll wheel."
+      ],
+      "conditions": [
+        "The cost of the scroll wheel is a concern.",
+        "The team is considering the potential benefits of the scroll wheel."
+      ],
+      "dissent": [
+        "User Interface questions the functionality of the scroll wheel.",
+        "Industrial Designer is unsure about the scroll wheel."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So our big questions here really are cradle or not cradle ? Do we go basic or do we go for features ? Uh d does anyone really wanna do anything with the scroll wheel or should we ditch that off-hand first ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah wh wh what's the wh",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Yeah . If it creates something more complex or more expensive , then I don't know if that makes it uh a marketing necessity . But again , from a marketing perspective I want as much new and different about this thing as possible because we're we're co {vocalsound} it's a very competitive market .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "What I understand about scroll wheels is they're they're quite expensive to to make .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "No we can {disfmarker} we can do multiple scroll wheels but {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well I d I like the idea of basically focusing the {disfmarker} {vocalsound} my personal preference is focusing the p the product on the idea of the uh the case the the {vocalsound} uh dock to put it in {disfmarker} to to charge it .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_PRD_TR_094_c006_d1",
+      "source_id": "QMS_PRD_TR_094",
+      "chunk_id": "QMS_PRD_TR_094_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team did not decide on the user interface details for the remote.",
+      "topic": "user interface details",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team is still not exactly clear about the user interface."
+      ],
+      "conditions": [
+        "The cost of adding features like L_C_D_ is a concern."
+      ],
+      "dissent": [
+        "The Industrial Designer thinks L_C_D_ is a mistake due to increased cost."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well we have to I think for me it's still not exactly clear exactly what the interface user interface is gonna be.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think maybe in terms of marketing , is that gonna make enough of a difference to justify the cost ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "The Industrial Designer thinks L_C_D_ is a mistake because it's an increased cost.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_094_c006_d2",
+      "source_id": "QMS_PRD_TR_094",
+      "chunk_id": "QMS_PRD_TR_094_c006",
+      "schema_version": "1.0.0",
+      "decision": "The team did not decide on the overall design of the remote.",
+      "topic": "overall design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The team is considering various design ideas but has not made a decision."
+      ],
+      "conditions": [
+        "The durability of non-traditional designs is a concern."
+      ],
+      "dissent": [
+        "The Marketing team is throwing out ideas but the Industrial Designer has not committed to any."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But you guys are the ones that have to c ultimately create the product within cost.",
+          "speaker": "Marketing",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I mean what I see one of the things one of the things you brought up in an earlier presentation is , when you got children , their their stuff gets inside the circuitry , they get dirty , they get messy with drinks and stuff.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_094_c007_d1",
+      "source_id": "QMS_PRD_TR_094",
+      "chunk_id": "QMS_PRD_TR_094_c007",
+      "schema_version": "1.0.0",
+      "decision": "The scroll wheel is not included in the remote design.",
+      "topic": "remote design features",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "remote with scroll wheel",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The scroll wheel brings down the robustness of the whole thing, as it breaks down easier.",
+        "The cost of the scroll wheel is not justified for a little bit more uniqueness."
+      ],
+      "conditions": [
+        "The TV's ability to change channels affects the usability of the scroll wheel."
+      ],
+      "dissent": [
+        "For me, I think the scroll wheel might not be so bad."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Mm pr my personal preference is out . I don't think the cost is justified {vocalsound} for a little bit more uniqueness when we already have that , and I don't s think it's obvious and natural how it would be used .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . Yeah I think we have {disfmarker} like and it's not very usable and it will bring down the robustness of the whole thing , 'cause it's it it breaks down easier .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But then that that surely d depends a little on the T_V_",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well I think wh what it would be is like like the m like this , where it's maybe you know a digital wheel , right , where it's where it's quantized into you know certain {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_094_c008_d1",
+      "source_id": "QMS_PRD_TR_094",
+      "chunk_id": "QMS_PRD_TR_094_c008",
+      "schema_version": "1.0.0",
+      "decision": "The scroll wheel interface concept was discussed and agreed upon as a potential feature for the remote.",
+      "topic": "interface concept",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "It has the same exact functionality as two buttons.",
+        "It's a cool thing for surfing.",
+        "It could potentially be marketed as a high niche product."
+      ],
+      "conditions": [
+        "Some TVs might not respond exactly the same.",
+        "The scroll wheel might be frustrating where you can't make it go as fast as you want."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "It's just a f look and feel thing. It has the same exact functionality as two buttons.",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I really think that's a really cool thing for surfing.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I like that.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Now just so you know though uh you did bring up a point which is very valid, is a lot of TVs won't respond exactly the same.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well there's ano",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "But {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "You could basically make it so that it'll {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "If we're marketing it as a high niche product, then we're gonna be selling it to people who are buying good TVs as well, yeah, presumably.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Mm-hmm.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Primarily.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I think I know what you might be getting at, or or {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Oh no we could read it from the television.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well , what about this {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_094_c009_d1",
+      "source_id": "QMS_PRD_TR_094",
+      "chunk_id": "QMS_PRD_TR_094_c009",
+      "schema_version": "1.0.0",
+      "decision": "A scroll wheel, a mode indicator, and back-lit buttons were decided for the remote.",
+      "topic": "remote design features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussed design features for the remote."
+      ],
+      "conditions": [
+        "The cost of these features was not discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We want a scroll wheel.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "We want a mode indicator.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "We want back-lit buttons.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Just so you know I think I mean it was my understanding that before we were gonna stay in the mid-market range . It seems we're kind of approaching a higher-end range .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_094_c010_d1",
+      "source_id": "QMS_PRD_TR_094",
+      "chunk_id": "QMS_PRD_TR_094_c010",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed increasing the cost of the product.",
+      "topic": "product cost",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "To push the brand in a new market.",
+        "To meet the profit expectation of fifty million."
+      ],
+      "conditions": [
+        "The team has not yet reached a stage where they are ready to pin down the price of components."
+      ],
+      "dissent": [
+        "The Industrial Designer expressed concerns about the design looking like clay."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah well we don't have it's not that we have more money ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Didn't you say so ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "we can push up the the price .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's what I mean .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "We can increase the cost .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "'Kay .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So I don't know I don't know whether having",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I just wanna make sure everybody's on board with it . So",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . So we really need to be sure as to what we can push the cost up to , though we haven't got to a stage where we're ready to pin down the price of components . But I'd say what sorta price are we looking to be able to sell something like that , and what sorta price can we make it for ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well I think th I think the design and technology has to come back and say , okay to create this product we see it's gonna cost us this much for this volume , because we do have a volume target of of fifty million profit .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah no I I think that's where we really should be more flexible than anything else because as we said in the last meeting , our management is really looking for us to push our brand . We're entering a new market here ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "so I think the the profit expectation for this one product is maybe not as important as being able to",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay I'm I'm okay with that . I guess what I just want to me the next step is for these guys to come come in with the design proposal w with the cost estimate attached , and then we have to take this to the next level .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "But th what's our ballpark as to what we'd be able to sell something like this for ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well y yeah . Let's let's try and think now , how much would you pay for",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "We have to find cost .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "with all these features how much would you pay if you went to the store , and you were in the market f to replace your T_V_ remote , how much would you pay for that ?",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "But you've gotta think who our target market is because I I'm not our target market .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm just asking you .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm a student , but on the other hand I would think , mm with my Project Manager salary , I would think yeah I could probably afford this yeah I could probably afford this",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh no no .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "but the I would be happy paying over forty for it , I guess , but not much",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I would say thirty five to forty .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , I was gonna say thirty five to fifty .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "'Kay . Thirty five to fifty Euros is our sales bracket okay . So the question is what we ca we make it for .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Because one of th one of the things we're marketing about this product is that this is the last one you will ever need to buy for your television .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's why the scroll needs to be really robust .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay so we'll come up with something between thirty five and fifty that is rug rubber , robust , with scroll wheel , with the new facilities of the scroll wheel like favourite stuff , and and with a cradle , and yeah and the locator .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "With a cradle , radio transmitters , and back-lit buttons .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "And it's gonna look sexy {vocalsound} .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "{gap} Or not {vocalsound} .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or not . It might look like clay {vocalsound} .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay so you can market pe depending on that ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_PRD_TR_094_c011_d1",
+      "source_id": "QMS_PRD_TR_094",
+      "chunk_id": "QMS_PRD_TR_094_c011",
+      "schema_version": "1.0.0",
+      "decision": "No decisions were made in this excerpt",
+      "topic": "unspecified",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Or not . It might look like clay {vocalsound} .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay so you can market pe depending on that ?",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah yeah . Bas th that's that's easy . That's that's not a , it's a {gap} .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Cause we have about six , six , seven features in that alone .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yep .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Cool .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Under the title of uniquenesses .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Hmm .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay . The next meeting starts in thirty {vocalsound} minutes , although does it ? It starts at three twenty one , the next meeting . So we've got more than a thirty minutes . Um {vocalsound} we've got more like fifty .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Well I have {disfmarker} Is my {disfmarker} three twenty one is the next meeting ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "The the ne next meeting is three twenty one yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "That's that's almost uh fifty minutes .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah that is . Uh they've they've changed the times from the presentations .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "You guys can {disfmarker} You guys you guys can uh create a {disfmarker} All kinds of things .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Probably . We'll let you know when we're done , if we can go earlier .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Thanks , yeah .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay so you guys will be getting your modelling done now and uh {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay are there any other questions with regards to what this thing's gonna do , look like , how it's gonna work that need to be addressed before we really look at this in a lot of detail ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't think so . If we have any questions we'll just email you I guess .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah I think it {disfmarker} pretty much everything's covered .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay . This one was quite easy .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Coulda been worse .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Always the optimist .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "'Kay thanks guys .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Thank you . I don't have any emails . This means I can go home . Oh , we all leave . {gap}",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    }
+  ],
+  "chunks_processed": 12,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

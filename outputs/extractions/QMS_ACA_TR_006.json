@@ -1,0 +1,603 @@
+{
+  "source_id": "QMS_ACA_TR_006",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_006_c000_d1",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c000",
+      "schema_version": "1.0.0",
+      "decision": "Spectral subtraction or Wiener filtering was chosen for noise suppression.",
+      "topic": "noise suppression method",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "vector Taylor series",
+          "rejected": true,
+          "reason": "hadn't worked out much"
+        },
+        {
+          "option": "subspace stuff",
+          "rejected": true,
+          "reason": "had not been worked with so much"
+        }
+      ],
+      "rationale": [
+        "After coming back from QualComm, there was strong feedback. Hynek, Guenther, and I had the opinion that it was time to choose one."
+      ],
+      "conditions": [
+        "The limited time required choosing one method."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "we sort of spread out to look at a number of different ways of doing noise suppression.",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "it sort of came down to spectral subtraction versus Wiener filtering.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "we had a long discussion about how they were the same and how they were completely different.",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c001_d1",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c001",
+      "schema_version": "1.0.0",
+      "decision": "The group decided to use a single piece of software for the project.",
+      "topic": "software choice",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The software has plenty of options, including spectral subtraction and Wiener filtering."
+      ],
+      "conditions": [
+        "The software will give the system the 53.66 value by default."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So it's another victory for international collaboration.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yes. Yes.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "There's just one piece of software.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yes.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah.",
+          "speaker": "PhD E",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c002_d1",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c002",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to not change the system for a while, and focus on other things before Hynek comes back.",
+      "topic": "system changes",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The goal should be to have a firm path for the time Hynek is gone."
+      ],
+      "conditions": [
+        "There are still a few days of nailing things down with the software and so on."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But , um , it 's not using our full bag of tricks , if you will .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "And then focus on everything that 's left.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "But just conceptually , where does the neural net go ? Do you wanna h run it on the output of the spectrally subtracted ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "I would thought think that what we would wanna do is not futz with this stuff for a while because what 'll happen is we 'll change many other things in the system",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c003_d1",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the neural net, VAD, and second stream as the three things that need to be focused on.",
+      "topic": "focus areas",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "These were the points agreed upon last time."
+      ],
+      "conditions": [
+        "There are constraints on latency."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So there 's the neural net issue . There 's the VAD issue . And , uh , there's the second stream {pause} thing . And I think those that we {disfmarker} last time we agreed that those are the three things that have to get , uh , focused on .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I guess they still allow two hundred milliseconds on either side or some ? Is that what the deal is ?",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c003_d2",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the need for a better VAD.",
+      "topic": "VAD improvement",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Better VADs are good."
+      ],
+      "conditions": [
+        "The default boundaries provided are not great."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well , better {comment} ones are good .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "I guess they still allow two hundred milliseconds on either side or some ? Is that what the deal is ?",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c003_d3",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c003",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the potential improvement of using VAD probabilities computed on the clean signal on far-field test utterances.",
+      "topic": "VAD test improvement",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Results are much better."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , our current VAD is {disfmarker} is more than twenty percent , while their is fourteen .",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "In some cases it divides the error rate by two .",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c004_d1",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to potentially reduce the delay of the VAD and LDA, with the goal of improving performance.",
+      "topic": "delay reduction",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Reducing delay might improve performance."
+      ],
+      "conditions": [
+        "The exact amount of latency reduction is still under dispute."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , right now the LDA delays are more.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , right now the LDA delays are more.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , right now the LDA delays are more.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , right now the LDA delays are more.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , which means you pick either one of them",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , which means you pick either one of them",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , right now the LDA delays are more.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So , right now the LDA delays are more.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c004_d2",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c004",
+      "schema_version": "1.0.0",
+      "decision": "It was mentioned that the Wiener filter has a 40 milliseconds delay.",
+      "topic": "Wiener filter delay",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So is it",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "So that 's the one which Stephane was discussing",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So that 's the one which Stephane was discussing",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "So is it",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c005_d1",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c005",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to investigate the impact of frame-dropping on the performance of the neural net.",
+      "topic": "impact of frame-dropping on neural net performance",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the potential improvement due to fixing the frame-dropping problem."
+      ],
+      "conditions": [
+        "Discussion about the difficulty of determining the exact impact of frame-dropping."
+      ],
+      "dissent": [
+        "No dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But if there 's four or five things like that then pretty soon you 're talking real improvement.",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It 's difficult. Sometime we change two things together and",
+          "speaker": "PhD E",
+          "supports": "decision"
+        },
+        {
+          "quote": "Couldn't you just send all of the frames, but mark the ones that are supposed to be dropped? Cuz you have a bunch more bandwidth. Right?",
+          "speaker": "PhD A",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c006_d1",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c006",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made about changing the method for noise estimation.",
+      "topic": "noise estimation method",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about potential improvements to noise estimation, but no clear decision or proposed method."
+      ],
+      "conditions": [
+        "No clear way to assess the current performance of the noise estimation."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Just one more thing . Like , should we do something more for the noise estimation , because we still have some noise.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "But , um , it does seem like , you know , i i i i some compromise between always depending on the first fifteen frames and a a always depending on a pause is a good idea . Uh , maybe you have to weight the estimate from the first - teen fifteen frames more heavily than was done in your first attempt . But",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But , um , it does seem like , you know , i i i i some compromise between always depending on the first fifteen frames and a a always depending on a pause is a good idea . Uh , maybe you have to weight the estimate from the first - teen fifteen frames more heavily than was done in your first attempt . But",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But , um , it does seem like , you know , i i i i some compromise between always depending on the first fifteen frames and a a always depending on a pause is a good idea . Uh , maybe you have to weight the estimate from the first - teen fifteen frames more heavily than was done in your first attempt . But",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c007_d1",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c007",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to update the VAD (Voice Activity Detection) neural network by training it on cleaned-up speech.",
+      "topic": "VAD neural network training",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The current network is trained on noisy PLP features. There is no RASTA or anything particularly robust in these features."
+      ],
+      "conditions": [
+        "The VAD was trained on noisy features. Now they have cleaned-up features, so a better VAD can be achieved by training the net on cleaned-up speech."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , should we keep the same idea of having a neural network , but training it on more data and adding better features , I think , but because the current network is just PLP features . Well , it 's trained on noisy PLP features computed on noisy speech . But there is no nothing particularly robust in these features.",
+          "speaker": "PhD E",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Cure the VAD?",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So that VAD was trained on the noisy features.",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c008_d1",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c008",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to use the same net for both Voice Activity Detection (VAD) and noise estimation.",
+      "topic": "Voice Activity Detection (VAD) and noise estimation",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The initial decision to determine silence or speech happens quickly."
+      ],
+      "conditions": [
+        "The VAD and noise estimation could be improved."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Can you use the same net to do both, or ?",
+          "speaker": "PhD A",
+          "supports": "decision"
+        },
+        {
+          "quote": "For",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "So the net the final net I mean, which is the feature net so that actually comes after a chain of, like, LDA plus everything. So it's, like, it takes a long time to get a decision out of it.",
+          "speaker": "PhD C",
+          "supports": "condition"
+        },
+        {
+          "quote": "It probably makes sense to move from there.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c008_d2",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c008",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to include the neural net at the end of the month.",
+      "topic": "including the neural net",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "And then, uh, later on in the month I think we wanna start including the neural net at the end.",
+          "speaker": "Professor B",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c008_d3",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c008",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed to start the project from a set of phonological features, but it might not be a good idea according to John Ohala.",
+      "topic": "starting from a set of phonological features",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Not specified in the excerpt."
+      ],
+      "conditions": [
+        "Not specified in the excerpt."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "In my proposal, I was thinking about starting from a set of, uh, phonological features, or a subset of them.",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "But that might not be necessarily a good idea according to, um, John.",
+          "speaker": "Grad D",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_006_c009_d1",
+      "source_id": "QMS_ACA_TR_006",
+      "chunk_id": "QMS_ACA_TR_006_c009",
+      "schema_version": "1.0.0",
+      "decision": "Grad D is looking into a data-driven approach for the project instead of starting from a set of phonological features.",
+      "topic": "approach for the project",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "starting from a set of phonological features",
+          "rejected": true,
+          "reason": "Grad D is looking into a data-driven approach instead"
+        }
+      ],
+      "rationale": [
+        "Grad D mentioned that phonological features might not be a good idea according to John Ohala, and that a better way would be something more data-driven."
+      ],
+      "conditions": [
+        "Grad D is taking a look at Sangita's work on TRAPS."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I was thinking about starting from a set of , uh , phonological features , {vocalsound} or a subset of them . Um , but that might not be necessarily a good idea according to , um , John .",
+          "speaker": "Grad D",
+          "supports": "decision"
+        },
+        {
+          "quote": "He said , uh , um , these {disfmarker} these phonological features are {disfmarker} are sort of figments of imagination also .",
+          "speaker": "Grad D",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I 'm , um , taking a look at some of , um , {vocalsound} Sangita 's work on {disfmarker} on TRAPS . She did something where , um {disfmarker} {vocalsound} w where the TRAPS learn She clustered the {disfmarker} the temporal patterns of , um , certain {disfmarker} certain phonemes in {disfmarker} in m averaged over many , many contexts . And , uh , some things tended to cluster .",
+          "speaker": "Grad D",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 10,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

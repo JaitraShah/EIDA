@@ -1,0 +1,56 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c008_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c008",
+      "schema_version": "1.0.0",
+      "decision": "A follow-up email will be sent within the next couple of days to gather feedback.",
+      "topic": "feedback gathering",
+      "status": "provisional",
+      "alternatives": [],
+      "rationale": [
+        "To ensure everyone has a chance to respond and indicate they received the email."
+      ],
+      "conditions": [
+        "If people don't respond, they won't be off the hook."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I d I just don't think we will . For all the reasons that we 've discussed .",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "And actually ,",
+          "speaker": "Postdoc A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But {disfmarker}",
+          "speaker": "Professor B",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I {disfmarker} I {disfmarker} didn't anticipate this so I {disfmarker} that 's why I didn't give this comment , and it {disfmarker} I {disfmarker} this discussion has made me think it might be nice to have a follow - up email within the next couple of days saying \" by the way , you know , we wanna hear back from you by X date and please {disfmarker} \", and then add what Liz said {disfmarker} \" please , uh , respond to {disfmarker} please indicate you received this mail . \"",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , or well , maybe even additionally , uh , um , \" Even if you 've decided you have no changes you 'd like to make , if you could tell us that \" .",
+          "speaker": "Professor B",
+          "supports": "decision"
+        },
+        {
+          "quote": "Respond to the email . {comment} Yep .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

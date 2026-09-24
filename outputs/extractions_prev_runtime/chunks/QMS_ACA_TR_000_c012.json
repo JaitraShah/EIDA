@@ -1,0 +1,83 @@
+{
+  "records": [
+    {
+      "decision_id": "QMS_ACA_TR_000_c012_d1",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c012",
+      "schema_version": "1.0.0",
+      "decision": "It was discussed that the missing backchannels in the transcripts might be due to them not being caught by the pre-segmenter.",
+      "topic": "missing backchannels",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "The discussion revolved around the possibility that the backchannels were not caught by the pre-segmenter."
+      ],
+      "conditions": [
+        "It was mentioned that the detector for this issue might improve in the future."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah . It 's gonna have to go through our regular process .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean , the one thing I noticed is it did miss a lot of backchannels .",
+          "speaker": "Grad F",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yes , absolutely . Absolutely .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        },
+        {
+          "quote": "Do you suppose that was because they weren't caught by the pre - segmenter ?",
+          "speaker": "Postdoc A",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yes , absolutely . Absolutely .",
+          "speaker": "Grad F",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QMS_ACA_TR_000_c012_d2",
+      "source_id": "QMS_ACA_TR_000",
+      "chunk_id": "QMS_ACA_TR_000_c012",
+      "schema_version": "1.0.0",
+      "decision": "It was decided to send the transcripts corresponding to six meetings to the University of Washington.",
+      "topic": "sharing transcripts with University of Washington",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The decision was made to share the transcripts with the University of Washington."
+      ],
+      "conditions": [
+        "It was mentioned that the University of Washington would be downloading the audio files."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So they 'll be doing that .",
+          "speaker": "Postdoc A",
+          "supports": "decision"
+        },
+        {
+          "quote": "Mm - hmm . Yeah , I pointed them to the set that Andreas put , uh , on the web so th if they want to compare directly with his results they can .",
+          "speaker": "PhD C",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}
