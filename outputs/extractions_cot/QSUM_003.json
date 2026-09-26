@@ -1,0 +1,366 @@
+{
+  "source_id": "QSUM_003",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QSUM_003_c000_d1",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c000",
+      "schema_version": "1.0.0",
+      "decision": "Sarah, the Project Manager, will draw a tiger on the whiteboard and summarize its characteristics.",
+      "topic": "drawing and summarizing animal characteristics",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To start the project with a fun and interactive activity."
+      ],
+      "conditions": [
+        "Each team member will draw their own animal and summarize its characteristics."
+      ],
+      "dissent": [],
+      "owner": "Project Manager",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We're gonna practice with the pens and draw our favourite animal on the white board, I'll go first, and um sum up the characteristics of that animal.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm going to tell you that's supposed to be a tiger.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And I see them as majestic, and independent, and proud.",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QSUM_003_c000_d2",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c000",
+      "schema_version": "1.0.0",
+      "decision": "Marketing will draw a cat on the whiteboard.",
+      "topic": "drawing and summarizing animal characteristics",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Marketing",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'll have a go.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QSUM_003_c000_d3",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c000",
+      "schema_version": "1.0.0",
+      "decision": "Industrial Designer will draw something random on the whiteboard.",
+      "topic": "drawing and summarizing animal characteristics",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Since the options they wanted to draw were already chosen."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Industrial Designer",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well since you guys have chosen the ones I wanted to do, I'll have to have to go for something a bit random.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QSUM_003_c001_d1",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c001",
+      "schema_version": "1.0.0",
+      "decision": "The design will be changed from the original to a crocodile.",
+      "topic": "design change",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "bird",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "big cat",
+          "rejected": true,
+          "reason": "not mentioned after the crocodile and eagle suggestions"
+        },
+        {
+          "option": "seagull",
+          "rejected": true,
+          "reason": "not chosen"
+        },
+        {
+          "option": "vampire bat",
+          "rejected": true,
+          "reason": "not mentioned after the crocodile and eagle suggestions"
+        },
+        {
+          "option": "eagle",
+          "rejected": false,
+          "reason": "agreed upon by all"
+        }
+      ],
+      "rationale": [
+        "The original design resembled a beak and was not what was originally intended."
+      ],
+      "conditions": [
+        "The design will need to be thought out on the spot."
+      ],
+      "dissent": [
+        "Marketing initially suggested it could be a seagull, but later agreed to the eagle design."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Well since you guys have chosen the ones I wanted to do , I'll have to have to go for something a bit random .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "because that looks like a beak now , so .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Crocodile ?",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It can be a crocodile now actually .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's gonna be a bird .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_003_c001_d2",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c001",
+      "schema_version": "1.0.0",
+      "decision": "The design will be an eagle.",
+      "topic": "design change",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "It is a flying animal, independent, free-spirited, and a bird of prey."
+      ],
+      "conditions": [
+        "The pen used for the design might not work properly."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I'm very impressed with your artistic skills ,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Again this is off the top of my head , I was gonna do a big cat too , um .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's meant to be an eagle .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_003_c002_d1",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c002",
+      "schema_version": "1.0.0",
+      "decision": "The selling price of the product was set at €25 (approximately £17).",
+      "topic": "selling price",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The group agreed to proceed with the decision due to the potential for a large profit margin."
+      ],
+      "conditions": [
+        "The group discussed the possibility of undercutting the price to make the product more affordable, but they also considered the risk of it appearing cheap."
+      ],
+      "dissent": [
+        "The Project Manager initially expressed concern about the high price, but ultimately agreed to proceed with the decision."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We've got a selling price at twenty five Euros",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's about seventeen, seventeen Pounds, something like that.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Seventeen.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I think half of the selling price is taken up by building it.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Production cost's at twelve fifty",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "profit aim is fifty million Euros",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QSUM_003_c003_d1",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c003",
+      "schema_version": "1.0.0",
+      "decision": "A simplified remote control design with a menu display and LCD screen is proposed.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "traditional remote control with multiple buttons",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "To make the remote control easier to use for a wider audience, including those less familiar with technology."
+      ],
+      "conditions": [
+        "The design should be intuitive and self-explanatory."
+      ],
+      "dissent": [
+        "The Project Manager expresses concern about the complexity of phones with a Windows-based running system."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "When they're main things on the front of it and a section opens up or something to the other functions where you can do sound or options kind of recording , things like that inside it .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't think I could go any further with it than that , so , I suppose it's got to be something usable by someone like me as well .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "When you pick it up it doesn't make it really complicated to look at , it's obvious what you're doing , um .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Actually that just raises a point , I wonder what our design people think , but you know on a mobile phone , you can press a key and it gives you a menu , it's got a menu display ,",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh uh {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_003_c004_d1",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c004",
+      "schema_version": "1.0.0",
+      "decision": "Proposed a design for a simplified mobile phone for the older generation with an extra button for large print, a dual function (basic buttons and a menu with obvious pictures/symbols), and a discussion about a flip top remote control.",
+      "topic": "mobile phone design",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "flip top remote control",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "To make the phone easier to use for the older generation, reduce costs, and maintain a lightweight and easily producible design."
+      ],
+      "conditions": [
+        "Cost implications for some proposed features, such as the flip top remote control, were discussed but not resolved."
+      ],
+      "dissent": [
+        "The Industrial Designer questioned the need for the phone to be fashionable."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I find it really confusing , I kept getting lost {vocalsound} in the phone , I di I've not got a new one but uh my friend got a new one",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or what about kind of a dual function ? In that you've got the basic buttons just for your play , volume , programme things",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "The other thing is , just ch chucking into mobile phone f design features again , it could have a flip top remote control so that when you flip over the top , your screen is {disfmarker} you can have a bigger screen in the the flip over .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "Does does it need to be fashionable ? The sort of {disfmarker} I I had a quick look at the company website and it's like the the uh {disfmarker} we put the fashion into electronics , so I think think the whole design thing might be qui",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 6,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

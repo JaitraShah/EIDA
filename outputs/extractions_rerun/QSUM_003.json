@@ -1,0 +1,480 @@
+{
+  "source_id": "QSUM_003",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QSUM_003_c000_d1",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c000",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to draw their favorite animals on the whiteboard and summarize their characteristics.",
+      "topic": "team activity",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "To get to know each other better, feel more comfortable, and start the meeting."
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "We're gonna practice with the pens and draw our favourite animal on the white board",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'm going to tell you that's supposed to be a tiger.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "What's missing ? We're running out of blue.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'll leave space for everyone else.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Who would like to go next ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , me.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Is that your lapel then ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Uh , yep.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Thank you.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah I'll have a go.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Okay .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Sorry .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Thanks .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Please , please leave me a space at the bottom , I'm little , you can get to the top , with standing on a chair.",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QSUM_003_c001_d1",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c001",
+      "schema_version": "1.0.0",
+      "decision": "The design will be changed from a T_ Rex or pelican to a bird, specifically an eagle.",
+      "topic": "design concept",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "T_ Rex",
+          "rejected": true,
+          "reason": "changed into a pelican and then into an eagle"
+        },
+        {
+          "option": "pelican",
+          "rejected": true,
+          "reason": "changed into an eagle"
+        }
+      ],
+      "rationale": [
+        "The design was not what was wanted.",
+        "The design was not a seagull."
+      ],
+      "conditions": [
+        "The quality of the work was discussed."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay , now I'm gonna have to change what is was originally gonna be",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "it's gonna be a bird .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "firstly it was an attempt at a T_ Rex and then it sort of changed into a pelican",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's not a vampire bat honestly",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "not a seagull",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "There we go",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_003_c002_d1",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c002",
+      "schema_version": "1.0.0",
+      "decision": "The selling price of the product will be seventeen Pounds.",
+      "topic": "selling price",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the price and comparison with existing products."
+      ],
+      "conditions": [
+        "No mention of conditions."
+      ],
+      "dissent": [
+        "The Industrial Designer mentions that similar products on the market are about twenty pounds."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Seventeen Pounds.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's about seventeen, seventeen Pounds, something like that.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "D fifteen ?",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Havi having said that though, if you wanna get one of those the the ones on the market at the moment they're s they're about twenty pounds anyway.",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_003_c002_d2",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c002",
+      "schema_version": "1.0.0",
+      "decision": "The product will be user-friendly to everyone.",
+      "topic": "user-friendliness",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the target group and user-friendliness."
+      ],
+      "conditions": [
+        "No mention of conditions."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "just t we're not focusing on business market , any particular thing , it's everyone",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Big target group .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_003_c002_d3",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c002",
+      "schema_version": "1.0.0",
+      "decision": "The product will be in the international market like Australia, America, things like that.",
+      "topic": "market",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the market and international presence."
+      ],
+      "conditions": [
+        "No mention of conditions."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "just that it's going to be in the international market like Australia , America , things like that.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_003_c002_d4",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c002",
+      "schema_version": "1.0.0",
+      "decision": "The product will integrate everything into one.",
+      "topic": "integration",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about integrating everything into one remote control."
+      ],
+      "conditions": [
+        "No mention of conditions."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Okay , you wanna integrate everything into one like {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_003_c003_d1",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c003",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made about the design of the remote control.",
+      "topic": "design of remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about simplification of symbols, LCD display, menus, and ease of use for different age groups."
+      ],
+      "conditions": [
+        "No explicit decision or agreement on a specific design."
+      ],
+      "dissent": [
+        "No explicit dissent or objection voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "'cause you {disfmarker}",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "My experience has only been being given the remote control with the object I buy",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I don't think I could go any further with it than that",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "When they're {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "When you've got the main things on the front of it and a section opens up or something to the other functions where you can do sound or options kind of recording",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So simplification of symbols you could think of",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "When it doesn't make {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Actually that just raises a point",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "so you've got a little L_C_D_ display",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And if it's somewhat similar to what you have on mobile phone",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "What about the older generation ? What about granny and grandads ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Right . Right . So that's a problem regardless of of any design modifications you you come up with",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't think they tape things",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't like the , you know the new phones that have kind of got a Windows-based running system",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_003_c004_d1",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c004",
+      "schema_version": "1.0.0",
+      "decision": "The design of the remote control should be lightweight and plastic, and it does not need to be fashionable.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "fashionable design",
+          "rejected": true,
+          "reason": "not necessary"
+        }
+      ],
+      "rationale": [
+        "The remote control does not need to look as fashionable and stylish as a mobile phone.",
+        "Using plastic might make it cheaper."
+      ],
+      "conditions": [
+        "Cost implications of a flip top remote control were discussed but not resolved."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "But it might have its cost implications.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "we don't have to use metal",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I would",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I presume it would.",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QSUM_003_c004_d2",
+      "source_id": "QSUM_003",
+      "chunk_id": "QSUM_003_c004",
+      "schema_version": "1.0.0",
+      "decision": "A flip top remote control with a bigger screen could be considered, but cost implications were not resolved.",
+      "topic": "flip top remote control",
+      "status": "deferred",
+      "alternatives": [
+        {
+          "option": "no flip top remote control",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The flip top remote control could save space and make the remote control look smaller."
+      ],
+      "conditions": [
+        "Cost implications of a flip top remote control were discussed but not resolved."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Mm , okay . S",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "The other thing is , just ch chucking into mobile phone f design features again , it could have a flip top remote control so that when you flip over the top , your screen is {disfmarker} you can have a bigger screen in the the flip over .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.7
+    }
+  ],
+  "chunks_processed": 6,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}

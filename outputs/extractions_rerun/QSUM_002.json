@@ -1,0 +1,771 @@
+{
+  "source_id": "QSUM_002",
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "decision_id": "QSUM_002_c000_d1",
+      "source_id": "QSUM_002",
+      "chunk_id": "QSUM_002_c000",
+      "schema_version": "1.0.0",
+      "decision": "No decision was made in this excerpt.",
+      "topic": "conceptual design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "The discussion about design options was not concluded."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Um , I'll just review what we did in our last meeting . Um , {vocalsound} under marketing we targeted our audience , and {disfmarker} Um , yeah . That was {vocalsound} generally {vocalsound} {disfmarker} how helpful that was .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Then we considered some design options with how it should look , um , we discussed an iPod-like button system which , uh , we haven't concluded but we're {disfmarker} Right , um {disfmarker} So , if you all have presentations to do , we can see what {disfmarker} where you've come from our last time .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So I've been looking at the components design . Um . Mostly by consulting remote control diagrams from the internet and also by incorporating design ideas from the last project meeting . Um , so we need some custom design parts , and other parts we'll just use standard . Um , I assume we'll be custom designing our case , probably a hard plastic or some other material case , to protect the remote and the locator .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "And we'll need to custom desi design a circuit board , because the circuit board has to take the button input and send it to the output so you have to design that each time . But once we come up with a design we'll send it to the circuit people and they'll just print it out .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "And al we also need a beeper or buzzer or other sort of noise thing for locating the remote . So we have some material options . Um , we can use rubber , plastic , wood or titanium .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "And why not wood ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And ,",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I don't know why we'd want to .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I've been searching the current trends , um , both on the web and via fashion-watchers , and the findings are that the first thing to aim for is a fashion uh , fancy look and feel .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_002_c001_d1",
+      "source_id": "QSUM_002",
+      "chunk_id": "QSUM_002_c001",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the concept of a touch-based graphical interface system for the remote control based on a fruit and vegetable design.",
+      "topic": "concept for remote control interface",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about the trend in fashion, in clothing and fabrics."
+      ],
+      "conditions": [
+        "Need to decide whether the concept should be printed or the remote should look like a fruit."
+      ],
+      "dissent": [
+        "User Interface was unsure about the need for a screen."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "and and therefore um we need to go for that if we want , you know , wh whatever our motto is . Um . For fashion , we go for fashion .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I actually wasn't aware of the new trends in electronics",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Conceptual User Interface. Trying to talk about, um what kind of uh how people are actually going to be using this iPod-ish remote control, based on fruit vegetable design.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_002_c002_d1",
+      "source_id": "QSUM_002",
+      "chunk_id": "QSUM_002_c002",
+      "schema_version": "1.0.0",
+      "decision": "The remote control will have a wheel for channel navigation, but no screen.",
+      "topic": "remote control design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "remote with screen",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "The wheel goes through at least a hundred channels on some models.",
+        "The wheel is easier to use for quick channel changes."
+      ],
+      "conditions": [
+        "The concern about navigating menus without a screen was raised.",
+        "The need to figure out the range for the wheel was mentioned."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So basically it's just gonna be a wheel then ? And you're just gonna have to have some kind of a screen because",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "But I think the wheel goes through like a hundred channels, at least on theirs.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I'd think that the screen would be better, because you could have that menu option, sort of",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "like how do you get to the menu if you wanna change the brightness of your television, or if you want to um {vocalsound} you know switch around, I don't know, like, these different modes like turn on the timer or like something something like that,",
+          "speaker": "User Interface",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_002_c003_d1",
+      "source_id": "QSUM_002",
+      "chunk_id": "QSUM_002_c003",
+      "schema_version": "1.0.0",
+      "decision": "No decision about the remote design was made.",
+      "topic": "remote design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "Discussion about the design, size, and controls of the remote, but no decision was made."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "because you could have that menu option , sort of {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "I would think so too , like {disfmarker} So I mean {disfmarker} and it seems it w it does seem a little silly to have this screen if you hardly are ever using it , you know , because {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's more expensive according to the design people .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "You have to get a {disfmarker} an advanced chip if you wanna have a screen in , which is more expensive than the regular chip , which is more expensive than the minimal .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But the remote itself isn't really cluttered up .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "What if {disfmarker} I mean , if you're thinking of the design of it now , like the a you know , physical attributes ,",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah . Yeah definitely .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Like , I think we're looking at something that could be , like like even maybe like a circular sort of like handheld like thing .",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean it it needs to be easy to {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah but should be comfortable .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I mean how do how do {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah , I've seen some people just going like that with their thumb , yeah .",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "decision_id": "QSUM_002_c004_d1",
+      "source_id": "QSUM_002",
+      "chunk_id": "QSUM_002_c004",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made about the design of the remote control.",
+      "topic": "remote control design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about various design options, but no decision was reached."
+      ],
+      "conditions": [
+        "Need to investigate programming of remotes and how menus are displayed on TV screens."
+      ],
+      "dissent": [
+        "No clear dissent was voiced."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Yeah , I've seen some people just going like that with their thumb , yeah .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "W when we had the wheely remote control , we {disfmarker} it was on the top I think , if you held it like that .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But , were there buttons on there as well ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "So we just used the top part .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "But can't you just get {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "That keeps it",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So I guess we have to look into the , um , like , the programming , how this {disfmarker} how they actually programme these things , and if that's {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_002_c005_d1",
+      "source_id": "QSUM_002",
+      "chunk_id": "QSUM_002_c005",
+      "schema_version": "1.0.0",
+      "decision": "A spongy material option was suggested for the remote control.",
+      "topic": "material option for remote control",
+      "status": "provisional",
+      "alternatives": [
+        {
+          "option": "hard plastic",
+          "rejected": false,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "It would provide a nice feel.",
+        "It could work."
+      ],
+      "conditions": [
+        "The whole thing about the fruit and vegetables was integrated into the discussion."
+      ],
+      "dissent": [
+        "Marketing hates spongy."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "So , but {disfmarker} if we have this screen like the iPod screen ?",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Oh , I was gonna say . You said uh people want spongy .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "But what if we ha what if we had like a spongy sort of like stress balley kinda {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "Yeah I think it could work .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "Or what if we integrated the {vocalsound} the uh the f what if the whole thing about the fruit and vegetables",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QSUM_002_c006_d1",
+      "source_id": "QSUM_002",
+      "chunk_id": "QSUM_002_c006",
+      "schema_version": "1.0.0",
+      "decision": "No clear decision was made about the design of the product.",
+      "topic": "product design",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about various design ideas, but no clear decision was reached."
+      ],
+      "conditions": [
+        "No clear cost or feasibility considerations discussed."
+      ],
+      "dissent": [
+        "Different opinions about the design, such as not wanting it to feel like a banana, and ideas about covers versus integrated design."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Or what if we integrated the {vocalsound} the uh the f what if the whole thing about the fruit and vegetables",
+          "speaker": "User Interface",
+          "supports": "decision"
+        },
+        {
+          "quote": "we somehow made it tactilely fash you know , we c tapped into that , so like it feels like",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Don't think I'd want it to feel like a banana .",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "a vegetable . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well it could be like mobiles that just {disfmarker} you just put a cover .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "An orange . {vocalsound} {vocalsound} {vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "You could do like the computers where they have like the grapefruit , apple machine and they have like the blueberry , like all the colours are named after fruits .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , yeah , yeah .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah . You could name it after fruits and vegetables , or {disfmarker}",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah . You could name it after fruits and vegetables , or {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I'm just forming this idea in my head of how this thing is looking . If you have like that stress ball material kind of as what you're actually holding in your hand , so like what you're feeling is comfortable , and then there's more of a hard plastic thing where that thing is .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And on that hard plastic thing you can change either the colour or the fruit or vegetable that's on there .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "I mean how are you how are you all envisioning by what we've just {disfmarker} the feedback we've just got about the {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Maybe a ball .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "A ball ?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "dissent"
+        },
+        {
+          "quote": "Know , a squashy ball .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "dissent"
+        },
+        {
+          "quote": "That's in the shape of a fruit , like a {disfmarker}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "see I was thinking this s",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Which is cheaper .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "sorry {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_002_c007_d1",
+      "source_id": "QSUM_002",
+      "chunk_id": "QSUM_002_c007",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the design and materials of the remote control, but did not make a decision.",
+      "topic": "design and materials of the remote control",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussion about different shapes, colors, and materials for the remote control."
+      ],
+      "conditions": [
+        "No decision was made."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Which is cheaper .",
+          "speaker": "Marketing",
+          "supports": "decision"
+        },
+        {
+          "quote": "I was thinking this bit here would be the cover and like that's your actual thing .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Oh . Mm .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah .",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "I was thinking sort of a single ball shape .",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "I was thinking if it was like this {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "It's like it has to be s",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's almost like your thumb is farther up ,",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "So you're holding a squishy ball",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "cause the way you were describing the the iPod and the thi the roll thingy {disfmarker}",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "and then it has a {disfmarker} Mm-hmm .",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "It's like it has to be s",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah . So it wouldn't be very big in either {disfmarker} like how big ? This big , and then you just do that , I suppose .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Yeah , I know what you meant , yeah .",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "What if , yeah , what if the squishy , oh so so you're saying the squishy part's like detachable , and you can {disfmarker} so so maybe one you know {disfmarker} you can have like the broccoli squishy thing , and then you could have like the banana squishy thing {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Well just a li I can't des like condom thingy , like a a cover .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Project Manager",
+          "supports": "rationale"
+        },
+        {
+          "quote": "{vocalsound}",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "And the rest is the company {disfmarker} the company colour's silver ?",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        },
+        {
+          "quote": "We we don't know . {vocalsound}",
+          "speaker": "User Interface",
+          "supports": "rationale"
+        },
+        {
+          "quote": "We could promote the banana one .",
+          "speaker": "Marketing",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision_id": "QSUM_002_c008_d1",
+      "source_id": "QSUM_002",
+      "chunk_id": "QSUM_002_c008",
+      "schema_version": "1.0.0",
+      "decision": "The team decided to use batteries as the energy source for the remote.",
+      "topic": "energy source",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "solar power",
+          "rejected": false,
+          "reason": null
+        },
+        {
+          "option": "dynamo",
+          "rejected": true,
+          "reason": "not discussed as a viable option"
+        },
+        {
+          "option": "Kryptonite",
+          "rejected": false,
+          "reason": "discussed but no decision made"
+        }
+      ],
+      "rationale": [
+        "Batteries sound good.",
+        "Most of the stuff is pretty cheap though bought in bulk."
+      ],
+      "conditions": [
+        "No actual cost for Kryptonite was found."
+      ],
+      "dissent": [
+        "The Industrial Designer suggested the dynamo but it was not discussed as a viable option."
+      ],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "I think batteries sound good.",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Most of the stuff is pretty cheap though bought in bulk.",
+          "speaker": "Industrial Designer",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Didn't have enough data to actually find the cost.",
+          "speaker": "Industrial Designer",
+          "supports": "decision"
+        },
+        {
+          "quote": "The Industrial Designer suggested the dynamo but it was not discussed as a viable option.",
+          "speaker": "Interpretation",
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision_id": "QSUM_002_c009_d1",
+      "source_id": "QSUM_002",
+      "chunk_id": "QSUM_002_c009",
+      "schema_version": "1.0.0",
+      "decision": "The team discussed the case and the user interface design, and will work on it using play-dough.",
+      "topic": "discussion topic",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [],
+      "conditions": [
+        "More instructions will be given by the personal coach."
+      ],
+      "dissent": [],
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Is there anything else we need to talk about?",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "you two are going to be playing with play-dough",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "and working on the look and feel of the design and user interface design",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "And you're gonna be doing protu product evaluation",
+          "speaker": "Project Manager",
+          "supports": "decision"
+        },
+        {
+          "quote": "Cool.",
+          "speaker": "User Interface",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ],
+  "chunks_processed": 10,
+  "chunks_failed": [],
+  "model_name": "mistral",
+  "merged_across_chunks": false
+}
