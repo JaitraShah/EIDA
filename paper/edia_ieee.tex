@@ -155,7 +155,7 @@ approver, and verbatim evidence quotes with speaker labels. Transcripts are
 split into chunks of at most 1{,}200 tokens with a two-turn overlap, and each
 chunk is sent to Mistral~7B~\cite{jiang2023mistral} (via Ollama\footnote{\url{https://ollama.com}})
 with a prompt that forbids inference beyond the excerpt and requires quotes to
-be copied character-for-character. Decoding is fully deterministic
+be copied character-for-character. Decoding settings are deterministic
 (temperature~0, top-$k$~1, fixed seed, 8{,}192-token context, 2{,}048-token output
 cap) under JSON-constrained output; unparseable output triggers one repair call.
 
@@ -166,8 +166,10 @@ $[0,1]$; the element is predicted to be a gap if the score is below a threshold
 with the document; (ii)~\emph{NLI}, the entailment probability of the element
 given the document under \texttt{roberta-large-mnli}; (iii)~an \emph{LLM judge},
 Mistral~7B asked whether the substance of the element is present in the
-document, returning a verdict and confidence; and (iv)~an \emph{ensemble}
-taking the maximum present-score of the other three.
+document, returning a verdict and confidence; and (iv)~an \emph{ensemble} that
+shifts each member's present-score by that member's own threshold (so that 0.5
+means ``present'' for every member) and takes the maximum, i.e.\ it calls an
+element present if any member does.
 
 \subsection{Evaluation design}
 \textbf{The base-rate problem.} Most elements in real summaries are gaps: in the
@@ -293,7 +295,9 @@ figures are best read as an upper bound.
 \textbf{The LLM judge is at chance.} On a 296-element stratified sample, the
 Mistral~7B judge labelled about 95\% of elements as present, including obvious
 omissions, for a gap recall of 0.047 and balanced accuracy of 0.495; the ensemble,
-which takes the maximum present-score, inherits this bias (0.516). We verified
+which calls an element present if any member does, inherits this bias (0.516 at
+the common 0.55 threshold; at its designed 0.5 operating point it labels every
+sampled element present). We verified
 that the judge received the short summaries and correct labels, so this is a
 genuine yes-bias under a fixed prompt, consistent with known LLM-judge
 biases~\cite{zheng2023judging}, and not a pipeline error.
@@ -454,9 +458,12 @@ often returns adjacent-topic turns, and later hops compound the error.
 \textbf{Runtime sensitivity.} Replaying the plain extractor on a newer inference
 runtime, with identical weights and deterministic settings, changed lexical
 completeness by $-6.2$ points while leaving semantic completeness unchanged.
-We therefore compare every method against a baseline run on the same runtime,
-and we recommend that extraction studies report the inference engine version
-alongside the model.
+Even within one runtime and session, repeating the LLM judge's calls on the
+same 296 elements (as part of the ensemble run) returned a different confidence
+for 7 of them, changing 3 verdicts; we did not isolate the cause. We therefore
+compare every method against a baseline run on the same runtime, and we
+recommend that extraction studies report the inference engine version alongside
+the model and not treat temperature-0 decoding as bit-for-bit reproducible.
 
 % ---------------------------------------------------------------------------
 \section{Discussion}

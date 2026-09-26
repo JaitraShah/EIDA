@@ -10,6 +10,8 @@ If a source file changes, update the paper from it -- never the other way round.
 | Table II lower half | same-sample n=200: 0.611/0.432, 0.728/0.637, 0.492/0.596, 0.521/0.624 | `outputs/paper_detector_checks.md` (`scripts/paper_detector_checks.py`) |
 | Sec. V NLI by label | 0.916 / 0.974 (omitted), 0.366 / 0.640 (paraphrased), 0.292 / 0.453 (verbatim) | `outputs/paper_detector_checks.md` -- NOT the pooled by_in_document table (its omitted row is 82% circular) |
 | Sec. V LLM judge | n=296, gap recall 0.047, bal acc 0.495; ensemble 0.516 | `outputs/gap_eval_results.md` (llm, ensemble) |
+| Sec. V ensemble at designed threshold | bal acc 0.500 / gap recall 0 at 0.5 (vs 0.516 at the common 0.55) | recomputed from `outputs/gap_eval_scores.jsonl` with the ensemble's vote rule (`edia/gapdetect/ensemble.py`: vote = clamp(raw − member_thr + 0.5), max) |
+| Sec. VII within-runtime variation | 7 of 296 LLM-judge confidences differ between the llm run and the ensemble run (3 verdicts flip at 0.55) | same recomputation: every mismatch is in the LLM vote |
 | Sec. V base-rate | Committee gap F1 0.988, bal acc 0.532 | `outputs/task5_benchmark_results.md` (base-rate section) |
 | Table III | per-meeting and pooled 0.333 (16/48), 0.583 (28/48) | `outputs/task4_extraction_scores.json`, `..._semantic.json` |
 | Sec. VI | 14 of 32 lexical misses under-credited; Kryptonite example 0.36 | `outputs/task5_benchmark_results.md` Table 2 notes |

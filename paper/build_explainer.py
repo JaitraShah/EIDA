@@ -296,7 +296,8 @@ bullets([
     "**Gap detectors** (element predicted \u201cgap\u201d if its present-score < 0.55): *lexical* (token-F1 "
     "overlap with the document); *NLI* (entailment probability under roberta-large-mnli); *LLM judge* "
     "(Mistral 7B asked whether the element\u2019s substance is present, returning a verdict and confidence); and "
-    "*ensemble* (the maximum present-score of the other three).",
+    "*ensemble* (each member\u2019s score is shifted by that member\u2019s own threshold so 0.5 means "
+    "\u201cpresent\u201d, then the maximum is taken: present if any member says present).",
 ])
 
 # 4 -------------------------------------------------------------------------------------------
@@ -349,7 +350,8 @@ bullets([
     "\u201cnot entailed\u201d.",
     "**LLM judge**, 296-element stratified sample: gap recall 0.047, balanced accuracy 0.495. The inputs were "
     "verified (short summaries, correct labels), so this is a genuine yes-bias under a fixed prompt, not a "
-    "pipeline error. The ensemble takes the maximum present-score and inherits the bias (0.516).",
+    "pipeline error. The ensemble (present if any member says present) inherits the bias: 0.516 at the "
+    "common 0.55 threshold, and at its designed 0.5 operating point it labels every sampled element present.",
     "**Base-rate distortion example:** on Committee meetings the lexical detector has the highest gap F1 of any "
     "bucket (0.988) and the lowest balanced accuracy (0.532), because nearly everything there is a gap.",
     "Why the \u201csame sample\u201d rows: the LLM/ensemble were run on a 296-element stratified sample (the "
@@ -497,6 +499,9 @@ bullets([
     "causes this was not isolated; the 0.32.1 installer was not tried (user decision).",
     "Ollama auto-updated to 0.34.4 after the corpus run had finished. Auto-update was then disabled, and the "
     "version was checked at the start and end of every phase.",
+    "Even within one runtime and session, the LLM judge returned a different confidence on 7 of 296 repeated "
+    "calls (3 verdicts flipped). The cause was not isolated, but temperature 0 fixes the *settings*, not "
+    "bit-for-bit outputs.",
     "Recommendation carried into the paper: extraction studies should report the inference-engine version "
     "alongside the model, because \u201csame weights, temperature 0\u201d is not enough for reproducibility.",
 ])
@@ -612,7 +617,7 @@ table(["Term", "In simple terms", "Technically"],
        ["Lexical vs semantic matching", "Same words vs same meaning", "Token-F1 \u2265 0.45 vs MiniLM cosine \u2265 0.55"],
        ["Hallucination / unsupported quote", "Evidence the AI gave that is not in the transcript", "Quote not found in its own chunk after normalisation"],
        ["Chunk", "A bite-sized piece of the meeting", "\u2264 1,200 tokens, 2-turn overlap"],
-       ["Temperature 0 / deterministic", "The AI gives the same answer every time", "Greedy decoding (top-k 1, fixed seed)"],
+       ["Temperature 0 / deterministic settings", "The AI is told to always pick its top answer (almost always the same)", "Greedy decoding (top-k 1, fixed seed); outputs can still vary slightly across runtimes and runs"],
        ["Chain-of-thought (CoT)", "Asking the AI to think step by step first", "Unconstrained notes pass + constrained extraction pass"],
        ["GraphRAG", "Microsoft\u2019s method that builds a map of people and things, then searches it", "Entity graph + community summaries; local search"],
        ["Multi-hop retrieval", "Search, then use the result to search again", "Chained TF-IDF retrieval: rationale \u2192 alternatives \u2192 objections"],
