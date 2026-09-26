@@ -3,6 +3,14 @@
 - `edia_ieee.tex` -- the paper, `IEEEtran` conference class (two-column, IEEE numbered citations).
 - `refs.bib` -- bibliography (BibTeX, `IEEEtran` style).
 - `NUMBERS.md` -- source file for every number in the paper.
+- `edia_ieee.docx` -- the same paper as a Word document in IEEE conference layout, **generated
+  from the .tex** by `build_docx.py` (edit the .tex, then rebuild; never edit the .docx by hand).
+- `fig_pipeline.png` -- Fig. 1, drawn by `make_figure.py`; used by both the .tex and the .docx.
+
+## Rebuild the Word version
+
+    .venv\Scripts\python.exe paper/make_figure.py
+    .venv\Scripts\python.exe paper/build_docx.py
 
 ## Compile
 

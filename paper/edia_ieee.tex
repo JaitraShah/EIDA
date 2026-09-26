@@ -134,6 +134,19 @@ long, multi-speaker conversation and often never stated explicitly.
 % ---------------------------------------------------------------------------
 \section{The EDIA Pipeline}
 
+Fig.~\ref{fig:pipeline} summarises the pipeline: transcripts are chunked and
+passed to an extractor that emits structured decision records, whose reasoning
+elements are then checked against the filed document by a gap detector.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig_pipeline.png}
+\caption{The EDIA pipeline. Grey: extraction stage; dashed: evaluation. In the
+benchmark, gap detectors are scored directly on labelled reasoning elements, and
+extraction is scored separately against hand-labelled ground truth.}
+\label{fig:pipeline}
+\end{figure}
+
 \subsection{Schema and extraction}
 Each decision is represented as a record with the decision statement, topic,
 status (decided, provisional, deferred, rejected, unclear), alternatives
@@ -213,6 +226,7 @@ Product 132), with summaries split into 4{,}930 sentence-level elements labelled
 by the NLI detector at threshold 0.55, chosen on the gold pairs. These are
 \emph{silver} labels: scoring the NLI detector against them measures
 self-consistency, not accuracy, and we exclude that comparison.
+
 \textbf{Human spot-check of the silver labels.} One author judged 52 elements
 from three randomly sampled corpus pairs (two Academic, one Committee), blind to
 the silver labels. The silver labels never missed a gap the annotator saw
