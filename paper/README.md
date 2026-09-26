@@ -7,10 +7,16 @@
   from the .tex** by `build_docx.py` (edit the .tex, then rebuild; never edit the .docx by hand).
 - `fig_pipeline.png` -- Fig. 1, drawn by `make_figure.py`; used by both the .tex and the .docx.
 
-## Rebuild the Word version
+- `EDIA_explained.docx` -- companion explainer: every part of the project in plain language
+  ("In simple terms" boxes) and technical detail, incl. the audit trail of problems fixed and a
+  glossary. Built by `build_explainer.py` (numbers are hand-copied from the same sources as the
+  paper; if a result changes, update both).
+
+## Rebuild the Word versions
 
     .venv\Scripts\python.exe paper/make_figure.py
     .venv\Scripts\python.exe paper/build_docx.py
+    .venv\Scripts\python.exe paper/build_explainer.py
 
 ## Compile
 
