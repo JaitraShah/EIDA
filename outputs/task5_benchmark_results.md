@@ -1,8 +1,9 @@
 # Benchmark results — adhd_v1
 
-*Dataset locked at `adhd_v1`. Gap detection (Phase 1) complete for NLI + lexical;
-LLM/ensemble ablation running. Extraction (Phase 2) complete on the 5 gold
-meetings; corpus-wide objective run pending.*
+*Dataset locked at `adhd_v1`. All phases complete as of 2026-09-26: gap detection
+(NLI, lexical, LLM, ensemble), extraction on the 5 gold meetings and corpus-wide,
+the comparative analysis, and a human mini spot-check. The paper draft is in
+`paper/`; `paper/NUMBERS.md` maps every paper number to its source file.*
 
 ## Dataset
 
@@ -59,14 +60,20 @@ every element in a bucket shares one gold label — so only accuracy is meaningf
 
 | `in_document` | n | NLI acc | lexical acc |
 |---|--:|--:|--:|
-| omitted (gold label = gap) | 5 610 | 0.985 | 0.984 |
+| omitted (gold label = gap) | 5 610 | 0.985* | 0.984 |
 | **paraphrased** (present) | 453 | **0.366** | **0.640** |
 | **verbatim** (present) | 236 | **0.292** | **0.453** |
 | present_unspecified | 348 | 0.983 | 0.348 |
 
 Two things to take from this:
 
-1. **NLI is near-perfect on gaps and near-useless on present content.** It calls
+\* **Circular — do not quote.** 4 593 of the 5 610 `omitted` elements are
+NLI-labelled corpus items, so this row is mostly NLI agreeing with itself. On gold +
+synthetic only (n=1 017) NLI scores **0.916** and lexical **0.974**
+(`outputs/paper_detector_checks.md`). The `paraphrased` and `verbatim` rows contain
+no corpus items and are unaffected.
+
+1. **NLI is good on gaps and near-useless on present content.** It calls
    present elements "gap" roughly two times in three.
 2. **It fails hardest on `verbatim` (0.292)** — elements copied word-for-word into
    the document. A detector that cannot recognise a literal copy is not doing
@@ -156,9 +163,12 @@ The two zeros carry as much weight as the leading category:
   address these failures. The distances involved are ~670 turns (QSUM_005: chip
   tiers at t130–138, speech-recognition-in-chip at t805–818), far beyond a
   window-size fix.
-- **The extractor invented nothing.** Zero hallucinated quotes across all five
-  meetings. The failure mode is omission, not fabrication — which matters for the
-  claim that the ceiling is a retrieval/reasoning limit rather than a fluency one.
+- **No miss was caused by hallucination.** None of the 20 residual misses traces
+  to an invented quote: the failure mode behind the misses is omission, not
+  fabrication — which matters for the claim that the ceiling is a
+  retrieval/reasoning limit rather than a fluency one. (This is *not* a zero
+  hallucination rate: 16.4% of evidence quotes on these meetings are unsupported,
+  see `outputs/task4_extraction_scores.json` and Table 2b in the paper.)
 
 The 4 `out_of_scope` cases are the interesting residual: content that is explicit,
 local, and in a single chunk, that the model simply did not emit as a structured
@@ -213,19 +223,25 @@ synthetic tier, where they come from a typed spec.
 
 ---
 
-## Still to run
+## Completed after this document was first written (2026-09-26)
 
-- LLM-entailment + ensemble ablation on a 400-element stratified sample (Phase 1.2/1.3).
-- Corpus-wide extraction, objective half only, by domain (Phase 2.1–2.3).
-- Human blind spot-check pass to finalise auto-label F1 and κ (Phase 1.5).
-- Comparative analysis: CoT, GraphRAG, multi-hop retrieval (Phase 3).
+All four items previously listed as "still to run" are done; results live in:
+
+- LLM-entailment + ensemble ablation (Phase 1.2/1.3): `outputs/gap_eval_results.md`
+  — 296-element sample; LLM judge bal acc 0.495 (yes-bias), ensemble 0.516.
+- Corpus-wide extraction by domain (Phase 2.1–2.3): `outputs/corpus_extraction_results.md`,
+  `outputs/corpus_quote_fidelity.md` — unsupported quotes 14.6% overall.
+- Human spot-check (Phase 1.5): `outputs/qmsum_spotcheck_mini_report.json` — one annotator,
+  52 elements: silver labels over-call gaps (gap precision 0.478, bal acc 0.60). This
+  **supersedes the ~7% false-positive estimate above**, which came from the
+  `llm-review` model pass.
+- Comparative analysis (Phase 3): `outputs/comparative_analysis.md`.
 
 ## Reproduce
 
 ```bash
 python -m pytest -q
-python scripts/run_gap_eval.py --detectors nli lexical --threshold 0.55
-python scripts/run_gap_eval.py --detectors llm ensemble --llm-sample 400 --threshold 0.55
+python scripts/run_gap_eval.py --detectors nli lexical llm ensemble --llm-sample 400 --threshold 0.55
 python scripts/failure_analysis.py --build
 python scripts/failure_analysis.py --report
 ```

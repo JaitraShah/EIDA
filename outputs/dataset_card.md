@@ -18,7 +18,7 @@ detector is scored on.
 |---|---|--:|--:|--:|---|---|
 | gold | `qmsum` | 5 | 50 | 0.76 | `hand` (Task 1 human validation) | gap detection **and** extraction completeness |
 | corpus | `qmsum_auto` | 227 | 4 930 | 0.93 | `nli:roberta-large-mnli` @ 0.55 | gap detection only (`decisions=[]`) |
-| synthetic | `synthetic` | in progress (target ~2040) | ~12/pair | ~0.45 | `constructed` (labels fixed before the text is written) | gap detection **and** extraction completeness |
+| synthetic | `synthetic` | 139 (locked; plan target was ~2040) | 1 667 | 0.59 | `constructed` (labels fixed before the text is written) | gap detection **and** extraction completeness |
 
 - **QMSum corpus scope:** all 232 QMSum meetings, 3 domains (Academic 59,
   Committee 36, Product 137), all train/val/test splits, minus the 5 gold held out
@@ -29,10 +29,15 @@ detector is scored on.
   summaries, so `rationale` here means "unclassified narrative" and most
   `decision` labels come from a positional first-sentence rule. Read the
   by-element-type breakdown for this tier as indicative only.
-- **Spot-check** (17 pairs / 382 elements, `outputs/qmsum_spotcheck_report.md`):
-  auto-vs-review **balanced accuracy 0.836** (gap-class F1 0.964 at an 82% gap
-  base rate, so read the balanced number). The silver labels never under-call a
-  gap (recall 1.00); ~7% of predicted gaps are paraphrase-present false positives.
+- **Spot-check.** Two passes exist; only the second is human.
+  - *Model pass, not validation* (17 pairs / 382 elements, annotator `llm-review`,
+    `outputs/qmsum_spotcheck_report.md`): balanced accuracy 0.836, ~7% false-positive
+    gaps. Do not cite as validation.
+  - *Human pass* (1 annotator, blind, 52 elements / 3 pairs,
+    `outputs/qmsum_spotcheck_mini_report.json`): gap recall 1.0 but gap precision
+    **0.478**, present recall 0.20, **balanced accuracy 0.60** — 24 of 46 silver gaps
+    were judged present (23 paraphrases). The silver labels substantially over-call
+    gaps; treat corpus gap rates as upper bounds.
 - **Synthetic scope:** 12 organisational domains × 10 decision archetypes = 120
   topics × 17 variants. Per-pair scenario colour + temperature jitter (0.7–0.95)
   to resist mode collapse; near-duplicates flagged post-hoc
@@ -55,9 +60,10 @@ Three different label sources, three different trust levels:
    accuracy.** Real accuracy for this tier: (a) calibration on the 5 gold pairs
    (`outputs/qmsum_label_calibration.md`: gold F1 ≈ 0.86 on terse fragments;
    threshold 0.55 chosen against both gold F1 and the corpus gap-rate sweep), and
-   (b) the spot-check (`outputs/qmsum_spotcheck_report.md`: auto-vs-review gap-class
-   **F1 0.964, fn 0, fp ~7%**, all paraphrase-direction). A human blind pass
-   (RUNBOOK Step B2) is still pending and will refine this.
+   (b) the human blind spot-check (`outputs/qmsum_spotcheck_mini_report.json`:
+   52 elements, gap precision 0.478, balanced accuracy 0.60 — about half of silver
+   gaps are paraphrase-present content). The earlier `llm-review` pass
+   (F1 0.964, fp ~7%) was a model pass and is superseded.
 
 ## Known limitations (carried forward + new)
 

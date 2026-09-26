@@ -4,10 +4,12 @@ Builds on Tasks 1–3, whose outputs are in `outputs/`:
 `gap_validation_results.md` (5 hand-validated QMSum pairs), `nli_transfer_test_results.md`
 (roberta-large-mnli at 95.5% on 22 elements), `task3_ingestion_output_summary.md`.
 
-The benchmark now spans the **whole QMSum corpus** (all 232 meetings, 3 domains,
-auto-labelled) plus **~2000 synthetic pairs**, not the original 5 + 50. See
-`RUNBOOK.md` for the build steps and `outputs/dataset_card.md` for composition and
-label provenance.
+The benchmark (`adhd_v1`, **locked**) spans the **whole QMSum corpus** (all 232
+meetings, 3 domains: 5 hand-labelled + 227 auto-labelled) plus **139 synthetic
+pairs** — 371 pairs / 6 647 elements in total. See `CONTINUATION_RUNBOOK.md` for how
+every result was produced, `outputs/dataset_card.md` for composition and label
+provenance, and `paper/` for the IEEE paper draft (numbers traced in
+`paper/NUMBERS.md`).
 
 ```
 edia/
@@ -34,7 +36,7 @@ edia/
     fold_qmsum.py          # QSUM_001-005 fold-in
     annotate.py / agreement.py   # human annotation CLI + Jaccard/kappa
 scripts/                   # runnable entry points (see RUNBOOK.md)
-tests/                     # 148 offline; +2 NLI tests behind `pytest --run-nli`
+tests/                     # 159 offline; +2 NLI tests behind `pytest --run-nli`
 ```
 
 ## Setup
@@ -80,7 +82,7 @@ python -m edia.extraction.extractor path/to/transcript.json --out records.json
 python -m edia.benchmark.fold_qmsum                       # the 5 gold pairs
 python scripts/build_qmsum_corpus.py --detector nli       # ~227 QMSUM_AUTO pairs (all of QMSum)
 python scripts/calibrate_qmsum_labels.py                  # NLI vs the 5 gold -> threshold
-python scripts/generate_synthetic.py --shard 0/4          # ~2040 synthetic pairs (shard across GPUs)
+python scripts/generate_synthetic.py --shard 0/4          # synthetic pairs -- dataset LOCKED at 139; do not regenerate
 python scripts/dedupe_synthetic.py                        # flag near-duplicates
 python scripts/generate_synthetic.py --status             # progress + dataset stats
 python scripts/run_gap_eval.py                            # NLI vs lexical vs LLM -> outputs/gap_eval_results.md
@@ -89,7 +91,10 @@ python scripts/run_gap_eval.py                            # NLI vs lexical vs LL
 Spot-check the auto labels (see `RUNBOOK.md` for the full sequence):
 
 ```bash
-python scripts/sample_for_spotcheck.py
+# CAUTION: sample_for_spotcheck.py DELETES its --out folder first (default:
+# data/benchmark/spotcheck, which holds the llm-review pass) -- always pass a new --out.
+# spotcheck_report.py always writes outputs/qmsum_spotcheck_report.json, whatever --dir is.
+python scripts/sample_for_spotcheck.py --out data/benchmark/spotcheck_new
 python -m edia.benchmark.annotate --dir data/benchmark/spotcheck --annotator <name> --blind
 python -m edia.benchmark.annotate --dir data/benchmark/spotcheck --annotator <name2> --double
 python scripts/spotcheck_report.py
