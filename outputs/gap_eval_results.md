@@ -109,3 +109,107 @@ Confusion: tp=5519 fp=519 fn=91 tn=518
 | paraphrased | 453 | 0.0 | 0.0 | 0.0 | 0.0 | 0.64 | **0.32** |
 | present_unspecified | 348 | 0.0 | 0.0 | 0.0 | 0.0 | 0.348 | **0.174** |
 | verbatim | 236 | 0.0 | 0.0 | 0.0 | 0.0 | 0.453 | **0.227** |
+
+## llm
+
+**Gap class:** P=0.533 · R=0.047 · F1=0.086 · n=296 · base rate=0.581
+**Present class (the hard half):** P=0.416 · R=0.944 · F1=0.578
+**Balanced accuracy: 0.495** (all-gap detector scores 0.5) · raw acc=0.422
+Confusion: tp=8 fp=7 fn=164 tn=117
+
+### llm — by_source
+
+| bucket | n | base rate | gap P | gap R | gap F1 | present R | **bal acc** |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| qmsum | 46 | 0.739 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| qmsum_auto | 96 | 0.635 | 1.0 | 0.016 | 0.032 | 1.0 | **0.508** |
+| synthetic | 154 | 0.5 | 0.5 | 0.091 | 0.154 | 0.909 | **0.5** |
+
+### llm — by_domain
+
+| bucket | n | base rate | gap P | gap R | gap F1 | present R | **bal acc** |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| academic | 13 | 0.462 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| architecture | 8 | 0.625 | 1.0 | 0.2 | 0.333 | 1.0 | **0.6** |
+| cloud_platform | 86 | 0.477 | 0.444 | 0.098 | 0.16 | 0.889 | **0.493** |
+| committee | 25 | 0.96 | 1.0 | 0.042 | 0.08 | 1.0 | **0.521** |
+| data_governance | 12 | 0.667 | 0.5 | 0.125 | 0.2 | 0.75 | **0.438** |
+| hiring | 13 | 0.538 | 1.0 | 0.143 | 0.25 | 1.0 | **0.571** |
+| pricing_packaging | 8 | 0.625 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| product | 104 | 0.625 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| release_scope | 9 | 0.333 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| security_incident | 9 | 0.444 | 0.0 | 0.0 | 0.0 | 0.8 | **0.4** |
+| vendor_tooling | 9 | 0.444 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+
+### llm — by_element_type
+
+| bucket | n | base rate | gap P | gap R | gap F1 | present R | **bal acc** |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| alternative | 58 | 0.569 | 0.0 | 0.0 | 0.0 | 0.96 | **0.48** |
+| approver | 26 | 0.577 | 0.571 | 0.267 | 0.364 | 0.727 | **0.497** |
+| condition | 40 | 0.625 | 0.0 | 0.0 | 0.0 | 0.867 | **0.433** |
+| decision | 53 | 0.491 | 1.0 | 0.038 | 0.074 | 1.0 | **0.519** |
+| dissent | 38 | 0.658 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| owner | 26 | 0.577 | 1.0 | 0.133 | 0.235 | 1.0 | **0.567** |
+| rationale | 55 | 0.6 | 0.5 | 0.03 | 0.057 | 0.955 | **0.492** |
+
+### llm — by_in_document
+
+| bucket | n | base rate | gap P | gap R | gap F1 | present R | **bal acc** |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| omitted | 172 | 1.0 | 1.0 | 0.047 | 0.089 | 0.0 | **0.023** |
+| paraphrased | 48 | 0.0 | 0.0 | 0.0 | 0.0 | 0.896 | **0.448** |
+| present_unspecified | 46 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| verbatim | 30 | 0.0 | 0.0 | 0.0 | 0.0 | 0.933 | **0.467** |
+
+## ensemble
+
+**Gap class:** P=0.875 · R=0.041 · F1=0.078 · n=296 · base rate=0.581
+**Present class (the hard half):** P=0.427 · R=0.992 · F1=0.597
+**Balanced accuracy: 0.516** (all-gap detector scores 0.5) · raw acc=0.439
+Confusion: tp=7 fp=1 fn=165 tn=123
+
+### ensemble — by_source
+
+| bucket | n | base rate | gap P | gap R | gap F1 | present R | **bal acc** |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| qmsum | 46 | 0.739 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| qmsum_auto | 96 | 0.635 | 1.0 | 0.016 | 0.032 | 1.0 | **0.508** |
+| synthetic | 154 | 0.5 | 0.857 | 0.078 | 0.143 | 0.987 | **0.532** |
+
+### ensemble — by_domain
+
+| bucket | n | base rate | gap P | gap R | gap F1 | present R | **bal acc** |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| academic | 13 | 0.462 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| architecture | 8 | 0.625 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| cloud_platform | 86 | 0.477 | 0.8 | 0.098 | 0.174 | 0.978 | **0.538** |
+| committee | 25 | 0.96 | 1.0 | 0.042 | 0.08 | 1.0 | **0.521** |
+| data_governance | 12 | 0.667 | 1.0 | 0.125 | 0.222 | 1.0 | **0.562** |
+| hiring | 13 | 0.538 | 1.0 | 0.143 | 0.25 | 1.0 | **0.571** |
+| pricing_packaging | 8 | 0.625 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| product | 104 | 0.625 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| release_scope | 9 | 0.333 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| security_incident | 9 | 0.444 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| vendor_tooling | 9 | 0.444 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+
+### ensemble — by_element_type
+
+| bucket | n | base rate | gap P | gap R | gap F1 | present R | **bal acc** |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| alternative | 58 | 0.569 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| approver | 26 | 0.577 | 0.75 | 0.2 | 0.316 | 0.909 | **0.555** |
+| condition | 40 | 0.625 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| decision | 53 | 0.491 | 1.0 | 0.038 | 0.074 | 1.0 | **0.519** |
+| dissent | 38 | 0.658 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| owner | 26 | 0.577 | 1.0 | 0.133 | 0.235 | 1.0 | **0.567** |
+| rationale | 55 | 0.6 | 1.0 | 0.03 | 0.059 | 1.0 | **0.515** |
+
+### ensemble — by_in_document
+
+| bucket | n | base rate | gap P | gap R | gap F1 | present R | **bal acc** |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| omitted | 172 | 1.0 | 1.0 | 0.041 | 0.078 | 0.0 | **0.02** |
+| paraphrased | 48 | 0.0 | 0.0 | 0.0 | 0.0 | 0.979 | **0.49** |
+| present_unspecified | 46 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |
+| verbatim | 30 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | **0.5** |

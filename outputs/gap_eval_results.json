@@ -1236,7 +1236,7 @@
           "type": "decision",
           "in_document": "verbatim",
           "text": "Provisional decision: Lease AWS Outposts for immediate time-to-value",
-          "present_score": 0.006
+          "present_score": 0.005
         },
         {
           "pair_id": "SYN_0001_003",
@@ -1733,7 +1733,7 @@
           "type": "alternative",
           "in_document": "verbatim",
           "text": "Azure -- Longer projected onboarding timeline of 3 months due to additional training requirements",
-          "present_score": 0.411
+          "present_score": 0.41
         },
         {
           "pair_id": "SYN_0002_010",
@@ -2673,19 +2673,19 @@
           "threshold": 0.2,
           "n": 6647,
           "gap_base_rate": 0.844,
-          "precision": 0.972,
-          "recall": 0.643,
-          "f1": 0.774,
+          "precision": 0.973,
+          "recall": 0.642,
+          "f1": 0.773,
           "accuracy": 0.683,
           "present_precision": 0.318,
-          "present_recall": 0.9,
+          "present_recall": 0.904,
           "present_f1": 0.47,
-          "balanced_accuracy": 0.771,
+          "balanced_accuracy": 0.773,
           "confusion": {
-            "tp": 3607,
-            "fp": 104,
-            "fn": 2003,
-            "tn": 933
+            "tp": 3601,
+            "fp": 100,
+            "fn": 2009,
+            "tn": 937
           }
         },
         {
@@ -2693,18 +2693,18 @@
           "n": 6647,
           "gap_base_rate": 0.844,
           "precision": 0.966,
-          "recall": 0.77,
+          "recall": 0.769,
           "f1": 0.857,
           "accuracy": 0.783,
           "present_precision": 0.406,
-          "present_recall": 0.853,
+          "present_recall": 0.854,
           "present_f1": 0.551,
-          "balanced_accuracy": 0.811,
+          "balanced_accuracy": 0.812,
           "confusion": {
-            "tp": 4317,
-            "fp": 152,
-            "fn": 1293,
-            "tn": 885
+            "tp": 4316,
+            "fp": 151,
+            "fn": 1294,
+            "tn": 886
           }
         },
         {
@@ -2750,18 +2750,18 @@
           "n": 6647,
           "gap_base_rate": 0.844,
           "precision": 0.942,
-          "recall": 0.941,
+          "recall": 0.94,
           "f1": 0.941,
           "accuracy": 0.901,
-          "present_precision": 0.682,
-          "present_recall": 0.687,
-          "present_f1": 0.684,
-          "balanced_accuracy": 0.814,
+          "present_precision": 0.68,
+          "present_recall": 0.689,
+          "present_f1": 0.685,
+          "balanced_accuracy": 0.815,
           "confusion": {
-            "tp": 5278,
-            "fp": 325,
-            "fn": 332,
-            "tn": 712
+            "tp": 5273,
+            "fp": 322,
+            "fn": 337,
+            "tn": 715
           }
         },
         {
@@ -2787,19 +2787,19 @@
           "threshold": 0.5,
           "n": 6647,
           "gap_base_rate": 0.844,
-          "precision": 0.924,
+          "precision": 0.925,
           "recall": 0.97,
           "f1": 0.947,
           "accuracy": 0.908,
-          "present_precision": 0.78,
-          "present_recall": 0.57,
-          "present_f1": 0.658,
-          "balanced_accuracy": 0.77,
+          "present_precision": 0.781,
+          "present_recall": 0.573,
+          "present_f1": 0.661,
+          "balanced_accuracy": 0.772,
           "confusion": {
             "tp": 5443,
-            "fp": 446,
+            "fp": 443,
             "fn": 167,
-            "tn": 591
+            "tn": 594
           }
         },
         {
@@ -2829,15 +2829,15 @@
           "recall": 0.992,
           "f1": 0.947,
           "accuracy": 0.907,
-          "present_precision": 0.913,
-          "present_recall": 0.446,
+          "present_precision": 0.912,
+          "present_recall": 0.447,
           "present_f1": 0.6,
-          "balanced_accuracy": 0.719,
+          "balanced_accuracy": 0.72,
           "confusion": {
-            "tp": 5566,
-            "fp": 574,
-            "fn": 44,
-            "tn": 463
+            "tp": 5565,
+            "fp": 573,
+            "fn": 45,
+            "tn": 464
           }
         },
         {
@@ -2882,38 +2882,38 @@
           "threshold": 0.75,
           "n": 6647,
           "gap_base_rate": 0.844,
-          "precision": 0.876,
+          "precision": 0.878,
           "recall": 0.996,
-          "f1": 0.932,
-          "accuracy": 0.878,
-          "present_precision": 0.915,
-          "present_recall": 0.238,
-          "present_f1": 0.378,
-          "balanced_accuracy": 0.617,
+          "f1": 0.933,
+          "accuracy": 0.879,
+          "present_precision": 0.918,
+          "present_recall": 0.249,
+          "present_f1": 0.392,
+          "balanced_accuracy": 0.622,
           "confusion": {
             "tp": 5587,
-            "fp": 790,
+            "fp": 779,
             "fn": 23,
-            "tn": 247
+            "tn": 258
           }
         },
         {
           "threshold": 0.8,
           "n": 6647,
           "gap_base_rate": 0.844,
-          "precision": 0.869,
+          "precision": 0.87,
           "recall": 0.996,
-          "f1": 0.928,
-          "accuracy": 0.87,
-          "present_precision": 0.901,
-          "present_recall": 0.184,
-          "present_f1": 0.306,
-          "balanced_accuracy": 0.59,
+          "f1": 0.929,
+          "accuracy": 0.871,
+          "present_precision": 0.906,
+          "present_recall": 0.195,
+          "present_f1": 0.321,
+          "balanced_accuracy": 0.596,
           "confusion": {
             "tp": 5589,
-            "fp": 846,
+            "fp": 835,
             "fn": 21,
-            "tn": 191
+            "tn": 202
           }
         }
       ],
@@ -5325,6 +5325,3504 @@
           "type": "condition",
           "text": "Monitoring and management of both cloud and edge resources needs to be addressed",
           "present_score": 0.583
+        }
+      ]
+    },
+    "llm": {
+      "n_elements_scored": 296,
+      "overall": {
+        "n": 296,
+        "gap_base_rate": 0.581,
+        "precision": 0.533,
+        "recall": 0.047,
+        "f1": 0.086,
+        "accuracy": 0.422,
+        "present_precision": 0.416,
+        "present_recall": 0.944,
+        "present_f1": 0.578,
+        "balanced_accuracy": 0.495,
+        "confusion": {
+          "tp": 8,
+          "fp": 7,
+          "fn": 164,
+          "tn": 117
+        }
+      },
+      "threshold_sweep": [
+        {
+          "threshold": 0.2,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.419,
+          "present_precision": 0.419,
+          "present_recall": 1.0,
+          "present_f1": 0.59,
+          "balanced_accuracy": 0.5,
+          "confusion": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 172,
+            "tn": 124
+          }
+        },
+        {
+          "threshold": 0.25,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.419,
+          "present_precision": 0.419,
+          "present_recall": 1.0,
+          "present_f1": 0.59,
+          "balanced_accuracy": 0.5,
+          "confusion": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 172,
+            "tn": 124
+          }
+        },
+        {
+          "threshold": 0.3,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.419,
+          "present_precision": 0.419,
+          "present_recall": 1.0,
+          "present_f1": 0.59,
+          "balanced_accuracy": 0.5,
+          "confusion": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 172,
+            "tn": 124
+          }
+        },
+        {
+          "threshold": 0.35,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.416,
+          "present_precision": 0.417,
+          "present_recall": 0.992,
+          "present_f1": 0.587,
+          "balanced_accuracy": 0.496,
+          "confusion": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 172,
+            "tn": 123
+          }
+        },
+        {
+          "threshold": 0.4,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.416,
+          "present_precision": 0.417,
+          "present_recall": 0.992,
+          "present_f1": 0.587,
+          "balanced_accuracy": 0.496,
+          "confusion": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 172,
+            "tn": 123
+          }
+        },
+        {
+          "threshold": 0.45,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.416,
+          "present_precision": 0.417,
+          "present_recall": 0.992,
+          "present_f1": 0.587,
+          "balanced_accuracy": 0.496,
+          "confusion": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 172,
+            "tn": 123
+          }
+        },
+        {
+          "threshold": 0.5,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.416,
+          "present_precision": 0.417,
+          "present_recall": 0.992,
+          "present_f1": 0.587,
+          "balanced_accuracy": 0.496,
+          "confusion": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 172,
+            "tn": 123
+          }
+        },
+        {
+          "threshold": 0.55,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.533,
+          "recall": 0.047,
+          "f1": 0.086,
+          "accuracy": 0.422,
+          "present_precision": 0.416,
+          "present_recall": 0.944,
+          "present_f1": 0.578,
+          "balanced_accuracy": 0.495,
+          "confusion": {
+            "tp": 8,
+            "fp": 7,
+            "fn": 164,
+            "tn": 117
+          }
+        },
+        {
+          "threshold": 0.6,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.533,
+          "recall": 0.047,
+          "f1": 0.086,
+          "accuracy": 0.422,
+          "present_precision": 0.416,
+          "present_recall": 0.944,
+          "present_f1": 0.578,
+          "balanced_accuracy": 0.495,
+          "confusion": {
+            "tp": 8,
+            "fp": 7,
+            "fn": 164,
+            "tn": 117
+          }
+        },
+        {
+          "threshold": 0.65,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.533,
+          "recall": 0.047,
+          "f1": 0.086,
+          "accuracy": 0.422,
+          "present_precision": 0.416,
+          "present_recall": 0.944,
+          "present_f1": 0.578,
+          "balanced_accuracy": 0.495,
+          "confusion": {
+            "tp": 8,
+            "fp": 7,
+            "fn": 164,
+            "tn": 117
+          }
+        },
+        {
+          "threshold": 0.7,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.533,
+          "recall": 0.047,
+          "f1": 0.086,
+          "accuracy": 0.422,
+          "present_precision": 0.416,
+          "present_recall": 0.944,
+          "present_f1": 0.578,
+          "balanced_accuracy": 0.495,
+          "confusion": {
+            "tp": 8,
+            "fp": 7,
+            "fn": 164,
+            "tn": 117
+          }
+        },
+        {
+          "threshold": 0.75,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.832,
+          "recall": 0.692,
+          "f1": 0.756,
+          "accuracy": 0.74,
+          "present_precision": 0.654,
+          "present_recall": 0.806,
+          "present_f1": 0.722,
+          "balanced_accuracy": 0.749,
+          "confusion": {
+            "tp": 119,
+            "fp": 24,
+            "fn": 53,
+            "tn": 100
+          }
+        },
+        {
+          "threshold": 0.8,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.832,
+          "recall": 0.692,
+          "f1": 0.756,
+          "accuracy": 0.74,
+          "present_precision": 0.654,
+          "present_recall": 0.806,
+          "present_f1": 0.722,
+          "balanced_accuracy": 0.749,
+          "confusion": {
+            "tp": 119,
+            "fp": 24,
+            "fn": 53,
+            "tn": 100
+          }
+        }
+      ],
+      "breakdowns": {
+        "by_source": {
+          "qmsum": {
+            "n": 46,
+            "gap_base_rate": 0.739,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.261,
+            "present_precision": 0.261,
+            "present_recall": 1.0,
+            "present_f1": 0.414,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 34,
+              "tn": 12
+            }
+          },
+          "qmsum_auto": {
+            "n": 96,
+            "gap_base_rate": 0.635,
+            "precision": 1.0,
+            "recall": 0.016,
+            "f1": 0.032,
+            "accuracy": 0.375,
+            "present_precision": 0.368,
+            "present_recall": 1.0,
+            "present_f1": 0.538,
+            "balanced_accuracy": 0.508,
+            "confusion": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 60,
+              "tn": 35
+            }
+          },
+          "synthetic": {
+            "n": 154,
+            "gap_base_rate": 0.5,
+            "precision": 0.5,
+            "recall": 0.091,
+            "f1": 0.154,
+            "accuracy": 0.5,
+            "present_precision": 0.5,
+            "present_recall": 0.909,
+            "present_f1": 0.645,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 7,
+              "fp": 7,
+              "fn": 70,
+              "tn": 70
+            }
+          }
+        },
+        "by_domain": {
+          "academic": {
+            "n": 13,
+            "gap_base_rate": 0.462,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.538,
+            "present_precision": 0.538,
+            "present_recall": 1.0,
+            "present_f1": 0.7,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 6,
+              "tn": 7
+            }
+          },
+          "architecture": {
+            "n": 8,
+            "gap_base_rate": 0.625,
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1": 0.333,
+            "accuracy": 0.5,
+            "present_precision": 0.429,
+            "present_recall": 1.0,
+            "present_f1": 0.6,
+            "balanced_accuracy": 0.6,
+            "confusion": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 4,
+              "tn": 3
+            }
+          },
+          "cloud_platform": {
+            "n": 86,
+            "gap_base_rate": 0.477,
+            "precision": 0.444,
+            "recall": 0.098,
+            "f1": 0.16,
+            "accuracy": 0.512,
+            "present_precision": 0.519,
+            "present_recall": 0.889,
+            "present_f1": 0.656,
+            "balanced_accuracy": 0.493,
+            "confusion": {
+              "tp": 4,
+              "fp": 5,
+              "fn": 37,
+              "tn": 40
+            }
+          },
+          "committee": {
+            "n": 25,
+            "gap_base_rate": 0.96,
+            "precision": 1.0,
+            "recall": 0.042,
+            "f1": 0.08,
+            "accuracy": 0.08,
+            "present_precision": 0.042,
+            "present_recall": 1.0,
+            "present_f1": 0.08,
+            "balanced_accuracy": 0.521,
+            "confusion": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 23,
+              "tn": 1
+            }
+          },
+          "data_governance": {
+            "n": 12,
+            "gap_base_rate": 0.667,
+            "precision": 0.5,
+            "recall": 0.125,
+            "f1": 0.2,
+            "accuracy": 0.333,
+            "present_precision": 0.3,
+            "present_recall": 0.75,
+            "present_f1": 0.429,
+            "balanced_accuracy": 0.438,
+            "confusion": {
+              "tp": 1,
+              "fp": 1,
+              "fn": 7,
+              "tn": 3
+            }
+          },
+          "hiring": {
+            "n": 13,
+            "gap_base_rate": 0.538,
+            "precision": 1.0,
+            "recall": 0.143,
+            "f1": 0.25,
+            "accuracy": 0.538,
+            "present_precision": 0.5,
+            "present_recall": 1.0,
+            "present_f1": 0.667,
+            "balanced_accuracy": 0.571,
+            "confusion": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 6,
+              "tn": 6
+            }
+          },
+          "pricing_packaging": {
+            "n": 8,
+            "gap_base_rate": 0.625,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.375,
+            "present_precision": 0.375,
+            "present_recall": 1.0,
+            "present_f1": 0.545,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 5,
+              "tn": 3
+            }
+          },
+          "product": {
+            "n": 104,
+            "gap_base_rate": 0.625,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.375,
+            "present_precision": 0.375,
+            "present_recall": 1.0,
+            "present_f1": 0.545,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 65,
+              "tn": 39
+            }
+          },
+          "release_scope": {
+            "n": 9,
+            "gap_base_rate": 0.333,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.667,
+            "present_precision": 0.667,
+            "present_recall": 1.0,
+            "present_f1": 0.8,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 3,
+              "tn": 6
+            }
+          },
+          "security_incident": {
+            "n": 9,
+            "gap_base_rate": 0.444,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.444,
+            "present_precision": 0.5,
+            "present_recall": 0.8,
+            "present_f1": 0.615,
+            "balanced_accuracy": 0.4,
+            "confusion": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 4,
+              "tn": 4
+            }
+          },
+          "vendor_tooling": {
+            "n": 9,
+            "gap_base_rate": 0.444,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.556,
+            "present_precision": 0.556,
+            "present_recall": 1.0,
+            "present_f1": 0.714,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 4,
+              "tn": 5
+            }
+          }
+        },
+        "by_element_type": {
+          "alternative": {
+            "n": 58,
+            "gap_base_rate": 0.569,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.414,
+            "present_precision": 0.421,
+            "present_recall": 0.96,
+            "present_f1": 0.585,
+            "balanced_accuracy": 0.48,
+            "confusion": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 33,
+              "tn": 24
+            }
+          },
+          "approver": {
+            "n": 26,
+            "gap_base_rate": 0.577,
+            "precision": 0.571,
+            "recall": 0.267,
+            "f1": 0.364,
+            "accuracy": 0.462,
+            "present_precision": 0.421,
+            "present_recall": 0.727,
+            "present_f1": 0.533,
+            "balanced_accuracy": 0.497,
+            "confusion": {
+              "tp": 4,
+              "fp": 3,
+              "fn": 11,
+              "tn": 8
+            }
+          },
+          "condition": {
+            "n": 40,
+            "gap_base_rate": 0.625,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.325,
+            "present_precision": 0.342,
+            "present_recall": 0.867,
+            "present_f1": 0.491,
+            "balanced_accuracy": 0.433,
+            "confusion": {
+              "tp": 0,
+              "fp": 2,
+              "fn": 25,
+              "tn": 13
+            }
+          },
+          "decision": {
+            "n": 53,
+            "gap_base_rate": 0.491,
+            "precision": 1.0,
+            "recall": 0.038,
+            "f1": 0.074,
+            "accuracy": 0.528,
+            "present_precision": 0.519,
+            "present_recall": 1.0,
+            "present_f1": 0.684,
+            "balanced_accuracy": 0.519,
+            "confusion": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 25,
+              "tn": 27
+            }
+          },
+          "dissent": {
+            "n": 38,
+            "gap_base_rate": 0.658,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.342,
+            "present_precision": 0.342,
+            "present_recall": 1.0,
+            "present_f1": 0.51,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 25,
+              "tn": 13
+            }
+          },
+          "owner": {
+            "n": 26,
+            "gap_base_rate": 0.577,
+            "precision": 1.0,
+            "recall": 0.133,
+            "f1": 0.235,
+            "accuracy": 0.5,
+            "present_precision": 0.458,
+            "present_recall": 1.0,
+            "present_f1": 0.629,
+            "balanced_accuracy": 0.567,
+            "confusion": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 13,
+              "tn": 11
+            }
+          },
+          "rationale": {
+            "n": 55,
+            "gap_base_rate": 0.6,
+            "precision": 0.5,
+            "recall": 0.03,
+            "f1": 0.057,
+            "accuracy": 0.4,
+            "present_precision": 0.396,
+            "present_recall": 0.955,
+            "present_f1": 0.56,
+            "balanced_accuracy": 0.492,
+            "confusion": {
+              "tp": 1,
+              "fp": 1,
+              "fn": 32,
+              "tn": 21
+            }
+          }
+        },
+        "by_in_document": {
+          "omitted": {
+            "n": 172,
+            "gap_base_rate": 1.0,
+            "precision": 1.0,
+            "recall": 0.047,
+            "f1": 0.089,
+            "accuracy": 0.047,
+            "present_precision": 0.0,
+            "present_recall": 0.0,
+            "present_f1": 0.0,
+            "balanced_accuracy": 0.023,
+            "confusion": {
+              "tp": 8,
+              "fp": 0,
+              "fn": 164,
+              "tn": 0
+            }
+          },
+          "paraphrased": {
+            "n": 48,
+            "gap_base_rate": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.896,
+            "present_precision": 1.0,
+            "present_recall": 0.896,
+            "present_f1": 0.945,
+            "balanced_accuracy": 0.448,
+            "confusion": {
+              "tp": 0,
+              "fp": 5,
+              "fn": 0,
+              "tn": 43
+            }
+          },
+          "present_unspecified": {
+            "n": 46,
+            "gap_base_rate": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 1.0,
+            "present_precision": 1.0,
+            "present_recall": 1.0,
+            "present_f1": 1.0,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "tn": 46
+            }
+          },
+          "verbatim": {
+            "n": 30,
+            "gap_base_rate": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.933,
+            "present_precision": 1.0,
+            "present_recall": 0.933,
+            "present_f1": 0.966,
+            "balanced_accuracy": 0.467,
+            "confusion": {
+              "tp": 0,
+              "fp": 2,
+              "fn": 0,
+              "tn": 28
+            }
+          }
+        }
+      },
+      "false_positives": [
+        {
+          "pair_id": "SYN_0068_001",
+          "type": "alternative",
+          "in_document": "paraphrased",
+          "text": "Centralized data lake with no decentralized data hub -- Would not allow for efficient data access and usage by various business units",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "SYN_0045_001",
+          "type": "rationale",
+          "in_document": "paraphrased",
+          "text": "Budget envelope allows for this hiring plan while still accommodating other security initiatives",
+          "present_score": 0.3
+        },
+        {
+          "pair_id": "SYN_0003_010",
+          "type": "approver",
+          "in_document": "verbatim",
+          "text": "CTO",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "SYN_0000_014",
+          "type": "approver",
+          "in_document": "paraphrased",
+          "text": "CTO",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "SYN_0001_005",
+          "type": "approver",
+          "in_document": "verbatim",
+          "text": "CTO",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "SYN_0002_001",
+          "type": "condition",
+          "in_document": "paraphrased",
+          "text": "The project timeline remains subject to potential delays due to technical challenges that may arise during the migration.",
+          "present_score": 0.5
+        },
+        {
+          "pair_id": "SYN_0000_013",
+          "type": "condition",
+          "in_document": "paraphrased",
+          "text": "Financial analysis assumes a 50% increase in costs over 3 years if data egress exceeds the free tier limits",
+          "present_score": 0.5
+        }
+      ],
+      "false_negatives": [
+        {
+          "pair_id": "QMS_CMT_VA_002",
+          "type": "decision",
+          "text": "Dawn Bowden proposed the topic of pay dispute and asked what could be done as a Government to try to get parties back round the table and solve this dispute.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_PRD_TR_068",
+          "type": "decision",
+          "text": "Have one remote that has the main functions such as turning on, turning off, channel changing, volume; and another remote with all the special things.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QMS_ACA_VA_006",
+          "type": "decision",
+          "text": "Given the domains currently used (tourist, child language learning), some features, like speaker attitude, are not of equal importance at this stage.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_057",
+          "type": "decision",
+          "text": "Project Manager had an idea of the insertion of LCD display screen on the remote control, which may possess different pages for different devices.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_048",
+          "type": "decision",
+          "text": "Marketing considered fancy design to be insignificant, as he believed that unlike the younger generation, people of 40 plus were not that particular about appearance and would care more about its functionality instead.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_PRD_TR_070",
+          "type": "decision",
+          "text": "Industrial Designer thought the meeting was not friendly to the brainstorming.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TE_003",
+          "type": "decision",
+          "text": "They shared the member's concern that small businesses be supported.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_CMT_TE_005",
+          "type": "decision",
+          "text": "Sian Gwenllian AM pointed out that the Learned Society of Wales had said that there should be a directory of resources to implement that Welsh dimension.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_077",
+          "type": "decision",
+          "text": "User interface said that they could make this wave in specific frequency to avoid interfering with other devices.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QMS_ACA_VA_001",
+          "type": "decision",
+          "text": "The translation of SmartKom to english is in its final stages.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_042",
+          "type": "decision",
+          "text": "Then they agreed to design a child lock.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_VA_000",
+          "type": "rationale",
+          "text": "Bains emphasized that 590,000 loans have already been distributed through the CEBA program, highlighting its efficacy.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_051",
+          "type": "rationale",
+          "text": "To bring a spongy feel, rubber was the best choice.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_009",
+          "type": "rationale",
+          "text": "They can't force parents to divulge information that is a matter for them.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_ACA_TR_012",
+          "type": "rationale",
+          "text": "It is important to pick a normalization that matches the distribution for that feature.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_038",
+          "type": "rationale",
+          "text": "Marketing mentioned that 80% of people like fancy appeal remote and younger people prefer voice recognition.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_003",
+          "type": "rationale",
+          "text": "This might help with the conclusion whether the product was appealing to the correct demographic and incorporated the fashion trend into it.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_ACA_TR_034",
+          "type": "rationale",
+          "text": "New digits forms were distributed for eliciting different prosodic groupings of numbers.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_033",
+          "type": "rationale",
+          "text": "Besides, the group confirmed no LCD and ASR for the remote control.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_CMT_TE_003",
+          "type": "rationale",
+          "text": "Many people had lost their jobs and needed assistance from the government.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_CMT_TR_003",
+          "type": "rationale",
+          "text": "However, the Deputy Prime Minister and Minister of Intergovernmental Affairs argued that the wage subsidy program was supposed to reach out to as many companies as possible, and the wage subsidy was really put in place by a large amount of money to protect workers across Canada.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_VA_001",
+          "type": "rationale",
+          "text": "Also, the research portfolio should be heavily invested in, which would also bring economic benefits.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_002",
+          "type": "alternative",
+          "text": "Industrial Designer thought that they should stick to the idea of traditional television remote control, instead of a multi-functional one.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QMS_PRD_TR_065",
+          "type": "alternative",
+          "text": "Marketing suggested that the fancy design on the remote control is important to customers according to his research, so the buttons could be shaped like fruit and vegetables, and the buttons could be made out of rubber rather than hard plastic.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_023",
+          "type": "alternative",
+          "text": "The idea of giving the remote a novel shape instead of the standard rectangular was first raised by Project Manager.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_PRD_TR_073",
+          "type": "alternative",
+          "text": "The team then decided on a single smaller remote instead of a bigger one with a base, and a locating device would sufficiently prevent the remote from being lost.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_020",
+          "type": "alternative",
+          "text": "It was suggested that farmers and relative products were largely influenced by Covid-19.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_PRD_TR_084",
+          "type": "alternative",
+          "text": "For voice recognition, he thought it was unaffordable for young people, so the design was abandoned.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_VA_016",
+          "type": "alternative",
+          "text": "The industrial designer recommended batteries instead of solar cells because it would be problematic if solar cells didn't have enough energy.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_011",
+          "type": "alternative",
+          "text": "Marketing disapproved of this proposal because though teletext was becoming outdated as Project Manager said, more than eighty percent of the current televisions were still teletext and people were very comfortable with the idea of having and using teletext.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TE_000",
+          "type": "alternative",
+          "text": "So Project Manager mentioned that the group hopes to sell the remote control device internationally, instead of in Scotland or some European country.",
+          "present_score": 0.8
+        },
+        {
+          "pair_id": "QMS_PRD_TR_046",
+          "type": "alternative",
+          "text": "Project Manager first announced that their product was only going to be a TV remote instead of a multifunctional one, and that the yellow colour and the slogan of their company should be included in their design.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_007",
+          "type": "alternative",
+          "text": "The quality of food, rather than preparing school meals or not, was more important to Dr Frank Atherton.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TE_000",
+          "type": "condition",
+          "text": "Sharon Davies recommended the team-around-the-family approach to ensure what was needed for learners to go back into school, as well as what the school could provide.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_066",
+          "type": "condition",
+          "text": "Second, it had to be technologically innovative so that people would be attracted to buy it.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_025",
+          "type": "condition",
+          "text": "And the remote control also had to be easily taken in hands and energy-saving.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QMS_CMT_TR_001",
+          "type": "condition",
+          "text": "It would continue to evolve because it had to be consistent with their overall approach to school improvement and raising standards.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_CMT_TR_002",
+          "type": "condition",
+          "text": "Last they were managing it within the normal budgetary process, developing a more integrated approach towards the early years, and had got the system of inspection to ensure that.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_CMT_TR_002",
+          "type": "condition",
+          "text": "Last they were managing it within the normal budgetary process, developing a more integrated approach towards the early years, and had got the system of inspection to ensure that.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_CMT_TR_020",
+          "type": "condition",
+          "text": "And it was assured that particular attention must be paid to transparency, privacy and ethical concerns to ensure privacy.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_017",
+          "type": "condition",
+          "text": "Hon.Carla Qualtrough suggested that the government were working very closely with the provinces on occupational health and safety guidelines and taking an all-of-government approach to ensure that workers were safe and that the government could support them in these efforts.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_ACA_TE_001",
+          "type": "condition",
+          "text": "Efforts will be made to ensure that recording conventions are consistent across ICSI, the University of Washington, and SRI.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_022",
+          "type": "condition",
+          "text": "Currently the main strategy was always to identify where there were weaknesses to ensure the overall process of a typical school day.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_020",
+          "type": "condition",
+          "text": "However, under the current situation, the federal government was working hard to ensure equal distribution of the whole nation.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_046",
+          "type": "dissent",
+          "text": "It was found that users preferred a fancier but yet simpler remote, and as a result, their product should be high-tech looking but also user-friendly.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QMS_PRD_TR_067",
+          "type": "dissent",
+          "text": "Marketing disagreed by pointing out that TV was mostly used with VCR or DVD player or recorders, functions for which should be included, rather than with a stereo.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_044",
+          "type": "dissent",
+          "text": "Marketing was against it and recommended the voice recognition technology because Marketing found the recurring theme was fashionable and trendy.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_067",
+          "type": "dissent",
+          "text": "The discussion took a turn when the User interface disagreed and suggested designing a remote control only for televisions.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_010",
+          "type": "dissent",
+          "text": "The Prime Minister disagreed, claiming that both passing gun-control and releasing imprisoned Canadians who did not pose a threat to society advanced the safety of Canadians.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_040",
+          "type": "dissent",
+          "text": "Around ninety percent of people preferred an LCD display, while only sixty percent of people wanted speech recognition.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_047",
+          "type": "dissent",
+          "text": "Industrial Designer proposed to have a rechargeable battery or a battery dock, while Project Manager preferred a disposable one.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_023",
+          "type": "dissent",
+          "text": "But as for Llyr Gruffydd, he did not think that the institutions would be able to rely on the official funding much, and more importantly, if they would like to enter into the agreements at present, they would interrupt their current work, which would also put themselves in great risk.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_PRD_TR_048",
+          "type": "dissent",
+          "text": "However, Project Manager's requirements of no teletext and design simplification were effectively challenged and rebutted by Marketing.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_PRD_TR_072",
+          "type": "dissent",
+          "text": "Industrial Design thought that having a motion activated backlight would be useful, as opposed to a continuous one.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_015",
+          "type": "dissent",
+          "text": "However, the industrial designer did not agree with the project manager because the designer thought it would be a good marketing promotion as people would think that remote controls with kinetic function are cool.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_ACA_TR_020",
+          "type": "owner",
+          "text": "The professor told the group a story about soldiers assigned to watch out for spy planes.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_CMT_TR_023",
+          "type": "owner",
+          "text": "The members mentioned many institutions like the Higher Education Funding Council for Wales and showed that these institutions had taken much action to deal with the problems.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TE_004",
+          "type": "owner",
+          "text": "The Ministry of Justice had taken action to deal with it and there had had a number of people in the positions.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_003",
+          "type": "owner",
+          "text": "And the opposition party hoped that through this regime, Canada would take stronger diplomatic action on Hong Kong and gave more support for 300,000 Canadians living there.",
+          "present_score": 0.8
+        },
+        {
+          "pair_id": "QMS_PRD_TR_096",
+          "type": "approver",
+          "text": "Then Project Manager suggested whistle tracking and was approved by all the conferees as an original improvement.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "decision",
+          "text": "The pure intelligent controller concept was rejected in favour of a hybrid of the Google-style and fancy controllers with limited vocal commands.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "decision",
+          "text": "An LCD display was rejected for the remote control.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_005",
+          "type": "decision",
+          "text": "An advanced chip was approved in order to support speech recognition.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "decision",
+          "text": "A single-curved casing was chosen for the remote control.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "rationale",
+          "text": "The microphone and camera hardware questions were unresolved.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "rationale",
+          "text": "The chip is the most expensive part regardless, so the energy source's own cost is a secondary concern.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "rationale",
+          "text": "The double-curved option would interfere with using the scroll wheel.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_005",
+          "type": "rationale",
+          "text": "Marketing pushed for positioning the product on technological innovation.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "rationale",
+          "text": "Simultaneous use by several people would cause interference.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_003",
+          "type": "rationale",
+          "text": "The market wants convenient browsing rather than many buttons to tamper with.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "rationale",
+          "text": "The uncurved option was considered too dull.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_003",
+          "type": "rationale",
+          "text": "Symbols on the interface were to be simplified.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "rationale",
+          "text": "It would increase the cost.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "rationale",
+          "text": "It would add a language and localisation burden.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "rationale",
+          "text": "The team already had a scroll wheel, speech recognition, rubber and fancy colours, so an LCD was not needed.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_005",
+          "type": "alternative",
+          "text": "regular chip -- would not support speech recognition",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "alternative",
+          "text": "solar power",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_003",
+          "type": "alternative",
+          "text": "lightweight plastic",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "alternative",
+          "text": "kryptonite",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "alternative",
+          "text": "battery and solar together",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "alternative",
+          "text": "wood",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "alternative",
+          "text": "LCD display -- the design already had a scroll wheel, speech recognition, rubber and fancy colours",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "alternative",
+          "text": "dynamo",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "alternative",
+          "text": "battery",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "alternative",
+          "text": "plastic",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_003",
+          "type": "alternative",
+          "text": "more physical buttons -- users would tamper with them; the market wants convenient browsing",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "dissent",
+          "text": "The Industrial Designer argued the LCD was too much.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "dissent",
+          "text": "The Industrial Designer preferred a battery and was skeptical of the dynamo.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "dissent",
+          "text": "The Project Manager leaned towards including the LCD for budget and high-tech-feel reasons and was talked out of it.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "condition",
+          "text": "The exact price of kryptonite was never established -- the website did not give an actual cost.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_005",
+          "type": "condition",
+          "text": "A newly available low-cost sensor component meant the advanced chip would not be expensive, which is what enabled the group to agree.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "condition",
+          "text": "The design would increase the production cost, but this was treated as added value that can be compensated.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "approver",
+          "text": "Project Manager",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_005",
+          "type": "approver",
+          "text": "Project Manager",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0008_001",
+          "type": "alternative",
+          "text": "VMware Cloud Foundation -- Limited scalability and flexibility compared to AWS Outposts",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0027_001",
+          "type": "alternative",
+          "text": "Wait for final acquisition approval before hiring",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0020_001",
+          "type": "alternative",
+          "text": "TalentLink",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0037_001",
+          "type": "alternative",
+          "text": "Wait for full investigation before response -- Risk of increased customer churn due to prolonged system downtime and data exposure.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "SYN_0002_011",
+          "type": "alternative",
+          "text": "Full platform migration to Azure -- Timeline for full migration would exceed MERGER_DATES[0] deadline",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0000_009",
+          "type": "alternative",
+          "text": "Google Cloud Platform -- Offered lower prices but lacked the comprehensive feature fit and support quality we needed.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0002_016",
+          "type": "alternative",
+          "text": "Migrate entirely to Google Cloud -- Prohibitive costs due to Google Cloud's pricing hike following their key vendor's acquisition",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0040_001",
+          "type": "alternative",
+          "text": "Alert Logic -- While providing robust feature fit and support quality, switching to Alert Logic would incur a migration cost of $30,000 and require two weeks of downtime for integration",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0071_001",
+          "type": "alternative",
+          "text": "Purchase a commercial insurance-focused framework -- While it offers immediate time-to-value, the cost and potential future maintenance burden outweigh the benefits",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0061_001",
+          "type": "alternative",
+          "text": "Lease a cloud-based data governance service for flexible scaling -- The option was deemed too expensive due to the high annual maintenance costs.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0002_004",
+          "type": "alternative",
+          "text": "Building an on-premises data center -- Would require a $3M initial investment and a 50% increase in operational costs",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0017_001",
+          "type": "condition",
+          "text": "Third-party forensic consultants may be brought in if the internal investigation reveals complications beyond the team's expertise.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0027_001",
+          "type": "condition",
+          "text": "Final acquisition agreement must include provisions for increased headcount and budget,",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0078_001",
+          "type": "condition",
+          "text": "Monitoring and management of both cloud and edge resources needs to be addressed",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0064_001",
+          "type": "condition",
+          "text": "Pending final vendor negotiations for current system decommissioning",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0002_003",
+          "type": "condition",
+          "text": "Assuming we can negotiate favorable terms with AWS during the acquisition process",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0030_001",
+          "type": "condition",
+          "text": "Additional costs may arise if more advanced analytics become necessary",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0015_001",
+          "type": "condition",
+          "text": "The security concerns about the automated testing tool need to be addressed before revisiting this option",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0001_011",
+          "type": "condition",
+          "text": "Exploring partnerships with cloud providers for potential cost savings",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0003_004",
+          "type": "condition",
+          "text": "The SRE team will need to assess the impact of potential data egress charges when moving to AWS.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_003",
+          "type": "condition",
+          "text": "Pending a detailed analysis of the long-run maintenance load and associated costs",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0033_001",
+          "type": "condition",
+          "text": "Finance team to monitor the performance of each pricing tier weekly and adjust if necessary",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0057_001",
+          "type": "dissent",
+          "text": "Designer's reservations about compromising the user experience with the limited-feature portal.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0002_017",
+          "type": "dissent",
+          "text": "Finance partner objects to the two-week delay, stating it may impact the overall launch timeline",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0067_001",
+          "type": "dissent",
+          "text": "Legal Counsel's objection that the policy may not adequately comply with certain data privacy regulations",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0003_008",
+          "type": "dissent",
+          "text": "SRE argues for a single cloud provider to streamline management and reduce complexity",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0000_010",
+          "type": "dissent",
+          "text": "SRE raised concerns about the potential complexity of managing multiple cloud providers in the long run",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0009_001",
+          "type": "dissent",
+          "text": "SRE's concern about potential user burden during the migration and transition period",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0054_001",
+          "type": "dissent",
+          "text": "Tech lead raised concerns about the efficiency of manual data release processes",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_017",
+          "type": "dissent",
+          "text": "SRE raised concerns about long-term dependency on a third-party vendor",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0002_003",
+          "type": "dissent",
+          "text": "SRE raises concerns about potential increased technical debt due to AWS's proprietary services",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0000_017",
+          "type": "dissent",
+          "text": "SRE expressed concern about the potential cost and complexity of migrating from our current provider.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0003_004",
+          "type": "dissent",
+          "text": "The platform engineering lead expressed concerns about potential concentration risk with a reliance on a single cloud provider.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0031_001",
+          "type": "rationale",
+          "text": "In-house development requires significant resources and time, delaying time-to-value.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0009_001",
+          "type": "rationale",
+          "text": "Potential for future cost savings with Azure's scalable pricing model",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0002_014",
+          "type": "rationale",
+          "text": "Reducing scope allows us to deliver high-impact features and maintain service levels.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0002_014",
+          "type": "rationale",
+          "text": "Migrating only high-traffic apps will reduce the technical debt by 40%, allowing faster future migrations.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0001_017",
+          "type": "rationale",
+          "text": "Custom solution could lead to long-term maintenance issues and higher costs",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "SYN_0000_005",
+          "type": "rationale",
+          "text": "AWS support quality is consistently rated high in industry benchmarks",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0015_001",
+          "type": "rationale",
+          "text": "The budget envelope doesn't allow for bringing on new junior developers from Vendor X",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0069_001",
+          "type": "rationale",
+          "text": "Minimizes the burden on users by reducing the data migration process",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_003",
+          "type": "rationale",
+          "text": "Lower upfront costs compared to building our own data centers",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0000_016",
+          "type": "rationale",
+          "text": "Switching to Azure would incur higher switching costs due to the need to reconfigure services",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0003_008",
+          "type": "approver",
+          "text": "CTO",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0047_001",
+          "type": "approver",
+          "text": "Security lead",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0001_017",
+          "type": "approver",
+          "text": "CTO",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0040_001",
+          "type": "approver",
+          "text": "security lead",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0003_002",
+          "type": "approver",
+          "text": "CTO",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0001_008",
+          "type": "approver",
+          "text": "CTO",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0063_001",
+          "type": "approver",
+          "text": "CEO",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0003_012",
+          "type": "approver",
+          "text": "CTO",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0075_001",
+          "type": "owner",
+          "text": "HR manager",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0019_001",
+          "type": "owner",
+          "text": "Procurement department",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_017",
+          "type": "owner",
+          "text": "Platform Engineering Lead",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0022_001",
+          "type": "owner",
+          "text": "Engineering director",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0070_001",
+          "type": "owner",
+          "text": "Backend lead",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0061_001",
+          "type": "owner",
+          "text": "Data Engineer",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_006",
+          "type": "owner",
+          "text": "Platform engineering lead",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_005",
+          "type": "owner",
+          "text": "SRE team",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0049_001",
+          "type": "owner",
+          "text": "On-call engineer",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0002_013",
+          "type": "decision",
+          "text": "Status quo with temporary cloud platform freeze to address data privacy concerns",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0061_001",
+          "type": "decision",
+          "text": "Purchase an off-the-shelf data governance platform for immediate data retention compliance",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0022_001",
+          "type": "decision",
+          "text": "Hybrid approach: shipping partial release by July 15, while continuing to address critical technical debt through Q3",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0003_008",
+          "type": "decision",
+          "text": "Hybrid Cloud strategy with AWS and Google Cloud Platform for immediate regulatory compliance",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0037_001",
+          "type": "decision",
+          "text": "Implement a partial incident response with immediate action and expedited investigation for high-impact incidents.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0003_004",
+          "type": "decision",
+          "text": "Transition to AWS for cloud infrastructure with a phased migration over the next 6 months",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0024_001",
+          "type": "decision",
+          "text": "Implement a centralized candidate management system for the next fiscal quarter",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_010",
+          "type": "decision",
+          "text": "Provisionally decide to build our custom cloud platform for increased control and fit, pending a cost analysis comparison with AWS Outposts.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0001_002",
+          "type": "decision",
+          "text": "Provisional: Opt for buying a pre-configured AWS solution for immediate scalability",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0053_001",
+          "type": "decision",
+          "text": "Status quo on budget allocation; no significant changes for the release scope and delivery",
+          "present_score": 0.7
+        }
+      ]
+    },
+    "ensemble": {
+      "n_elements_scored": 296,
+      "overall": {
+        "n": 296,
+        "gap_base_rate": 0.581,
+        "precision": 0.875,
+        "recall": 0.041,
+        "f1": 0.078,
+        "accuracy": 0.439,
+        "present_precision": 0.427,
+        "present_recall": 0.992,
+        "present_f1": 0.597,
+        "balanced_accuracy": 0.516,
+        "confusion": {
+          "tp": 7,
+          "fp": 1,
+          "fn": 165,
+          "tn": 123
+        }
+      },
+      "threshold_sweep": [
+        {
+          "threshold": 0.2,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.419,
+          "present_precision": 0.419,
+          "present_recall": 1.0,
+          "present_f1": 0.59,
+          "balanced_accuracy": 0.5,
+          "confusion": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 172,
+            "tn": 124
+          }
+        },
+        {
+          "threshold": 0.25,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.419,
+          "present_precision": 0.419,
+          "present_recall": 1.0,
+          "present_f1": 0.59,
+          "balanced_accuracy": 0.5,
+          "confusion": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 172,
+            "tn": 124
+          }
+        },
+        {
+          "threshold": 0.3,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.419,
+          "present_precision": 0.419,
+          "present_recall": 1.0,
+          "present_f1": 0.59,
+          "balanced_accuracy": 0.5,
+          "confusion": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 172,
+            "tn": 124
+          }
+        },
+        {
+          "threshold": 0.35,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.419,
+          "present_precision": 0.419,
+          "present_recall": 1.0,
+          "present_f1": 0.59,
+          "balanced_accuracy": 0.5,
+          "confusion": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 172,
+            "tn": 124
+          }
+        },
+        {
+          "threshold": 0.4,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.419,
+          "present_precision": 0.419,
+          "present_recall": 1.0,
+          "present_f1": 0.59,
+          "balanced_accuracy": 0.5,
+          "confusion": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 172,
+            "tn": 124
+          }
+        },
+        {
+          "threshold": 0.45,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.419,
+          "present_precision": 0.419,
+          "present_recall": 1.0,
+          "present_f1": 0.59,
+          "balanced_accuracy": 0.5,
+          "confusion": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 172,
+            "tn": 124
+          }
+        },
+        {
+          "threshold": 0.5,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.419,
+          "present_precision": 0.419,
+          "present_recall": 1.0,
+          "present_f1": 0.59,
+          "balanced_accuracy": 0.5,
+          "confusion": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 172,
+            "tn": 124
+          }
+        },
+        {
+          "threshold": 0.55,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.875,
+          "recall": 0.041,
+          "f1": 0.078,
+          "accuracy": 0.439,
+          "present_precision": 0.427,
+          "present_recall": 0.992,
+          "present_f1": 0.597,
+          "balanced_accuracy": 0.516,
+          "confusion": {
+            "tp": 7,
+            "fp": 1,
+            "fn": 165,
+            "tn": 123
+          }
+        },
+        {
+          "threshold": 0.6,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.875,
+          "recall": 0.041,
+          "f1": 0.078,
+          "accuracy": 0.439,
+          "present_precision": 0.427,
+          "present_recall": 0.992,
+          "present_f1": 0.597,
+          "balanced_accuracy": 0.516,
+          "confusion": {
+            "tp": 7,
+            "fp": 1,
+            "fn": 165,
+            "tn": 123
+          }
+        },
+        {
+          "threshold": 0.65,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.778,
+          "recall": 0.041,
+          "f1": 0.077,
+          "accuracy": 0.436,
+          "present_precision": 0.425,
+          "present_recall": 0.984,
+          "present_f1": 0.594,
+          "balanced_accuracy": 0.512,
+          "confusion": {
+            "tp": 7,
+            "fp": 2,
+            "fn": 165,
+            "tn": 122
+          }
+        },
+        {
+          "threshold": 0.7,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.778,
+          "recall": 0.041,
+          "f1": 0.077,
+          "accuracy": 0.436,
+          "present_precision": 0.425,
+          "present_recall": 0.984,
+          "present_f1": 0.594,
+          "balanced_accuracy": 0.512,
+          "confusion": {
+            "tp": 7,
+            "fp": 2,
+            "fn": 165,
+            "tn": 122
+          }
+        },
+        {
+          "threshold": 0.75,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.869,
+          "recall": 0.692,
+          "f1": 0.77,
+          "accuracy": 0.76,
+          "present_precision": 0.667,
+          "present_recall": 0.855,
+          "present_f1": 0.749,
+          "balanced_accuracy": 0.773,
+          "confusion": {
+            "tp": 119,
+            "fp": 18,
+            "fn": 53,
+            "tn": 106
+          }
+        },
+        {
+          "threshold": 0.8,
+          "n": 296,
+          "gap_base_rate": 0.581,
+          "precision": 0.862,
+          "recall": 0.692,
+          "f1": 0.768,
+          "accuracy": 0.757,
+          "present_precision": 0.665,
+          "present_recall": 0.847,
+          "present_f1": 0.745,
+          "balanced_accuracy": 0.769,
+          "confusion": {
+            "tp": 119,
+            "fp": 19,
+            "fn": 53,
+            "tn": 105
+          }
+        }
+      ],
+      "breakdowns": {
+        "by_source": {
+          "qmsum": {
+            "n": 46,
+            "gap_base_rate": 0.739,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.261,
+            "present_precision": 0.261,
+            "present_recall": 1.0,
+            "present_f1": 0.414,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 34,
+              "tn": 12
+            }
+          },
+          "qmsum_auto": {
+            "n": 96,
+            "gap_base_rate": 0.635,
+            "precision": 1.0,
+            "recall": 0.016,
+            "f1": 0.032,
+            "accuracy": 0.375,
+            "present_precision": 0.368,
+            "present_recall": 1.0,
+            "present_f1": 0.538,
+            "balanced_accuracy": 0.508,
+            "confusion": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 60,
+              "tn": 35
+            }
+          },
+          "synthetic": {
+            "n": 154,
+            "gap_base_rate": 0.5,
+            "precision": 0.857,
+            "recall": 0.078,
+            "f1": 0.143,
+            "accuracy": 0.532,
+            "present_precision": 0.517,
+            "present_recall": 0.987,
+            "present_f1": 0.679,
+            "balanced_accuracy": 0.532,
+            "confusion": {
+              "tp": 6,
+              "fp": 1,
+              "fn": 71,
+              "tn": 76
+            }
+          }
+        },
+        "by_domain": {
+          "academic": {
+            "n": 13,
+            "gap_base_rate": 0.462,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.538,
+            "present_precision": 0.538,
+            "present_recall": 1.0,
+            "present_f1": 0.7,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 6,
+              "tn": 7
+            }
+          },
+          "architecture": {
+            "n": 8,
+            "gap_base_rate": 0.625,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.375,
+            "present_precision": 0.375,
+            "present_recall": 1.0,
+            "present_f1": 0.545,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 5,
+              "tn": 3
+            }
+          },
+          "cloud_platform": {
+            "n": 86,
+            "gap_base_rate": 0.477,
+            "precision": 0.8,
+            "recall": 0.098,
+            "f1": 0.174,
+            "accuracy": 0.558,
+            "present_precision": 0.543,
+            "present_recall": 0.978,
+            "present_f1": 0.698,
+            "balanced_accuracy": 0.538,
+            "confusion": {
+              "tp": 4,
+              "fp": 1,
+              "fn": 37,
+              "tn": 44
+            }
+          },
+          "committee": {
+            "n": 25,
+            "gap_base_rate": 0.96,
+            "precision": 1.0,
+            "recall": 0.042,
+            "f1": 0.08,
+            "accuracy": 0.08,
+            "present_precision": 0.042,
+            "present_recall": 1.0,
+            "present_f1": 0.08,
+            "balanced_accuracy": 0.521,
+            "confusion": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 23,
+              "tn": 1
+            }
+          },
+          "data_governance": {
+            "n": 12,
+            "gap_base_rate": 0.667,
+            "precision": 1.0,
+            "recall": 0.125,
+            "f1": 0.222,
+            "accuracy": 0.417,
+            "present_precision": 0.364,
+            "present_recall": 1.0,
+            "present_f1": 0.533,
+            "balanced_accuracy": 0.562,
+            "confusion": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 7,
+              "tn": 4
+            }
+          },
+          "hiring": {
+            "n": 13,
+            "gap_base_rate": 0.538,
+            "precision": 1.0,
+            "recall": 0.143,
+            "f1": 0.25,
+            "accuracy": 0.538,
+            "present_precision": 0.5,
+            "present_recall": 1.0,
+            "present_f1": 0.667,
+            "balanced_accuracy": 0.571,
+            "confusion": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 6,
+              "tn": 6
+            }
+          },
+          "pricing_packaging": {
+            "n": 8,
+            "gap_base_rate": 0.625,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.375,
+            "present_precision": 0.375,
+            "present_recall": 1.0,
+            "present_f1": 0.545,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 5,
+              "tn": 3
+            }
+          },
+          "product": {
+            "n": 104,
+            "gap_base_rate": 0.625,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.375,
+            "present_precision": 0.375,
+            "present_recall": 1.0,
+            "present_f1": 0.545,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 65,
+              "tn": 39
+            }
+          },
+          "release_scope": {
+            "n": 9,
+            "gap_base_rate": 0.333,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.667,
+            "present_precision": 0.667,
+            "present_recall": 1.0,
+            "present_f1": 0.8,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 3,
+              "tn": 6
+            }
+          },
+          "security_incident": {
+            "n": 9,
+            "gap_base_rate": 0.444,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.556,
+            "present_precision": 0.556,
+            "present_recall": 1.0,
+            "present_f1": 0.714,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 4,
+              "tn": 5
+            }
+          },
+          "vendor_tooling": {
+            "n": 9,
+            "gap_base_rate": 0.444,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.556,
+            "present_precision": 0.556,
+            "present_recall": 1.0,
+            "present_f1": 0.714,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 4,
+              "tn": 5
+            }
+          }
+        },
+        "by_element_type": {
+          "alternative": {
+            "n": 58,
+            "gap_base_rate": 0.569,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.431,
+            "present_precision": 0.431,
+            "present_recall": 1.0,
+            "present_f1": 0.602,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 33,
+              "tn": 25
+            }
+          },
+          "approver": {
+            "n": 26,
+            "gap_base_rate": 0.577,
+            "precision": 0.75,
+            "recall": 0.2,
+            "f1": 0.316,
+            "accuracy": 0.5,
+            "present_precision": 0.455,
+            "present_recall": 0.909,
+            "present_f1": 0.606,
+            "balanced_accuracy": 0.555,
+            "confusion": {
+              "tp": 3,
+              "fp": 1,
+              "fn": 12,
+              "tn": 10
+            }
+          },
+          "condition": {
+            "n": 40,
+            "gap_base_rate": 0.625,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.375,
+            "present_precision": 0.375,
+            "present_recall": 1.0,
+            "present_f1": 0.545,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 25,
+              "tn": 15
+            }
+          },
+          "decision": {
+            "n": 53,
+            "gap_base_rate": 0.491,
+            "precision": 1.0,
+            "recall": 0.038,
+            "f1": 0.074,
+            "accuracy": 0.528,
+            "present_precision": 0.519,
+            "present_recall": 1.0,
+            "present_f1": 0.684,
+            "balanced_accuracy": 0.519,
+            "confusion": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 25,
+              "tn": 27
+            }
+          },
+          "dissent": {
+            "n": 38,
+            "gap_base_rate": 0.658,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.342,
+            "present_precision": 0.342,
+            "present_recall": 1.0,
+            "present_f1": 0.51,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 25,
+              "tn": 13
+            }
+          },
+          "owner": {
+            "n": 26,
+            "gap_base_rate": 0.577,
+            "precision": 1.0,
+            "recall": 0.133,
+            "f1": 0.235,
+            "accuracy": 0.5,
+            "present_precision": 0.458,
+            "present_recall": 1.0,
+            "present_f1": 0.629,
+            "balanced_accuracy": 0.567,
+            "confusion": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 13,
+              "tn": 11
+            }
+          },
+          "rationale": {
+            "n": 55,
+            "gap_base_rate": 0.6,
+            "precision": 1.0,
+            "recall": 0.03,
+            "f1": 0.059,
+            "accuracy": 0.418,
+            "present_precision": 0.407,
+            "present_recall": 1.0,
+            "present_f1": 0.579,
+            "balanced_accuracy": 0.515,
+            "confusion": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 32,
+              "tn": 22
+            }
+          }
+        },
+        "by_in_document": {
+          "omitted": {
+            "n": 172,
+            "gap_base_rate": 1.0,
+            "precision": 1.0,
+            "recall": 0.041,
+            "f1": 0.078,
+            "accuracy": 0.041,
+            "present_precision": 0.0,
+            "present_recall": 0.0,
+            "present_f1": 0.0,
+            "balanced_accuracy": 0.02,
+            "confusion": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 165,
+              "tn": 0
+            }
+          },
+          "paraphrased": {
+            "n": 48,
+            "gap_base_rate": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.979,
+            "present_precision": 1.0,
+            "present_recall": 0.979,
+            "present_f1": 0.989,
+            "balanced_accuracy": 0.49,
+            "confusion": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "tn": 47
+            }
+          },
+          "present_unspecified": {
+            "n": 46,
+            "gap_base_rate": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 1.0,
+            "present_precision": 1.0,
+            "present_recall": 1.0,
+            "present_f1": 1.0,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "tn": 46
+            }
+          },
+          "verbatim": {
+            "n": 30,
+            "gap_base_rate": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 1.0,
+            "present_precision": 1.0,
+            "present_recall": 1.0,
+            "present_f1": 1.0,
+            "balanced_accuracy": 0.5,
+            "confusion": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "tn": 30
+            }
+          }
+        }
+      },
+      "false_positives": [
+        {
+          "pair_id": "SYN_0000_014",
+          "type": "approver",
+          "in_document": "paraphrased",
+          "text": "CTO",
+          "present_score": 0.5
+        }
+      ],
+      "false_negatives": [
+        {
+          "pair_id": "QMS_CMT_VA_002",
+          "type": "decision",
+          "text": "Dawn Bowden proposed the topic of pay dispute and asked what could be done as a Government to try to get parties back round the table and solve this dispute.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_PRD_TR_068",
+          "type": "decision",
+          "text": "Have one remote that has the main functions such as turning on, turning off, channel changing, volume; and another remote with all the special things.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QMS_ACA_VA_006",
+          "type": "decision",
+          "text": "Given the domains currently used (tourist, child language learning), some features, like speaker attitude, are not of equal importance at this stage.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_057",
+          "type": "decision",
+          "text": "Project Manager had an idea of the insertion of LCD display screen on the remote control, which may possess different pages for different devices.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_048",
+          "type": "decision",
+          "text": "Marketing considered fancy design to be insignificant, as he believed that unlike the younger generation, people of 40 plus were not that particular about appearance and would care more about its functionality instead.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_PRD_TR_070",
+          "type": "decision",
+          "text": "Industrial Designer thought the meeting was not friendly to the brainstorming.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TE_003",
+          "type": "decision",
+          "text": "They shared the member's concern that small businesses be supported.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_CMT_TE_005",
+          "type": "decision",
+          "text": "Sian Gwenllian AM pointed out that the Learned Society of Wales had said that there should be a directory of resources to implement that Welsh dimension.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_077",
+          "type": "decision",
+          "text": "User interface said that they could make this wave in specific frequency to avoid interfering with other devices.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QMS_ACA_VA_001",
+          "type": "decision",
+          "text": "The translation of SmartKom to english is in its final stages.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_042",
+          "type": "decision",
+          "text": "Then they agreed to design a child lock.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_VA_000",
+          "type": "rationale",
+          "text": "Bains emphasized that 590,000 loans have already been distributed through the CEBA program, highlighting its efficacy.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_051",
+          "type": "rationale",
+          "text": "To bring a spongy feel, rubber was the best choice.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_009",
+          "type": "rationale",
+          "text": "They can't force parents to divulge information that is a matter for them.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_ACA_TR_012",
+          "type": "rationale",
+          "text": "It is important to pick a normalization that matches the distribution for that feature.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_038",
+          "type": "rationale",
+          "text": "Marketing mentioned that 80% of people like fancy appeal remote and younger people prefer voice recognition.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_003",
+          "type": "rationale",
+          "text": "This might help with the conclusion whether the product was appealing to the correct demographic and incorporated the fashion trend into it.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_ACA_TR_034",
+          "type": "rationale",
+          "text": "New digits forms were distributed for eliciting different prosodic groupings of numbers.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_033",
+          "type": "rationale",
+          "text": "Besides, the group confirmed no LCD and ASR for the remote control.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_CMT_TE_003",
+          "type": "rationale",
+          "text": "Many people had lost their jobs and needed assistance from the government.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_CMT_TR_003",
+          "type": "rationale",
+          "text": "However, the Deputy Prime Minister and Minister of Intergovernmental Affairs argued that the wage subsidy program was supposed to reach out to as many companies as possible, and the wage subsidy was really put in place by a large amount of money to protect workers across Canada.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_VA_001",
+          "type": "rationale",
+          "text": "Also, the research portfolio should be heavily invested in, which would also bring economic benefits.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_002",
+          "type": "alternative",
+          "text": "Industrial Designer thought that they should stick to the idea of traditional television remote control, instead of a multi-functional one.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QMS_PRD_TR_065",
+          "type": "alternative",
+          "text": "Marketing suggested that the fancy design on the remote control is important to customers according to his research, so the buttons could be shaped like fruit and vegetables, and the buttons could be made out of rubber rather than hard plastic.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_023",
+          "type": "alternative",
+          "text": "The idea of giving the remote a novel shape instead of the standard rectangular was first raised by Project Manager.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_PRD_TR_073",
+          "type": "alternative",
+          "text": "The team then decided on a single smaller remote instead of a bigger one with a base, and a locating device would sufficiently prevent the remote from being lost.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_020",
+          "type": "alternative",
+          "text": "It was suggested that farmers and relative products were largely influenced by Covid-19.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_PRD_TR_084",
+          "type": "alternative",
+          "text": "For voice recognition, he thought it was unaffordable for young people, so the design was abandoned.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_VA_016",
+          "type": "alternative",
+          "text": "The industrial designer recommended batteries instead of solar cells because it would be problematic if solar cells didn't have enough energy.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_011",
+          "type": "alternative",
+          "text": "Marketing disapproved of this proposal because though teletext was becoming outdated as Project Manager said, more than eighty percent of the current televisions were still teletext and people were very comfortable with the idea of having and using teletext.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TE_000",
+          "type": "alternative",
+          "text": "So Project Manager mentioned that the group hopes to sell the remote control device internationally, instead of in Scotland or some European country.",
+          "present_score": 0.8
+        },
+        {
+          "pair_id": "QMS_PRD_TR_046",
+          "type": "alternative",
+          "text": "Project Manager first announced that their product was only going to be a TV remote instead of a multifunctional one, and that the yellow colour and the slogan of their company should be included in their design.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_007",
+          "type": "alternative",
+          "text": "The quality of food, rather than preparing school meals or not, was more important to Dr Frank Atherton.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TE_000",
+          "type": "condition",
+          "text": "Sharon Davies recommended the team-around-the-family approach to ensure what was needed for learners to go back into school, as well as what the school could provide.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_066",
+          "type": "condition",
+          "text": "Second, it had to be technologically innovative so that people would be attracted to buy it.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_025",
+          "type": "condition",
+          "text": "And the remote control also had to be easily taken in hands and energy-saving.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QMS_CMT_TR_001",
+          "type": "condition",
+          "text": "It would continue to evolve because it had to be consistent with their overall approach to school improvement and raising standards.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_CMT_TR_002",
+          "type": "condition",
+          "text": "Last they were managing it within the normal budgetary process, developing a more integrated approach towards the early years, and had got the system of inspection to ensure that.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_CMT_TR_002",
+          "type": "condition",
+          "text": "Last they were managing it within the normal budgetary process, developing a more integrated approach towards the early years, and had got the system of inspection to ensure that.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_CMT_TR_020",
+          "type": "condition",
+          "text": "And it was assured that particular attention must be paid to transparency, privacy and ethical concerns to ensure privacy.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_017",
+          "type": "condition",
+          "text": "Hon.Carla Qualtrough suggested that the government were working very closely with the provinces on occupational health and safety guidelines and taking an all-of-government approach to ensure that workers were safe and that the government could support them in these efforts.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_ACA_TE_001",
+          "type": "condition",
+          "text": "Efforts will be made to ensure that recording conventions are consistent across ICSI, the University of Washington, and SRI.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_022",
+          "type": "condition",
+          "text": "Currently the main strategy was always to identify where there were weaknesses to ensure the overall process of a typical school day.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_020",
+          "type": "condition",
+          "text": "However, under the current situation, the federal government was working hard to ensure equal distribution of the whole nation.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_046",
+          "type": "dissent",
+          "text": "It was found that users preferred a fancier but yet simpler remote, and as a result, their product should be high-tech looking but also user-friendly.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QMS_PRD_TR_067",
+          "type": "dissent",
+          "text": "Marketing disagreed by pointing out that TV was mostly used with VCR or DVD player or recorders, functions for which should be included, rather than with a stereo.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_044",
+          "type": "dissent",
+          "text": "Marketing was against it and recommended the voice recognition technology because Marketing found the recurring theme was fashionable and trendy.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_067",
+          "type": "dissent",
+          "text": "The discussion took a turn when the User interface disagreed and suggested designing a remote control only for televisions.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_010",
+          "type": "dissent",
+          "text": "The Prime Minister disagreed, claiming that both passing gun-control and releasing imprisoned Canadians who did not pose a threat to society advanced the safety of Canadians.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_040",
+          "type": "dissent",
+          "text": "Around ninety percent of people preferred an LCD display, while only sixty percent of people wanted speech recognition.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_047",
+          "type": "dissent",
+          "text": "Industrial Designer proposed to have a rechargeable battery or a battery dock, while Project Manager preferred a disposable one.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_023",
+          "type": "dissent",
+          "text": "But as for Llyr Gruffydd, he did not think that the institutions would be able to rely on the official funding much, and more importantly, if they would like to enter into the agreements at present, they would interrupt their current work, which would also put themselves in great risk.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_PRD_TR_048",
+          "type": "dissent",
+          "text": "However, Project Manager's requirements of no teletext and design simplification were effectively challenged and rebutted by Marketing.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QMS_PRD_TR_072",
+          "type": "dissent",
+          "text": "Industrial Design thought that having a motion activated backlight would be useful, as opposed to a continuous one.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_PRD_TR_015",
+          "type": "dissent",
+          "text": "However, the industrial designer did not agree with the project manager because the designer thought it would be a good marketing promotion as people would think that remote controls with kinetic function are cool.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_ACA_TR_020",
+          "type": "owner",
+          "text": "The professor told the group a story about soldiers assigned to watch out for spy planes.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QMS_CMT_TR_023",
+          "type": "owner",
+          "text": "The members mentioned many institutions like the Higher Education Funding Council for Wales and showed that these institutions had taken much action to deal with the problems.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TE_004",
+          "type": "owner",
+          "text": "The Ministry of Justice had taken action to deal with it and there had had a number of people in the positions.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QMS_CMT_TR_003",
+          "type": "owner",
+          "text": "And the opposition party hoped that through this regime, Canada would take stronger diplomatic action on Hong Kong and gave more support for 300,000 Canadians living there.",
+          "present_score": 0.8
+        },
+        {
+          "pair_id": "QMS_PRD_TR_096",
+          "type": "approver",
+          "text": "Then Project Manager suggested whistle tracking and was approved by all the conferees as an original improvement.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "decision",
+          "text": "The pure intelligent controller concept was rejected in favour of a hybrid of the Google-style and fancy controllers with limited vocal commands.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "decision",
+          "text": "An LCD display was rejected for the remote control.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_005",
+          "type": "decision",
+          "text": "An advanced chip was approved in order to support speech recognition.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "decision",
+          "text": "A single-curved casing was chosen for the remote control.",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "rationale",
+          "text": "The microphone and camera hardware questions were unresolved.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "rationale",
+          "text": "The chip is the most expensive part regardless, so the energy source's own cost is a secondary concern.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "rationale",
+          "text": "The double-curved option would interfere with using the scroll wheel.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_005",
+          "type": "rationale",
+          "text": "Marketing pushed for positioning the product on technological innovation.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "rationale",
+          "text": "Simultaneous use by several people would cause interference.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_003",
+          "type": "rationale",
+          "text": "The market wants convenient browsing rather than many buttons to tamper with.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "rationale",
+          "text": "The uncurved option was considered too dull.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_003",
+          "type": "rationale",
+          "text": "Symbols on the interface were to be simplified.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "rationale",
+          "text": "It would increase the cost.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "rationale",
+          "text": "It would add a language and localisation burden.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "rationale",
+          "text": "The team already had a scroll wheel, speech recognition, rubber and fancy colours, so an LCD was not needed.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_005",
+          "type": "alternative",
+          "text": "regular chip -- would not support speech recognition",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "alternative",
+          "text": "solar power",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_003",
+          "type": "alternative",
+          "text": "lightweight plastic",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "alternative",
+          "text": "kryptonite",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "alternative",
+          "text": "battery and solar together",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "alternative",
+          "text": "wood",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "alternative",
+          "text": "LCD display -- the design already had a scroll wheel, speech recognition, rubber and fancy colours",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "alternative",
+          "text": "dynamo",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "alternative",
+          "text": "battery",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "alternative",
+          "text": "plastic",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_003",
+          "type": "alternative",
+          "text": "more physical buttons -- users would tamper with them; the market wants convenient browsing",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "dissent",
+          "text": "The Industrial Designer argued the LCD was too much.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "dissent",
+          "text": "The Industrial Designer preferred a battery and was skeptical of the dynamo.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_001",
+          "type": "dissent",
+          "text": "The Project Manager leaned towards including the LCD for budget and high-tech-feel reasons and was talked out of it.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_002",
+          "type": "condition",
+          "text": "The exact price of kryptonite was never established -- the website did not give an actual cost.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_005",
+          "type": "condition",
+          "text": "A newly available low-cost sensor component meant the advanced chip would not be expensive, which is what enabled the group to agree.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "condition",
+          "text": "The design would increase the production cost, but this was treated as added value that can be compensated.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "QSUM_004",
+          "type": "approver",
+          "text": "Project Manager",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "QSUM_005",
+          "type": "approver",
+          "text": "Project Manager",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0008_001",
+          "type": "alternative",
+          "text": "VMware Cloud Foundation -- Limited scalability and flexibility compared to AWS Outposts",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0027_001",
+          "type": "alternative",
+          "text": "Wait for final acquisition approval before hiring",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0020_001",
+          "type": "alternative",
+          "text": "TalentLink",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0037_001",
+          "type": "alternative",
+          "text": "Wait for full investigation before response -- Risk of increased customer churn due to prolonged system downtime and data exposure.",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "SYN_0002_011",
+          "type": "alternative",
+          "text": "Full platform migration to Azure -- Timeline for full migration would exceed MERGER_DATES[0] deadline",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0000_009",
+          "type": "alternative",
+          "text": "Google Cloud Platform -- Offered lower prices but lacked the comprehensive feature fit and support quality we needed.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0002_016",
+          "type": "alternative",
+          "text": "Migrate entirely to Google Cloud -- Prohibitive costs due to Google Cloud's pricing hike following their key vendor's acquisition",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0040_001",
+          "type": "alternative",
+          "text": "Alert Logic -- While providing robust feature fit and support quality, switching to Alert Logic would incur a migration cost of $30,000 and require two weeks of downtime for integration",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0071_001",
+          "type": "alternative",
+          "text": "Purchase a commercial insurance-focused framework -- While it offers immediate time-to-value, the cost and potential future maintenance burden outweigh the benefits",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0061_001",
+          "type": "alternative",
+          "text": "Lease a cloud-based data governance service for flexible scaling -- The option was deemed too expensive due to the high annual maintenance costs.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0002_004",
+          "type": "alternative",
+          "text": "Building an on-premises data center -- Would require a $3M initial investment and a 50% increase in operational costs",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0017_001",
+          "type": "condition",
+          "text": "Third-party forensic consultants may be brought in if the internal investigation reveals complications beyond the team's expertise.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0027_001",
+          "type": "condition",
+          "text": "Final acquisition agreement must include provisions for increased headcount and budget,",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0078_001",
+          "type": "condition",
+          "text": "Monitoring and management of both cloud and edge resources needs to be addressed",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0064_001",
+          "type": "condition",
+          "text": "Pending final vendor negotiations for current system decommissioning",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0002_003",
+          "type": "condition",
+          "text": "Assuming we can negotiate favorable terms with AWS during the acquisition process",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0030_001",
+          "type": "condition",
+          "text": "Additional costs may arise if more advanced analytics become necessary",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0015_001",
+          "type": "condition",
+          "text": "The security concerns about the automated testing tool need to be addressed before revisiting this option",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0001_011",
+          "type": "condition",
+          "text": "Exploring partnerships with cloud providers for potential cost savings",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0003_004",
+          "type": "condition",
+          "text": "The SRE team will need to assess the impact of potential data egress charges when moving to AWS.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_003",
+          "type": "condition",
+          "text": "Pending a detailed analysis of the long-run maintenance load and associated costs",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0033_001",
+          "type": "condition",
+          "text": "Finance team to monitor the performance of each pricing tier weekly and adjust if necessary",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0057_001",
+          "type": "dissent",
+          "text": "Designer's reservations about compromising the user experience with the limited-feature portal.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0002_017",
+          "type": "dissent",
+          "text": "Finance partner objects to the two-week delay, stating it may impact the overall launch timeline",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0067_001",
+          "type": "dissent",
+          "text": "Legal Counsel's objection that the policy may not adequately comply with certain data privacy regulations",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0003_008",
+          "type": "dissent",
+          "text": "SRE argues for a single cloud provider to streamline management and reduce complexity",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0000_010",
+          "type": "dissent",
+          "text": "SRE raised concerns about the potential complexity of managing multiple cloud providers in the long run",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0009_001",
+          "type": "dissent",
+          "text": "SRE's concern about potential user burden during the migration and transition period",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0054_001",
+          "type": "dissent",
+          "text": "Tech lead raised concerns about the efficiency of manual data release processes",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_017",
+          "type": "dissent",
+          "text": "SRE raised concerns about long-term dependency on a third-party vendor",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0002_003",
+          "type": "dissent",
+          "text": "SRE raises concerns about potential increased technical debt due to AWS's proprietary services",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0000_017",
+          "type": "dissent",
+          "text": "SRE expressed concern about the potential cost and complexity of migrating from our current provider.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0003_004",
+          "type": "dissent",
+          "text": "The platform engineering lead expressed concerns about potential concentration risk with a reliance on a single cloud provider.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0031_001",
+          "type": "rationale",
+          "text": "In-house development requires significant resources and time, delaying time-to-value.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0009_001",
+          "type": "rationale",
+          "text": "Potential for future cost savings with Azure's scalable pricing model",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0002_014",
+          "type": "rationale",
+          "text": "Reducing scope allows us to deliver high-impact features and maintain service levels.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0002_014",
+          "type": "rationale",
+          "text": "Migrating only high-traffic apps will reduce the technical debt by 40%, allowing faster future migrations.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0001_017",
+          "type": "rationale",
+          "text": "Custom solution could lead to long-term maintenance issues and higher costs",
+          "present_score": 0.9
+        },
+        {
+          "pair_id": "SYN_0000_005",
+          "type": "rationale",
+          "text": "AWS support quality is consistently rated high in industry benchmarks",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0015_001",
+          "type": "rationale",
+          "text": "The budget envelope doesn't allow for bringing on new junior developers from Vendor X",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0069_001",
+          "type": "rationale",
+          "text": "Minimizes the burden on users by reducing the data migration process",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_003",
+          "type": "rationale",
+          "text": "Lower upfront costs compared to building our own data centers",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0000_016",
+          "type": "rationale",
+          "text": "Switching to Azure would incur higher switching costs due to the need to reconfigure services",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0003_008",
+          "type": "approver",
+          "text": "CTO",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0047_001",
+          "type": "approver",
+          "text": "Security lead",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0001_017",
+          "type": "approver",
+          "text": "CTO",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0040_001",
+          "type": "approver",
+          "text": "security lead",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0003_002",
+          "type": "approver",
+          "text": "CTO",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0001_008",
+          "type": "approver",
+          "text": "CTO",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0063_001",
+          "type": "approver",
+          "text": "CEO",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0073_001",
+          "type": "approver",
+          "text": "Principal engineer",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0003_012",
+          "type": "approver",
+          "text": "CTO",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0075_001",
+          "type": "owner",
+          "text": "HR manager",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0019_001",
+          "type": "owner",
+          "text": "Procurement department",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_017",
+          "type": "owner",
+          "text": "Platform Engineering Lead",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0022_001",
+          "type": "owner",
+          "text": "Engineering director",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0070_001",
+          "type": "owner",
+          "text": "Backend lead",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0061_001",
+          "type": "owner",
+          "text": "Data Engineer",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_006",
+          "type": "owner",
+          "text": "Platform engineering lead",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_005",
+          "type": "owner",
+          "text": "SRE team",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0049_001",
+          "type": "owner",
+          "text": "On-call engineer",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0002_013",
+          "type": "decision",
+          "text": "Status quo with temporary cloud platform freeze to address data privacy concerns",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0061_001",
+          "type": "decision",
+          "text": "Purchase an off-the-shelf data governance platform for immediate data retention compliance",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0022_001",
+          "type": "decision",
+          "text": "Hybrid approach: shipping partial release by July 15, while continuing to address critical technical debt through Q3",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0003_008",
+          "type": "decision",
+          "text": "Hybrid Cloud strategy with AWS and Google Cloud Platform for immediate regulatory compliance",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0037_001",
+          "type": "decision",
+          "text": "Implement a partial incident response with immediate action and expedited investigation for high-impact incidents.",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0003_004",
+          "type": "decision",
+          "text": "Transition to AWS for cloud infrastructure with a phased migration over the next 6 months",
+          "present_score": 1.0
+        },
+        {
+          "pair_id": "SYN_0024_001",
+          "type": "decision",
+          "text": "Implement a centralized candidate management system for the next fiscal quarter",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0001_010",
+          "type": "decision",
+          "text": "Provisionally decide to build our custom cloud platform for increased control and fit, pending a cost analysis comparison with AWS Outposts.",
+          "present_score": 0.95
+        },
+        {
+          "pair_id": "SYN_0001_002",
+          "type": "decision",
+          "text": "Provisional: Opt for buying a pre-configured AWS solution for immediate scalability",
+          "present_score": 0.7
+        },
+        {
+          "pair_id": "SYN_0053_001",
+          "type": "decision",
+          "text": "Status quo on budget allocation; no significant changes for the release scope and delivery",
+          "present_score": 0.7
         }
       ]
     }
