@@ -23,7 +23,7 @@ If a source file changes, update the paper from it -- never the other way round.
 | Table VI, GraphRAG | 4.2 / 14.6 (18.8 without support filter) | `outputs/graphrag_results.md` |
 | Table VI, multi-hop | 12.2% (5/41) | `outputs/multihop_retrieval_results.md` |
 | Sec. VII runtime | -6.2 lexical, 0.0 semantic | `outputs/baseline_rerun_scores.md` |
-| Sec. IV / VIII spot-check | **pending** (TODO in the .tex) | `data/benchmark/spotcheck_mini/` -> `scripts/spotcheck_report.py --dir data/benchmark/spotcheck_mini` |
+| Abstract, Sec. IV, Sec. VIII spot-check | n=52 (3 pairs: ACA_TR_002, ACA_TR_009, CMT_TR_007), 1 human annotator (jaitra), blind; gap P 0.478, R 1.0; present R 0.20; bal acc 0.60; 24 disagreements (23 paraphrased, 19 in CMT_TR_007); "about half" = 24/46 silver gaps | `outputs/qmsum_spotcheck_mini_report.json` (`scripts/spotcheck_report.py --dir data/benchmark/spotcheck_mini`; the script writes `qmsum_spotcheck_report.json` -- copy it to the `_mini_` name and restore the original). 4th pair QMS_PRD_TR_089 not annotated |
 
 ## Deliberately NOT used
 

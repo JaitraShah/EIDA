@@ -1,0 +1,224 @@
+{
+  "pairs": 3,
+  "human_annotators": [
+    "jaitra"
+  ],
+  "machine_annotators_excluded": [
+    "auto",
+    "llm-review",
+    "model"
+  ],
+  "double_annotated_pairs": 0,
+  "auto_vs_human_gap_class": {
+    "n": 52,
+    "gap_base_rate": 0.423,
+    "precision": 0.478,
+    "recall": 1.0,
+    "f1": 0.647,
+    "accuracy": 0.538,
+    "present_precision": 1.0,
+    "present_recall": 0.2,
+    "present_f1": 0.333,
+    "balanced_accuracy": 0.6,
+    "confusion": {
+      "tp": 22,
+      "fp": 24,
+      "fn": 0,
+      "tn": 6
+    }
+  },
+  "disagreements": [
+    {
+      "pair_id": "QMS_ACA_TR_002",
+      "element_id": "QMS_ACA_TR_002_e03",
+      "type": "decision",
+      "text": "decision was also made to delegate transcribers with the task of labelling a subset of digits or Switchboard data for fine-grained acoustic-phonetic features.",
+      "auto": "omitted",
+      "human": "verbatim"
+    },
+    {
+      "pair_id": "QMS_ACA_TR_002",
+      "element_id": "QMS_ACA_TR_002_e04",
+      "type": "rationale",
+      "text": "Speaker fe008 will run selected Meeting Recorder data through channelize and determine whether the resulting units are of a sufficient length.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_ACA_TR_009",
+      "element_id": "QMS_ACA_TR_009_e01",
+      "type": "decision",
+      "text": "Use of dissimilar microphones adds an extra, unwanted variable to individual speaker recordings.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_ACA_TR_009",
+      "element_id": "QMS_ACA_TR_009_e02",
+      "type": "rationale",
+      "text": "Similarly, differences in the type of recording equipment used and the manner in which microphones are worn by speakers causes problems for the transcription effort.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_ACA_TR_009",
+      "element_id": "QMS_ACA_TR_009_e06",
+      "type": "decision",
+      "text": "The group discussed the potential for assigning additional tasks to ICSI's transcriber pool, including tagging more fine-grained acoustic information, and discourse and disfluency tagging.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e03",
+      "type": "rationale",
+      "text": "Investment would be spent on different sources and they should pay more attention to extending them.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e07",
+      "type": "rationale",
+      "text": "Also, Dr Frank Atherton thought a target was one tool in the box that they could use, but moreover, an evaluation which could help them know where they are was very needed.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e08",
+      "type": "rationale",
+      "text": "At the same time, there was still a lot to achieve.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e11",
+      "type": "rationale",
+      "text": "And now, according to existing programmes, a figure of £8 million to £10 million a year had been bandied around as a broad kind of area of what they might need.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e14",
+      "type": "rationale",
+      "text": "Dr Frank Atherton spoke of the frequency of being asked to have a longitudinal view over time of what's happening to Children, which was obviously essential for our schools and for the system and helpful for the strategy evaluation.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e20",
+      "type": "rationale",
+      "text": "And also, according to Dr Frank Atherton, the longitudinal data would be helpful in strategy evaluation.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e22",
+      "type": "rationale",
+      "text": "The use of legislation was affirmed by Dr Frank Atherton but it was just one of the tools they have got, they need to employ them all.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e23",
+      "type": "rationale",
+      "text": "Then as to sports infrastructure, Dr Frank Atherton, though not an expert in that field, also supported it as a good one to pursue not only in schools but also in a broadening area.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e25",
+      "type": "rationale",
+      "text": "Dr Frank Atherton reviewed that they needed a mirror to see what had been happening in this country and legislation was a good way and took some examples of food takeaways which showed that they needed to consider effectiveness things.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e26",
+      "type": "decision",
+      "text": "Dawn Bowden AM asked for Dr Frank Atherton's ideas on community sport infrastructure of new schools, and pointed out that Welsh Government has ploughed a huge amount of money into the twenty-first century schools programme.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e27",
+      "type": "rationale",
+      "text": "At the end of speech, Dawn Bowden AM thought they should be making sure that they have those kinds of facilities so that they become accessible to the wider public.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e29",
+      "type": "decision",
+      "text": "Dr Frank Atherton first gave a look at a primary school education embedded with physical activity at an early stage and assures its benefits not only on healthy benefits but also on socialization and mental issues.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e30",
+      "type": "rationale",
+      "text": "Then Dr Frank Atherton delivered sparkles on making pupils more engaged with physical education, which was tailoring things to different audiences.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e31",
+      "type": "rationale",
+      "text": "When it came to school meals, Dr Frank Atherton did not gave personal views because things related still needed more consultations and surveys.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e32",
+      "type": "decision",
+      "text": "Dr Frank Atherton considered that just in terms of the physical activity, it was a really important dimension and they found that their children were not that physically active and couldn't meet the various guidelines.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e33",
+      "type": "rationale",
+      "text": "Embedding physical activity at an early stage in primary school education might not have the same effect as the dietary issue did to healthy weight, but it was vital to pupils socialization and mental health.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e34",
+      "type": "decision",
+      "text": "In fact, Dr Frank Atherton did not give an exact opinion on providing a more varied diet for pupils.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e35",
+      "type": "rationale",
+      "text": "It would be something needing consultation and consideration, then they might decide whether it was worth carrying out.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    },
+    {
+      "pair_id": "QMS_CMT_TR_007",
+      "element_id": "QMS_CMT_TR_007_e36",
+      "type": "alternative",
+      "text": "The quality of food, rather than preparing school meals or not, was more important to Dr Frank Atherton.",
+      "auto": "omitted",
+      "human": "paraphrased"
+    }
+  ]
+}

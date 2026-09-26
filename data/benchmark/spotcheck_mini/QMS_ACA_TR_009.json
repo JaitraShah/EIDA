@@ -58,7 +58,24 @@
     }
   ],
   "generation": null,
-  "annotations": [],
+  "annotations": [
+    {
+      "annotator": "jaitra",
+      "labels": {
+        "QMS_ACA_TR_009_e01": "paraphrased",
+        "QMS_ACA_TR_009_e02": "paraphrased",
+        "QMS_ACA_TR_009_e03": "omitted",
+        "QMS_ACA_TR_009_e04": "omitted",
+        "QMS_ACA_TR_009_e05": "omitted",
+        "QMS_ACA_TR_009_e06": "paraphrased",
+        "QMS_ACA_TR_009_e07": "omitted"
+      },
+      "flagged": [],
+      "unrealistic": false,
+      "notes": "",
+      "minutes_spent": 2.1
+    }
+  ],
   "notes": "QMSUM_AUTO -- domain=Academic, split=train, source_index=9. Document = concatenated QMSum general_query_list answer(s); elements = sentences of specific_query_list answers. in_document labels are SILVER: produced by nli:roberta-large-mnli / decompose:sentence / thr=0.55. Not for extraction-completeness scoring (decisions=[]).\n{\"detector_scores\": [{\"element_id\": \"QMS_ACA_TR_009_e01\", \"entail_score\": 0.0061, \"query_index\": 0}, {\"element_id\": \"QMS_ACA_TR_009_e02\", \"entail_score\": 0.0447, \"query_index\": 0}, {\"element_id\": \"QMS_ACA_TR_009_e03\", \"entail_score\": 0.0033, \"query_index\": 1}, {\"element_id\": \"QMS_ACA_TR_009_e04\", \"entail_score\": 0.0009, \"query_index\": 2}, {\"element_id\": \"QMS_ACA_TR_009_e05\", \"entail_score\": 0.0087, \"query_index\": 3}, {\"element_id\": \"QMS_ACA_TR_009_e06\", \"entail_score\": 0.0146, \"query_index\": 4}, {\"element_id\": \"QMS_ACA_TR_009_e07\", \"entail_score\": 0.0011, \"query_index\": 5}]}",
   "label_provenance": "nli:roberta-large-mnli / decompose:sentence / thr=0.55",
   "schema_version": "1.0.0",
