@@ -1,0 +1,82 @@
+{
+  "pair_id": "QSUM_001",
+  "query": "What decisions were made and what reasoning was given?",
+  "method": "local",
+  "answer": "The discussions revolve around the design of a remote control, led by a Project Manager who is the central figure in the project. The Project Manager leads the team and discussions, making decisions and fostering a collaborative environment among the team members.\n\nDuring the meetings, various aspects of the remote control design were discussed, including the curved design, button locations, and potential features. The team considered multiple options for the design, such as a simple, straight-forward design, a curved design, and a three-dimensional design.\n\nThe team also discussed the materials for the remote control, considering both wood and titanium as options. The User Interface, a versatile entity that plays a crucial role in the product development process, collaborated with the Industrial Designer to test and refine the product.\n\nIn terms of decision-making, the team decided against the curved design, as it was deemed too dull. Instead, they opted for a simple, straight-forward design. The team also agreed on the use of scroll-wheels, voice recognition, and rubber buttons for the remote control.\n\nThe reasoning behind these decisions was based on several factors. For instance, the team believed that the customers would prefer a simple design over a curved one. They also thought that the scroll-wheels would be handy and could be implemented with a regular chip. The team agreed that voice recognition would add a high-tech feeling to the remote control.\n\nRegarding the materials, the team decided on rubber for the buttons due to its spongy feel. However, they acknowledged that printing a picture on the device might not be possible due to the limitations of their manufacturing department.\n\nIn summary, the Project Manager led the team in making decisions about the design of a remote control, considering various aspects such as the design, materials, and features. The team decided on a simple, straight-forward design, scroll-wheels, voice recognition, and rubber buttons, based on their understanding of what customers would prefer and what would be feasible given their manufacturing capabilities.\n\n[Data: Relationships (125, 133, 160, 163, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183)]",
+  "index_seconds": 368.7,
+  "total_seconds": 383.5,
+  "records": [
+    {
+      "decision": "The team decided on a simple, straight-forward design for the remote control.",
+      "topic": "Remote Control Design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Curved design",
+          "rejected": true,
+          "reason": "deemed too dull"
+        }
+      ],
+      "rationale": [
+        "Customers would prefer a simple design over a curved one"
+      ],
+      "conditions": [
+        "Limitation of their manufacturing department might not allow printing a picture on the device"
+      ],
+      "dissent": null,
+      "owner": "Project Manager",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The team believed that the customers would prefer a simple design over a curved one.",
+          "speaker": "Team",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision": "The team agreed on the use of scroll-wheels, voice recognition, and rubber buttons for the remote control.",
+      "topic": "Remote Control Features",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Scroll-wheels would be handy and could be implemented with a regular chip",
+        "Voice recognition would add a high-tech feeling to the remote control"
+      ],
+      "conditions": null,
+      "dissent": null,
+      "owner": "Team",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The team agreed that voice recognition would add a high-tech feeling to the remote control.",
+          "speaker": "Team",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision": "The team decided on rubber for the buttons of the remote control.",
+      "topic": "Remote Control Materials",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Rubber's spongy feel"
+      ],
+      "conditions": null,
+      "dissent": null,
+      "owner": "Team",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The team decided on rubber for the buttons due to its spongy feel.",
+          "speaker": "Team",
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

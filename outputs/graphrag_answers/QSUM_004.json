@@ -1,0 +1,157 @@
+{
+  "pair_id": "QSUM_004",
+  "query": "What decisions were made and what reasoning was given?",
+  "method": "local",
+  "answer": "The discussions revolve around the design and development of a remote control for a product, primarily a television. The project involves key entities such as the Industrial Designer, Project Manager, and Marketing.\n\nThe Industrial Designer plays a crucial role in the project, being responsible for designing the product, ensuring it is user-friendly, aesthetically pleasing, and functional. They participate in meetings and discussions related to the design process, providing insights and ideas to shape the final product. The Industrial Designer's role extends to the design of controllers for various products, not just remote controls.\n\nThe Project Manager is responsible for managing the project, leading meetings, making decisions, and overseeing the project's progress. The Project Manager leads the team working on the project, guiding them towards the project's successful completion.\n\nMarketing is responsible for promoting the product, ensuring it reaches its intended audience effectively. They participate in meetings and engage in discussions about the remote control design. Marketing is considering incorporating fresh fruits and vegetables into the product design or marketing.\n\nThere are discussions about potential collaboration with Google, as they may produce a controller for a product. However, the specifics of Google's involvement are not detailed in the provided information.\n\nThe remote control prototype is being modeled using clay. Low-level chips and batteries are being considered for the remote control. The product being designed is a wooden remote control, and a fashionable design is being created for it.\n\nDecisions about the remote control's design, materials, and potential features are being made based on discussions among the Industrial Designer, Project Manager, and Marketing. The reasoning behind these decisions includes considerations for user experience, aesthetics, functionality, and potential market appeal.\n\nThe discussions also touch on the potential risks and challenges associated with certain features, such as speech and gesture recognition. Concerns about reliability, user error, and the potential for injury are raised, but it is also acknowledged that these features could distinguish the product from others in the market.\n\nIn summary, the decisions made and reasoning given in the discussions revolve around the design and development of a remote control for a product. The project involves key entities such as the Industrial Designer, Project Manager, and Marketing, who are making decisions based on considerations for user experience, aesthetics, functionality, and potential market appeal. The discussions also touch on the potential risks and challenges associated with certain features, such as speech and gesture recognition.",
+  "index_seconds": 322.3,
+  "total_seconds": 336.1,
+  "records": [
+    {
+      "decision": "Design and development of a remote control for a product",
+      "topic": "Product Design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Considerations for user experience, aesthetics, functionality, and potential market appeal"
+      ],
+      "conditions": [
+        "Potential risks and challenges associated with certain features, such as speech and gesture recognition"
+      ],
+      "dissent": [
+        "Concerns about reliability, user error, and the potential for injury"
+      ],
+      "owner": "Industrial Designer, Project Manager, Marketing",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The discussions revolve around the design and development of a remote control for a product...",
+          "speaker": null,
+          "supports": "decision"
+        },
+        {
+          "quote": "The reasoning behind these decisions includes considerations for user experience, aesthetics, functionality, and potential market appeal...",
+          "speaker": null,
+          "supports": "rationale"
+        },
+        {
+          "quote": "Concerns about reliability, user error, and the potential for injury...",
+          "speaker": null,
+          "supports": "dissent"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision": "Involvement of Google in the project",
+      "topic": "Collaboration",
+      "status": "unclear",
+      "alternatives": [],
+      "rationale": [
+        "Discussions about potential collaboration with Google"
+      ],
+      "conditions": [
+        "Specifics of Google's involvement are not detailed in the provided information"
+      ],
+      "dissent": null,
+      "owner": null,
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "There are discussions about potential collaboration with Google...",
+          "speaker": null,
+          "supports": "decision"
+        },
+        {
+          "quote": "However, the specifics of Google's involvement are not detailed in the provided information...",
+          "speaker": null,
+          "supports": "conditions"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision": "Materials for the remote control",
+      "topic": "Product Materials",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Design of a wooden remote control"
+      ],
+      "conditions": [],
+      "dissent": null,
+      "owner": "Industrial Designer",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The product being designed is a wooden remote control...",
+          "speaker": null,
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision": "Design for the remote control",
+      "topic": "Product Design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Fashionable design for the remote control"
+      ],
+      "conditions": [],
+      "dissent": null,
+      "owner": "Industrial Designer",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "A fashionable design is being created for it...",
+          "speaker": null,
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision": "Components for the remote control",
+      "topic": "Product Components",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Low-level chips and batteries are being considered"
+      ],
+      "conditions": [],
+      "dissent": null,
+      "owner": "Project Manager",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "Low-level chips and batteries are being considered for the remote control...",
+          "speaker": null,
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision": "Material for the remote control prototype",
+      "topic": "Prototype Material",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "The remote control prototype is being modeled using clay"
+      ],
+      "conditions": [],
+      "dissent": null,
+      "owner": "Industrial Designer",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The remote control prototype is being modeled using clay...",
+          "speaker": null,
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "pair_id": "QSUM_002",
+  "query": "What decisions were made and what reasoning was given?",
+  "method": "local",
+  "answer": "The discussions revolve around the design and development of a new television remote control. The Project Manager plays a pivotal role in leading the discussions and collaborating with the Marketing team and the Industrial Designer. The Marketing team provides suggestions for design aspects, materials, and features for the remote control, aiming to create a user-friendly and market-ready design.\n\nThe Industrial Designer is responsible for the overall design of the product, including the remote control and its components. They work closely with the User Interface to ensure a harmonious and intuitive design. The design of the product is being discussed in relation to various elements, such as the thumb, squishy bit, cherries, logo, silver, yellow, molds to your hand, color of the plastic face, color of the squishy thing, company color, and the iPod-style wheel button.\n\nThe Project Manager and Industrial Designer collaborate on the remote control design and marketing strategies. This collaboration involves the Project Manager leading discussions, providing guidance, and overseeing the Industrial Designer's work. The Project Manager also discusses material options for the remote control case, including plastic and titanium.\n\nCost is a significant consideration in the project, with the Marketing department discussing the financial aspect of the project or product. This implies that the financial implications of the project are being evaluated and weighed against other factors to ensure optimal resource allocation and project success.\n\nIn terms of reasoning, the Project Manager and the Industrial Designer aim to create a remote control that is both functional and aesthetically pleasing. The Marketing team's input is aimed at ensuring the device aligns with market trends and user expectations. The User Interface's role is to provide insights and suggestions related to the user experience and design aesthetics, while also offering audio feedback during meetings.\n\n[Data: Reports (0, 1, 7); Entities (3, 54, 59, 65, 74, 77, 84, 86); Relationships (0, 30, 31, 4, 51, 70, 71, 73, 76, 80, 81, 83, 87, 89, 95, 98, 100, 101, 106, 108, 109, 131, 132, 133, 52, 53, 62, 63, 64, 65, 80, 81, 84, 90, 110, 112, 114, 118, 119, 120, 123, 126, 127, 128, 138)]",
+  "index_seconds": 261.8,
+  "total_seconds": 277.0,
+  "records": [
+    {
+      "decision": "Design and development of a new television remote control",
+      "topic": "Product Design",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Create a functional and aesthetically pleasing remote control",
+        "Align with market trends and user expectations"
+      ],
+      "conditions": [
+        "Cost is a significant consideration"
+      ],
+      "dissent": [],
+      "owner": "Project Manager",
+      "approver": "Not specified",
+      "evidence": [
+        {
+          "quote": "The discussions revolve around the design and development of a new television remote control.",
+          "speaker": "Not specified",
+          "supports": "decision"
+        },
+        {
+          "quote": "The Project Manager plays a pivotal role in leading the discussions and collaborating with the Marketing team and the Industrial Designer.",
+          "speaker": "Not specified",
+          "supports": "owner"
+        },
+        {
+          "quote": "The Marketing team provides suggestions for design aspects, materials, and features for the remote control, aiming to create a user-friendly and market-ready design.",
+          "speaker": "Not specified",
+          "supports": "rationale"
+        },
+        {
+          "quote": "Cost is a significant consideration in the project.",
+          "speaker": "Not specified",
+          "supports": "conditions"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision": "Collaboration between the Project Manager, Marketing team, Industrial Designer, and User Interface",
+      "topic": "Collaboration",
+      "status": "decided",
+      "alternatives": [],
+      "rationale": [
+        "Ensure harmonious and intuitive design",
+        "Provide guidance and oversee Industrial Designer's work"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Project Manager",
+      "approver": "Not specified",
+      "evidence": [
+        {
+          "quote": "The Project Manager and Industrial Designer collaborate on the remote control design and marketing strategies.",
+          "speaker": "Not specified",
+          "supports": "decision"
+        },
+        {
+          "quote": "The Project Manager leads discussions, provides guidance, and oversees the Industrial Designer's work.",
+          "speaker": "Not specified",
+          "supports": "owner"
+        },
+        {
+          "quote": "The User Interface provides insights and suggestions related to the user experience and design aesthetics, while also offering audio feedback during meetings.",
+          "speaker": "Not specified",
+          "supports": "rationale"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision": "Material options for the remote control case",
+      "topic": "Material Selection",
+      "status": "discussed",
+      "alternatives": [
+        {
+          "option": "plastic",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "titanium",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Not specified"
+      ],
+      "conditions": [],
+      "dissent": [],
+      "owner": "Project Manager",
+      "approver": "Not specified",
+      "evidence": [
+        {
+          "quote": "The Project Manager discusses material options for the remote control case, including plastic and titanium.",
+          "speaker": "Not specified",
+          "supports": "decision"
+        },
+        {
+          "quote": "The Project Manager discusses material options for the remote control case.",
+          "speaker": "Not specified",
+          "supports": "alternatives"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}

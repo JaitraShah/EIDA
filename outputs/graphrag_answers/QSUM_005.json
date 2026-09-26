@@ -1,0 +1,247 @@
+{
+  "pair_id": "QSUM_005",
+  "query": "What decisions were made and what reasoning was given?",
+  "method": "local",
+  "answer": "The discussions revolve around the development of a new product, primarily a remote control, by a division within the company L_D_C_. The team is considering the incorporation of speech recognition technology into the product, but they are weighing the option to skip or keep it due to the cost of the advanced chip required for the speech recognition technology.\n\nThe Industrial Designer, a key figure in the project, is responsible for designing the user interface for the remote control. They are using various tools such as Smart Boards and a variety of remote controls as references for the design. The Industrial Designer is also considering material options for the remote control, including rubber case and titanium.\n\nThe Marketing department is responsible for promoting the product effectively, driving sales and increasing its visibility in the market. They are considering making the product appealing to a young demographic.\n\nThe Project Manager, leading the discussions, is making decisions based on the cost of the advanced chip, the need for a recharger, and the design of the remote control. The team is also considering the use of solar cells and a kinetic energy source for the remote control, but they decide that batteries would be cheaper and more practical.\n\nThe team is also discussing the design of the remote control, considering making it more modern but still basic, with a focus on the volume and channel buttons. They are also considering the use of scroll wheels for volume control and the possibility of using multiple scroll wheels. However, they decide to use only one scroll wheel for volume control, as scrolling too fast for channels might not be handy.\n\nThe team is yet to decide on the case material for the remote control, with options including plastic, rubber, and titanium. They are also considering making the remote control curved or round, but not in depth. The team is planning to make a decision on these matters in the next meeting.\n\nThe team is also discussing the user interface concept, with the Industrial Designer and User Interface designer working together on prototype drawing on a Smart Board.\n\nThis summary is supported by multiple data references:\n\n- Entities (4, 3, 76, 0, 61, 59, 30, 2, 62)\n- Relationships (42, 91, 95, 116, 41, 90, 94, 114, 89, 93, 115, 43, 35, 172, 119, 127, 124, 125, 126, 11, 5, 10)",
+  "index_seconds": 420.5,
+  "total_seconds": 434.5,
+  "records": [
+    {
+      "decision": "Incorporate speech recognition technology into the new product or skip it due to cost considerations",
+      "topic": "Product Development",
+      "status": "unclear",
+      "alternatives": [
+        {
+          "option": "Incorporate speech recognition technology",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Cost of the advanced chip"
+      ],
+      "conditions": [
+        "Decision to be made in the next meeting"
+      ],
+      "dissent": [
+        "Not specified"
+      ],
+      "owner": "Project Manager",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The team is considering the incorporation of speech recognition technology into the product, but they are weighing the option to skip or keep it due to the cost of the advanced chip required for the speech recognition technology.",
+          "speaker": null,
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision": "Design the user interface for the remote control",
+      "topic": "Product Design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Other design options",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Design of the remote control"
+      ],
+      "conditions": [
+        "Not specified"
+      ],
+      "dissent": [
+        "Not specified"
+      ],
+      "owner": "Industrial Designer",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The Industrial Designer is responsible for designing the user interface for the remote control.",
+          "speaker": null,
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision": "Choose material for the remote control",
+      "topic": "Product Design",
+      "status": "deferred",
+      "alternatives": [
+        {
+          "option": "Rubber case",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "Titanium",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "Plastic",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Not specified"
+      ],
+      "conditions": [
+        "Decision to be made in the next meeting"
+      ],
+      "dissent": [
+        "Not specified"
+      ],
+      "owner": "Not specified",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The team is considering the case material for the remote control, with options including rubber case and titanium.",
+          "speaker": null,
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.8
+    },
+    {
+      "decision": "Choose power source for the remote control",
+      "topic": "Product Design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Solar cells",
+          "rejected": true,
+          "reason": "Batteries would be cheaper and more practical"
+        },
+        {
+          "option": "Kinetic energy source",
+          "rejected": true,
+          "reason": "Batteries would be cheaper and more practical"
+        }
+      ],
+      "rationale": [
+        "Cost and practicality"
+      ],
+      "conditions": [
+        "Not specified"
+      ],
+      "dissent": [
+        "Not specified"
+      ],
+      "owner": "Project Manager",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The team is considering the use of solar cells and a kinetic energy source for the remote control, but they decide that batteries would be cheaper and more practical.",
+          "speaker": null,
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision": "Design the remote control",
+      "topic": "Product Design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "More modern design",
+          "rejected": null,
+          "reason": null
+        },
+        {
+          "option": "Scroll wheels for volume control",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Design of the remote control"
+      ],
+      "conditions": [
+        "Not specified"
+      ],
+      "dissent": [
+        "Not specified"
+      ],
+      "owner": "Not specified",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The team is discussing the design of the remote control, considering making it more modern but still basic, with a focus on the volume and channel buttons. They are also considering the use of scroll wheels for volume control and the possibility of using multiple scroll wheels.",
+          "speaker": null,
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision": "Use one scroll wheel for volume control",
+      "topic": "Product Design",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Multiple scroll wheels",
+          "rejected": true,
+          "reason": "Scrolling too fast for channels might not be handy"
+        }
+      ],
+      "rationale": [
+        "Ease of use"
+      ],
+      "conditions": [
+        "Not specified"
+      ],
+      "dissent": [
+        "Not specified"
+      ],
+      "owner": "Not specified",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "However, they decide to use only one scroll wheel for volume control, as scrolling too fast for channels might not be handy.",
+          "speaker": null,
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    },
+    {
+      "decision": "Promote the product effectively",
+      "topic": "Marketing",
+      "status": "decided",
+      "alternatives": [
+        {
+          "option": "Other marketing strategies",
+          "rejected": null,
+          "reason": null
+        }
+      ],
+      "rationale": [
+        "Make the product appealing to a young demographic"
+      ],
+      "conditions": [
+        "Not specified"
+      ],
+      "dissent": [
+        "Not specified"
+      ],
+      "owner": "Marketing department",
+      "approver": null,
+      "evidence": [
+        {
+          "quote": "The Marketing department is responsible for promoting the product effectively, driving sales and increasing its visibility in the market.",
+          "speaker": null,
+          "supports": "decision"
+        }
+      ],
+      "extraction_confidence": 0.9
+    }
+  ]
+}
