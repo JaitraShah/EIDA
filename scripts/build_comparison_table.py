@@ -36,6 +36,8 @@ FILES = {
     "edia_sem": Path("outputs/task4_extraction_scores_semantic.json"),
     "cot": Path("outputs/cot_ablation_results.json"),
     "multihop": Path("outputs/multihop_retrieval_results.json"),
+    # plain EDIA re-extracted on the same runtime as CoT/GraphRAG (run_cot_ablation.py --no-cot)
+    "edia_rerun": Path("outputs/baseline_rerun_scores.json"),
 }
 
 
@@ -92,6 +94,8 @@ def main(argv=None) -> int:
     args = ap.parse_args(argv)
 
     edia = _edia_row(FILES["edia_lex"], FILES["edia_sem"])
+    # same shape as the CoT results file (lexical/semantic ScoreReport lists)
+    edia_rerun = _cot_row(FILES["edia_rerun"])
     cot = _cot_row(FILES["cot"])
     multihop = _multihop_row(FILES["multihop"])
 
@@ -111,6 +115,9 @@ def main(argv=None) -> int:
         f"| EDIA pipeline | {cell(edia['lex'] if edia else None)} | "
         f"{cell(edia['sem'] if edia else None)} | "
         f"{cell(edia['halluc'] if edia else None)} | Multi-hop across chunks (Table 3) |",
+        *([f"| EDIA pipeline, re-run on the CoT/GraphRAG runtime | {cell(edia_rerun['lex'])} | "
+           f"{cell(edia_rerun['sem'])} | {cell(edia_rerun['halluc'])} | Same method; the runtime "
+           f"change alone moves lexical completeness |"] if edia_rerun else []),
         f"| EDIA + CoT | {cell(cot['lex'] if cot else None)} | "
         f"{cell(cot['sem'] if cot else None)} | "
         f"{cell(cot['halluc'] if cot else None)} | CoT helps reasoning at answer time, not retrieval |",
@@ -128,6 +135,18 @@ def main(argv=None) -> int:
         "",
     ]
 
+    if edia_rerun:
+        lines += [
+            "**Runtimes.** The first EDIA row (Table 2) was extracted on Ollama 0.32.1 / RTX 3050; "
+            "EDIA + CoT, GraphRAG and the EDIA re-run on Ollama 0.34.4 / RTX 3090 (same model and "
+            "settings). Compare CoT and GraphRAG against the **re-run** row: CoT's same-runtime "
+            f"effect is {cot['lex'] - edia_rerun['lex']:+.1%} lexical / "
+            f"{cot['sem'] - edia_rerun['sem']:+.1%} semantic."
+            if cot else
+            "**Runtimes.** The first EDIA row was extracted on Ollama 0.32.1 / RTX 3050; the re-run "
+            "row on Ollama 0.34.4 / RTX 3090.",
+            "",
+        ]
     missing = [k for k, v in [("EDIA baseline", edia), ("CoT ablation", cot),
                               ("multi-hop retrieval", multihop)] if v is None]
     if missing:
