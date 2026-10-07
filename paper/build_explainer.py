@@ -198,7 +198,10 @@ title = doc.add_paragraph(style="Title")
 title.add_run("EDIA, explained")
 sub = doc.add_paragraph(style="Subtitle")
 sub.add_run("What we built, what we found, and why it matters \u2014 in plain language and in technical detail")
-para(f"Project: EDIA (Extraction of Decision Information from Artifacts) \u00b7 Branch: Jaitra \u00b7 "
+para("Jaitra Shah, Manan Mehta, Soham Dwivedi, Aayusman Pati \u00b7 Dept. of Computer Science and "
+     "Business Systems, Mukesh Patel School of Technology Management and Engineering, NMIMS, Mumbai, India",
+     after=4)
+para(f"Project: EDIA (Explainable Decision Intelligence Assistant) \u00b7 Branch: Jaitra \u00b7 "
      f"Status as of {date(2026, 9, 26):%d %B %Y} \u00b7 Companion to the IEEE paper draft (paper/edia_ieee.tex / .docx)",
      after=10)
 
@@ -628,6 +631,6 @@ table(["Term", "In simple terms", "Technically"],
       [3.4, 6.2, 7.0], font=8.5)
 
 doc.core_properties.title = "EDIA, explained"
-doc.core_properties.author = "Jaitra Shah"
+doc.core_properties.author = "Jaitra Shah; Manan Mehta; Soham Dwivedi; Aayusman Pati"
 doc.save(OUT)
 print(f"wrote {OUT}")

@@ -597,7 +597,7 @@ def main() -> int:
         add_runs(p, [(f"[{cite_no[key]}]\t", {})] + ieee_reference(bib[key]), size=8)
 
     doc.core_properties.title = "".join(t for t, _ in inline(title.replace("\\\\", " ")))
-    doc.core_properties.author = "".join(t for t, _ in inline(blocks[0][0])) if blocks else ""
+    doc.core_properties.author = "; ".join("".join(t for t, _ in inline(n)) for n, _ in blocks)
     doc.save(OUT)
     unused = sorted(set(bib) - set(order))
     print(f"wrote {OUT}: {sec_no} sections, {nt} tables, {nf} figure(s), {len(order)} references"
