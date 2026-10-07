@@ -42,7 +42,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 from edia.benchmark.qmsum_ground_truth import GROUND_TRUTH
-from edia.benchmark.score import SemanticMatcher, score_extraction
+from edia.benchmark.score import SOFT_ELEMENT_TYPES, SemanticMatcher, score_extraction, token_f1
 from edia.extraction.schema import Alternative, DecisionRecord, ExtractionResult
 
 DATA = Path("data/qmsum")
@@ -100,10 +100,28 @@ def multihop_extract(retriever: Retriever, decision: str, k: int) -> DecisionRec
     )
 
 
+SOFT = {t.value for t in SOFT_ELEMENT_TYPES}
+
+
 def _completeness(report, exclude_types: set[str] = frozenset()) -> tuple[int, int]:
-    """(matched, total) over report.matches, optionally excluding a gt_type."""
-    kept = [m for m in report.matches if m.gt_type not in exclude_types]
+    """(matched, total) over report.matches, optionally excluding a gt_type.
+
+    Owner/approver are always excluded, exactly as EDIA's completeness excludes them
+    (score.py SOFT_ELEMENT_TYPES); otherwise this baseline is scored on a different
+    denominator from the rows it is compared against."""
+    kept = [m for m in report.matches if m.gt_type not in exclude_types | SOFT]
     return sum(m.matched for m in kept), len(kept)
+
+
+def _retrieval_only(records, truth, sim, threshold) -> tuple[int, int]:
+    """(matched, total) for the non-decision ground truth, matched ONLY against what was
+    retrieved. The true decisions are an input here; letting their text match a gold
+    rationale (which it often resembles) would credit retrieval for its own input."""
+    retrieved = [x for rec in records for t, x in rec.reasoning_elements()
+                 if t.value != "decision" and t.value not in SOFT]
+    gt = [g for t, g in truth.all_elements() if t != "decision" and t not in SOFT]
+    hit = sum(bool(retrieved) and max(sim(x, g) for x in retrieved) >= threshold for g in gt)
+    return hit, len(gt)
 
 
 def main(argv=None) -> int:
@@ -127,11 +145,10 @@ def main(argv=None) -> int:
                                   records=records, merged_across_chunks=False)
 
         lex = score_extraction(result, truth, threshold=args.threshold)
-        sem = score_extraction(result, truth, threshold=args.sem_threshold, semantic=semantic)
         rows.append((truth.pair_id,
                      *_completeness(lex),
-                     *_completeness(lex, exclude_types={"decision"}),
-                     *_completeness(sem, exclude_types={"decision"})))
+                     *_retrieval_only(records, truth, token_f1, args.threshold),
+                     *_retrieval_only(records, truth, semantic.similarity, args.sem_threshold)))
 
     lines = [
         "# Phase 3.3 — multi-hop retrieval baseline",
@@ -140,8 +157,12 @@ def main(argv=None) -> int:
         "- decisions are given as input (the plan's own `multihop_extract(text, decision)` "
         "signature) -- decision recall is 100% by construction and excluded from the fair "
         "comparison column",
-        "- conditions/owner/approver are outside the plan's 3-hop chain (rationale -> "
-        "alternatives -> objections) and are always misses here",
+        "- conditions are outside the plan's 3-hop chain (rationale -> alternatives -> "
+        "objections) and are always misses here",
+        "- owner/approver are excluded from every column, as in EDIA's completeness",
+        "- excl.-decision columns match the gold elements against the RETRIEVED turns only: "
+        "the handed-in decision text often resembles a gold rationale, and crediting that "
+        "would count the method's own input as something it found",
         "",
         "Both matchers are reported, with the same thresholds as the EDIA baseline "
         f"(lexical {args.threshold}, semantic {args.sem_threshold}).",

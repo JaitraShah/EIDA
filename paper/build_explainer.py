@@ -449,11 +449,12 @@ simple_box(
     "needed:",
     "- **\u201cThink step by step\u201d (chain-of-thought):** the AI first writes notes, then fills in the "
     "form. A tiny gain of 2\u20133 more reasons found out of 48, and it produced 50% more records, so part of the "
-    "gain may just be more guesses.",
+    "gain may just be more guesses. Precision confirms it: once the extra output is counted, its F1 "
+    "actually drops (22.0% to 18.3%).",
     "- **GraphRAG** (Microsoft\u2019s knowledge-graph method): much worse, at 4\u201319%. It organises the "
     "meeting around people and things (\u201cthe Project Manager\u201d) rather than decisions and reasons.",
     "- **Multi-hop retrieval** (search for the reason, then use it to search for alternatives, and so on): "
-    "12–27%, even though it was *given* the decisions. The first search already goes wrong, and each step "
+    "about 13% (and 0% under strict word matching), even though it was *given* the decisions. The first search already goes wrong, and each step "
     "compounds the error.",
     "None breaks the ceiling. Each fails for an understandable reason, and it is the same underlying difficulty "
     "each time.")
@@ -463,7 +464,7 @@ table(["Approach", "Completeness (lex)", "Completeness (sem)", "Unsupported quot
        ["EDIA pipeline, re-run", "27.1%", "58.3%", "14.1%", "0.34.4 / RTX 3090"],
        ["EDIA + chain-of-thought", "33.3%", "62.5%", "13.9%", "0.34.4 / RTX 3090"],
        ["GraphRAG (local search)", "4.2%", "14.6\u201318.8%", "\u2013", "0.34.4 / RTX 3090"],
-       ["Multi-hop retrieval", "12.2%", "26.8%", "0 (retrieves only)", "none (TF-IDF, no LLM)"]],
+       ["Multi-hop retrieval", "0.0%", "12.8%", "0 (retrieves only)", "none (TF-IDF, no LLM)"]],
       [4.6, 2.6, 2.8, 2.8, 3.8], align=["l", "r", "r", "r", "l"])
 bullets([
     "**Chain-of-thought** is implemented as two calls per chunk: an unconstrained call writes notes, then the "

@@ -417,7 +417,7 @@ EDIA pipeline & 33.3\% & 58.3\% & 16.4\% & Multi-hop reasoning across chunks \\
 EDIA pipeline, same runtime$^\dagger$ & 27.1\% & 58.3\% & 14.1\% & (runtime change alone moves lexical completeness) \\
 EDIA + chain-of-thought$^\dagger$ & 33.3\% & 62.5\% & 13.9\% & Better reasoning over content in view, not retrieval \\
 GraphRAG (local search)$^\dagger$ & 4.2\% & 14.6--18.8\% & -- & Entity graph built for structured text, not conversation \\
-Multi-hop retrieval & 12.2\% & 26.8\% & 0 (retrieves only) & Chain unknown in advance; hop 1 fails first \\
+Multi-hop retrieval & 0.0\% & 12.8\% & 0 (retrieves only) & Chain unknown in advance; hop 1 fails first \\
 \bottomrule
 \end{tabular}
 \end{table*}
@@ -432,9 +432,12 @@ call cannot emit reasoning tokens). Against the plain extractor run on the same
 runtime, CoT raises completeness by 6.2 points lexical and 4.2 points semantic,
 i.e.\ three and two of 48 elements, with unchanged hallucination (13.9\% vs.\
 14.1\%). It also emits 50\% more records (114 vs.\ 76), so part of the gain may
-reflect more attempts rather than better reasoning. The effect is small, as
-expected if the bottleneck is locating scattered content rather than reasoning
-about content already in view.
+reflect more attempts rather than better reasoning. Precision bears this out
+(Table~\ref{tab:prf}): against the same-runtime baseline, CoT's semantic
+precision falls from 13.6\% to 10.7\% and its F1 from 22.0\% to 18.3\%, so the
+recall gain does not survive once the extra output is counted. The effect is
+small in any case, as expected if the bottleneck is locating scattered content
+rather than reasoning about content already in view.
 
 \textbf{GraphRAG.} We run Microsoft GraphRAG~\cite{edge2024graphrag} end-to-end
 with its default configuration and prompts, indexing each meeting and issuing a
@@ -451,10 +454,49 @@ graph built from disfluent, multi-speaker speech.
 \textbf{Multi-hop retrieval.} Following a three-hop chain (rationale, then
 alternatives conditioned on the rationale, then objections) with TF-IDF
 retrieval over transcript turns, and given the true decisions as input, the
-method recovers 12.2\% (lexical) and 26.8\% (semantic) of the non-decision
-elements. The first hop retrieves by
-similarity to the decision text before anything about \emph{why} is known, so it
-often returns adjacent-topic turns, and later hops compound the error.
+method recovers none of the non-decision elements under lexical matching and
+12.8\% under semantic matching. We score only what it retrieves: the decision
+text it is handed often resembles the gold rationale, and counting those matches
+would credit the method with its own input (doing so would report 12.8\% and
+28.2\%). Lexical matching gives zero because a retrieved turn is long and the
+gold element short, so their token overlap rarely clears the threshold. The first
+hop retrieves by similarity to the decision text before anything about
+\emph{why} is known, so it often returns adjacent-topic turns, and later hops
+compound the error.
+
+\begin{table}[t]
+\caption{Precision, recall and F1 of the extracted elements on the five
+hand-labelled meetings (lexical / semantic matching, same thresholds as
+completeness; recall is completeness). Precision is a lower bound: the hand labels
+are not exhaustive. $^\dagger$ as in Table~\ref{tab:compare}.}
+\label{tab:prf}
+\centering
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Approach & Elements & P & R & F1 \\
+\midrule
+EDIA & 398 & 4.8 / 13.8 & 33.3 / 58.3 & 8.4 / \textbf{22.3} \\
+EDIA, same runtime$^\dagger$ & 346 & 4.9 / 13.6 & 27.1 / 58.3 & 8.3 / 22.0 \\
+EDIA + CoT$^\dagger$ & 438 & 3.2 / 10.7 & 33.3 / 62.5 & 5.8 / 18.3 \\
+GraphRAG$^\dagger$ & 52 & 3.8 / 13.5 & 4.2 / 14.6 & 4.0 / 14.0 \\
+Multi-hop retrieval & 27 & 0.0 / 40.7 & 0.0 / 12.8 & 0.0 / 19.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Precision and F1.} Completeness alone rewards emitting more, so
+Table~\ref{tab:prf} adds precision: the share of extracted elements that match
+some hand-labelled element at the completeness threshold. EDIA has the highest
+semantic F1 (22.3\%). Absolute precision is low for every generative method
+because the gold standard lists only the 48 key reasoning elements, while EDIA
+emits 398 elements. Many are the same element found again in another chunk
+(counting each gold element at most once lowers EDIA's semantic precision to
+7.0\%), and many are plausible reasoning the annotators did not record, which
+this measure scores as wrong. Precision should therefore be compared across
+methods rather than read as an error rate. Multi-hop retrieval's high semantic
+precision reflects its small output (27 elements, copied verbatim from the
+transcript), not better recovery: its recall is 12.8\%.
 
 \textbf{Runtime sensitivity.} Replaying the plain extractor on a newer inference
 runtime, with identical weights and deterministic settings, changed lexical

@@ -14,7 +14,8 @@ same units, matchers and thresholds as the completeness scores (lexical token-F1
 - Recall = completeness, recomputed here and checked against score_extraction, so
   every approach is scored on exactly the data its own script scored.
 - Multi-hop retrieval is handed the true decisions, so decisions are excluded from
-  both its predictions and its ground truth (same as its completeness column).
+  both its predictions and its ground truth, and gold is matched against what it
+  retrieved only (same as its completeness column).
 
     python scripts/extraction_precision.py
 """
@@ -71,7 +72,7 @@ APPROACHES = [
     ("EDIA + chain-of-thought", lambda p: _cached("extractions_cot", p), set(), (33.3, 62.5)),
     ("GraphRAG (support filter on)", lambda p: _graphrag(p, True), set(), (4.2, 14.6)),
     ("GraphRAG (support filter off)", lambda p: _graphrag(p, False), set(), (4.2, 18.8)),
-    ("Multi-hop retrieval (excl. decisions)", _multihop, {"decision"}, (12.2, 26.8)),
+    ("Multi-hop retrieval (excl. decisions)", _multihop, {"decision"}, (0.0, 12.8)),
 ]
 
 
@@ -84,11 +85,16 @@ def score(result, truth, excluded, sim, threshold, semantic):
     pred = [(t.value, x) for rec in result.records for t, x in rec.reasoning_elements()
             if t.value not in SOFT and t.value not in excluded]
 
-    # recall exactly as score_extraction computes it, then cross-checked against it
-    rep = score_extraction(result, truth, threshold=threshold, semantic=semantic)
-    kept = [m for m in rep.matches if m.gt_type not in SOFT and m.gt_type not in excluded]
-    assert len(kept) == len(gt)
-    gt_hit = sum(m.matched for m in kept)
+    if excluded:
+        # multi-hop: gold matched against the retrieved items only (its decisions are an
+        # input), exactly as multihop_retrieval.py scores its fair column
+        gt_hit = sum(bool(pred) and max(sim(x, g) for _, x in pred) >= threshold for _, g in gt)
+    else:
+        # recall exactly as score_extraction computes it
+        rep = score_extraction(result, truth, threshold=threshold, semantic=semantic)
+        kept = [m for m in rep.matches if m.gt_type not in SOFT]
+        assert len(kept) == len(gt)
+        gt_hit = sum(m.matched for m in kept)
 
     correct = 0
     for _, x in pred:

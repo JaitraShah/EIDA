@@ -1,0 +1,140 @@
+[
+  {
+    "approach": "EDIA pipeline",
+    "lex": {
+      "pred": 398,
+      "correct": 19,
+      "gt": 48,
+      "gt_hit": 16,
+      "precision": 0.04773869346733668,
+      "precision_redundancy_penalised": 0.04020100502512563,
+      "recall": 0.3333333333333333,
+      "f1": 0.08351648351648351
+    },
+    "sem": {
+      "pred": 398,
+      "correct": 55,
+      "gt": 48,
+      "gt_hit": 28,
+      "precision": 0.13819095477386933,
+      "precision_redundancy_penalised": 0.07035175879396985,
+      "recall": 0.5833333333333334,
+      "f1": 0.22344747533372022
+    }
+  },
+  {
+    "approach": "EDIA pipeline, same runtime",
+    "lex": {
+      "pred": 346,
+      "correct": 17,
+      "gt": 48,
+      "gt_hit": 13,
+      "precision": 0.049132947976878616,
+      "precision_redundancy_penalised": 0.03757225433526012,
+      "recall": 0.2708333333333333,
+      "f1": 0.08317651486639067
+    },
+    "sem": {
+      "pred": 346,
+      "correct": 47,
+      "gt": 48,
+      "gt_hit": 28,
+      "precision": 0.13583815028901733,
+      "precision_redundancy_penalised": 0.08092485549132948,
+      "recall": 0.5833333333333334,
+      "f1": 0.2203616878767582
+    }
+  },
+  {
+    "approach": "EDIA + chain-of-thought",
+    "lex": {
+      "pred": 438,
+      "correct": 14,
+      "gt": 48,
+      "gt_hit": 16,
+      "precision": 0.0319634703196347,
+      "precision_redundancy_penalised": 0.0365296803652968,
+      "recall": 0.3333333333333333,
+      "f1": 0.058333333333333334
+    },
+    "sem": {
+      "pred": 438,
+      "correct": 47,
+      "gt": 48,
+      "gt_hit": 30,
+      "precision": 0.10730593607305935,
+      "precision_redundancy_penalised": 0.0684931506849315,
+      "recall": 0.625,
+      "f1": 0.18316445830085737
+    }
+  },
+  {
+    "approach": "GraphRAG (support filter on)",
+    "lex": {
+      "pred": 52,
+      "correct": 2,
+      "gt": 48,
+      "gt_hit": 2,
+      "precision": 0.038461538461538464,
+      "precision_redundancy_penalised": 0.038461538461538464,
+      "recall": 0.041666666666666664,
+      "f1": 0.04
+    },
+    "sem": {
+      "pred": 52,
+      "correct": 7,
+      "gt": 48,
+      "gt_hit": 7,
+      "precision": 0.1346153846153846,
+      "precision_redundancy_penalised": 0.1346153846153846,
+      "recall": 0.14583333333333334,
+      "f1": 0.13999999999999999
+    }
+  },
+  {
+    "approach": "GraphRAG (support filter off)",
+    "lex": {
+      "pred": 75,
+      "correct": 2,
+      "gt": 48,
+      "gt_hit": 2,
+      "precision": 0.02666666666666667,
+      "precision_redundancy_penalised": 0.02666666666666667,
+      "recall": 0.041666666666666664,
+      "f1": 0.032520325203252036
+    },
+    "sem": {
+      "pred": 75,
+      "correct": 9,
+      "gt": 48,
+      "gt_hit": 9,
+      "precision": 0.12,
+      "precision_redundancy_penalised": 0.12,
+      "recall": 0.1875,
+      "f1": 0.14634146341463414
+    }
+  },
+  {
+    "approach": "Multi-hop retrieval (excl. decisions)",
+    "lex": {
+      "pred": 27,
+      "correct": 0,
+      "gt": 39,
+      "gt_hit": 0,
+      "precision": 0.0,
+      "precision_redundancy_penalised": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "sem": {
+      "pred": 27,
+      "correct": 11,
+      "gt": 39,
+      "gt_hit": 5,
+      "precision": 0.4074074074074074,
+      "precision_redundancy_penalised": 0.18518518518518517,
+      "recall": 0.1282051282051282,
+      "f1": 0.19503546099290775
+    }
+  }
+]
