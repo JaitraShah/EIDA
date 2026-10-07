@@ -6,6 +6,7 @@ If a source file changes, update the paper from it -- never the other way round.
 |---|---|---|
 | Abstract, Sec. IV, Table I | 371 pairs, 6,647 elements; tiers 5/50/0.76, 227/4,930/0.93, 139/1,667/0.59 | `outputs/task5_benchmark_results.md` (Dataset), `outputs/gap_eval_results.md` header |
 | Sec. IV corpus domains | Academic 59, Committee 36, Product 132 | `python -m edia.benchmark.qmsum_corpus --stats` |
+| Sec. IV synthetic scope | 139 pairs, 79 topics = 8 domains x 10 archetypes (of the 120-topic, 12-domain plan) | topic index in each `data/benchmark/pairs/SYN_<topic>_<n>.json` id, mapped via `edia/benchmark/topics.py` TOPICS (indices 0-78) |
 | Table II upper half | NLI/lexical gold & synthetic; lexical corpus | `outputs/gap_eval_results.md` (by_source), `outputs/task5_benchmark_results.md` Table 1 |
 | Table II lower half | same-sample n=200: 0.611/0.432, 0.728/0.637, 0.492/0.596, 0.521/0.624 | `outputs/paper_detector_checks.md` (`scripts/paper_detector_checks.py`) |
 | Sec. V NLI by label | 0.916 / 0.974 (omitted), 0.366 / 0.640 (paraphrased), 0.292 / 0.453 (verbatim) | `outputs/paper_detector_checks.md` -- NOT the pooled by_in_document table (its omitted row is 82% circular) |

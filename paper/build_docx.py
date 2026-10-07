@@ -446,6 +446,9 @@ def render_figure(doc, block: str, labels: dict):
 # ----------------------------------------------------------------------------- main
 def main() -> int:
     tex = strip_comments(TEX.read_text(encoding="utf-8"))
+    # expand argument-less \newcommand macros (e.g. \EDIAfull) as LaTeX would
+    for name, val in re.findall(r"\\newcommand\{\\(\w+)\}\{([^{}]*)\}", tex):
+        tex = re.sub(r"\\" + name + r"(?![A-Za-z])(\{\})?", lambda _m, v=val: v, tex)
     bib = parse_bib(BIB.read_text(encoding="utf-8"))
     body = tex.split("\\maketitle", 1)[1].split("\\bibliographystyle", 1)[0]
     for front in ("abstract", "IEEEkeywords"):
@@ -467,6 +470,16 @@ def main() -> int:
             labels[lab] = ROMAN[nt]; nt += 1
         else:
             nf += 1; labels[lab] = str(nf)
+
+    # section labels: a \label directly after a numbered \section gets its Roman number
+    n_sec = 0
+    for m in re.finditer(r"\\section(\*?)\s*\{[^}]*\}(\s*\\label\{([^}]+)\})?", body):
+        if m.group(1):
+            continue
+        if m.group(3):
+            labels[m.group(3)] = ROMAN[n_sec]
+        n_sec += 1
+    body = re.sub(r"(\\section\s*\{[^}]*\})\s*\\label\{[^}]+\}", r"\1", body)
 
     def resolve(s: str) -> str:
         s = re.sub(r"\\cite\{([^}]+)\}",

@@ -38,8 +38,9 @@ detector is scored on.
     **0.478**, present recall 0.20, **balanced accuracy 0.60** — 24 of 46 silver gaps
     were judged present (23 paraphrases). The silver labels substantially over-call
     gaps; treat corpus gap rates as upper bounds.
-- **Synthetic scope:** 12 organisational domains × 10 decision archetypes = 120
-  topics × 17 variants. Per-pair scenario colour + temperature jitter (0.7–0.95)
+- **Synthetic scope:** planned 12 organisational domains × 10 decision archetypes = 120
+  topics × 17 variants; the 139 generated pairs cover topics 0–78 = **8 domains** × 10
+  archetypes (generation stopped there). Per-pair scenario colour + temperature jitter (0.7–0.95)
   to resist mode collapse; near-duplicates flagged post-hoc
   (`scripts/dedupe_synthetic.py`).
 
