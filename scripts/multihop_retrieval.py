@@ -42,7 +42,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 from edia.benchmark.qmsum_ground_truth import GROUND_TRUTH
-from edia.benchmark.score import score_extraction
+from edia.benchmark.score import SemanticMatcher, score_extraction
 from edia.extraction.schema import Alternative, DecisionRecord, ExtractionResult
 
 DATA = Path("data/qmsum")
@@ -110,9 +110,12 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--top-k", type=int, default=3, help="turns retrieved per hop")
-    ap.add_argument("--threshold", type=float, default=0.45)
+    ap.add_argument("--threshold", type=float, default=0.45, help="lexical match threshold")
+    ap.add_argument("--sem-threshold", type=float, default=0.55,
+                    help="semantic match threshold (same as the EDIA semantic baseline)")
     args = ap.parse_args(argv)
 
+    semantic = SemanticMatcher()
     rows = []
     for truth in GROUND_TRUTH:
         turns = load_turns(truth.pair_id)
@@ -123,10 +126,12 @@ def main(argv=None) -> int:
         result = ExtractionResult(source_id=truth.pair_id, model_name="tfidf-multihop",
                                   records=records, merged_across_chunks=False)
 
-        report = score_extraction(result, truth, threshold=args.threshold)
-        m_all, t_all = _completeness(report)
-        m_ex, t_ex = _completeness(report, exclude_types={"decision"})
-        rows.append((truth.pair_id, m_all, t_all, m_ex, t_ex))
+        lex = score_extraction(result, truth, threshold=args.threshold)
+        sem = score_extraction(result, truth, threshold=args.sem_threshold, semantic=semantic)
+        rows.append((truth.pair_id,
+                     *_completeness(lex),
+                     *_completeness(lex, exclude_types={"decision"}),
+                     *_completeness(sem, exclude_types={"decision"})))
 
     lines = [
         "# Phase 3.3 — multi-hop retrieval baseline",
@@ -138,44 +143,46 @@ def main(argv=None) -> int:
         "- conditions/owner/approver are outside the plan's 3-hop chain (rationale -> "
         "alternatives -> objections) and are always misses here",
         "",
-        "| pair | completeness (incl. seeded decision) | completeness (excl. decision, fair vs EDIA) |",
-        "|---|--:|--:|",
+        "Both matchers are reported, with the same thresholds as the EDIA baseline "
+        f"(lexical {args.threshold}, semantic {args.sem_threshold}).",
+        "",
+        "| pair | lexical, incl. seeded decision | lexical, excl. decision | semantic, excl. decision |",
+        "|---|--:|--:|--:|",
     ]
-    tot_m_all = tot_t_all = tot_m_ex = tot_t_ex = 0
-    for pid, m_all, t_all, m_ex, t_ex in rows:
-        tot_m_all += m_all; tot_t_all += t_all; tot_m_ex += m_ex; tot_t_ex += t_ex
-        c_all = m_all / t_all if t_all else 0.0
-        c_ex = m_ex / t_ex if t_ex else 0.0
-        lines.append(f"| {pid} | {c_all:.3f} ({m_all}/{t_all}) | {c_ex:.3f} ({m_ex}/{t_ex}) |")
-    c_all_tot = tot_m_all / tot_t_all if tot_t_all else 0.0
-    c_ex_tot = tot_m_ex / tot_t_ex if tot_t_ex else 0.0
-    lines.append(f"| **total** | **{c_all_tot:.3f}** ({tot_m_all}/{tot_t_all}) | "
-                 f"**{c_ex_tot:.3f}** ({tot_m_ex}/{tot_t_ex}) |")
+    tot = [0] * 6
+    for pid, *vals in rows:
+        tot = [a + b for a, b in zip(tot, vals)]
+        cells = [f"{m / n:.3f} ({m}/{n})" if n else "n/a" for m, n in zip(vals[::2], vals[1::2])]
+        lines.append(f"| {pid} | " + " | ".join(cells) + " |")
+    c_all, c_lex, c_sem = (m / n if n else 0.0 for m, n in zip(tot[::2], tot[1::2]))
+    lines.append(f"| **total** | **{c_all:.3f}** ({tot[0]}/{tot[1]}) | **{c_lex:.3f}** "
+                 f"({tot[2]}/{tot[3]}) | **{c_sem:.3f}** ({tot[4]}/{tot[5]}) |")
     lines += [
         "",
         "## Reading",
         "",
-        f"**Use {c_ex_tot:.1%} for Table 4** (the EDIA pipeline column also excludes "
-        "nothing, but must discover its decisions -- this baseline is handed them, so "
-        "comparing the seeded number would flatter multi-hop retrieval on the one thing "
-        "it was not asked to do).",
+        f"**Use the excl.-decision columns for Table 4: {c_lex:.1%} lexical / {c_sem:.1%} "
+        "semantic.** This baseline is handed its decisions, so the seeded column would "
+        "flatter it on the one thing it was not asked to do.",
         "",
         f"Against EDIA's semantic-scored {_edia_baseline()}, multi-hop retrieval's "
-        f"{c_ex_tot:.1%} is the failure mode the plan predicted: rationale is retrieved "
-        "by similarity to the decision text alone, before anything about *why* is known, "
-        "so hop 1 frequently returns adjacent-topic turns rather than the actual "
+        f"{c_sem:.1%} semantic is the failure mode the plan predicted: rationale is "
+        "retrieved by similarity to the decision text alone, before anything about *why* "
+        "is known, so hop 1 frequently returns adjacent-topic turns rather than the actual "
         "reasoning -- and hops 2-3 compound that error since they query using hop 1's "
         "(possibly wrong) output.",
     ]
 
     REPORT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
     REPORT_JSON.write_text(json.dumps({
-        "top_k": args.top_k, "threshold": args.threshold,
-        "rows": [{"pair_id": p, "matched_incl": ma, "total_incl": ta,
-                  "matched_excl": me, "total_excl": te}
-                 for p, ma, ta, me, te in rows],
-        "completeness_incl_decision": c_all_tot,
-        "completeness_excl_decision": c_ex_tot,
+        "top_k": args.top_k, "threshold": args.threshold, "sem_threshold": args.sem_threshold,
+        "rows": [{"pair_id": p, "matched_incl": a, "total_incl": b,
+                  "matched_excl_lex": c, "total_excl_lex": d,
+                  "matched_excl_sem": e, "total_excl_sem": f}
+                 for p, a, b, c, d, e, f in rows],
+        "completeness_incl_decision": c_all,
+        "completeness_excl_decision_lex": c_lex,
+        "completeness_excl_decision_sem": c_sem,
     }, indent=2), encoding="utf-8")
     print("\n".join(lines))
     print(f"\nwrote {REPORT_MD} and {REPORT_JSON}")

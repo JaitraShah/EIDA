@@ -417,7 +417,7 @@ EDIA pipeline & 33.3\% & 58.3\% & 16.4\% & Multi-hop reasoning across chunks \\
 EDIA pipeline, same runtime$^\dagger$ & 27.1\% & 58.3\% & 14.1\% & (runtime change alone moves lexical completeness) \\
 EDIA + chain-of-thought$^\dagger$ & 33.3\% & 62.5\% & 13.9\% & Better reasoning over content in view, not retrieval \\
 GraphRAG (local search)$^\dagger$ & 4.2\% & 14.6--18.8\% & -- & Entity graph built for structured text, not conversation \\
-Multi-hop retrieval & -- & 12.2\% & 0 (retrieves only) & Chain unknown in advance; hop 1 fails first \\
+Multi-hop retrieval & 12.2\% & 26.8\% & 0 (retrieves only) & Chain unknown in advance; hop 1 fails first \\
 \bottomrule
 \end{tabular}
 \end{table*}
@@ -451,7 +451,8 @@ graph built from disfluent, multi-speaker speech.
 \textbf{Multi-hop retrieval.} Following a three-hop chain (rationale, then
 alternatives conditioned on the rationale, then objections) with TF-IDF
 retrieval over transcript turns, and given the true decisions as input, the
-method recovers 12.2\% of the non-decision elements. The first hop retrieves by
+method recovers 12.2\% (lexical) and 26.8\% (semantic) of the non-decision
+elements. The first hop retrieves by
 similarity to the decision text before anything about \emph{why} is known, so it
 often returns adjacent-topic turns, and later hops compound the error.
 

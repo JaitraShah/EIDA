@@ -23,7 +23,7 @@ If a source file changes, update the paper from it -- never the other way round.
 | Table VI, EDIA rows | 33.3/58.3/16.4 and same-runtime 27.1/58.3/14.1 | `outputs/comparative_analysis.md`, `outputs/baseline_rerun_scores.md` |
 | Table VI, CoT | 33.3/62.5/13.9; +6.2/+4.2 same runtime; 114 vs 76 records | `outputs/cot_ablation_results.md`, `SESSION_LOG.md` (5.1 row) |
 | Table VI, GraphRAG | 4.2 / 14.6 (18.8 without support filter) | `outputs/graphrag_results.md` |
-| Table VI, multi-hop | 12.2% (5/41) | `outputs/multihop_retrieval_results.md` |
+| Table VI, Sec. VII multi-hop | 12.2% lexical (5/41), 26.8% semantic (11/41) | `outputs/multihop_retrieval_results.md` (thresholds 0.45 / 0.55, same as EDIA) |
 | Sec. VII runtime | -6.2 lexical, 0.0 semantic | `outputs/baseline_rerun_scores.md` |
 | Abstract, Sec. IV, Sec. VIII spot-check | n=52 (3 pairs: ACA_TR_002, ACA_TR_009, CMT_TR_007), 1 human annotator (jaitra), blind; gap P 0.478, R 1.0; present R 0.20; bal acc 0.60; 24 disagreements (23 paraphrased, 19 in CMT_TR_007); "about half" = 24/46 silver gaps | `outputs/qmsum_spotcheck_mini_report.json` (`scripts/spotcheck_report.py --dir data/benchmark/spotcheck_mini`; the script writes `qmsum_spotcheck_report.json` -- copy it to the `_mini_` name and restore the original). 4th pair QMS_PRD_TR_089 not annotated |
 

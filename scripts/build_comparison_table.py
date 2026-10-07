@@ -80,7 +80,8 @@ def _multihop_row(path: Path) -> dict | None:
     if not path.exists():
         return None
     d = json.loads(path.read_text(encoding="utf-8"))
-    return {"completeness": d["completeness_excl_decision"]}
+    return {"lex": d["completeness_excl_decision_lex"],
+            "sem": d["completeness_excl_decision_sem"]}
 
 
 def main(argv=None) -> int:
@@ -129,7 +130,8 @@ def main(argv=None) -> int:
            "cited-argument fallback (external GraphRAG benchmarks report ~13% on "
            "conversational tasks)")
         + " |",
-        f"| Multi-hop retrieval | — | {cell(multihop['completeness'] if multihop else None)} "
+        f"| Multi-hop retrieval | {cell(multihop['lex'] if multihop else None)} | "
+        f"{cell(multihop['sem'] if multihop else None)} "
         f"| 0 (retrieves, does not generate) | Chain unknown in advance -- hop 1 fails "
         f"before hop 2 can compound it |",
         "",
