@@ -7,10 +7,10 @@
   from the .tex** by `build_docx.py` (edit the .tex, then rebuild; never edit the .docx by hand).
 - `fig_pipeline.png` -- Fig. 1, drawn by `make_figure.py`; used by both the .tex and the .docx.
 
-- `EDIA_explained.docx` -- companion explainer: every part of the project in plain language
-  ("In simple terms" boxes) and technical detail, incl. the audit trail of problems fixed and a
-  glossary. Built by `build_explainer.py` (numbers are hand-copied from the same sources as the
-  paper; if a result changes, update both).
+- `EDIA_explained.docx` -- companion explainer for teammates: the paper section by section, each
+  part in plain language ("In simple terms" boxes) and technical detail, plus likely questions
+  with answers, a map of the paper's tables and a glossary. Built by `build_explainer.py`
+  (numbers hand-copied from the paper; if a result changes, update both).
 
 ## Rebuild the Word versions
 
@@ -41,8 +41,6 @@ resolves); Word version is 5 pages.
 Still yours to do:
 - [ ] Add the four e-mail addresses -- the only remaining red `[TODO: email]`
       markers (author block at the top of `edia_ieee.tex`), then rebuild the .docx.
-- [ ] Confirm the expansion of EDIA (Explainable Decision Intelligence Assistant
-      vs. Enterprise Decision Intelligent Agent) -- nothing in the repo records it.
 - [ ] Compile once on Overleaf and check the page count against the venue limit
       (the .docx is 5 pages; IEEE conferences are usually 6).
 - [ ] If the venue is double-blind, remove the author block and the NMIMS

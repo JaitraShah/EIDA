@@ -1,15 +1,16 @@
-"""Build paper/EDIA_explained.docx -- the whole project explained in plain language AND
-technical detail (companion to the IEEE paper; for supervisors, reviewers, teammates).
+"""Build paper/EDIA_explained.docx -- the paper explained section by section, in plain
+language AND technical detail, so that every teammate can understand and defend it.
 
-    .venv\\Scripts\\python.exe paper/build_explainer.py
+    python paper/build_explainer.py
 
-Every number here comes from the same sources as the paper (see paper/NUMBERS.md).
+Every number here is the paper's own (paper/edia_ieee.tex; sources in paper/NUMBERS.md).
+If a result in the paper changes, update it here too.
 """
 
 from __future__ import annotations
 
+import re
 import sys
-from datetime import date
 from pathlib import Path
 
 from docx import Document
@@ -17,7 +18,7 @@ from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
-from docx.shared import Cm, Inches, Pt, RGBColor
+from docx.shared import Cm, Pt, RGBColor
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
@@ -29,6 +30,11 @@ BODY_FONT = "Calibri"
 SIMPLE_FILL = "EAF2FB"       # light blue: "In simple terms" boxes
 HEAD_FILL = "D9E2F3"         # table header rows
 ACCENT = RGBColor(0x1F, 0x3A, 0x5F)
+AUTHORS = "Jaitra Shah, Manan Mehta, Soham Dwivedi, Aayusman Pati"
+AFFIL = ("Dept. of Computer Science and Business Systems, Mukesh Patel School of Technology "
+         "Management and Engineering, NMIMS, Mumbai, India")
+PAPER_TITLE = ("Where Meeting Reasoning Gets Lost: A Feasibility Study of Decision-Context Gap "
+               "Detection in Enterprise Meetings")
 
 doc = Document()
 
@@ -51,11 +57,9 @@ def setup():
         st.paragraph_format.space_before = Pt(14 if name == "Heading 1" else 10)
         st.paragraph_format.space_after = Pt(4)
         st.paragraph_format.keep_with_next = True
-    # page number in the footer: "Page N"
-    fp = sec.footer.paragraphs[0]
+    fp = sec.footer.paragraphs[0]                                # footer: "Page N"
     fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = fp.add_run("Page ")
-    run.font.size = Pt(9)
+    fp.add_run("Page ").font.size = Pt(9)
     for kind, text in (("begin", None), (None, " PAGE "), ("end", None)):
         r = fp.add_run()
         r.font.size = Pt(9)
@@ -72,7 +76,6 @@ def setup():
 
 def rich(p, text: str):
     """**bold** and *italic* markup inside a string."""
-    import re
     for part in re.split(r"(\*\*[^*]+\*\*|\*[^*]+\*)", text):
         if not part:
             continue
@@ -110,8 +113,8 @@ def shade(cell, fill):
     insert_ordered(cell._tc.get_or_add_tcPr(), shd, TCPR_ORDER)
 
 
-def simple_box(*paragraphs: str):
-    """Shaded 'In simple terms' call-out (one-cell table)."""
+def simple_box(*paragraphs: str, title: str = "In simple terms"):
+    """Shaded call-out (one-cell table). Lines starting with '- ' become bullets."""
     t = doc.add_table(rows=1, cols=1)
     t.alignment = WD_TABLE_ALIGNMENT.CENTER
     cell = t.rows[0].cells[0]
@@ -131,7 +134,7 @@ def simple_box(*paragraphs: str):
         el = OxmlElement(f"w:{edge}"); el.set(qn("w:w"), str(v)); el.set(qn("w:type"), "dxa"); mar.append(el)
     insert_ordered(t._tbl.tblPr, mar, TBLPR_ORDER)
     head = cell.paragraphs[0]
-    r = head.add_run("In simple terms")
+    r = head.add_run(title)
     r.bold = True
     r.font.color.rgb = RGBColor(0x2E, 0x75, 0xB6)
     head.paragraph_format.space_after = Pt(3)
@@ -148,9 +151,9 @@ def simple_box(*paragraphs: str):
     doc.add_paragraph().paragraph_format.space_after = Pt(2)
 
 
-def technical():
+def technical(label: str = "Technical detail"):
     p = doc.add_paragraph()
-    r = p.add_run("Technical detail")
+    r = p.add_run(label)
     r.bold = True
     r.font.color.rgb = ACCENT
     p.paragraph_format.space_after = Pt(2)
@@ -191,444 +194,534 @@ def caption(text):
         r.italic = True
 
 
+def qa(question: str, answer: str):
+    p = para(f"**Q. {question}**", after=1)
+    p.paragraph_format.keep_with_next = True
+    para(answer, after=7)
+
+
 # ----------------------------------------------------------------------------- content
 setup()
 
 title = doc.add_paragraph(style="Title")
 title.add_run("EDIA, explained")
 sub = doc.add_paragraph(style="Subtitle")
-sub.add_run("What we built, what we found, and why it matters \u2014 in plain language and in technical detail")
-para("Jaitra Shah, Manan Mehta, Soham Dwivedi, Aayusman Pati \u00b7 Dept. of Computer Science and "
-     "Business Systems, Mukesh Patel School of Technology Management and Engineering, NMIMS, Mumbai, India",
-     after=4)
-para(f"Project: EDIA (Explainable Decision Intelligence Assistant) \u00b7 Branch: Jaitra \u00b7 "
-     f"Status as of {date(2026, 9, 26):%d %B %Y} \u00b7 Companion to the IEEE paper draft (paper/edia_ieee.tex / .docx)",
-     after=10)
+sub.add_run("Understanding our paper, section by section, in simple terms and in technical detail")
+para(f"**Paper:** {PAPER_TITLE}", after=2)
+para(f"**Authors:** {AUTHORS} · {AFFIL}", after=2)
+para("**EDIA** stands for **Explainable Decision Intelligence Assistant**: a system that reads a "
+     "meeting and explains what was decided and why.", after=10)
 
+# 0 -------------------------------------------------------------------------------------------
 doc.add_heading("How to read this document", level=1)
-para("Every section has two layers. The shaded **In simple terms** box explains the idea without jargon; "
-     "anyone can read just those boxes and follow the whole story. The **Technical detail** that follows "
-     "gives the exact methods, settings and numbers, as a reviewer or supervisor would need them. A glossary "
-     "at the end defines every technical term. All numbers match the paper and are traced to their source "
-     "files in paper/NUMBERS.md.")
-para("**Contents.** 1 The problem \u00b7 2 The data \u00b7 3 How EDIA works \u00b7 4 How we measure \u00b7 "
-     "5 Finding: detecting what is missing \u00b7 6 Finding: the human check \u00b7 7 Finding: the extraction "
-     "ceiling \u00b7 8 Finding: does the AI make things up? \u00b7 9 Finding: do other methods do better? \u00b7 "
-     "10 The machine change \u00b7 11 Problems found and fixed \u00b7 12 What the results do not show \u00b7 "
-     "13 What would do better \u00b7 14 Where everything is \u00b7 15 Glossary")
+para("Every section has two layers. The shaded **In simple terms** box explains the idea with no "
+     "background needed. The **Technical detail** that follows is what you need to answer an examiner or "
+     "a reviewer. Read only the boxes for a 15-minute overview; read everything to be able to defend "
+     "the paper. Section numbers here follow the paper's own order, and Section 12 maps every table "
+     "in the paper to the place it is explained.")
 
-doc.add_heading("The headline, in one paragraph", level=2)
+doc.add_heading("The paper in one paragraph", level=2)
 simple_box(
-    "Meetings produce decisions, but the *reasons* behind them (the options rejected, the worries raised, the "
-    "conditions attached) mostly never reach the written minutes. We built a system that tries to find those "
-    "reasons in a meeting transcript and to spot which ones the minutes left out. It works only partly: it "
-    "finds roughly **a third to a half** of the reasons a person finds. The ones it misses are mostly "
-    "reasons spread across distant parts of the meeting or never said outright, and three popular alternative "
-    "methods do not fix that. So the limit seems to be a real, current gap in what AI can do, not a bug.")
+    "Meetings end with decisions, but the minutes usually record only **what** was decided, not **why**. "
+    "We asked whether today's AI can (1) dig the “why” out of a meeting transcript and (2) notice "
+    "when the minutes left it out. We built a system to do both, called **EDIA**, and tested it carefully.",
+    "- **Spotting what the minutes left out:** a simple word-overlap check beats two smarter-sounding AI "
+    "methods. The “smart” ones keep missing things that *are* in the minutes.",
+    "- **Digging out the reasons:** EDIA finds roughly **a third to over half** of the reasons a person "
+    "finds (33–58%). Most of what it misses is reasoning that is spread far apart in the meeting or "
+    "never said outright.",
+    "- **Other well-known methods do not do better.** Asking the AI to think step by step, Microsoft's "
+    "GraphRAG, and multi-step search all stay at or below EDIA.",
+    "So the honest answer to “is this feasible?” is **partially**, and the paper explains exactly "
+    "where and why it stops working.")
 
 # 1 -------------------------------------------------------------------------------------------
-doc.add_heading("1. The problem", level=1)
+doc.add_heading("1. The problem: where meeting reasoning gets lost", level=1)
 simple_box(
-    "Imagine a team spends an hour choosing a battery for a new remote control. They weigh two options, one "
-    "person worries about cost, and they agree to revisit it if the price changes. The minutes say only: "
-    "*\u201cBattery: kinetic.\u201d* Months later, nobody remembers why. Each reason that was said in the "
-    "meeting but dropped from the minutes is what we call a **gap**.",
-    "The question of this project: **can today\u2019s AI (1) pull those reasons out of a meeting and (2) tell "
-    "which of them the minutes lost?** Rather than assume it can, we measured it carefully and asked where "
-    "and why it breaks.")
+    "A real example from our test data: a product team designing a TV remote discusses how to power it. "
+    "They consider a battery, solar power and a dynamo, and pick an unusual option, kryptonite, reasoning "
+    "that the chip is the most expensive part anyway. Nobody ever finds out what kryptonite costs, and "
+    "the Industrial Designer would rather have used a battery. The summary keeps one line: "
+    "*“Kryptonite was chosen as the preferred energy source.”*",
+    "Later, someone asks: why not a battery? Who disagreed? Was the price ever checked? All of that was "
+    "said in the meeting, and none of it is in the record. Each of those missing pieces is what we call "
+    "a **decision-context gap**. The project asks whether a computer can find them automatically.")
 technical()
-para("A *decision-context gap* is a reasoning element voiced in the meeting transcript but absent from the "
-     "filed document. Reasoning elements are typed: decision, alternative, rationale, condition, dissent, owner "
-     "and approver. The task has two parts: **extraction** (transcript \u2192 structured decision records) and "
-     "**gap detection** (given a document and an element, decide whether the document carries it). The project "
-     "is framed as a feasibility study and comparative analysis. The aim is to measure the ceiling honestly and "
-     "diagnose it, not to maximise a score.")
+para("A **decision-context gap** is a reasoning element voiced in a meeting but absent from the filed "
+     "document. Reasoning elements are typed: the **decision** itself, **alternatives** considered, "
+     "**rationale**, **conditions** attached, **dissent**, and the **owner/approver** of the decision. "
+     "Detecting gaps needs two capabilities: **extraction** (find the reasoning a meeting actually "
+     "contains) and **gap detection** (decide whether each element is present in the document). Both look "
+     "within reach of modern language models. The paper tests that assumption instead of taking it for "
+     "granted, which is why it is framed as a **feasibility study**.")
 
 # 2 -------------------------------------------------------------------------------------------
-doc.add_heading("2. The data: adhd_v1", level=1)
+doc.add_heading("2. What the paper contributes", level=1)
 simple_box(
-    "To test the system we need meetings where we already know the right answer. We have three kinds:",
-    "- **5 real meetings checked by a person.** The most trustworthy answers, but very few.",
-    "- **227 real meetings labelled automatically by an AI model.** Lots of data, but the labels are only "
-    "as good as that model, and we later found they are quite biased (section 6).",
-    "- **139 invented meetings** where we decided the answers *before* writing the meeting, so the answers "
-    "are known by construction. Only these have a roughly even mix of \u201cmissing\u201d and "
-    "\u201cpresent\u201d items, which makes them the fairest place to compare methods.")
+    "The paper gives four things: a working system (EDIA), a test set to measure such systems fairly "
+    "(adhd_v1), an explanation of *why* the system misses what it misses, and a fair comparison against "
+    "three popular alternatives.")
 technical()
-table(["Tier", "Pairs", "Elements", "Gap rate", "How the labels were made"],
-      [["Gold (QMSum)", "5", "50", "0.76", "Human, checked against transcript spans"],
-       ["Corpus (QMSum)", "227", "4,930", "0.93", "NLI model (roberta-large-mnli) at threshold 0.55: \u201csilver\u201d"],
-       ["Synthetic", "139", "1,667", "0.59", "Constructed: each element\u2019s fate fixed before the text is written"],
-       ["**Total**", "**371**", "**6,647**", "0.84", ""]],
-      [3.2, 1.4, 1.8, 1.8, 8.4], align=["l", "r", "r", "r", "l"])
-bullets([
-    "Source: QMSum, 232 meetings in three domains: Academic (ICSI research-group meetings, 59), Committee "
-    "(parliamentary committees, 36) and Product (AMI product-design meetings, 137 = 132 corpus + 5 gold). "
-    "QMSum\u2019s written summaries stand in for filed minutes.",
-    "Corpus elements come from splitting 1,543 query-based summary answers into 4,930 sentences. The NLI "
-    "threshold 0.55 was chosen on the gold pairs.",
-    "**Circularity rule:** corpus labels were made by the NLI detector, so scoring NLI against them measures "
-    "self-consistency, not accuracy. Those rows are never quoted.",
-    "Synthetic pairs cover 79 topics (8 organisational domains \u00d7 10 decision archetypes; generation stopped "
-    "before the planned 12 domains), generated by Mistral 7B with an "
-    "automated leak check. They are cleaner than real speech, which is a known limitation.",
-    "The dataset is **locked**. No data was added or regenerated during this work.",
-])
+table(["Contribution", "What it is", "Where in the paper"],
+      [["EDIA", "End-to-end pipeline for structured decision-reasoning extraction + gap detection, "
+        "run entirely on open models (no paid APIs)", "Sec. III, Fig. 1"],
+       ["adhd_v1 benchmark", "371 transcript–document pairs, 6,647 labelled elements, in three tiers "
+        "with explicit label provenance", "Sec. IV, Table I"],
+       ["Failure diagnosis", "Every residual miss read by hand and categorised; multi-hop reasoning "
+        "dominates", "Sec. VI, Table V"],
+       ["Comparative analysis", "Chain-of-thought, GraphRAG and multi-hop retrieval run on the same "
+        "meetings and scored the same way", "Sec. VII, Tables VI–VII"]],
+      [3.4, 9.6, 3.6], font=9)
 
 # 3 -------------------------------------------------------------------------------------------
-doc.add_heading("3. How EDIA works", level=1)
+doc.add_heading("3. How EDIA works (paper Sec. III)", level=1)
 simple_box(
-    "EDIA works like a careful note-taker in three steps. **First**, it cuts a long meeting into bite-sized "
-    "pieces. **Second**, an AI model reads each piece and fills in a form for every decision: what was decided, "
-    "the alternatives, the reasons, the conditions, any disagreement, plus exact quotes as evidence. "
-    "**Third**, a checker compares each reason with the minutes and flags the ones that are missing.")
-p = doc.add_paragraph()
-p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-p.add_run().add_picture(str(FIG), width=Inches(4.6))
-caption("Figure 1. The EDIA pipeline (same figure as in the paper). Grey: extraction; dashed: evaluation.")
-technical()
+    "EDIA works like a careful note-taker in two stages.",
+    "- **Stage 1, extraction.** The meeting transcript is cut into bite-sized pieces. For each piece, an "
+    "AI model fills in a fixed form: what was decided, what else was considered, why, under what "
+    "conditions, who disagreed, and the exact quotes that prove it.",
+    "- **Stage 2, gap detection.** Each reason found is checked against the minutes: is it in there or not?",
+    "The AI is a free, open model (**Mistral 7B**) that runs on an ordinary computer, so no meeting data "
+    "ever leaves the machine.")
+if FIG.exists():
+    doc.add_picture(str(FIG), width=Cm(15.5))
+    doc.paragraphs[-1].alignment = WD_ALIGN_PARAGRAPH.CENTER
+    caption("Fig. 1 of the paper: the EDIA pipeline. Grey = extraction; dashed = evaluation.")
+technical("Technical detail: extraction")
 bullets([
-    "**Chunking:** at most 1,200 tokens per chunk, with a two-turn overlap so a sentence cut at a boundary "
-    "appears in both chunks.",
-    "**Extraction model:** Mistral 7B served locally by Ollama, fully deterministic: temperature 0, top-k 1, "
-    "top-p 1, seed 0, 8,192-token context, 2,048-token output cap. Output is constrained to JSON, and one repair "
-    "call is made if the JSON is malformed. The prompt forbids inference beyond the excerpt and requires quotes "
-    "to be copied character for character.",
-    "**Record schema:** decision, topic, status (decided / provisional / deferred / rejected / unclear), "
-    "alternatives (with rejected flag and reason), rationale, conditions, dissent, owner, approver, and evidence "
-    "quotes with speaker and the field each quote supports.",
-    "**Gap detectors** (element predicted \u201cgap\u201d if its present-score < 0.55): *lexical* (token-F1 "
-    "overlap with the document); *NLI* (entailment probability under roberta-large-mnli); *LLM judge* "
-    "(Mistral 7B asked whether the element\u2019s substance is present, returning a verdict and confidence); and "
-    "*ensemble* (each member\u2019s score is shifted by that member\u2019s own threshold so 0.5 means "
-    "\u201cpresent\u201d, then the maximum is taken: present if any member says present).",
+    "**Schema.** Each decision becomes a record: decision statement, topic, status (decided, provisional, "
+    "deferred, rejected, unclear), alternatives (with a rejected flag and reason), rationale, conditions, "
+    "dissent, owner, approver, and verbatim evidence quotes with speaker labels.",
+    "**Chunking.** Transcripts are split into chunks of at most 1,200 tokens with a two-turn overlap, so a "
+    "sentence cut at a boundary still appears whole in one chunk.",
+    "**Prompting.** The prompt forbids inferring anything not in the excerpt and requires quotes to be "
+    "copied character-for-character.",
+    "**Deterministic settings.** Temperature 0, top-k 1, fixed seed, 8,192-token context, 2,048-token "
+    "output cap, JSON-constrained output; one automatic repair call if the output does not parse. "
+    "“Deterministic” means the model always takes its single most likely next word, so runs are "
+    "(almost) repeatable.",
 ])
+technical("Technical detail: gap detection")
+para("A detector gives each (document, element) pair a **present-score** between 0 and 1; below the "
+     "threshold of **0.55** the element is called a gap. Four detectors are compared:")
+table(["Detector", "In simple terms", "Technically"],
+      [["Lexical", "Do the same words appear in the minutes?", "Token-level F1 overlap between element and document"],
+       ["NLI", "Does the minutes text *logically imply* this reason?", "Entailment probability from roberta-large-mnli, "
+        "a model trained to judge whether one text follows from another"],
+       ["LLM judge", "Ask the AI: “is this point in the minutes?”", "Mistral 7B returns a verdict + confidence"],
+       ["Ensemble", "Call it present if any of the three says present", "Each member's score is shifted by its own "
+        "threshold (so 0.5 = “present” for all), then the maximum is taken"]],
+      [2.4, 6.0, 8.2], font=9)
 
 # 4 -------------------------------------------------------------------------------------------
-doc.add_heading("4. How we measure, and why some numbers lie", level=1)
+doc.add_heading("4. The test data: adhd_v1 (paper Sec. IV, Table I)", level=1)
 simple_box(
-    "Most reasons really are missing from minutes: in the automatically labelled meetings, 93% are. That creates "
-    "a trap. A lazy checker that always answers \u201cmissing\u201d looks 96% good on the usual score (F1), "
-    "without doing anything. So we use **balanced accuracy**, which averages how well a method does on "
-    "\u201cmissing\u201d items and on \u201cpresent\u201d items separately. The lazy checker gets exactly 50%, "
-    "which is what it deserves.",
-    "A second trap: when we check whether the system found a reason, strict word-matching misses correct answers "
-    "that are worded differently. So we always report **two** scores, a strict one (matching words) and a "
-    "lenient one (matching meaning), and never pick the flattering one.")
+    "To grade the system we need meetings where the right answers are known. We built three kinds:",
+    "- **Gold:** 5 real meetings where a person marked every reason by hand. Most trustworthy, but small.",
+    "- **Corpus:** 227 more real meetings, labelled automatically by an AI model. Large, but the labels "
+    "are only “silver”: good guesses, not checked answers.",
+    "- **Synthetic:** 139 made-up meetings where we decided in advance which reasons the minutes would "
+    "keep and which they would drop, so the answers are known by design.",
+    "Each tier covers a weakness of the others: gold is reliable but tiny, corpus is real and large but "
+    "auto-labelled, synthetic has known answers but is cleaner than real speech.")
 technical()
+table(["Tier", "Pairs", "Elements", "Gap rate", "Labels come from"],
+      [["Gold (QMSum)", "5", "50", "0.76", "Human annotation against transcript spans"],
+       ["Corpus (QMSum)", "227", "4,930", "0.93", "The NLI detector at threshold 0.55 (silver)"],
+       ["Synthetic", "139", "1,667", "0.59", "Constructed: each element's fate fixed before any text is written"],
+       ["**Total**", "**371**", "**6,647**", "0.84", ""]],
+      [3.0, 1.5, 1.8, 1.8, 8.5], font=9, align=["l", "r", "r", "r", "l"])
 bullets([
-    "**Balanced accuracy** = (gap recall + present recall) / 2. Any constant detector scores 0.5 regardless of "
-    "class skew. **Present-class F1** is reported alongside, because the present class is the hard half.",
-    "**Completeness** = fraction of hand-labelled reasoning elements matched by some extracted element. "
-    "*Lexical:* token-F1 \u2265 0.45. *Semantic:* cosine similarity of all-MiniLM-L6-v2 sentence embeddings "
-    "\u2265 0.55. Totals are **pooled** (sum matched / sum ground truth), not averaged per meeting.",
-    "**Unsupported-quote (hallucination) rate:** fraction of evidence quotes not found in their own source "
-    "chunk after normalising case, punctuation and whitespace, and ignoring transcription markers "
-    "(e.g. {disfmarker}) and filler words (um, uh, \u2026).",
+    "**Source of real meetings.** QMSum, a public benchmark of meeting transcripts with human-written "
+    "summaries from three domains: Academic (research-group meetings, ICSI corpus), Product (design "
+    "meetings, AMI corpus) and Committee (parliamentary committees). We treat QMSum's summaries as the "
+    "“filed document”. The corpus tier covers Academic 59, Committee 36 and Product 132 meetings.",
+    "**Gap rate** = share of elements that are missing from the document. 0.93 in the corpus means 93% "
+    "of elements are gaps, which matters a lot for how scores behave (Section 5).",
+    "**Why scoring NLI on the corpus tier is not allowed.** The corpus labels *were produced by* NLI, so "
+    "NLI would just be agreeing with itself. The paper excludes that comparison as circular.",
+    "**Synthetic generation.** Mistral 7B, 79 topics covering 8 organisational domains × 10 decision "
+    "archetypes (e.g. vendor selection, build-vs-buy, scope cut), with an automated check that "
+    "“omitted” content really did not leak into the document. It is the only tier whose gap rate "
+    "is near 50/50, which is why detectors are compared there.",
 ])
 
-# 5 -------------------------------------------------------------------------------------------
-doc.add_heading("5. Finding: detecting what is missing \u2014 simple word overlap wins", level=1)
+doc.add_heading("The human spot-check of the silver labels", level=2)
 simple_box(
-    "Surprisingly, the simplest checker, which just counts shared words, beat a model designed to understand "
-    "whether one sentence follows from another (called NLI). The NLI model is good at noticing when something is "
-    "missing, but bad at noticing when it is **there**: it failed to recognise reworded reasons about two times "
-    "in three, and even reasons **copied word for word** most of the time.",
-    "A general-purpose AI judge (Mistral 7B, asked \u201cis this in the minutes?\u201d) said \u201cyes\u201d to "
-    "about 95% of everything, including obvious omissions, which makes it no better than a coin.")
+    "Since the 227 corpus meetings were labelled by an AI, one of us checked a sample by hand, without "
+    "looking at the AI's answers first (“blind”). Result: whenever a point really was missing, the "
+    "AI labels agreed. But about **half** of what they called “missing” was actually in the summary, "
+    "just reworded. So the corpus overstates how much gets lost.")
 technical()
-table(["Detector", "Tier / sample", "n", "Gap F1", "Balanced acc.", "Present F1"],
+para("One annotator judged **52 elements** from three randomly sampled corpus pairs (two Academic, one "
+     "Committee), blind to the silver labels. Gap recall 1.0 (no real gap was missed), but **24 of the 46 "
+     "predicted gaps** were judged present, 23 of them as paraphrases: gap precision **0.478**, present "
+     "recall **0.20**, balanced accuracy **0.60**. The direction of the error is the same in all three "
+     "pairs, although 19 of the 24 disagreements come from the Committee pair. Consequence: corpus-tier "
+     "gap rates should be read as **upper bounds**.")
+
+# 5 -------------------------------------------------------------------------------------------
+doc.add_heading("5. How the results are measured, and why some numbers mislead", level=1)
+para("This section is the key to reading every table in the paper.")
+
+doc.add_heading("5.1 The base-rate problem, and balanced accuracy", level=2)
+simple_box(
+    "Suppose 93 out of 100 points are missing from the minutes. A lazy detector that always answers "
+    "“missing” is right 93% of the time and gets an F1 score of about 0.96, while doing nothing "
+    "useful at all. A big number can therefore hide a useless detector.",
+    "**Balanced accuracy** fixes this: it averages how well the detector does on the “missing” "
+    "points and on the “present” points separately. The lazy detector scores exactly **0.5**, "
+    "i.e. a coin flip. That is why the paper leads with balanced accuracy, not plain accuracy or F1.")
+technical()
+bullets([
+    "**Balanced accuracy** = (gap recall + present recall) / 2; 0.5 for any constant detector.",
+    "**Gap F1** and **present F1** are reported side by side: present F1 shows whether the detector can "
+    "recognise content that survived, which is exactly where detectors fail.",
+    "**Real example from the paper.** On Committee meetings the lexical detector has the *highest* gap F1 "
+    "of any group (0.988) but the *lowest* balanced accuracy (0.532): their summaries are almost entirely "
+    "meta-description, so guessing “gap” wins.",
+    "This is why detector comparisons are made on the near-balanced synthetic tier.",
+])
+
+doc.add_heading("5.2 Completeness: lexical vs semantic matching", level=2)
+simple_box(
+    "To grade extraction, we compare what EDIA found with the person's list of reasons. **Completeness** "
+    "is the share of the person's reasons that EDIA also found.",
+    "But how do you decide two sentences “match”? Strictly (same words) or loosely (same "
+    "meaning)? Each way has a flaw, so the paper always reports **both**:",
+    "- **Lexical (strict, same words):** under-credits correct answers that are reworded.",
+    "- **Semantic (same meaning):** fairer to rewording, but more forgiving.",
+    "The true value lies between the two, which is why the paper gives a **range** (33–58%).")
+technical()
+bullets([
+    "**Lexical match:** token F1 ≥ 0.45 between an extracted element and a gold element.",
+    "**Semantic match:** cosine similarity ≥ 0.55 between all-MiniLM-L6-v2 sentence embeddings "
+    "(a small model that turns a sentence into a vector so that similar meanings land close together).",
+    "**Why both matter, concretely:** EDIA's correct headline answer *“Kryptonite was chosen as the "
+    "preferred energy source”* scores only 0.36 on the lexical matcher, below the threshold, so it "
+    "counts as a miss. 14 of the 32 lexical misses are correct extractions like this. Lexical "
+    "completeness is a **floor**.",
+    "**Owner/approver** elements are excluded from completeness (they are rarely stated in these "
+    "meetings) and the same rule is applied to every method.",
+])
+
+doc.add_heading("5.3 Precision and F1 for extraction", level=2)
+simple_box(
+    "Completeness only asks “did you find the right things?”. A system that writes down *everything* "
+    "would score well on that. **Precision** asks the opposite: “of everything you wrote down, how much "
+    "matches the person's list?” **F1** combines the two into one number, so neither “find "
+    "little but be right” nor “write everything” can win.",
+    "One caution: the person listed only the key reasons, so some things EDIA found that are real but "
+    "were not on the list get counted as wrong. Our precision is therefore a **lower bound**: the real "
+    "value is at least this high.")
+technical()
+bullets([
+    "**Precision** = extracted elements matching some gold element at the completeness threshold / all "
+    "extracted elements. **Recall** = completeness. **F1** = 2PR / (P + R).",
+    "**Redundancy-penalised precision** counts each gold element at most once, exposing duplicates: EDIA "
+    "extracts each chunk separately, so the same reason found in two chunks appears twice.",
+])
+
+doc.add_heading("5.4 Hallucination: the unsupported-quote rate", level=2)
+simple_box(
+    "EDIA must back every reason with an exact quote from the meeting. We check whether each quote "
+    "really appears there. A quote that does not is **unsupported**: the AI may have invented it. This "
+    "is our measure of hallucination, and it needs no human answers, so it can be measured on all 227 "
+    "meetings.")
+technical()
+para("Each quote is searched for in its own source chunk after normalising case, punctuation and "
+     "whitespace and ignoring transcription markers and filler words. The **unsupported-quote rate** is "
+     "the fraction not found. A separate check flags “tidied” quotes: every word appears, in "
+     "order, in the source, but some words were dropped. That is rewording, not invention.")
+
+# 6 -------------------------------------------------------------------------------------------
+doc.add_heading("6. Finding 1: spotting what is missing, and word overlap wins (paper Sec. V)", level=1)
+simple_box(
+    "The simplest detector, which just checks for shared words, beats the NLI “logic” model. The "
+    "surprise is *why*: NLI keeps calling points “missing” even when the minutes contain them, "
+    "sometimes word for word. Asking the AI model directly is no better than flipping a coin.")
+technical()
+table(["Detector", "Tier", "n", "Gap F1", "Bal. acc.", "Present F1"],
       [["NLI", "gold", "50", "0.861", "0.656", "0.476"],
        ["NLI", "synthetic", "1,667", "0.771", "0.629", "0.468"],
        ["Lexical", "gold", "50", "0.884", "0.583", "0.286"],
        ["Lexical", "synthetic", "1,667", "0.857", "**0.775**", "**0.715**"],
-       ["NLI", "same sample (gold + synthetic)", "200", "\u2013", "0.611", "0.432"],
-       ["Lexical", "same sample", "200", "\u2013", "**0.728**", "**0.637**"],
-       ["LLM judge", "same sample", "200", "\u2013", "0.492", "0.596"],
-       ["Ensemble", "same sample", "200", "\u2013", "0.521", "0.624"]],
-      [2.3, 5.0, 1.4, 1.6, 2.6, 2.3], align=["l", "l", "r", "r", "r", "r"])
+       ["Lexical", "corpus", "4,930", "0.970", "0.669", "0.457"],
+       ["*Same 200-element sample:*", "", "", "", "", ""],
+       ["NLI", "gold + synth.", "200", "–", "0.611", "0.432"],
+       ["Lexical", "gold + synth.", "200", "–", "**0.728**", "**0.637**"],
+       ["LLM judge", "gold + synth.", "200", "–", "0.492", "0.596"],
+       ["Ensemble", "gold + synth.", "200", "–", "0.521", "0.624"]],
+      [3.6, 2.6, 1.6, 1.8, 1.9, 2.0], font=9, align=["l", "l", "r", "r", "r", "r"])
+caption("Paper Table II. Bal. acc. = balanced accuracy (0.5 = chance).")
 bullets([
-    "**Accuracy by label** (gold + synthetic only; the NLI-labelled corpus is excluded as circular): true gaps: "
-    "NLI 0.916, lexical 0.974. Paraphrased-present: NLI **0.366**, lexical 0.640. Verbatim-present: NLI "
-    "**0.292**, lexical 0.453. Against a compressed ~100-word summary, almost every source sentence reads as "
-    "\u201cnot entailed\u201d.",
-    "**LLM judge**, 296-element stratified sample: gap recall 0.047, balanced accuracy 0.495. The inputs were "
-    "verified (short summaries, correct labels), so this is a genuine yes-bias under a fixed prompt, not a "
-    "pipeline error. The ensemble (present if any member says present) inherits the bias: 0.516 at the "
-    "common 0.55 threshold, and at its designed 0.5 operating point it labels every sampled element present.",
-    "**Base-rate distortion example:** on Committee meetings the lexical detector has the highest gap F1 of any "
-    "bucket (0.988) and the lowest balanced accuracy (0.532), because nearly everything there is a gap.",
-    "Why the \u201csame sample\u201d rows: the LLM/ensemble were run on a 296-element stratified sample (the "
-    "\u201c--llm-sample 400\u201d flag is a per-cell cap). Scoring all four detectors on the same 200 gold + "
-    "synthetic elements makes the comparison like for like.",
+    "**On the balanced tier, lexical beats NLI on every honest metric** (balanced accuracy 0.775 vs "
+    "0.629; present F1 0.715 vs 0.468), and the order holds when all four detectors share one sample.",
+    "**Why NLI loses (accuracy by true label, gold + synthetic):** on true gaps NLI is fine (0.916; "
+    "lexical 0.974), but it recognises paraphrased content only **36.6%** of the time and word-for-word "
+    "copies only **29.2%** (lexical: 64.0% and 45.3%). Against a summary of about 100 words, almost every "
+    "source sentence reads as “not implied”, so NLI is reacting to the summary being short, not "
+    "doing useful entailment.",
+    "**The LLM judge is at chance.** On 296 elements it called about 95% “present”, including "
+    "obvious omissions: gap recall 0.047, balanced accuracy 0.495. We verified it received the right "
+    "inputs, so this is a genuine yes-bias, a known weakness of models used as judges.",
+    "**The ensemble inherits that bias** (0.516): calling an element present if *any* member says so "
+    "lets the yes-saying judge override the others.",
 ])
 
-# 6 -------------------------------------------------------------------------------------------
-doc.add_heading("6. Finding: the human spot-check", level=1)
-simple_box(
-    "The 227 automatically labelled meetings were labelled by the same NLI model that, as section 5 shows, "
-    "struggles to see reworded content. So a person checked a random sample of those labels by hand, without "
-    "seeing what the model had said (\u201cblind\u201d).",
-    "Result: whenever the person said an item was missing, the model agreed. But **about half of the items the "
-    "model called missing were actually in the minutes, just reworded.** The automatic labels therefore "
-    "exaggerate how much is missing.")
-technical()
-table(["Measure", "Value"],
-      [["Annotator / blinding", "1 human annotator, blind to the silver labels (all 52 labels made by the human)"],
-       ["Sample", "52 elements from 3 randomly drawn corpus pairs: QMS_ACA_TR_002, QMS_ACA_TR_009, QMS_CMT_TR_007"],
-       ["Gap class", "precision 0.478, recall 1.0 (silver never missed a human-seen gap)"],
-       ["Present class", "recall 0.20: silver called 24 of the 30 human-\u201cpresent\u201d items gaps"],
-       ["Balanced accuracy", "0.60 (a constant labeller scores 0.5)"],
-       ["Disagreements", "24 (23 paraphrased); same direction in all 3 pairs; 19 come from the Committee pair"]],
-      [4.2, 12.4])
-para("**Caveats:** small sample, one annotator (so no inter-annotator agreement / Cohen\u2019s kappa), and no "
-     "Product pair (a fourth, Product, pair was drawn but not annotated). The earlier \u201cbalanced accuracy "
-     "0.836 / ~7% false gaps\u201d figure came from a *model* review pass (llm-review), not a human, and is "
-     "superseded. It must not be cited as validation.")
-
 # 7 -------------------------------------------------------------------------------------------
-doc.add_heading("7. Finding: the extraction ceiling", level=1)
+doc.add_heading("7. Finding 2: the extraction ceiling, and why it exists (paper Sec. VI)", level=1)
 simple_box(
-    "On the 5 meetings a person labelled, EDIA found **between 33% and 58%** of the reasons the person found. "
-    "The strict (word-matching) score gives the lower number; the meaning-based score gives the higher one. "
-    "Many strict \u201cmisses\u201d were actually correct answers phrased differently.",
-    "We then read every remaining miss by hand. **Over half (11 of 20)** were reasons scattered across far-apart "
-    "parts of the meeting (in one case about 670 turns apart), or never stated outright and only implied. "
-    "Importantly, **none** was caused by where we cut the meeting into pieces, so simply giving the AI a bigger "
-    "window would not help.")
+    "On the 5 hand-checked meetings, EDIA finds between a third and more than half of the reasons a "
+    "person found, depending on how strictly a match is judged. When we read every miss by hand, most "
+    "turned out to be reasoning that is **scattered** (the two halves of one reason said hundreds of "
+    "turns apart) or **implicit** (never said outright). Not one miss was caused by how the meeting was "
+    "cut into pieces, and not one was a made-up quote.")
 technical()
 table(["Meeting", "Lexical", "Semantic"],
       [["QSUM_001", "0.455", "0.636"], ["QSUM_002", "0.500", "0.875"], ["QSUM_003", "0.111", "0.222"],
        ["QSUM_004", "0.286", "0.643"], ["QSUM_005", "0.333", "0.500"],
        ["**Pooled**", "**0.333** (16/48)", "**0.583** (28/48)"]],
-      [4.0, 4.0, 4.0], align=["l", "r", "r"])
-table(["Failure category (20 semantic-residual misses, read manually)", "n", "Share"],
-      [["Multi-hop, implicit: connection never stated, must be inferred", "6", "30%"],
-       ["Multi-hop, scattered: reasoning spread across turns far apart", "5", "25%"],
-       ["Paraphrase miss: found, but the scorer did not match it", "5", "25%"],
-       ["Out of scope: present and local, but not extracted", "4", "20%"],
-       ["Chunk boundary", "0", "0%"], ["Hallucination (a fabricated quote caused the miss)", "0", "0%"]],
-      [12.0, 1.5, 2.0], align=["l", "r", "r"])
+      [4.0, 4.0, 4.0], font=9.5, align=["l", "r", "r"])
+caption("Paper Table III: completeness on the five gold meetings. The unsupported-quote rate here is 16.4%.")
+
+doc.add_heading("Why the ceiling exists: the failure taxonomy", level=2)
+table(["Failure category", "n", "Share", "What it means"],
+      [["Multi-hop, implicit", "6", "30%", "The connection is never stated; it has to be inferred"],
+       ["Multi-hop, scattered", "5", "25%", "The reasoning is split across turns far apart"],
+       ["Paraphrase miss", "5", "25%", "Found, but worded so differently the scorer did not match it"],
+       ["Out of scope", "4", "20%", "Stated plainly in one place, but the model did not extract it"],
+       ["Chunk boundary", "0", "0%", "—"],
+       ["Hallucination", "0", "0%", "—"]],
+      [3.8, 1.0, 1.4, 10.4], font=9, align=["l", "r", "r", "l"])
+caption("Paper Table V: all 20 misses remaining under semantic matching, categorised by reading the transcript.")
 bullets([
-    "14 of the 32 lexical misses are correct extractions that token overlap under-credits. For example, the "
-    "headline decision \u201cKryptonite was chosen as the preferred energy source\u201d scores only 0.36. So the "
-    "lexical figure is a floor.",
-    "The unsupported-quote rate on these 5 meetings is **16.4%**. \u201cZero hallucination misses\u201d means "
-    "no *miss* was caused by fabrication. It does **not** mean the extractor never produces unsupported quotes.",
-    "The retired \u201c~47% completeness\u201d figure averaged two meetings under lexical scoring before the "
-    "others were scored. The honest figure is the 33.3\u201358.3% range.",
+    "**Multi-hop accounts for 11 of 20 misses (55%).** In one meeting, about **670 turns** separate the "
+    "two halves of a single rationale.",
+    "**The two zeros matter as much as the top category.** No chunk-boundary misses means a longer "
+    "context window would not fix this; no fabricated quotes among the misses means the misses are "
+    "omissions, not inventions.",
+    "The taxonomy uses the *semantic* misses on purpose: the lexical misses include 14 correct answers "
+    "the scorer under-credited, which would have invented a fake “paraphrase” problem.",
 ])
 
-# 8 -------------------------------------------------------------------------------------------
-doc.add_heading("8. Finding: across all 227 meetings \u2014 does the AI make things up?", level=1)
+doc.add_heading("Grounding across all 227 meetings", level=2)
 simple_box(
-    "We can only measure \u201chow much did it find\u201d on the 5 person-labelled meetings. But on all 227 real "
-    "meetings we *can* check something else: whether the quotes the AI gives as evidence really appear in the "
-    "transcript. Overall, about **15%** could not be found, even after allowing for punctuation and "
-    "\u201cum\u201d/\u201cuh\u201d.",
-    "Academic meetings looked much worse (27%). But when we looked closer, most of those quotes were real "
-    "sentences the AI had **tidied up**: dropping stutters, repeated words and false starts, which are very "
-    "common in those research-group recordings. Counting only quotes that are more than just tidied, all three "
-    "meeting types land between 3.6% and 7.6%. That suggests the extractor behaves similarly everywhere.")
+    "Completeness needs a person's answer list, which only the 5 gold meetings have. But the quote check "
+    "needs none, so we ran it on all 227 meetings. Academic meetings looked much worse at first, but "
+    "most of those quotes were just tidied: the AI dropped the “um”s, false starts and repeats "
+    "common in those recordings. Counting only quotes with something genuinely wrong, all three domains "
+    "fall between 3.6% and 7.6%, so EDIA behaves consistently across domains.")
 technical()
-table(["Domain", "Meetings", "Quotes", "Unsupported (official)", "Excluding near-verbatim tidying"],
+table(["Domain", "Meetings", "Quotes", "Unsupported", "Excl. tidied"],
       [["Academic", "59", "6,341", "26.7%", "7.6%"], ["Committee", "36", "5,441", "5.1%", "3.6%"],
        ["Product", "132", "10,167", "12.0%", "5.1%"], ["**All**", "**227**", "**21,949**", "**14.6%**", "**5.4%**"]],
-      [2.6, 2.0, 2.2, 4.0, 5.8], align=["l", "r", "r", "r", "r"])
+      [3.2, 2.2, 2.4, 2.8, 2.8], font=9.5, align=["l", "r", "r", "r", "r"])
+caption("Paper Table IV. 3,532 chunks; 36 (1.0%) failed because the model got stuck repeating itself. "
+        "72% of Academic's unsupported quotes are near-verbatim tidying.")
+
+# 8 -------------------------------------------------------------------------------------------
+doc.add_heading("8. Finding 3: other methods do not break the ceiling (paper Sec. VII)", level=1)
+simple_box(
+    "We tried three well-known alternatives on the same 5 meetings, with the same AI model wherever a "
+    "model is needed:",
+    "- **Think step by step (chain-of-thought):** the AI first writes notes, then fills in the form. It "
+    "finds 2–3 more reasons out of 48, but writes 50% more, so once the extra output is counted it "
+    "is **not** better overall.",
+    "- **GraphRAG** (Microsoft's knowledge-graph method): much worse. It organises the meeting around "
+    "people and things (“the Project Manager”) rather than around decisions and their reasons.",
+    "- **Multi-step search (multi-hop retrieval):** search for the reason, then use it to search for the "
+    "alternatives, and so on. Even when given the right decisions to start from, it finds very little: "
+    "the first search already goes wrong and each step compounds the error.",
+    "None beats EDIA, and each fails for a reason that points back to the same difficulty: the reasoning "
+    "is scattered and implicit.")
+technical()
+table(["Approach", "Compl. (lex)", "Compl. (sem)", "Unsupp. quotes", "Core failure reason"],
+      [["EDIA", "33.3%", "58.3%", "16.4%", "Multi-hop reasoning across chunks"],
+       ["EDIA, same runtime †", "27.1%", "58.3%", "14.1%", "(the fair baseline for the † rows)"],
+       ["EDIA + chain-of-thought †", "33.3%", "62.5%", "13.9%", "Better reasoning over content in view, not retrieval"],
+       ["GraphRAG †", "4.2%", "14.6–18.8%", "–", "Entity graph built for structured text, not conversation"],
+       ["Multi-hop retrieval", "0.0%", "12.8%", "0", "Chain unknown in advance; the first hop fails"]],
+      [4.2, 1.9, 2.2, 2.2, 6.1], font=8.5, align=["l", "r", "r", "r", "l"])
+caption("Paper Table VI. † = see “Why there is a same-runtime row” below.")
+table(["Approach", "Elements", "Precision", "Recall", "F1"],
+      [["EDIA", "398", "4.8 / 13.8", "33.3 / 58.3", "8.4 / **22.3**"],
+       ["EDIA, same runtime †", "346", "4.9 / 13.6", "27.1 / 58.3", "8.3 / 22.0"],
+       ["EDIA + chain-of-thought †", "438", "3.2 / 10.7", "33.3 / 62.5", "5.8 / 18.3"],
+       ["GraphRAG †", "52", "3.8 / 13.5", "4.2 / 14.6", "4.0 / 14.0"],
+       ["Multi-hop retrieval", "27", "0.0 / 40.7", "0.0 / 12.8", "0.0 / 19.5"]],
+      [4.6, 1.8, 2.8, 2.8, 2.6], font=9, align=["l", "r", "r", "r", "r"])
+caption("Paper Table VII: precision, recall and F1, each as lexical / semantic (%). Precision is a lower bound.")
 bullets([
-    "*Near-verbatim* = every word of the quote appears, in order, in its own chunk, within a window of 1.5\u00d7 "
-    "the quote length + 3 words (words dropped, none added or changed). 72% of Academic unsupported quotes are "
-    "near-verbatim. The official figure is the strict one; the tidying split explains the domain gap and does "
-    "not replace it (scripts/quote_fidelity_diagnostic.py).",
-    "Run: 3,532 chunks in about 5.4 hours on an RTX 3090 (about 5 s per chunk; the old RTX 3050 needed about "
-    "85 s). 36 chunks (1.0%) failed because Ollama aborted a generation stuck in a repetition loop (\u201ctoken "
-    "repeat limit reached\u201d). This is deterministic at temperature 0 and at the same rate as the old machine. "
-    "A fallback fix was prepared but not needed below the agreed 5% threshold.",
+    "**Chain-of-thought.** Implemented properly as two calls per chunk: one free-text call that writes "
+    "reasoning notes, then the normal form-filling call that reads them. (A single form-filling call "
+    "cannot think aloud: it is forced to output the form directly.) Against the fair baseline it raises "
+    "recall by 6.2 points lexical and 4.2 semantic (3 and 2 of 48 elements) with unchanged hallucination, "
+    "but emits 50% more records (114 vs 76); its semantic precision falls from 13.6% to 10.7% and its F1 "
+    "from **22.0% to 18.3%**. The recall gain does not survive.",
+    "**GraphRAG.** Run end-to-end with Microsoft's default configuration and its local search. Its prose "
+    "answer is converted into our form by one call told to restate only; items not supported by the "
+    "answer are dropped (the converter was seen inventing an alternative). 4.2% lexical, 14.6% semantic, "
+    "or 18.8% semantic without that filter. Hence the range.",
+    "**Multi-hop retrieval.** A three-hop chain (rationale, then alternatives, then objections) using "
+    "keyword-style search (TF-IDF) over transcript turns, handed the true decisions. It is scored **only on "
+    "what it retrieves**: the decision text it is handed often resembles the true rationale, and letting "
+    "that match would credit the method with its own input (that would give 12.8% / 28.2%). Lexical is 0% "
+    "because a retrieved turn is long and the true element short, so their word overlap rarely clears "
+    "the threshold.",
+    "**Reading Table VII.** EDIA has the best semantic F1 (22.3%). Precision is low for every method that "
+    "writes its own answers, because the gold list has only 48 key elements while EDIA writes 398, many "
+    "of them the same reason found again in another chunk (counting each gold element once lowers "
+    "EDIA's precision to 7.0%) and many plausible reasons the annotator did not list. So compare "
+    "precision *between* methods; do not read it as an error rate. Multi-hop's high precision comes from "
+    "writing very little (27 elements copied from the transcript), not from finding more.",
 ])
 
-# 9 -------------------------------------------------------------------------------------------
-doc.add_heading("9. Finding: do other methods do better?", level=1)
+doc.add_heading("Why there is a “same runtime” row", level=2)
 simple_box(
-    "We tried three well-known alternatives on the same 5 meetings, using the same AI model wherever one is "
-    "needed:",
-    "- **\u201cThink step by step\u201d (chain-of-thought):** the AI first writes notes, then fills in the "
-    "form. A tiny gain of 2\u20133 more reasons found out of 48, and it produced 50% more records, so part of the "
-    "gain may just be more guesses. Precision confirms it: once the extra output is counted, its F1 "
-    "actually drops (22.0% to 18.3%).",
-    "- **GraphRAG** (Microsoft\u2019s knowledge-graph method): much worse, at 4\u201319%. It organises the "
-    "meeting around people and things (\u201cthe Project Manager\u201d) rather than decisions and reasons.",
-    "- **Multi-hop retrieval** (search for the reason, then use it to search for alternatives, and so on): "
-    "about 13% (and 0% under strict word matching), even though it was *given* the decisions. The first search already goes wrong, and each step "
-    "compounds the error.",
-    "None breaks the ceiling. Each fails for an understandable reason, and it is the same underlying difficulty "
-    "each time.")
+    "The program that runs the AI model was updated partway through the project. Same model, same "
+    "settings, yet a few outputs changed slightly. To keep comparisons fair, we re-ran plain EDIA on the "
+    "updated program and compare the newer experiments (marked †) against that re-run, not against "
+    "the original. Comparing like with like is the only fair test.")
 technical()
-table(["Approach", "Completeness (lex)", "Completeness (sem)", "Unsupported quotes", "Runtime"],
-      [["EDIA pipeline (stored baseline)", "33.3%", "58.3%", "16.4%", "Ollama 0.32.1 / RTX 3050"],
-       ["EDIA pipeline, re-run", "27.1%", "58.3%", "14.1%", "0.34.4 / RTX 3090"],
-       ["EDIA + chain-of-thought", "33.3%", "62.5%", "13.9%", "0.34.4 / RTX 3090"],
-       ["GraphRAG (local search)", "4.2%", "14.6\u201318.8%", "\u2013", "0.34.4 / RTX 3090"],
-       ["Multi-hop retrieval", "0.0%", "12.8%", "0 (retrieves only)", "none (TF-IDF, no LLM)"]],
-      [4.6, 2.6, 2.8, 2.8, 3.8], align=["l", "r", "r", "r", "l"])
+para("Replaying the plain extractor on the newer inference runtime, with identical weights and "
+     "deterministic settings, moved lexical completeness by −6.2 points and left semantic "
+     "completeness unchanged. Even within one session, repeating the LLM judge on the same 296 elements "
+     "gave a different confidence for 7 of them (3 verdicts changed). The paper therefore recommends "
+     "reporting the inference-engine version alongside the model, and not treating temperature-0 "
+     "decoding as perfectly reproducible.")
+
+# 9 -------------------------------------------------------------------------------------------
+doc.add_heading("9. What it all means (paper Sec. VIII–IX)", level=1)
+simple_box(
+    "The limit is not a bug in one method. It comes from how meetings work: the reasons behind a "
+    "decision are spread across the conversation and often left unsaid. Methods that look at one piece "
+    "at a time, or search by similar words, cannot connect them. Breaking the ceiling needs a system "
+    "that follows a decision through the whole meeting: linking a later comment back to the proposal it "
+    "responds to, *before* trying to extract anything.")
+technical()
 bullets([
-    "**Chain-of-thought** is implemented as two calls per chunk: an unconstrained call writes notes, then the "
-    "normal JSON-constrained extraction is conditioned on them. (A single JSON-constrained call cannot emit "
-    "reasoning tokens.) Against the *same-runtime* baseline: +6.2 points lexical, +4.2 semantic (3 and 2 of 48 "
-    "elements). Hallucination is unchanged (13.9% vs 14.1%). Records: 114 vs 76.",
-    "**GraphRAG 3.2.0**, default configuration and prompts, local search with the plan\u2019s query (\u201cWhat "
-    "decisions were made and what reasoning was given?\u201d), mistral + nomic-embed-text through Ollama. The "
-    "prose answer is restructured into our schema by one deterministic \u201crestate only\u201d call. Items "
-    "whose content words are less than 80% present in the answer are dropped, because the converter was seen "
-    "inventing an alternative. 14.6% is with that filter, 18.8% without it; both are reported.",
-    "**Multi-hop retrieval:** TF-IDF over transcript turns, top-3 per hop, rationale \u2192 alternatives "
-    "\u2192 objections, seeded with the true decisions. The fair column excludes the seeded decisions (5/41).",
+    "**Ruled out as fixes:** a longer context window (no chunk-boundary misses), better reasoning at "
+    "answer time (chain-of-thought's small recall gain is offset by lower precision), entity graphs "
+    "(GraphRAG) and chained similarity search (multi-hop retrieval).",
+    "**Likely direction:** discourse-level tracking of each decision across the whole meeting before "
+    "extraction, rather than retrieval by surface similarity.",
+    "**Two reporting practices the paper recommends generally:** report balanced accuracy and "
+    "present-class F1 alongside gap F1 when gaps dominate, and report both lexical and semantic "
+    "completeness. Both changed this paper's conclusions.",
 ])
 
 # 10 ------------------------------------------------------------------------------------------
-doc.add_heading("10. The machine change, and why the \u201csame model\u201d is not always the same", level=1)
+doc.add_heading("10. Limitations: what the paper does not claim", level=1)
 simple_box(
-    "Halfway through, the project moved from a laptop (RTX 3050) to a lab PC (RTX 3090) that also had a newer "
-    "version of Ollama, the program that runs the AI model. Even with the identical model file and identical "
-    "settings, some answers came out slightly different. When we re-ran the basic system on the new setup, its "
-    "strict score moved from 33% to 27% with no change to the method at all.",
-    "So we followed one rule: **compare methods only when they ran on the same setup.** That is why the table "
-    "above has two EDIA rows.")
+    "Every study has limits, and saying them plainly makes the paper stronger. Ours: the most important "
+    "number (completeness) comes from only 5 meetings of one kind; the large corpus is labelled by an AI; "
+    "the human check is small; the made-up meetings are cleaner than real ones; and we only tried small, "
+    "free models.")
 technical()
-table(["Period", "Runtime", "What ran on it"],
-      [["Before handoff", "Ollama 0.32.1 / RTX 3050", "5 gold extractions (Table 2), original QMS_ACA_TR_000"],
-       ["24 Sep 2026", "Ollama 0.34.3 / RTX 3090", "Corpus extraction (all 227 meetings; ACA_TR_000 re-extracted), \u00a74.3"],
-       ["26 Sep 2026", "Ollama 0.34.4 / RTX 3090", "LLM/ensemble ablation, CoT + same-runtime baseline, GraphRAG"]],
-      [3.2, 4.4, 9.0])
 bullets([
-    "Replaying 3 already-extracted chunks on 0.34.3: 1 identical, 2 different. Whether the version or the GPU "
-    "causes this was not isolated; the 0.32.1 installer was not tried (user decision).",
-    "Ollama auto-updated to 0.34.4 after the corpus run had finished. Auto-update was then disabled, and the "
-    "version was checked at the start and end of every phase.",
-    "Even within one runtime and session, the LLM judge returned a different confidence on 7 of 296 repeated "
-    "calls (3 verdicts flipped). The cause was not isolated, but temperature 0 fixes the *settings*, not "
-    "bit-for-bit outputs.",
-    "Recommendation carried into the paper: extraction studies should report the inference-engine version "
-    "alongside the model, because \u201csame weights, temperature 0\u201d is not enough for reproducibility.",
+    "**Completeness on five Product meetings only.** Across all three domains we measured grounding "
+    "(hallucination), not completeness, so we cannot claim the 33–58% ceiling holds everywhere.",
+    "**Silver corpus labels.** Produced by NLI, which is weak on present content, so they overstate the gap rate.",
+    "**Small human spot-check.** One annotator, 52 elements from three pairs, no Product pair; no second "
+    "annotator, so no inter-annotator agreement (Cohen's kappa).",
+    "**Synthetic meetings** are model-written and cleaner than real speech.",
+    "**QMSum summaries stand in for filed decision records**; real minutes may differ.",
+    "**Only 7B-scale open models**, run locally; larger models may behave differently (future work).",
 ])
 
 # 11 ------------------------------------------------------------------------------------------
-doc.add_heading("11. Problems found and fixed along the way", level=1)
-simple_box(
-    "While running everything, several things were found that would have made a number wrong or misleading. "
-    "Each was fixed before it could reach the paper. This section is the audit trail, so a reviewer can see "
-    "exactly what was checked.")
-technical()
-table(["Problem found", "What would have gone wrong", "Fix"],
-      [["Pooled NLI accuracy on gaps (0.985) was 82% circular", "Overstated NLI on true gaps",
-        "Recomputed on independent labels: 0.916 (scripts/paper_detector_checks.py)"],
-       ["\u201cThe extractor invented nothing\u201d in the results notes", "False claim: 16.4% of quotes unsupported",
-        "Rewritten: no *miss* was caused by hallucination"],
-       ["CoT compared with an old-runtime baseline", "CoT effect mixed with the runtime change",
-        "Same-runtime baseline added (--no-cot)"],
-       ["CoT script averaged per meeting, not pooled", "Baseline 33.7 / 57.5 instead of 33.3 / 58.3",
-        "Pooled everywhere"],
-       ["CoT scorer never received chunk text", "Quotes 0/0: Table 4 would show CoT hallucination 0%",
-        "Chunk text passed: 13.9%"],
-       ["LLM-only gap run overwrote Table 1\u2019s results file", "NLI / lexical rows lost from Table 1",
-        "All four detectors rendered together; NLI / lexical verified unchanged"],
-       ["Comparison table mixed two runtimes", "CoT would look like +0.0 lexical",
-        "Same-runtime EDIA row and a runtime note"],
-       ["GraphRAG converter invented content", "Could inflate GraphRAG\u2019s score",
-        "Support filter + reported sensitivity range (14.6\u201318.8%)"],
-       ["GraphRAG: no output cap, 25 parallel requests vs 1-slot server", "Runaway generations, endless timeouts",
-        "max_tokens 2048, concurrent_requests 1"],
-       ["Network blocks the tokenizer and HuggingFace downloads (TLS interception)", "GraphRAG failed; 27-minute stalls",
-        "Verified tokenizer file cached in data/; offline mode"],
-       ["Spot-check sampler deletes its output folder; report overwrites a committed file", "Loss of the earlier annotations / report",
-        "New folder used; original report restored; README warning"],
-       ["Academic hallucination 26.7% looked alarming", "Misread as a domain failure",
-        "Diagnosed as tidying of disfluent speech (72% near-verbatim)"],
-       ["Retired numbers (~47%; 0.836 model-only spot-check)", "Would overstate results or validation",
-        "Excluded from the paper; docs corrected"],
-       ["Ollama stored models on D:\\; --limit 1 hit a cached meeting; re-runs skip failed chunks", "Setup failure; a timing of 0.4 s; silent non-retries",
-        "Models copied to D:\\; timed with --limit 2; documented in the runbook"]],
-      [5.4, 4.8, 6.4], font=8.5)
+doc.add_heading("11. Questions you may be asked, and how to answer them", level=1)
+qa("Isn't finding only 33–58% of the reasoning a failure?",
+   "It is a feasibility study: the goal was to find out *whether* and *where* the task works, not to "
+   "sell a product. Measuring the ceiling and explaining why it exists (multi-hop reasoning, not "
+   "chunking or hallucination) is the result.")
+qa("Why give a range (33–58%) instead of one number?",
+   "Because there are two fair ways to decide whether two sentences match, and each has a known flaw. "
+   "The strict one misses correct reworded answers (14 of its 32 misses are correct), and the loose one "
+   "is more forgiving. Reporting only one would hide that.")
+qa("Why do you use balanced accuracy instead of accuracy or F1?",
+   "Because 93% of corpus elements are gaps. Always guessing “gap” would score about 93% "
+   "accuracy and an F1 of about 0.96 while doing nothing. Balanced accuracy gives that lazy detector 0.5.")
+qa("NLI is a standard tool for checking summaries. Why did it lose to word overlap?",
+   "NLI is normally used the other way round: checking that a *summary* is supported by its *source*. "
+   "Gap detection asks whether a source sentence survives in a much shorter summary. In that direction "
+   "NLI calls almost everything “not implied”, even word-for-word copies (29.2% accuracy).")
+qa("Would a bigger AI model fix the LLM judge or the extractor?",
+   "Possibly, and we say so as a limitation: we only tested 7B open models. But the judge's problem is "
+   "a systematic yes-bias, and the extraction misses are about scattered and implicit reasoning, which "
+   "the alternatives we tested did not fix either.")
+qa("Why is completeness measured on only 5 meetings?",
+   "Completeness needs a person to list every reason in the meeting by hand, which takes hours per "
+   "meeting. Across all 227 meetings we measured what needs no human answers, the quote check, and the "
+   "paper states this limitation explicitly.")
+qa("EDIA's precision is 13.8%. Does that mean it is mostly wrong?",
+   "No. The answer list has only the 48 key reasons; EDIA writes 398 elements, many of them the same "
+   "reason found again in another chunk, and many real reasons that are not on the short list. Precision "
+   "is a lower bound for comparing methods, and on F1, which balances both, EDIA is the best method.")
+qa("Did chain-of-thought help?",
+   "It found slightly more (+4.2 points semantic recall) but wrote 50% more, so its precision and F1 "
+   "dropped (F1 22.0% to 18.3%). Overall, no.")
+qa("Why does multi-hop retrieval score 0% lexical?",
+   "It returns whole transcript turns, which are long, while the true reasons are short phrases, so "
+   "word overlap rarely clears the threshold. The semantic score (12.8%) is the informative one. We "
+   "also score it only on what it retrieves, not on the decisions we handed it.")
+qa("Does EDIA make things up?",
+   "Some quotes cannot be found in the transcript: 16.4% on the gold meetings, 14.6% across the corpus. "
+   "Most of those are tidied quotes with filler words removed; counting only genuinely wrong quotes "
+   "it is 5.4% across the corpus. None of the 20 analysed misses was caused by an invented quote.")
+qa("If an AI labelled the 227 corpus meetings, can we trust those numbers?",
+   "Only as upper bounds on the gap rate, which is how the paper uses them. The human spot-check shows "
+   "the labels never missed a real gap but called about half of present content “missing”. We "
+   "never score NLI against its own labels.")
+qa("Why use made-up meetings at all?",
+   "They are the only data where the right answers are known by construction and the gaps are close to "
+   "50/50, which is what a fair detector comparison needs. Their limitation, being cleaner than real "
+   "speech, is stated in the paper.")
+qa("What would you do next?",
+   "Track each decision's discussion across the whole meeting before extracting (link later turns back "
+   "to the proposal they respond to); hand-label a few Academic and Committee meetings to test the "
+   "ceiling across domains; add a second human annotator; and test larger models.")
 
 # 12 ------------------------------------------------------------------------------------------
-doc.add_heading("12. What the results do not show", level=1)
-simple_box(
-    "Honest limits matter as much as results. These are the main things this study **cannot** claim.")
-bullets([
-    "**Completeness is measured on only 5 meetings, all Product design.** Across all three domains we measured "
-    "grounding (hallucination), not completeness. So we cannot claim the 33\u201358% ceiling holds everywhere.",
-    "**The automatic corpus labels overstate gaps.** The human check found that about half of their "
-    "\u201cgaps\u201d are actually present in the minutes. Corpus-tier figures are upper bounds.",
-    "**The human check is small:** 52 items, one person, no Product meeting, so no agreement statistic between "
-    "two people is possible.",
-    "**Synthetic meetings are AI-written** and cleaner than real speech.",
-    "**QMSum summaries stand in for real filed minutes.**",
-    "**Only 7B-scale open models were used**, run locally. Larger models may behave differently.",
-    "**Runtime sensitivity:** results can shift slightly across inference-engine versions (section 10).",
-])
+doc.add_heading("12. Map of the paper", level=1)
+table(["In the paper", "What it shows", "Explained here"],
+      [["Abstract, Sec. I", "The problem, the four contributions, the one-word answer (“partially”)", "§§1–2"],
+       ["Sec. II", "Related work: QMSum, NLI for faithfulness, LLM judges, RAG/GraphRAG, chain-of-thought", "§3, glossary"],
+       ["Sec. III, Fig. 1", "The EDIA pipeline and how it is evaluated", "§3, §5"],
+       ["Sec. IV, Table I", "The adhd_v1 benchmark and the human spot-check", "§4"],
+       ["Sec. V, Table II", "Gap detection: lexical beats NLI; LLM judge at chance", "§6"],
+       ["Sec. VI, Tables III–V", "Completeness, corpus grounding, failure taxonomy", "§7"],
+       ["Sec. VII, Tables VI–VII", "Comparison with CoT, GraphRAG, multi-hop; precision/F1", "§8"],
+       ["Sec. VIII–IX", "Discussion, limitations, conclusion", "§§9–10"]],
+      [3.8, 9.4, 3.4], font=9)
 
 # 13 ------------------------------------------------------------------------------------------
-doc.add_heading("13. What would do better", level=1)
-simple_box(
-    "The missing reasons are scattered or implied. Longer context windows, step-by-step thinking, knowledge "
-    "graphs and chained searches all fail to find them. A method that follows a decision **through the whole "
-    "meeting** is more likely to work: linking later remarks back to the proposal they respond to, before trying "
-    "to fill in the form.")
-technical()
-bullets([
-    "Discourse- or thread-level modelling of a decision across the full transcript (reply structure, "
-    "coreference to proposals) before extraction, rather than similarity-based retrieval.",
-    "A larger, multi-annotator human validation of the corpus labels (with Cohen\u2019s kappa), including "
-    "Product meetings.",
-    "Completeness ground truth for Academic and Committee meetings.",
-    "Replication with larger models and with the inference-engine version pinned.",
-])
-
-# 14 ------------------------------------------------------------------------------------------
-doc.add_heading("14. Where everything is", level=1)
-simple_box(
-    "Everything lives in the project folder D:\\EIDA (backed up on the pendrive at E:\\EIDA) and is saved in git "
-    "history. The paper is in paper/, the results are in outputs/, and SESSION_LOG.md says what was done and "
-    "what comes next.")
-technical()
-table(["What", "Where"],
-      [["Paper (LaTeX / Word / figure / sources)", "paper/edia_ieee.tex, edia_ieee.docx, fig_pipeline.png, refs.bib, NUMBERS.md"],
-       ["This explainer", "paper/EDIA_explained.docx (built by paper/build_explainer.py)"],
-       ["Gap detection (Table 1)", "outputs/gap_eval_results.md, outputs/paper_detector_checks.md"],
-       ["Completeness (Table 2) and failure taxonomy (Table 3)", "outputs/task4_extraction_scores*.json, outputs/failure_taxonomy.md"],
-       ["Corpus grounding by domain", "outputs/corpus_extraction_results.md, outputs/corpus_quote_fidelity.md"],
-       ["CoT, GraphRAG, multi-hop, Table 4", "outputs/cot_ablation_results.md, graphrag_results.md, multihop_retrieval_results.md, comparative_analysis.md"],
-       ["Human spot-check", "data/benchmark/spotcheck_mini/, outputs/qmsum_spotcheck_mini_report.json"],
-       ["How every step was run; resume point", "CONTINUATION_RUNBOOK.md, SESSION_LOG.md"]],
-      [5.6, 11.0], font=9)
-para("**Reproduce (from D:\\EIDA, with the venv):** python -m pytest -q (159 passed, 2 skipped) \u00b7 "
-     "scripts/run_gap_eval.py --detectors nli lexical llm ensemble --llm-sample 400 --threshold 0.55 \u00b7 "
-     "scripts/run_corpus_extraction.py --rescore-only \u00b7 scripts/run_cot_ablation.py [--no-cot] \u00b7 "
-     "scripts/run_graphrag_comparison.py \u00b7 scripts/multihop_retrieval.py \u00b7 "
-     "scripts/build_comparison_table.py \u2026 (exact flags in SESSION_LOG.md). Cached results make most of these "
-     "run in seconds. Set HF_HUB_OFFLINE=1 on the lab network.")
-
-# 15 ------------------------------------------------------------------------------------------
-doc.add_heading("15. Glossary", level=1)
+doc.add_heading("13. Glossary", level=1)
 table(["Term", "In simple terms", "Technically"],
-      [["Gap", "A reason said in the meeting but left out of the minutes", "Reasoning element absent from the filed document (gold label \u201comitted\u201d)"],
-       ["Reasoning element", "One piece of \u201cwhy\u201d: an option, a reason, a worry, a condition", "Typed unit: decision / alternative / rationale / condition / dissent / owner / approver"],
-       ["Gold / silver / constructed labels", "Answers checked by a person / guessed by a model / known by design", "Human-annotated / NLI-produced / fixed before text generation"],
+      [["Decision-context gap", "A reason said in the meeting but left out of the minutes", "Reasoning element absent from the filed document (label “omitted”)"],
+       ["Reasoning element", "One piece of “why”: an option, a reason, a worry, a condition", "Typed unit: decision / alternative / rationale / condition / dissent / owner / approver"],
+       ["Gold / silver / constructed labels", "Checked by a person / guessed by a model / known by design", "Human-annotated / NLI-produced / fixed before text generation"],
+       ["Transcript, chunk", "The written record of the meeting; a bite-sized piece of it", "Speaker-turn text; ≤ 1,200 tokens with 2-turn overlap"],
+       ["Token", "Roughly a word or part of a word", "Unit the model reads and writes"],
+       ["Mistral 7B", "The free AI model EDIA uses", "Open 7-billion-parameter language model"],
        ["NLI (entailment)", "A model that judges whether one text implies another", "roberta-large-mnli, P(entailment | document, element)"],
-       ["LLM judge", "Asking a chatbot-style model \u201cis this in there?\u201d", "Mistral 7B with a JSON verdict + confidence prompt"],
-       ["Base rate", "How common the \u201cmissing\u201d answer is", "Prior probability of the gap class (0.93 in the corpus)"],
-       ["F1 / precision / recall", "How right and how complete the answers are", "Harmonic mean of precision (correct among flagged) and recall (found among true)"],
-       ["Balanced accuracy", "A fair score where guessing the common answer gets 50%", "Mean of per-class recall"],
-       ["Completeness", "Share of the person\u2019s reasons the system found", "Matched ground-truth elements / all ground-truth elements"],
-       ["Lexical vs semantic matching", "Same words vs same meaning", "Token-F1 \u2265 0.45 vs MiniLM cosine \u2265 0.55"],
-       ["Hallucination / unsupported quote", "Evidence the AI gave that is not in the transcript", "Quote not found in its own chunk after normalisation"],
-       ["Chunk", "A bite-sized piece of the meeting", "\u2264 1,200 tokens, 2-turn overlap"],
-       ["Temperature 0 / deterministic settings", "The AI is told to always pick its top answer (almost always the same)", "Greedy decoding (top-k 1, fixed seed); outputs can still vary slightly across runtimes and runs"],
-       ["Chain-of-thought (CoT)", "Asking the AI to think step by step first", "Unconstrained notes pass + constrained extraction pass"],
-       ["GraphRAG", "Microsoft\u2019s method that builds a map of people and things, then searches it", "Entity graph + community summaries; local search"],
-       ["Multi-hop retrieval", "Search, then use the result to search again", "Chained TF-IDF retrieval: rationale \u2192 alternatives \u2192 objections"],
+       ["LLM judge", "Asking the AI model “is this in there?”", "Mistral 7B prompted for a verdict and confidence"],
+       ["Threshold", "The cut-off score for saying yes", "0.55 for detectors; 0.45 / 0.55 for lexical / semantic matching"],
+       ["Base rate", "How common the “missing” answer is", "Prior probability of the gap class (0.93 in the corpus)"],
+       ["Precision / recall / F1", "Right among what you said / found among what exists / both combined", "TP/(TP+FP); TP/(TP+FN); harmonic mean"],
+       ["Balanced accuracy", "A fair score where blind guessing gets 50%", "Mean of per-class recall"],
+       ["Completeness", "Share of the person's reasons the system found", "Matched gold elements / all gold elements (= recall)"],
+       ["Lexical vs semantic matching", "Same words vs same meaning", "Token F1 ≥ 0.45 vs MiniLM cosine ≥ 0.55"],
+       ["Unsupported quote", "Evidence the AI gave that is not in the transcript", "Quote not found in its own chunk after normalisation"],
+       ["Deterministic decoding", "The AI always picks its single most likely next word", "Temperature 0, top-k 1, fixed seed"],
+       ["Chain-of-thought (CoT)", "Asking the AI to think step by step first", "Free-text notes pass, then constrained extraction"],
+       ["GraphRAG", "Microsoft's method: build a map of people and things, then search it", "Entity graph + community summaries; local search"],
+       ["TF-IDF", "Search that favours rare, distinctive words", "Term-frequency × inverse-document-frequency vectors, cosine similarity"],
+       ["Multi-hop retrieval", "Search, then use the result to search again", "Chained retrieval: rationale → alternatives → objections"],
        ["Multi-hop reasoning", "Connecting clues spread far apart", "Evidence for one element spans distant, non-adjacent turns"],
-       ["Ollama / runtime", "The program that runs the AI model on the PC", "Local inference server (llama.cpp-based); version affects outputs"]],
-      [3.4, 6.2, 7.0], font=8.5)
+       ["Inference runtime", "The program that runs the AI model", "Local model server; its version can change outputs slightly"]],
+      [3.6, 6.0, 7.0], font=8.5)
 
 doc.core_properties.title = "EDIA, explained"
 doc.core_properties.author = "Jaitra Shah; Manan Mehta; Soham Dwivedi; Aayusman Pati"
