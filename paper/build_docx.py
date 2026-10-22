@@ -8,10 +8,12 @@ for the constructs edia_ieee.tex actually uses (sections, subsections, paragraph
 itemize, table/table*, figure, \\textbf/\\emph/\\textit/\\texttt/\\url/\\footnote/\\TODO,
 \\cite, \\ref, simple inline math) -- not a general LaTeX engine.
 
-Layout follows the IEEE conference template: US Letter, margins 0.75/1/0.625/0.625 in,
-two 3.5 in columns with 0.25 in gutter, Times New Roman 10 pt, small-caps Roman-numbered
-section heads, lettered italic subsections, table captions above ("TABLE I"), figure
-captions below ("Fig. 1."), 8 pt numbered references in citation order.
+Layout follows the IEEE conference template (Template (1).docx): US Letter, margins
+0.75/1/0.62/0.62 in, two columns, Times New Roman 10 pt. Paragraphs carry the template's own
+style names (paper title, Author, Abstract, Keywords, Heading 1/2, Body Text, bullet list,
+figure caption, table head, table copy, references), defined in make_styles() with the
+template's properties, so Word's Styles pane shows the same vocabulary. The four authors sit
+in a four-column section, as the template prescribes for fewer than six authors.
 """
 
 from __future__ import annotations
@@ -186,9 +188,8 @@ def inline(s: str, fmt: dict | None = None) -> list:
 
 # ----------------------------------------------------------------------------- docx helpers
 def set_run(run, fmt: dict, size: float):
-    run.font.name = FONT
-    run._element.rPr.rFonts.set(qn("w:eastAsia"), FONT)
-    run.font.size = Pt(size)
+    if size is not None:
+        run.font.size = Pt(size)
     run.bold = fmt.get("b") or None
     run.italic = fmt.get("i") or None
     if fmt.get("sc"):
@@ -202,23 +203,103 @@ def set_run(run, fmt: dict, size: float):
         run.font.color.rgb = RGBColor.from_string(fmt["color"])
 
 
-def add_runs(par, runs, size=10.0, base: dict | None = None):
+def add_runs(par, runs, size=None, base: dict | None = None):
     for text, fmt in runs:
         set_run(par.add_run(text), {**(base or {}), **fmt}, size)
 
 
-def para(doc, runs=None, size=10.0, align=WD_ALIGN_PARAGRAPH.JUSTIFY, indent=True,
-         before=0.0, after=0.0, base=None, keep_next=False):
-    p = doc.add_paragraph()
+def para(doc, runs=None, style="Body Text", align=None, indent=None, before=None, after=None,
+         keep_next=False, size=None):
+    """Paragraph in a template style; only the arguments given override the style."""
+    p = doc.add_paragraph(style=style)
     pf = p.paragraph_format
-    pf.alignment = align
-    pf.space_before, pf.space_after = Pt(before), Pt(after)
-    pf.first_line_indent = Pt(10) if indent else None
-    pf.line_spacing = 1.0
-    pf.keep_with_next = keep_next or None
+    if align is not None:
+        pf.alignment = align
+    if before is not None:
+        pf.space_before = Pt(before)
+    if after is not None:
+        pf.space_after = Pt(after)
+    if indent is False:
+        pf.first_line_indent = Pt(0)
+    if keep_next:
+        pf.keep_with_next = True
     if runs:
-        add_runs(p, runs, size, base)
+        add_runs(p, runs, size)
     return p
+
+
+def spacer(doc, pts: float):
+    """Empty paragraph `pts` tall."""
+    p = para(doc, style="Normal", before=0, after=0)
+    p.paragraph_format.line_spacing = Pt(pts)
+    return p
+
+
+def _style(doc, name, base="Normal", size=None, bold=None, italic=None, small_caps=None,
+           align=None, before=None, after=None, line=None, first=None, left=None, spacing=None):
+    st = doc.styles.add_style(name, WD_STYLE_TYPE.PARAGRAPH)
+    st.base_style = doc.styles[base]
+    st.quick_style = True
+    f, pf = st.font, st.paragraph_format
+    if size is not None:
+        f.size = Pt(size)
+    f.bold, f.italic, f.small_caps = bold, italic, small_caps
+    if align is not None:
+        pf.alignment = align
+    if before is not None:
+        pf.space_before = Pt(before)
+    if after is not None:
+        pf.space_after = Pt(after)
+    if line is not None:
+        pf.line_spacing = line
+    if first is not None:
+        pf.first_line_indent = Pt(first)
+    if left is not None:
+        pf.left_indent = Pt(left)
+    if spacing is not None:                                   # character spacing, 1/20 pt
+        sp = OxmlElement("w:spacing")
+        sp.set(qn("w:val"), str(spacing))
+        st.element.get_or_add_rPr().append(sp)
+    return st
+
+
+def make_styles(doc):
+    """The template's paragraph styles (names and properties from Template (1).docx)."""
+    J, C, L = WD_ALIGN_PARAGRAPH.JUSTIFY, WD_ALIGN_PARAGRAPH.CENTER, WD_ALIGN_PARAGRAPH.LEFT
+    styles = doc.styles
+    normal = styles["Normal"]
+    normal.font.name, normal.font.size = FONT, Pt(10)
+    normal.element.rPr.rFonts.set(qn("w:eastAsia"), FONT)
+    normal.paragraph_format.alignment = C                     # template Normal is centred
+    normal.paragraph_format.space_before = normal.paragraph_format.space_after = Pt(0)
+    normal.paragraph_format.line_spacing = 1.0
+    for name in ("Heading 1", "Heading 2", "Body Text"):      # drop Word's themed versions
+        el = styles[name].element
+        el.getparent().remove(el)
+    _style(doc, "paper title", size=24, align=C, after=6)
+    _style(doc, "Author", size=11, align=C, before=18, after=2)
+    _style(doc, "Abstract", size=9, bold=True, align=J, after=10, first=13.6)
+    _style(doc, "Keywords", base="Abstract", italic=True, after=6, first=13.7)
+    heads = []
+    for name, lvl, kw in (("Heading 1", 0, dict(small_caps=True, align=C, before=8, after=4, first=0)),
+                          ("Heading 2", 1, dict(italic=True, align=L, before=6, after=3))):
+        st = _style(doc, name, **kw)
+        st.paragraph_format.keep_with_next = st.paragraph_format.keep_together = True
+        ol = OxmlElement("w:outlineLvl")
+        ol.set(qn("w:val"), str(lvl))
+        st.element.get_or_add_pPr().append(ol)
+        heads.append(st)
+    body = _style(doc, "Body Text", align=J, after=6, line=0.95, first=14.4, spacing=-1)
+    for st in heads:
+        st.next_paragraph_style = body
+    _style(doc, "bullet list", base="List Bullet", align=J, after=6, line=0.95, left=28.8,
+           first=-14.4, spacing=-1)
+    _style(doc, "figure caption", size=8, align=J, before=4, after=10, first=0)
+    _style(doc, "table head", size=8, small_caps=True, align=C, before=12, after=6, line=0.9)
+    _style(doc, "table copy", size=8, align=J)
+    ref = _style(doc, "references", size=8, align=J, after=2.5, left=21.6, first=-21.6)
+    ref.paragraph_format.line_spacing = Pt(9)                 # exact 9 pt
+    ref.paragraph_format.tab_stops.add_tab_stop(Pt(21.6))
 
 
 def set_columns(section, n: int, space_in: float = 0.25):
@@ -232,8 +313,8 @@ def set_columns(section, n: int, space_in: float = 0.25):
 
 def page_setup(section):
     section.page_width, section.page_height = Inches(8.5), Inches(11)
-    section.top_margin, section.bottom_margin = Inches(0.75), Inches(1.0)
-    section.left_margin = section.right_margin = Inches(0.625)
+    section.top_margin, section.bottom_margin = Pt(54), Pt(72)
+    section.left_margin = section.right_margin = Pt(44.65)
 
 
 # WordprocessingML fixes the child order of these property blocks; Word treats an
@@ -392,10 +473,8 @@ def render_table(doc, block: str, labels: dict, width_in: float):
     aligns, rows, rules_after = parse_tabular(block)
     ncol = len(aligns)
     # caption above: "TABLE I" + caption text, small caps, centred, 8 pt
-    para(doc, [(f"TABLE {labels[label]}", {"sc": True})], size=8,
-         align=WD_ALIGN_PARAGRAPH.CENTER, indent=False, before=8, keep_next=True)
-    para(doc, inline(caption, {"sc": True}), size=8, align=WD_ALIGN_PARAGRAPH.CENTER,
-         indent=False, after=4, keep_next=True)
+    para(doc, [(f"TABLE {labels[label]}", {})], style="table head", before=8, after=0, keep_next=True)
+    para(doc, inline(caption), style="table head", before=0, after=4, keep_next=True)
     # column widths proportional to longest cell text
     plain = lambda t: "".join(x for x, _ in inline(t))
     longest = [max((len(plain(r[1][c])) for r in rows if r[0] == "cells"), default=4) for c in range(ncol)]
@@ -415,11 +494,12 @@ def render_table(doc, block: str, labels: dict, width_in: float):
             cells_content = [(row.cells[c], content[c], aligns[c]) for c in range(ncol)]
         for cell, text, al in cells_content:
             p = cell.paragraphs[0]
-            p.style = doc.styles["IEEE Table Text"]
+            p.style = doc.styles["table copy"]
+            p.paragraph_format.space_before = p.paragraph_format.space_after = Pt(1)
             p.paragraph_format.alignment = {"l": WD_ALIGN_PARAGRAPH.LEFT, "r": WD_ALIGN_PARAGRAPH.RIGHT,
                                             "c": WD_ALIGN_PARAGRAPH.CENTER}[al]
             p.paragraph_format.keep_with_next = ri < len(rows) - 1 or None   # never split a table
-            add_runs(p, inline(text), size=8)
+            add_runs(p, inline(text))
         for c, cell in enumerate(row.cells):
             cell.width = Inches(widths[c])
             edges = {}
@@ -430,17 +510,16 @@ def render_table(doc, block: str, labels: dict, width_in: float):
             if ri == len(rows) - 1:
                 edges["bottom"] = 8                  # \bottomrule
             cell_borders(cell, **edges)
-    para(doc, after=6, indent=False, size=4)         # small gap after the table
+    spacer(doc, 6)                                   # small gap after the table
 
 
 def render_figure(doc, block: str, labels: dict):
     img = command_arg(block, "includegraphics")
     caption = command_arg(block, "caption")
     label = command_arg(block, "label")
-    p = para(doc, align=WD_ALIGN_PARAGRAPH.CENTER, indent=False, before=6, keep_next=True)
+    p = para(doc, style="Normal", before=6, keep_next=True)
     p.add_run().add_picture(str(HERE / img), width=Inches(COL_W))
-    para(doc, [(f"Fig. {labels[label]}. ", {})] + inline(caption), size=8,
-         align=WD_ALIGN_PARAGRAPH.JUSTIFY, indent=False, after=8)
+    para(doc, [(f"Fig. {labels[label]}. ", {})] + inline(caption), style="figure caption", after=8)
 
 
 # ----------------------------------------------------------------------------- main
@@ -487,55 +566,43 @@ def main() -> int:
         return re.sub(r"\\ref\{([^}]+)\}", lambda m: labels[m.group(1)], s)
 
     doc = Document()
-    normal = doc.styles["Normal"]
-    normal.font.name, normal.font.size = FONT, Pt(10)
-    normal.element.rPr.rFonts.set(qn("w:eastAsia"), FONT)
-    normal.paragraph_format.space_after = Pt(0)       # template default is 10 pt + 1.15 lines
-    normal.paragraph_format.space_before = Pt(0)
-    normal.paragraph_format.line_spacing = 1.0
-    tstyle = doc.styles.add_style("IEEE Table Text", WD_STYLE_TYPE.PARAGRAPH)
-    tstyle.base_style = normal
-    tstyle.font.size = Pt(8)
-    tstyle.paragraph_format.space_before = tstyle.paragraph_format.space_after = Pt(1)
+    make_styles(doc)
     page_setup(doc.sections[0])
     set_columns(doc.sections[0], 1)
 
     # --- title + authors (single column)
     title = command_arg(tex, "title")
-    p = para(doc, align=WD_ALIGN_PARAGRAPH.CENTER, indent=False, after=10)
-    add_runs(p, inline(re.sub(r"\\\\", " ", title)), size=24)   # Word wraps; no forced break
+    p = para(doc, style="paper title", after=10)
+    add_runs(p, inline(re.sub(r"\\\\", " ", title)))       # Word wraps; no forced break
     author_src = command_arg(tex, "author")
-    names = re.findall(r"\\IEEEauthorblockN\{", author_src)
     blocks = []
     for m in re.finditer(r"\\IEEEauthorblockN\{", author_src):
         name, j = braced(author_src, m.end() - 1)
         k = author_src.index("\\IEEEauthorblockA{", j)
         aff, _ = braced(author_src, k + len("\\IEEEauthorblockA"))
         blocks.append((name, [l for l in re.split(r"\\\\", aff) if l.strip()]))
-    at = doc.add_table(rows=1, cols=len(blocks))
-    no_table_borders(at)
-    for cell, (name, aff) in zip(at.rows[0].cells, blocks):
-        cp = cell.paragraphs[0]
-        cp.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        add_runs(cp, inline(name), size=11)
+
+    # --- authors: one column each, as the template does for fewer than six authors
+    auth_sec = doc.add_section(WD_SECTION.CONTINUOUS)
+    set_columns(auth_sec, len(blocks), 0.15)
+    for n, (name, aff) in enumerate(blocks):
+        p = para(doc, style="Author", before=6)
+        if n:
+            p.add_run().add_break(WD_BREAK.COLUMN)
+        add_runs(p, inline(name))
         for line in aff:
-            q = cell.add_paragraph()
-            q.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
-            add_runs(q, inline(line), size=10, base={"i": True})
-    para(doc, after=6, indent=False, size=6)
+            para(doc, inline(line), style="Author", before=0, after=0, size=9)
 
     # --- two-column body
     body_sec = doc.add_section(WD_SECTION.CONTINUOUS)
     set_columns(body_sec, 2)
 
     abstract = env(tex, "abstract")
-    p = para(doc, size=9, after=6, indent=True)
-    add_runs(p, [("Abstract", {"b": True, "i": True}), ("\u2014", {"b": True})], size=9)
-    add_runs(p, inline(resolve(abstract)), size=9, base={"b": True})
+    p = para(doc, style="Abstract", before=6)
+    add_runs(p, [("Abstract", {"i": True}), ("\u2014", {})] + inline(resolve(abstract)))
     kw = env(tex, "IEEEkeywords")
-    p = para(doc, size=9, after=8, indent=True)
-    add_runs(p, [("Index Terms", {"b": True, "i": True}), ("\u2014", {"b": True})], size=9)
-    add_runs(p, inline(kw), size=9, base={"b": True})
+    p = para(doc, style="Keywords")
+    add_runs(p, [("Keywords\u2014", {})] + inline(kw))
 
     sec_no, sub_no = 0, 0
     for chunk in re.split(r"\n\s*\n", body):
@@ -546,17 +613,15 @@ def main() -> int:
             if m.group(1):                                   # subsection
                 label = f"{chr(ord('A') + sub_no)}. "
                 sub_no += 1
-                para(doc, [(label, {"i": True})] + inline(resolve(head), {"i": True}),
-                     align=WD_ALIGN_PARAGRAPH.LEFT, indent=False, before=6, after=3, keep_next=True)
+                para(doc, [(label, {})] + inline(resolve(head)), style="Heading 2")
             else:
                 if m.group(2):                               # unnumbered (\section*)
-                    runs = inline(head, {"sc": True})
+                    runs = inline(head)
                 else:
-                    runs = [(ROMAN[sec_no] + ". ", {"sc": True})] + inline(resolve(head), {"sc": True})
+                    runs = [(ROMAN[sec_no] + ". ", {})] + inline(resolve(head))
                     sec_no += 1
                     sub_no = 0
-                para(doc, runs, align=WD_ALIGN_PARAGRAPH.CENTER, indent=False, before=10, after=4,
-                     keep_next=True)
+                para(doc, runs, style="Heading 1")
             chunk = chunk[end:].strip()
         # a chunk may mix paragraph text and environments (e.g. "...:" directly followed by itemize)
         while chunk:
@@ -572,8 +637,7 @@ def main() -> int:
             block, chunk = chunk[m_env.start():stop], chunk[stop:].strip()
             if kind == "itemize":
                 for item in re.split(r"\\item\s+", env(block, "itemize"))[1:]:
-                    p = doc.add_paragraph(style="List Bullet")
-                    p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+                    p = doc.add_paragraph(style="bullet list")
                     add_runs(p, inline(resolve(item.strip())))
             elif kind == "figure":
                 render_figure(doc, resolve(block), labels)
@@ -587,14 +651,10 @@ def main() -> int:
                 set_columns(two, 2)
 
     # --- references
-    para(doc, [("References", {"sc": True})], align=WD_ALIGN_PARAGRAPH.CENTER, indent=False,
-         before=10, after=4, keep_next=True)
+    para(doc, [("References", {})], style="Heading 1")
     for key in order:
-        p = para(doc, size=8, align=WD_ALIGN_PARAGRAPH.JUSTIFY, indent=False)
-        pf = p.paragraph_format
-        pf.left_indent, pf.first_line_indent = Inches(0.3), Inches(-0.3)
-        pf.tab_stops.add_tab_stop(Inches(0.3))
-        add_runs(p, [(f"[{cite_no[key]}]\t", {})] + ieee_reference(bib[key]), size=8)
+        p = para(doc, style="references")
+        add_runs(p, [(f"[{cite_no[key]}]	", {})] + ieee_reference(bib[key]))
 
     doc.core_properties.title = "".join(t for t, _ in inline(title.replace("\\\\", " ")))
     doc.core_properties.author = "; ".join("".join(t for t, _ in inline(n)) for n, _ in blocks)
