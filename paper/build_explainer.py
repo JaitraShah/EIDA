@@ -259,13 +259,13 @@ para("A **decision-context gap** is a reasoning element voiced in a meeting but 
 doc.add_heading("2. What the paper contributes", level=1)
 simple_box(
     "The paper gives four things: a working system (EDIA), a test set to measure such systems fairly "
-    "(adhd_v1), an explanation of *why* the system misses what it misses, and a fair comparison against "
+    "(edia_db), an explanation of *why* the system misses what it misses, and a fair comparison against "
     "three popular alternatives.")
 technical()
 table(["Contribution", "What it is", "Where in the paper"],
       [["EDIA", "End-to-end pipeline for structured decision-reasoning extraction + gap detection, "
         "run entirely on open models (no paid APIs)", "Sec. III, Fig. 1"],
-       ["adhd_v1 benchmark", "371 transcript–document pairs, 6,647 labelled elements, in three tiers "
+       ["edia_db benchmark", "371 transcript–document pairs, 6,647 labelled elements, in three tiers "
         "with explicit label provenance", "Sec. IV, Table I"],
        ["Failure diagnosis", "Every residual miss read by hand and categorised; multi-hop reasoning "
         "dominates", "Sec. VI, Table V"],
@@ -314,7 +314,7 @@ table(["Detector", "In simple terms", "Technically"],
       [2.4, 6.0, 8.2], font=9)
 
 # 4 -------------------------------------------------------------------------------------------
-doc.add_heading("4. The test data: adhd_v1 (paper Sec. IV, Table I)", level=1)
+doc.add_heading("4. The test data: edia_db (paper Sec. IV, Table I)", level=1)
 simple_box(
     "To grade the system we need meetings where the right answers are known. We built three kinds:",
     "- **Gold:** 5 real meetings where a person marked every reason by hand. Most trustworthy, but small.",
@@ -689,7 +689,7 @@ table(["In the paper", "What it shows", "Explained here"],
       [["Abstract, Sec. I", "The problem, the four contributions, the one-word answer (“partially”)", "§§1–2"],
        ["Sec. II", "Related work: QMSum, NLI for faithfulness, LLM judges, RAG/GraphRAG, chain-of-thought", "§3, glossary"],
        ["Sec. III, Fig. 1", "The EDIA pipeline and how it is evaluated", "§3, §5"],
-       ["Sec. IV, Table I", "The adhd_v1 benchmark and the human spot-check", "§4"],
+       ["Sec. IV, Table I", "The edia_db benchmark and the human spot-check", "§4"],
        ["Sec. V, Table II", "Gap detection: lexical beats NLI; LLM judge at chance", "§6"],
        ["Sec. VI, Tables III–V", "Completeness, corpus grounding, failure taxonomy", "§7"],
        ["Sec. VII, Tables VI–VII", "Comparison with CoT, GraphRAG, multi-hop; precision/F1", "§8"],

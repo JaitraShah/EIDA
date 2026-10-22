@@ -4,7 +4,7 @@ Builds on Tasks 1–3, whose outputs are in `outputs/`:
 `gap_validation_results.md` (5 hand-validated QMSum pairs), `nli_transfer_test_results.md`
 (roberta-large-mnli at 95.5% on 22 elements), `task3_ingestion_output_summary.md`.
 
-The benchmark (`adhd_v1`, **locked**) spans the **whole QMSum corpus** (all 232
+The benchmark (`edia_db`, **locked**) spans the **whole QMSum corpus** (all 232
 meetings, 3 domains: 5 hand-labelled + 227 auto-labelled) plus **139 synthetic
 pairs** — 371 pairs / 6 647 elements in total. See `CONTINUATION_RUNBOOK.md` for how
 every result was produced, `outputs/dataset_card.md` for composition and label

@@ -1,6 +1,6 @@
-# Benchmark results — adhd_v1
+# Benchmark results — edia_db
 
-*Dataset locked at `adhd_v1`. All phases complete as of 2026-09-26: gap detection
+*Dataset locked at `edia_db`. All phases complete as of 2026-09-26: gap detection
 (NLI, lexical, LLM, ensemble), extraction on the 5 gold meetings and corpus-wide,
 the comparative analysis, and a human mini spot-check. The paper draft is in
 `paper/`; `paper/NUMBERS.md` maps every paper number to its source file.*

@@ -1,5 +1,5 @@
 # EDIA — Revised Project Plan
-**Branch:** `Jaitra` | **Dataset:** `adhd_v1` (locked at current state)  
+**Branch:** `Jaitra` | **Dataset:** `edia_db` (locked at current state)  
 **Faculty approval:** Confirmed  
 **Last updated:** September 2026
 
@@ -54,7 +54,7 @@ The answer our results are pointing toward: not fully achievable yet. The reason
 
 ---
 
-## Current dataset state (adhd_v1, locked)
+## Current dataset state (edia_db, locked)
 
 Do not generate more synthetic pairs or add more data. Work only with what exists.
 
@@ -266,7 +266,7 @@ This is **Table 4** and the centrepiece of your comparative analysis section.
    - Gap detection
    - Evaluation design and metrics (explain the base rate problem here)
 
-4. Dataset: adhd_v1 (~0.5 pages)
+4. Dataset: edia_db (~0.5 pages)
    - Three tiers: gold, corpus, synthetic
    - Why the synthetic tier matters (balanced gap rate)
    - Honest caveats: NLI auto-labels, not all human-verified
@@ -328,7 +328,7 @@ Submission approximately 18 March 2026. Pre-submission mentorship approximately 
 - Do not report gap F1 alone. Always pair with balanced accuracy and present-class F1.
 - Do not pick the flattering scorer. Always report both lexical and semantic completeness.
 - Do not claim the system works reliably. The honest framing is: it finds half the reasoning, and here is exactly why.
-- Do not add more data to adhd_v1. The dataset is locked.
+- Do not add more data to edia_db. The dataset is locked.
 - Do not run a large job without first confirming `python -m pytest -q` passes.
 
 ---
@@ -364,4 +364,4 @@ ls data/benchmark/pairs/SYN_*.json | wc -l
 
 ---
 
-*Plan version: 2.0 | Dataset: adhd_v1 (locked) | Faculty approval: confirmed | Scope: feasibility study + comparative analysis*
+*Plan version: 2.0 | Dataset: edia_db (locked) | Faculty approval: confirmed | Scope: feasibility study + comparative analysis*

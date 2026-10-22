@@ -69,7 +69,7 @@ study whether current AI can recover that reasoning and detect when a filed
 document has dropped it. We build EDIA (\EDIAfull), a pipeline that extracts structured
 decision reasoning from transcripts with an open 7B language model and flags
 reasoning elements missing from the accompanying document, and we evaluate it on
-\textit{adhd\_v1}, a 371-pair, 6{,}647-element benchmark with three label tiers
+\textit{edia\_db}, a 371-pair, 6{,}647-element benchmark with three label tiers
 (hand-labelled, NLI-labelled, and constructed). Three findings stand out. First,
 on the only class-balanced tier a lexical-overlap detector outperforms an NLI
 entailment detector (balanced accuracy 0.775 vs.\ 0.629), because NLI fails to
@@ -112,7 +112,7 @@ We make four contributions:
 \begin{itemize}
 \item \textbf{EDIA} (\EDIAfull), an end-to-end pipeline for structured decision-reasoning
 extraction and gap detection, run entirely on open models.
-\item \textbf{adhd\_v1}, a three-tier benchmark (hand-labelled, NLI-labelled and
+\item \textbf{edia\_db}, a three-tier benchmark (hand-labelled, NLI-labelled and
 constructed pairs) with explicit label provenance, designed so that detector
 comparisons are made where the class balance allows them to be meaningful.
 \item \textbf{A diagnosis} of the extraction ceiling through a manually
@@ -221,7 +221,7 @@ ignoring transcription markers and filler words. The \emph{unsupported-quote
 rate} is the fraction of quotes not found under this check.
 
 % ---------------------------------------------------------------------------
-\section{Dataset: adhd\_v1}
+\section{Dataset: edia\_db}
 
 Table~\ref{tab:dataset} summarises the benchmark. Each pair contains a
 transcript, a short document, reasoning elements, and a per-element label:
@@ -229,7 +229,7 @@ transcript, a short document, reasoning elements, and a per-element label:
 unspecified wording.
 
 \begin{table}[t]
-\caption{The adhd\_v1 benchmark (dataset locked).}
+\caption{The edia\_db benchmark (dataset locked).}
 \label{tab:dataset}
 \centering
 \small
