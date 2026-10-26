@@ -19,7 +19,7 @@ Technology Management and Engineering, NMIMS, Mumbai.
 | **EDIA pipeline** | Transcript → chunks → structured decision records (Mistral 7B via Ollama, temperature 0) → gap detectors (lexical, NLI, LLM judge, ensemble). `edia/` |
 | **`edia_db` benchmark** | 371 transcript–document pairs, 6,647 labelled reasoning elements, in three tiers (5 hand-labelled, 227 NLI-labelled, 139 synthetic). Locked. `data/benchmark/pairs/`, card in `outputs/dataset_card.md` |
 | **Experiments** | Gap-detector comparison, extraction completeness and precision, corpus-wide grounding, failure taxonomy, and comparisons against chain-of-thought, GraphRAG and multi-hop retrieval. `scripts/`, results in `outputs/` |
-| **Papers and poster** | IEEE-format paper (`paper/edia_ieee.tex` / `.docx`), conference-template version, poster (`paper/poster/`), plain-language guide to the paper (`paper/EDIA_explained.docx`) |
+| **Paper** | IEEE-format paper (`paper/edia_ieee.tex` / `.docx`) with its figure and bibliography, and a plain-language guide to it (`paper/EDIA_explained.docx`) |
 
 ## Main results
 
@@ -51,7 +51,7 @@ data/
   benchmark/spotcheck_mini/   the human spot-check sample and annotations
   qmsum/                the five hand-labelled gold meetings
 outputs/                every result file (markdown + json) and the dataset card
-paper/                  papers, poster, figures, bibliography, NUMBERS.md
+paper/                  the paper, figure, bibliography, NUMBERS.md (source of every number)
 ```
 
 ## Setup

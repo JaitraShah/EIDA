@@ -33,6 +33,16 @@ paper/report_analysis.*
 paper/update_report_fields.ps1
 paper/nmims_logo.png
 
+# Poster and the separate conference-template papers (kept locally, not part of this repository)
+paper/poster/
+paper/build_poster.py
+paper/build_aiie.py
+paper/aiie*
+paper/build_aiat.py
+paper/aiat*
+paper/eida_ai*.pdf
+paper/~$*
+
 # Run logs and local tooling
 outputs/*.log
 outputs/*.err
