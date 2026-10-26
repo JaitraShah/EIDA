@@ -29,6 +29,7 @@ from edia.benchmark.agreement import cohens_kappa, jaccard
 from edia.benchmark.dataset import InDocument, load_all
 from edia.gapdetect.metrics import GapMetrics
 
+# set in main(): outputs/qmsum_<folder name>_report.json
 OUT = Path("outputs/qmsum_spotcheck_report.json")
 
 # Annotator names that are NOT human. The spotcheck pairs carry a `llm-review`
@@ -56,6 +57,9 @@ def main(argv=None) -> int:
     machine = set() if args.allow_machine else (
         MACHINE_ANNOTATORS | {m.lower() for m in args.machine_annotator}
     )
+
+    global OUT
+    OUT = Path(f"outputs/qmsum_{Path(args.dir).name}_report.json")
 
     all_pairs = [p for p in load_all(args.dir) if p.annotations]
     pairs = [p for p in all_pairs if _human_passes(p, machine)]

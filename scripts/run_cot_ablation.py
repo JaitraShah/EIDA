@@ -46,7 +46,7 @@ REPORT_JSON = Path("outputs/cot_ablation_results.json")
 
 # Same-runtime baseline (`--no-cot`). The stored baseline above was extracted on an
 # older Ollama/GPU; replaying chunks on the new runtime changed the output of 2 of 3
-# (runbook Sec. 0), so CoT-vs-stored-baseline confounds the CoT effect with the
+# (paper Sec. VII, runtime sensitivity), so CoT-vs-stored-baseline confounds the CoT effect with the
 # runtime change. `--no-cot` re-extracts the plain baseline on the current runtime
 # into its own cache (never touching outputs/extractions/ or the Table 2 scores),
 # and the CoT report uses it as the primary comparison when present.
@@ -144,6 +144,9 @@ def _rerun_baseline() -> dict | None:
 
 
 def main(argv=None) -> int:
+    # the report contains non-ASCII (e.g. a delta sign); a default Windows console is cp1252
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--model", default=DEFAULT_MODEL)

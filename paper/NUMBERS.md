@@ -22,18 +22,18 @@ If a source file changes, update the paper from it -- never the other way round.
 | Table V | taxonomy 6/5/5/4/0/0 of 20 | `outputs/failure_taxonomy.md` |
 | Sec. VI | ~670 turns apart (QSUM_005 t130-138 vs t805-818) | `outputs/task5_benchmark_results.md` Table 3 notes |
 | Table VI, EDIA rows | 33.3/58.3/16.4 and same-runtime 27.1/58.3/14.1 | `outputs/comparative_analysis.md`, `outputs/baseline_rerun_scores.md` |
-| Table VI, CoT | 33.3/62.5/13.9; +6.2/+4.2 same runtime; 114 vs 76 records | `outputs/cot_ablation_results.md`, `SESSION_LOG.md` (5.1 row) |
+| Table VI, CoT | 33.3/62.5/13.9; +6.2/+4.2 same runtime; 114 vs 76 records | `outputs/cot_ablation_results.md`; record counts from `outputs/extractions_cot/` (114) and `outputs/extractions_rerun/` (76) |
 | Table VI, GraphRAG | 4.2 / 14.6 (18.8 without support filter) | `outputs/graphrag_results.md` |
 | Table VI, Sec. VII multi-hop | 0.0% lexical (0/39), 12.8% semantic (5/39); 12.8% / 28.2% if the handed-in decisions were allowed to match | `outputs/multihop_retrieval_results.md` (thresholds 0.45 / 0.55, owner/approver excluded, gold matched against retrieved turns only) |
 | Table VII (P/R/F1) | EDIA 4.8/13.8 P, 8.4/22.3 F1; same runtime 4.9/13.6, 8.3/22.0; CoT 3.2/10.7, 5.8/18.3; GraphRAG 3.8/13.5, 4.0/14.0; multi-hop 0.0/40.7, 0.0/19.5 (lex/sem); EDIA redundancy-penalised sem P 7.0% | `outputs/extraction_precision.md` (`scripts/extraction_precision.py`) |
 | Sec. VII runtime | -6.2 lexical, 0.0 semantic | `outputs/baseline_rerun_scores.md` |
-| Abstract, Sec. IV, Sec. VIII spot-check | n=52 (3 pairs: ACA_TR_002, ACA_TR_009, CMT_TR_007), 1 human annotator (jaitra), blind; gap P 0.478, R 1.0; present R 0.20; bal acc 0.60; 24 disagreements (23 paraphrased, 19 in CMT_TR_007); "about half" = 24/46 silver gaps | `outputs/qmsum_spotcheck_mini_report.json` (`scripts/spotcheck_report.py --dir data/benchmark/spotcheck_mini`; the script writes `qmsum_spotcheck_report.json` -- copy it to the `_mini_` name and restore the original). 4th pair QMS_PRD_TR_089 not annotated |
+| Abstract, Sec. IV, Sec. VIII spot-check | n=52 (3 pairs: ACA_TR_002, ACA_TR_009, CMT_TR_007), 1 human annotator (jaitra), blind; gap P 0.478, R 1.0; present R 0.20; bal acc 0.60; 24 disagreements (23 paraphrased, 19 in CMT_TR_007); "about half" = 24/46 silver gaps | `outputs/qmsum_spotcheck_mini_report.json` (`scripts/spotcheck_report.py --dir data/benchmark/spotcheck_mini`). 4th pair QMS_PRD_TR_089 not annotated |
 
 ## Deliberately NOT used
 
-- "~47% completeness" -- retired (runbook Sec. 0): averaged two meetings under lexical scoring.
+- "~47% completeness" -- retired: averaged two meetings under lexical scoring.
 - Spot-check "gap F1 0.964 / balanced accuracy 0.836" -- from the `llm-review` model pass,
-  not a human (runbook Sec. 3.3).
+  not a human.
 - NLI corpus-tier row and NLI pooled "all tiers" figures -- circular (NLI produced those labels).
 - "External GraphRAG benchmarks show ~13% on conversational tasks" (plan) -- no verifiable
   source located; replaced by our own end-to-end measurement.

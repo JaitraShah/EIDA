@@ -1,4 +1,7 @@
-# QMSUM_AUTO silver labels — spot-check
+# QMSUM_AUTO silver labels — spot-check (model review, not a human)
+
+> The comparison pass in this report is an LLM-assisted review (`llm-review`). It is
+> not human validation; see `outputs/qmsum_spotcheck_mini_report.json` for the human check.
 
 Stratified sample: **17 pairs, 382 elements** (Academic 7 / Committee 4 / Product 6),
 `scripts/sample_for_spotcheck.py` → `data/benchmark/spotcheck/`.
@@ -38,10 +41,10 @@ called gaps.
 
 The comparison pass here was an **LLM-assisted read of document-vs-elements**, not a
 human blind annotation. It is a sanity cross-check, not the definitive number.
-`RUNBOOK.md` Step B2 still calls for ≥1 human blind pass (2 for a κ) via
-`annotate.py --blind`; `spotcheck_report.py` will fold those in automatically. The
-`fn 0 / fp ~7%` shape is expected to survive a human pass — the false positives are
-unambiguous paraphrases a human would also flag.
+A human blind pass was done afterwards on a smaller sample
+(`outputs/qmsum_spotcheck_mini_report.json`: 52 elements, gap precision 0.478, balanced
+accuracy 0.60). It found a much higher false-gap rate than this model pass, so the `fp ~7%`
+here should not be relied on.
 
 ## Implication for the benchmark
 

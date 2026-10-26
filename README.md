@@ -1,145 +1,166 @@
-# EDIA — extraction pipeline (Task 4), gap detection (Task 2) and benchmark (Task 5)
+# EDIA — Explainable Decision Intelligence Assistant
 
-Builds on Tasks 1–3, whose outputs are in `outputs/`:
-`gap_validation_results.md` (5 hand-validated QMSum pairs), `nli_transfer_test_results.md`
-(roberta-large-mnli at 95.5% on 22 elements), `task3_ingestion_output_summary.md`.
+**Where meeting reasoning gets lost: a feasibility study of decision-context gap detection in enterprise meetings.**
 
-The benchmark (`edia_db`, **locked**) spans the **whole QMSum corpus** (all 232
-meetings, 3 domains: 5 hand-labelled + 227 auto-labelled) plus **139 synthetic
-pairs** — 371 pairs / 6 647 elements in total. See `CONTINUATION_RUNBOOK.md` for how
-every result was produced, `outputs/dataset_card.md` for composition and label
-provenance, and `paper/` for the IEEE paper draft (numbers traced in
-`paper/NUMBERS.md`).
+Meetings end in decisions, but the written minutes usually record *what* was decided and drop
+*why*: the alternatives weighed, the rationale, the conditions, the dissent. EDIA asks whether
+current open language models can (1) recover that reasoning from a meeting transcript and
+(2) detect which of it the filed document left out, and it measures, carefully, where and why
+this breaks.
+
+Capstone project, Dept. of Computer Science and Business Systems, Mukesh Patel School of
+Technology Management and Engineering, NMIMS, Mumbai.
+**Team:** Jaitra Shah, Manan Mehta, Soham Dwivedi, Aayusman Pati.
+
+## What is in this repository
+
+| | |
+|---|---|
+| **EDIA pipeline** | Transcript → chunks → structured decision records (Mistral 7B via Ollama, temperature 0) → gap detectors (lexical, NLI, LLM judge, ensemble). `edia/` |
+| **`edia_db` benchmark** | 371 transcript–document pairs, 6,647 labelled reasoning elements, in three tiers (5 hand-labelled, 227 NLI-labelled, 139 synthetic). Locked. `data/benchmark/pairs/`, card in `outputs/dataset_card.md` |
+| **Experiments** | Gap-detector comparison, extraction completeness and precision, corpus-wide grounding, failure taxonomy, and comparisons against chain-of-thought, GraphRAG and multi-hop retrieval. `scripts/`, results in `outputs/` |
+| **Papers and poster** | IEEE-format paper (`paper/edia_ieee.tex` / `.docx`), conference-template version, poster (`paper/poster/`), plain-language guide to the paper (`paper/EDIA_explained.docx`) |
+
+## Main results
+
+| Question | Result |
+|---|---|
+| Which detector best spots reasoning the minutes dropped? | A simple word-overlap (lexical) detector beats NLI on the only balanced tier: balanced accuracy **0.775 vs 0.629**. The LLM judge is at chance (0.495). |
+| Why does NLI lose? | It misses content that *did* survive into a short summary, including word-for-word copies (accuracy 0.292). |
+| How much reasoning does extraction recover? | **33.3%** (strict word matching) to **58.3%** (meaning-based) on the five hand-labelled meetings. |
+| Why are the rest missed? | **55%** of the residual misses need multi-hop reasoning across distant or implicit turns. None came from chunk boundaries and none from invented quotes. |
+| Does the model make up evidence? | Unsupported quotes: **14.6%** across all 227 meetings, **5.4%** excluding quotes that were only tidied (words dropped, none added). |
+| Do other methods do better? | No. Chain-of-thought 62.5% recall but lower F1 (18.3 vs 22.0); GraphRAG 4.2–18.8%; multi-hop retrieval 0.0–12.8%. |
+| Is the benchmark's auto-labelling trustworthy? | Only partly. A blind human check (52 elements, one annotator) found about half of the NLI-flagged gaps were actually present in the summary. Corpus gap rates are upper bounds. |
+
+Answer to the feasibility question: **partially**. Full detail, tables and caveats are in the
+paper; `paper/NUMBERS.md` traces every number in it to a file in `outputs/`.
+
+## Repository layout
 
 ```
 edia/
-  ingestion/          # Task 3, moved in unchanged (turns_to_text factored out for reuse)
-  extraction/
-    schema.py         # FROZEN DecisionRecord -- v1.0.0, fingerprint-pinned
-    chunker.py        # turn-aware overlapping chunks
-    llm_client.py     # Ollama, temperature=0 enforced structurally
-    prompts.py        # extraction prompt + the negative few-shot example
-    extractor.py      # chunk -> DecisionRecord, no cross-chunk merging
-  gapdetect/          # Task 2, in code: is a reasoning element in the document?
-    nli.py            # NliGapDetector -- premise=doc, hypothesis=element, P(entail)
-    lexical.py        # token-F1 baseline
-    entailment_llm.py # Ollama yes/no ablation
-    metrics.py        # gap-class P/R/F1, threshold sweep
-  benchmark/
-    qmsum_ground_truth.py  # Task 1's five tables as DecisionRecords (the 5 gold)
-    qmsum_corpus.py        # iterate ALL of QMSum -> QMSUM_AUTO BenchmarkPairs
-    decompose.py           # specific-query answer -> atomic elements (sentence / LLM)
-    score.py               # completeness + hallucination scoring (truth=None -> hall. only)
-    dataset.py             # BenchmarkPair; DATASET_VERSION 1.1.0; PairSource.QMSUM_AUTO
-    topics.py              # 12 domains x 10 archetypes = 120 topics x 17 = 2040 plan
-    generate.py            # synthetic pair generation, checkpointed, sharded
-    fold_qmsum.py          # QSUM_001-005 fold-in
-    annotate.py / agreement.py   # human annotation CLI + Jaccard/kappa
-scripts/                   # runnable entry points (see RUNBOOK.md)
-tests/                     # 159 offline; +2 NLI tests behind `pytest --run-nli`
+  ingestion/            parse transcripts and documents (txt, json, csv, docx, pdf)
+  extraction/           chunker, Ollama client, prompts, extractor, frozen DecisionRecord schema
+  gapdetect/            lexical, NLI, LLM-judge and ensemble gap detectors, metrics
+  benchmark/            dataset schema, QMSum folding, synthetic generator, scoring, annotation tools
+scripts/                runnable entry points (one per experiment, see below)
+tests/                  159 offline tests (+2 NLI tests behind --run-nli)
+data/
+  benchmark/pairs/      the 371 benchmark pairs
+  benchmark/spotcheck_mini/   the human spot-check sample and annotations
+  qmsum/                the five hand-labelled gold meetings
+outputs/                every result file (markdown + json) and the dataset card
+paper/                  papers, poster, figures, bibliography, NUMBERS.md
 ```
 
 ## Setup
 
-```bash
-pip install -r requirements.txt          # ~2 GB: adds transformers + torch for gapdetect
-ollama pull mistral                       # for extraction + synthetic generation
-```
-
-The NLI model (`roberta-large-mnli`, ~1.4 GB) downloads on first use.
-
-## Task 4 — run the extraction pipeline
+Python 3.10–3.12.
 
 ```bash
-python scripts/prepare_qmsum.py       # cut the 5 Task 1 meetings out of QMSum
-python scripts/run_qmsum_eval.py      # extract + score -> outputs/task4_extraction_results.md
-python scripts/run_corpus_extraction.py   # same extractor over ALL of QMSum; hallucination-only
+pip install -r requirements.txt            # includes torch and transformers (~2 GB)
+python -m pytest -q                         # 159 passed, 2 skipped
 ```
 
-Both are checkpointed per chunk (`outputs/extractions/chunks/`), so an interrupted run
-resumes rather than restarting. `--semantic` swaps the lexical element matcher for
-sentence-transformer similarity; `--force` ignores the cache. `run_corpus_extraction.py`
-scores only the objective half (evidence grounding) because completeness needs the
-hand-built ground truth that exists for the 5 gold pairs only.
+For GPU use, install the CUDA build of PyTorch from <https://pytorch.org> instead of the default
+wheel (a CPU-only wheel makes the NLI evaluation hours slower).
 
-Extract from any file:
+The extraction and LLM-judge experiments need [Ollama](https://ollama.com) with the model used
+throughout the study:
 
 ```bash
-python -m edia.extraction.extractor path/to/transcript.json --out records.json
+ollama pull mistral
 ```
+
+The NLI model (`roberta-large-mnli`, ~1.4 GB) and the sentence-embedding model
+(`all-MiniLM-L6-v2`) download on first use. GraphRAG (optional, one experiment) additionally
+needs `pip install graphrag` in a separate environment and `ollama pull nomic-embed-text`.
+
+## Reproducing the results
+
+Everything below runs from a fresh clone, using the result files committed in `outputs/`.
+
+```bash
+# extraction precision / recall / F1 for every approach (Table VII of the paper;
+# takes several minutes on a laptop)
+python scripts/extraction_precision.py
+
+# multi-hop retrieval baseline, then the comparison table (Table VI)
+python scripts/multihop_retrieval.py
+python scripts/build_comparison_table.py --graphrag 0.146 --graphrag-lex 0.042 \
+    --graphrag-note "5 gold meetings, local search; 4.2% / 18.8% without the converter support filter"
+
+# GraphRAG: re-score the stored answers (no model calls)
+python scripts/run_graphrag_comparison.py --rescore-only
+
+# gap detectors (NLI + lexical) on the whole benchmark; add `llm ensemble --llm-sample 400`
+# for the LLM judge (needs Ollama)
+python scripts/run_gap_eval.py --detectors nli lexical --threshold 0.55
+
+# chain-of-thought ablation; --no-cot re-extracts the plain baseline on the same runtime
+python scripts/run_cot_ablation.py [--no-cot]
+
+# extraction over the five gold meetings, lexical and semantic scoring
+python scripts/run_qmsum_eval.py
+python scripts/run_qmsum_eval.py --semantic --threshold 0.55
+
+# human spot-check report (the committed sample)
+python scripts/spotcheck_report.py --dir data/benchmark/spotcheck_mini
+```
+
+Experiments that need the full QMSum release (`run_corpus_extraction.py`, `build_qmsum_corpus.py`)
+read `data/qmsum/raw/`, which is **not** committed. Get it from the QMSum repository
+(<https://github.com/Yale-LILY/QMSum>) and copy each domain's `train/val/test` `.jsonl` files
+into `data/qmsum/raw/{Academic,Committee,Product}/`. Large intermediate caches
+(`outputs/gap_eval_scores.jsonl`, per-chunk checkpoints) are also not committed; the scripts
+recompute them and resume if interrupted.
+
+Experiments that call the model are deterministic in intent (temperature 0, top-k 1, fixed seed)
+but not bit-for-bit across inference-engine versions; the paper reports this as a finding
+(Sec. VII, runtime sensitivity).
 
 ### Constraints enforced in code, not by convention
 
 | Constraint | How it is enforced |
 |---|---|
 | `temperature=0` | `OllamaClient.__init__` raises unless `allow_sampling=True`; only the synthetic generator passes it, and it records temperature and seed per pair |
-| schema frozen | `tests/test_schema_frozen.py` pins a SHA-256 of the JSON schema; any field change fails CI until `SCHEMA_VERSION` is bumped deliberately. The benchmark-side `DATASET_VERSION` (1.1.0) is separate and not in that hash. |
-| no cross-chunk merging | every `DecisionRecord` keeps its `chunk_id`; `ExtractionResult.merged_across_chunks` stays `False`; a test asserts the same decision seen twice stays two records |
+| Schema frozen | `tests/test_schema_frozen.py` pins a SHA-256 of the JSON schema; any field change fails the test until `SCHEMA_VERSION` is bumped deliberately |
+| No cross-chunk merging | every `DecisionRecord` keeps its `chunk_id`; a test asserts the same decision seen twice stays two records |
 
-## Task 5 — build the benchmark
+## How results are measured
 
-```bash
-python -m edia.benchmark.fold_qmsum                       # the 5 gold pairs
-python scripts/build_qmsum_corpus.py --detector nli       # ~227 QMSUM_AUTO pairs (all of QMSum)
-python scripts/calibrate_qmsum_labels.py                  # NLI vs the 5 gold -> threshold
-python scripts/generate_synthetic.py --shard 0/4          # synthetic pairs -- dataset LOCKED at 139; do not regenerate
-python scripts/dedupe_synthetic.py                        # flag near-duplicates
-python scripts/generate_synthetic.py --status             # progress + dataset stats
-python scripts/run_gap_eval.py                            # NLI vs lexical vs LLM -> outputs/gap_eval_results.md
-```
+Three decisions shape every number, and the paper explains each in full.
 
-Spot-check the auto labels (see `RUNBOOK.md` for the full sequence):
+- **Balanced accuracy, not plain accuracy or F1.** About 93% of corpus elements are gaps, so a
+  detector that always answers "gap" scores F1 ≈ 0.96 and does nothing useful. Balanced accuracy
+  gives it 0.5.
+- **Two matchers, always both.** Completeness is reported with strict word-overlap matching and
+  with meaning-based (sentence-embedding) matching. The truth lies between them.
+- **Hallucination means unsupported quotes.** A quote is unsupported when it does not occur in its
+  own source chunk. Precision against the hand labels is reported separately and only as a lower
+  bound, because the hand labels are not exhaustive.
 
-```bash
-# CAUTION: sample_for_spotcheck.py DELETES its --out folder first (default:
-# data/benchmark/spotcheck, which holds the llm-review pass) -- always pass a new --out.
-# spotcheck_report.py always writes outputs/qmsum_spotcheck_report.json, whatever --dir is.
-python scripts/sample_for_spotcheck.py --out data/benchmark/spotcheck_new
-python -m edia.benchmark.annotate --dir data/benchmark/spotcheck --annotator <name> --blind
-python -m edia.benchmark.annotate --dir data/benchmark/spotcheck --annotator <name2> --double
-python scripts/spotcheck_report.py
-```
+## Limitations
 
-Ground truth for the synthetic pairs is **constructed, not annotated after the fact**:
-the pipeline picks the reasoning elements and decides which ones the document may keep
-*before* writing either text, then writes both to that plan and leak-checks the result.
-The human pass is therefore verification, which is what makes the agreement number
-meaningful.
+- **Completeness is measured on five hand-labelled meetings only**, all Product design. Across the
+  three domains we measured grounding (hallucination), not completeness, so the 33–58% ceiling is
+  not claimed to hold everywhere.
+- **The 227-meeting corpus labels are NLI-produced ("silver")** and overstate the gap rate. Scoring
+  NLI against them is circular and is excluded from the paper.
+- **The human spot-check is small:** one annotator, 52 elements from three pairs, no second
+  annotator, so no inter-annotator agreement.
+- **Synthetic transcripts are model-written** and cleaner than real meetings. QMSum's summaries
+  stand in for filed decision records.
+- **Only 7B-scale open models, run locally.** Larger models may behave differently.
 
-## Two measurement decisions worth knowing before reading any number
+Full list in `outputs/dataset_card.md` and in the paper's Discussion section.
 
-**"Unmatched" is not "hallucinated."** Two separate rates are reported. *Unsupported
-evidence* — model quotes whose words do not occur in the source chunk — is objective and
-needs no ground truth; that is the hallucination rate. *Unmatched extracted* — elements
-with no counterpart in Task 1's tables — is not, because those tables were built to answer
-"did the document drop this?", not to enumerate everything the discussion contained.
-Unmatched items are listed individually for adjudication rather than counted as errors.
+## Data and licensing
 
-**Disfluency cleanup is not fabrication.** mistral drops QMSum's `{disfmarker}` and "uh"
-when quoting. Grounding is therefore checked twice: leniently (ignoring transcription
-markers and filler — this is the hallucination rate) and strictly (exact reproduction —
-reported as `strict_verbatim_rate`). A quote with invented words fails both. The gap
-between the two numbers is a fact about quoting fidelity, not about hallucination.
-
-**Owner/approver is a dataset limitation, not an extractor miss.** AMI-style meetings
-record no formal sign-off (Task 1 caveat 1), so those elements are scored separately and
-kept out of headline completeness.
-
-## Known limitations
-
-Full list in `outputs/dataset_card.md`. The load-bearing ones:
-
-- **`qmsum_auto` labels are silver** — produced by the NLI detector. Scoring NLI
-  against them is a self-consistency check, not accuracy; every report separates
-  those rows. Accuracy for that tier = the 5 gold pairs + the human spot-check.
-- The 120-topic domain×archetype matrix in `topics.py` is a principled stand-in:
-  the "existing topic list" the brief refers to was not in the Task 1–3 handover.
-  Replacing `DOMAINS` / `ARCHETYPES` is a one-file change.
-- QMSum "documents" are annotator-written general summaries standing in for filed
-  decision records — Task 1's substitution, carried forward unchanged.
-- Synthetic transcripts are mistral-written and cleaner than real meetings. The
-  QMSum tiers are in the same schema so a method that only works on the tidy half
-  is visible.
-- `qmsum_auto` element types come from a cue-word heuristic; that breakdown is
-  indicative. Those pairs carry no `DecisionRecord`s, so they do not feed
-  extraction-completeness scoring.
+The benchmark is built from **QMSum** (Zhong et al., NAACL 2021), a public meeting-summarisation
+benchmark over the ICSI, AMI and parliamentary-committee corpora. The pairs in
+`data/benchmark/pairs/` contain transcript text and summaries derived from QMSum; they remain
+subject to QMSum's and the original corpora's terms. Please cite QMSum and consult its repository
+for its license before reusing that data. The synthetic pairs and all code in this repository are
+original work of the team.

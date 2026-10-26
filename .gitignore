@@ -21,3 +21,25 @@ outputs/graphrag_ws/
 outputs/extractions_cot/chunks/
 outputs/extractions_rerun/chunks/
 data/tiktoken_cache/
+
+# Personal / report artefacts -- never committed
+paper/EDIA_capstone_report.*
+paper/build_report.py
+paper/report_content.py
+paper/report_content_b.py
+paper/report_figures.py
+paper/report_figs/
+paper/report_analysis.*
+paper/update_report_fields.ps1
+paper/nmims_logo.png
+
+# Run logs and local tooling
+outputs/*.log
+outputs/*.err
+
+# Internal working notes (kept locally, not part of the submission)
+SESSION_LOG.md
+context_edia_db.md
+RUNBOOK.md
+CONTINUATION_RUNBOOK.md
+outputs/The_Missing_Why.pdf

@@ -1,7 +1,7 @@
 # EDIA gap-detection benchmark — dataset card
 
-*Numbers marked ⟨fill after build⟩ are produced by the GPU-box runs in `RUNBOOK.md`.
-Everything else is fixed by construction.*
+*All numbers are from the runs described in the paper (`paper/`) and the other files in
+`outputs/`; composition is fixed by construction.*
 
 ## What a pair is
 

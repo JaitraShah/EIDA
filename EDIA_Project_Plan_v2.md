@@ -3,27 +3,16 @@
 **Faculty approval:** Confirmed  
 **Last updated:** September 2026
 
----
-
-## FIRST: Connect to the GitHub repo (do this before anything else)
-
-The repo lives at `https://github.com/JaitraShah/EIDA.git` (private).
-
-Run these three commands from the `D:\EDIA` directory:
-
-```bash
-cd D:/EDIA
-git remote set-url origin https://github.com/JaitraShah/EIDA.git
-git push origin Jaitra
-```
-
-If it asks for credentials, use the GitHub account `JaitraShah`. Once the push succeeds, all future commits will go to this repo automatically.
+> **Status (October 2026):** this is the original plan, kept for the project record. The work
+> is finished and its results are in `paper/` and `outputs/`. The "~47%" completeness figure
+> used below was **retired**: measured completeness is 33.3% (lexical) to 58.3% (semantic)
+> on the five hand-labelled meetings (paper Sec. VI).
 
 ---
 
 ## IMPORTANT: Updated project scope (read this first)
 
-The project framing has changed. This section explains the new direction so you understand what we are building toward and why.
+The project framing changed after the first plan. This section explains the new direction and why.
 
 ### What changed and why
 
@@ -33,7 +22,7 @@ After expert review and faculty consultation, the framing is now:
 
 **EDIA is a feasibility study and comparative analysis that rigorously measures whether decision-context gap detection in enterprise meetings is achievable with current AI, and diagnoses exactly why it hits the ceiling it does.**
 
-The answer our results are pointing toward: not fully achievable yet. The reason: multi-hop reasoning across scattered multi-person meeting content is a currently unsolved problem in AI. Our system finds roughly half the reasoning a human finds, and this is not a fixable bug. It is a structural limitation confirmed by a domain expert.
+The answer our results are pointing toward: not fully achievable yet. The reason: multi-hop reasoning across scattered multi-person meeting content is a currently unsolved problem in AI. Our system finds roughly half the reasoning a human finds, and this is not a fixable bug. It is a structural limitation, which the failure analysis in the paper supports.
 
 ### What this means for how we present results
 
@@ -104,7 +93,7 @@ Run the ensemble detector (present if ANY member says present) on the same 400-e
 **1.4 Synthetic tier evaluation**
 Run all three detectors on the 139 synthetic pairs. This is the most meaningful comparison because the gap rate is balanced. Report full precision, recall, F1, balanced accuracy, and present-class F1.
 
-**1.5 Human blind spot-check pass (RUNBOOK Step B2)**
+**1.5 Human blind spot-check pass**
 Manually review a sample to finalise auto-label F1 and Cohen's kappa. This is the evidence that corpus labels are trustworthy. Without it, a reviewer can challenge every corpus result.
 
 ### Output of Phase 1

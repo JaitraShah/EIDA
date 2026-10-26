@@ -87,7 +87,7 @@ CONCURRENT_REQUESTS = 1
 QUERY = "What decisions were made and what reasoning was given?"
 
 LEX_THRESHOLD = 0.45   # run_qmsum_eval.py default -- EDIA's 33.3% lexical
-SEM_THRESHOLD = 0.55   # EDIA's 58.3% semantic (runbook Sec. 4.2b)
+SEM_THRESHOLD = 0.55   # EDIA's 58.3% semantic
 
 CONVERT_SYSTEM = """\
 You restructure a written answer into JSON. The answer was produced by another \

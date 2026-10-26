@@ -64,13 +64,15 @@ NLI is highly confident most specific-query *sentences* are not entailed by the
 human labels; the high gap rate reflects a genuine ~5:1 sentence-level compression,
 not a tunable artifact. Full sweep in `outputs/qmsum_threshold_tuning.json`.
 
-## Spot-check — the real validation (`outputs/qmsum_spotcheck_report.md`)
+## Spot-check, model review (`outputs/qmsum_spotcheck_report.md`) — not a human validation
 
-17 pairs / 382 elements, auto vs an independent review, gap class:
+17 pairs / 382 elements, auto vs an LLM-assisted review (annotator `llm-review`, not a
+human), gap class:
 **precision 0.931 · recall 1.00 · F1 0.964 · fn 0 · fp 23 (~7%)**. All 23 false
 positives are paraphrase-present elements NLI scored NEUTRAL. The labeller never
-under-calls a gap. The `qmsum_auto` tier is usable with this ~7% false-gap rate
-stated.
+under-calls a gap. The human blind check that followed (52 elements,
+`outputs/qmsum_spotcheck_mini_report.json`) found a much higher false-gap rate (gap
+precision 0.478), so the ~7% above is superseded: treat corpus gap rates as upper bounds.
 
 ## Actions
 

@@ -29,20 +29,7 @@ with any TeX distribution:
     pdflatex edia_ieee
     pdflatex edia_ieee
 
-## Before submission
+## Status
 
-Done (2026-10-07): authors and affiliation filled in; EDIA expanded on first use
-(`\EDIAfull` macro in the preamble -- change the name there only); draft TODOs,
-acknowledgment placeholder and domain-expert note removed; human spot-check
-reported (Sec. IV, VIII); references completed with pages/volumes; pipeline
-figure in; static checks clean (braces, environments, every \ref and \cite
-resolves); Word version is 5 pages.
-
-Still yours to do:
-- [ ] Add the four e-mail addresses -- the only remaining red `[TODO: email]`
-      markers (author block at the top of `edia_ieee.tex`), then rebuild the .docx.
-- [ ] Compile once on Overleaf and check the page count against the venue limit
-      (the .docx is 5 pages; IEEE conferences are usually 6).
-- [ ] If the venue is double-blind, remove the author block and the NMIMS
-      affiliation before submitting.
-- [ ] Confirm author order.
+The paper is complete. Author e-mail addresses are intentionally left out of this draft.
+Compile once on Overleaf and check the page count against the target venue's limit.

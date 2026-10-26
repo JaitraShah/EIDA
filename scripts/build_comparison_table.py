@@ -8,9 +8,8 @@ table the paper's Section 7 is built around. Run after:
     python scripts/run_qmsum_eval.py --semantic       # EDIA baseline, semantic
     python scripts/run_cot_ablation.py                # EDIA + CoT
     python scripts/multihop_retrieval.py              # multi-hop retrieval
-    # GraphRAG: no script here -- see EDIA_Project_Plan_v2.md Phase 3.2 and the
-    # continuation runbook. Pass its completeness number with --graphrag if you ran
-    # it, or leave it out to render the plan's own cited-argument fallback.
+    # GraphRAG: run scripts/run_graphrag_comparison.py first, then pass its completeness
+    # with --graphrag, or leave it out to render the plan's own cited-argument fallback.
 
 Any input file that is missing is rendered as "not run" rather than guessed, so a
 partial run never silently produces a complete-looking table.

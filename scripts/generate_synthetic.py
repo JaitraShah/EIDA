@@ -1,5 +1,6 @@
 """
-Task 5 step 1 runner: generate the 50 synthetic pairs, resumably.
+Synthetic-pair generation runner, resumable. The edia_db benchmark is LOCKED at 139
+synthetic pairs: do not regenerate.
 
 Every finished pair is written to data/benchmark/pairs/ and recorded in
 data/benchmark/manifest.json before the next one starts, so this can be stopped
